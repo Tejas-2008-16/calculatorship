@@ -1,0 +1,13 @@
+# =====================================================
+# ROBOTS.TXT — Compoundly Financial Calculators
+# https://www.compoundly.example/robots.txt
+# =====================================================
+
+User-agent: *
+Allow: /
+
+# Disallow crawling of internal system files only
+Disallow: /*.json$
+
+# Sitemaps
+Sitemap: https://www.compoundly.example/sitemap.xml
