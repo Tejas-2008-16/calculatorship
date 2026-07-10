@@ -1,6 +1,6 @@
-# =====================================================
-# ROBOTS.TXT — Compoundly Financial Calculators
-# https://www.compoundly.example/robots.txt
+﻿# =====================================================
+# ROBOTS.TXT — Calculatorship Financial Calculators
+# https://www.calculatorship.example/robots.txt
 # =====================================================
 
 User-agent: *
@@ -10,4 +10,4 @@ Allow: /
 Disallow: /*.json$
 
 # Sitemaps
-Sitemap: https://www.compoundly.example/sitemap.xml
+Sitemap: https://www.calculatorship.example/sitemap.xml

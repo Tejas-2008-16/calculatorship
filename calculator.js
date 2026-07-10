@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   "use strict";
 
   /* ============ Helpers ============ */
@@ -602,7 +602,7 @@
     const formattedDate = new Date().toLocaleDateString("en-IN", { year: "numeric", month: "short", day: "numeric" });
     
     let summaryText = `-----------------------------------------\n` +
-                      `COMPOUNDLY REPORT (${formattedDate})\n` +
+                      `CALCULATORSHIP REPORT (${formattedDate})\n` +
                       `-----------------------------------------\n`;
 
     if (activeCalc === "sip") {
@@ -670,7 +670,7 @@
       if (navigator.share) {
         try {
           await navigator.share({
-            title: "Compoundly Calculation Report",
+            title: "Calculatorship Calculation Report",
             text: summaryString,
             url: window.location.href
           });

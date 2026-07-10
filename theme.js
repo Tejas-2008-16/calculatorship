@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   "use strict";
 
   /* ============ Helpers ============ */
@@ -26,7 +26,7 @@
     const root = document.documentElement;
     
     // Load theme from memory or default to dark
-    let storedTheme = localStorage.getItem("compoundly-theme") || "dark";
+    let storedTheme = localStorage.getItem("calculatorship-theme") || "dark";
     root.setAttribute("data-theme", storedTheme);
     toggle.setAttribute("aria-pressed", storedTheme === "light" ? "true" : "false");
     toggle.setAttribute("aria-label", storedTheme === "light" ? "Switch to dark theme" : "Switch to light theme");
@@ -38,7 +38,7 @@
       let nextTheme = currentTheme === "dark" ? "light" : "dark";
       
       root.setAttribute("data-theme", nextTheme);
-      localStorage.setItem("compoundly-theme", nextTheme);
+      localStorage.setItem("calculatorship-theme", nextTheme);
       toggle.setAttribute("aria-pressed", nextTheme === "light" ? "true" : "false");
       toggle.setAttribute("aria-label", nextTheme === "light" ? "Switch to dark theme" : "Switch to light theme");
       // Swap logo text colour
