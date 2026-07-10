@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    CALCULATORSHIP — PREMIUM DESIGN SYSTEM & CORE CSS
    Visual Guidelines: Dark-mode first, glassmorphism, smooth animations,
    harmony in typography (Fraunces & Inter), and mobile-first responsiveness.
@@ -1593,6 +1593,28 @@ p {
   .calc-panel, .calc-results {
     padding: 24px;
   }
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  color: var(--text-secondary);
+  transition: color 0.15s ease, transform 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social a:hover {
+  color: #FF0000;
+  transform: translateY(-2px);
+}
+
+.footer-social a[href^="mailto"]:hover {
+  color: var(--emerald-bright);
 }
 
 /* ================= PRINT MODE ================= */
