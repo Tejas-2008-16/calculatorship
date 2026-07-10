@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" width="220" height="40">
   <defs>
     <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#10B981" />
@@ -12,5 +12,5 @@
     <circle cx="23" cy="10" r="1.5" fill="#E8C374" />
   </g>
   <!-- Brand Name — White for Dark Mode -->
-  <text x="44" y="25" font-family="'Fraunces', Georgia, serif" font-size="18" font-weight="700" fill="#E8F0EC">Compoundly</text>
+  <text x="44" y="26" font-family="'Fraunces', Georgia, serif" font-size="15" font-weight="700" fill="#E8F0EC">Calculatorship</text>
 </svg>

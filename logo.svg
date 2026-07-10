@@ -1,19 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" width="220" height="40">
   <defs>
-    <!-- Brand Gradient: Minty Emerald to Golden Ochre -->
     <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#10B981" />
       <stop offset="100%" stop-color="#F59E0B" />
     </linearGradient>
   </defs>
-  
-  <!-- Logo Icon: Compound interest growth chart within a glass ring -->
+  <!-- Logo Icon -->
   <g transform="translate(4, 4)">
     <circle cx="16" cy="16" r="14" fill="none" stroke="url(#brandGrad)" stroke-width="2" />
     <path d="M8 20 L13 14 L17 17 L23 10" stroke="url(#brandGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
     <circle cx="23" cy="10" r="1.5" fill="#E8C374" />
   </g>
-  
-  <!-- Brand Name Typography -->
-  <text x="44" y="25" font-family="'Fraunces', Georgia, serif" font-size="18" font-weight="700" fill="#E8F0EC">Compoundly</text>
+  <!-- Brand Name -->
+  <text x="44" y="26" font-family="'Fraunces', Georgia, serif" font-size="15" font-weight="700" fill="#E8F0EC">Calculatorship</text>
 </svg>
