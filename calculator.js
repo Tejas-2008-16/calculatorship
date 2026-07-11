@@ -583,6 +583,39 @@
     els.yearSelect.addEventListener("change", renderMonthlyBreakdownTable);
   }
 
+  // Progressive Slider Fill (Chrome/Safari — no native ::-moz-range-progress)
+  function updateSliderFill(slider) {
+    if (!slider) return;
+    const min = parseFloat(slider.min) || 0;
+    const max = parseFloat(slider.max) || 100;
+    const val = parseFloat(slider.value) || 0;
+    const pct = ((val - min) / (max - min)) * 100;
+
+    let trackColor;
+    if (slider.classList.contains("slider-emerald")) {
+      trackColor = getComputedStyle(document.documentElement).getPropertyValue("--emerald").trim() || "#10B981";
+    } else if (slider.classList.contains("slider-gold")) {
+      trackColor = getComputedStyle(document.documentElement).getPropertyValue("--gold").trim() || "#F59E0B";
+    } else if (slider.classList.contains("slider-steel")) {
+      trackColor = getComputedStyle(document.documentElement).getPropertyValue("--steel").trim() || "#60A5FA";
+    } else {
+      trackColor = getComputedStyle(document.documentElement).getPropertyValue("--emerald").trim() || "#10B981";
+    }
+
+    slider.style.background = `linear-gradient(to right, ${trackColor} 0%, ${trackColor} ${pct}%, var(--bg-elevated) ${pct}%, var(--bg-elevated) 100%)`;
+  }
+
+  // Initialize fill on all sliders
+  $$(".slider").forEach(function (s) {
+    updateSliderFill(s);
+    s.addEventListener("input", function () { updateSliderFill(s); });
+  });
+
+  // Re-fill on theme change
+  window.addEventListener("themechange", function () {
+    $$(".slider").forEach(updateSliderFill);
+  });
+
   // Responsive redraw on resize
   window.addEventListener("resize", (() => {
     let timeoutId;
