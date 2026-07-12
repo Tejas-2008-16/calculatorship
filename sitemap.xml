@@ -1,30 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ============ Calculator Pages (Highest Priority) ============ -->
   <url>
-    <loc>https://www.calculatorship.example/</loc>
+    <loc>https://calculatorship.in/</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/lumpsum.html</loc>
+    <loc>https://calculatorship.in/lumpsum.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/step-up.html</loc>
+    <loc>https://calculatorship.in/step-up.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/goal.html</loc>
+    <loc>https://calculatorship.in/goal.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -32,21 +32,21 @@
 
   <!-- ============ Company Pages ============ -->
   <url>
-    <loc>https://www.calculatorship.example/about.html</loc>
+    <loc>https://calculatorship.in/about.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/contact.html</loc>
+    <loc>https://calculatorship.in/contact.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/sitemap.html</loc>
+    <loc>https://calculatorship.in/sitemap.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -54,28 +54,28 @@
 
   <!-- ============ Legal & Policy Pages ============ -->
   <url>
-    <loc>https://www.calculatorship.example/privacy.html</loc>
+    <loc>https://calculatorship.in/privacy.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/terms.html</loc>
+    <loc>https://calculatorship.in/terms.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/cookies.html</loc>
+    <loc>https://calculatorship.in/cookies.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/disclaimer.html</loc>
+    <loc>https://calculatorship.in/disclaimer.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -83,91 +83,91 @@
 
   <!-- ============ Blog & Articles (High SEO Value) ============ -->
   <url>
-    <loc>https://www.calculatorship.example/blog.html</loc>
+    <loc>https://calculatorship.in/blog.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/the-power-of-compounding.html</loc>
+    <loc>https://calculatorship.in/the-power-of-compounding.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/sip-vs-lumpsum.html</loc>
+    <loc>https://calculatorship.in/sip-vs-lumpsum.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/what-is-a-step-up-sip.html</loc>
+    <loc>https://calculatorship.in/what-is-a-step-up-sip.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/sip-goal-planning-guide.html</loc>
+    <loc>https://calculatorship.in/sip-goal-planning-guide.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/rupee-cost-averaging-explained.html</loc>
+    <loc>https://calculatorship.in/rupee-cost-averaging-explained.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/active-vs-passive-mutual-funds.html</loc>
+    <loc>https://calculatorship.in/active-vs-passive-mutual-funds.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/mutual-fund-types-beginner-guide.html</loc>
+    <loc>https://calculatorship.in/mutual-fund-types-beginner-guide.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/5-common-sip-mistakes-to-avoid.html</loc>
+    <loc>https://calculatorship.in/5-common-sip-mistakes-to-avoid.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/understanding-expense-ratio.html</loc>
+    <loc>https://calculatorship.in/understanding-expense-ratio.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/rule-of-72-114-144.html</loc>
+    <loc>https://calculatorship.in/rule-of-72-114-144.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/taxation-on-mutual-funds.html</loc>
+    <loc>https://calculatorship.in/taxation-on-mutual-funds.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.calculatorship.example/inflation-and-your-savings.html</loc>
+    <loc>https://calculatorship.in/inflation-and-your-savings.html</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
