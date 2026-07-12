@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   "use strict";
 
   /* ============ Helpers ============ */
@@ -19,33 +19,11 @@
     });
   }
 
-  /* ============ Theme Setup & Toggle ============ */
+  /* ============ Theme Setup ============ */
   (function initTheme() {
-    const toggle = $("#theme-toggle");
-    if (!toggle) return;
     const root = document.documentElement;
-    
-    // Load theme from memory or default to dark
-    let storedTheme = localStorage.getItem("calculatorship-theme") || "dark";
-    root.setAttribute("data-theme", storedTheme);
-    toggle.setAttribute("aria-pressed", storedTheme === "light" ? "true" : "false");
-    toggle.setAttribute("aria-label", storedTheme === "light" ? "Switch to dark theme" : "Switch to light theme");
-    // Set correct logo on first load
-    updateLogos(storedTheme);
-
-    toggle.addEventListener("click", () => {
-      let currentTheme = root.getAttribute("data-theme") || "dark";
-      let nextTheme = currentTheme === "dark" ? "light" : "dark";
-      
-      root.setAttribute("data-theme", nextTheme);
-      localStorage.setItem("calculatorship-theme", nextTheme);
-      toggle.setAttribute("aria-pressed", nextTheme === "light" ? "true" : "false");
-      toggle.setAttribute("aria-label", nextTheme === "light" ? "Switch to dark theme" : "Switch to light theme");
-      // Swap logo text colour
-      updateLogos(nextTheme);
-      // Dispatch custom event for chart redrawing on theme change
-      window.dispatchEvent(new CustomEvent("themechange", { detail: { theme: nextTheme } }));
-    });
+    root.setAttribute("data-theme", "light");
+    updateLogos("light");
   })();
 
   /* ============ Mobile Navigation Toggler ============ */

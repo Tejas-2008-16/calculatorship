@@ -6,35 +6,35 @@
 
 :root {
   /* ============================================================
-     CALCULATORSHIP — 60-30-10 DESIGN TOKENS (Dark Mode Default)
+     CALCULATORSHIP — 60-30-10 DESIGN TOKENS (Light Mode Only)
      60% Background | 30% Surfaces | 10% Accents
      ============================================================ */
 
   /* 60% — Dominant Background */
-  --bg: #050B09;
-  --bg-elevated: #0A1612;
+  --bg: #F3F7F5;
+  --bg-elevated: #E8F0EC;
 
   /* 30% — Secondary Surfaces & Glass */
-  --surface: #0E1F1A;
-  --surface-hover: rgba(22, 48, 40, 0.45);
-  --border: rgba(245, 158, 11, 0.08);
-  --border-soft: rgba(241, 245, 241, 0.06);
-  --border-glow: rgba(52, 211, 153, 0.2);
+  --surface: #FFFFFF;
+  --surface-hover: rgba(244, 248, 246, 0.9);
+  --border: rgba(16, 185, 129, 0.10);
+  --border-soft: rgba(15, 40, 30, 0.05);
+  --border-glow: rgba(16, 185, 129, 0.18);
 
   /* 10% — Accent & Focal Points */
-  --emerald: #10B981;
-  --emerald-bright: #34D399;
-  --emerald-soft: rgba(16, 185, 129, 0.10);
-  --emerald-glow: rgba(16, 185, 129, 0.35);
+  --emerald: #059669;
+  --emerald-bright: #10B981;
+  --emerald-soft: rgba(5, 150, 105, 0.07);
+  --emerald-glow: rgba(5, 150, 105, 0.20);
 
-  --gold: #F59E0B;
-  --gold-bright: #FBBF24;
-  --gold-soft: rgba(245, 158, 11, 0.10);
-  --gold-glow: rgba(245, 158, 11, 0.25);
+  --gold: #D97706;
+  --gold-bright: #F59E0B;
+  --gold-soft: rgba(217, 119, 6, 0.07);
+  --gold-glow: rgba(217, 119, 6, 0.18);
 
-  --steel: #60A5FA;
-  --steel-soft: rgba(96, 165, 250, 0.10);
-  --steel-glow: rgba(96, 165, 250, 0.25);
+  --steel: #2563EB;
+  --steel-soft: rgba(37, 99, 235, 0.07);
+  --steel-glow: rgba(37, 99, 235, 0.18);
 
   --danger: #EF4444;
   --danger-soft: rgba(239, 68, 68, 0.10);
@@ -50,9 +50,9 @@
   --radius-sm: 10px;
 
   /* Shadows — Layered depth */
-  --shadow-soft: 0 25px 50px -12px rgba(0, 0, 0, 0.55);
-  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 8px 24px -8px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-glow: 0 0 24px rgba(16, 185, 129, 0.12);
+  --shadow-soft: 0 25px 50px -12px rgba(15, 40, 30, 0.10);
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 8px 24px -8px rgba(15, 40, 30, 0.06), 0 1px 2px rgba(15, 40, 30, 0.04);
+  --shadow-glow: 0 0 20px rgba(5, 150, 105, 0.06);
 
   /* Easing — Premium cubic-bezier */
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
@@ -61,43 +61,9 @@
   --transition-speed: 0.25s;
 
   /* Text Hierarchy */
-  --text-primary: #F0F5F2;
-  --text-secondary: #8FA69C;
-  --text-muted: #4E6860;
-}
-
-/* Light Mode Override — Warm Sage */
-:root[data-theme="light"] {
-  --bg: #F3F7F5;
-  --bg-elevated: #E8F0EC;
-
-  --surface: #FFFFFF;
-  --surface-hover: rgba(244, 248, 246, 0.9);
-  --border: rgba(16, 185, 129, 0.10);
-  --border-soft: rgba(15, 40, 30, 0.05);
-  --border-glow: rgba(16, 185, 129, 0.18);
-
   --text-primary: #0D1C16;
   --text-secondary: #3E5449;
   --text-muted: #6B857A;
-
-  --emerald: #059669;
-  --emerald-bright: #10B981;
-  --emerald-soft: rgba(5, 150, 105, 0.07);
-  --emerald-glow: rgba(5, 150, 105, 0.20);
-
-  --gold: #D97706;
-  --gold-bright: #F59E0B;
-  --gold-soft: rgba(217, 119, 6, 0.07);
-  --gold-glow: rgba(217, 119, 6, 0.18);
-
-  --steel: #2563EB;
-  --steel-soft: rgba(37, 99, 235, 0.07);
-  --steel-glow: rgba(37, 99, 235, 0.18);
-
-  --shadow-soft: 0 25px 50px -12px rgba(15, 40, 30, 0.10);
-  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 8px 24px -8px rgba(15, 40, 30, 0.06), 0 1px 2px rgba(15, 40, 30, 0.04);
-  --shadow-glow: 0 0 20px rgba(5, 150, 105, 0.06);
 }
 
 /* Reset & Basics */
@@ -290,7 +256,7 @@ p {
 .glass-card {
   background: linear-gradient(175deg, var(--surface-hover), var(--surface));
   border: 1px solid var(--border-soft);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   backdrop-filter: blur(16px);
@@ -300,9 +266,6 @@ p {
   transition: border-color var(--transition-speed) var(--ease),
               box-shadow var(--transition-speed) var(--ease),
               transform var(--transition-speed) var(--ease);
-}
-:root[data-theme="light"] .glass-card {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .glass-card::before {
@@ -581,10 +544,8 @@ p {
     radial-gradient(460px 300px at 85% 15%, rgba(245, 158, 11, 0.14), transparent 70%),
     radial-gradient(380px 280px at 50% 50%, rgba(96, 165, 250, 0.08), transparent 75%);
   filter: blur(20px);
-  animation: auroraDrift 30s ease-in-out infinite alternate;
-}
-:root[data-theme="light"] .hero-aurora {
   opacity: 0.45;
+  animation: auroraDrift 30s ease-in-out infinite alternate;
 }
 
 @keyframes auroraDrift {
