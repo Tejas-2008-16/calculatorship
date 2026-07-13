@@ -84,7 +84,7 @@
   <!-- ============ Blog & Articles (High SEO Value) ============ -->
   <url>
     <loc>https://calculatorship.in/blog.html</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -169,6 +169,27 @@
   <url>
     <loc>https://calculatorship.in/inflation-and-your-savings.html</loc>
     <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://calculatorship.in/emergency-fund-guide.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://calculatorship.in/mutual-fund-portfolio-guide.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://calculatorship.in/retirement-planning-guide.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
