@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ============ Calculator Pages (Highest Priority) ============ -->
@@ -84,7 +84,7 @@
   <!-- ============ Blog & Articles (High SEO Value) ============ -->
   <url>
     <loc>https://calculatorship.in/blog.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -174,22 +174,15 @@
   </url>
 
   <url>
-    <loc>https://calculatorship.in/emergency-fund-guide.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://calculatorship.in/direct-vs-regular-mutual-funds.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatorship.in/mutual-fund-portfolio-guide.html</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://calculatorship.in/retirement-planning-guide.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://calculatorship.in/elss-funds-tax-saving-guide.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
