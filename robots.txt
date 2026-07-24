@@ -1,6 +1,6 @@
-﻿# =====================================================
+# =====================================================
 # ROBOTS.TXT — Calculatorship Financial Calculators
-# https://calculatorship.in/robots.txt
+# https://www.calculatorship.in/robots.txt
 # =====================================================
 
 User-agent: *
@@ -10,4 +10,4 @@ Allow: /
 Disallow: /*.json$
 
 # Sitemaps
-Sitemap: https://calculatorship.in/sitemap.xml
+Sitemap: https://www.calculatorship.in/sitemap.xml

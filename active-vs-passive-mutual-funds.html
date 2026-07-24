@@ -1,271 +1,241 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Active vs Passive Mutual Funds: Should You Pick Fund Managers or Index Funds? | Calculatorship</title>
-  <meta name="description" content="Compare active and passive mutual funds for Indian investors — real SEBI data on performance, expense ratios, fee drag, and which to choose for large vs small-cap SIPs.">
+  <title>Active vs Passive Mutual Funds: Which Strategy Deserves Your Capital? | Calculatorship</title>
+  <meta name="description" content="Compare active stock picking vs passive index investing in India. Analyze SPIVA India data, expense ratio drag, tracking error, and portfolio construction.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://calculatorship.in/active-vs-passive-mutual-funds.html">
+  <link rel="canonical" href="https://www.calculatorship.in/active-vs-passive-mutual-funds.html">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Active vs Passive Mutual Funds: Should You Pick Fund Managers or Index Funds? | Calculatorship">
-  <meta property="og:description" content="Compare active and passive mutual funds for Indian investors — real SEBI data on performance, expense ratios, fee drag, and which to choose for large vs small-cap SIPs.">
-  <meta property="og:url" content="https://calculatorship.in/active-vs-passive-mutual-funds.html">
+  <meta property="og:title" content="Active vs Passive Mutual Funds: Which Strategy Deserves Your Capital? | Calculatorship">
+  <meta property="og:description" content="Compare active stock picking with passive index tracking using SPIVA India scorecard data and expense ratio metrics.">
+  <meta property="og:url" content="https://www.calculatorship.in/active-vs-passive-mutual-funds.html">
   <meta property="og:site_name" content="Calculatorship">
-  <meta property="og:image" content="https://calculatorship.in/assets/og-calculatorship.svg"><meta property="og:image:secure_url" content="https://calculatorship.in/assets/og-calculatorship.svg"><meta property="og:image:type" content="image/svg+xml"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Calculatorship financial planning guide"><meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://www.calculatorship.in/assets/og-calculatorship.svg">
+  <meta property="og:image:secure_url" content="https://www.calculatorship.in/assets/og-calculatorship.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Calculatorship active vs passive mutual funds guide">
+  <meta property="og:locale" content="en_IN">
   <meta name="author" content="Calculatorship">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Active vs Passive Mutual Funds in India">
+  <meta name="twitter:description" content="Compare active fund management with index funds based on SPIVA India data and TER fees.">
+  <meta name="twitter:image" content="https://www.calculatorship.in/assets/og-calculatorship.svg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <meta name="theme-color" content="#050B09" media="(prefers-color-scheme: dark)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Active vs Passive Mutual Funds: Should You Pick Fund Managers or Index Funds?",
-  "description": "Compare active and passive mutual funds for Indian investors — real SEBI data on performance, expense ratios, fee drag, and which to choose for large vs small-cap SIPs.",
-  "author": { "@type": "Organization", "name": "Calculatorship" },
-  "publisher": { "@type": "Organization", "name": "Calculatorship", "url": "https://calculatorship.in/" },
-  "url": "https://calculatorship.in/active-vs-passive-mutual-funds.html",
-  "datePublished": "2026-07-11",
-  "dateModified": "2026-07-11"
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Active vs Passive Mutual Funds: Which Strategy Deserves Your Capital?",
+    "description": "An analytical comparison between active stock-picking funds and index funds in India.",
+    "author": { "@type": "Organization", "name": "Calculatorship" },
+    "publisher": { "@type": "Organization", "name": "Calculatorship", "url": "https://www.calculatorship.in/" },
+    "url": "https://www.calculatorship.in/active-vs-passive-mutual-funds.html",
+    "datePublished": "2026-07-13",
+    "dateModified": "2026-07-24"
   }
   </script>
-  
   <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798"
-   crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="read-progress" id="readProgress"></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
-  <div class="header-inner">
-  <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
-    <span class="brand-icon"><img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="40"></span>
-  </a>
-  <nav class="main-nav" aria-label="Primary Navigation">
-    <a href="index.html">SIP Calculator</a>
-    <a href="lumpsum.html">Lumpsum</a>
-    <a href="step-up.html">Step-Up SIP</a>
-    <a href="goal.html">Goal Planner</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html" class="active">Blog</a>
-  </nav>
-  <div class="header-actions">
-    
-    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-  </div>
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
+        <span class="brand-icon"><img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="40"></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="index.html">SIP Calculator</a>
+        <a href="lumpsum.html">Lumpsum</a>
+        <a href="step-up.html">Step-Up SIP</a>
+        <a href="goal.html">Goal Planner</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html" class="active">Blog</a>
+      </nav>
+      <div class="header-actions">
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
   </header>
 
   <main id="main-content">
-  <div class="breadcrumb-bar">
-  <nav class="breadcrumb" aria-label="Breadcrumbs">
-    <ol>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li aria-current="page">Active vs Passive Mutual Funds</li>
-    </ol>
-  </nav>
-  </div>
-
-  <header class="article-header">
-  <span class="article-cat" style="color: var(--steel, #7aa8c7);">Investment Strategy</span>
-  <h1>Active vs Passive Mutual Funds: Should You Pick Fund Managers or Index Funds?</h1>
-  <p class="article-intro">The debate between active and passive investing has intensified in India as index fund AUMs grow at record pace. Data from AMFI and SEBI shows that most active large-cap funds fail to consistently beat the Nifty 50 after fees — but the story is more nuanced for mid and small-caps. Here's everything you need to make an informed choice.</p>
-  <div class="article-meta">
-    <span> July 11, 2026</span>
-    <span> 8 min read</span>
-    <span> Calculatorship Editorial</span>
-  </div>
-  </header>
-
-  
-
-  <div class="article-wrap">
-  <article class="article-main" id="article-body">
-    <a href="blog.html" class="back-to-blog">← Back to Articles</a>
-    <div class="article-body">
-
-    <div class="stat-row">
-    <div class="stat-cell">
-      <div class="stat-value">~2%</div>
-      <div class="stat-label">Active Fund TER</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-value">~0.2%</div>
-      <div class="stat-label">Index Fund TER</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-value">1.8%/yr</div>
-      <div class="stat-label">Annual Fee Difference</div>
-    </div>
+    <div class="breadcrumb-bar">
+      <nav class="breadcrumb" aria-label="Breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li aria-current="page">Active vs Passive Mutual Funds</li>
+        </ol>
+      </nav>
     </div>
 
-    <h2 id="what-are-active-funds">What Are Active Mutual Funds?</h2>
-    <p>An active mutual fund is managed by a professional fund manager and a team of analysts who actively research, select, and rebalance a portfolio of stocks with the explicit goal of generating returns that <em>exceed</em> their benchmark index. For a large-cap fund, the benchmark is typically the Nifty 50 or Nifty 100. For a mid-cap fund, it may be the Nifty Midcap 150.</p>
-    <p>The fund manager makes judgements about which stocks to overweight, when to book profits, and how to position the portfolio during economic cycles. These decisions are informed by fundamental analysis, sector research, management meetings, and macroeconomic modelling. The premise is that skilled human analysis can identify mispriced securities and generate alpha (returns above the benchmark).</p>
-    <p>Active fund management comes at a cost. SEBI regulations cap the Total Expense Ratio (TER) for actively managed equity funds at 2.25% for the first ₹500 crore of AUM, stepping down as AUM grows. In practice, the average TER for large-cap active equity funds in India typically ranges between <strong>1.5% and 2.5%</strong> per annum. Direct plans charge approximately 0.5–1% less than regular plans (which include distributor commissions), making direct plan investment strongly advisable for informed investors.</p>
+    <header class="article-header">
+      <span class="article-cat" style="color: var(--gold);">Investment Strategy</span>
+      <h1>Active vs Passive Mutual Funds: Which Strategy Deserves Your Capital?</h1>
+      <p class="article-intro">The battle between active fund managers and passive index funds has reached Indian shores. While active fund managers historically beat benchmarks in developing markets, S&amp;P Dow Jones Indices (SPIVA India Scorecard) data reveals that over 80% of Indian active large-cap funds failed to beat the Nifty 50 over 5-year and 10-year horizons. Here is how to navigate active vs passive investing in India.</p>
+      <div class="article-meta">
+        <span>July 13, 2026</span>
+        <span>7 min read</span>
+        <span>Calculatorship</span>
+      </div>
+    </header>
 
-    <h2 id="what-are-passive-index-funds">What Are Passive / Index Funds?</h2>
-    <p>A passive or index fund simply replicates the composition of a specific market index — the Nifty 50, Sensex, Nifty Next 50, Nifty Midcap 150, or a thematic variant. The fund buys stocks in the same proportions as the index, holds them unless the index changes its composition, and generates returns that closely track the index (minus a small tracking error).</p>
-    <p>There is no active stock selection, no fund manager making discretionary calls, and no research team generating trade ideas. The portfolio changes only when the underlying index rebalances — typically twice a year. This simplicity translates directly into dramatically lower costs: index fund TERs in India range from <strong>0.05% to 0.5%</strong> for direct plans, with the major AMCs (SBI, HDFC, Nippon, UTI) offering Nifty 50 index funds at around 0.1–0.2% TER.</p>
-    <p>Exchange Traded Funds (ETFs) are the listed equivalent of index funds, often with even lower TERs (as low as 0.05% for Nippon India Nifty BeES), but they require a demat account and trade like stocks. Index funds are simpler for SIP investors as they don't require demat accounts and allow auto-debit SIPs directly through AMC platforms or MFCentral.</p>
+    <div class="article-wrap">
+      <article class="article-main" id="article-body">
+        <a href="blog.html" class="back-to-blog">← Back to Articles</a>
+        <div class="article-body">
 
-    <h2 id="performance-the-real-data">Performance: The Real Data</h2>
-    <p>The central question in the active vs passive debate is whether active fund managers consistently deliver returns that justify their higher fees. The evidence from Indian markets is instructive — and sobering for active fund proponents, at least in the large-cap space.</p>
+          <h2 id="spiva-reality">The SPIVA India Evidence</h2>
+          <p>Active fund managers aim to beat benchmark indices by picking underpriced stocks and timing sector rotations. However, as institutional analyst coverage on top Indian companies has expanded, generating alpha in large-cap stocks has become significantly harder.</p>
 
-    <div class="callout key">
-    <strong>Key Data Point:</strong> According to AMFI and SPIVA India Scorecards (S&P Dow Jones Indices), approximately 60% of active large-cap equity funds underperform the Nifty 50 Total Returns Index over a 10-year period. This means index funds beat roughly 60% of active large-cap peers over the long term.
+          <div class="stat-row">
+            <div class="stat-cell">
+              <span class="s-val">0.05%–0.2%</span>
+              <span class="s-lbl">Typical Direct TER for Nifty 50 Index Funds</span>
+            </div>
+            <div class="stat-cell">
+              <span class="s-val">0.8%–1.5%</span>
+              <span class="s-lbl">Typical Direct TER for Active Large-Cap Equity Funds</span>
+            </div>
+            <div class="stat-cell">
+              <span class="s-val">Alpha Drag</span>
+              <span class="s-lbl">Higher TER creates a ~1% annual performance hurdle active funds must clear</span>
+            </div>
+          </div>
+
+          <h2 id="head-to-head">Head-to-Head Comparison: Active vs Passive</h2>
+          <table style="width:100%; border-collapse:collapse; margin:24px 0; font-size:0.9rem;">
+            <thead>
+              <tr style="background:var(--surface); border-bottom:2px solid var(--border-soft);">
+                <th style="padding:10px; text-align:left;">Feature</th>
+                <th style="padding:10px; text-align:center;">Active Funds</th>
+                <th style="padding:10px; text-align:center;">Passive Index Funds</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-soft);">
+                <td style="padding:10px; color:var(--text-secondary);">Primary Goal</td>
+                <td style="padding:10px; text-align:center;">Beat the benchmark index</td>
+                <td style="padding:10px; text-align:center;">Replicate the benchmark index</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-soft); background:var(--surface);">
+                <td style="padding:10px; color:var(--text-secondary);">Fund Manager Risk</td>
+                <td style="padding:10px; text-align:center; color:var(--gold);">High (Key person risk)</td>
+                <td style="padding:10px; text-align:center; color:var(--emerald-bright);">Zero (Rule-based)</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-soft);">
+                <td style="padding:10px; color:var(--text-secondary);">Expense Ratio (TER)</td>
+                <td style="padding:10px; text-align:center;">Higher (0.70% to 1.80%)</td>
+                <td style="padding:10px; text-align:center; color:var(--emerald-bright);">Ultra-low (0.05% to 0.25%)</td>
+              </tr>
+              <tr style="background:var(--surface);">
+                <td style="padding:10px; color:var(--text-secondary);">Best Asset Classes</td>
+                <td style="padding:10px; text-align:center;">Mid-Cap, Small-Cap, Flexi-Cap</td>
+                <td style="padding:10px; text-align:center;">Large-Cap (Nifty 50, Nifty Next 50)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="smart-solution">The Smart Solution: Segmented Asset Allocation</h2>
+          <p>Rather than choosing 100% active or 100% passive, the most effective strategy for Indian retail investors is market-cap segmentation:</p>
+          <ul>
+            <li><strong>Go Passive in Large-Caps:</strong> Use a low-cost Nifty 50 or Nifty Next 50 Index Fund for your large-cap equity allocation. Research shows active managers struggle to outperform in highly efficient, well-researched large-cap stocks.</li>
+            <li><strong>Go Active in Mid &amp; Small-Caps:</strong> Choose experienced active managers for mid-cap and small-cap allocations. These market segments offer greater mispricing opportunities and wider analyst coverage gaps where skilled fund managers can generate substantial alpha.</li>
+          </ul>
+
+          <p>Model your monthly contributions with lower TER assumptions in our <a href="index.html">SIP Calculator</a>.</p>
+
+        </div>
+
+        <div class="author-box">
+          <div class="author-avatar">C</div>
+          <div class="author-info">
+            <h4>Calculatorship</h4>
+            <p>Calculatorship builds free SIP, lumpsum, and goal-planning calculators for Indian investors, and writes plain-language guides on the math behind them. We're not SEBI-registered advisors and this article is educational, not personalised investment advice — for that, talk to a licensed financial planner. Have a correction or question? Get in touch.</p>
+          </div>
+        </div>
+
+        <nav class="article-nav" aria-label="Article Navigation">
+          <a href="understanding-expense-ratio.html" class="article-nav-link prev"><div class="nav-dir">← Previous Article</div><div class="nav-title">Understanding Expense Ratio</div></a>
+          <a href="mutual-fund-types-beginner-guide.html" class="article-nav-link next"><div class="nav-dir">Next Article →</div><div class="nav-title">Mutual Fund Types Guide</div></a>
+        </nav>
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="toc-card">
+          <h4>Table of Contents</h4>
+          <ol>
+            <li><a href="#spiva-reality">SPIVA Scorecard Evidence</a></li>
+            <li><a href="#head-to-head">Active vs Passive Comparison</a></li>
+            <li><a href="#smart-solution">Segmented Strategy Solution</a></li>
+          </ol>
+        </div>
+        <div class="toc-card">
+          <h4>Try Our Calculators</h4>
+          <ol style="list-style:none;padding:0;">
+            <li style="margin-bottom:12px;"><a href="goal.html" class="btn btn-primary" style="display:block;text-align:center;padding:10px;font-size:.85rem;">Goal Planner</a></li>
+            <li><a href="index.html" class="btn" style="display:block;text-align:center;padding:10px;font-size:.85rem;background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--radius-sm);color:var(--text-primary);">SIP Calculator</a></li>
+          </ol>
+        </div>
+      </aside>
     </div>
-
-    <p>The underperformance worsens over longer time horizons. Over 5 years, around 50% of active large-cap funds underperform. Over 10 years, this rises to ~60%. Over 15+ years, it exceeds 65–70%. This pattern — active funds getting increasingly harder to beat index funds over time — is well-documented globally (SPIVA Scorecard) and is now clearly visible in Indian data as the market matures and liquidity in large-caps improves.</p>
-    <p>Why does this happen? Several structural forces work against active large-cap managers:</p>
-    <ul>
-    <li><strong>Market efficiency in large-caps:</strong> Nifty 50 stocks are covered by hundreds of analysts globally. Information is rapidly priced in. Finding mispricings consistently is extremely difficult.</li>
-    <li><strong>Fee burden:</strong> An active fund must first overcome its own TER (~2%) before generating any alpha. The fund must beat the index by 2% just to match the index net of fees.</li>
-    <li><strong>Mandate constraints:</strong> SEBI's categorisation rules require large-cap funds to hold at least 80% in the top 100 stocks by market cap. This forces active managers to hold many of the same stocks as the index, limiting true differentiation.</li>
-    <li><strong>Survivorship bias:</strong> Many underperforming active funds get merged or shut down over time, making the historical average look better than it really is for the broader active universe.</li>
-    </ul>
-
-    <div class="callout warn">
-    <strong>Reminder:</strong> Past performance does not guarantee future returns. A fund that outperformed the Nifty 50 over the last 5 years may still underperform over the next 5 years. Always evaluate cost, consistency, and fund mandate — not just past returns.
-    </div>
-
-    <h2 id="fee-impact-over-time">Fee Impact Over Time: The 1.8% Erosion</h2>
-    <p>The seemingly small difference of 1.8% per year between an active fund (2% TER) and an index fund (0.2% TER) has a devastating compounding impact over 20+ years. Let's quantify it concretely.</p>
-
-    <div class="formula-block">
-    <strong>Fee Drag on ₹10,000/month SIP over 20 Years</strong><br><br>
-    Gross return assumed: 12% CAGR (before fees)<br><br>
-    Index Fund (0.2% TER): Net return ≈ 11.8%<br>
-    → Corpus after 20 years ≈ <strong>₹1.04 Crore</strong><br><br>
-    Active Fund (2.0% TER): Net return ≈ 10.0%<br>
-    → Corpus after 20 years ≈ <strong>₹76 Lakh</strong><br><br>
-    Fee Drag Loss: ≈ ₹28 Lakh on the same SIP
-    </div>
-
-    <p>That is a difference of approximately ₹28 lakh on a ₹10,000/month SIP over 20 years — purely from the fee differential. The total amount invested is the same (₹24 lakh over 20 years). The index fund investor ends up with nearly 37% more corpus simply by paying lower fees, assuming identical gross returns.</p>
-    <p>This analysis assumes the active fund matches gross index returns — which, as we've seen from AMFI data, most active large-cap funds don't even achieve. If the active fund underperforms by even 1% additionally, the gap widens further.</p>
-
-    <h2 id="which-should-you-choose">Which Should You Choose?</h2>
-    <p>The answer depends significantly on the market segment (cap category) you're investing in:</p>
-
-    <h3>Large-Cap: Favour Index Funds</h3>
-    <p>For Nifty 50 or large-cap investing, the evidence strongly favours passive index funds. The market is efficient, active managers are constrained by SEBI mandates to hold similar stocks, and the fee drag is impossible for most managers to overcome consistently. A Nifty 50 index fund or ETF should form the core (50–60%) of most long-term equity portfolios. This is true especially for investors who cannot dedicate significant time to monitoring fund manager changes, style drift, or rolling return analysis.</p>
-
-    <h3>Mid &amp; Small-Cap: Active Management Can Add Value</h3>
-    <p>The situation is meaningfully different for mid-cap and small-cap funds. These market segments are less efficiently priced — analyst coverage is sparser, institutional ownership is lower, and information asymmetries are greater. Skilled active fund managers with dedicated research teams can genuinely identify undervalued companies before the market does.</p>
-
-    <div class="callout info">
-    <strong>Market Inefficiency Works for You:</strong> In mid and small-cap segments, active fund managers add measurable alpha. AMFI data shows that a higher proportion of top-quartile active mid-cap funds have beaten the Nifty Midcap 150 TRI over 7–10 year periods compared to large-cap peers.
-    </div>
-
-    <p>However, even here, fund selection is critical. Not all active mid-cap managers are equal. Look for consistent performance across multiple 3-year rolling periods, a stable fund management team, and a well-articulated investment philosophy before committing to an active mid-cap fund.</p>
-
-    <h2 id="the-hybrid-approach">The Hybrid Approach: Getting the Best of Both</h2>
-    <p>Many sophisticated retail investors and financial planners recommend a hybrid portfolio construction that leverages the strengths of both approaches:</p>
-
-    <ul>
-    <li><strong>Core (60–70%):</strong> Nifty 50 or Nifty 100 index fund — low cost, benchmark returns, fully passive</li>
-    <li><strong>Satellite (20–30%):</strong> 1–2 high-conviction active mid-cap or flexi-cap funds — potential alpha in less-efficient segments</li>
-    <li><strong>Tactical (0–10%):</strong> Thematic or sector ETFs for specific opportunities (IT, pharma, infrastructure) — only if you track the sector actively</li>
-    </ul>
-
-    <p>This "core-satellite" approach captures near-benchmark returns on the bulk of the portfolio (avoiding underperformance risk) while allowing a portion to potentially generate alpha through active management in less-efficient market segments. The cost blended across the portfolio remains significantly lower than going all-active, and the risk of total fund manager failure is contained to the satellite portion.</p>
-    <p>For most first-time or time-constrained investors, starting with a simple two-fund portfolio — a Nifty 50 index fund and a Nifty Next 50 index fund — is a highly rational, evidence-based approach that requires minimal monitoring and delivers market returns at minimal cost. As you grow in investing confidence, you can add active mid-cap exposure selectively.</p>
-    <p>The bottom line: don't pay 2% per year for the privilege of hoping a fund manager beats an index that consistently delivers 11–13% CAGR over the long term. In large-caps, buy the index. In mid/small-caps, research active managers carefully or again default to a mid-cap index fund. Keep costs low, stay invested long, and let compounding do the work.</p>
-
-    </div>
-    <nav class="article-nav" aria-label="Article Navigation">
-    <a href="rupee-cost-averaging-explained.html" class="article-nav-link prev">
-    <div class="nav-dir">← Previous Article</div>
-    <div class="nav-title">Rupee Cost Averaging Explained</div>
-    </a>
-    <a href="mutual-fund-types-beginner-guide.html" class="article-nav-link next">
-    <div class="nav-dir">Next Article →</div>
-    <div class="nav-title">Mutual Fund Types: A Beginner's Guide</div>
-    </a>
-    </nav>
-  </article>
-
-  <aside class="article-sidebar">
-    <div class="toc-card">
-    <h4>Table of Contents</h4>
-    <ol>
-    <li><a href="#what-are-active-funds">What Are Active Funds?</a></li>
-    <li><a href="#what-are-passive-index-funds">What Are Passive / Index Funds?</a></li>
-    <li><a href="#performance-the-real-data">Performance: The Real Data</a></li>
-    <li><a href="#fee-impact-over-time">Fee Impact Over Time</a></li>
-    <li><a href="#which-should-you-choose">Which Should You Choose?</a></li>
-    <li><a href="#the-hybrid-approach">The Hybrid Approach</a></li>
-    </ol>
-    </div>
-    <div class="toc-card">
-    <h4>Try Our Calculators</h4>
-    <ol style="list-style:none; padding:0;">
-    <li style="margin-bottom:12px;"><a href="index.html" class="btn btn-primary" style="display:block; text-align:center; padding:10px; font-size:0.85rem;">SIP Calculator</a></li>
-    <li style="margin-bottom:12px;"><a href="lumpsum.html" class="btn" style="display:block; text-align:center; padding:10px; font-size:0.85rem; background:var(--surface); border:1px solid var(--border-soft); border-radius:var(--radius-sm); color:var(--text-primary);">Lumpsum Calculator</a></li>
-    <li><a href="goal.html" class="btn" style="display:block; text-align:center; padding:10px; font-size:0.85rem; background:var(--surface); border:1px solid var(--border-soft); border-radius:var(--radius-sm); color:var(--text-primary);">Goal Planner</a></li>
-    </ol>
-    </div>
-  </aside>
-  </div>
   </main>
 
   <footer class="site-footer">
-  <div class="footer-inner">
-  <div class="footer-brand">
-    <a href="index.html" class="brand"><span class="brand-icon"><img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="40"></span></a>
-    <p>Providing clear, accurate, and premium financial projection calculators for everyday long-term planners.</p>
-    <div class="footer-social">
-    <a href="https://youtube.com/@tejaswrite?si=7l5xL2Pi0d6JKIld" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.388.555A3.003 3.003 0 0 0 .502 6.163C0 8.07 0 12 0 12s0 3.93.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.47 20.5 12 20.5 12 20.5s7.53 0 9.388-.555a3.003 3.003 0 0 0 2.11-2.108C24 15.93 24 12 24 12s0-3.93-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-    <a href="mailto:tejascopywrites@gmail.com" aria-label="Email Us"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-icon"><img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="40"></span></a>
+        <p>Providing clear, accurate, and premium financial projection calculators for everyday long-term planners.</p>
+      </div>
+      <nav class="footer-col" aria-label="Calculators">
+        <h3>Calculators</h3>
+        <a href="index.html">SIP Calculator</a>
+        <a href="lumpsum.html">Lumpsum Calculator</a>
+        <a href="step-up.html">Step-Up SIP Calculator</a>
+        <a href="goal.html">SIP Goal Planner</a>
+      </nav>
+      <nav class="footer-col" aria-label="Company Resources">
+        <h3>Company</h3>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog.html">Articles &amp; Guides</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <nav class="footer-col" aria-label="Legal Disclosures">
+        <h3>Legal</h3>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="cookies.html">Cookie Policy</a>
+      </nav>
     </div>
-  </div>
-  <nav class="footer-col" aria-label="Calculators List">
-    <h3>Calculators</h3>
-    <a href="index.html">SIP Calculator</a>
-    <a href="lumpsum.html">Lumpsum Calculator</a>
-    <a href="step-up.html">Step-Up SIP Calculator</a>
-    <a href="goal.html">SIP Goal Planner</a>
-  </nav>
-  <nav class="footer-col" aria-label="Company Resources">
-    <h3>Company</h3>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="blog.html">Articles &amp; Guides</a>
-    <a href="disclaimer.html">Disclaimer</a>
-  </nav>
-  <nav class="footer-col" aria-label="Legal Disclosures">
-    <h3>Legal</h3>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms &amp; Conditions</a>
-    <a href="cookies.html">Cookie Policy</a>
-  </nav>
-  </div>
-  <div class="footer-bottom">
-  <p>&copy; 2026 Calculatorship. All rights reserved. Calculations are for illustrative purposes only.</p>
-  </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Calculatorship. All rights reserved. Articles are for educational purposes only and do not constitute investment advice.</p>
+    </div>
   </footer>
 
   <script src="theme.js" defer></script>
   <script>
-  window.addEventListener('scroll', () => {
-  const el = document.getElementById('readProgress');
-  if (!el) return;
-  const h = document.body.scrollHeight - window.innerHeight;
-  el.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
-  });
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('readProgress');
+      if (!el) return;
+      const h = document.body.scrollHeight - window.innerHeight;
+      el.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    });
   </script>
 </body>
 </html>
