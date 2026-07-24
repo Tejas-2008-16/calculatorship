@@ -390,20 +390,32 @@
     const searchInput = document.getElementById('blog-search');
 
     function filterCards() {
-      const activeCat = document.querySelector('.blog-cat-btn.active').dataset.cat;
-      const query = searchInput.value.toLowerCase().trim();
+      const activeBtn = document.querySelector('.blog-cat-btn.active');
+      const activeCat = activeBtn ? activeBtn.dataset.cat : 'all';
+      const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
       let visible = 0;
 
       cards.forEach(card => {
-        const catMatch = activeCat === 'all' || card.dataset.cat === activeCat;
+        const cardCat = card.dataset.cat;
+        const catMatch = activeCat === 'all' || cardCat === activeCat;
         const text = card.textContent.toLowerCase();
         const qMatch = !query || text.includes(query);
         const show = catMatch && qMatch;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
+
+        if (show) {
+          card.classList.remove('is-hidden');
+          card.style.display = 'flex';
+          visible++;
+        } else {
+          card.classList.add('is-hidden');
+          card.style.display = 'none';
+        }
       });
 
-      noRes.hidden = visible > 0;
+      if (noRes) {
+        noRes.hidden = visible > 0;
+        noRes.style.display = visible > 0 ? 'none' : 'block';
+      }
     }
 
     catBtns.forEach(btn => {
@@ -414,7 +426,34 @@
       });
     });
 
-    searchInput.addEventListener('input', filterCards);
+    if (searchInput) {
+      searchInput.addEventListener('input', filterCards);
+    }
+
+    // Enable direct tag clicks to filter by category
+    document.querySelectorAll('.blog-card-cat, .blog-card-tag').forEach(tag => {
+      tag.style.cursor = 'pointer';
+      tag.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const txt = tag.textContent.trim().toLowerCase();
+        let catKey = 'all';
+        if (txt.includes('investing') || txt.includes('basics')) catKey = 'investing-basics';
+        else if (txt.includes('strategy')) catKey = 'strategy';
+        else if (txt.includes('tax') || txt.includes('planning')) catKey = 'tax';
+
+        const targetBtn = document.querySelector(`.blog-cat-btn[data-cat="${catKey}"]`);
+        if (targetBtn) {
+          catBtns.forEach(b => b.classList.remove('active'));
+          targetBtn.classList.add('active');
+          filterCards();
+          window.scrollTo({ top: 300, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Initial run
+    filterCards();
 
     // Scroll reveal
     const observer = new IntersectionObserver(entries => {

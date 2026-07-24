@@ -243,7 +243,7 @@ p {
 }
 
 .section-inner {
-  max-width: 1120px;
+  max-width: 1360px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -359,7 +359,7 @@ p {
 }
 
 .header-inner {
-  max-width: 1240px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 14px 24px;
   display: flex;
@@ -864,7 +864,7 @@ p {
    AD SLOTS
    ============================================================ */
 .ad-slot {
-  max-width: 1120px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 24px;
   text-align: center;
@@ -1571,7 +1571,7 @@ p {
 }
 
 .footer-inner {
-  max-width: 1240px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 72px 24px 36px;
   display: grid;
@@ -2173,7 +2173,7 @@ p {
    ============================================================ */
 
 .article-wrap {
-  max-width: 1160px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 24px 72px;
   display: grid;
@@ -2517,7 +2517,7 @@ p {
    ARTICLE HEADER & META
    ============================================================ */
 .article-header {
-  max-width: 820px;
+  max-width: 1040px;
   margin: 0 auto 36px;
   padding: 0 24px;
 }
@@ -2576,7 +2576,7 @@ p {
    BLOG HERO & FILTER BUTTONS
    ============================================================ */
 .blog-hero {
-  max-width: 780px;
+  max-width: 1040px;
   margin: 0 auto 36px;
   padding: 40px 24px 0;
   text-align: center;
@@ -2664,7 +2664,7 @@ p {
    MINIMAL EDITORIAL BLOG LIST (PRD Spec)
    ============================================================ */
 .blog-grid {
-  max-width: 780px !important;
+  max-width: 1040px !important;
   margin: 0 auto !important;
   padding: 0 24px 60px !important;
   display: flex !important;
@@ -2674,8 +2674,8 @@ p {
 }
 
 .blog-card {
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex;
+  flex-direction: column;
   padding: 28px 0 !important;
   border: none !important;
   border-bottom: 1px solid var(--border-soft) !important;
@@ -2684,6 +2684,10 @@ p {
   box-shadow: none !important;
   transform: none !important;
   transition: none !important;
+}
+
+.blog-card.is-hidden {
+  display: none !important;
 }
 
 .blog-card:hover {
