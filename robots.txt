@@ -1,13 +1,19 @@
 # =====================================================
 # ROBOTS.TXT — Calculatorship Financial Calculators
-# https://www.calculatorship.in/robots.txt
+# Website: https://www.calculatorship.in/
 # =====================================================
 
 User-agent: *
 Allow: /
+Allow: /ads.txt
 
-# Disallow crawling of internal system files only
+# AdSense Crawler Explicit Access
+User-agent: Mediapartners-Google
+Allow: /
+
+# Disallow internal system / config files
 Disallow: /*.json$
+Disallow: /*.config$
 
 # Sitemaps
 Sitemap: https://www.calculatorship.in/sitemap.xml

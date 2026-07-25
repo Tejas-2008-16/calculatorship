@@ -2782,14 +2782,144 @@ p {
   text-decoration: underline !important;
 }
 
-/* Ad Placeholders */
-.ad-placeholder {
-  display: none !important;
+/* ==========================================================================
+   ADSENSE AD SLOTS & AUTHOR BADGE ENHANCEMENTS
+   ========================================================================== */
+.ad-container {
+  width: 100%;
+  margin: 2rem 0;
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+}
+
+.ad-slot-header,
+.ad-slot-infeed,
+.ad-slot-footer {
+  display: block;
+  min-height: 90px;
+  background: var(--surface-hover, rgba(16, 185, 129, 0.03));
+  border: 1px dashed var(--border-soft, rgba(16, 185, 129, 0.2));
+  border-radius: var(--radius-md, 12px);
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.ad-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted, #6B7280);
+  margin-bottom: 4px;
+}
+
+/* Author Box & Badge Styling */
+.author-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--surface, #FFFFFF);
+  border: 1px solid var(--border-glow, rgba(16, 185, 129, 0.2));
+  border-radius: var(--radius-md, 16px);
+  padding: 24px;
+  margin: 2.5rem 0;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.author-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--emerald-bright, #10B981) 0%, var(--emerald, #059669) 100%);
+}
+
+.author-avatar {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--emerald, #059669) 0%, var(--emerald-bright, #10B981) 100%);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.author-info h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: var(--emerald-bright, #10B981);
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.author-role {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--emerald-bright, #10B981);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.author-info p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Footer Email Contact Link */
+.footer-email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--emerald-soft, rgba(16, 185, 129, 0.1));
+  border: 1px solid var(--border-glow, rgba(16, 185, 129, 0.2));
+  color: var(--emerald-bright, #10B981) !important;
+  border-radius: var(--radius-sm, 8px);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.footer-email-btn:hover {
+  background: var(--emerald-bright, #10B981);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
 }
 
 /* Print Mode */
 @media print {
-  .site-header, .site-footer, .ad-slot, .content-sidebar, .hero-aurora,
+  .site-header, .site-footer, .ad-slot, .ad-container, .content-sidebar, .hero-aurora,
   .newsletter-section, .cta-section, .table-tabs, #tab-monthly, #panel-monthly,
   .result-actions, .breadcrumb-bar, .main-nav, .theme-toggle, .nav-toggle,
   .related-grid, #learn, #related, .faq-list, .faq-item, .formula-card {
@@ -2802,4 +2932,5 @@ p {
     background-image: none !important;
   }
 }
+
 
