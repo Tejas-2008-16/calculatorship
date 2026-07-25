@@ -142,15 +142,39 @@
     <!-- Editorial Article List (PRD Minimal Spec) -->
     <div class="blog-grid" id="blog-grid" aria-label="Article list">
 
-      <!-- Item 1 (Featured) -->
+      <!-- Item New 1 -->
       <article class="blog-card featured reveal" data-cat="investing-basics">
         <span class="blog-card-cat">Investing Basics</span>
-        <h2>The Power of Compounding: How Early Investments Create Massive Wealth</h2>
-        <p>Discover why compounding is the ultimate wealth builder and how a ₹5,000 monthly SIP started at 25 can create a ₹5+ crore corpus by retirement.</p>
+        <h2>Got Your First Salary? Here is Exactly What to Do With It (2026 Indian Guide)</h2>
+        <p>Just received your first salary in India? Learn the exact 50/30/20 step-by-step framework to budget, set up an emergency fund, and start your first SIP without feeling broke.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-tag">Investing Basics</span>
+          <span class="blog-card-readtime">7 min read</span>
+          <a href="got-first-salary-investing-guide-india.html">Read Article →</a>
+        </div>
+      </article>
+
+      <!-- Item New 2 -->
+      <article class="blog-card reveal" data-cat="investing-basics">
+        <span class="blog-card-cat">Investing Basics</span>
+        <h2>How to Pick Your First Mutual Fund in India (Without Getting Overwhelmed)</h2>
+        <p>Confused by 2,500+ mutual fund schemes? Filter out noise with a simple 4-step framework based on investment horizon, TER expense ratio, and rolling return consistency.</p>
         <div class="blog-card-footer">
           <span class="blog-card-tag">Investing Basics</span>
           <span class="blog-card-readtime">8 min read</span>
-          <a href="the-power-of-compounding.html">Read Article →</a>
+          <a href="how-to-pick-your-first-mutual-fund-india.html">Read Article →</a>
+        </div>
+      </article>
+
+      <!-- Item New 3 -->
+      <article class="blog-card reveal" data-cat="investing-basics">
+        <span class="blog-card-cat">Investing Basics</span>
+        <h2>What Happens If You Miss a SIP Payment in India? (Rules &amp; Bank Charges)</h2>
+        <p>Did your SIP auto-debit bounce due to low bank balance? Bust common penalty myths, check real bank NACH fail fees, and learn how to use the Pause SIP feature.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-tag">Investing Basics</span>
+          <span class="blog-card-readtime">7 min read</span>
+          <a href="what-happens-if-you-miss-sip-payment.html">Read Article →</a>
         </div>
       </article>
 
@@ -421,7 +445,7 @@
           card.classList.remove('is-hidden');
           card.style.display = 'flex';
           visible++;
-        } else {
+        ₹else {
           card.classList.add('is-hidden');
           card.style.display = 'none';
         }
@@ -431,9 +455,7 @@
         noRes.hidden = visible > 0;
         noRes.style.display = visible > 0 ? 'none' : 'block';
       }
-    }
-
-    catBtns.forEach(btn => {
+    ₹catBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         catBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
@@ -476,5 +498,111 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
+
+<!-- ============================================================ -->
+<!-- COOKIE CONSENT BANNER — PASTE BEFORE CLOSING </body> TAG   -->
+<!-- Add this snippet to EVERY page on the site                 -->
+<!-- ============================================================ -->
+<div id="cs-cookie-banner" class="cs-cookie-banner" style="display: none;">
+  <div class="cs-cookie-container">
+    <div class="cs-cookie-text">
+      We use cookies to improve your experience and analyse site traffic. By continuing, you agree to our <a href="cookies.html">Cookie Policy</a>.
+    </div>
+    <div class="cs-cookie-actions">
+      <button id="cs-accept-cookies" class="cs-btn-accept" type="button">Accept All</button>
+      <button id="cs-manage-cookies" class="cs-btn-manage" type="button">Manage Preferences</button>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE PREFERENCES MODAL -->
+<div id="cs-cookie-modal-overlay" class="cs-cookie-modal-overlay" style="display: none;">
+  <div class="cs-cookie-modal">
+    <h3>Cookie Preferences</h3>
+    <p style="color: #A0AFA8; font-size: 0.85rem; margin-bottom: 20px;">Customize your privacy settings for Calculatorship. Essential cookies are required for basic site operations.</p>
+    
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Essential Cookies</h4>
+        <p>Required for security, navigation and calculation logic.</p>
+      </div>
+      <span class="cs-toggle-badge">Always Required</span>
+    </div>
+
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Analytics Cookies</h4>
+        <p>Helps us analyze aggregate site traffic and usage trends.</p>
+      </div>
+      <label class="cs-switch">
+        <input type="checkbox" id="cs-toggle-analytics" checked>
+        <span class="cs-slider"></span>
+      </label>
+    </div>
+
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Advertising Cookies</h4>
+        <p>Allows Google AdSense to serve relevant personalized ads.</p>
+      </div>
+      <label class="cs-switch">
+        <input type="checkbox" id="cs-toggle-advertising" checked>
+        <span class="cs-slider"></span>
+      </label>
+    </div>
+
+    <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px;">
+      <button id="cs-save-preferences" class="cs-btn-accept" type="button" style="width: 100%;">Save Preferences</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* === CS COOKIE BANNER JS === */
+(function() {
+  function initCookieConsent() {
+    var consent = localStorage.getItem('cookieConsent');
+    var banner = document.getElementById('cs-cookie-banner');
+    var modal = document.getElementById('cs-cookie-modal-overlay');
+    var btnAccept = document.getElementById('cs-accept-cookies');
+    var btnManage = document.getElementById('cs-manage-cookies');
+    var btnSave = document.getElementById('cs-save-preferences');
+
+    if (!banner || !btnAccept) return;
+
+    if (!consent) {
+      banner.style.display = 'block';
+    ₹btnAccept.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: true, advertising: true }));
+      banner.style.display = 'none';
+    });
+
+    btnManage.addEventListener('click', function() {
+      modal.style.display = 'flex';
+    });
+
+    if (btnSave) {
+      btnSave.addEventListener('click', function() {
+        var analytics = document.getElementById('cs-toggle-analytics').checked;
+        var advertising = document.getElementById('cs-toggle-advertising').checked;
+        localStorage.setItem('cookieConsent', 'custom');
+        localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: analytics, advertising: advertising }));
+        modal.style.display = 'none';
+        banner.style.display = 'none';
+      });
+    ₹modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  ₹if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCookieConsent);
+  ₹else {
+    initCookieConsent();
+  }
+})();
+</script>
+
 </body>
 </html>

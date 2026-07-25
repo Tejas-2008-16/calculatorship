@@ -261,18 +261,11 @@
   </section>
 
   <!-- Google AdSense -->
-  <div class="ad-slot ad-slot-banner" aria-label="Advertisement Banner">
-  <span class="ad-label">Advertisement</span>
-  <div class="ad-placeholder"></div>
-  </div>
+</div>
 
   <!-- Main Content & Sidebar Grid -->
-  <div class="content-with-sidebar">
-  
-  <!-- Main Content -->
-  <div class="content-main">
-    
-    <!-- Schedules -->
+<!-- Main Content -->
+<!-- Schedules -->
     <section class="section" id="breakdown-section" aria-labelledby="breakdown-title">
     <div class="section-inner">
     <span class="eyebrow">Compound Schedules</span>
@@ -333,11 +326,63 @@
     </div>
     </section>
 
-    <!-- Google AdSense -->
-    <div class="ad-slot ad-slot-inline" aria-label="Advertisement Inline">
-    <span class="ad-label">Advertisement</span>
-    <div class="ad-placeholder"></div>
+<section class="section" id="how-it-works-section" >
+  <div class="section-inner">
+    <span class="eyebrow">Financial Education</span>
+    <h2>How This Lumpsum Calculator Works</h2>
+    <article class="prose" style="margin-bottom: 24px;">
+      <p>A <strong>lumpsum calculator</strong> measures the future growth of a single, one-time investment over a specific holding period. Whether you are investing a festival bonus, property sale proceeds, or an annual windfall, this calculator computes compound growth using the classic compound interest formula.</p>
+      
+      <div class="formula-card glass-card" style="margin: 20px 0;">
+        <p class="formula-label">Lumpsum Compounding Formula</p>
+        <div class="formula-math mono" style="font-size: 1.2rem; color: var(--emerald); margin: 12px 0;">
+          FV = P &times; &lpar;1 + r / n&rpar;<sup>n &times; t</sup>
+        </div>
+        <ul class="formula-legend" style="font-size: 0.85rem; color: var(--text-secondary);">
+          <li><b>FV</b> &mdash; Future Value (Total Projected Return)</li>
+          <li><b>P</b> &mdash; Initial One-Time Lumpsum Principal (e.g. ₹1,000,000)</li>
+          <li><b>r</b> &mdash; Expected Annual CAGR Return (e.g. 12% = 0.12)</li>
+          <li><b>n</b> &mdash; Compounding Frequency Per Year (12 for monthly compounding)</li>
+          <li><b>t</b> &mdash; Investment Tenure in Years</li>
+        </ul>
+      </div>
+
+      <p>Choosing between a single one-time payment and recurring monthly investments depends on market conditions and your cash flow. To decide which approach suits your capital, read our comparison guide on <a href="sip-vs-lumpsum.html" style="color: #22C55E; text-decoration: underline;">SIP vs Lumpsum Investment Strategy</a>.</p>
+    </article>
+
+    <div style="margin-top: 36px;">
+      <span class="eyebrow">Practical Applications</span>
+      <h3>When Should You Use This Calculator?</h3>
+      <div class="tips-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px;">
+        <div class="bento-card" style="padding: 20px;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">1. Investing an Annual Performance Bonus</h4>
+          <p style="color: #A0AFA8; font-size: 0.88rem;">You received a yearly company bonus of ₹2,00,000 and want to project how much it will grow over 10 years in an equity fund.</p>
+        </div>
+        <div class="bento-card" style="padding: 20px;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">2. Parking Fixed Deposit (FD) Proceeds</h4>
+          <p style="color: #A0AFA8; font-size: 0.88rem;">Your bank FD of ₹5,00,000 matured, and you wish to evaluate the wealth difference of shifting it into a mutual fund with a 12% CAGR.</p>
+        </div>
+        <div class="bento-card" style="padding: 20px;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">3. Evaluating Market Dip Opportunities</h4>
+          <p style="color: #A0AFA8; font-size: 0.88rem;">During a major market correction, you have ₹1,00,000 ready to deploy and want to estimate 5-year recovery returns.</p>
+        </div>
+      </div>
     </div>
+
+    <div style="margin-top: 36px;">
+      <span class="eyebrow">Pro Tips</span>
+      <h3>Tips for Getting Accurate Projections</h3>
+      <ul style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; padding-left: 20px; margin-top: 12px;">
+        <li><strong>Beware of Market Timing:</strong> Investing a large lumpsum at market peaks can cause short-term portfolio dips. Consider a Systematic Transfer Plan (STP) if markets are volatile.</li>
+        <li><strong>Match Risk to Horizon:</strong> For horizons under 3 years, project conservative debt returns of 6-7% rather than aggressive equity return rates.</li>
+        <li><strong>Factor in Taxes:</strong> In India, Equity Long-Term Capital Gains (LTCG) above ₹1.25 Lakh are taxed at 12.5%, so subtract applicable tax for net wealth estimates.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <!-- Google AdSense -->
+</div>
 
     <!-- Educational Section -->
     <section class="section section-tint" id="educational-content" aria-labelledby="edu-title">
@@ -494,18 +539,18 @@
   </div>
 
   <!-- Sidebar -->
-  <aside class="content-sidebar" aria-label="Sidebar advertisements">
-    <div class="ad-slot ad-slot-sidebar sticky-sidebar">
-    <span class="ad-label">Advertisement</span>
-    <div class="ad-placeholder"></div>
-    </div>
-  </aside>
+  
+  <!-- Sticky Sidebar Column -->
+    <!-- Sticky Sidebar Column -->
+
+
 
   </div>
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
+<!-- ============================================ -->
+<footer class="site-footer">
   <div class="footer-inner">
   <div class="footer-brand">
     <a href="index.html" class="brand">
@@ -556,5 +601,111 @@
   <!-- Scripts -->
   <script src="theme.js" defer></script>
   <script src="calculator.js" defer></script>
+
+<!-- ============================================================ -->
+<!-- COOKIE CONSENT BANNER — PASTE BEFORE CLOSING </body> TAG   -->
+<!-- Add this snippet to EVERY page on the site                 -->
+<!-- ============================================================ -->
+<div id="cs-cookie-banner" class="cs-cookie-banner" style="display: none;">
+  <div class="cs-cookie-container">
+    <div class="cs-cookie-text">
+      We use cookies to improve your experience and analyse site traffic. By continuing, you agree to our <a href="cookies.html">Cookie Policy</a>.
+    </div>
+    <div class="cs-cookie-actions">
+      <button id="cs-accept-cookies" class="cs-btn-accept" type="button">Accept All</button>
+      <button id="cs-manage-cookies" class="cs-btn-manage" type="button">Manage Preferences</button>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE PREFERENCES MODAL -->
+<div id="cs-cookie-modal-overlay" class="cs-cookie-modal-overlay" style="display: none;">
+  <div class="cs-cookie-modal">
+    <h3>Cookie Preferences</h3>
+    <p style="color: #A0AFA8; font-size: 0.85rem; margin-bottom: 20px;">Customize your privacy settings for Calculatorship. Essential cookies are required for basic site operations.</p>
+    
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Essential Cookies</h4>
+        <p>Required for security, navigation and calculation logic.</p>
+      </div>
+      <span class="cs-toggle-badge">Always Required</span>
+    </div>
+
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Analytics Cookies</h4>
+        <p>Helps us analyze aggregate site traffic and usage trends.</p>
+      </div>
+      <label class="cs-switch">
+        <input type="checkbox" id="cs-toggle-analytics" checked>
+        <span class="cs-slider"></span>
+      </label>
+    </div>
+
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Advertising Cookies</h4>
+        <p>Allows Google AdSense to serve relevant personalized ads.</p>
+      </div>
+      <label class="cs-switch">
+        <input type="checkbox" id="cs-toggle-advertising" checked>
+        <span class="cs-slider"></span>
+      </label>
+    </div>
+
+    <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px;">
+      <button id="cs-save-preferences" class="cs-btn-accept" type="button" style="width: 100%;">Save Preferences</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* === CS COOKIE BANNER JS === */
+(function() {
+  function initCookieConsent() {
+    var consent = localStorage.getItem('cookieConsent');
+    var banner = document.getElementById('cs-cookie-banner');
+    var modal = document.getElementById('cs-cookie-modal-overlay');
+    var btnAccept = document.getElementById('cs-accept-cookies');
+    var btnManage = document.getElementById('cs-manage-cookies');
+    var btnSave = document.getElementById('cs-save-preferences');
+
+    if (!banner || !btnAccept) return;
+
+    if (!consent) {
+      banner.style.display = 'block';
+    ₹btnAccept.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: true, advertising: true }));
+      banner.style.display = 'none';
+    });
+
+    btnManage.addEventListener('click', function() {
+      modal.style.display = 'flex';
+    });
+
+    if (btnSave) {
+      btnSave.addEventListener('click', function() {
+        var analytics = document.getElementById('cs-toggle-analytics').checked;
+        var advertising = document.getElementById('cs-toggle-advertising').checked;
+        localStorage.setItem('cookieConsent', 'custom');
+        localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: analytics, advertising: advertising }));
+        modal.style.display = 'none';
+        banner.style.display = 'none';
+      });
+    ₹modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  ₹if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCookieConsent);
+  ₹else {
+    initCookieConsent();
+  }
+})();
+</script>
+
 </body>
 </html>

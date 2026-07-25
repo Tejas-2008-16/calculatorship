@@ -391,20 +391,11 @@
     </div>
   </div>
   </section>
-
-  <!-- Google AdSense - Position: After Hero -->
-  <div class="ad-slot ad-slot-banner" aria-label="Advertisement Banner">
-  <span class="ad-label">Advertisement</span>
-  <div class="ad-placeholder"></div>
-  </div>
+</div>
 
   <!-- Main Content & Sidebar Grid -->
-  <div class="content-with-sidebar">
-  
-  <!-- Main Content Area -->
-  <div class="content-main">
-    
-    <!-- Table breakdowns -->
+<!-- Main Content Area -->
+<!-- Table breakdowns -->
     <section class="section" id="breakdown-section" aria-labelledby="breakdown-title">
     <div class="section-inner">
     <span class="eyebrow">Amortization & Schedules</span>
@@ -462,14 +453,90 @@
       </div>
       </div>
     </div>
-    </div>
+  
+    <!-- How This Calculator Works -->
+    <section class="section section-tint" id="how-it-works-section">
+      <div class="section-inner">
+        <span class="eyebrow">Financial Education</span>
+        <h2>How This SIP Calculator Works</h2>
+        <article class="prose" style="margin-bottom: 24px;">
+          <p>A <strong>SIP calculator</strong> helps you project the future wealth of your monthly mutual fund investments by calculating compound interest over time. Instead of manually computing monthly compounding multipliers, this tool automates the future value math using the standard formula recognized by Indian Asset Management Companies (AMCs) and SEBI.</p>
+
+          <div class="formula-card glass-card" style="margin: 24px 0; padding: 28px;">
+            <p class="formula-label" style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--emerald); font-weight: 700; margin-bottom: 14px;">Monthly SIP Compounding Formula</p>
+            <div class="formula-math mono" style="font-size: 1.25rem; color: var(--emerald); margin: 12px 0; font-family: var(--font-mono);">
+              FV = P &times; [ (1 + i)<sup>n</sup> &minus; 1 ] / i &times; (1 + i)
+            </div>
+            <ul style="list-style: none; padding: 0; margin: 16px 0 0; font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px;">
+              <li><strong style="color: var(--text-primary);">FV</strong> — Future Value (Total Projected Wealth)</li>
+              <li><strong style="color: var(--text-primary);">P</strong> — Monthly SIP Deposit (e.g. ₹5,000)</li>
+              <li><strong style="color: var(--text-primary);">i</strong> — Monthly Interest Rate (Annual Rate / 12 / 100)</li>
+              <li><strong style="color: var(--text-primary);">n</strong> — Total Number of Months (Years &times; 12)</li>
+            </ul>
+          </div>
+
+          <p>Understanding this mathematical growth curve is essential for long-term financial planning. To learn more about how small early monthly contributions multiply exponentially over time, read our guide on <a href="the-power-of-compounding.html" style="color: var(--emerald); text-decoration: underline;">The Power of Compounding</a>.</p>
+        </article>
+
+        <div style="margin-top: 32px;">
+          <span class="eyebrow">Practical Applications</span>
+          <h3 style="font-size: 1.4rem; margin-bottom: 18px;">When Should You Use This Calculator?</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+            <div class="glass-card" style="padding: 22px;">
+              <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(5,150,105,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
+                <span style="color: var(--emerald); font-weight: 700; font-size: 1rem;">1</span>
+              </div>
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin: 0 0 8px;">Planning Your First SIP</h4>
+              <p style="color: var(--text-secondary); font-size: 0.87rem; line-height: 1.6; margin: 0;">If you just received your first salary and want to know how much a ₹5,000 monthly SIP will grow over 15–20 years in an equity mutual fund.</p>
+            </div>
+            <div class="glass-card" style="padding: 22px;">
+              <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(217,119,6,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
+                <span style="color: var(--gold); font-weight: 700; font-size: 1rem;">2</span>
+              </div>
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin: 0 0 8px;">Retirement Wealth Targets</h4>
+              <p style="color: var(--text-secondary); font-size: 0.87rem; line-height: 1.6; margin: 0;">Accumulate a ₹1 Crore corpus by age 45 and test whether a 12% CAGR return is sufficient for your current monthly savings rate.</p>
+            </div>
+            <div class="glass-card" style="padding: 22px;">
+              <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(37,99,235,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
+                <span style="color: var(--steel); font-weight: 700; font-size: 1rem;">3</span>
+              </div>
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin: 0 0 8px;">Comparing Fund Performance</h4>
+              <p style="color: var(--text-secondary); font-size: 0.87rem; line-height: 1.6; margin: 0;">Compare ₹10,000/month in a conservative hybrid fund (8% CAGR) vs. an aggressive flexi cap fund (12% CAGR) over 20 years.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px;">
+          <span class="eyebrow">Pro Tips</span>
+          <h3 style="font-size: 1.4rem; margin-bottom: 16px;">Tips for Getting Accurate Projections</h3>
+          <div class="glass-card" style="padding: 24px 28px;">
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--emerald); font-size: 1.1rem; margin-top: 2px; flex-shrink: 0;">✓</span>
+                <span style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;"><strong style="color: var(--text-primary);">Use Realistic Return Expectations:</strong> For diversified equity funds in India, use 10–12% CAGR. Avoid assuming unrealistic 20%+ short-term returns.</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--emerald); font-size: 1.1rem; margin-top: 2px; flex-shrink: 0;">✓</span>
+                <span style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;"><strong style="color: var(--text-primary);">Factor in Expense Ratios:</strong> Always choose Direct Plans over Regular Plans to save 1–1.5% in annual TER, boosting your final corpus significantly.</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--emerald); font-size: 1.1rem; margin-top: 2px; flex-shrink: 0;">✓</span>
+                <span style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;"><strong style="color: var(--text-primary);">Account for Inflation:</strong> ₹1 Crore in 20 years will buy less due to India's average 5–6% inflation rate. Plan accordingly.</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="color: var(--emerald); font-size: 1.1rem; margin-top: 2px; flex-shrink: 0;">✓</span>
+                <span style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;"><strong style="color: var(--text-primary);">Review Annually:</strong> Re-evaluate your SIP monthly amounts after salary appraisals to step up your contributions year-over-year.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Google AdSense - Position: Inline Content -->
-    <div class="ad-slot ad-slot-inline" aria-label="Advertisement Inline">
-    <span class="ad-label">Advertisement</span>
-    <div class="ad-placeholder"></div>
-    </div>
+  </div>
+  </div>
+</section>
+</div>
 
     <!-- Educational content -->
     <section class="section section-tint" id="educational-content" aria-labelledby="edu-title">
@@ -693,18 +760,18 @@
   </div>
 
   <!-- Sticky Sidebar Ads Grid -->
-  <aside class="content-sidebar" aria-label="Sidebar advertisements">
-    <div class="ad-slot ad-slot-sidebar sticky-sidebar">
-    <span class="ad-label">Advertisement</span>
-    <div class="ad-placeholder"></div>
-    </div>
-  </aside>
+  
+  <!-- Sticky Sidebar Column -->
+    <!-- Sticky Sidebar Column -->
+
+
 
   </div>
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
+<!-- ============================================ -->
+<footer class="site-footer">
   <div class="footer-inner">
   <div class="footer-brand">
     <a href="index.html" class="brand">
@@ -755,5 +822,111 @@
   <!-- Scripts -->
   <script src="theme.js" defer></script>
   <script src="calculator.js" defer></script>
+
+<!-- ============================================================ -->
+<!-- COOKIE CONSENT BANNER — PASTE BEFORE CLOSING </body> TAG   -->
+<!-- Add this snippet to EVERY page on the site                 -->
+<!-- ============================================================ -->
+<div id="cs-cookie-banner" class="cs-cookie-banner" style="display: none;">
+  <div class="cs-cookie-container">
+    <div class="cs-cookie-text">
+      We use cookies to improve your experience and analyse site traffic. By continuing, you agree to our <a href="cookies.html">Cookie Policy</a>.
+    </div>
+    <div class="cs-cookie-actions">
+      <button id="cs-accept-cookies" class="cs-btn-accept" type="button">Accept All</button>
+      <button id="cs-manage-cookies" class="cs-btn-manage" type="button">Manage Preferences</button>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE PREFERENCES MODAL -->
+<div id="cs-cookie-modal-overlay" class="cs-cookie-modal-overlay" style="display: none;">
+  <div class="cs-cookie-modal">
+    <h3>Cookie Preferences</h3>
+    <p style="color: #A0AFA8; font-size: 0.85rem; margin-bottom: 20px;">Customize your privacy settings for Calculatorship. Essential cookies are required for basic site operations.</p>
+    
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Essential Cookies</h4>
+        <p>Required for security, navigation and calculation logic.</p>
+      </div>
+      <span class="cs-toggle-badge">Always Required</span>
+    </div>
+
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Analytics Cookies</h4>
+        <p>Helps us analyze aggregate site traffic and usage trends.</p>
+      </div>
+      <label class="cs-switch">
+        <input type="checkbox" id="cs-toggle-analytics" checked>
+        <span class="cs-slider"></span>
+      </label>
+    </div>
+
+    <div class="cs-toggle-row">
+      <div class="cs-toggle-info">
+        <h4>Advertising Cookies</h4>
+        <p>Allows Google AdSense to serve relevant personalized ads.</p>
+      </div>
+      <label class="cs-switch">
+        <input type="checkbox" id="cs-toggle-advertising" checked>
+        <span class="cs-slider"></span>
+      </label>
+    </div>
+
+    <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px;">
+      <button id="cs-save-preferences" class="cs-btn-accept" type="button" style="width: 100%;">Save Preferences</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* === CS COOKIE BANNER JS === */
+(function() {
+  function initCookieConsent() {
+    var consent = localStorage.getItem('cookieConsent');
+    var banner = document.getElementById('cs-cookie-banner');
+    var modal = document.getElementById('cs-cookie-modal-overlay');
+    var btnAccept = document.getElementById('cs-accept-cookies');
+    var btnManage = document.getElementById('cs-manage-cookies');
+    var btnSave = document.getElementById('cs-save-preferences');
+
+    if (!banner || !btnAccept) return;
+
+    if (!consent) {
+      banner.style.display = 'block';
+    ₹btnAccept.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: true, advertising: true }));
+      banner.style.display = 'none';
+    });
+
+    btnManage.addEventListener('click', function() {
+      modal.style.display = 'flex';
+    });
+
+    if (btnSave) {
+      btnSave.addEventListener('click', function() {
+        var analytics = document.getElementById('cs-toggle-analytics').checked;
+        var advertising = document.getElementById('cs-toggle-advertising').checked;
+        localStorage.setItem('cookieConsent', 'custom');
+        localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: analytics, advertising: advertising }));
+        modal.style.display = 'none';
+        banner.style.display = 'none';
+      });
+    ₹modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  ₹if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCookieConsent);
+  ₹else {
+    initCookieConsent();
+  }
+})();
+</script>
+
 </body>
 </html>
