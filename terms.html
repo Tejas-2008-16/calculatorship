@@ -184,33 +184,45 @@
 
     if (!consent) {
       banner.style.display = 'block';
-    ₹btnAccept.addEventListener('click', function() {
+    }
+
+    btnAccept.addEventListener('click', function() {
       localStorage.setItem('cookieConsent', 'accepted');
       localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: true, advertising: true }));
       banner.style.display = 'none';
     });
 
-    btnManage.addEventListener('click', function() {
-      modal.style.display = 'flex';
-    });
+    if (btnManage) {
+      btnManage.addEventListener('click', function() {
+        if (modal) modal.style.display = 'flex';
+      });
+    }
 
     if (btnSave) {
       btnSave.addEventListener('click', function() {
-        var analytics = document.getElementById('cs-toggle-analytics').checked;
-        var advertising = document.getElementById('cs-toggle-advertising').checked;
+        var analyticsInput = document.getElementById('cs-toggle-analytics');
+        var advertisingInput = document.getElementById('cs-toggle-advertising');
+        var analytics = analyticsInput ? analyticsInput.checked : true;
+        var advertising = advertisingInput ? advertisingInput.checked : true;
         localStorage.setItem('cookieConsent', 'custom');
         localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: analytics, advertising: advertising }));
-        modal.style.display = 'none';
+        if (modal) modal.style.display = 'none';
         banner.style.display = 'none';
       });
-    ₹modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-      }
-    });
-  ₹if (document.readyState === 'loading') {
+    }
+
+    if (modal) {
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initCookieConsent);
-  ₹else {
+  } else {
     initCookieConsent();
   }
 })();
