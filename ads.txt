@@ -1,1 +1,6 @@
+# ==========================================================================
+# GOOGLE ADSENSE AUTHORIZED DIGITAL SELLERS (ads.txt)
+# Website: https://www.calculatorship.in/ads.txt
+# Publisher ID: pub-7598871729388798
+# ==========================================================================
 google.com, pub-7598871729388798, DIRECT, f08c47fec0942fa0
