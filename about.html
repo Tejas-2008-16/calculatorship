@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,7 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="tejascopywriter">
   <link rel="canonical" href="https://www.calculatorship.in/about.html">
+  <link rel="alternate" hreflang="en-in" href="https://www.calculatorship.in/about.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -43,32 +44,38 @@
   <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
-
-  <!-- JSON-LD: BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-  {
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Home",
-    "item": "https://www.calculatorship.in/"
-  },
-  {
-    "@type": "ListItem",
-    "position": 2,
-    "name": "About Us",
-    "item": "https://www.calculatorship.in/about.html"
-  }
-  ]
-  }
-  </script>
   
   <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Calculatorship",
+        "url": "https://www.calculatorship.in",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.calculatorship.in/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "name": "About Us - Premium Financial Projection Tools | Calculatorship",
+        "url": "https://www.calculatorship.in/about.html",
+        "description": "Learn about Calculatorship, lead author tejascopywriter, editorial principles, mathematical precision criteria, and mission to deliver clear calculations to long-term planners.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Calculatorship",
+          "logo": { "@type": "ImageObject", "url": "https://www.calculatorship.in/logo-light.svg" }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

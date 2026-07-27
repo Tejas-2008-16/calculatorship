@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -9,6 +9,7 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="tejascopywriter">
   <link rel="canonical" href="https://www.calculatorship.in/blog.html">
+  <link rel="alternate" hreflang="en-in" href="https://www.calculatorship.in/blog.html">
 
   <!-- Google AdSense Verification -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
@@ -49,37 +50,34 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
 
-  <!-- JSON-LD: Blog -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Calculatorship Financial Guides",
-    "description": "Educational articles on SIP investing, mutual funds, compounding, and wealth management in India.",
-    "url": "https://www.calculatorship.in/blog.html",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Calculatorship",
-      "url": "https://www.calculatorship.in/"
-    }
-  }
-  </script>
-
-  <!-- JSON-LD: BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.calculatorship.in/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.calculatorship.in/blog.html" }
-    ]
-  }
-  </script>
-
   <!-- Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Financial Articles and Investment Guides",
+        "url": "https://www.calculatorship.in/blog.html",
+        "description": "Deep-dive educational guides on SIPs, mutual funds, compounding, and wealth planning in India.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Calculatorship",
+          "logo": { "@type": "ImageObject", "url": "https://www.calculatorship.in/logo-light.svg" }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.calculatorship.in/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.calculatorship.in/blog.html" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="read-progress" id="readProgress"></div>
