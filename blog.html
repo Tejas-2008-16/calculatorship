@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -67,13 +67,6 @@
           "name": "Calculatorship",
           "logo": { "@type": "ImageObject", "url": "https://www.calculatorship.in/logo-light.svg" }
         }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.calculatorship.in/" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.calculatorship.in/blog.html" }
-        ]
       }
     ]
   }
@@ -82,44 +75,29 @@
 <body>
   <div class="read-progress" id="readProgress"></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
-
   <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
-        <span class="brand-icon"><img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="40"></span>
-      </a>
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <a href="index.html">SIP Calculator</a>
-        <a href="lumpsum.html">Lumpsum</a>
-        <a href="step-up.html">Step-Up SIP</a>
-        <a href="goal.html">Goal Planner</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="blog.html" class="active">Blog</a>
-      </nav>
-      <div class="header-actions">
-        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
+  <div class="header-inner">
+  <a href="index.html" class="brand" aria-label="Calculatorship Homepage"><span class="brand-icon"><img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="40"></span></a>
+  <nav class="main-nav" aria-label="Primary Navigation">
+    <a href="index.html">SIP Calculator</a>
+    <a href="lumpsum.html">Lumpsum</a>
+    <a href="step-up.html">Step-Up SIP</a>
+    <a href="goal.html">Goal Planner</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html" class="active">Blog</a>
+  </nav>
+  <div class="header-actions"><button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+  </div>
+</header>
   <main id="main-content">
-    <div class="breadcrumb-bar">
-      <nav class="breadcrumb" aria-label="Breadcrumbs">
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li aria-current="page">Blog</li>
-        </ol>
-      </nav>
-    </div>
+  <div class="breadcrumb-bar"><nav class="breadcrumb" aria-label="Breadcrumbs"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Blog</li></ol></nav></div>
 
     <!-- Blog Hero -->
     <section class="blog-hero" aria-labelledby="blog-heading">
       <div class="hero-aurora" aria-hidden="true"></div>
       <span class="eyebrow">Expert Editorial</span>
-      <h1 id="blog-heading">Financial Articles & Investment Guides</h1>
+      <h1 id="blog-heading">Financial Articles &amp; Investment Guides</h1>
       <p>Deep-dive education on SIP investing, compounding, mutual funds, taxation, and long-term wealth creation — written for every Indian investor, from beginner to seasoned.</p>
 
       <!-- Search -->
@@ -140,55 +118,31 @@
     <!-- Editorial Article List (PRD Minimal Spec) -->
     <div class="blog-grid" id="blog-grid" aria-label="Article list">
 
-      <!-- Item: NAV in Mutual Funds -->
-      <article class="blog-card featured reveal" data-cat="investing-basics">
-        <span class="blog-card-cat">Investing Basics</span>
-        <h2>What is NAV in Mutual Funds? Why It Does Not Determine a Fund's Value</h2>
-        <p>Common misconception busted — a &#8377;10 NAV fund is NOT cheaper than a &#8377;500 NAV fund. Learn how NAV actually works, what it means, and why it should never influence your fund selection.</p>
-        <div class="blog-card-footer">
-          <span class="blog-card-tag">Investing Basics</span>
-          <span class="blog-card-readtime">7 min read</span>
-          <a href="what-is-nav-in-mutual-funds.html">Read Article →</a>
-        </div>
-      </article>
-
-      <!-- Item: Mutual Fund Factsheet -->
-      <article class="blog-card reveal" data-cat="strategy">
+      <!-- Item: Behavioural Finance -->
+      <article class="blog-card featured reveal" data-cat="strategy">
         <span class="blog-card-cat gold">Investment Strategy</span>
-        <h2>How to Read a Mutual Fund Factsheet: A Plain-English Guide for Indian Investors</h2>
-        <p>Every AMC publishes a monthly factsheet — but most investors never read it. This guide decodes AUM, portfolio turnover, Sharpe ratio, standard deviation, and top holdings so you know exactly what to look for.</p>
+        <h2>Why Your Brain Is Your Biggest Investment Enemy (Behavioural Finance for Indian Investors)</h2>
+        <p>Discover how 6 cognitive biases cost Indian mutual fund investors lakhs in lost compounding, learn about the DALBAR effect, and build an emotion-proof investment system.</p>
         <div class="blog-card-footer">
           <span class="blog-card-tag">Investment Strategy</span>
-          <span class="blog-card-readtime">8 min read</span>
-          <a href="how-to-read-a-mutual-fund-factsheet.html">Read Article →</a>
+          <span class="blog-card-readtime">9 min read</span>
+          <a href="why-your-brain-is-your-biggest-investment-enemy.html">Read Article &rarr;</a>
         </div>
       </article>
 
-      <!-- Item: SIP During Market Crash -->
-      <article class="blog-card reveal" data-cat="strategy">
-        <span class="blog-card-cat gold">Investment Strategy</span>
-        <h2>Should You Continue Your SIP During a Market Crash? The Data-Backed Answer</h2>
-        <p>Markets down 30%? Your instinct says stop. The data says the opposite. See real Nifty 50 crash recovery numbers and why pausing your SIP during a bear market is the most expensive mistake you can make.</p>
-        <div class="blog-card-footer">
-          <span class="blog-card-tag">Investment Strategy</span>
-          <span class="blog-card-readtime">7 min read</span>
-          <a href="sip-during-market-crash.html">Read Article →</a>
-        </div>
-      </article>
-
-      <!-- Item New: NPS Guide -->
-      <article class="blog-card featured reveal" data-cat="tax">
+      <!-- Item: NPS vs Mutual Funds -->
+      <article class="blog-card reveal" data-cat="tax">
         <span class="blog-card-cat steel">Tax &amp; Planning</span>
-        <h2>What is NPS (National Pension System)? A Complete Guide for Indian Salaried Employees</h2>
-        <p>Understand Tier 1 vs Tier 2, claim the exclusive &#8377;50,000 deduction under Section 80CCD(1B) beyond your 80C limit, and see an honest breakdown of who should — and shouldn't — use NPS.</p>
+        <h2>NPS vs Mutual Funds: Which Is Actually Better for Your Retirement in India?</h2>
+        <p>Compare tax deductions under Section 80CCD, mandatory annuity rules, 30-year compounding math, and learn how to build a hybrid retirement blueprint.</p>
         <div class="blog-card-footer">
           <span class="blog-card-tag">Tax &amp; Planning</span>
           <span class="blog-card-readtime">9 min read</span>
-          <a href="what-is-nps-national-pension-system-guide.html">Read Article →</a>
+          <a href="nps-vs-mutual-funds.html">Read Article &rarr;</a>
         </div>
       </article>
 
-      <!-- Item New: SWP Guide -->
+      <!-- Item: SWP Guide -->
       <article class="blog-card reveal" data-cat="strategy">
         <span class="blog-card-cat gold">Investment Strategy</span>
         <h2>SWP Explained: How to Turn Your Mutual Fund Investment Into a Monthly Income</h2>
@@ -196,11 +150,11 @@
         <div class="blog-card-footer">
           <span class="blog-card-tag">Investment Strategy</span>
           <span class="blog-card-readtime">8 min read</span>
-          <a href="what-is-swp-systematic-withdrawal-plan.html">Read Article →</a>
+          <a href="what-is-swp-systematic-withdrawal-plan.html">Read Article &rarr;</a>
         </div>
       </article>
 
-      <!-- Item New: First SIP Step-by-Step -->
+      <!-- Item: First SIP Step-by-Step -->
       <article class="blog-card reveal" data-cat="investing-basics">
         <span class="blog-card-cat">Investing Basics</span>
         <h2>How to Start Your First SIP: A Step-by-Step Walkthrough for Absolute Beginners</h2>
@@ -208,7 +162,7 @@
         <div class="blog-card-footer">
           <span class="blog-card-tag">Investing Basics</span>
           <span class="blog-card-readtime">9 min read</span>
-          <a href="how-to-start-your-first-sip-step-by-step.html">Read Article →</a>
+          <a href="how-to-start-your-first-sip-step-by-step.html">Read Article &rarr;</a>
         </div>
       </article>
 
@@ -440,6 +394,66 @@
         </div>
       </article>
 
+      <!-- Item: Power of Compounding -->
+      <article class="blog-card featured reveal" data-cat="investing-basics">
+        <span class="blog-card-cat">Investing Basics</span>
+        <h2>The Power of Compounding: How Early Investments Create Massive Wealth</h2>
+        <p>See exactly why starting a SIP at 25 vs 35 creates a 3x wealth gap by retirement — the maths of exponential growth explained simply with real Indian examples.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-tag">Investing Basics</span>
+          <span class="blog-card-readtime">6 min read</span>
+          <a href="the-power-of-compounding.html">Read Article &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Item: What is NAV -->
+      <article class="blog-card reveal" data-cat="investing-basics">
+        <span class="blog-card-cat">Investing Basics</span>
+        <h2>What is NAV in Mutual Funds? Why It Does Not Determine a Fund&#8217;s Value</h2>
+        <p>Bust the biggest NFO myth in Indian investing: why a &#8377;10 NAV fund is not cheaper than a &#8377;500 fund, and what the NAV number actually tells you.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-tag">Investing Basics</span>
+          <span class="blog-card-readtime">7 min read</span>
+          <a href="what-is-nav-in-mutual-funds.html">Read Article &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Item: SIP During Market Crash -->
+      <article class="blog-card reveal" data-cat="strategy">
+        <span class="blog-card-cat gold">Investment Strategy</span>
+        <h2>Should You Continue Your SIP During a Market Crash? The Data-Backed Answer</h2>
+        <p>Historical data from March 2020, 2008, and 2015 shows exactly what happened to SIP investors who stayed vs those who paused — the results will surprise you.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-tag">Investment Strategy</span>
+          <span class="blog-card-readtime">7 min read</span>
+          <a href="sip-during-market-crash.html">Read Article &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Item: How to Read a Factsheet -->
+      <article class="blog-card reveal" data-cat="investing-basics">
+        <span class="blog-card-cat">Investing Basics</span>
+        <h2>How to Read a Mutual Fund Factsheet: A Plain-English Guide for Indian Investors</h2>
+        <p>Decode every section of an AMFI-format factsheet — from AUM and portfolio turnover to alpha, beta, Sharpe ratio, and what the top-10 holdings actually reveal.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-tag">Investing Basics</span>
+          <span class="blog-card-readtime">8 min read</span>
+          <a href="how-to-read-a-mutual-fund-factsheet.html">Read Article &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Item: What is NPS Guide -->
+      <article class="blog-card reveal" data-cat="tax">
+        <span class="blog-card-cat steel">Tax &amp; Planning</span>
+        <h2>What is NPS (National Pension System)? A Complete Guide for Indian Salaried Employees</h2>
+        <p>Everything about NPS Tier 1 and Tier 2 accounts, PRAN, asset class allocation, annuity rules, and why the 0.09% fund management charge is a game-changer.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-tag">Tax &amp; Planning</span>
+          <span class="blog-card-readtime">8 min read</span>
+          <a href="what-is-nps-national-pension-system-guide.html">Read Article &rarr;</a>
+        </div>
+      </article>
+
     </div>
 
     <!-- No results state -->
@@ -509,7 +523,8 @@
           const cardCat = card.dataset.cat;
           const catMatch = (activeCat === 'all' || cardCat === activeCat);
           const text = card.textContent.toLowerCase();
-          const qMatch = (!query || text.includes(query));
+          const words = query.split(/\s+/).filter(Boolean);
+          const qMatch = (!query || words.every(w => text.includes(w)));
           const show = catMatch && qMatch;
 
           if (show) {
@@ -564,11 +579,11 @@
       // Initial run
       filterCards();
 
-      // Scroll reveal
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-      }, { threshold: 0.08 });
-      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      // Scroll reveal — make all cards immediately visible, animate with stagger
+      const revealEls = document.querySelectorAll('.reveal');
+      revealEls.forEach((el, i) => {
+        setTimeout(() => { el.classList.add('visible'); }, i * 40);
+      });
     });
   </script>
 
