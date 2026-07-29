@@ -239,4 +239,24 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- ============ New Articles: Antigravity July 2026 Batch ============ -->
+  <url>
+    <loc>https://www.calculatorship.in/how-to-read-mutual-fund-statement-india.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/sip-pause-vs-stop-mutual-fund.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/best-sip-date-mutual-fund-india.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
