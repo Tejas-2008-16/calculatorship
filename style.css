@@ -2358,6 +2358,7 @@ p {
   transform: translateY(20px);
   transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
 }
+.reveal.is-visible,
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -2857,126 +2858,8 @@ p {
   color: #ffffff;
 }
 
-/* ============================================================
-   MINIMAL EDITORIAL BLOG LIST (PRD Spec)
-   ============================================================ */
-.blog-grid {
-  max-width: 1040px !important;
-  margin: 0 auto !important;
-  padding: 0 24px 60px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0 !important;
-  grid-template-columns: none !important;
-}
-
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  padding: 28px 0 !important;
-  border: none !important;
-  border-bottom: 1px solid var(--border-soft) !important;
-  background: transparent !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  transform: none !important;
-  transition: none !important;
-}
-
 .blog-card.is-hidden {
   display: none !important;
-}
-
-.blog-card:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
-.blog-card:last-child {
-  border-bottom: none !important;
-}
-
-.blog-card-cat {
-  font-size: 0.72rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-  color: var(--emerald-bright) !important;
-  margin-bottom: 8px !important;
-}
-
-.blog-card-cat.gold, .blog-card[data-cat="strategy"] .blog-card-cat {
-  color: var(--gold, #d97706) !important;
-}
-
-.blog-card-cat.steel, .blog-card[data-cat="tax"] .blog-card-cat {
-  color: #3b82f6 !important;
-}
-
-.blog-card h2 {
-  font-family: var(--font-heading) !important;
-  font-size: 1.5rem !important;
-  font-weight: 600 !important;
-  line-height: 1.3 !important;
-  color: var(--text-primary) !important;
-  margin: 0 0 10px 0 !important;
-  transition: color var(--transition-speed) var(--ease) !important;
-}
-
-.blog-card.featured h2 {
-  font-size: 1.9rem !important;
-}
-
-.blog-card:hover h2 {
-  color: var(--emerald-bright) !important;
-}
-
-.blog-card[data-cat="strategy"]:hover h2 {
-  color: var(--gold, #d97706) !important;
-}
-
-.blog-card[data-cat="tax"]:hover h2 {
-  color: #3b82f6 !important;
-}
-
-.blog-card p {
-  font-size: 0.95rem !important;
-  line-height: 1.55 !important;
-  color: var(--text-secondary) !important;
-  margin: 0 0 16px 0 !important;
-}
-
-.blog-card-footer {
-  display: flex !important;
-  align-items: center !important;
-  gap: 16px !important;
-  font-size: 0.82rem !important;
-  margin-top: 4px !important;
-}
-
-.blog-card-tag {
-  color: var(--text-secondary) !important;
-  font-weight: 500 !important;
-}
-
-.blog-card-readtime {
-  font-family: var(--font-mono) !important;
-  color: var(--text-muted) !important;
-  font-size: 0.8rem !important;
-}
-
-.blog-card-footer a {
-  margin-left: auto !important;
-  color: var(--emerald-bright) !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  font-size: 0.85rem !important;
-  transition: color var(--transition-speed) var(--ease) !important;
-}
-
-.blog-card-footer a:hover {
-  color: var(--emerald-bright-hover, #10b981) !important;
-  text-decoration: underline !important;
 }
 
 /* ==========================================================================
