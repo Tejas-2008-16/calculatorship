@@ -1,7 +1,7 @@
 /* ==========================================================================
    CALCULATORSHIP — PREMIUM DESIGN SYSTEM & CORE CSS
    Visual Guidelines: Dark-mode first, glassmorphism, smooth animations,
-   harmony in typography (Fraunces & Inter), and mobile-first responsiveness.
+   harmony in typography (Inter), and mobile-first responsiveness.
    ========================================================================== */
 
 :root {
@@ -40,9 +40,9 @@
   --danger-soft: rgba(239, 68, 68, 0.10);
 
   /* Typography */
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* Radii — Tighter, more intentional */
   --radius-lg: 20px;
@@ -2683,7 +2683,7 @@ p {
   border-radius: 50% !important;
   background: var(--emerald-bright, #059669) !important;
   color: #ffffff !important;
-  font-family: var(--font-heading, "Fraunces", serif) !important;
+  font-family: var(--font-heading, "Inter", sans-serif) !important;
   font-weight: 700 !important;
   font-size: 1.25rem !important;
   display: flex !important;
@@ -2701,7 +2701,7 @@ p {
   font-size: 1.05rem !important;
   font-weight: 700 !important;
   color: var(--text-primary) !important;
-  font-family: var(--font-heading, "Fraunces", serif) !important;
+  font-family: var(--font-heading, "Inter", sans-serif) !important;
 }
 
 .author-info p {
