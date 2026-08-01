@@ -3332,5 +3332,57 @@ p {
   }
 }
 
+/* ============================================================
+   AUTHOR BIO SECTION (AdSense & EEAT Compliance)
+   ============================================================ */
+.author-bio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  margin: 40px 0 24px 0;
+  background: var(--bg-elevated, #101915);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 16px);
+}
+
+.author-bio .author-avatar-initials {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--emerald, #10b981), #047857);
+  color: #ffffff;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-bio strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--text-primary, #ffffff);
+  margin-bottom: 6px;
+}
+
+.author-bio p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary, #9ca3af);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .author-bio {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+
 
 
