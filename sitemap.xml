@@ -288,5 +288,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- ============ New Articles: August 2026 ============ -->
+  <url>
+    <loc>https://www.calculatorship.in/small-cap-mid-cap-large-cap-funds-india.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/index-funds-vs-nifty50-etf-india.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/budget-2026-ltcg-stcg-tax-sip-impact.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>
