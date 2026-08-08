@@ -14,6 +14,7 @@ Allow: /
 # Disallow internal system / config files
 Disallow: /*.json$
 Disallow: /*.config$
+Disallow: /_test_output.html
 
 # Sitemaps
 Sitemap: https://www.calculatorship.in/sitemap.xml
