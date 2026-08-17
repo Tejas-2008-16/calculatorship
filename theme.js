@@ -32,61 +32,52 @@
     const navMenu = $(".main-nav");
     if (!toggleBtn || !navMenu) return;
 
+    // Create backdrop if not present
+    let backdrop = $(".nav-backdrop");
+    if (!backdrop) {
+      backdrop = document.createElement("div");
+      backdrop.className = "nav-backdrop";
+      document.body.appendChild(backdrop);
+    }
+
+    function closeNav() {
+      navMenu.classList.remove("is-open-mobile");
+      toggleBtn.classList.remove("is-active");
+      toggleBtn.setAttribute("aria-expanded", "false");
+      backdrop.classList.remove("is-visible");
+      document.body.style.overflow = "";
+    }
+
+    function openNav() {
+      navMenu.classList.add("is-open-mobile");
+      toggleBtn.classList.add("is-active");
+      toggleBtn.setAttribute("aria-expanded", "true");
+      backdrop.classList.add("is-visible");
+      document.body.style.overflow = "hidden";
+    }
+
     toggleBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      const isOpen = navMenu.classList.toggle("is-open-mobile");
-      toggleBtn.classList.toggle("is-active", isOpen);
-      toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-
-      if (isOpen) {
-        navMenu.style.cssText = `
-          display: flex;
-          flex-direction: column;
-          position: absolute;
-          top: 72px;
-          left: 0;
-          right: 0;
-          background: var(--bg-elevated);
-          padding: 24px 24px 30px;
-          border-bottom: 1px solid var(--border-soft);
-          gap: 20px;
-          animation: slideDownMobile 0.3s var(--ease) both;
-          box-shadow: var(--shadow-soft);
-        `;
-        // Inject slide keyframe dynamically if not loaded
-        if (!document.getElementById("mobile-menu-style")) {
-          const style = document.createElement("style");
-          style.id = "mobile-menu-style";
-          style.innerHTML = `
-            @keyframes slideDownMobile {
-              from { opacity: 0; transform: translateY(-10px); }
-              to { opacity: 1; transform: translateY(0); }
-            }
-          `;
-          document.head.appendChild(style);
-        }
+      if (navMenu.classList.contains("is-open-mobile")) {
+        closeNav();
       } else {
-        navMenu.removeAttribute("style");
+        openNav();
       }
     });
+
+    backdrop.addEventListener("click", closeNav);
 
     // Close menu when clicking outside
     document.addEventListener("click", (e) => {
       if (navMenu.classList.contains("is-open-mobile") && !navMenu.contains(e.target) && e.target !== toggleBtn) {
-        navMenu.classList.remove("is-open-mobile");
-        toggleBtn.classList.remove("is-active");
-        toggleBtn.setAttribute("aria-expanded", "false");
-        navMenu.removeAttribute("style");
+        closeNav();
       }
     });
 
-    // Close menu when clicking items
+    // Close menu when clicking links
     $$("a", navMenu).forEach((link) => {
       link.addEventListener("click", () => {
-        navMenu.classList.remove("is-open-mobile");
-        toggleBtn.classList.remove("is-active");
-        toggleBtn.setAttribute("aria-expanded", "false");
-        navMenu.removeAttribute("style");
+        closeNav();
       });
     });
   })();
