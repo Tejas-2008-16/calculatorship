@@ -1,20 +1,8 @@
-# =====================================================
-# ROBOTS.TXT — Calculatorship Financial Calculators
-# Website: https://www.calculatorship.in/
-# =====================================================
-
 User-agent: *
 Allow: /
-Allow: /ads.txt
 
-# AdSense Crawler Explicit Access
-User-agent: Mediapartners-Google
-Allow: /
+# Block irrelevant system paths
+Disallow: /cdn-cgi/
 
-# Disallow internal system / config files
-Disallow: /*.json$
-Disallow: /*.config$
-Disallow: /_test_output.html
-
-# Sitemaps
+# Sitemap location
 Sitemap: https://www.calculatorship.in/sitemap.xml

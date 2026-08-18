@@ -1,145 +1,398 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- ============ Calculator Pages (Highest Priority) ============ -->
+  <!-- MAIN PAGES -->
   <url>
     <loc>https://www.calculatorship.in/</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/index.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/lumpsum.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/step-up.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/goal.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/fd-calculator.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/budget-planner.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/income-tax-calculator.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
-
-  <!-- ============ Main Navigation & Company Pages ============ -->
   <url>
     <loc>https://www.calculatorship.in/blog.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/about.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/contact.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/disclaimer.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/privacy.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/terms.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/cookies.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/sitemap.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
 
-  <!-- ============ New Articles: August 17, 2026 ============ -->
+  <!-- BLOG ARTICLES -->
   <url>
-    <loc>https://www.calculatorship.in/emi-vs-sip-extra-money-india.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <loc>https://www.calculatorship.in/budget-2026-ltcg-stcg-tax-sip-impact.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.calculatorship.in/fd-vs-debt-mutual-funds-india-2026.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <loc>https://www.calculatorship.in/index-funds-vs-nifty50-etf-india.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/small-cap-mid-cap-large-cap-funds-india.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/ulips-vs-mutual-funds-india.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-redeem-mutual-funds-india.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/ppf-vs-elss-vs-nps-india-2026.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/home-loan-emi-explained-india.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/sovereign-gold-bond-sgb-guide-india.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/epf-vs-ppf-vs-nps-retirement-account-india.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/swp-systematic-withdrawal-plan-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/what-is-cagr-mutual-fund-returns.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-use-sip-calculator-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-read-mutual-fund-statement-india.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/sip-pause-vs-stop-mutual-fund.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/best-sip-date-mutual-fund-india.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/why-your-brain-is-your-biggest-investment-enemy.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/nps-vs-mutual-funds.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/what-is-swp-systematic-withdrawal-plan.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-start-your-first-sip-step-by-step.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/got-first-salary-investing-guide-india.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-pick-your-first-mutual-fund-india.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/what-happens-if-you-miss-sip-payment.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/sip-vs-lumpsum.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/5-common-sip-mistakes-to-avoid.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/what-is-a-step-up-sip.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/sip-goal-planning-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/rupee-cost-averaging-explained.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/active-vs-passive-mutual-funds.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/mutual-fund-types-beginner-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/understanding-expense-ratio.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/rule-of-72-114-144.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/taxation-on-mutual-funds.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/inflation-and-your-savings.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/direct-vs-regular-mutual-funds.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/elss-funds-tax-saving-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/emergency-fund-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/mutual-fund-portfolio-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/retirement-planning-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/the-power-of-compounding.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/what-is-nav-in-mutual-funds.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/sip-during-market-crash.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-read-a-mutual-fund-factsheet.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/what-is-nps-national-pension-system-guide.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/emi-vs-sip-extra-money-india.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.calculatorship.in/how-to-build-1-crore-corpus-30000-salary-india.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/fd-vs-debt-mutual-funds-india-2026.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
 
-  <!-- ============ Comprehensive Article Library ============ -->
-  <url><loc>https://www.calculatorship.in/budget-2026-ltcg-stcg-tax-sip-impact.html</loc><lastmod>2026-08-02</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/index-funds-vs-nifty50-etf-india.html</loc><lastmod>2026-08-02</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/small-cap-mid-cap-large-cap-funds-india.html</loc><lastmod>2026-08-02</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/epf-vs-ppf-vs-nps-retirement-account-india.html</loc><lastmod>2026-08-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/home-loan-emi-explained-india.html</loc><lastmod>2026-08-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/how-to-redeem-mutual-funds-india.html</loc><lastmod>2026-08-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/ppf-vs-elss-vs-nps-india-2026.html</loc><lastmod>2026-08-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/sovereign-gold-bond-sgb-guide-india.html</loc><lastmod>2026-08-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/ulips-vs-mutual-funds-india.html</loc><lastmod>2026-08-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/swp-systematic-withdrawal-plan-guide.html</loc><lastmod>2026-07-29</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/why-your-brain-is-your-biggest-investment-enemy.html</loc><lastmod>2026-07-29</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/what-is-nav-in-mutual-funds.html</loc><lastmod>2026-07-27</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/how-to-read-a-mutual-fund-factsheet.html</loc><lastmod>2026-07-27</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/sip-during-market-crash.html</loc><lastmod>2026-07-27</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/what-is-cagr-mutual-fund-returns.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/how-to-use-sip-calculator-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/how-to-read-mutual-fund-statement-india.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/sip-pause-vs-stop-mutual-fund.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/best-sip-date-mutual-fund-india.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/nps-vs-mutual-funds.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/what-is-swp-systematic-withdrawal-plan.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/how-to-start-your-first-sip-step-by-step.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/got-first-salary-investing-guide-india.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/how-to-pick-your-first-mutual-fund-india.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/what-happens-if-you-miss-sip-payment.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/sip-vs-lumpsum.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/5-common-sip-mistakes-to-avoid.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/what-is-a-step-up-sip.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/sip-goal-planning-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/rupee-cost-averaging-explained.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/active-vs-passive-mutual-funds.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/mutual-fund-types-beginner-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/understanding-expense-ratio.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/rule-of-72-114-144.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/taxation-on-mutual-funds.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/inflation-and-your-savings.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/direct-vs-regular-mutual-funds.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/elss-funds-tax-saving-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/emergency-fund-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/mutual-fund-portfolio-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/retirement-planning-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/the-power-of-compounding.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.calculatorship.in/what-is-nps-national-pension-system-guide.html</loc><lastmod>2026-07-25</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-
-  <!-- ============ Legal & Policy Pages ============ -->
-  <url><loc>https://www.calculatorship.in/privacy.html</loc><lastmod>2026-08-17</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://www.calculatorship.in/terms.html</loc><lastmod>2026-08-17</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://www.calculatorship.in/cookies.html</loc><lastmod>2026-08-17</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://www.calculatorship.in/disclaimer.html</loc><lastmod>2026-08-17</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-
+  <!-- NEW ARTICLES -->
+  <url>
+    <loc>https://www.calculatorship.in/fd-vs-mutual-funds-india.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-save-tax-in-india.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/what-is-inflation-and-how-it-affects-you.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
