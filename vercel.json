@@ -1,0 +1,39 @@
+{
+  "redirects": [
+    {
+      "source": "/what-is-swp-systematic-withdrawal-plan.html",
+      "destination": "/swp-systematic-withdrawal-plan-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/inflation-and-your-savings.html",
+      "destination": "/what-is-inflation-and-how-it-affects-you.html",
+      "permanent": true
+    },
+    {
+      "source": "/epf-vs-ppf-vs-nps-retirement-account-india.html",
+      "destination": "/ppf-vs-elss-vs-nps-india-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-use-sip-calculator-guide.html",
+      "destination": "/how-to-use-sip-calculator-complete-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/emergency-fund-guide.html",
+      "destination": "/liquid-funds-vs-savings-account-emergency-fund.html",
+      "permanent": true
+    },
+    {
+      "source": "/fd-vs-debt-mutual-funds-india-2026.html",
+      "destination": "/fd-vs-mutual-funds-india.html",
+      "permanent": true
+    },
+    {
+      "source": "/sip-goal-planning-guide.html",
+      "destination": "/how-to-start-your-first-sip-step-by-step.html",
+      "permanent": true
+    }
+  ]
+}

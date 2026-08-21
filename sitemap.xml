@@ -50,12 +50,12 @@
   <!-- ===== BLOG HUB (Priority 0.8) ===== -->
   <url>
     <loc>https://www.calculatorship.in/blog.html</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ===== BLOG ARTICLES (52 Articles - Priority 0.7) ===== -->
+  <!-- ===== BLOG ARTICLES (48 Articles - Priority 0.7) ===== -->
   <url>
     <loc>https://www.calculatorship.in/5-common-sip-mistakes-to-avoid.html</loc>
     <lastmod>2026-08-19</lastmod>
@@ -93,25 +93,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.calculatorship.in/emergency-fund-guide.html</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.calculatorship.in/emi-vs-sip-extra-money-india.html</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.calculatorship.in/epf-vs-ppf-vs-nps-retirement-account-india.html</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.calculatorship.in/fd-vs-debt-mutual-funds-india-2026.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -183,19 +165,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.calculatorship.in/how-to-use-sip-calculator-guide.html</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.calculatorship.in/index-funds-vs-nifty50-etf-india.html</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.calculatorship.in/inflation-and-your-savings.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -250,12 +220,6 @@
   </url>
   <url>
     <loc>https://www.calculatorship.in/sip-during-market-crash.html</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.calculatorship.in/sip-goal-planning-guide.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -332,6 +296,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  </url>
   <url>
     <loc>https://www.calculatorship.in/what-is-flexi-cap-fund-india-beginners.html</loc>
     <lastmod>2026-08-19</lastmod>
@@ -357,14 +322,26 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.calculatorship.in/what-is-swp-systematic-withdrawal-plan.html</loc>
+    <loc>https://www.calculatorship.in/why-your-brain-is-your-biggest-investment-enemy.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.calculatorship.in/why-your-brain-is-your-biggest-investment-enemy.html</loc>
-    <lastmod>2026-08-19</lastmod>
+    <loc>https://www.calculatorship.in/emergency-fund-guide-india.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/ppf-vs-elss-vs-nps-india-2026.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/how-to-use-sip-calculator-complete-guide.html</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
