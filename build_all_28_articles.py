@@ -431,13 +431,14 @@ def build_article_page(a):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{a['title']} | Calculatorship</title>
   <meta name="description" content="{a['metaDesc']}">
-  <link rel="canonical" href="{a['slug']}">
+  <link rel="canonical" href="https://calculatorship.in/{a['slug']}">
   <meta property="og:title" content="{a['title']}">
   <meta property="og:description" content="{a['metaDesc']}">
-  <meta property="og:url" content="{a['slug']}">
+  <meta property="og:url" content="https://calculatorship.in/{a['slug']}">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="og-image.webp">
+  <meta property="og:image" content="https://calculatorship.in/og-image.webp">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://calculatorship.in/og-image.webp">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#F3F7F5">
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
@@ -600,13 +601,14 @@ def generate_blog_index(articles):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Financial Planning &amp; Wealth Growth Guides | Calculatorship</title>
   <meta name="description" content="Explore {total_count} comprehensive, independent financial guides on SIPs, Mutual Funds, Income Tax, PPF, SWP, Home Loans, and Retirement Planning for Indian investors.">
-  <link rel="canonical" href="blog.html">
+  <link rel="canonical" href="https://calculatorship.in/blog.html">
   <meta property="og:title" content="Financial Planning &amp; Wealth Growth Guides | Calculatorship">
   <meta property="og:description" content="Explore {total_count} comprehensive, independent financial guides for Indian investors.">
-  <meta property="og:url" content="blog.html">
+  <meta property="og:url" content="https://calculatorship.in/blog.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="og-image.webp">
+  <meta property="og:image" content="https://calculatorship.in/og-image.webp">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://calculatorship.in/og-image.webp">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#F3F7F5">
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
@@ -865,12 +867,14 @@ def build_info_pages():
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content="{desc}">
-  <link rel="canonical" href="{slug}">
+  <link rel="canonical" href="https://calculatorship.in/{slug}">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
-  <meta property="og:url" content="{slug}">
+  <meta property="og:url" content="https://calculatorship.in/{slug}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="og-image.webp">
+  <meta property="og:image" content="https://calculatorship.in/og-image.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://calculatorship.in/og-image.webp">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#F3F7F5">
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">

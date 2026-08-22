@@ -98,13 +98,14 @@ def build_all_calculators():
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{c['title']} | Calculatorship</title>
   <meta name="description" content="{c['metaDesc']}">
-  <link rel="canonical" href="{c['slug']}">
+  <link rel="canonical" href="https://calculatorship.in/{c['slug']}">
   <meta property="og:title" content="{c['title']}">
   <meta property="og:description" content="{c['metaDesc']}">
-  <meta property="og:url" content="{c['slug']}">
+  <meta property="og:url" content="https://calculatorship.in/{c['slug']}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="og-image.webp">
+  <meta property="og:image" content="https://calculatorship.in/og-image.webp">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://calculatorship.in/og-image.webp">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#F3F7F5">
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
@@ -120,7 +121,7 @@ def build_all_calculators():
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "{c['h1']}",
-    "url": "{c['slug']}",
+    "url": "https://calculatorship.in/{c['slug']}",
     "description": "{c['metaDesc']}",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "All",
