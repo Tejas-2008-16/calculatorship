@@ -65,11 +65,32 @@
     const navMenu = $(".main-nav");
     if (!toggleBtn || !navMenu) return;
 
+    // Create backdrop overlay if not existing
     let backdrop = $(".nav-backdrop");
     if (!backdrop) {
       backdrop = document.createElement("div");
       backdrop.className = "nav-backdrop";
       document.body.appendChild(backdrop);
+    }
+
+    // Insert drawer top bar inside .main-nav for mobile if not existing
+    if (!navMenu.querySelector(".drawer-header")) {
+      const drawerHeader = document.createElement("div");
+      drawerHeader.className = "drawer-header";
+      drawerHeader.innerHTML = `
+        <span class="drawer-title">Navigation</span>
+        <button type="button" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+      `;
+      navMenu.insertBefore(drawerHeader, navMenu.firstChild);
+
+      const innerCloseBtn = drawerHeader.querySelector(".drawer-close-btn");
+      if (innerCloseBtn) {
+        innerCloseBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          closeNav();
+        });
+      }
     }
 
     function closeNav() {
@@ -118,10 +139,16 @@
     });
 
     $$("a", navMenu).forEach((link) => {
-      link.addEventListener("click", () => {
+      link.addEventListener("click", (e) => {
         if (link.classList.contains("nav-dropdown-toggle")) {
-          // On mobile, keep dropdown expanded
-          return;
+          if (window.innerWidth <= 900) {
+            e.preventDefault();
+            const parentDropdown = link.closest(".nav-dropdown");
+            if (parentDropdown) {
+              parentDropdown.classList.toggle("is-collapsed");
+            }
+            return;
+          }
         }
         closeNav();
       });
