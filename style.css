@@ -16,10 +16,10 @@
   
   --text-primary: #0F172A;
   --text-secondary: #334155;
-  --text-muted: #64748B;
+  --text-muted: #475569;
   
-  --emerald: #00D09C;
-  --emerald-dark: #00875A;
+  --emerald: #00A87D;
+  --emerald-dark: #007A50;
   --emerald-soft: #E6F8F3;
   --emerald-border: #A7F3D0;
   
@@ -62,14 +62,48 @@ body {
   flex-direction: column;
 }
 
+/* Accessibility screen-reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 a {
   color: var(--emerald-dark);
-  text-decoration: none;
-  transition: color var(--transition-fast);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2.5px;
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
 }
 
 a:hover {
   color: var(--emerald);
+  text-decoration-color: var(--emerald);
+}
+
+/* Nav links, buttons, cards, and pills do not need default text-decoration */
+.main-nav a,
+.brand,
+.calc-tab,
+.btn,
+.calc-link-card,
+.footer-links a,
+.breadcrumb a,
+.nav-dropdown-menu a,
+.disc-dismiss {
+  text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 img {
@@ -303,6 +337,7 @@ img {
   font-size: 0.92rem;
   color: #92400E;
   line-height: 1.55;
+  contain: content;
 }
 
 .disclaimer-banner.is-hidden {
@@ -338,6 +373,50 @@ img {
 .disc-dismiss:hover {
   background: #F59E0B;
   color: #FFFFFF;
+}
+
+/* AdSense Slots: Pre-reserve space to eliminate Cumulative Layout Shift (CLS) */
+.ad-slot {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  contain: content;
+}
+
+.ad-slot-banner {
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-elevated);
+  border: 1px dashed var(--border-soft);
+  border-radius: var(--radius-md);
+}
+
+.ad-slot-infeed {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-elevated);
+  border: 1px dashed var(--border-soft);
+  border-radius: var(--radius-md);
+}
+
+.ad-slot ins.adsbygoogle {
+  min-height: 90px;
+  width: 100%;
+}
+
+.ad-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
 }
 
 /* Quick Calculator Switcher Bar */
@@ -1268,7 +1347,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   gap: 36px;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 1.05rem;
   font-weight: 700;
   color: #F8FAFC;
@@ -1299,28 +1378,29 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 .footer-disclaimer {
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   line-height: 1.65;
-  color: #64748B;
+  color: #94A3B8;
   margin-bottom: 20px;
 }
 
 .footer-disclaimer strong {
-  color: #94A3B8;
+  color: #F1F5F9;
 }
 
 .footer-copy {
-  font-size: 0.88rem;
-  color: #64748B;
+  font-size: 0.90rem;
+  color: #94A3B8;
   text-align: center;
 }
 
 .footer-copy a {
-  color: #94A3B8;
+  color: #CBD5E1;
+  text-decoration: underline;
 }
 
 .footer-copy a:hover {
-  color: #00E6A8;
+  color: #34D399;
 }
 
 /* Back to top button */

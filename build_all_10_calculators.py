@@ -17,11 +17,11 @@ def build_all_calculators():
               <label for="{f4['id']}">{f4['label']}</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix">{f4['prefix']}</span>
-                <input type="number" id="{f4['id']}-num" value="{f4['val']}" min="{f4['min']}" max="{f4['max']}" step="{f4['step']}">
+                <input type="number" id="{f4['id']}-num" value="{f4['val']}" min="{f4['min']}" max="{f4['max']}" step="{f4['step']}" aria-label="{f4['label']} Input">
                 <span class="calc-input-suffix">{f4['suffix']}</span>
               </div>
             </div>
-            <input type="range" id="{f4['id']}" min="{f4['min']}" max="{f4['max']}" step="{f4['step']}" value="{f4['val']}">
+            <input type="range" id="{f4['id']}" min="{f4['min']}" max="{f4['max']}" step="{f4['step']}" value="{f4['val']}" aria-label="{f4['label']} Slider">
           </div>"""
 
         label1 = "Invested Capital"
@@ -183,11 +183,11 @@ def build_all_calculators():
               <label for="{c['field1']['id']}">{c['field1']['label']}</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix">{c['field1']['prefix']}</span>
-                <input type="number" id="{c['field1']['id']}-num" value="{c['field1']['val']}" min="{c['field1']['min']}" max="{c['field1']['max']}" step="{c['field1']['step']}">
+                <input type="number" id="{c['field1']['id']}-num" value="{c['field1']['val']}" min="{c['field1']['min']}" max="{c['field1']['max']}" step="{c['field1']['step']}" aria-label="{c['field1']['label']} Input">
                 <span class="calc-input-suffix">{c['field1']['suffix']}</span>
               </div>
             </div>
-            <input type="range" id="{c['field1']['id']}" min="{c['field1']['min']}" max="{c['field1']['max']}" step="{c['field1']['step']}" value="{c['field1']['val']}">
+            <input type="range" id="{c['field1']['id']}" min="{c['field1']['min']}" max="{c['field1']['max']}" step="{c['field1']['step']}" value="{c['field1']['val']}" aria-label="{c['field1']['label']} Slider">
           </div>
 
           <div class="calc-field-group">
@@ -195,11 +195,11 @@ def build_all_calculators():
               <label for="{c['field2']['id']}">{c['field2']['label']}</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix">{c['field2']['prefix']}</span>
-                <input type="number" id="{c['field2']['id']}-num" value="{c['field2']['val']}" min="{c['field2']['min']}" max="{c['field2']['max']}" step="{c['field2']['step']}">
+                <input type="number" id="{c['field2']['id']}-num" value="{c['field2']['val']}" min="{c['field2']['min']}" max="{c['field2']['max']}" step="{c['field2']['step']}" aria-label="{c['field2']['label']} Input">
                 <span class="calc-input-suffix">{c['field2']['suffix']}</span>
               </div>
             </div>
-            <input type="range" id="{c['field2']['id']}" min="{c['field2']['min']}" max="{c['field2']['max']}" step="{c['field2']['step']}" value="{c['field2']['val']}">
+            <input type="range" id="{c['field2']['id']}" min="{c['field2']['min']}" max="{c['field2']['max']}" step="{c['field2']['step']}" value="{c['field2']['val']}" aria-label="{c['field2']['label']} Slider">
           </div>
 
           <div class="calc-field-group">
@@ -207,11 +207,11 @@ def build_all_calculators():
               <label for="{c['field3']['id']}">{c['field3']['label']}</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix">{c['field3']['prefix']}</span>
-                <input type="number" id="{c['field3']['id']}-num" value="{c['field3']['val']}" min="{c['field3']['min']}" max="{c['field3']['max']}" step="{c['field3']['step']}">
+                <input type="number" id="{c['field3']['id']}-num" value="{c['field3']['val']}" min="{c['field3']['min']}" max="{c['field3']['max']}" step="{c['field3']['step']}" aria-label="{c['field3']['label']} Input">
                 <span class="calc-input-suffix">{c['field3']['suffix']}</span>
               </div>
             </div>
-            <input type="range" id="{c['field3']['id']}" min="{c['field3']['min']}" max="{c['field3']['max']}" step="{c['field3']['step']}" value="{c['field3']['val']}">
+            <input type="range" id="{c['field3']['id']}" min="{c['field3']['min']}" max="{c['field3']['max']}" step="{c['field3']['step']}" value="{c['field3']['val']}" aria-label="{c['field3']['label']} Slider">
           </div>
 
           {extra_field_html}

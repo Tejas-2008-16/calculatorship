@@ -127,11 +127,11 @@
               <label for="loan-amount">Loan Amount</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix">₹</span>
-                <input type="number" id="loan-amount-num" value="5000000" min="100000" max="50000000" step="50000">
+                <input type="number" id="loan-amount-num" value="5000000" min="100000" max="50000000" step="50000" aria-label="Loan Amount Input">
                 <span class="calc-input-suffix"></span>
               </div>
             </div>
-            <input type="range" id="loan-amount" min="100000" max="50000000" step="50000" value="5000000">
+            <input type="range" id="loan-amount" min="100000" max="50000000" step="50000" value="5000000" aria-label="Loan Amount Slider">
           </div>
 
           <div class="calc-field-group">
@@ -139,11 +139,11 @@
               <label for="interest-rate">Annual Interest Rate</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix"></span>
-                <input type="number" id="interest-rate-num" value="8.5" min="5" max="20" step="0.1">
+                <input type="number" id="interest-rate-num" value="8.5" min="5" max="20" step="0.1" aria-label="Annual Interest Rate Input">
                 <span class="calc-input-suffix">%</span>
               </div>
             </div>
-            <input type="range" id="interest-rate" min="5" max="20" step="0.1" value="8.5">
+            <input type="range" id="interest-rate" min="5" max="20" step="0.1" value="8.5" aria-label="Annual Interest Rate Slider">
           </div>
 
           <div class="calc-field-group">
@@ -151,11 +151,11 @@
               <label for="loan-tenure">Loan Tenure (Years)</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix"></span>
-                <input type="number" id="loan-tenure-num" value="20" min="1" max="30" step="1">
+                <input type="number" id="loan-tenure-num" value="20" min="1" max="30" step="1" aria-label="Loan Tenure (Years) Input">
                 <span class="calc-input-suffix">Yrs</span>
               </div>
             </div>
-            <input type="range" id="loan-tenure" min="1" max="30" step="1" value="20">
+            <input type="range" id="loan-tenure" min="1" max="30" step="1" value="20" aria-label="Loan Tenure (Years) Slider">
           </div>
 
           
@@ -164,11 +164,11 @@
               <label for="monthly-prepay">Extra Monthly Prepayment</label>
               <div class="calc-input-box">
                 <span class="calc-input-prefix">₹</span>
-                <input type="number" id="monthly-prepay-num" value="5000" min="0" max="100000" step="1000">
+                <input type="number" id="monthly-prepay-num" value="5000" min="0" max="100000" step="1000" aria-label="Extra Monthly Prepayment Input">
                 <span class="calc-input-suffix"></span>
               </div>
             </div>
-            <input type="range" id="monthly-prepay" min="0" max="100000" step="1000" value="5000">
+            <input type="range" id="monthly-prepay" min="0" max="100000" step="1000" value="5000" aria-label="Extra Monthly Prepayment Slider">
           </div>
         </div>
 
@@ -252,17 +252,17 @@
         <div class="scenario-grid">
           
           <div class="scenario-box">
-            <h4>Home Loan Prepayment (₹50 Lakh Loan)</h4>
+            <h3>Home Loan Prepayment (₹50 Lakh Loan)</h3>
             <p>Rohan takes a ₹50 Lakh home loan at 8.5% for 20 years (EMI: ₹43,391). By prepaying ₹5,000 extra every month, he cuts his tenure by 4.5 years and saves ₹11.2 Lakh in interest.</p>
           </div>
         
           <div class="scenario-box">
-            <h4>Car Loan Acceleration (₹10 Lakh Loan)</h4>
+            <h3>Car Loan Acceleration (₹10 Lakh Loan)</h3>
             <p>Karthik prepays ₹2,500/month on a 5-year ₹10 Lakh auto loan at 9.0%, closing the loan 7 months earlier and saving ₹38,000 in interest.</p>
           </div>
         
           <div class="scenario-box">
-            <h4>Lumpsum Bonus Prepayment</h4>
+            <h3>Lumpsum Bonus Prepayment</h3>
             <p>Ananya prepays ₹2 Lakh from her annual bonus in Year 3 of her home loan, saving over ₹6.5 Lakh in overall interest.</p>
           </div>
         
@@ -275,11 +275,11 @@
         <p>Follow these disciplined principles to maximize your financial planning efficiency:</p>
         <div class="checklist-grid">
           <div class="checklist-box dos">
-            <h4>Recommended Practices</h4>
+            <h3>Recommended Practices</h3>
             <ul><li>Ensure part-prepayments are credited toward Principal reduction rather than future advance EMIs.</li><li>Check that your bank charges zero prepayment penalties on floating-rate home loans (as mandated by RBI).</li><li>Automate a small monthly prepayment alongside your regular EMI.</li></ul>
           </div>
           <div class="checklist-box donts">
-            <h4>Mistakes to Avoid</h4>
+            <h3>Mistakes to Avoid</h3>
             <ul><li>Do not exhaust your emergency liquid reserves to prepay a low-interest home loan.</li><li>Do not choose high-interest fixed-rate personal loans when lower-rate secured alternatives exist.</li></ul>
           </div>
         </div>
@@ -378,7 +378,7 @@
         </div>
         <div class="footer-links">
           <div class="footer-col">
-            <h4>Calculators</h4>
+            <h3>Calculators</h3>
             <ul>
               <li><a href="index.html">SIP Calculator</a></li>
               <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
@@ -393,7 +393,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Legal &amp; Policy</h4>
+            <h3>Legal &amp; Policy</h3>
             <ul>
               <li><a href="disclaimer.html">Disclaimer</a></li>
               <li><a href="terms.html">Terms of Use</a></li>
@@ -402,7 +402,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Platform</h4>
+            <h3>Platform</h3>
             <ul>
               <li><a href="about.html">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
