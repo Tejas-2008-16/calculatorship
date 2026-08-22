@@ -89,6 +89,7 @@
     }
 
     toggleBtn.addEventListener("click", (e) => {
+      e.preventDefault();
       e.stopPropagation();
       if (navMenu.classList.contains("is-open-mobile")) {
         closeNav();
@@ -97,16 +98,27 @@
       }
     });
 
-    backdrop.addEventListener("click", closeNav);
+    backdrop.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeNav();
+    });
 
     document.addEventListener("click", (e) => {
-      if (navMenu.classList.contains("is-open-mobile") && !navMenu.contains(e.target) && e.target !== toggleBtn) {
+      if (navMenu.classList.contains("is-open-mobile")) {
+        if (!navMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+          closeNav();
+        }
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navMenu.classList.contains("is-open-mobile")) {
         closeNav();
       }
     });
 
     $$("a", navMenu).forEach((link) => {
-      link.addEventListener("click", (e) => {
+      link.addEventListener("click", () => {
         if (link.classList.contains("nav-dropdown-toggle")) {
           // On mobile, keep dropdown expanded
           return;

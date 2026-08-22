@@ -150,7 +150,7 @@ img {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-soft);
-  z-index: 900;
+  z-index: 1000;
   height: 76px;
 }
 
@@ -1475,7 +1475,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     width: 44px;
     height: 44px;
     padding: 0;
-    z-index: 1001;
+    z-index: 1002;
     position: relative;
     cursor: pointer;
     border-radius: var(--radius-sm);
@@ -1491,6 +1491,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     background: var(--text-primary);
     margin: 0;
     border-radius: 2px;
+    pointer-events: none;
     transition: transform 0.25s ease, opacity 0.25s ease;
   }
   .nav-toggle.is-active span:nth-child(1) {
@@ -1519,9 +1520,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
     align-items: stretch;
     padding: 84px 24px 32px;
     gap: 8px;
-    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.12);
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.15);
     border-left: 1px solid var(--border-soft);
-    z-index: 1000;
+    z-index: 1001;
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     overflow-y: auto;
@@ -1606,22 +1607,22 @@ input[type="range"]::-webkit-slider-thumb:hover {
     display: none;
   }
 
-  /* Backdrop Overlay */
+  /* Backdrop Overlay - Clean Dim Overlay without blur */
   .nav-backdrop {
     position: fixed;
     inset: 0;
     background: rgba(15, 23, 42, 0.45);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    z-index: 999;
+    z-index: 998;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
   .nav-backdrop.is-visible {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .checklist-grid {
