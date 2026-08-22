@@ -106,7 +106,11 @@
     });
 
     $$("a", navMenu).forEach((link) => {
-      link.addEventListener("click", () => {
+      link.addEventListener("click", (e) => {
+        if (link.classList.contains("nav-dropdown-toggle")) {
+          // On mobile, keep dropdown expanded
+          return;
+        }
         closeNav();
       });
     });
