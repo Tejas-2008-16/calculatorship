@@ -5,25 +5,58 @@
   const $ = (sel, ctx) => (ctx || document).querySelector(sel);
   const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
 
-  /* ============ Logo Swap Utility ============ */
-  function updateLogos(theme) {
-    const logoSrc = theme === "light"
-      ? "logo-light.svg"
-      : "logo-dark.svg";
-    // Handle both root-relative and same-dir img paths
-    $$("img[src*='logo']").forEach((img) => {
-      // Preserve the filename part, only swap which variant
-      if (img.src.includes("logo-dark") || img.src.includes("logo-light") || img.src.includes("logo.svg")) {
-        img.src = logoSrc;
+  /* ============ Reading Progress Bar ============ */
+  (function initReadingProgress() {
+    const bar = $("#reading-progress");
+    if (!bar) return;
+
+    function updateProgress() {
+      const h = document.documentElement;
+      const scrollTop = h.scrollTop || document.body.scrollTop;
+      const scrollHeight = h.scrollHeight - h.clientHeight;
+      const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      bar.style.width = pct + "%";
+    }
+
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    updateProgress();
+  })();
+
+  /* ============ Back to Top Button ============ */
+  (function initBackToTop() {
+    const btt = $("#back-to-top");
+    if (!btt) return;
+
+    function onScroll() {
+      btt.classList.toggle("is-visible", window.scrollY > 400);
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    btt.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    onScroll();
+  })();
+
+  /* ============ Disclaimer Banner Dismissal ============ */
+  (function initDisclaimerBanner() {
+    $$(".disclaimer-banner").forEach((banner) => {
+      const bannerId = banner.dataset.bannerId || "default";
+      const storageKey = "cs-disc-dismissed-" + bannerId;
+
+      if (localStorage.getItem(storageKey)) {
+        banner.classList.add("is-hidden");
+        return;
+      }
+
+      const dismissBtn = banner.querySelector(".disc-dismiss");
+      if (dismissBtn) {
+        dismissBtn.addEventListener("click", () => {
+          banner.classList.add("is-hidden");
+          localStorage.setItem(storageKey, "1");
+        });
       }
     });
-  }
-
-  /* ============ Theme Setup ============ */
-  (function initTheme() {
-    const root = document.documentElement;
-    root.setAttribute("data-theme", "light");
-    updateLogos("light");
   })();
 
   /* ============ Mobile Navigation Toggler ============ */
@@ -32,7 +65,6 @@
     const navMenu = $(".main-nav");
     if (!toggleBtn || !navMenu) return;
 
-    // Create backdrop if not present
     let backdrop = $(".nav-backdrop");
     if (!backdrop) {
       backdrop = document.createElement("div");
@@ -67,14 +99,12 @@
 
     backdrop.addEventListener("click", closeNav);
 
-    // Close menu when clicking outside
     document.addEventListener("click", (e) => {
       if (navMenu.classList.contains("is-open-mobile") && !navMenu.contains(e.target) && e.target !== toggleBtn) {
         closeNav();
       }
     });
 
-    // Close menu when clicking links
     $$("a", navMenu).forEach((link) => {
       link.addEventListener("click", () => {
         closeNav();
@@ -89,7 +119,6 @@
     
     $$(".main-nav a").forEach((a) => {
       const href = a.getAttribute("href");
-      // Check exact match or home link
       if (href === pageName || (href === "/" && (pageName === "" || pageName === "index.html"))) {
         a.classList.add("active");
       } else {
@@ -123,10 +152,7 @@
           }
         });
       },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -40px 0px",
-      }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
 
     revealTargets.forEach((el) => observer.observe(el));
@@ -138,12 +164,35 @@
     faqDetails.forEach((detail) => {
       detail.addEventListener("click", (e) => {
         if (!detail.hasAttribute("open")) {
-          // Collapse all others
           faqDetails.forEach((otherDetail) => {
             if (otherDetail !== detail && otherDetail.hasAttribute("open")) {
               otherDetail.removeAttribute("open");
             }
           });
+        }
+      });
+    });
+  })();
+
+  /* ============ Social Share Buttons — Copy Link ============ */
+  (function initShareButtons() {
+    $$(".share-btn.cp").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const url = btn.dataset.url || window.location.href;
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(url).then(() => {
+            const orig = btn.innerHTML;
+            btn.textContent = "Copied!";
+            setTimeout(() => { btn.innerHTML = orig; }, 2000);
+          });
+        } else {
+          const el = document.createElement("input");
+          el.value = url;
+          document.body.appendChild(el);
+          el.select();
+          document.execCommand("copy");
+          document.body.removeChild(el);
         }
       });
     });
@@ -181,7 +230,6 @@
       });
 
       if (!hasError) {
-        // Show success modal
         const modal = $("#success-modal");
         if (modal) {
           modal.classList.add("is-active");
@@ -190,7 +238,6 @@
       }
     });
 
-    // Close Modal Event Listener
     const closeModalBtn = $("#close-modal");
     if (closeModalBtn) {
       closeModalBtn.addEventListener("click", () => {
@@ -204,39 +251,12 @@
       return re.test(String(email).toLowerCase());
     }
 
-    // Input listening to clear errors
     $$(".form-input, .form-textarea").forEach((el) => {
       el.addEventListener("input", () => {
         el.classList.remove("has-error");
         const feedback = $(`#${el.id}-error`);
         if (feedback) feedback.style.display = "none";
       });
-    });
-  })();
-
-  /* ============ Newsletter Form Submission ============ */
-  (function initNewsletter() {
-    const form = $("#newsletter-form");
-    if (!form) return;
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const input = $("#newsletter-email");
-      if (!input || !input.value) return;
-
-      const toast = $("#copy-toast");
-      if (toast) {
-        toast.textContent = "Thank you! You have successfully subscribed.";
-        toast.classList.add("is-visible");
-        input.value = "";
-        
-        setTimeout(() => {
-          toast.classList.remove("is-visible");
-        }, 3000);
-      } else {
-        alert("Thank you! You have successfully subscribed.");
-        input.value = "";
-      }
     });
   })();
 
@@ -264,18 +284,12 @@
       }
 
       function openModal() {
-        if (modal) {
-          modal.style.display = 'flex';
-        } else if (banner) {
-          banner.style.display = 'block';
-        }
+        if (modal) modal.style.display = 'flex';
+        else if (banner) banner.style.display = 'block';
       }
 
-      if (btnManage) {
-        btnManage.onclick = openModal;
-      }
+      if (btnManage) btnManage.onclick = openModal;
 
-      // Bind all cookie settings links & buttons
       document.querySelectorAll('.js-cookie-settings, a[href="#cookie-settings"], a[href="#cookie-preferences"], #cs-open-cookie-modal').forEach((el) => {
         el.onclick = function(e) {
           e.preventDefault();
@@ -290,7 +304,7 @@
           const analytics = analyticsInput ? analyticsInput.checked : true;
           const advertising = advertisingInput ? advertisingInput.checked : true;
           localStorage.setItem('cookieConsent', 'custom');
-          localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: analytics, advertising: advertising }));
+          localStorage.setItem('cookiePreferences', JSON.stringify({ analytics, advertising }));
           if (modal) modal.style.display = 'none';
           if (banner) banner.style.display = 'none';
         };
@@ -298,9 +312,7 @@
 
       if (modal) {
         modal.onclick = function(e) {
-          if (e.target === modal) {
-            modal.style.display = 'none';
-          }
+          if (e.target === modal) modal.style.display = 'none';
         };
       }
     }
@@ -311,7 +323,6 @@
       setupCookieConsent();
     }
 
-    // Expose helpers globally for manual testing / footer links
     window.openCookiePreferences = function() {
       const modal = document.getElementById('cs-cookie-modal-overlay');
       if (modal) modal.style.display = 'flex';
@@ -330,4 +341,3 @@
   })();
 
 })();
-

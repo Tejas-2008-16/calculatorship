@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
-
-# Block irrelevant system paths
 Disallow: /cdn-cgi/
-Allow: /cdn-cgi/scripts/
-
-# Sitemap location
 Sitemap: https://www.calculatorship.in/sitemap.xml
