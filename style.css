@@ -1463,6 +1463,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
   html {
     font-size: 16px;
   }
+  body {
+    overflow-x: hidden;
+  }
   .header-inner, .breadcrumb, .calc-switcher-wrapper, .calc-hero, .calc-main-container, .article-page, .article-header, .info-page-container, .all-calculators-section, .footer-inner, .blog-controls-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -1528,13 +1531,18 @@ input[type="range"]::-webkit-slider-thumb:hover {
     border-left: 1px solid var(--border-soft);
     z-index: 1001;
     transform: translateX(100%);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    visibility: hidden;
+    will-change: transform;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 0.3s;
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
 
   .main-nav.is-open-mobile {
     transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 0s;
   }
 
   /* Drawer Top Bar inside mobile menu */

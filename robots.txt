@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
-Sitemap: https://www.calculatorship.in/sitemap.xml
+Sitemap: https://calculatorship.in/sitemap.xml
