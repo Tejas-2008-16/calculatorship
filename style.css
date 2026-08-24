@@ -54,7 +54,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
@@ -62,14 +62,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
   position: relative;
   width: 100%;
 }
 
 .page-wrapper {
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -1461,12 +1461,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
 /* ============================================================
    RESPONSIVE MEDIA QUERIES
    ============================================================ */
-@media (max-width: 1200px) {
-  .site-header {
-    overflow-x: hidden;
-  }
-}
-
 @media (max-width: 1080px) {
   .calc-grid {
     grid-template-columns: 1fr;
@@ -1488,7 +1482,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     font-size: 16px;
   }
   body {
-    overflow-x: hidden;
+    overflow-x: clip;
   }
   .header-actions {
     display: flex !important;
