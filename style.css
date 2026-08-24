@@ -1456,6 +1456,12 @@ input[type="range"]::-webkit-slider-thumb:hover {
 /* ============================================================
    RESPONSIVE MEDIA QUERIES
    ============================================================ */
+@media (max-width: 1200px) {
+  .site-header {
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: 1080px) {
   .calc-grid {
     grid-template-columns: 1fr;
@@ -1469,6 +1475,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .footer-top {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .header-actions {
+    display: none;
   }
 }
 
@@ -1715,5 +1724,296 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .article-header h1 {
     font-size: 2.0rem;
   }
+
+  /* Scenario grid: single column */
+  .scenario-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* All-calculators grid: single column */
+  .all-calculators-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Logo shrink on mobile */
+  .brand img {
+    height: 32px;
+  }
+
+  /* Site header tighter on mobile */
+  .site-header {
+    height: 64px;
+  }
+
+  /* Result value font smaller on mobile */
+  .result-val.highlight {
+    font-size: 1.6rem;
+  }
+
+  /* CTA box tighter */
+  .cta-box {
+    padding: 28px 20px;
+  }
+
+  /* Info card tighter */
+  .info-card {
+    padding: 28px 20px;
+  }
+  .info-card h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Disclaimer banner responsive */
+  .disclaimer-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    margin: 14px 20px 20px;
+  }
+
+  /* Back to top button: smaller on mobile */
+  .back-to-top {
+    bottom: 18px;
+    right: 16px;
+    width: 42px;
+    height: 42px;
+  }
 }
 
+/* ============================================================
+   SMALL PHONES: 480px and below
+   ============================================================ */
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+
+  .header-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .site-header {
+    height: 60px;
+  }
+
+  .brand img {
+    height: 28px;
+  }
+
+  .calc-hero,
+  .calc-main-container,
+  .calc-switcher-wrapper,
+  .breadcrumb,
+  .article-page,
+  .article-header,
+  .info-page-container,
+  .all-calculators-section,
+  .footer-inner,
+  .blog-controls-wrapper {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .calc-card,
+  .calc-summary-card,
+  .info-section-card,
+  .article-main,
+  .info-card {
+    padding: 20px 14px;
+  }
+
+  .calc-hero h1 {
+    font-size: 1.65rem;
+    letter-spacing: -0.02em;
+  }
+
+  .calc-hero p {
+    font-size: 1.0rem;
+  }
+
+  .article-header h1 {
+    font-size: 1.65rem;
+  }
+
+  .result-val {
+    font-size: 1.15rem;
+  }
+
+  .result-val.highlight {
+    font-size: 1.45rem;
+  }
+
+  .info-section-card h2 {
+    font-size: 1.35rem;
+  }
+
+  .blog-filter-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .article-byline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .cta-box {
+    padding: 22px 14px;
+  }
+
+  .cta-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-copy {
+    font-size: 0.82rem;
+  }
+
+  .footer-disclaimer {
+    font-size: 0.80rem;
+  }
+
+  .comparison-table {
+    font-size: 0.84rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 12px;
+  }
+
+  .calc-input-box input[type="number"],
+  .calc-input-box input[type="text"] {
+    font-size: 1.05rem;
+  }
+
+  .scenario-box,
+  .checklist-box {
+    padding: 16px;
+  }
+
+  .back-to-top {
+    bottom: 14px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .disclaimer-banner {
+    margin: 10px 14px 16px;
+    padding: 12px 14px;
+    font-size: 0.84rem;
+  }
+
+  .all-calculators-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   EXTRA SMALL PHONES: 375px and below (iPhone SE, Galaxy mini)
+   ============================================================ */
+@media (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+
+  .header-inner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .brand img {
+    height: 26px;
+  }
+
+  .calc-hero,
+  .calc-main-container,
+  .breadcrumb,
+  .article-page,
+  .article-header,
+  .info-page-container,
+  .all-calculators-section,
+  .footer-inner,
+  .blog-controls-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .calc-hero h1 {
+    font-size: 1.45rem;
+  }
+
+  .article-header h1 {
+    font-size: 1.45rem;
+  }
+
+  .article-main h2 {
+    font-size: 1.3rem;
+  }
+
+  .article-main h3 {
+    font-size: 1.1rem;
+  }
+
+  .result-val.highlight {
+    font-size: 1.3rem;
+  }
+
+  .info-section-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-section-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .filter-pill-btn {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+  }
+
+  .calc-tab {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .blog-search-input {
+    font-size: 0.95rem;
+  }
+
+  .footer-col h3 {
+    font-size: 0.95rem;
+  }
+
+  .footer-col a {
+    font-size: 0.86rem;
+  }
+
+  .comparison-table {
+    font-size: 0.78rem;
+    min-width: 460px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 8px 10px;
+  }
+
+  .cta-box {
+    padding: 18px 12px;
+  }
+
+  .cta-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
