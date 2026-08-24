@@ -18,8 +18,11 @@
   <meta name="theme-color" content="#F3F7F5">
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
-  <link rel="icon" href="logo-light.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="logo-light.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700;800&display=swap">
@@ -38,7 +41,8 @@
       "height": 40
     }
   }
-  </script>
+  </script>
+
 </head>
 <body>
 
@@ -678,6 +682,20 @@
 
       let activeCategory = 'All';
 
+      const CATEGORY_MAP = {
+        'sip & mutual funds': 'sip & mutual funds',
+        'beginners guide': 'sip & mutual funds',
+        'tax planning': 'tax & government schemes',
+        'tax & government schemes': 'tax & government schemes',
+        'fixed deposits': 'budgeting & personal finance',
+        'budgeting & savings': 'budgeting & personal finance',
+        'budgeting & personal finance': 'budgeting & personal finance',
+        'goal planning': 'budgeting & personal finance',
+        'retirement planning': 'retirement & pension',
+        'retirement & pension': 'retirement & pension',
+        'loans & debt strategy': 'loans & debt strategy'
+      };
+
       function filterArticles() {
         const query = searchInput.value.trim().toLowerCase();
         let visibleCount = 0;
@@ -685,10 +703,12 @@
         articleCards.forEach(card => {
           const title = card.getAttribute('data-title') || '';
           const desc = card.getAttribute('data-desc') || '';
-          const cat = card.getAttribute('data-cat') || '';
+          const cat = (card.getAttribute('data-cat') || '').toLowerCase();
+          const normalizedCat = CATEGORY_MAP[cat] || cat;
+          const activeNorm = activeCategory.toLowerCase();
 
-          const matchesCategory = (activeCategory === 'All' || cat.toLowerCase() === activeCategory.toLowerCase());
-          const matchesQuery = query === '' || title.includes(query) || desc.includes(query) || cat.toLowerCase().includes(query);
+          const matchesCategory = (activeCategory === 'All' || cat === activeNorm || normalizedCat === activeNorm);
+          const matchesQuery = query === '' || title.includes(query) || desc.includes(query) || cat.includes(query);
 
           if (matchesCategory && matchesQuery) {
             card.style.display = 'flex';

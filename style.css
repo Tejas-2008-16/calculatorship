@@ -54,12 +54,25 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.page-wrapper {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Accessibility screen-reader only class */
@@ -1532,8 +1545,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
     z-index: 1001;
     transform: translateX(100%);
     visibility: hidden;
+    pointer-events: none;
     will-change: transform;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 0.3s;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
@@ -1542,6 +1556,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .main-nav.is-open-mobile {
     transform: translateX(0);
     visibility: visible;
+    pointer-events: all;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 0s;
   }
 
