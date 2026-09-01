@@ -12,10 +12,10 @@
   <meta property="og:url" content="https://www.calculatorship.in/ppf-calculator.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Calculatorship" />
-  <meta property="og:image" content="https://calculatorship.in/og-image.webp">
+  <meta property="og:image" content="https://www.calculatorship.in/og-image.webp">
   <meta property="og:image:alt" content="Free PPF Calculator for Indian Investors — Try It Now on Calculatorship" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://calculatorship.in/og-image.webp">
+  <meta name="twitter:image" content="https://www.calculatorship.in/og-image.webp">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <meta name="theme-color" content="#F3F7F5">
@@ -30,13 +30,62 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Public Provident Fund (PPF) Calculator",
-    "url": "https://calculatorship.in/ppf-calculator.html",
-    "description": "Calculate Public Provident Fund (PPF) maturity amount, total interest earned, and 100% tax-free wealth across 15 to 30 years in India.",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "All",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Public Provident Fund (PPF) Calculator",
+        "url": "https://www.calculatorship.in/ppf-calculator.html",
+        "description": "Calculate Public Provident Fund (PPF) maturity amount, total interest earned, and 100% tax-free wealth across 15 to 30 years in India.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the maximum yearly limit in PPF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The statutory maximum limit is ₹1,50,000 per financial year across all PPF accounts held by an individual (including accounts opened as a guardian for minors)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can PPF be extended after the mandatory 15-year period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can extend your PPF account indefinitely in blocks of 5 years, with or without continuing fresh deposits, by submitting Form H to your bank or post office."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is PPF interest taxable in India?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. PPF interest is 100% tax-free under Section 10(11) of the Income Tax Act under both Old and New Tax Regimes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can partial withdrawals or loans be taken from PPF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Loans can be availed from the 3rd to 6th financial year (up to 25% of balance at end of 2nd preceding year). Partial withdrawals are permitted once per financial year starting from the 7th financial year up to 50% of the account balance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can NRIs open a new PPF account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non-Resident Indians (NRIs) cannot open a new PPF account. However, if a resident Indian opened a PPF account and subsequently became an NRI, the account can continue on a non-repatriation basis until its original 15-year maturity."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -228,9 +277,11 @@
 
       <!-- Section 1: Key Financial Insights & Rules -->
       <div class="info-section-card">
-        <h2>The Triple Tax Advantage (EEE) of Public Provident Fund</h2>
-        <p>Public Provident Fund (PPF) is backed by the Government of India, offering sovereign safety with zero credit risk. PPF enjoys the coveted Exempt-Exempt-Exempt (EEE) tax status: deposits qualify for Section 80C deductions, annual interest accrued is 100% tax-free, and maturity proceeds are completely exempt from income tax.</p>
+        <h2>The Triple Tax Advantage (EEE) of Public Provident Fund in India</h2>
+        <p>Public Provident Fund (PPF) is backed by the Government of India via the National Savings Institute, offering sovereign safety with absolute zero credit risk. PPF enjoys the coveted Exempt-Exempt-Exempt (EEE) tax status: deposits qualify for Section 80C deductions, annual interest accrued is 100% tax-free, and maturity proceeds are completely exempt from income tax. Read our detailed <a href="ppf-rules-benefits-wealth-guide.html" style="color:var(--emerald); font-weight:600;">PPF Rules, Benefits &amp; Wealth Guide</a> for comprehensive rules.</p>
         
+        <p>Comparing long-term debt options? Discover how PPF stacks up against employee provident funds in our <a href="epf-vs-ppf-vs-vpf.html" style="color:var(--emerald); font-weight:600;">EPF vs PPF vs VPF Comparison Guide</a>, or see our analysis on <a href="elss-tax-saving.html" style="color:var(--emerald); font-weight:600;">ELSS vs PPF Tax Saving</a>.</p>
+
         <div style="background:var(--emerald-soft); border:1.5px solid var(--emerald-border); border-radius:var(--radius-md); padding:24px; margin:24px 0;">
           <h3 style="margin:0 0 8px; font-size:1.2rem; color:var(--emerald-dark);">The Crucial 5th of the Month PPF Rule</h3>
           <p style="margin:0; font-size:1.02rem; color:var(--text-primary); line-height:1.7;">PPF interest is calculated monthly on the lowest balance between the close of the 5th day and the end of the month, but credited annually on March 31st. Always deposit your yearly contribution before April 5th to earn interest for all 12 months.</p>
@@ -257,6 +308,11 @@
             <h3>Moderate Disciplined Saver</h3>
             <p>Rajesh deposits ₹5,000 per month (₹60,000/year). Over 15 years, his ₹9.0 Lakh investment grows into ₹16.27 Lakh completely tax-free.</p>
           </div>
+
+          <div class="scenario-box">
+            <h3>Child Education Corpus (20 Years)</h3>
+            <p>Sunil opens a PPF account for his 2-year-old daughter, depositing ₹1 Lakh annually for 20 years. The guaranteed ₹44.3 Lakh tax-free maturity perfectly funds college tuition.</p>
+          </div>
         
         </div>
       </div>
@@ -268,11 +324,20 @@
         <div class="checklist-grid">
           <div class="checklist-box dos">
             <h3>Recommended Practices</h3>
-            <ul><li>Deposit your annual PPF contribution between April 1st and April 5th to maximize interest earnings.</li><li>Submit Form H within 1 year of maturity if you wish to extend your PPF account in 5-year blocks with contributions.</li><li>Open a PPF account for minor children to build guaranteed long-term education funds.</li></ul>
+            <ul>
+              <li>Deposit your annual PPF contribution between April 1st and April 5th to maximize interest earnings across the full fiscal year.</li>
+              <li>Submit Form H within 1 year of maturity if you wish to extend your PPF account in 5-year blocks with contributions.</li>
+              <li>Open a PPF account for minor children or check out <a href="sukanya-samriddhi-yojana-ssy-guide.html" style="color:var(--emerald); font-weight:600;">Sukanya Samriddhi Yojana (SSY)</a> for girl children.</li>
+              <li>Align your PPF investments with our <a href="80c-deductions-guide.html" style="color:var(--emerald); font-weight:600;">Section 80C Deductions Guide</a>.</li>
+            </ul>
           </div>
           <div class="checklist-box donts">
             <h3>Mistakes to Avoid</h3>
-            <ul><li>Do not deposit more than ₹1,50,000 in a single financial year as excess funds earn zero interest.</li><li>Do not allow your PPF account to become inactive by missing the minimum annual deposit of ₹500.</li><li>Do not close your PPF prematurely unless facing specified medical or higher education emergencies.</li></ul>
+            <ul>
+              <li>Do not deposit more than ₹1,50,000 combined across personal and minor accounts in a single financial year as excess funds earn zero interest.</li>
+              <li>Do not allow your PPF account to become inactive by missing the minimum annual deposit of ₹500.</li>
+              <li>Do not close your PPF prematurely unless facing specified medical emergencies or higher education expenses after 5 completed financial years.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -288,12 +353,22 @@
         
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
             <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Can PPF be extended after the mandatory 15-year period?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Yes. You can extend your PPF account indefinitely in blocks of 5 years, with or without continuing fresh deposits.</p>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Yes. You can extend your PPF account indefinitely in blocks of 5 years, with or without continuing fresh deposits, by submitting Form H to your bank or post office.</p>
           </details>
         
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
             <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Is PPF interest taxable in India?</summary>
             <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">No. PPF interest is 100% tax-free under Section 10(11) of the Income Tax Act under both Old and New Tax Regimes.</p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">When can partial withdrawals or loans be taken from PPF?</summary>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Loans can be availed from the 3rd to 6th financial year (up to 25% of balance at end of 2nd preceding year). Partial withdrawals are permitted once per financial year starting from the 7th financial year up to 50% of the account balance.</p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Can NRIs open a new PPF account?</summary>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Non-Resident Indians (NRIs) cannot open a new PPF account. However, if a resident Indian opened a PPF account and subsequently became an NRI, the account can continue on a non-repatriation basis until its original 15-year maturity.</p>
           </details>
         
       </div>

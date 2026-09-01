@@ -12,10 +12,10 @@
   <meta property="og:url" content="https://www.calculatorship.in/swp-calculator.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Calculatorship" />
-  <meta property="og:image" content="https://calculatorship.in/og-image.webp">
+  <meta property="og:image" content="https://www.calculatorship.in/og-image.webp">
   <meta property="og:image:alt" content="Free SWP Calculator for Indian Retirees — Try It Now on Calculatorship" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://calculatorship.in/og-image.webp">
+  <meta name="twitter:image" content="https://www.calculatorship.in/og-image.webp">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <meta name="theme-color" content="#F3F7F5">
@@ -30,13 +30,62 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "SWP Calculator (Systematic Withdrawal Plan)",
-    "url": "https://calculatorship.in/swp-calculator.html",
-    "description": "Simulate monthly pension withdrawals, total cashflow, and remaining mutual fund portfolio balance with our free SWP calculator.",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "All",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "SWP Calculator (Systematic Withdrawal Plan)",
+        "url": "https://www.calculatorship.in/swp-calculator.html",
+        "description": "Simulate monthly pension withdrawals, total cashflow, and remaining mutual fund portfolio balance with our free SWP calculator.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How is tax calculated on SWP withdrawals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each SWP withdrawal is treated as a partial redemption of units on a FIFO (First-In-First-Out) basis. Only the capital gains proportion of the redeemed units is subject to tax (equity LTCG at 12.5% above the annual ₹1.25 Lakh threshold), making SWP dramatically more tax-efficient than FD interest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if the market crashes during SWP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If equity markets experience a severe correction, redeeming from equity funds liquidates more units (the reverse of rupee cost averaging). To avoid this 'sequence of returns risk', smart investors hold 2 to 3 years of expenses in debt or liquid funds to pause equity SWPs during market crashes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which mutual fund category is ideal for SWP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Balanced Advantage Funds (BAFs), Conservative Hybrid Funds, and Multi-Asset Allocation Funds are the most popular choices for SWP because their dynamic debt-equity rebalancing reduces drawdown volatility while preserving long-term capital."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can SWP amount and frequency be modified or paused anytime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Unlike traditional annuities or insurance pensions which lock you into fixed payouts for life, mutual fund SWP instructions can be increased, reduced, paused, or cancelled at any time online without penalties."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does SWP compare against commercial insurance pension annuities?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Insurance annuities provide fixed 5.5% to 6.5% taxable returns with zero inflation protection and lock in your capital. SWP provides market-linked growth (9% to 12%), lower taxation, and leaves your remaining capital completely liquid and inheritable for your nominees."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -240,8 +289,10 @@
       <!-- Section 1: Key Financial Insights & Rules -->
       <div class="info-section-card">
         <h2>Why SWP Beats Traditional Bank FDs and Annuities for Retirees</h2>
-        <p>A Systematic Withdrawal Plan (SWP) allows retirees to withdraw a fixed monthly cash flow from mutual funds while the remaining capital continues generating market returns. Unlike bank FD interest which is taxed at your highest income slab rate, SWP redemptions are taxed only on the capital gains proportion, resulting in massive tax savings.</p>
+        <p>A Systematic Withdrawal Plan (SWP) allows retirees to withdraw a fixed monthly cash flow from mutual funds while the remaining capital continues generating market compounding returns. Unlike bank FD interest which is fully taxed at your highest income slab rate (up to 39% under the highest bracket), SWP redemptions are taxed only on the capital gains proportion of the redeemed units, resulting in massive post-tax cash flow improvements. Read our dedicated <a href="swp-for-retirement-income-guide.html" style="color:var(--emerald); font-weight:600;">SWP for Retirement Income Master Guide</a> for detailed case studies.</p>
         
+        <p>Planning for financial independence? Learn how to calculate your freedom number in our <a href="fire-movement-india.html" style="color:var(--emerald); font-weight:600;">FIRE Movement India Guide</a> or model longevity needs with our <a href="retirement-planning-india.html" style="color:var(--emerald); font-weight:600;">30x Retirement Corpus Strategy</a>.</p>
+
         <div style="background:var(--emerald-soft); border:1.5px solid var(--emerald-border); border-radius:var(--radius-md); padding:24px; margin:24px 0;">
           <h3 style="margin:0 0 8px; font-size:1.2rem; color:var(--emerald-dark);">The Golden 6% Safe Withdrawal Rate Rule in India</h3>
           <p style="margin:0; font-size:1.02rem; color:var(--text-primary); line-height:1.7;">To ensure your retirement corpus never depletes over a 25-30 year retirement in India, maintain your initial annual withdrawal rate at or below 6% of your starting corpus (e.g., ₹25,000 to ₹30,000/month from a ₹60 Lakh corpus invested in hybrid funds).</p>
@@ -268,6 +319,11 @@
             <h3>Rental Income Alternative (₹25 Lakh Corpus)</h3>
             <p>Priya invests ₹25 Lakh and withdraws ₹15,000/month. Over 15 years at 10% CAGR, she receives ₹27 Lakh in payouts with ₹27.6 Lakh remaining.</p>
           </div>
+
+          <div class="scenario-box">
+            <h3>Conservative 30-Year Bucket Strategy (₹1 Crore)</h3>
+            <p>Ramesh allocates ₹20L in liquid funds for 3-year living needs and ₹80L in Equity Savings/Hybrid funds. Generating ₹50,000/month (6% SWP), his capital survives multi-year market downturns without capital depletion.</p>
+          </div>
         
         </div>
       </div>
@@ -279,11 +335,20 @@
         <div class="checklist-grid">
           <div class="checklist-box dos">
             <h3>Recommended Practices</h3>
-            <ul><li>Maintain 2-3 years of living expenses in liquid debt funds to avoid withdrawing from equities during sharp market dips.</li><li>Park your primary SWP corpus in Balanced Advantage or Multi-Asset Allocation funds for low-volatility stability.</li><li>Re-evaluate your monthly withdrawal rate every 2-3 years against prevailing inflation.</li></ul>
+            <ul>
+              <li>Maintain 2-3 years of living expenses in liquid debt funds or <a href="senior-citizen-fd-rates.html" style="color:var(--emerald); font-weight:600;">Senior Citizen FDs</a> to avoid withdrawing from equities during sharp market dips.</li>
+              <li>Park your primary SWP corpus in Balanced Advantage or Multi-Asset Allocation funds for low-volatility stability.</li>
+              <li>Re-evaluate your monthly withdrawal rate every 2-3 years against prevailing inflation and capital gains tax rules.</li>
+              <li>Review capital gains tax rules with our <a href="capital-gains-tax-india.html" style="color:var(--emerald); font-weight:600;">Capital Gains Tax Guide</a> to optimize LTCG exemptions.</li>
+            </ul>
           </div>
           <div class="checklist-box donts">
             <h3>Mistakes to Avoid</h3>
-            <ul><li>Do not withdraw more than 8% annually from your corpus, as high withdrawal rates cause premature capital exhaustion.</li><li>Do not park 100% of your SWP retirement money in high-beta small-cap funds.</li><li>Do not opt for the mutual fund Dividend option when SWP gives you complete control over payout dates and amounts.</li></ul>
+            <ul>
+              <li>Do not withdraw more than 8% annually from your corpus, as high withdrawal rates cause premature capital exhaustion.</li>
+              <li>Do not park 100% of your SWP retirement money in high-beta small-cap funds subject to sharp 30-40% drawdowns.</li>
+              <li>Do not opt for the mutual fund Dividend option (IDCW) when SWP gives you complete control over payout dates and amounts.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -294,12 +359,27 @@
         
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
             <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">How is tax calculated on SWP withdrawals?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Each SWP withdrawal is treated as a partial redemption of units. Only the capital gains portion of the withdrawn amount is taxed (equity LTCG at 12.5% above ₹1.25L/yr exemption), making SWP vastly more tax-efficient than FD interest.</p>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Each SWP withdrawal is treated as a partial redemption of units on a FIFO (First-In-First-Out) basis. Only the capital gains proportion of the redeemed units is subject to tax (equity LTCG at 12.5% above the annual ₹1.25 Lakh threshold), making SWP dramatically more tax-efficient than FD interest.</p>
           </details>
         
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
             <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">What happens if the market crashes during SWP?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">If equity markets crash, withdrawing from equity funds liquidates more units. Having a debt fund buffer protects your equity units during market corrections.</p>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">If equity markets experience a severe correction, redeeming from equity funds liquidates more units (the reverse of rupee cost averaging). To avoid this 'sequence of returns risk', smart investors hold 2 to 3 years of expenses in debt or liquid funds to pause equity SWPs during market crashes.</p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Which mutual fund category is ideal for SWP?</summary>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Balanced Advantage Funds (BAFs), Conservative Hybrid Funds, and Multi-Asset Allocation Funds are the most popular choices for SWP because their dynamic debt-equity rebalancing reduces drawdown volatility while preserving long-term capital.</p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Can SWP amount and frequency be modified or paused anytime?</summary>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Yes. Unlike traditional annuities or insurance pensions which lock you into fixed payouts for life, mutual fund SWP instructions can be increased, reduced, paused, or cancelled at any time online without penalties.</p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">How does SWP compare against commercial insurance pension annuities?</summary>
+            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Insurance annuities provide fixed 5.5% to 6.5% taxable returns with zero inflation protection and lock in your capital. SWP provides market-linked growth (9% to 12%), lower taxation, and leaves your remaining capital completely liquid and inheritable for your nominees.</p>
           </details>
         
       </div>
