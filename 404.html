@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="SIP calculator India, mutual fund calculator, financial planning India, personal finance India">
+  <meta name="author" content="Tejas, Calculatorship">
+  <meta property="og:locale" content="en_IN">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="language" content="en-IN">
   <title>Page Not Found (404) | Calculatorship</title>
   <meta name="description" content="The page you are looking for does not exist on Calculatorship. Explore our free financial calculators and guides.">
   <meta property="og:title" content="Page Not Found | Calculatorship">
@@ -41,7 +47,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
-        <img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="38">
+        <img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="38" loading="lazy">
       </a>
       <nav class="main-nav" aria-label="Primary Navigation">
         <div class="nav-dropdown">
@@ -82,7 +88,7 @@
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html"><img src="logo-footer.svg" alt="Calculatorship Logo" width="200" height="36" style="display:block;"></a>
+          <a href="index.html"><img src="logo-footer.svg" alt="Calculatorship Logo" width="200" height="36" style="display:block;" width="200" height="36" loading="lazy"></a>
           <p class="footer-tagline">Independent financial calculators and educational guides for Indian investors, salaried professionals, and wealth builders.</p>
         </div>
         <div class="footer-links">
@@ -140,5 +146,28 @@
     gtag('config', 'G-0C93Q0VBQP');
   </script>
   <script src="theme.js?v=2.2"></script>
+<!-- Cookie Consent Banner for AdSense Compliance -->
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#fff; padding:16px 24px; z-index:9999; justify-content:space-between; align-items:center; font-size:14px; gap:16px; box-shadow:0 -4px 16px rgba(0,0,0,0.2);">
+  <span>🍪 We use cookies to improve your experience and serve relevant ads. By continuing, you accept our <a href="cookies.html" style="color:#4ade80; text-decoration:underline;">Cookie Policy</a>.</span>
+  <button id="cookie-accept-btn" style="background:#4ade80; color:#000; border:none; padding:8px 20px; border-radius:6px; cursor:pointer; font-weight:600; white-space:nowrap;">Accept</button>
+</div>
+<script>
+  (function(){
+    if (!localStorage.getItem('cookieAccepted')) {
+      var cb = document.getElementById('cookie-banner');
+      if (cb) {
+        cb.style.display = 'flex';
+        var btn = document.getElementById('cookie-accept-btn');
+        if (btn) {
+          btn.addEventListener('click', function() {
+            cb.style.display = 'none';
+            localStorage.setItem('cookieAccepted', 'true');
+          });
+        }
+      }
+    }
+  })();
+</script>
+
 </body>
 </html>

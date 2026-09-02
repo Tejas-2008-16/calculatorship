@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /cdn-cgi/
+Disallow: /404.html
 
 Sitemap: https://www.calculatorship.in/sitemap.xml
