@@ -1,5 +1,12 @@
 User-agent: *
 Allow: /
-Disallow: /404.html
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /*.json$
 
 Sitemap: https://www.calculatorship.in/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
