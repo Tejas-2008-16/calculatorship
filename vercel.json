@@ -36,8 +36,8 @@
       "permanent": true
     },
     {
-      "source": "/home-loan-prepayment-vs-sip-strategy.html",
-      "destination": "/home-loan-prepayment-vs-sip.html",
+      "source": "/home-loan-prepayment-vs-sip.html",
+      "destination": "/home-loan-prepayment-vs-sip-strategy.html",
       "permanent": true
     }
   ]
