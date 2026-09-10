@@ -115,7 +115,7 @@
             "name": "What is the ideal deployment timeframe for an STP in India?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "For moderate lump sums (₹2 Lakh to ₹5 Lakh), a 6-month STP is ideal. For substantial windfalls (₹10 Lakh to ₹50 Lakh), financial planners recommend staggering the STP deployment over 12 to 18 months to navigate full market cycles safely."
+              "text": "For moderate lump sums (₹2 Lakh to ₹5 Lakh), a 6-month STP is ideal. For substantial windfalls (₹10 Lakh to ₹50 Lakh), financial planners recommend staggering the STP deployment over 12 to 18 months to manage full market cycles safely."
             }
           }
         ]
@@ -350,7 +350,7 @@
 
         <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
           <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What is the ideal deployment timeframe for an STP in India?</summary>
-          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">For moderate lump sums (₹2 Lakh to ₹5 Lakh), a 6-month STP is ideal. For substantial windfalls (₹10 Lakh to ₹50 Lakh), financial planners recommend staggering the STP deployment over 12 to 18 months to navigate full market cycles safely.</p>
+          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">For moderate lump sums (₹2 Lakh to ₹5 Lakh), a 6-month STP is ideal. For substantial windfalls (₹10 Lakh to ₹50 Lakh), financial planners recommend staggering the STP deployment over 12 to 18 months to manage full market cycles safely.</p>
         </details>
 
       </section>
@@ -418,57 +418,57 @@
   <script src="theme.js?v=2.2"></script>
 
   <!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-  <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#fff; padding:1rem 2rem; z-index:9999; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.3);">
-    <p style="margin:0; font-size:0.9rem; max-width:700px; line-height:1.5;">
-      We use cookies to improve your browsing experience and serve relevant advertisements. By accepting, you agree to our <a href="cookies.html" style="color:#64ffda; text-decoration:underline;">Cookie Policy</a> and allow Google AdSense to serve personalized ads.
-    </p>
-    <div style="display:flex; gap:1rem; flex-shrink:0;">
-      <button id="decline-cookies" style="background:transparent; border:1px solid #64ffda; color:#64ffda; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem;">Decline</button>
-      <button id="accept-cookies" style="background:#64ffda; border:none; color:#1a1a2e; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem; font-weight:600;">Accept All</button>
-    </div>
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#fff; padding:1rem 2rem; z-index:9999; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.3);">
+  <p style="margin:0; font-size:0.9rem; max-width:700px; line-height:1.5;">
+    We use cookies to improve your browsing experience and serve relevant advertisements. By accepting, you agree to our <a href="cookies.html" style="color:#64ffda; text-decoration:underline;">Cookie Policy</a> and allow Google AdSense to serve personalized ads.
+  </p>
+  <div style="display:flex; gap:1rem; flex-shrink:0;">
+    <button id="decline-cookies" style="background:transparent; border:1px solid #64ffda; color:#64ffda; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem;">Decline</button>
+    <button id="accept-cookies" style="background:#64ffda; border:none; color:#1a1a2e; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem; font-weight:600;">Accept All</button>
   </div>
-  <script>
-    (function() {
-      const CONSENT_KEY = 'calculatorship_cookie_consent';
-      const consent = localStorage.getItem(CONSENT_KEY);
+</div>
+<script>
+  (function() {
+    const CONSENT_KEY = 'calculatorship_cookie_consent';
+    const consent = localStorage.getItem(CONSENT_KEY);
 
-      function loadAdsense() {
-        if (document.getElementById('adsense-script')) return;
-        const script = document.createElement('script');
-        script.id = 'adsense-script';
-        script.async = true;
-        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798';
-        script.crossOrigin = 'anonymous';
-        document.head.appendChild(script);
-      }
+    function loadAdsense() {
+      if (document.getElementById('adsense-script')) return;
+      const script = document.createElement('script');
+      script.id = 'adsense-script';
+      script.async = true;
+      script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798';
+      script.crossOrigin = 'anonymous';
+      document.head.appendChild(script);
+    }
 
-      if (consent === 'accepted') {
-        loadAdsense();
-      } else if (!consent) {
-        document.addEventListener('DOMContentLoaded', function() {
-          const banner = document.getElementById('cookie-banner');
-          if (banner) banner.style.display = 'flex';
-          
-          const acceptBtn = document.getElementById('accept-cookies');
-          if (acceptBtn) {
-            acceptBtn.addEventListener('click', function() {
-              localStorage.setItem(CONSENT_KEY, 'accepted');
-              if (banner) banner.style.display = 'none';
-              loadAdsense();
-            });
-          }
-          
-          const declineBtn = document.getElementById('decline-cookies');
-          if (declineBtn) {
-            declineBtn.addEventListener('click', function() {
-              localStorage.setItem(CONSENT_KEY, 'declined');
-              if (banner) banner.style.display = 'none';
-            });
-          }
-        });
-      }
-    })();
-  </script>
+    if (consent === 'accepted') {
+      loadAdsense();
+    } else if (!consent) {
+      document.addEventListener('DOMContentLoaded', function() {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'flex';
+        
+        const acceptBtn = document.getElementById('accept-cookies');
+        if (acceptBtn) {
+          acceptBtn.addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'accepted');
+            if (banner) banner.style.display = 'none';
+            loadAdsense();
+          });
+        }
+        
+        const declineBtn = document.getElementById('decline-cookies');
+        if (declineBtn) {
+          declineBtn.addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'declined');
+            if (banner) banner.style.display = 'none';
+          });
+        }
+      });
+    }
+  })();
+</script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"177595967b20485a96d1ade70873544b","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>

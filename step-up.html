@@ -1,740 +1,1426 @@
-<!DOCTYPE html>
-<html lang="en-IN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Step-Up SIP Calculator — Calculate Annual Top-Up SIP Returns | Calculatorship</title>
-  <meta name="description" content="Calculate exponential wealth growth when increasing your monthly mutual fund SIP by 5% to 20% annually with salary hikes. Free Indian Step-Up calculator with yearly schedules.">
-  <link rel="canonical" href="https://www.calculatorship.in/step-up.html">
-  <meta name="keywords" content="step up SIP calculator India, top up SIP calculator, annual increment SIP mutual fund, salary hike investment calculator">
-  <meta name="author" content="Tejas, Calculatorship">
-  <meta property="og:locale" content="en_IN">
-  <meta name="geo.region" content="IN">
-  <meta name="geo.placename" content="India">
-  <meta name="language" content="en-IN">
-  <meta property="og:title" content="Step-Up SIP Calculator — Calculate Top-Up SIP Compounding Growth">
-  <meta property="og:description" content="Discover how stepping up your monthly SIP by 10% annually dramatically expands your final wealth. Interactive simulator with year-by-year accumulation tables.">
-  <meta property="og:url" content="https://www.calculatorship.in/step-up.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Calculatorship">
-  <meta property="og:image" content="https://www.calculatorship.in/og-image.webp">
-  <meta property="og:image:alt" content="Calculatorship — Free Financial Calculators for Indian Investors">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.calculatorship.in/og-image.webp">
-  <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
-  <meta name="theme-color" content="#F3F7F5">
-  <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700;800&display=swap">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700;800&display=swap"></noscript>
-  <link rel="stylesheet" href="style.css?v=2.2">
-
-  <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0C93Q0VBQP');
-  </script>
-
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Step-Up SIP Calculator (Top-Up SIP) — Calculatorship",
-    "url": "https://www.calculatorship.in/step-up.html",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web Browser",
-    "description": "Calculate exponential wealth growth when increasing your monthly SIP by 5% to 20% annually with salary hikes.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "INR"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Calculatorship",
-      "url": "https://www.calculatorship.in",
-      "logo": "https://www.calculatorship.in/logo-light.svg"
-    }
-  }
-  </script>
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is a Step-Up SIP (Top-Up SIP) in Indian mutual funds?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A Step-Up SIP (also called Top-Up SIP) is a feature offered by Indian mutual fund houses that automatically increases your monthly SIP installment by a predefined percentage (e.g., 10%) or a fixed rupee amount (e.g., ₹1,000) every year. This ensures your investment contributions grow in tandem with your annual career salary increments, beating lifestyle inflation and vastly increasing your eventual compounding corpus."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does a 10% annual step-up increase my final retirement corpus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A 10% annual step-up typically yields 60% to 100% more total wealth over a 15 to 20-year horizon compared to a flat, non-increasing SIP. For example, a constant ₹10,000 monthly SIP over 20 years at 12% CAGR yields approximately ₹99.91 Lakh. Stepping up the same SIP by 10% annually produces an extraordinary maturity corpus of approximately ₹2.03 Crore—more than double the final wealth with manageable incremental contributions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I set an upper cap on my annual Step-Up SIP amount?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Most Indian mutual fund AMCs and investment platforms allow you to set an upper ceiling limit (e.g., stopping the automatic top-up once your monthly contribution reaches ₹50,000 or ₹1,00,000 per month). Once the cap is hit, your SIP continues at that fixed maximum level for the remainder of the tenure."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is a Step-Up SIP automated in Indian bank accounts?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Step-Up SIPs are automated via an authorized One-Time Mandate (OTM) through the National Automated Clearing House (NACH) or UPI AutoPay. When configuring your initial mandate, ensure the registered maximum daily debit limit on your mandate is set sufficiently high (e.g. ₹50,000 or ₹1,00,000) so future stepped-up installments execute seamlessly without rejection."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the best annual step-up percentage for salaried Indian professionals?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For salaried professionals in India receiving annual appraisals of 8% to 15%, setting an annual Step-Up rate of 10% is widely considered the ideal benchmark. It ensures that roughly half of your annual salary increment is redirected straight into wealth building before lifestyle inflation consumes the surplus."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How are capital gains taxed on a Step-Up SIP in India?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Taxation on Step-Up SIPs operates under the standard First-In, First-Out (FIFO) principle. Every individual monthly installment—whether from year 1 or stepped-up in year 10—is treated as an independent purchase. For equity funds, units held over 12 months qualify for LTCG at 12.5% on gains exceeding ₹1.25 Lakh per financial year. Units held for 12 months or less attract STCG at 20%."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.calculatorship.in/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Calculators",
-      "item": "https://www.calculatorship.in/#calculators"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Step-Up SIP Calculator India",
-      "item": "https://www.calculatorship.in/step-up.html"
-    }
-  ]
-}
-  </script>
-</head>
-<body>
-
-  <div class="reading-progress-bar" id="reading-progress"></div>
-  <a class="skip-link" href="#calculator-card">Skip to calculator</a>
-
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
-        <img src="logo-light.svg" alt="Calculatorship — Free Financial Calculators for Indian Investors" width="220" height="38" loading="lazy">
-      </a>
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <div class="nav-dropdown">
-          <a href="index.html" class="nav-dropdown-toggle">Calculators</a>
-          <ul class="nav-dropdown-menu" role="menu">
-            <li><a href="index.html">SIP Calculator</a></li>
-            <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
-            <li><a href="step-up.html">Step-Up SIP</a></li>
-            <li><a href="goal.html">Goal Planner</a></li>
-            <li><a href="ppf-calculator.html">PPF Calculator</a></li>
-            <li><a href="swp-calculator.html">SWP Calculator</a></li>
-            <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
-            <li class="nav-dropdown-divider" role="separator"></li>
-            <li><a href="fd-calculator.html">FD Calculator</a></li>
-            <li><a href="budget-planner.html">Budget Planner</a></li>
-            <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
-          </ul>
-        </div>
-        <a href="blog.html">Blog &amp; Guides</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <div class="breadcrumb-bar">
-    <nav class="breadcrumb" aria-label="Breadcrumbs">
-      <ol>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Calculators</a></li>
-        <li aria-current="page">Step-Up SIP Calculator (Top-Up SIP)</li>
-      </ol>
-    </nav>
-  </div>
-
-  <main id="main-content">
-
-    <div class="calc-hero">
-      <h1>Step-Up SIP Calculator (Top-Up SIP)</h1>
-      <p>Discover how increasing your monthly SIP contributions annually with career salary increments supercharges your wealth.</p>
-    </div>
-
-    <div class="financial-disclaimer" role="note" aria-label="Financial Disclaimer" style="background:#fff8e1; border-left:4px solid #f9a825; padding:0.875rem 1.25rem; margin:1.5rem auto; max-width:1200px; border-radius:0 6px 6px 0; font-size:0.875rem; color:#5d4037; line-height:1.6;">
-      <strong>⚠️ Educational Disclaimer:</strong> This content is written by Tejas, an independent personal finance enthusiast, not a SEBI-registered Investment Advisor, Chartered Accountant, or certified financial professional. All information is for general educational awareness only and does not constitute personalized financial, investment, tax, or legal advice. Mutual fund investments are subject to market risks. Please read all scheme documents carefully and consult a qualified financial advisor before making investment decisions.
-    </div>
-
-    <div class="calc-switcher-wrapper">
-      <div class="calc-switcher-bar">
-        <a href="index.html" class="calc-tab">SIP Calculator</a>
-        <a href="lumpsum.html" class="calc-tab">Lumpsum</a>
-        <a href="step-up.html" class="calc-tab active">Step-Up SIP</a>
-        <a href="goal.html" class="calc-tab">Goal Planner</a>
-        <a href="ppf-calculator.html" class="calc-tab">PPF</a>
-        <a href="swp-calculator.html" class="calc-tab">SWP</a>
-        <a href="emi-calculator.html" class="calc-tab">Loan EMI</a>
-        <a href="fd-calculator.html" class="calc-tab">FD Calculator</a>
-        <a href="budget-planner.html" class="calc-tab">50-30-20 Budget</a>
-        <a href="income-tax-calculator.html" class="calc-tab">Tax Calculator</a>
-      </div>
-    </div>
-
-    <div class="calc-main-container">
-      <div class="calc-grid" id="calculator-card">
-        
-        <!-- Left: Inputs -->
-        <div class="calc-card">
-          <h2 style="font-size:1.35rem; font-weight:800; margin-bottom:24px; color:var(--text-primary);">Configure Financial Parameters</h2>
-          
-          <div class="calc-field-group">
-            <div class="calc-field-header">
-              <label for="monthly-investment-num">Initial Monthly SIP Amount</label>
-              <div class="calc-input-box">
-                <span class="calc-input-prefix">₹</span>
-                <input type="number" id="monthly-investment-num" value="10000" min="500" max="1000000" step="500" aria-label="Initial Monthly SIP Amount Input">
-              </div>
-            </div>
-            <input type="range" id="monthly-investment" min="500" max="1000000" step="500" value="10000" aria-label="Initial Monthly SIP Amount Slider">
-          </div>
-
-          <div class="calc-field-group">
-            <div class="calc-field-header">
-              <label for="step-up-pct-num">Annual Step-Up (Top-Up %)</label>
-              <div class="calc-input-box">
-                <input type="number" id="step-up-pct-num" value="10" min="1" max="50" step="1" aria-label="Annual Step-Up Percentage Input">
-                <span class="calc-input-suffix">%</span>
-              </div>
-            </div>
-            <input type="range" id="step-up-pct" min="1" max="50" step="1" value="10" aria-label="Annual Step-Up Percentage Slider">
-          </div>
-
-          <div class="calc-field-group">
-            <div class="calc-field-header">
-              <label for="expected-return-num">Expected Annual Return (CAGR)</label>
-              <div class="calc-input-box">
-                <input type="number" id="expected-return-num" value="12" min="1" max="30" step="0.5" aria-label="Expected Annual Return (CAGR) Input">
-                <span class="calc-input-suffix">%</span>
-              </div>
-            </div>
-            <input type="range" id="expected-return" min="1" max="30" step="0.5" value="12" aria-label="Expected Annual Return (CAGR) Slider">
-          </div>
-
-          <div class="calc-field-group">
-            <div class="calc-field-header">
-              <label for="time-period-num">Investment Duration</label>
-              <div class="calc-input-box">
-                <input type="number" id="time-period-num" value="10" min="1" max="40" step="1" aria-label="Investment Duration Input">
-                <span class="calc-input-suffix">Yrs</span>
-              </div>
-            </div>
-            <input type="range" id="time-period" min="1" max="40" step="1" value="10" aria-label="Investment Duration Slider">
-          </div>
-        </div>
-
-        <!-- Right: Summary Results & Visuals -->
-        <div class="calc-summary-card">
-          <div>
-            <h3 style="font-size:1.2rem; font-weight:800; color:var(--text-primary); margin-bottom:18px;">Simulation Results</h3>
-            
-            <div class="result-row">
-              <span class="result-label">Total Capital Invested</span>
-              <span class="result-val" id="res-invested">₹19,12,491</span>
-            </div>
-
-            <div class="result-row">
-              <span class="result-label">Estimated Growth</span>
-              <span class="result-val" id="res-returns" style="color:#059669;">₹14,72,397</span>
-            </div>
-
-            <div class="result-row" style="padding-top:18px;">
-              <span class="result-label" style="font-weight:800; color:var(--text-primary);">Total Projected Value</span>
-              <span class="result-val highlight" id="res-total">₹33,84,888</span>
-            </div>
-
-            <!-- SVG Visual Donut Ratio -->
-            <div style="margin:28px 0 12px; display:flex; align-items:center; justify-content:center; gap:28px;">
-              <svg width="130" height="130" viewBox="0 0 42 42" class="donut" aria-label="Step-Up Allocation Ratio">
-                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#E2E8F0" stroke-width="5.5"></circle>
-                <circle id="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#00D09C" stroke-width="5.5" stroke-dasharray="44 56" stroke-dashoffset="25"></circle>
-              </svg>
-              <div style="font-size:0.90rem; line-height:1.9;">
-                <div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#00D09C;"></span> <span id="donut-leg-gain">Growth: 44%</span></div>
-                <div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#CBD5E1;"></span> <span id="donut-leg-inv">Capital: 56%</span></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="calc-result-disclaimer">
-            Mathematical simulation for financial planning purposes. Tax rules and interest yields subject to government and market regulatory amendments.
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Annual Growth Schedule Table -->
-      <div style="margin-top:42px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-sm);">
-        <h3 style="font-size:1.35rem; font-weight:800; color:var(--text-primary); margin-bottom:8px;">Year-by-Year Step-Up Financial Schedule</h3>
-        <p style="font-size:0.96rem; color:var(--text-secondary); margin-bottom:20px;">Detailed annual accumulation breakdown illustrating stepped-up monthly contributions, yearly deposits, and interest progression.</p>
-        <div class="table-wrapper">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Monthly SIP</th>
-                <th>Annual Deposit</th>
-                <th>Interest / Growth</th>
-                <th>Closing Balance</th>
-              </tr>
-            </thead>
-            <tbody id="schedule-tbody">
-              <!-- Dynamically Populated by JS -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Deep Educational Content (1,500+ Words) -->
-      
-      <div class="info-section-card" style="margin-top: 40px;">
-        <h2>What is a Step-Up (Top-Up) SIP? — A Complete Guide for Indian Investors</h2>
-        <p>A Step-Up SIP (frequently referred to as a <strong>Top-Up SIP</strong> in Indian mutual fund documentation) is an automated investing feature that progressively raises your monthly SIP contribution at predetermined annual intervals. Instead of keeping your monthly mutual fund debit fixed at the same static rupee amount year after year, a Step-Up SIP automatically scales your investments—typically by 5%, 10%, 15%, or a fixed rupee increment like ₹1,000 every 12 months.</p>
-        <p>In the real world, a salaried Indian professional's income does not remain static. As you gain career experience, receive annual performance appraisals, and earn promotions, your monthly cash flow expands. However, if your investment contributions remain fixed at ₹5,000 or ₹10,000 for a decade, the purchasing power of your investment steadily declines due to consumer price inflation (historically 5% to 7% in India). Furthermore, uncommitted salary surpluses often get absorbed by subtle lifestyle inflation (frequent dining out, luxury upgrades, higher discretionary subscriptions).</p>
-        <p>By configuring a Step-Up SIP, you align your investment growth directly with your career earnings trajectory. As your salary increases, a portion of the increment is automatically routed into your mutual fund portfolio before you have the chance to spend it. Over long horizons of 15 to 25 years, this produces a dramatic wealth acceleration effect, creating a portfolio that is often <strong>60% to 100% larger</strong> than a standard flat SIP.</p>
-        <p>This calculator allows you to model exactly how different annual percentage increases (e.g. 5%, 10%, or 20%) impact your total wealth accumulation, helping you design an automated, inflation-beating financial plan.</p>
-      </div>
-
-      <div class="info-section-card">
-        <h2>How to Use This Step-Up SIP Calculator — Step-by-Step Walkthrough</h2>
-        <p>Our Step-Up SIP calculator is designed to provide real-time simulations of escalating annual contributions and multi-year compounding. Follow these simple steps to customize your scenario:</p>
-        <ol style="line-height: 1.8; margin-left: 1.25rem;">
-          <li><strong>Step 1: Set Your Starting Monthly SIP (₹):</strong> Enter the initial monthly amount you want to invest in Year 1 (e.g., ₹5,000, ₹10,000, or ₹25,000).</li>
-          <li><strong>Step 2: Choose Your Annual Step-Up Percentage (%):</strong> Input the percentage rate by which you want your monthly installment to increase every 12 months. Most Indian salaried earners choose <strong>10%</strong> to match typical corporate salary appraisal cycles.</li>
-          <li><strong>Step 3: Define Your Expected Annual Return (CAGR %):</strong> Select the anticipated annualized growth rate of your portfolio. For diversified Indian equity funds (Nifty 50, Flexi-cap, Mid-cap funds) held over 10+ years, historical benchmarks range between 11% and 13% CAGR.</li>
-          <li><strong>Step 4: Select Your Investment Duration (Years):</strong> Specify the total timeline of your compounding journey (e.g. 5, 10, 15, 20, or 30 years).</li>
-          <li><strong>Step 5: Review Results and Annual Accumulation:</strong> The calculator outputs your <em>Total Capital Invested</em>, <em>Estimated Compounding Gain</em>, and <em>Total Projected Maturity Value</em>. In the annual table below, observe how your monthly installment increases in Year 2, Year 3, etc., and how your interest gains accelerate each year.</li>
-        </ol>
-      </div>
-
-      <div class="info-section-card">
-        <h2>The Math Behind the Calculator — Formula Explained</h2>
-        <p>A Step-Up SIP cannot be calculated with a single static annuity formula because the monthly payment variable <code>P</code> increases each year. Instead, the calculation is executed using an iterative compounding algorithm across each year <code>y</code> from 1 to <code>N</code>:</p>
-        
-        <div style="background: #f1f5f9; border-left: 4px solid #0f172a; padding: 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-family: 'JetBrains Mono', monospace; font-size: 1.05rem;">
-          For Year y: Monthly Deposit P<sub>y</sub> = P<sub>1</sub> × (1 + s)<sup>(y - 1)</sup><br>
-          Monthly Compounding Rate: i = r / (12 × 100)<br>
-          Future Value at Month m: FV<sub>m</sub> = (FV<sub>m-1</sub> + P<sub>y</sub>) × (1 + i)
-        </div>
-
-        <p><strong>Where the variables represent:</strong></p>
-        <ul style="line-height: 1.8;">
-          <li><strong>P<sub>1</sub>:</strong> Initial monthly installment in Year 1 in Indian Rupees (₹).</li>
-          <li><strong>s:</strong> Annual Step-Up rate expressed as a decimal (e.g. 10% is <code>10 / 100 = 0.10</code>).</li>
-          <li><strong>P<sub>y</sub>:</strong> Stepped-up monthly installment in year <code>y</code>.</li>
-          <li><strong>r:</strong> Expected annual return (CAGR) in percent.</li>
-          <li><strong>i:</strong> Monthly effective compounding rate.</li>
-        </ul>
-
-        <h3>Step-by-Step Worked Mathematical Example in Indian Rupees</h3>
-        <p>Let us compare a flat SIP vs a Step-Up SIP starting with <strong>₹10,000/month</strong> for <strong>10 years</strong> at <strong>12% CAGR</strong> with a <strong>10% annual step-up</strong>:</p>
-        <ul style="line-height: 1.8;">
-          <li><strong>Year 1:</strong> Monthly SIP = ₹10,000 | Annual Deposit = ₹1,20,000 | Year-End Balance &approx; ₹1,28,093</li>
-          <li><strong>Year 2:</strong> Monthly SIP = ₹11,000 (+10%) | Annual Deposit = ₹1,32,000 | Year-End Balance &approx; ₹2,86,851</li>
-          <li><strong>Year 3:</strong> Monthly SIP = ₹12,100 (+10%) | Annual Deposit = ₹1,45,200 | Year-End Balance &approx; ₹4,83,721</li>
-          <li><strong>Year 5:</strong> Monthly SIP = ₹14,641 | Annual Deposit = ₹1,75,692 | Year-End Balance &approx; ₹10,41,630</li>
-          <li><strong>Year 10:</strong> Monthly SIP = ₹23,579 | Annual Deposit = ₹2,82,953 | Final Maturity Corpus &approx; <strong>₹33,84,888</strong></li>
-        </ul>
-        <p><strong>The Power of the Step-Up Difference:</strong></p>
-        <p>In a standard flat SIP of ₹10,000/month, your 10-year maturity corpus would be <strong>₹23,23,391</strong> (with ₹12,00,000 invested).<br>
-        With a 10% Step-Up SIP, you invest ₹19,12,491 total, and your maturity corpus explodes to <strong>₹33,84,888</strong>—delivering an extra <strong>₹10.61 Lakh</strong> in wealth!</p>
-      </div>
-
-      <div class="info-section-card">
-        <h2>Real-World Indian Scenarios &amp; Case Studies</h2>
-        <p>See how stepping up annual contributions transforms financial outcomes for individuals across different career trajectories in India:</p>
-        
-        <div class="scenario-grid">
-          <div class="scenario-box">
-            <h3>Case Study 1: Rahul — Junior Techie Scaling with Appraisals (Age 24)</h3>
-            <p><strong>Profile:</strong> Rahul joins an IT firm in Noida with a starting salary of ₹35,000/month. He starts a SIP of <strong>₹5,000/month</strong> and pledges to step it up by <strong>10% every year</strong> as his salary grows.</p>
-            <p><strong>Inputs:</strong> Starting Monthly: ₹5,000 | Step-Up: 10% | Expected Return: 12% CAGR | Horizon: 20 Years.</p>
-            <p><strong>Calculated Outcome:</strong> Over 20 years, Rahul's total invested capital reaches ₹34.37 Lakh. His final maturity portfolio grows to an incredible <strong>₹1.01 Crore</strong> (compared to just ₹49.95 Lakh without step-up!).</p>
-            <p><strong>Strategic Takeaway:</strong> Stepping up a modest ₹5,000 SIP made Rahul a crorepatit by age 44 without ever pinching his evolving lifestyle.</p>
-          </div>
-
-          <div class="scenario-box">
-            <h3>Case Study 2: Priya — Healthcare Professional Fast-Tracking Independence (Age 30)</h3>
-            <p><strong>Profile:</strong> Priya is a dental surgeon in Pune whose clinic revenues increase steadily. She begins with a <strong>₹20,000/month</strong> SIP and institutes a <strong>15% annual step-up</strong>.</p>
-            <p><strong>Inputs:</strong> Starting Monthly: ₹20,000 | Step-Up: 15% | Expected Return: 13% CAGR | Horizon: 15 Years.</p>
-            <p><strong>Calculated Outcome:</strong> Her total contributions equal ₹1.14 Crore. Her portfolio compounds to a staggering <strong>₹2.52 Crore</strong> (delivering ₹1.38 Crore in compounding gains alone).</p>
-            <p><strong>Strategic Takeaway:</strong> Higher step-up percentages (15%) compress retirement timelines by 5 to 7 years.</p>
-          </div>
-
-          <div class="scenario-box">
-            <h3>Case Study 3: Arun — Senior Executive Aiming for ₹5 Crore Corpus (Age 38)</h3>
-            <p><strong>Profile:</strong> Arun is a general manager in Gurugram earning ₹2.5 Lakh/month. He wants to accumulate a ₹5 Crore early retirement fund in 12 years. He starts with <strong>₹60,000/month</strong> and an <strong>8% annual step-up</strong>.</p>
-            <p><strong>Inputs:</strong> Starting Monthly: ₹60,000 | Step-Up: 8% | Expected Return: 12% CAGR | Horizon: 12 Years.</p>
-            <p><strong>Calculated Outcome:</strong> Total capital invested = ₹1.37 Crore. His final accumulated corpus reaches approximately <strong>₹3.14 Crore</strong>, putting him well on track to exceed ₹5 Crore with ongoing salary bonuses.</p>
-            <p><strong>Strategic Takeaway:</strong> Even modest 8% top-ups drastically expand high-earners' accumulation speed.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-section-card">
-        <h2>Key Things to Know — Regulations, Taxes &amp; Rules for Indian Investors</h2>
-        <p>Automating and managing a Step-Up SIP in India involves important operational and regulatory considerations:</p>
-        <ul style="line-height: 1.8;">
-          <li><strong>One-Time Mandate (OTM) Daily Limit:</strong> When setting up a Step-Up SIP with an AMC or platform (such as Groww, Zerodha Coin, Kuvera, or MF Central), your bank mandate (NACH or e-Mandate) must have a maximum debit ceiling high enough to accommodate future stepped-up amounts. For instance, if you start with ₹10,000/month and step up 10% annually for 10 years, your year-10 monthly debit will be ₹23,579. Ensure your OTM limit is set to ₹50,000 or ₹1,00,000 initially.</li>
-          <li><strong>First-In, First-Out (FIFO) Taxation:</strong> Tax rules under the Indian Income Tax Act apply to each individual SIP installment independently. When you redeem units in the future, the oldest units (purchased in Year 1 at lower prices) are redeemed first.</li>
-          <li><strong>Equity Capital Gains Tax (FY 2026-27):</strong>
-            <ul style="padding-left: 1.25rem; margin-top: 0.5rem;">
-              <li><strong>Long-Term Capital Gains (LTCG):</strong> Units held for >12 months are taxed at 12.5% on annual gains exceeding ₹1.25 Lakh without indexation.</li>
-              <li><strong>Short-Term Capital Gains (STCG):</strong> Units held for &le;12 months are taxed at a flat 20%.</li>
-            </ul>
-          </li>
-          <li><strong>Cap on Step-Up:</strong> Most Indian mutual funds allow investors to set a maximum ceiling cap (e.g., stop stepping up once monthly SIP reaches ₹50,000). The SIP will then continue at ₹50,000/month indefinitely until maturity.</li>
-          <li><strong>Step-Up Frequency Options:</strong> While annual (every 12 months) is the most standard frequency aligned with salary appraisal cycles, some AMCs also offer semi-annual (every 6 months) step-up options.</li>
-        </ul>
-      </div>
-
-      <div class="info-section-card">
-        <h2>Common Mistakes Indian Investors Make with Step-Up SIPs</h2>
-        <p>Avoid these common traps to ensure your top-up strategy works smoothly:</p>
-        <ol style="line-height: 1.8; margin-left: 1.25rem;">
-          <li><strong>Keeping SIPs Static for Years Despite Career Growth:</strong> The single biggest wealth mistake in India is maintaining a flat ₹5,000 or ₹10,000 SIP for 10 years while one's salary triples from ₹30,000 to ₹1,00,000. Inflation eats away your compounding progress if you do not step up.</li>
-          <li><strong>Setting an Overly Aggressive Step-Up Rate (e.g. 30%-40%):</strong> Choosing an unsustainable step-up percentage can strain your monthly budget in Year 4 or 5, resulting in failed bank auto-debits and ECS bounce charges from your bank. Aim for a comfortable 10% to 15%.</li>
-          <li><strong>Setting Too Low an OTM Mandate Limit:</strong> If your bank NACH mandate limit is set to exactly your Year 1 SIP amount (e.g. ₹10,000), the automated top-up in Year 2 (₹11,000) will fail at the bank level. Always register a higher mandate limit.</li>
-          <li><strong>Pausing or Canceling Step-Ups During Market Dips:</strong> When markets correct, stepping up your SIP allows you to purchase significantly larger quantities of mutual fund units at bargain valuations. Canceling the top-up eliminates this prime advantage.</li>
-          <li><strong>Failing to Periodically Rebalance Across Asset Classes:</strong> As your equity SIP steps up and your corpus grows into crores, ensure you rebalance a portion into debt funds or Fixed Deposits as you approach major financial milestones.</li>
-        </ol>
-      </div>
-
-      <div class="info-section-card">
-        <h2>Frequently Asked Questions</h2>
-        
-        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What is a Step-Up SIP (Top-Up SIP) in Indian mutual funds?</summary>
-          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">A Step-Up SIP (also called Top-Up SIP) is a feature offered by Indian mutual fund houses that automatically increases your monthly SIP installment by a predefined percentage (e.g., 10%) or a fixed rupee amount (e.g., ₹1,000) every year. This ensures your investment contributions grow in tandem with your annual career salary increments, beating lifestyle inflation and vastly increasing your eventual compounding corpus.</p>
-        </details>
-
-        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">How much does a 10% annual step-up increase my final retirement corpus?</summary>
-          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">A 10% annual step-up typically yields 60% to 100% more total wealth over a 15 to 20-year horizon compared to a flat, non-increasing SIP. For example, a constant ₹10,000 monthly SIP over 20 years at 12% CAGR yields approximately ₹99.91 Lakh. Stepping up the same SIP by 10% annually produces an extraordinary maturity corpus of approximately ₹2.03 Crore—more than double the final wealth with manageable incremental contributions.</p>
-        </details>
-
-        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Can I set an upper cap on my annual Step-Up SIP amount?</summary>
-          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Yes. Most Indian mutual fund AMCs and investment platforms allow you to set an upper ceiling limit (e.g., stopping the automatic top-up once your monthly contribution reaches ₹50,000 or ₹1,00,000 per month). Once the cap is hit, your SIP continues at that fixed maximum level for the remainder of the tenure.</p>
-        </details>
-
-        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">How is a Step-Up SIP automated in Indian bank accounts?</summary>
-          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Step-Up SIPs are automated via an authorized One-Time Mandate (OTM) through the National Automated Clearing House (NACH) or UPI AutoPay. When configuring your initial mandate, ensure the registered maximum daily debit limit on your mandate is set sufficiently high (e.g. ₹50,000 or ₹1,00,000) so future stepped-up installments execute seamlessly without rejection.</p>
-        </details>
-
-        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What is the best annual step-up percentage for salaried Indian professionals?</summary>
-          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">For salaried professionals in India receiving annual appraisals of 8% to 15%, setting an annual Step-Up rate of 10% is widely considered the ideal benchmark. It ensures that roughly half of your annual salary increment is redirected straight into wealth building before lifestyle inflation consumes the surplus.</p>
-        </details>
-
-        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">How are capital gains taxed on a Step-Up SIP in India?</summary>
-          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Taxation on Step-Up SIPs operates under the standard First-In, First-Out (FIFO) principle. Every individual monthly installment—whether from year 1 or stepped-up in year 10—is treated as an independent purchase. For equity funds, units held over 12 months qualify for LTCG at 12.5% on gains exceeding ₹1.25 Lakh per financial year. Units held for 12 months or less attract STCG at 20%.</p>
-        </details>
-      </div>
-
-      <div class="info-section-card">
-        <h2>Related Calculators &amp; Educational Guides</h2>
-        <p>Explore related planning tools to optimize your investment architecture:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="index.html" style="color: #2563eb; text-decoration: underline;">Regular SIP Calculator</a></h3>
-            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Compare fixed monthly SIP projections against stepped-up trajectories to visualize your exact compounding acceleration.</p>
-          </div>
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="salary-hike-investment-strategy-india.html" style="color: #2563eb; text-decoration: underline;">Salary Hike Investment Strategy Guide</a></h3>
-            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Learn tactical frameworks for allocating appraisals across emergency buffers, equity SIP step-ups, and prepaying high-cost debt.</p>
-          </div>
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="goal.html" style="color: #2563eb; text-decoration: underline;">Goal Planner Calculator</a></h3>
-            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Back-calculate the starting SIP and annual step-up rate needed to reach a targeted ₹1 Crore, ₹2 Crore, or ₹5 Crore milestone.</p>
-          </div>
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="the-power-of-compounding.html" style="color: #2563eb; text-decoration: underline;">The Power of Compounding Guide</a></h3>
-            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Understand the Rule of 72, compounding frequencies, and multi-decade wealth tables for Indian investors.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="index.html"><img src="logo-footer.svg" alt="Calculatorship — Free Financial Calculators for Indian Investors" width="200" height="36" style="display:block;" loading="lazy"></a>
-          <p class="footer-tagline">Independent financial calculators and educational guides for Indian investors, salaried professionals, and wealth builders.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h3>Calculators</h3>
-            <ul>
-              <li><a href="index.html">SIP Calculator</a></li>
-              <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
-              <li><a href="step-up.html">Step-Up SIP</a></li>
-              <li><a href="goal.html">Goal Planner</a></li>
-              <li><a href="ppf-calculator.html">PPF Calculator</a></li>
-              <li><a href="swp-calculator.html">SWP Calculator</a></li>
-              <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
-              <li><a href="fd-calculator.html">FD Calculator</a></li>
-              <li><a href="budget-planner.html">Budget Planner</a></li>
-              <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Legal &amp; Policy</h3>
-            <ul>
-              <li><a href="disclaimer.html">Disclaimer</a></li>
-              <li><a href="terms.html">Terms of Use</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="cookies.html">Cookie Policy</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Platform</h3>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="blog.html">Blog &amp; Guides</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-disclaimer">
-          <strong>Important Regulatory Notice:</strong> Calculatorship is an independent financial education platform not affiliated with or registered under SEBI, AMFI, or RBI. All content and calculation tools are strictly for informational and educational purposes. Nothing on this website constitutes personalized financial, investment, tax, or legal advice. Mutual fund investments are subject to market risks. Calculatorship and its authors shall not be liable for any financial decisions or losses arising from use of this website.
-        </div>
-        <div class="footer-copy">
-          &copy; 2026 Calculatorship. All rights reserved. | <a href="disclaimer.html">Disclaimer</a> | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" stroke-width="2.5" fill="none" stroke="currentColor"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
-  <script src="theme.js?v=2.2"></script>
-
-  <!-- Interactive Step-Up SIP Calculator Script -->
-  <script>
-    (function () {
-      "use strict";
-
-      const inrFormat = (num) => {
-        const n = Math.round(num);
-        return "₹" + n.toLocaleString("en-IN");
-      };
-
-      const monthlyInput = document.getElementById("monthly-investment-num");
-      const monthlySlider = document.getElementById("monthly-investment");
-      const stepInput = document.getElementById("step-up-pct-num");
-      const stepSlider = document.getElementById("step-up-pct");
-      const returnInput = document.getElementById("expected-return-num");
-      const returnSlider = document.getElementById("expected-return");
-      const periodInput = document.getElementById("time-period-num");
-      const periodSlider = document.getElementById("time-period");
-
-      function syncPair(inputEl, sliderEl, callback) {
-        if (!inputEl || !sliderEl) return;
-        inputEl.addEventListener("input", () => {
-          sliderEl.value = inputEl.value;
-          callback();
-        });
-        sliderEl.addEventListener("input", () => {
-          inputEl.value = sliderEl.value;
-          callback();
-        });
-      }
-
-      function calculate() {
-        const initialMonthly = parseFloat(monthlyInput.value) || 0;
-        const stepPct = (parseFloat(stepInput.value) || 0) / 100;
-        const annualRate = (parseFloat(returnInput.value) || 0) / 100;
-        const years = parseFloat(periodInput.value) || 0;
-
-        const i = annualRate / 12;
-        let totalInvested = 0;
-        let curBal = 0;
-        let curMonthly = initialMonthly;
-
-        let scheduleRows = [];
-
-        for (let y = 1; y <= years; y++) {
-          const annualDep = curMonthly * 12;
-          totalInvested += annualDep;
-          const openBal = curBal;
-
-          for (let m = 1; m <= 12; m++) {
-            curBal = (curBal + curMonthly) * (1 + i);
-          }
-
-          const yrGain = curBal - openBal - annualDep;
-          scheduleRows.push({
-            yr: y,
-            monthly: curMonthly,
-            dep: annualDep,
-            gain: yrGain,
-            close: curBal
-          });
-
-          curMonthly = curMonthly * (1 + stepPct);
-        }
-
-        const totalValue = curBal;
-        const totalGain = Math.max(0, totalValue - totalInvested);
-
-        document.getElementById("res-invested").textContent = inrFormat(totalInvested);
-        document.getElementById("res-returns").textContent = inrFormat(totalGain);
-        document.getElementById("res-total").textContent = inrFormat(totalValue);
-
-        // Update Donut
-        const sum = totalInvested + totalGain;
-        let gainPct = sum > 0 ? Math.round((totalGain / sum) * 100) : 50;
-        gainPct = Math.max(0, Math.min(100, gainPct));
-        const seg = document.getElementById("donut-segment");
-        if (seg) {
-          seg.setAttribute("stroke-dasharray", `${gainPct} ${100 - gainPct}`);
-        }
-        const legG = document.getElementById("donut-leg-gain");
-        const legI = document.getElementById("donut-leg-inv");
-        if (legG) legG.textContent = `Growth: ${gainPct}%`;
-        if (legI) legI.textContent = `Capital: ${100 - gainPct}%`;
-
-        // Populate Table
-        const tbody = document.getElementById("schedule-tbody");
-        if (tbody) {
-          tbody.innerHTML = scheduleRows.map(r => `
-            <tr>
-              <td>Year ${r.yr}</td>
-              <td>${inrFormat(r.monthly)}/mo</td>
-              <td>${inrFormat(r.dep)}</td>
-              <td style="color:#059669; font-weight:600;">+${inrFormat(r.gain)}</td>
-              <td style="font-weight:700; color:var(--text-primary);">${inrFormat(r.close)}</td>
-            </tr>
-          `).join("");
-        }
-      }
-
-      syncPair(monthlyInput, monthlySlider, calculate);
-      syncPair(stepInput, stepSlider, calculate);
-      syncPair(returnInput, returnSlider, calculate);
-      syncPair(periodInput, periodSlider, calculate);
-
-      calculate();
-    })();
-  </script>
-
-  <!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-  <div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#fff; padding:1rem 2rem; z-index:9999; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.3);">
-    <p style="margin:0; font-size:0.9rem; max-width:700px; line-height:1.5;">
-      We use cookies to improve your browsing experience and serve relevant advertisements. By accepting, you agree to our <a href="cookies.html" style="color:#64ffda; text-decoration:underline;">Cookie Policy</a> and allow Google AdSense to serve personalized ads.
-    </p>
-    <div style="display:flex; gap:1rem; flex-shrink:0;">
-      <button id="decline-cookies" style="background:transparent; border:1px solid #64ffda; color:#64ffda; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem;">Decline</button>
-      <button id="accept-cookies" style="background:#64ffda; border:none; color:#1a1a2e; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem; font-weight:600;">Accept All</button>
-    </div>
-  </div>
-  <script>
-    (function() {
-      const CONSENT_KEY = 'calculatorship_cookie_consent';
-      const consent = localStorage.getItem(CONSENT_KEY);
-
-      function loadAdsense() {
-        if (document.getElementById('adsense-script')) return;
-        const script = document.createElement('script');
-        script.id = 'adsense-script';
-        script.async = true;
-        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798';
-        script.crossOrigin = 'anonymous';
-        document.head.appendChild(script);
-      }
-
-      if (consent === 'accepted') {
-        loadAdsense();
-      } else if (!consent) {
-        document.addEventListener('DOMContentLoaded', function() {
-          const banner = document.getElementById('cookie-banner');
-          if (banner) banner.style.display = 'flex';
-          
-          const acceptBtn = document.getElementById('accept-cookies');
-          if (acceptBtn) {
-            acceptBtn.addEventListener('click', function() {
-              localStorage.setItem(CONSENT_KEY, 'accepted');
-              if (banner) banner.style.display = 'none';
-              loadAdsense();
-            });
-          }
-          
-          const declineBtn = document.getElementById('decline-cookies');
-          if (declineBtn) {
-            declineBtn.addEventListener('click', function() {
-              localStorage.setItem(CONSENT_KEY, 'declined');
-              if (banner) banner.style.display = 'none';
-            });
-          }
-        });
-      }
-    })();
-  </script>
+<!DOCTYPE html>
+
+<html lang="en-IN">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="google-site-verification" content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Step-Up SIP Calculator — Calculate Annual Top-Up SIP Returns | Calculatorship</title>
+
+  <meta name="description" content="Calculate exponential wealth growth when increasing your monthly mutual fund SIP by 5% to 20% annually with salary hikes. Free Indian Step-Up calculator with yearly schedules.">
+
+  <link rel="canonical" href="https://www.calculatorship.in/step-up.html">
+
+  <meta name="keywords" content="step up SIP calculator India, top up SIP calculator, annual increment SIP mutual fund, salary hike investment calculator">
+
+  <meta name="author" content="Tejas, Calculatorship">
+
+  <meta property="og:locale" content="en_IN">
+
+  <meta name="geo.region" content="IN">
+
+  <meta name="geo.placename" content="India">
+
+  <meta name="language" content="en-IN">
+
+  <meta property="og:title" content="Step-Up SIP Calculator — Calculate Top-Up SIP Compounding Growth">
+
+  <meta property="og:description" content="Discover how stepping up your monthly SIP by 10% annually dramatically expands your final wealth. Interactive simulator with year-by-year accumulation tables.">
+
+  <meta property="og:url" content="https://www.calculatorship.in/step-up.html">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:site_name" content="Calculatorship">
+
+  <meta property="og:image" content="https://www.calculatorship.in/og-image.webp">
+
+  <meta property="og:image:alt" content="Calculatorship — Free Financial Calculators for Indian Investors">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:image" content="https://www.calculatorship.in/og-image.webp">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="googlebot" content="index, follow">
+
+  <meta name="theme-color" content="#F3F7F5">
+
+  <meta name="google-adsense-account" content="ca-pub-7598871729388798">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700;800&display=swap">
+
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="style.css?v=2.2">
+
+
+
+  <!-- Google Analytics 4 (GA4) -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-0C93Q0VBQP');
+
+  </script>
+
+
+
+  <!-- WebApplication Schema -->
+
+  <script type="application/ld+json">
+
+  {
+
+    "@context": "https://schema.org",
+
+    "@type": "WebApplication",
+
+    "name": "Step-Up SIP Calculator (Top-Up SIP) — Calculatorship",
+
+    "url": "https://www.calculatorship.in/step-up.html",
+
+    "applicationCategory": "FinanceApplication",
+
+    "operatingSystem": "Web Browser",
+
+    "description": "Calculate exponential wealth growth when increasing your monthly SIP by 5% to 20% annually with salary hikes.",
+
+    "offers": {
+
+      "@type": "Offer",
+
+      "price": "0",
+
+      "priceCurrency": "INR"
+
+    },
+
+    "publisher": {
+
+      "@type": "Organization",
+
+      "name": "Calculatorship",
+
+      "url": "https://www.calculatorship.in",
+
+      "logo": "https://www.calculatorship.in/logo-light.svg"
+
+    }
+
+  }
+
+  </script>
+
+
+
+  <!-- FAQPage Schema -->
+
+  <script type="application/ld+json">
+
+  {
+
+    "@context": "https://schema.org",
+
+    "@type": "FAQPage",
+
+    "mainEntity": [
+
+      {
+
+        "@type": "Question",
+
+        "name": "What is a Step-Up SIP (Top-Up SIP) in Indian mutual funds?",
+
+        "acceptedAnswer": {
+
+          "@type": "Answer",
+
+          "text": "A Step-Up SIP (also called Top-Up SIP) is a feature offered by Indian mutual fund houses that automatically increases your monthly SIP installment by a predefined percentage (e.g., 10%) or a fixed rupee amount (e.g., ₹1,000) every year. This ensures your investment contributions grow in tandem with your annual career salary increments, beating lifestyle inflation and vastly increasing your eventual compounding corpus."
+
+        }
+
+      },
+
+      {
+
+        "@type": "Question",
+
+        "name": "How much does a 10% annual step-up increase my final retirement corpus?",
+
+        "acceptedAnswer": {
+
+          "@type": "Answer",
+
+          "text": "A 10% annual step-up typically yields 60% to 100% more total wealth over a 15 to 20-year horizon compared to a flat, non-increasing SIP. For example, a constant ₹10,000 monthly SIP over 20 years at 12% CAGR yields approximately ₹99.91 Lakh. Stepping up the same SIP by 10% annually produces an extraordinary maturity corpus of approximately ₹2.03 Crore—more than double the final wealth with manageable incremental contributions."
+
+        }
+
+      },
+
+      {
+
+        "@type": "Question",
+
+        "name": "Can I set an upper cap on my annual Step-Up SIP amount?",
+
+        "acceptedAnswer": {
+
+          "@type": "Answer",
+
+          "text": "Yes. Most Indian mutual fund AMCs and investment platforms allow you to set an upper ceiling limit (e.g., stopping the automatic top-up once your monthly contribution reaches ₹50,000 or ₹1,00,000 per month). Once the cap is hit, your SIP continues at that fixed maximum level for the remainder of the tenure."
+
+        }
+
+      },
+
+      {
+
+        "@type": "Question",
+
+        "name": "How is a Step-Up SIP automated in Indian bank accounts?",
+
+        "acceptedAnswer": {
+
+          "@type": "Answer",
+
+          "text": "Step-Up SIPs are automated via an authorized One-Time Mandate (OTM) through the National Automated Clearing House (NACH) or UPI AutoPay. When configuring your initial mandate, ensure the registered maximum daily debit limit on your mandate is set sufficiently high (e.g. ₹50,000 or ₹1,00,000) so future stepped-up installments execute directly without rejection."
+
+        }
+
+      },
+
+      {
+
+        "@type": "Question",
+
+        "name": "What is the best annual step-up percentage for salaried Indian professionals?",
+
+        "acceptedAnswer": {
+
+          "@type": "Answer",
+
+          "text": "For salaried professionals in India receiving annual appraisals of 8% to 15%, setting an annual Step-Up rate of 10% is widely considered the ideal benchmark. It ensures that roughly half of your annual salary increment is redirected straight into wealth building before lifestyle inflation consumes the surplus."
+
+        }
+
+      },
+
+      {
+
+        "@type": "Question",
+
+        "name": "How are capital gains taxed on a Step-Up SIP in India?",
+
+        "acceptedAnswer": {
+
+          "@type": "Answer",
+
+          "text": "Taxation on Step-Up SIPs operates under the standard First-In, First-Out (FIFO) principle. Every individual monthly installment—whether from year 1 or stepped-up in year 10—is treated as an independent purchase. For equity funds, units held over 12 months qualify for LTCG at 12.5% on gains exceeding ₹1.25 Lakh per financial year. Units held for 12 months or less attract STCG at 20%."
+
+        }
+
+      }
+
+    ]
+
+  }
+
+  </script>
+
+
+
+  <script type="application/ld+json">
+
+  {
+
+  "@context": "https://schema.org",
+
+  "@type": "BreadcrumbList",
+
+  "itemListElement": [
+
+    {
+
+      "@type": "ListItem",
+
+      "position": 1,
+
+      "name": "Home",
+
+      "item": "https://www.calculatorship.in/"
+
+    },
+
+    {
+
+      "@type": "ListItem",
+
+      "position": 2,
+
+      "name": "Calculators",
+
+      "item": "https://www.calculatorship.in/#calculators"
+
+    },
+
+    {
+
+      "@type": "ListItem",
+
+      "position": 3,
+
+      "name": "Step-Up SIP Calculator India",
+
+      "item": "https://www.calculatorship.in/step-up.html"
+
+    }
+
+  ]
+
+}
+
+  </script>
+
+</head>
+
+<body>
+
+
+
+  <div class="reading-progress-bar" id="reading-progress"></div>
+
+  <a class="skip-link" href="#calculator-card">Skip to calculator</a>
+
+
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
+
+        <img src="logo-light.svg" alt="Calculatorship — Free Financial Calculators for Indian Investors" width="220" height="38" loading="lazy">
+
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+
+        <div class="nav-dropdown">
+
+          <a href="index.html" class="nav-dropdown-toggle">Calculators</a>
+
+          <ul class="nav-dropdown-menu" role="menu">
+
+            <li><a href="index.html">SIP Calculator</a></li>
+
+            <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
+
+            <li><a href="step-up.html">Step-Up SIP</a></li>
+
+            <li><a href="goal.html">Goal Planner</a></li>
+
+            <li><a href="ppf-calculator.html">PPF Calculator</a></li>
+
+            <li><a href="swp-calculator.html">SWP Calculator</a></li>
+
+            <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
+
+            <li class="nav-dropdown-divider" role="separator"></li>
+
+            <li><a href="fd-calculator.html">FD Calculator</a></li>
+
+            <li><a href="budget-planner.html">Budget Planner</a></li>
+
+            <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
+
+          </ul>
+
+        </div>
+
+        <a href="blog.html">Blog &amp; Guides</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+
+          <span></span><span></span><span></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <div class="breadcrumb-bar">
+
+    <nav class="breadcrumb" aria-label="Breadcrumbs">
+
+      <ol>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="index.html">Calculators</a></li>
+
+        <li aria-current="page">Step-Up SIP Calculator (Top-Up SIP)</li>
+
+      </ol>
+
+    </nav>
+
+  </div>
+
+
+
+  <main id="main-content">
+
+
+
+    <div class="calc-hero">
+
+      <h1>Step-Up SIP Calculator (Top-Up SIP)</h1>
+
+      <p>Discover how increasing your monthly SIP contributions annually with career salary increments supercharges your wealth.</p>
+
+    </div>
+
+
+
+    <div class="financial-disclaimer" role="note" aria-label="Financial Disclaimer" style="background:#fff8e1; border-left:4px solid #f9a825; padding:0.875rem 1.25rem; margin:1.5rem auto; max-width:1200px; border-radius:0 6px 6px 0; font-size:0.875rem; color:#5d4037; line-height:1.6;">
+
+      <strong>⚠️ Educational Disclaimer:</strong> This content is written by Tejas, an independent personal finance enthusiast, not a SEBI-registered Investment Advisor, Chartered Accountant, or certified financial professional. All information is for general educational awareness only and does not constitute personalized financial, investment, tax, or legal advice. Mutual fund investments are subject to market risks. Please read all scheme documents carefully and consult a qualified financial advisor before making investment decisions.
+
+    </div>
+
+
+
+    <div class="calc-switcher-wrapper">
+
+      <div class="calc-switcher-bar">
+
+        <a href="index.html" class="calc-tab">SIP Calculator</a>
+
+        <a href="lumpsum.html" class="calc-tab">Lumpsum</a>
+
+        <a href="step-up.html" class="calc-tab active">Step-Up SIP</a>
+
+        <a href="goal.html" class="calc-tab">Goal Planner</a>
+
+        <a href="ppf-calculator.html" class="calc-tab">PPF</a>
+
+        <a href="swp-calculator.html" class="calc-tab">SWP</a>
+
+        <a href="emi-calculator.html" class="calc-tab">Loan EMI</a>
+
+        <a href="fd-calculator.html" class="calc-tab">FD Calculator</a>
+
+        <a href="budget-planner.html" class="calc-tab">50-30-20 Budget</a>
+
+        <a href="income-tax-calculator.html" class="calc-tab">Tax Calculator</a>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="calc-main-container">
+
+      <div class="calc-grid" id="calculator-card">
+
+        
+
+        <!-- Left: Inputs -->
+
+        <div class="calc-card">
+
+          <h2 style="font-size:1.35rem; font-weight:800; margin-bottom:24px; color:var(--text-primary);">Configure Financial Parameters</h2>
+
+          
+
+          <div class="calc-field-group">
+
+            <div class="calc-field-header">
+
+              <label for="monthly-investment-num">Initial Monthly SIP Amount</label>
+
+              <div class="calc-input-box">
+
+                <span class="calc-input-prefix">₹</span>
+
+                <input type="number" id="monthly-investment-num" value="10000" min="500" max="1000000" step="500" aria-label="Initial Monthly SIP Amount Input">
+
+              </div>
+
+            </div>
+
+            <input type="range" id="monthly-investment" min="500" max="1000000" step="500" value="10000" aria-label="Initial Monthly SIP Amount Slider">
+
+          </div>
+
+
+
+          <div class="calc-field-group">
+
+            <div class="calc-field-header">
+
+              <label for="step-up-pct-num">Annual Step-Up (Top-Up %)</label>
+
+              <div class="calc-input-box">
+
+                <input type="number" id="step-up-pct-num" value="10" min="1" max="50" step="1" aria-label="Annual Step-Up Percentage Input">
+
+                <span class="calc-input-suffix">%</span>
+
+              </div>
+
+            </div>
+
+            <input type="range" id="step-up-pct" min="1" max="50" step="1" value="10" aria-label="Annual Step-Up Percentage Slider">
+
+          </div>
+
+
+
+          <div class="calc-field-group">
+
+            <div class="calc-field-header">
+
+              <label for="expected-return-num">Expected Annual Return (CAGR)</label>
+
+              <div class="calc-input-box">
+
+                <input type="number" id="expected-return-num" value="12" min="1" max="30" step="0.5" aria-label="Expected Annual Return (CAGR) Input">
+
+                <span class="calc-input-suffix">%</span>
+
+              </div>
+
+            </div>
+
+            <input type="range" id="expected-return" min="1" max="30" step="0.5" value="12" aria-label="Expected Annual Return (CAGR) Slider">
+
+          </div>
+
+
+
+          <div class="calc-field-group">
+
+            <div class="calc-field-header">
+
+              <label for="time-period-num">Investment Duration</label>
+
+              <div class="calc-input-box">
+
+                <input type="number" id="time-period-num" value="10" min="1" max="40" step="1" aria-label="Investment Duration Input">
+
+                <span class="calc-input-suffix">Yrs</span>
+
+              </div>
+
+            </div>
+
+            <input type="range" id="time-period" min="1" max="40" step="1" value="10" aria-label="Investment Duration Slider">
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Right: Summary Results & Visuals -->
+
+        <div class="calc-summary-card">
+
+          <div>
+
+            <h3 style="font-size:1.2rem; font-weight:800; color:var(--text-primary); margin-bottom:18px;">Simulation Results</h3>
+
+            
+
+            <div class="result-row">
+
+              <span class="result-label">Total Capital Invested</span>
+
+              <span class="result-val" id="res-invested">₹19,12,491</span>
+
+            </div>
+
+
+
+            <div class="result-row">
+
+              <span class="result-label">Estimated Growth</span>
+
+              <span class="result-val" id="res-returns" style="color:#059669;">₹14,72,397</span>
+
+            </div>
+
+
+
+            <div class="result-row" style="padding-top:18px;">
+
+              <span class="result-label" style="font-weight:800; color:var(--text-primary);">Total Projected Value</span>
+
+              <span class="result-val highlight" id="res-total">₹33,84,888</span>
+
+            </div>
+
+
+
+            <!-- SVG Visual Donut Ratio -->
+
+            <div style="margin:28px 0 12px; display:flex; align-items:center; justify-content:center; gap:28px;">
+
+              <svg width="130" height="130" viewBox="0 0 42 42" class="donut" aria-label="Step-Up Allocation Ratio">
+
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#E2E8F0" stroke-width="5.5"></circle>
+
+                <circle id="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#00D09C" stroke-width="5.5" stroke-dasharray="44 56" stroke-dashoffset="25"></circle>
+
+              </svg>
+
+              <div style="font-size:0.90rem; line-height:1.9;">
+
+                <div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#00D09C;"></span> <span id="donut-leg-gain">Growth: 44%</span></div>
+
+                <div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#CBD5E1;"></span> <span id="donut-leg-inv">Capital: 56%</span></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="calc-result-disclaimer">
+
+            Mathematical simulation for financial planning purposes. Tax rules and interest yields subject to government and market regulatory amendments.
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <!-- Annual Growth Schedule Table -->
+
+      <div style="margin-top:42px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-sm);">
+
+        <h3 style="font-size:1.35rem; font-weight:800; color:var(--text-primary); margin-bottom:8px;">Year-by-Year Step-Up Financial Schedule</h3>
+
+        <p style="font-size:0.96rem; color:var(--text-secondary); margin-bottom:20px;">Detailed annual accumulation breakdown illustrating stepped-up monthly contributions, yearly deposits, and interest progression.</p>
+
+        <div class="table-wrapper">
+
+          <table class="comparison-table">
+
+            <thead>
+
+              <tr>
+
+                <th>Year</th>
+
+                <th>Monthly SIP</th>
+
+                <th>Annual Deposit</th>
+
+                <th>Interest / Growth</th>
+
+                <th>Closing Balance</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody id="schedule-tbody">
+
+              <!-- Dynamically Populated by JS -->
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Deep Educational Content (1,500+ Words) -->
+
+      
+
+      <div class="info-section-card" style="margin-top: 40px;">
+
+        <h2>What is a Step-Up (Top-Up) SIP? — A Complete Guide for Indian Investors</h2>
+
+        <p>A Step-Up SIP (frequently referred to as a <strong>Top-Up SIP</strong> in Indian mutual fund documentation) is an automated investing feature that progressively raises your monthly SIP contribution at predetermined annual intervals. Instead of keeping your monthly mutual fund debit fixed at the same static rupee amount year after year, a Step-Up SIP automatically scales your investments—typically by 5%, 10%, 15%, or a fixed rupee increment like ₹1,000 every 12 months.</p>
+
+        <p>In the real world, a salaried Indian professional's income does not remain static. As you gain career experience, receive annual performance appraisals, and earn promotions, your monthly cash flow expands. However, if your investment contributions remain fixed at ₹5,000 or ₹10,000 for a decade, the purchasing power of your investment steadily declines due to consumer price inflation (historically 5% to 7% in India). also, uncommitted salary surpluses often get absorbed by subtle lifestyle inflation (frequent dining out, luxury upgrades, higher discretionary subscriptions).</p>
+
+        <p>By configuring a Step-Up SIP, you align your investment growth directly with your career earnings trajectory. As your salary increases, a portion of the increment is automatically routed into your mutual fund portfolio before you have the chance to spend it. Over long horizons of 15 to 25 years, this produces a dramatic wealth acceleration effect, creating a portfolio that is often <strong>60% to 100% larger</strong> than a standard flat SIP.</p>
+
+        <p>This calculator allows you to model exactly how different annual percentage increases (e.g. 5%, 10%, or 20%) impact your total wealth accumulation, helping you design an automated, inflation-beating financial plan.</p>
+
+      </div>
+
+
+
+      <div class="info-section-card">
+
+        <h2>How to Use This Step-Up SIP Calculator — Step-by-Step Walkthrough</h2>
+
+        <p>Our Step-Up SIP calculator is designed to provide real-time simulations of escalating annual contributions and multi-year compounding. Follow these simple steps to customize your scenario:</p>
+
+        <ol style="line-height: 1.8; margin-left: 1.25rem;">
+
+          <li><strong>Step 1: Set Your Starting Monthly SIP (₹):</strong> Enter the initial monthly amount you want to invest in Year 1 (e.g., ₹5,000, ₹10,000, or ₹25,000).</li>
+
+          <li><strong>Step 2: Choose Your Annual Step-Up Percentage (%):</strong> Input the percentage rate by which you want your monthly installment to increase every 12 months. Most Indian salaried earners choose <strong>10%</strong> to match typical corporate salary appraisal cycles.</li>
+
+          <li><strong>Step 3: Define Your Expected Annual Return (CAGR %):</strong> Select the anticipated annualized growth rate of your portfolio. For diversified Indian equity funds (Nifty 50, Flexi-cap, Mid-cap funds) held over 10+ years, historical benchmarks range between 11% and 13% CAGR.</li>
+
+          <li><strong>Step 4: Select Your Investment Duration (Years):</strong> Specify the total timeline of your compounding journey (e.g. 5, 10, 15, 20, or 30 years).</li>
+
+          <li><strong>Step 5: Review Results and Annual Accumulation:</strong> The calculator outputs your <em>Total Capital Invested</em>, <em>Estimated Compounding Gain</em>, and <em>Total Projected Maturity Value</em>. In the annual table below, observe how your monthly installment increases in Year 2, Year 3, etc., and how your interest gains accelerate each year.</li>
+
+        </ol>
+
+      </div>
+
+
+
+      <div class="info-section-card">
+
+        <h2>The Math Behind the Calculator — Formula Explained</h2>
+
+        <p>A Step-Up SIP cannot be calculated with a single static annuity formula because the monthly payment variable <code>P</code> increases each year. Instead, the calculation is executed using an iterative compounding algorithm across each year <code>y</code> from 1 to <code>N</code>:</p>
+
+        
+
+        <div style="background: #f1f5f9; border-left: 4px solid #0f172a; padding: 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-family: 'JetBrains Mono', monospace; font-size: 1.05rem;">
+
+          For Year y: Monthly Deposit P<sub>y</sub> = P<sub>1</sub> × (1 + s)<sup>(y - 1)</sup><br>
+
+          Monthly Compounding Rate: i = r / (12 × 100)<br>
+
+          Future Value at Month m: FV<sub>m</sub> = (FV<sub>m-1</sub> + P<sub>y</sub>) × (1 + i)
+
+        </div>
+
+
+
+        <p><strong>Where the variables represent:</strong></p>
+
+        <ul style="line-height: 1.8;">
+
+          <li><strong>P<sub>1</sub>:</strong> Initial monthly installment in Year 1 in Indian Rupees (₹).</li>
+
+          <li><strong>s:</strong> Annual Step-Up rate expressed as a decimal (e.g. 10% is <code>10 / 100 = 0.10</code>).</li>
+
+          <li><strong>P<sub>y</sub>:</strong> Stepped-up monthly installment in year <code>y</code>.</li>
+
+          <li><strong>r:</strong> Expected annual return (CAGR) in percent.</li>
+
+          <li><strong>i:</strong> Monthly effective compounding rate.</li>
+
+        </ul>
+
+
+
+        <h3>Step-by-Step Worked Mathematical Example in Indian Rupees</h3>
+
+        <p>Let us compare a flat SIP vs a Step-Up SIP starting with <strong>₹10,000/month</strong> for <strong>10 years</strong> at <strong>12% CAGR</strong> with a <strong>10% annual step-up</strong>:</p>
+
+        <ul style="line-height: 1.8;">
+
+          <li><strong>Year 1:</strong> Monthly SIP = ₹10,000 | Annual Deposit = ₹1,20,000 | Year-End Balance &approx; ₹1,28,093</li>
+
+          <li><strong>Year 2:</strong> Monthly SIP = ₹11,000 (+10%) | Annual Deposit = ₹1,32,000 | Year-End Balance &approx; ₹2,86,851</li>
+
+          <li><strong>Year 3:</strong> Monthly SIP = ₹12,100 (+10%) | Annual Deposit = ₹1,45,200 | Year-End Balance &approx; ₹4,83,721</li>
+
+          <li><strong>Year 5:</strong> Monthly SIP = ₹14,641 | Annual Deposit = ₹1,75,692 | Year-End Balance &approx; ₹10,41,630</li>
+
+          <li><strong>Year 10:</strong> Monthly SIP = ₹23,579 | Annual Deposit = ₹2,82,953 | Final Maturity Corpus &approx; <strong>₹33,84,888</strong></li>
+
+        </ul>
+
+        <p><strong>The Power of the Step-Up Difference:</strong></p>
+
+        <p>In a standard flat SIP of ₹10,000/month, your 10-year maturity corpus would be <strong>₹23,23,391</strong> (with ₹12,00,000 invested).<br>
+
+        With a 10% Step-Up SIP, you invest ₹19,12,491 total, and your maturity corpus explodes to <strong>₹33,84,888</strong>—delivering an extra <strong>₹10.61 Lakh</strong> in wealth!</p>
+
+      </div>
+
+
+
+      <div class="info-section-card">
+
+        <h2>Real-World Indian Scenarios &amp; Case Studies</h2>
+
+        <p>See how stepping up annual contributions transforms financial outcomes for individuals across different career trajectories in India:</p>
+
+        
+
+        <div class="scenario-grid">
+
+          <div class="scenario-box">
+
+            <h3>Case Study 1: Rahul — Junior Techie Scaling with Appraisals (Age 24)</h3>
+
+            <p><strong>Profile:</strong> Rahul joins an IT firm in Noida with a starting salary of ₹35,000/month. He starts a SIP of <strong>₹5,000/month</strong> and pledges to step it up by <strong>10% every year</strong> as his salary grows.</p>
+
+            <p><strong>Inputs:</strong> Starting Monthly: ₹5,000 | Step-Up: 10% | Expected Return: 12% CAGR | Horizon: 20 Years.</p>
+
+            <p><strong>Calculated Outcome:</strong> Over 20 years, Rahul's total invested capital reaches ₹34.37 Lakh. His final maturity portfolio grows to an incredible <strong>₹1.01 Crore</strong> (compared to just ₹49.95 Lakh without step-up!).</p>
+
+            <p><strong>Strategic Takeaway:</strong> Stepping up a modest ₹5,000 SIP made Rahul a crorepatit by age 44 without ever pinching his evolving lifestyle.</p>
+
+          </div>
+
+
+
+          <div class="scenario-box">
+
+            <h3>Case Study 2: Priya — Healthcare Professional Fast-Tracking Independence (Age 30)</h3>
+
+            <p><strong>Profile:</strong> Priya is a dental surgeon in Pune whose clinic revenues increase steadily. She begins with a <strong>₹20,000/month</strong> SIP and institutes a <strong>15% annual step-up</strong>.</p>
+
+            <p><strong>Inputs:</strong> Starting Monthly: ₹20,000 | Step-Up: 15% | Expected Return: 13% CAGR | Horizon: 15 Years.</p>
+
+            <p><strong>Calculated Outcome:</strong> Her total contributions equal ₹1.14 Crore. Her portfolio compounds to a staggering <strong>₹2.52 Crore</strong> (delivering ₹1.38 Crore in compounding gains alone).</p>
+
+            <p><strong>Strategic Takeaway:</strong> Higher step-up percentages (15%) compress retirement timelines by 5 to 7 years.</p>
+
+          </div>
+
+
+
+          <div class="scenario-box">
+
+            <h3>Case Study 3: Arun — Senior Executive Aiming for ₹5 Crore Corpus (Age 38)</h3>
+
+            <p><strong>Profile:</strong> Arun is a general manager in Gurugram earning ₹2.5 Lakh/month. He wants to accumulate a ₹5 Crore early retirement fund in 12 years. He starts with <strong>₹60,000/month</strong> and an <strong>8% annual step-up</strong>.</p>
+
+            <p><strong>Inputs:</strong> Starting Monthly: ₹60,000 | Step-Up: 8% | Expected Return: 12% CAGR | Horizon: 12 Years.</p>
+
+            <p><strong>Calculated Outcome:</strong> Total capital invested = ₹1.37 Crore. His final accumulated corpus reaches approximately <strong>₹3.14 Crore</strong>, putting him well on track to exceed ₹5 Crore with ongoing salary bonuses.</p>
+
+            <p><strong>Strategic Takeaway:</strong> Even modest 8% top-ups drastically expand high-earners' accumulation speed.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="info-section-card">
+
+        <h2>Key Things to Know — Regulations, Taxes &amp; Rules for Indian Investors</h2>
+
+        <p>Automating and managing a Step-Up SIP in India involves important operational and regulatory considerations:</p>
+
+        <ul style="line-height: 1.8;">
+
+          <li><strong>One-Time Mandate (OTM) Daily Limit:</strong> When setting up a Step-Up SIP with an AMC or platform (such as Groww, Zerodha Coin, Kuvera, or MF Central), your bank mandate (NACH or e-Mandate) must have a maximum debit ceiling high enough to accommodate future stepped-up amounts. For instance, if you start with ₹10,000/month and step up 10% annually for 10 years, your year-10 monthly debit will be ₹23,579. Ensure your OTM limit is set to ₹50,000 or ₹1,00,000 initially.</li>
+
+          <li><strong>First-In, First-Out (FIFO) Taxation:</strong> Tax rules under the Indian Income Tax Act apply to each individual SIP installment independently. When you redeem units in the future, the oldest units (purchased in Year 1 at lower prices) are redeemed first.</li>
+
+          <li><strong>Equity Capital Gains Tax (FY 2026-27):</strong>
+
+            <ul style="padding-left: 1.25rem; margin-top: 0.5rem;">
+
+              <li><strong>Long-Term Capital Gains (LTCG):</strong> Units held for >12 months are taxed at 12.5% on annual gains exceeding ₹1.25 Lakh without indexation.</li>
+
+              <li><strong>Short-Term Capital Gains (STCG):</strong> Units held for &le;12 months are taxed at a flat 20%.</li>
+
+            </ul>
+
+          </li>
+
+          <li><strong>Cap on Step-Up:</strong> Most Indian mutual funds allow investors to set a maximum ceiling cap (e.g., stop stepping up once monthly SIP reaches ₹50,000). The SIP will then continue at ₹50,000/month indefinitely until maturity.</li>
+
+          <li><strong>Step-Up Frequency Options:</strong> While annual (every 12 months) is the most standard frequency aligned with salary appraisal cycles, some AMCs also offer semi-annual (every 6 months) step-up options.</li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="info-section-card">
+
+        <h2>Common Mistakes Indian Investors Make with Step-Up SIPs</h2>
+
+        <p>Avoid these common traps to ensure your top-up strategy works smoothly:</p>
+
+        <ol style="line-height: 1.8; margin-left: 1.25rem;">
+
+          <li><strong>Keeping SIPs Static for Years Despite Career Growth:</strong> The single biggest wealth mistake in India is maintaining a flat ₹5,000 or ₹10,000 SIP for 10 years while one's salary triples from ₹30,000 to ₹1,00,000. Inflation eats away your compounding progress if you do not step up.</li>
+
+          <li><strong>Setting an Overly Aggressive Step-Up Rate (e.g. 30%-40%):</strong> Choosing an unsustainable step-up percentage can strain your monthly budget in Year 4 or 5, resulting in failed bank auto-debits and ECS bounce charges from your bank. Aim for a comfortable 10% to 15%.</li>
+
+          <li><strong>Setting Too Low an OTM Mandate Limit:</strong> If your bank NACH mandate limit is set to exactly your Year 1 SIP amount (e.g. ₹10,000), the automated top-up in Year 2 (₹11,000) will fail at the bank level. Always register a higher mandate limit.</li>
+
+          <li><strong>Pausing or Canceling Step-Ups During Market Dips:</strong> When markets correct, stepping up your SIP allows you to purchase significantly larger quantities of mutual fund units at bargain valuations. Canceling the top-up eliminates this prime advantage.</li>
+
+          <li><strong>Failing to Periodically Rebalance Across Asset Classes:</strong> As your equity SIP steps up and your corpus grows into crores, ensure you rebalance a portion into debt funds or Fixed Deposits as you approach major financial milestones.</li>
+
+        </ol>
+
+      </div>
+
+
+
+      <div class="info-section-card">
+
+        <h2>Frequently Asked Questions</h2>
+
+        
+
+        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+
+          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What is a Step-Up SIP (Top-Up SIP) in Indian mutual funds?</summary>
+
+          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">A Step-Up SIP (also called Top-Up SIP) is a feature offered by Indian mutual fund houses that automatically increases your monthly SIP installment by a predefined percentage (e.g., 10%) or a fixed rupee amount (e.g., ₹1,000) every year. This ensures your investment contributions grow in tandem with your annual career salary increments, beating lifestyle inflation and vastly increasing your eventual compounding corpus.</p>
+
+        </details>
+
+
+
+        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+
+          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">How much does a 10% annual step-up increase my final retirement corpus?</summary>
+
+          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">A 10% annual step-up typically yields 60% to 100% more total wealth over a 15 to 20-year horizon compared to a flat, non-increasing SIP. For example, a constant ₹10,000 monthly SIP over 20 years at 12% CAGR yields approximately ₹99.91 Lakh. Stepping up the same SIP by 10% annually produces an extraordinary maturity corpus of approximately ₹2.03 Crore—more than double the final wealth with manageable incremental contributions.</p>
+
+        </details>
+
+
+
+        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+
+          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Can I set an upper cap on my annual Step-Up SIP amount?</summary>
+
+          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Yes. Most Indian mutual fund AMCs and investment platforms allow you to set an upper ceiling limit (e.g., stopping the automatic top-up once your monthly contribution reaches ₹50,000 or ₹1,00,000 per month). Once the cap is hit, your SIP continues at that fixed maximum level for the remainder of the tenure.</p>
+
+        </details>
+
+
+
+        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+
+          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">How is a Step-Up SIP automated in Indian bank accounts?</summary>
+
+          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Step-Up SIPs are automated via an authorized One-Time Mandate (OTM) through the National Automated Clearing House (NACH) or UPI AutoPay. When configuring your initial mandate, ensure the registered maximum daily debit limit on your mandate is set sufficiently high (e.g. ₹50,000 or ₹1,00,000) so future stepped-up installments execute directly without rejection.</p>
+
+        </details>
+
+
+
+        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+
+          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What is the best annual step-up percentage for salaried Indian professionals?</summary>
+
+          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">For salaried professionals in India receiving annual appraisals of 8% to 15%, setting an annual Step-Up rate of 10% is widely considered the ideal benchmark. It ensures that roughly half of your annual salary increment is redirected straight into wealth building before lifestyle inflation consumes the surplus.</p>
+
+        </details>
+
+
+
+        <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+
+          <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">How are capital gains taxed on a Step-Up SIP in India?</summary>
+
+          <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Taxation on Step-Up SIPs operates under the standard First-In, First-Out (FIFO) principle. Every individual monthly installment—whether from year 1 or stepped-up in year 10—is treated as an independent purchase. For equity funds, units held over 12 months qualify for LTCG at 12.5% on gains exceeding ₹1.25 Lakh per financial year. Units held for 12 months or less attract STCG at 20%.</p>
+
+        </details>
+
+      </div>
+
+
+
+      <div class="info-section-card">
+
+        <h2>Related Calculators &amp; Educational Guides</h2>
+
+        <p>Explore related planning tools to optimize your investment architecture:</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
+
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
+
+            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="index.html" style="color: #2563eb; text-decoration: underline;">Regular SIP Calculator</a></h3>
+
+            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Compare fixed monthly SIP projections against stepped-up trajectories to visualize your exact compounding acceleration.</p>
+
+          </div>
+
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
+
+            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="salary-hike-investment-strategy-india.html" style="color: #2563eb; text-decoration: underline;">Salary Hike Investment Strategy Guide</a></h3>
+
+            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Learn tactical frameworks for allocating appraisals across emergency buffers, equity SIP step-ups, and prepaying high-cost debt.</p>
+
+          </div>
+
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
+
+            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="goal.html" style="color: #2563eb; text-decoration: underline;">Goal Planner Calculator</a></h3>
+
+            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Back-calculate the starting SIP and annual step-up rate needed to reach a targeted ₹1 Crore, ₹2 Crore, or ₹5 Crore milestone.</p>
+
+          </div>
+
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
+
+            <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="the-power-of-compounding.html" style="color: #2563eb; text-decoration: underline;">The Power of Compounding Guide</a></h3>
+
+            <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Understand the Rule of 72, compounding frequencies, and multi-decade wealth tables for Indian investors.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </main>
+
+
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="index.html"><img src="logo-footer.svg" alt="Calculatorship — Free Financial Calculators for Indian Investors" width="200" height="36" style="display:block;" loading="lazy"></a>
+
+          <p class="footer-tagline">Independent financial calculators and educational guides for Indian investors, salaried professionals, and wealth builders.</p>
+
+        </div>
+
+        <div class="footer-links">
+
+          <div class="footer-col">
+
+            <h3>Calculators</h3>
+
+            <ul>
+
+              <li><a href="index.html">SIP Calculator</a></li>
+
+              <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
+
+              <li><a href="step-up.html">Step-Up SIP</a></li>
+
+              <li><a href="goal.html">Goal Planner</a></li>
+
+              <li><a href="ppf-calculator.html">PPF Calculator</a></li>
+
+              <li><a href="swp-calculator.html">SWP Calculator</a></li>
+
+              <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
+
+              <li><a href="fd-calculator.html">FD Calculator</a></li>
+
+              <li><a href="budget-planner.html">Budget Planner</a></li>
+
+              <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-col">
+
+            <h3>Legal &amp; Policy</h3>
+
+            <ul>
+
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+
+              <li><a href="terms.html">Terms of Use</a></li>
+
+              <li><a href="privacy.html">Privacy Policy</a></li>
+
+              <li><a href="cookies.html">Cookie Policy</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-col">
+
+            <h3>Platform</h3>
+
+            <ul>
+
+              <li><a href="about.html">About Us</a></li>
+
+              <li><a href="contact.html">Contact Us</a></li>
+
+              <li><a href="blog.html">Blog &amp; Guides</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="footer-disclaimer">
+
+          <strong>Important Regulatory Notice:</strong> Calculatorship is an independent financial education platform not affiliated with or registered under SEBI, AMFI, or RBI. All content and calculation tools are strictly for informational and educational purposes. Nothing on this website constitutes personalized financial, investment, tax, or legal advice. Mutual fund investments are subject to market risks. Calculatorship and its authors shall not be liable for any financial decisions or losses arising from use of this website.
+
+        </div>
+
+        <div class="footer-copy">
+
+          &copy; 2026 Calculatorship. All rights reserved. | <a href="disclaimer.html">Disclaimer</a> | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+
+    <svg viewBox="0 0 24 24" stroke-width="2.5" fill="none" stroke="currentColor"><polyline points="18 15 12 9 6 15"/></svg>
+
+  </button>
+
+
+
+  <script src="theme.js?v=2.2"></script>
+
+
+
+  <!-- Interactive Step-Up SIP Calculator Script -->
+
+  <script>
+
+    (function () {
+
+      "use strict";
+
+
+
+      const inrFormat = (num) => {
+
+        const n = Math.round(num);
+
+        return "₹" + n.toLocaleString("en-IN");
+
+      };
+
+
+
+      const monthlyInput = document.getElementById("monthly-investment-num");
+
+      const monthlySlider = document.getElementById("monthly-investment");
+
+      const stepInput = document.getElementById("step-up-pct-num");
+
+      const stepSlider = document.getElementById("step-up-pct");
+
+      const returnInput = document.getElementById("expected-return-num");
+
+      const returnSlider = document.getElementById("expected-return");
+
+      const periodInput = document.getElementById("time-period-num");
+
+      const periodSlider = document.getElementById("time-period");
+
+
+
+      function syncPair(inputEl, sliderEl, callback) {
+
+        if (!inputEl || !sliderEl) return;
+
+        inputEl.addEventListener("input", () => {
+
+          sliderEl.value = inputEl.value;
+
+          callback();
+
+        });
+
+        sliderEl.addEventListener("input", () => {
+
+          inputEl.value = sliderEl.value;
+
+          callback();
+
+        });
+
+      }
+
+
+
+      function calculate() {
+
+        const initialMonthly = parseFloat(monthlyInput.value) || 0;
+
+        const stepPct = (parseFloat(stepInput.value) || 0) / 100;
+
+        const annualRate = (parseFloat(returnInput.value) || 0) / 100;
+
+        const years = parseFloat(periodInput.value) || 0;
+
+
+
+        const i = annualRate / 12;
+
+        let totalInvested = 0;
+
+        let curBal = 0;
+
+        let curMonthly = initialMonthly;
+
+
+
+        let scheduleRows = [];
+
+
+
+        for (let y = 1; y <= years; y++) {
+
+          const annualDep = curMonthly * 12;
+
+          totalInvested += annualDep;
+
+          const openBal = curBal;
+
+
+
+          for (let m = 1; m <= 12; m++) {
+
+            curBal = (curBal + curMonthly) * (1 + i);
+
+          }
+
+
+
+          const yrGain = curBal - openBal - annualDep;
+
+          scheduleRows.push({
+
+            yr: y,
+
+            monthly: curMonthly,
+
+            dep: annualDep,
+
+            gain: yrGain,
+
+            close: curBal
+
+          });
+
+
+
+          curMonthly = curMonthly * (1 + stepPct);
+
+        }
+
+
+
+        const totalValue = curBal;
+
+        const totalGain = Math.max(0, totalValue - totalInvested);
+
+
+
+        document.getElementById("res-invested").textContent = inrFormat(totalInvested);
+
+        document.getElementById("res-returns").textContent = inrFormat(totalGain);
+
+        document.getElementById("res-total").textContent = inrFormat(totalValue);
+
+
+
+        // Update Donut
+
+        const sum = totalInvested + totalGain;
+
+        let gainPct = sum > 0 ? Math.round((totalGain / sum) * 100) : 50;
+
+        gainPct = Math.max(0, Math.min(100, gainPct));
+
+        const seg = document.getElementById("donut-segment");
+
+        if (seg) {
+
+          seg.setAttribute("stroke-dasharray", `${gainPct} ${100 - gainPct}`);
+
+        }
+
+        const legG = document.getElementById("donut-leg-gain");
+
+        const legI = document.getElementById("donut-leg-inv");
+
+        if (legG) legG.textContent = `Growth: ${gainPct}%`;
+
+        if (legI) legI.textContent = `Capital: ${100 - gainPct}%`;
+
+
+
+        // Populate Table
+
+        const tbody = document.getElementById("schedule-tbody");
+
+        if (tbody) {
+
+          tbody.innerHTML = scheduleRows.map(r => `
+
+            <tr>
+
+              <td>Year ${r.yr}</td>
+
+              <td>${inrFormat(r.monthly)}/mo</td>
+
+              <td>${inrFormat(r.dep)}</td>
+
+              <td style="color:#059669; font-weight:600;">+${inrFormat(r.gain)}</td>
+
+              <td style="font-weight:700; color:var(--text-primary);">${inrFormat(r.close)}</td>
+
+            </tr>
+
+          `).join("");
+
+        }
+
+      }
+
+
+
+      syncPair(monthlyInput, monthlySlider, calculate);
+
+      syncPair(stepInput, stepSlider, calculate);
+
+      syncPair(returnInput, returnSlider, calculate);
+
+      syncPair(periodInput, periodSlider, calculate);
+
+
+
+      calculate();
+
+    })();
+
+  </script>
+
+
+
+  <!-- DPDP & GDPR Compliant Cookie Consent Manager -->
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#fff; padding:1rem 2rem; z-index:9999; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.3);">
+  <p style="margin:0; font-size:0.9rem; max-width:700px; line-height:1.5;">
+    We use cookies to improve your browsing experience and serve relevant advertisements. By accepting, you agree to our <a href="cookies.html" style="color:#64ffda; text-decoration:underline;">Cookie Policy</a> and allow Google AdSense to serve personalized ads.
+  </p>
+  <div style="display:flex; gap:1rem; flex-shrink:0;">
+    <button id="decline-cookies" style="background:transparent; border:1px solid #64ffda; color:#64ffda; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem;">Decline</button>
+    <button id="accept-cookies" style="background:#64ffda; border:none; color:#1a1a2e; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem; font-weight:600;">Accept All</button>
+  </div>
+</div>
+<script>
+  (function() {
+    const CONSENT_KEY = 'calculatorship_cookie_consent';
+    const consent = localStorage.getItem(CONSENT_KEY);
+
+    function loadAdsense() {
+      if (document.getElementById('adsense-script')) return;
+      const script = document.createElement('script');
+      script.id = 'adsense-script';
+      script.async = true;
+      script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798';
+      script.crossOrigin = 'anonymous';
+      document.head.appendChild(script);
+    }
+
+    if (consent === 'accepted') {
+      loadAdsense();
+    } else if (!consent) {
+      document.addEventListener('DOMContentLoaded', function() {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'flex';
+        
+        const acceptBtn = document.getElementById('accept-cookies');
+        if (acceptBtn) {
+          acceptBtn.addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'accepted');
+            if (banner) banner.style.display = 'none';
+            loadAdsense();
+          });
+        }
+        
+        const declineBtn = document.getElementById('decline-cookies');
+        if (declineBtn) {
+          declineBtn.addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'declined');
+            if (banner) banner.style.display = 'none';
+          });
+        }
+      });
+    }
+  })();
+</script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"177595967b20485a96d1ade70873544b","r":1,"spa":2}' crossorigin="anonymous"></script>
-</body>
+</body>
+
 </html>

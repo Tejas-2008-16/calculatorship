@@ -320,7 +320,7 @@
             <li><a href="#real-world-case-studies-rahul-priya-and-arun">9. Real-World Case Studies: Rahul, Priya, and Arun</a></li>
             <li><a href="#sgb-and-portfolio-allocation-the-10-to-15-golden-anchor-rule">10. SGB and Portfolio Allocation: The 10% to 15% Golden Anchor Rule</a></li>
             <li><a href="#faq">11. Frequently Asked Questions (FAQs)</a></li>
-            <li><a href="#comprehensive-guide-navigating-secondary-market-sgb-purchasing-on-zerodha-groww-upstox">Comprehensive Guide: Navigating Secondary Market SGB Purchasing on Zerodha, Groww & Upstox</a></li>
+            <li><a href="#comprehensive-guide-managing-secondary-market-sgb-purchasing-on-zerodha-groww-upstox">Comprehensive Guide: managing Secondary Market SGB Purchasing on Zerodha, Groww & Upstox</a></li>
           </ol>
         </div>
 
@@ -527,8 +527,8 @@
 
         </section>
 
-        <section id="comprehensive-guide-navigating-secondary-market-sgb-purchasing-on-zerodha-groww-upstox">
-          <h2>Comprehensive Guide: Navigating Secondary Market SGB Purchasing on Zerodha, Groww & Upstox</h2>
+        <section id="comprehensive-guide-managing-secondary-market-sgb-purchasing-on-zerodha-groww-upstox">
+          <h2>Comprehensive Guide: managing Secondary Market SGB Purchasing on Zerodha, Groww & Upstox</h2>
           <p>Because the Reserve Bank of India has moderated the frequency of fresh primary SGB issuances, purchasing existing Sovereign Gold Bonds on the secondary market via stock exchanges (NSE and BSE) has become the premier strategy for Indian gold investors. Here is the complete operational guide to buying SGBs at secondary market discounts while optimizing liquidity and tax status:</p>
           <h3>1. Decoding SGB Ticker Symbols on Indian Stock Exchanges</h3>
           <p>When searching for Sovereign Gold Bonds in your demat trading terminal, tickers follow a standardized naming convention: <strong>SGB[Month][Year]</strong> or <strong>SGB[Series]</strong>. For example:</p>
@@ -679,22 +679,55 @@
 
   <script src="theme.js?v=2.2"></script>
 
-<!-- Cookie Consent Banner for AdSense Compliance -->
-<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#fff; padding:16px 24px; z-index:9999; justify-content:space-between; align-items:center; font-size:14px; gap:16px; box-shadow:0 -4px 16px rgba(0,0,0,0.2);">
-  <span>🍪 We use cookies to improve your experience and serve relevant ads. By continuing, you accept our <a href="cookies.html" style="color:#4ade80; text-decoration:underline;">Cookie Policy</a>.</span>
-  <button id="cookie-accept-btn" style="background:#4ade80; color:#000; border:none; padding:8px 20px; border-radius:6px; cursor:pointer; font-weight:600; white-space:nowrap;">Accept</button>
+<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#fff; padding:1rem 2rem; z-index:9999; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; box-shadow: 0 -2px 10px rgba(0,0,0,0.3);">
+  <p style="margin:0; font-size:0.9rem; max-width:700px; line-height:1.5;">
+    We use cookies to improve your browsing experience and serve relevant advertisements. By accepting, you agree to our <a href="cookies.html" style="color:#64ffda; text-decoration:underline;">Cookie Policy</a> and allow Google AdSense to serve personalized ads.
+  </p>
+  <div style="display:flex; gap:1rem; flex-shrink:0;">
+    <button id="decline-cookies" style="background:transparent; border:1px solid #64ffda; color:#64ffda; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem;">Decline</button>
+    <button id="accept-cookies" style="background:#64ffda; border:none; color:#1a1a2e; padding:0.5rem 1.2rem; border-radius:4px; cursor:pointer; font-size:0.9rem; font-weight:600;">Accept All</button>
+  </div>
 </div>
 <script>
-  (function(){
-    if (!localStorage.getItem('cookieAccepted')) {
-      var cb = document.getElementById('cookie-banner');
-      if (cb) {
-        cb.style.display = 'flex';
-        document.getElementById('cookie-accept-btn').addEventListener('click', function(){
-          localStorage.setItem('cookieAccepted', 'true');
-          cb.style.display = 'none';
-        });
-      }
+  (function() {
+    const CONSENT_KEY = 'calculatorship_cookie_consent';
+    const consent = localStorage.getItem(CONSENT_KEY);
+
+    function loadAdsense() {
+      if (document.getElementById('adsense-script')) return;
+      const script = document.createElement('script');
+      script.id = 'adsense-script';
+      script.async = true;
+      script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798';
+      script.crossOrigin = 'anonymous';
+      document.head.appendChild(script);
+    }
+
+    if (consent === 'accepted') {
+      loadAdsense();
+    } else if (!consent) {
+      document.addEventListener('DOMContentLoaded', function() {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'flex';
+        
+        const acceptBtn = document.getElementById('accept-cookies');
+        if (acceptBtn) {
+          acceptBtn.addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'accepted');
+            if (banner) banner.style.display = 'none';
+            loadAdsense();
+          });
+        }
+        
+        const declineBtn = document.getElementById('decline-cookies');
+        if (declineBtn) {
+          declineBtn.addEventListener('click', function() {
+            localStorage.setItem(CONSENT_KEY, 'declined');
+            if (banner) banner.style.display = 'none';
+          });
+        }
+      });
     }
   })();
 </script>
