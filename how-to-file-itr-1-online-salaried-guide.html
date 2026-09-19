@@ -221,237 +221,139 @@
           </div>
         </div>
 
-        <section id="pre-fill-trap">
-          <h2>The Pre-Filled Data Trap: Why Form 16 Is Never Enough</h2>
-          <p><strong>The single costliest mistake salaried employees make on the e-Filing portal is blindly accepting the pre-filled numbers and submitting the return in 5 minutes.</strong></p>
-          <p>The Income Tax Department's pre-filled utility pulls data from your employer's Form 16, but completely omits or underestimates two critical financial streams: (1) accrued interest on your savings accounts and bank fixed deposits, and (2) share/mutual fund dividend credits. The tax department's automated algorithms cross-reference your filed return with your <strong>Annual Information Statement (AIS)</strong> and <strong>Form 26AS</strong>. If your AIS records ₹32,000 in bank interest but your filed ITR-1 reflects ₹0, an automated scrutiny notice under Section 143(1)(a) for "prima facie adjustment" is practically guaranteed.</p>
-          <p>Always reconcile your Form 16 against your AIS, Form 26AS, and bank interest certificates before clicking 'Proceed to Verification'.</p>
-        </section>
-
-        <section id="itr-1-eligibility">
-          <h2>1. Eligibility Criteria for Form ITR-1 (Sahaj)</h2>
-          <p>Form ITR-1 (Sahaj) is a simplified single-form return designed by the Central Board of Direct Taxes (CBDT) for straightforward salaried individuals. To file using ITR-1, you must satisfy <strong>all</strong> of the following criteria:</p>
-          <ul>
-            <li><strong>Residential Status:</strong> You must be an individual who is <strong>Resident and Ordinarily Resident (ROR)</strong> in India. Non-Resident Indians (NRIs) and Resident but Not Ordinarily Resident (RNOR) individuals are ineligible.</li>
-            <li><strong>Income Threshold:</strong> Your Total Gross Income across all sources must not exceed <strong>₹50,00,000</strong> during the financial year.</li>
-            <li><strong>Permissible Income Heads:</strong>
-              <ol style="margin-top:0.5rem;">
-                <li>Income from <strong>Salary or Pension</strong>.</li>
-                <li>Income from <strong>One Single House Property</strong> (where there is no brought-forward loss).</li>
-                <li>Income from <strong>Other Sources</strong> (such as savings bank interest, fixed deposit interest, and family pension).</li>
-                <li>Agricultural Income up to a maximum of <strong>₹5,000</strong>.</li>
-              </ol>
-            </li>
-            <li><strong>Ineligibility Triggers:</strong> You cannot use ITR-1 if you are a Director in a company, hold unlisted equity shares, own foreign assets/foreign bank accounts, have income from business/profession, or have taxable capital gains.</li>
+        <!-- Key Takeaways Box -->
+        <div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid #16a34a; border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: #166534; margin-top: 0; margin-bottom: 0.75rem;">Key Takeaways: What You Need to Know First</h2>
+          <ul style="margin: 0; padding-left: 1.25rem; line-height: 1.8; color: #15803d; font-size: 0.96rem;">
+            <li>1. <strong>Strict ITR-1 Eligibility:</strong> ITR-1 (Sahaj) applies exclusively to resident individuals with total annual income up to <strong>₹50 Lakh</strong> from salary, one house property, and other sources (bank interest, dividends).</li>
+            <li>2. <strong>Capital Gains Disqualification:</strong> If you redeemed even one mutual fund unit or sold a single stock with capital gains or losses, you are legally disqualified from ITR-1 and must file <strong>ITR-2</strong>.</li>
+            <li>3. <strong>Form 16 Pre-Fill Trap:</strong> Employer Form 16 does not capture savings account interest, FD accruals, or dividends; failing to add these will trigger automated scrutiny notices under Section 143(1)(a).</li>
+            <li>4. <strong>New Regime Default:</strong> For FY 2026-27 (AY 2027-28), the portal pre-selects the New Tax Regime with an automatic <strong>₹75,000 Standard Deduction</strong> and Section 87A full rebate up to ₹7,00,000 taxable income (₹7,75,000 gross).</li>
+            <li>5. <strong>Three-Way Reconciliation:</strong> Before submitting, cross-verify numbers across <strong>Form 16, AIS (Annual Information Statement), and Form 26AS</strong> to ensure every rupee of tax credit matches.</li>
+            <li>6. <strong>Statutory Due Date:</strong> The filing deadline for non-audit salaried individuals is <strong>July 31st</strong>; late filing triggers fees up to ₹5,000 under Section 234F and interest under Section 234A.</li>
           </ul>
-        </section>
+        </div>
 
-        <section id="essential-documents">
-          <h2>2. Mandatory Documents Checklist (Form 16, AIS, 26AS)</h2>
-          <p>Before logging in to the Income Tax Department portal (<code>incometax.gov.in</code>), gather and cross-verify the following three primary tax verification documents:</p>
-          <div class="table-wrapper">
-            <table class="comparison-table">
+        <section style="font-size: 1.05rem; line-height: 1.8; color: var(--text-primary);">
+
+          <!-- HUMAN REWRITE: how-to-file-itr-1-online-salaried-guide | Financial Year: FY 2026-27 (AY 2027-28) | Last verified: September 2026 -->
+
+          <h2>The 5-Minute Pre-Fill Trap: Why Relying on Form 16 Guarantees a Tax Notice</h2>
+          <p>You log in to incometax.gov.in on a Sunday in July, select ITR-1 Sahaj, click "Pre-fill Data," and see all the numbers populated from your employer's Form 16. The tax payable shows ₹0. You click submit, feel relieved that your filing took 4 minutes, and close the browser.</p>
+          <p>Three months later, an email lands from CPC Bengaluru: <em>Intimation under Section 143(1)(a) — Prima Facie Adjustment</em>, demanding ₹14,200 in unpaid tax and penal interest. Your employer's Form 16 only accounts for the salary they paid you. It has zero knowledge of your ₹24,000 in SBI savings account interest, ₹45,000 from HDFC fixed deposits, or ₹12,000 in stock dividends. The Income Tax Department's automated compliance engine reconciles your return against your <strong>Annual Information Statement (AIS)</strong> within seconds—and any undeclared bank interest triggers an instant demand notice.</p>
+
+          <h2>Who Can File ITR-1 (Sahaj) vs Who Must File ITR-2</h2>
+          <p>Filing the wrong ITR form invalidates your submission under Section 139(9) as a "defective return." Check your eligibility before starting:</p>
+
+          <div class="table-wrapper" style="margin: 1.5rem 0;">
+            <table class="comparison-table" style="width: 100%; border-collapse: collapse; text-align: left;">
               <thead>
-                <tr>
-                  <th>Document</th>
-                  <th>Source / Issuer</th>
-                  <th>Key Data Points to Verify</th>
+                <tr style="background: #f1f5f9;">
+                  <th style="padding: 12px; border: 1px solid #cbd5e1;">Filing Dimension</th>
+                  <th style="padding: 12px; border: 1px solid #cbd5e1;">ITR-1 (Sahaj) Permitted</th>
+                  <th style="padding: 12px; border: 1px solid #cbd5e1;">ITR-2 Mandatory (Disqualified from ITR-1)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Form 16 (Part A & B)</strong></td>
-                  <td>Your Employer</td>
-                  <td>Total salary paid, Chapter VI-A deductions claimed, Standard Deduction (₹75,000 under New Regime), and Total TDS deducted under Section 192.</td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;"><strong>Total Annual Income</strong></td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">Up to ₹50,00,000</td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">Exceeds ₹50,00,000</td>
                 </tr>
                 <tr>
-                  <td><strong>Form 26AS (Tax Credit Statement)</strong></td>
-                  <td>TRACES / E-Filing Portal</td>
-                  <td>Verified credit of TDS deducted by employer, banks (Section 194A), and any advance tax/self-assessment tax paid by you.</td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;"><strong>Residential Status</strong></td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">Resident &amp; Ordinarily Resident (ROR)</td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">NRI, RNOR, or foreign resident</td>
                 </tr>
                 <tr>
-                  <td><strong>Annual Information Statement (AIS / TIS)</strong></td>
-                  <td>Income Tax Department Portal</td>
-                  <td>Savings bank interest from all bank accounts, FD interest, dividend credits, mutual fund transactions, and high-value expenditures.</td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;"><strong>Mutual Fund &amp; Stock Capital Gains</strong></td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;"><strong style="color: #dc2626;">Zero gains/losses (None permitted)</strong></td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;"><strong style="color: #059669;">Any realized STCG or LTCG</strong></td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;"><strong>House Property Count</strong></td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">One single house property</td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">Two or more house properties, or brought-forward loss</td>
+                </tr>
+                <tr style="background: #f8fafc;">
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;"><strong>Foreign Assets / ESOPs</strong></td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">None</td>
+                  <td style="padding: 12px; border: 1px solid #cbd5e1;">Holding foreign stocks (US tech RSUs/ESOPs) or foreign accounts</td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </section>
 
-        <section id="itr-1-vs-itr-2">
-          <h2>3. ITR-1 vs ITR-2: The Mutual Fund Capital Gains Trap</h2>
-          <p>A frequent error among salaried mutual fund investors is attempting to file ITR-1 after redeeming mutual fund units or executing Systematic Transfer Plans (STP) during the year:</p>
-          <ul>
-            <li><strong>Holding SIPs without Selling:</strong> If you only invested in SIPs and did not sell any mutual fund units, you have 0 realized capital gains. You remain 100% eligible to file <strong>ITR-1</strong>.</li>
-            <li><strong>Any Mutual Fund Redemption (Equity or Debt):</strong> If you redeemed mutual fund units or executed an STP/SWP, the AMC generates a Capital Gains Statement. Even if your capital gain is within the ₹1.25 Lakh LTCG exemption limit, you <strong>must file Form ITR-2</strong> to report Schedule CG (Capital Gains). Filing ITR-1 while ignoring mutual fund redemptions triggers an automated defective return notice under Section 139(9).</li>
+          <h2>The Three-Way Document Reconciliation Before You File</h2>
+          <p>Before entering data on the portal, download and align these three primary documents:</p>
+          <ol style="line-height: 1.8;">
+            <li><strong>Form 16 (Part A &amp; Part B):</strong> Issued by your employer in June. Part A certifies total TDS deducted and deposited with the government; Part B provides your gross salary breakup, perquisites, standard deduction, and declared Chapter VI-A deductions.</li>
+            <li><strong>Annual Information Statement (AIS / TIS):</strong> Download from the "Services" tab on the e-filing portal. AIS aggregates high-value financial data reported by third parties: savings interest from all bank accounts, fixed deposit interest, stock dividend credits, mutual fund purchases/sales, and credit card payments exceeding ₹10 Lakh.</li>
+            <li><strong>Form 26AS:</strong> Your statutory tax passbook showing all TDS deducted against your PAN by employers, banks, or clients, along with advance tax and self-assessment tax challans.</li>
+          </ol>
+          <p><strong>Rule of thumb:</strong> If your Form 16 TDS shows ₹1,20,000, but Form 26AS only reflects ₹1,00,000, do NOT submit your return yet. Your employer must file a quarterly TDS correction (Form 24Q) to update the missing ₹20,000 credit; otherwise, CPC Bengaluru will demand that difference from you with interest.</p>
+
+          <h2>Step-by-Step Walkthrough: Filing ITR-1 on Portal 2.0 (FY 2026-27)</h2>
+          <p>Follow this exact operational sequence on incometax.gov.in:</p>
+          <ul style="line-height: 1.8;">
+            <li><strong>Step 1 — Login &amp; Navigation:</strong> Log in using your PAN and password. Navigate to <em>e-File &rarr; Income Tax Returns &rarr; File Income Tax Return</em>. Select <strong>Assessment Year 2027-28 (Current A.Y.)</strong> and filing mode as <strong>Online</strong>.</li>
+            <li><strong>Step 2 — Status &amp; Form Selection:</strong> Select your status as "Individual" and choose <strong>ITR-1</strong>. Confirm your reason for filing (e.g. taxable income exceeds basic exemption limit).</li>
+            <li><strong>Step 3 — Personal Information &amp; Regime Election:</strong> Verify your contact details and bank account validation (ensure at least one account is nominated for electronic refund). Confirm whether you are opting for the default <strong>New Tax Regime (Section 115BAC)</strong> or exercising the option to switch to the <strong>Old Tax Regime</strong>.</li>
+            <li><strong>Step 4 — Gross Total Income Verification:</strong> Review pre-filled salary from Form 16. Navigate to <em>Income from Other Sources</em> and manually add your bank savings account interest and FD interest as recorded in your AIS.</li>
+            <li><strong>Step 5 — Deductions Schedule:</strong> Under the New Regime, the ₹75,000 Standard Deduction is credited automatically. If opting for the Old Regime, enter your itemized Section 80C (EPF, PPF, ELSS), Section 80D (health insurance), and HRA figures.</li>
+            <li><strong>Step 6 — Taxes Paid &amp; Verification:</strong> Cross-check total TDS against Form 26AS. If net tax payable is ₹0 or you have a refund, proceed to <strong>e-Verify</strong> immediately using Aadhaar OTP.</li>
           </ul>
-          <p>For complete details on capital gains tax thresholds, review our <a href="capital-gains-tax-india.html">Capital Gains Tax Guide</a>.</p>
-        </section>
 
-        <section id="step-by-step-walkthrough">
-          <h2>4. Step-by-Step E-Filing Walkthrough on e-Portal 2.0</h2>
-          <p>Follow these sequential operational steps to complete your ITR-1 filing directly on the official portal:</p>
-          <ol style="line-height: 1.8;">
-            <li><strong>Step 1: Portal Login:</strong> Visit <code>incometax.gov.in</code>. Log in using your PAN as User ID, password, and registered Aadhaar-linked OTP.</li>
-            <li><strong>Step 2: Initiate Filing:</strong> Navigate to <strong>e-File &rarr; Income Tax Returns &rarr; File Income Tax Return</strong>. Select Assessment Year <strong>2027-28</strong> (for FY 2026-27), select Filing Mode as <em>Online</em>, and Status as <em>Individual</em>.</li>
-            <li><strong>Step 3: Select ITR-1 (Sahaj):</strong> Choose ITR-1. Select the primary reason for filing: <em>Taxable income is more than basic exemption limit</em>.</li>
-            <li><strong>Step 4: Verify Pre-filled Personal Information:</strong> Check your contact details, residential status (Resident), and verify that at least one bank account is marked as <em>Validated & Nominated for Refund</em>.</li>
-            <li><strong>Step 5: Confirm Gross Total Income:</strong>
-              <ul style="padding-left: 1.25rem;">
-                <li><strong>Salary Income:</strong> Auto-populated from Form 16. Verify Gross Salary, Standard Deduction (₹75,000 for New Regime / ₹50,000 for Old Regime), and Professional Tax (Section 16(iii)).</li>
-                <li><strong>Income from Other Sources:</strong> Add savings bank interest (verify against AIS) and any FD interest or dividend credits.</li>
-              </ul>
-            </li>
-            <li><strong>Step 6: Select Tax Regime (New vs Old):</strong> The default regime is the New Tax Regime (Section 115BAC). If opting for the Old Tax Regime to claim 80C, 80D, or HRA deductions, select 'Yes' to opt out before the July 31 due date. Use our <a href="income-tax-calculator.html">Income Tax Calculator</a> to compare your exact tax liability under both options.</li>
-            <li><strong>Step 7: Confirm Tax Paid & Verification:</strong> Review Schedule TDS against Form 26AS. If tax liability equals ₹0 or a refund is due, proceed to Preview and submit.</li>
-            <li><strong>Step 8: Instant e-Verification:</strong> Complete Aadhaar OTP verification immediately. An unverified return is legally invalid.</li>
-          </ol>
-        </section>
-
-        <section id="worked-salary-reconciliation">
-          <h2>5. Worked Example: Reconciling Salary, Savings Interest & TDS</h2>
-          <p>Consider a salaried professional earning <strong>₹12,00,000 Gross Salary</strong> in FY 2026-27 under the default New Tax Regime, with <strong>₹18,000 Savings Bank Interest</strong> reported in their AIS:</p>
-
-          <div class="table-wrapper">
-            <table class="comparison-table">
-              <thead>
-                <tr>
-                  <th>Computation Step</th>
-                  <th>Statutory Rule / Provision</th>
-                  <th>Amount (₹)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Gross Salary</td>
-                  <td>Form 16 Part B</td>
-                  <td>₹12,00,000</td>
-                </tr>
-                <tr>
-                  <td><em>Less:</em> Standard Deduction</td>
-                  <td>Section 16(ia) [New Regime]</td>
-                  <td>- ₹75,000</td>
-                </tr>
-                <tr>
-                  <td>Net Taxable Salary</td>
-                  <td>Salary Head Total</td>
-                  <td>₹11,25,000</td>
-                </tr>
-                <tr>
-                  <td><em>Add:</em> Savings Bank Interest</td>
-                  <td>AIS Reconciliation (No 80TTA in New Regime)</td>
-                  <td>+ ₹18,000</td>
-                </tr>
-                <tr>
-                  <td><strong>Gross Total Income (Taxable)</strong></td>
-                  <td>Total Net Income</td>
-                  <td><strong>₹11,43,000</strong></td>
-                </tr>
-                <tr>
-                  <td>Tax Calculation on Slabs:</td>
-                  <td>₹0 to ₹4 Lakh @ 0% = ₹0<br>₹4L to ₹8L @ 5% = ₹20,000<br>₹8L to ₹11.43L @ 10% = ₹34,300</td>
-                  <td>₹54,300</td>
-                </tr>
-                <tr>
-                  <td><em>Add:</em> 4% Health & Education Cess</td>
-                  <td>4% on ₹54,300</td>
-                  <td>+ ₹2,172</td>
-                </tr>
-                <tr>
-                  <td><strong>Total Tax Payable</strong></td>
-                  <td>Final Tax Obligation</td>
-                  <td><strong>₹56,472</strong></td>
-                </tr>
-                <tr>
-                  <td><em>Less:</em> Employer TDS Deducted</td>
-                  <td>Form 16 / 26AS Credit</td>
-                  <td>- ₹54,600</td>
-                </tr>
-                <tr style="background:var(--bg-card); font-weight:800;">
-                  <td><strong>Self-Assessment Tax to Pay Before Filing</strong></td>
-                  <td>Section 140A Challan Deposit</td>
-                  <td><strong>₹1,872</strong></td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- Interactive Calculator CTA Card -->
+          <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #bfdbfe; border-radius: 12px; padding: 2rem; margin: 3rem 0; text-align: center;">
+            <h3 style="font-size: 1.35rem; font-weight: 800; color: #1e3a8a; margin-top: 0; margin-bottom: 0.5rem;">Calculate Your Exact Tax Before Filing</h3>
+            <p style="font-size: 0.98rem; color: #1e40af; max-width: 600px; margin: 0 auto 1.5rem;">Verify your net tax liability and check if the Old or New Regime yields a higher refund for FY 2026-27.</p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+              <a href="income-tax-calculator.html" class="btn btn-primary" style="background: #2563eb; color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700;">Open Tax Calculator &rarr;</a>
+              <a href="old-vs-new-tax-regime.html" class="btn btn-secondary" style="background: #fff; color: #2563eb; border: 1px solid #2563eb; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 700;">Compare Regimes &rarr;</a>
+            </div>
           </div>
-          <p>By reconciling the ₹18,000 AIS savings interest before filing and paying the ₹1,872 challan, the taxpayer completely eliminates Section 143(1) tax demand notices.</p>
-        </section>
 
-        <section id="common-filing-errors">
-          <h2>6. Common Mismatch Errors & Section 143(1) Intimations</h2>
-          <p>The Income Tax Department's Centralized Processing Centre (CPC) runs automated algorithmic cross-checks on every filed return. Common triggers for mismatch notices include:</p>
-          <ol style="line-height: 1.8;">
-            <li><strong>Omitting Savings Account Interest:</strong> Many taxpayers believe savings interest is tax-free. Under the New Tax Regime, Section 80TTA deduction is not available, making every rupee of bank interest fully taxable.</li>
-            <li><strong>Failure to Report Interest on Income Tax Refunds:</strong> If you received an income tax refund in the previous financial year with interest under Section 244A, that interest is taxable under 'Income from Other Sources'.</li>
-            <li><strong>Multiple Form 16s on Job Switch:</strong> If you switched employers during the financial year, both employers likely applied the basic exemption limit. Combining both Form 16s during ITR filing often reveals unpaid tax that must be settled via self-assessment tax.</li>
-          </ol>
-        </section>
-
-        <section id="deadlines-penalties">
-          <h2>7. Statutory Deadlines & Penalty Framework for FY 2026-27</h2>
-          <div class="table-wrapper">
-            <table class="comparison-table">
-              <thead>
-                <tr>
-                  <th>Filing Milestone</th>
-                  <th>Statutory Due Date</th>
-                  <th>Applicable Legal Consequence</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Original Due Date</strong></td>
-                  <td>31 July 2027</td>
-                  <td>Standard timely filing; carry forward losses allowed.</td>
-                </tr>
-                <tr>
-                  <td><strong>Belated Return (Sec 139(4))</strong></td>
-                  <td>31 December 2027</td>
-                  <td>Late fee up to ₹5,000 (Sec 234F) + 1% monthly interest (Sec 234A).</td>
-                </tr>
-                <tr>
-                  <td><strong>Updated Return (ITR-U, Sec 139(8A))</strong></td>
-                  <td>Up to 24 Months from AY End</td>
-                  <td>Additional tax of 25% to 50% on aggregate tax payable.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="editorial-view">
-          <h2>Editorial Perspective: Mastering ITR-1 Filing Without Traps</h2>
-          <p><em>In my view,</em> salaried professionals make two consistent, expensive errors when handling ITR-1: trusting pre-filled data without cross-checking, and postponing filing until the final week of July. The Income Tax Department's automated portal algorithms flag discrepancies between employer Form 16 TDS certificates and AIS bank interest feeds with zero human intervention. Resolving a Section 143(1) intimation notice later costs significantly more mental peace than taking 20 minutes to cross-verify numbers in June.</p>
-          <p>Always complete e-verification via Aadhaar OTP on the day of submission. An unverified ITR is legally considered invalid after 30 days under Rule 14, exposing you to belated return penalties under Section 234F even if you clicked submit well before July 31.</p>
-          <div class="card" style="background:var(--card-bg); border-left:4px solid var(--primary); padding:16px 20px; margin:24px 0;">
-            <p style="margin:0 0 8px;"><strong>Edge case &amp; caveat:</strong> Even if your gross total income is below the basic exemption threshold (e.g., under ₹2.5 Lakh or ₹3.0 Lakh), filing an ITR is legally mandatory under the seventh proviso to Section 139(1) of the Income Tax Act if you deposited more than ₹1 Crore in aggregate in current bank accounts, incurred foreign travel expenditure exceeding ₹2 Lakh, or paid aggregate electricity bills over ₹1 Lakh during the financial year.</p>
-            <p style="margin:0; font-size:0.9rem; color:var(--text-muted);"><strong>Verified against:</strong> Central Board of Direct Taxes (CBDT) ITR-1 Sahaj instructions, Directorate of Income Tax (Systems) guidelines, and Section 139(1) of the Income Tax Act, 1961. Information last verified September 2026.</p>
-          </div>
-        </section>
-
-        <section id="faq">
           <h2>Frequently Asked Questions</h2>
+
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Who is strictly eligible to file ITR-1 (Sahaj) for FY 2026-27?</summary>
-            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">ITR-1 is applicable strictly for resident individuals having total income up to ₹50 Lakh derived from: (1) Salary or Pension, (2) One single House Property, (3) Other Sources (bank interest, dividends), and (4) Agricultural income up to ₹5,000.</p>
+            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">I redeemed mutual funds with only ₹3,000 profit. Can I still file ITR-1 to save time?</summary>
+            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">No. The Central Board of Direct Taxes (CBDT) strictly prohibits individuals with any capital gains or losses from filing ITR-1. Even if your net gain is ₹100, you must file ITR-2. Filing ITR-1 when you have realized capital gains will result in a defective return notice under Section 139(9).</p>
           </details>
+
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Can I file ITR-1 if I sold equity mutual funds or stocks during the financial year?</summary>
-            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">No. If you realized Short-Term Capital Gains (STCG) or Long-Term Capital Gains (LTCG) from the sale of mutual funds, shares, or property, you cannot use ITR-1. You are required to file ITR-2 (or ITR-3 if you have business/trading income).</p>
+            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What happens if I file my ITR after the July 31 deadline?</summary>
+            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Filing between August 1 and December 31 makes your return "Belated" under Section 139(4). You face a mandatory late fee under Section 234F (₹5,000 if total income exceeds ₹5 Lakh; ₹1,000 if below ₹5 Lakh), penal interest of 1% per month under Section 234A on any unpaid tax, and permanent forfeiture of the right to carry forward capital losses.</p>
           </details>
+
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What is the penalty for filing an Income Tax Return after the July 31 deadline?</summary>
-            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Under Section 234F of the Income Tax Act: A late fee of ₹5,000 is levied if your total income exceeds ₹5 Lakh and you file a belated return by December 31. If your total income is below ₹5 Lakh, the late fee is capped at ₹1,000. Interest under Section 234A at 1% per month also applies on any unpaid tax balance.</p>
+            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">My employer deducted tax under the New Regime. Can I file under the Old Regime?</summary>
+            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Yes. The regime chosen on your company payroll portal is only an interim estimate for monthly TDS under Section 192. When filing your ITR online before July 31, salaried employees can choose the Old Regime, enter their 80C, 80D, and HRA deductions, and claim a direct refund of the excess TDS deducted by their employer.</p>
           </details>
+
           <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">What is the difference between AIS (Annual Information Statement) and Form 26AS?</summary>
-            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Form 26AS tracks tax deducted at source (TDS), tax collected at source (TCS), and advance tax payments deposited against your PAN. The Annual Information Statement (AIS) is a broader document capturing comprehensive financial transactions reported by banks, stockbrokers, AMCs, and registrars, including savings bank interest, dividend credits, share purchases, and property transactions.</p>
+            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Why is my income tax refund delayed after filing?</summary>
+            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Common refund delays stem from three issues: (1) forgetting to e-verify your return within 30 days of submission, (2) your primary bank account on the portal not being "Validated" or "EVC-enabled," or (3) a mismatch between the TDS claimed in your ITR and the TDS actually deposited in Form 26AS.</p>
           </details>
+
+          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Do I need to e-verify my return, or can I skip it?</summary>
+            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">E-verification is mandatory. Under CBDT rules, an unverified ITR is treated as non-existent in the eyes of the law after 30 days. You can complete verification instantly using Aadhaar OTP, Net Banking, or Demat account EVC.</p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
+            <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">How is savings bank interest taxed if I file under the New Tax Regime?</summary>
+            <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Under the New Tax Regime, Section 80TTA (which provides up to ₹10,000 tax deduction on savings bank interest) is unavailable. Every rupee of savings bank interest reported in your AIS must be declared under "Income from Other Sources" and will be taxed at your applicable slab rate.</p>
+          </details>
+
+          <h2>Actionable Next Step: Download Your AIS and Form 26AS Today</h2>
+          <p>Log in to incometax.gov.in right now. Click on the <strong>AIS</strong> button in the top menu bar to download your Annual Information Statement for FY 2026-27. Compare the total savings interest and dividend income in your AIS against your bank passbook. If there are discrepancies, submit feedback on the portal immediately before filing your ITR to ensure seamless, notice-free processing by CPC Bengaluru.</p>
+
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1.5rem;">These guidelines reflect statutory provisions under the Income Tax Act for Assessment Year 2027-28 (FY 2026-27); consult a registered Chartered Accountant for complex salary structuring or tax dispute resolutions.</p>
+
         </section>
 
-        <div class="author-bio-card">
+<div class="author-bio-card">
           <div class="author-bio-header">
             <div class="author-avatar">T</div>
             <div>
