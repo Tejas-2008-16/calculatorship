@@ -1,4 +1,6 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/admin-cp/(.*)",
@@ -6,6 +8,28 @@
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
         { "key": "X-Frame-Options", "value": "DENY" }
       ]
+    },
+    {
+      "source": "/(.*)\\.(css|js|webp|svg|png|ico)$",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/cibil-credit-score-improvement-guide.html",
+      "destination": "/credit-score-guide-india.html",
+      "permanent": true
+    },
+    {
+      "source": "/cibil-credit-score-improvement-guide",
+      "destination": "/credit-score-guide-india.html",
+      "permanent": true
+    }
+  ],
+  "errors": [
+    { "statusCode": 404, "source": "/404.html" }
   ]
 }
+
