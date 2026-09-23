@@ -54,8 +54,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  overflow-x: clip;
-  overflow-y: visible;
+  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -63,16 +62,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: clip;
-  overflow-y: visible;
+  overflow-x: hidden;
   max-width: 100%;
   position: relative;
   width: 100%;
 }
 
 .page-wrapper {
-  overflow-x: clip;
-  overflow-y: visible;
+  overflow-x: hidden;
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -1258,9 +1255,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
   flex-direction: column;
   gap: 28px;
   align-self: start;
-  max-height: calc(100vh - 110px);
-  overflow-y: auto;
-  scrollbar-width: thin;
 }
 
 .sidebar-card {
@@ -1294,6 +1288,12 @@ input[type="range"]::-webkit-slider-thumb:hover {
   color: var(--text-secondary);
   line-height: 1.45;
   display: block;
+  transition: color var(--transition-fast);
+}
+
+.sidebar-links a:hover {
+  color: var(--emerald-dark);
+  text-decoration: underline;
 }
 
 /* Callouts & Citations */
@@ -1660,12 +1660,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .calc-grid {
     grid-template-columns: 1fr;
   }
-  .article-page {
-    grid-template-columns: 1fr;
-  }
-  .article-sidebar {
-    position: static;
-  }
   .footer-top {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1673,6 +1667,13 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 @media (max-width: 900px) {
+  .article-page {
+    grid-template-columns: 1fr;
+  }
+  .article-sidebar {
+    position: static;
+  }
+
   html {
     font-size: 16px;
   }
