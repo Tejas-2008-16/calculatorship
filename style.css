@@ -159,12 +159,28 @@ img {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: transparent;
   border-bottom: 1px solid var(--border-soft);
   z-index: 1000;
   height: 76px;
+  isolation: isolate;
+}
+
+/* FIX: backdrop-filter moved off .site-header itself and onto this
+   pseudo-element. An element with backdrop-filter/filter/transform
+   becomes a new "containing block" for any position:fixed descendant
+   nested inside it — which was hijacking the mobile drawer (.main-nav)
+   and pinning it relative to the 76px header box instead of the real
+   viewport once the page scrolled. Moving the blur here keeps the same
+   frosted-glass look without trapping the drawer. */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: -1;
 }
 
 .header-inner {
