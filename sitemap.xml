@@ -595,9 +595,21 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.calculatorship.in/50000-salary-how-much-save-invest-spend.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://www.calculatorship.in/atal-pension-yojana-apy-guide.html</loc>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/rbi-floating-rate-savings-bonds-guide.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calculatorship.in/treasury-bills-india-guide.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
