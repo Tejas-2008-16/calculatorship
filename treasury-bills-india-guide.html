@@ -40,7 +40,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@700;800&amp;display=swap">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@700;800&amp;display=swap"></noscript>
   <link rel="stylesheet" href="style.css?v=2.2">
@@ -64,7 +64,7 @@
         "itemListElement": [
           {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.calculatorship.in/"},
           {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.calculatorship.in/blog.html"},
-          {"@type": "ListItem", "position": 3, "name": "Fixed Income & FDs", "item": "https://www.calculatorship.in/blog.html"},
+          {"@type": "ListItem", "position": 3, "name": "Fixed Income & Bonds", "item": "https://www.calculatorship.in/blog.html#investing"},
           {"@type": "ListItem", "position": 4, "name": "Treasury Bills (T-Bills) India Guide", "item": "https://www.calculatorship.in/treasury-bills-india-guide.html"}
         ]
       },
@@ -125,100 +125,87 @@
   }
   </script>
 </head>
-<body>
-  <div class="reading-progress-bar" id="reading-progress"></div>
-  <a class="skip-link" href="#main-article">Skip to article content</a>
+<body class="article-page-body">
+  <!-- Navigation Header -->
   <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
-        <img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="38" loading="lazy">
+    <div class="header-container">
+      <a href="/" class="brand-logo">
+        <span class="brand-mark">&#8377;</span>
+        <span class="brand-name">Calculatorship</span>
       </a>
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <div class="nav-dropdown">
-          <a href="index.html" class="nav-dropdown-toggle">Calculators</a>
-          <ul class="nav-dropdown-menu" role="menu">
-            <li><a href="index.html">SIP Calculator</a></li>
-            <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
-            <li><a href="step-up.html">Step-Up SIP</a></li>
-            <li><a href="goal.html">Goal Planner</a></li>
-            <li><a href="ppf-calculator.html">PPF Calculator</a></li>
-            <li><a href="swp-calculator.html">SWP Calculator</a></li>
-            <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
-            <li class="nav-dropdown-divider" role="separator"></li>
-            <li><a href="fd-calculator.html">FD Calculator</a></li>
-            <li><a href="budget-planner.html">Budget Planner</a></li>
-            <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
-          </ul>
-        </div>
-        <a href="blog.html" class="active">Blog &amp; Guides</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Calculators</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog &amp; Guides</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
       <div class="header-actions">
-        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
       </div>
     </div>
   </header>
+
+  <!-- Breadcrumb Bar -->
   <div class="breadcrumb-bar">
-    <nav class="breadcrumb" aria-label="Breadcrumbs">
-      <ol>
-        <li><a href="index.html">Home</a></li>
+    <div class="container">
+      <ol class="breadcrumbs">
+        <li><a href="/">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="blog.html">Fixed Income &amp; FDs</a></li>
+        <li><a href="blog.html#investing">Fixed Income &amp; Bonds</a></li>
         <li aria-current="page">Treasury Bills (T-Bills) India Guide</li>
       </ol>
-    </nav>
-  </div>
-  <main id="main-content">
-    <header class="article-header">
-      <div class="article-meta">
-        <span class="meta-cat">Fixed Income &amp; FDs</span>
-        <span class="article-date-tag">Published: 2 Oct 2026</span>
-        <span>Updated for FY 2026-27</span>
-      </div>
-      <h1>Treasury Bills (T-Bills) in India: Complete Guide, Yield Calculations &amp; Auction Mechanics</h1>
-      <p style="font-size:1.15rem; color:var(--text-secondary); line-height:1.7; max-width:980px; margin-top:12px;">Demystifying Indian Government Treasury Bills. Learn how 91-day, 182-day, and 364-day T-bills work, how discount pricing determines your annualized yield, how to bid commission-free via RBI Retail Direct, and how T-bills compare against bank fixed deposits.</p>
-      <div class="article-byline">
-        <span class="byline-author">Tejas</span> | Published: 2 Oct 2026 | Educational Resource
-      </div>
-    </header>
-
-    <div class="ad-slot ad-slot-banner" style="max-width:1540px; margin:16px auto 28px; padding:0 36px;">
-      <span class="ad-label" style="display:block; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:4px;">Advertisement</span>
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7598871729388798" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
+  </div>
 
-    <div class="article-page">
-      <article class="article-main" id="main-article">
-        <div class="toc-box">
-          <h2 style="font-size:1.05rem; font-weight:800; margin:0 0 12px; color:var(--text-primary);">Table of Contents</h2>
-          <ol style="margin:0; padding-left:22px; line-height:1.9;">
-            <li><a href="#what-are-tbills">1. What Are Treasury Bills (T-Bills)?</a></li>
-            <li><a href="#tenures-structure">2. Tenures &amp; Issuance Schedule (91, 182 &amp; 364 Days)</a></li>
-            <li><a href="#discount-pricing-yield">3. Discount Pricing Mechanics &amp; Yield Calculation Formula</a></li>
-            <li><a href="#step-by-step-example">4. Step-by-Step Worked Yield Example</a></li>
-            <li><a href="#how-auctions-work">5. RBI Auction Mechanism &amp; Non-Competitive Bidding</a></li>
-            <li><a href="#how-to-buy-retail-direct">6. How to Buy T-Bills: RBI Retail Direct &amp; Stockbrokers</a></li>
-            <li><a href="#taxation-stcg">7. Tax Treatment: Short-Term Capital Gains (STCG) &amp; TDS</a></li>
-            <li><a href="#tbills-vs-bank-fd">8. Comparison: Treasury Bills vs Bank Fixed Deposits</a></li>
-            <li><a href="#who-should-invest">9. Who Should Invest in Treasury Bills?</a></li>
-            <li><a href="#faqs">10. Frequently Asked Questions (FAQs)</a></li>
-            <li><a href="#official-sources">11. Official Sources &amp; References</a></li>
-          </ol>
+  <main class="article-container container">
+    <article class="article-main-content">
+      <header class="article-header">
+        <div class="article-meta-tags">
+          <span class="category-tag">Fixed Income &amp; Bonds</span>
+          <span class="read-time">11 min read</span>
+          <span class="update-badge">FY 2026-27 Updated</span>
         </div>
-
-        <div class="disclaimer-box" style="background:#fffbeb; border:2px solid #f59e0b; border-radius:12px; padding:20px 24px; margin:0 0 32px; display:flex; gap:16px; align-items:flex-start;">
-          <span style="font-size:1.5rem; flex-shrink:0;">&#9888;&#65039;</span>
-          <div>
-            <strong style="color:#92400e; font-size:1rem; display:block; margin-bottom:6px;">Zero Default Risk Sovereign Money Market Instrument</strong>
-            <p style="margin:0; font-size:0.93rem; color:#78350f; line-height:1.65;">Treasury Bills are direct short-term obligations of the Central Government of India, issued under Section 16 of the Government Securities Act, 2006. They carry zero credit risk and are issued at a discount and redeemed at par (&#8377;100). Returns depend dynamically on competitive cut-off prices determined during weekly Wednesday auctions.</p>
+        <h1 class="article-title">Treasury Bills (T-Bills) in India: Complete Guide, Yield Calculations &amp; Auction Mechanics</h1>
+        <p class="article-lead">Demystifying Indian Government Treasury Bills. Learn how 91-day, 182-day, and 364-day T-bills work, how discount pricing determines your annualized yield, how to bid commission-free via RBI Retail Direct, and how T-bills compare against bank fixed deposits.</p>
+        <div class="article-author-byline">
+          <div class="author-avatar">T</div>
+          <div class="author-info">
+            <span class="author-name">Tejas</span>
+            <span class="author-title">Financial Analyst &amp; Contributor</span>
           </div>
+          <span class="meta-separator">&bull;</span>
+          <time datetime="2026-10-02">2 Oct 2026</time>
         </div>
+      </header>
 
-        <div class="key-takeaways">
+      <!-- Ad Slot: Top Banner -->
+<!-- Table of Contents -->
+      <nav class="toc-box" aria-label="Table of Contents">
+        <h2 class="toc-title">In This Guide</h2>
+        <ul class="toc-list">
+          <li><a href="#what-are-tbills">1. What Are Treasury Bills (T-Bills)?</a></li>
+          <li><a href="#tenures-structure">2. Tenures &amp; Issuance Schedule (91, 182 &amp; 364 Days)</a></li>
+          <li><a href="#discount-pricing-yield">3. Discount Pricing Mechanics &amp; Yield Calculation Formula</a></li>
+          <li><a href="#step-by-step-example">4. Step-by-Step Worked Yield Example</a></li>
+          <li><a href="#how-auctions-work">5. RBI Auction Mechanism &amp; Non-Competitive Bidding</a></li>
+          <li><a href="#how-to-buy-retail-direct">6. How to Buy T-Bills: RBI Retail Direct &amp; Stockbrokers</a></li>
+          <li><a href="#taxation-stcg">7. Tax Treatment: Short-Term Capital Gains (STCG) &amp; TDS</a></li>
+          <li><a href="#tbills-vs-bank-fd">8. Comparison: Treasury Bills vs Bank Fixed Deposits</a></li>
+          <li><a href="#who-should-invest">9. Who Should Invest in Treasury Bills?</a></li>
+          <li><a href="#faqs">10. Frequently Asked Questions (FAQs)</a></li>
+          <li><a href="#official-sources">11. Official Sources &amp; References</a></li>
+        </ul>
+      </nav>
+
+      <!-- Key Takeaways Box -->
+      <div class="takeaways-box">
+        <div class="takeaways-icon">&#9889;</div>
+        <div class="takeaways-content">
           <h3>Key Takeaways at a Glance</h3>
           <ul>
             <li><strong>Sovereign Instrument:</strong> Issued by the Reserve Bank of India on behalf of the Central Government with zero default risk.</li>
@@ -229,269 +216,408 @@
             <li><strong>Tax Treatment:</strong> Discount earned on redemption is taxed as Short-Term Capital Gains (STCG) at your slab rate; no TDS deducted at source.</li>
           </ul>
         </div>
+      </div>
 
-        <section id="what-are-tbills">
-          <h2>1. What Are Treasury Bills (T-Bills)?</h2>
-          <p><strong>Treasury Bills</strong> (commonly known as <strong>T-Bills</strong>) are short-term promissory notes issued by the Reserve Bank of India (RBI) on behalf of the Government of India to finance temporary mismatches between governmental receipts and expenditure. They represent the benchmark risk-free rate for money markets in India.</p>
-          <p>Unlike conventional government bonds (dated G-Secs) or corporate debentures, Treasury Bills are <strong>zero-coupon securities</strong>. This means they do not carry a stated coupon rate and do not disburse periodic interest payments. Instead, they are issued at a price lower than their face value (at a discount) and redeemed by the Central Government at full face value (par, &#8377;100) upon maturity.</p>
-          <p>Because they are unconditional sovereign liabilities of the Central Government, Treasury Bills carry the highest credit rating possible in India, representing zero credit or default risk for investors.</p>
-        </section>
+      <!-- Section 1 -->
+      <section id="what-are-tbills" class="article-section">
+        <h2>1. What Are Treasury Bills (T-Bills)?</h2>
+        <p><strong>Treasury Bills</strong> (commonly known as <strong>T-Bills</strong>) are short-term promissory notes issued by the Reserve Bank of India (RBI) on behalf of the Government of India to finance temporary mismatches between governmental receipts and expenditure. They represent the benchmark risk-free rate for money markets in India.</p>
+        <p>Unlike conventional government bonds (dated G-Secs) or corporate debentures, Treasury Bills are <strong>zero-coupon securities</strong>. This means they do not carry a stated coupon rate and do not disburse periodic interest payments. Instead, they are issued at a price lower than their face value (at a discount) and redeemed by the Central Government at full face value (par, &#8377;100) upon maturity.</p>
+        <p>Because they are unconditional sovereign liabilities of the Central Government, Treasury Bills carry the highest credit rating possible in India, representing zero credit or default risk for investors.</p>
+      </section>
 
-        <section id="tenures-structure">
-          <h2>2. Tenures &amp; Issuance Schedule (91, 182 &amp; 364 Days)</h2>
-          <div style="overflow-x:auto; margin:20px 0;">
-            <table class="calc-table" style="width:100%; border-collapse:collapse;">
-              <thead>
-                <tr style="background:var(--bg-subtle);">
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">T-Bill Tenure</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Approximate Duration</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Auction Frequency</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Primary Usage</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">91-Day T-Bills</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">3 Months (13 Weeks)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Every Wednesday</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Ultra-short cash parking &amp; quarterly advance tax funds</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">182-Day T-Bills</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">6 Months (26 Weeks)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Every Wednesday</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Medium-term liquidity bridging across two financial quarters</td>
-                </tr>
-                <tr style="background:var(--emerald-soft);">
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">364-Day T-Bills</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">12 Months (52 Weeks)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Every Wednesday</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">One-year money market benchmark &amp; risk-free asset allocation</td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- Section 2 -->
+      <section id="tenures-structure" class="article-section">
+        <h2>2. Tenures &amp; Issuance Schedule (91, 182 &amp; 364 Days)</h2>
+        <p>The Reserve Bank of India currently conducts regular auctions for three standard maturities of Treasury Bills:</p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <h4>91-Day T-Bills</h4>
+            <p>Matures in approximately 3 months (13 weeks). Auctioned weekly on <strong>Wednesdays</strong>. Highly liquid money market instrument ideal for parking cash earmarked for quarterly tax payments or short-term commitments.</p>
           </div>
-          <p style="font-size:0.85rem; color:var(--text-muted);">Auction Settlement: Auctions take place on Wednesday via RBI's e-Kuber portal. Settlement is on T+1 (Thursday), when securities are credited directly to your gilt or demat account.</p>
-        </section>
-
-        <section id="discount-pricing-yield">
-          <h2>3. Discount Pricing Mechanics &amp; Yield Calculation Formula</h2>
-          <p>Because T-Bills do not pay periodic interest, their yield is implicit in the difference between what you pay at auction (the discounted issue price) and what the government pays you back at maturity (the face value of &#8377;100).</p>
-          <div style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-left:4px solid var(--emerald); border-radius:var(--radius-md); padding:18px 24px; margin:20px 0;">
-            <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:6px;">Annualized T-Bill Yield Formula:</span>
-            <code style="font-family:var(--font-mono); font-size:1.15rem; font-weight:700; color:var(--emerald-dark);">Yield (%) = [ (F - P) / P ] &times; (365 / D) &times; 100</code>
-            <p style="margin-top:0.75rem; font-size:0.92rem; color:var(--text-secondary); line-height:1.6;">
-              Where <strong>F</strong> = Face value (&#8377;100), <strong>P</strong> = Purchase cut-off price (e.g., &#8377;98.35), and <strong>D</strong> = Days to maturity (91, 182, or 364).
-            </p>
+          <div class="feature-card">
+            <h4>182-Day T-Bills</h4>
+            <p>Matures in approximately 6 months (26 weeks). Auctioned weekly on <strong>Wednesdays</strong>. Suitable for mid-term liquidity management spanning two quarters.</p>
           </div>
-        </section>
-
-        <section id="step-by-step-example">
-          <h2>4. Step-by-Step Worked Yield Example</h2>
-          <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:24px; margin:20px 0;">
-            <h3 style="margin-top:0; font-size:1.1rem; color:var(--emerald-dark);">Practical Case: &#8377;1,00,000 Allocation in a 91-Day T-Bill</h3>
-            <ul style="line-height:1.8; margin-bottom:16px;">
-              <li><strong>Nominal Face Value:</strong> &#8377;1,00,000 (1,000 units of &#8377;100 face value)</li>
-              <li><strong>Auction Cut-off Price:</strong> &#8377;98.35 per unit</li>
-              <li><strong>Actual Cash Outlay:</strong> 1,000 &times; &#8377;98.35 = <strong>&#8377;98,350</strong></li>
-              <li><strong>Maturity Redemption:</strong> &#8377;1,00,000 credited on Day 91</li>
-            </ul>
-            <p style="margin:0; line-height:1.7;">
-              <strong>Absolute Return:</strong> &#8377;1,00,000 &#8211; &#8377;98,350 = &#8377;1,650 (1.6776% in 91 days).<br>
-              <strong>Annualized Yield:</strong> 1.6776% &times; (365 &divide; 91) = <strong style="color:var(--emerald-dark); font-size:1.05rem;">6.73% per annum</strong>.
-            </p>
+          <div class="feature-card">
+            <h4>364-Day T-Bills</h4>
+            <p>Matures in exactly 52 weeks (1 year). Auctioned weekly on <strong>Wednesdays</strong>. Serves as the one-year sovereign benchmark yield against which bank lending and deposit rates are frequently referenced.</p>
           </div>
-        </section>
+          <div class="feature-card">
+            <h4>Cash Management Bills (CMBs)</h4>
+            <p>Non-standard short-term bills issued for tenures below 91 days (e.g., 14 to 84 days) during urgent temporary cash flow deficits. Issued on-demand rather than on a pre-notified auction calendar.</p>
+          </div>
+        </div>
 
-        <section id="how-auctions-work">
-          <h2>5. RBI Auction Mechanism &amp; Non-Competitive Bidding</h2>
-          <p>RBI conducts Treasury Bill auctions through a two-tier mechanism:</p>
+        <div class="callout-tip">
+          <p><strong>Auction Day &amp; Settlement:</strong> T-Bill auctions take place every Wednesday on RBI&#8217;s e-Kuber electronic platform. Payment settlement occurs on the subsequent working day (T+1, Thursday), at which point the securities are credited electronically to the investor&#8217;s gilt or demat account.</p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="discount-pricing-yield" class="article-section">
+        <h2>3. Discount Pricing Mechanics &amp; Yield Calculation Formula</h2>
+        <p>Because T-Bills do not pay periodic interest, their yield is implicit in the difference between what you pay at auction (the discounted issue price) and what the government pays you back at maturity (the face value of &#8377;100).</p>
+
+        <h3>The Annualized Yield Formula</h3>
+        <p>Financial analysts and institutional treasuries compute the annualized yield on a Treasury Bill using the standard money market formula:</p>
+
+        <div class="formula-callout">
+          <span class="formula-label">Annualized T-Bill Yield Formula:</span>
+          <code>Yield (%) = [ (F - P) / P ] &times; (365 / D) &times; 100</code>
+          <p style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+            Where:<br>
+            <strong>F</strong> = Face value of the T-Bill (&#8377;100)<br>
+            <strong>P</strong> = Purchase price or cut-off price at auction (e.g., &#8377;98.30)<br>
+            <strong>D</strong> = Number of days to maturity (91, 182, or 364)
+          </p>
+        </div>
+
+        <h3>Discount vs Yield: A Crucial Distinction</h3>
+        <p>Investors often confuse the <em>rate of discount</em> with the <em>rate of return (yield)</em>:</p>
+        <ul>
+          <li><strong>Discount Rate:</strong> Computed as <code>[(F - P) / F] &times; (365 / D) &times; 100</code>. It calculates the discount relative to the <em>face value</em> (&#8377;100).</li>
+          <li><strong>Investment Yield:</strong> Computed as <code>[(F - P) / P] &times; (365 / D) &times; 100</code>. Because your actual cash outlay is <code>P</code> (which is less than 100), the <strong>effective yield is always higher than the discount rate</strong>.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="step-by-step-example" class="article-section">
+        <h2>4. Step-by-Step Worked Yield Example</h2>
+        <p>Let us walk through a practical scenario to illustrate how a retail investor purchases a 91-day T-Bill and realizes their sovereign return:</p>
+
+        <div class="example-box">
+          <h3>Scenario: Bidding for &#8377;1,00,000 Nominal Value in a 91-Day T-Bill</h3>
           <ul>
-            <li><strong>Competitive Bidding:</strong> Reserved for institutional players (banks, primary dealers, mutual funds). They specify the precise price or yield they demand.</li>
-            <li><strong>Non-Competitive Bidding Scheme (NCBS):</strong> Reserved for retail individuals, trusts, and small regional banks. Retail bidders <strong>do not quote prices</strong>. Instead, you specify how much money you want to invest (minimum &#8377;10,000), and you receive allotment at the weighted average price of accepted competitive bids.</li>
+            <li><strong>Face Value per unit:</strong> &#8377;100</li>
+            <li><strong>Total units:</strong> 1,000 units (Total Face Value = &#8377;1,00,000)</li>
+            <li><strong>Auction Cut-off Price:</strong> &#8377;98.35 per unit</li>
+            <li><strong>Actual Capital Paid:</strong> 1,000 &times; &#8377;98.35 = <strong>&#8377;98,350</strong></li>
+            <li><strong>Tenure:</strong> 91 days</li>
           </ul>
-        </section>
 
-        <section id="how-to-buy-retail-direct">
-          <h2>6. How to Buy T-Bills: RBI Retail Direct &amp; Stockbrokers</h2>
-          <ol style="margin-left:22px; line-height:1.9;">
-            <li><strong>RBI Retail Direct:</strong> Visit <a href="https://rbiretaildirect.org.in" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary); font-weight:600;">rbiretaildirect.org.in</a>. Open a free Retail Direct Gilt (RDG) account. Bids open on Monday and close Tuesday. Pay via UPI or Net Banking with zero brokerage and zero holding fees.</li>
-            <li><strong>Stockbrokers (Zerodha, Groww, Upstox, ICICI Direct):</strong> Access the G-Sec / T-Bills auction window on NSE goBID or BSE Direct. Allocated T-bills are delivered directly to your standard Demat account.</li>
+          <h4>Calculation of Returns:</h4>
+          <ol>
+            <li><strong>Absolute Capital Gain:</strong> &#8377;1,00,000 (Maturity Redemption) &#8211; &#8377;98,350 (Purchase Outlay) = <strong>&#8377;1,650</strong></li>
+            <li><strong>Absolute Return over 91 Days:</strong> (&#8377;1,650 &divide; &#8377;98,350) &times; 100 = <strong>1.6776%</strong></li>
+            <li><strong>Annualized Return (Yield):</strong> 1.6776% &times; (365 &divide; 91) = <strong>6.729% per annum</strong></li>
           </ol>
-        </section>
-
-        <section id="taxation-stcg">
-          <h2>7. Tax Treatment: Short-Term Capital Gains (STCG) &amp; TDS</h2>
-          <p>Under the Income-tax Act, 1961, Treasury Bills are capital assets with a tenure under 12 months. Therefore, the discount earned on maturity is classified as <strong>Short-Term Capital Gain (STCG)</strong> and taxed at your marginal slab rate.</p>
-          <p>Crucially, the Reserve Bank of India <strong>does NOT deduct any TDS</strong> upon redemption at maturity. The full &#8377;100 face value per unit is credited to your bank account without deductions.</p>
-        </section>
-
-        <section id="tbills-vs-bank-fd">
-          <h2>8. Comparison: Treasury Bills vs Bank Fixed Deposits</h2>
-          <div style="overflow-x:auto; margin:20px 0;">
-            <table class="calc-table" style="width:100%; border-collapse:collapse;">
-              <thead>
-                <tr style="background:var(--bg-subtle);">
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Feature</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Treasury Bills (T-Bills)</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Bank Fixed Deposits</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Issuer / Safety</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); color:var(--emerald-dark); font-weight:700;">Government of India (Zero sovereign risk)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Commercial Banks (DICGC cover up to &#8377;5 Lakhs)</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Tenures</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Fixed: 91, 182, and 364 days</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Flexible: 7 days to 10 years</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Minimum Investment</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">&#8377;10,000</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">&#8377;1,000</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">TDS at Redemption</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); color:var(--emerald-dark); font-weight:700;">Nil TDS</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">10% TDS if interest &gt; &#8377;40k (&#8377;50k for seniors)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="who-should-invest">
-          <h2>9. Who Should Invest in Treasury Bills?</h2>
-          <ul>
-            <li><strong>High-Net-Worth Individuals (&gt; &#8377;5 Lakhs):</strong> Investors seeking absolute sovereign risk mitigation beyond the &#8377;5 Lakh DICGC bank deposit insurance ceiling.</li>
-            <li><strong>Advance Tax Planners:</strong> Corporates and self-employed professionals aligning 91-day T-bills with quarterly advance tax schedules.</li>
-            <li><strong>Demat Cash Managers:</strong> Active market investors keeping dry powder in Demat-held T-bills that can be liquidated or pledged as trading margin.</li>
-          </ul>
-        </section>
-
-        <section id="faqs">
-          <h2>10. Frequently Asked Questions (FAQs)</h2>
-          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">What is the minimum amount required to invest in T-Bills?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">The minimum investment amount is <strong>&#8377;10,000</strong> nominal face value, and in multiples of &#8377;10,000 thereafter.</p>
-          </details>
-          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Can State Governments issue Treasury Bills in India?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">No. Only the Central Government of India issues Treasury Bills. State Governments raise short-term funds through Ways and Means Advances (WMA) and issue State Development Loans (SDLs).</p>
-          </details>
-          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Can I sell my Treasury Bills before maturity?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">Yes. T-Bills held in Demat form can be sold on the secondary debt market of NSE/BSE through your broker, or on the NDS-OM platform via your RBI Retail Direct account.</p>
-          </details>
-        </section>
-
-        <section id="official-sources" style="margin-top:36px;">
-          <h2>11. Official Sources &amp; References</h2>
-          <ul style="list-style:none; padding:0; margin:16px 0; line-height:1.8;">
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://rbi.org.in/commonman/English/scripts/FAQs.aspx?Id=2757" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">Reserve Bank of India (RBI) &#8212; Government Securities Market in India FAQ</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Official central bank guide detailing issuance rules, tenures, and retail participation in Treasury Bills</p>
-            </li>
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://rbiretaildirect.org.in" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">RBI Retail Direct Official Portal</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Government portal for non-competitive retail bidding on weekly Treasury Bills without broker fees</p>
-            </li>
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://www.ccilindia.com" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">Clearing Corporation of India Limited (CCIL)</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Clearing and settlement agency providing secondary market trade data and cut-off yields for T-Bills</p>
-            </li>
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://incometaxindia.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">Income Tax Department &#8212; Capital Gains Provisions</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Statutory taxation rules for short-term discount securities and zero-coupon money market instruments</p>
-            </li>
-          </ul>
-          <p style="font-size:0.78rem; color:var(--text-muted); margin:12px 0 0;"><em>Last reviewed: October 2026. Data verified against official RBI and CCIL notifications.</em></p>
-        </section>
-
-        <div class="cta-box">
-          <h3>Compare Fixed Income &amp; Cash Yields</h3>
-          <p>Plan your short-term liquidity with our suite of free Indian wealth calculators.</p>
-          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-            <a href="fd-calculator.html" class="btn btn-primary btn-lg">Fixed Deposit Calculator &rarr;</a>
-            <a href="index.html" class="btn btn-ghost btn-lg">SIP Calculator &rarr;</a>
-            <a href="income-tax-calculator.html" class="btn btn-ghost btn-lg">Income Tax Calculator &rarr;</a>
-          </div>
+          <p>Upon maturity on Day 91, the Reserve Bank of India credits &#8377;1,00,000 directly into the investor&#8217;s registered bank account, locking in a clean &#8377;1,650 return without any credit risk or intermediary deduction.</p>
         </div>
 
-        <div class="author-bio-card">
-          <div class="author-bio-header">
-            <div class="author-avatar">T</div>
-            <div>
-              <h3 class="author-name">Tejas</h3>
-              <p class="author-title">Founder &amp; Creator, Calculatorship</p>
+        <h3>Typical Indicative Yields Across Tenures</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>T-Bill Tenure</th>
+                <th>Illustrative Cut-off Price (per &#8377;100)</th>
+                <th>Absolute Discount Earned</th>
+                <th>Annualized Indicative Yield</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>91 Days</strong></td>
+                <td>&#8377;98.35</td>
+                <td>&#8377;1.65</td>
+                <td><strong>6.73% p.a.</strong></td>
+              </tr>
+              <tr>
+                <td><strong>182 Days</strong></td>
+                <td>&#8377;96.65</td>
+                <td>&#8377;3.35</td>
+                <td><strong>6.95% p.a.</strong></td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>364 Days</strong></td>
+                <td>&#8377;93.40</td>
+                <td>&#8377;6.60</td>
+                <td><strong>7.07% p.a.</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-caption">Indicative money market cut-off yields. Actual cut-off prices are determined dynamically in Wednesday auctions by institutional competitive bids.</p>
+      </section>
+
+      <!-- Mid-Article Ad Slot -->
+<!-- Section 5 -->
+      <section id="how-auctions-work" class="article-section">
+        <h2>5. RBI Auction Mechanism &amp; Non-Competitive Bidding</h2>
+        <p>Understanding how T-Bills are auctioned enables retail investors to appreciate how their purchase prices are settled.</p>
+
+        <h3>Competitive vs Non-Competitive Bidding</h3>
+        <p>RBI T-Bill auctions operate on a two-tier bidding architecture:</p>
+        <ul>
+          <li><strong>Competitive Bidding:</strong> Conducted exclusively for commercial banks, primary dealers, mutual funds, insurance companies, and provident funds. These institutional participants state the specific price or yield at which they wish to purchase.</li>
+          <li><strong>Non-Competitive Bidding Scheme (NCBS):</strong> Reserved specifically for retail individual investors, trusts, and small regional rural banks. As a retail investor, <strong>you do not have to guess or quote an auction price</strong>. You simply specify the nominal amount you want to invest (minimum &#8377;10,000). You are automatically allotted T-Bills at the <em>weighted average price</em> of all accepted competitive institutional bids.</li>
+        </ul>
+        <p>The RBI reserves up to <strong>5% of the notified auction amount</strong> specifically for retail participants under the non-competitive scheme, ensuring that individual bids are almost always fulfilled in full.</p>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="how-to-buy-retail-direct" class="article-section">
+        <h2>6. How to Buy T-Bills: RBI Retail Direct &amp; Stockbrokers</h2>
+        <p>Individual investors have two seamless digital gateways to purchase Treasury Bills in India:</p>
+
+        <h3>Method 1: RBI Retail Direct (Zero Fees, Direct Holding)</h3>
+        <p>The Reserve Bank of India&#8217;s <strong>Retail Direct Scheme</strong> is the most direct, commission-free platform for retail participants:</p>
+        <ol>
+          <li>Open an account on the <strong>RBI Retail Direct portal</strong> (rbiretaildirect.org.in). You will need your PAN, Aadhaar, bank details, and an active mobile number.</li>
+          <li>Complete electronic KYC through the video-verification process. A free <strong>Retail Direct Gilt (RDG) Account</strong> is created.</li>
+          <li>Log in on Monday or Tuesday prior to the Wednesday auction. Under the <em>Primary Market &gt; Treasury Bills</em> section, select the desired tenure (91, 182, or 364 days).</li>
+          <li>Enter your bid amount (minimum &#8377;10,000, in multiples of &#8377;10,000).</li>
+          <li>Block funds using UPI or Net Banking. Upon auction completion on Wednesday, the exact allotment price is calculated, excess funds (if any) are refunded to your bank account, and the T-Bills are credited to your RDG account.</li>
+        </ol>
+
+        <h3>Method 2: Through Stockbrokers (Zerodha, Groww, Upstox, ICICI Direct)</h3>
+        <p>Leading stockbrokers facilitate non-competitive bidding for government securities through the <strong>NSE goBID</strong> or <strong>BSE Direct</strong> portals:</p>
+        <ul>
+          <li>Navigate to the &#8220;Govt Securities&#8221; or &#8220;G-Sec/T-Bills&#8221; section in your broker&#8217;s application.</li>
+          <li>Bids open typically every Monday and close on Tuesday evening.</li>
+          <li>Approve the UPI mandate to block the required investment sum.</li>
+          <li>The allocated T-Bills are credited directly into your standard <strong>Demat account</strong> (CDSL/NSDL) within 1 to 2 business days after auction settlement.</li>
+        </ul>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="taxation-stcg" class="article-section">
+        <h2>7. Tax Treatment: Short-Term Capital Gains (STCG) &amp; TDS</h2>
+        <p>Understanding the exact tax treatment of Treasury Bills ensures there are no surprises when filing your annual Income Tax Return (ITR).</p>
+
+        <h3>Classification as Short-Term Capital Gain (STCG)</h3>
+        <p>Under the provisions of the Income-tax Act, 1961, Treasury Bills are defined as capital assets. Because the maximum tenure of any T-Bill does not exceed 364 days (which is well within the 12-month holding threshold for listed securities), the difference between the redemption face value (&#8377;100) and the discounted acquisition price is categorized as <strong>Short-Term Capital Gain (STCG)</strong>.</p>
+        <p>Short-Term Capital Gains on debt instruments are added to your gross total income under the head <em>&#8220;Capital Gains&#8221;</em> and taxed at your applicable marginal income tax slab rate under either the Old Tax Regime or the default New Tax Regime.</p>
+
+        <h3>No Tax Deducted at Source (TDS)</h3>
+        <div class="callout-tip">
+          <p><strong>Crucial Benefit:</strong> Unlike bank fixed deposits where banks deduct 10% TDS if interest exceeds &#8377;40,000 (&#8377;50,000 for senior citizens), the Reserve Bank of India does <strong>NOT deduct any TDS</strong> when redeeming Treasury Bills at maturity. The full face value of &#8377;100 per unit is credited to your bank account. However, investors remain legally responsible for declaring the gain in their ITR and paying advance tax where applicable.</p>
+        </div>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="tbills-vs-bank-fd" class="article-section">
+        <h2>8. Comparison: Treasury Bills vs Bank Fixed Deposits</h2>
+        <p>Retail investors weighing where to park short-term surplus funds frequently compare T-Bills against short-duration bank fixed deposits:</p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Treasury Bills (T-Bills)</th>
+                <th>Bank Fixed Deposits (Leading Banks)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Issuer / Safety</strong></td>
+                <td>Government of India (Zero sovereign credit risk)</td>
+                <td>Commercial Banks (DICGC insurance up to &#8377;5 Lakhs)</td>
+              </tr>
+              <tr>
+                <td><strong>Tenures</strong></td>
+                <td>Fixed: 91, 182, and 364 days</td>
+                <td>Flexible: 7 days to 10 years</td>
+              </tr>
+              <tr>
+                <td><strong>Interest Payout</strong></td>
+                <td>Zero-coupon (Issued at discount, redeemed at par)</td>
+                <td>Monthly, quarterly, or cumulative at maturity</td>
+              </tr>
+              <tr>
+                <td><strong>Minimum Investment</strong></td>
+                <td>&#8377;10,000</td>
+                <td>&#8377;1,000 (or &#8377;500 in some banks)</td>
+              </tr>
+              <tr>
+                <td><strong>Secondary Market Liquidity</strong></td>
+                <td>Can be sold on NDS-OM or stock exchanges via broker</td>
+                <td>Premature closure allowed with 0.5%&#8211;1% penalty</td>
+              </tr>
+              <tr>
+                <td><strong>TDS Deduction</strong></td>
+                <td><strong>Nil TDS</strong> at redemption</td>
+                <td>10% TDS if interest &gt; &#8377;40k (&#8377;50k seniors)</td>
+              </tr>
+              <tr>
+                <td><strong>Tax Category</strong></td>
+                <td>Short-Term Capital Gain (taxed at slab rates)</td>
+                <td>Income from Other Sources (taxed at slab rates)</td>
+              </tr>
+              <tr>
+                <td><strong>Senior Citizen Premium</strong></td>
+                <td>No additional spread for senior citizens</td>
+                <td>0.50% extra interest rate typically provided</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 9 -->
+      <section id="who-should-invest" class="article-section">
+        <h2>9. Who Should Invest in Treasury Bills?</h2>
+        <p>Treasury Bills are not universally superior to bank deposits, but they offer distinct strategic advantages for specific investor profiles:</p>
+        <ul>
+          <li><strong>Large Cash Deployers (&gt; &#8377;5 Lakhs):</strong> Investors holding large cash reserves from property sales, business dividends, or bonuses who want absolute sovereign safety beyond the &#8377;5 Lakh DICGC bank deposit insurance ceiling.</li>
+          <li><strong>Quarterly Advance Tax Planners:</strong> Corporates and self-employed professionals parking advance tax funds in 91-day T-Bills matched exactly to advance tax deadlines.</li>
+          <li><strong>Active Demat Cash Managers:</strong> Stock market traders keeping cash dry in demat-held T-Bills that can be pledged as margin or liquidated swiftly when market opportunities emerge.</li>
+          <li><strong>Investors in Lower Tax Brackets:</strong> Individuals whose taxable income falls under the rebate limits (e.g., up to &#8377;7 Lakhs under the New Tax Regime) who can enjoy ~6.7%&#8211;7.1% risk-free returns without TDS hassles.</li>
+        </ul>
+      </section>
+
+      <!-- Section 10: FAQ -->
+      <section id="faqs" class="article-section">
+        <h2>10. Frequently Asked Questions (FAQs)</h2>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>What is the minimum amount required to invest in T-Bills?</strong></summary>
+            <div class="faq-answer">
+              <p>The minimum investment amount for Treasury Bills under the non-competitive bidding scheme is <strong>&#8377;10,000 (nominal face value)</strong>, and in multiples of &#8377;10,000 thereafter. For example, you can invest &#8377;10,000, &#8377;20,000, or &#8377;1,00,000, but not &#8377;15,000.</p>
             </div>
-          </div>
-          <p class="author-desc">Tejas is the founder of Calculatorship, focusing on creating accessible calculators and educational content for Indian investors. Content on this platform may be drafted with AI assistance and is developed using publicly available information and sources relevant to each topic.</p>
-          <p class="author-disclaimer" style="font-size:0.82rem; color:var(--text-muted); margin-top:8px; line-height:1.5;"><em>General educational information only. Not a SEBI-registered investment advisor, Chartered Accountant, or financial professional. Information can change when laws, tax codes, or official guidance are updated. Consult a qualified professional before making financial decisions.</em></p>
+          </details>
         </div>
 
-        <div class="article-footer-disclaimer">
-          <strong>Educational Notice:</strong> Calculatorship provides general educational information and financial calculation tools for illustrative purposes only. Content may be drafted with AI assistance and compiled from available public sources. This is not a substitute for professional financial, tax, legal, or investment advice. Information can change when official regulations, tax rules, or interest rates are updated. Readers should verify time-sensitive figures with official authorities and consult a qualified advisor before making financial decisions.
+        <div class="faq-item">
+          <details>
+            <summary><strong>Can State Governments issue Treasury Bills in India?</strong></summary>
+            <div class="faq-answer">
+              <p>No. Under Indian financial statutes, only the Central Government of India is authorized to issue Treasury Bills. State Governments manage their short-term cash flow gaps through Ways and Means Advances (WMA) and Overdraft facilities from the RBI, and issue State Development Loans (SDLs) for longer-term market borrowings.</p>
+            </div>
+          </details>
         </div>
-      </article>
 
-      <aside class="article-sidebar" aria-label="Related Guides">
-        <div class="sidebar-card">
-          <h3>Explore Related Guides</h3>
-          <ul style="list-style:none; padding:0; margin:0; line-height:1.8;">
-            <li style="margin-bottom:10px;"><a href="rbi-floating-rate-savings-bonds-guide.html" style="font-weight:600; color:var(--color-primary);">RBI Floating Rate Savings Bonds (8.05%)</a></li>
-            <li style="margin-bottom:10px;"><a href="national-savings-certificate-nsc-guide.html" style="font-weight:600; color:var(--color-primary);">National Savings Certificate (NSC) Guide</a></li>
-            <li style="margin-bottom:10px;"><a href="sovereign-gold-bond-guide-india.html" style="font-weight:600; color:var(--color-primary);">Sovereign Gold Bonds (SGB) Guide</a></li>
-            <li style="margin-bottom:10px;"><a href="fd-laddering-strategy.html" style="font-weight:600; color:var(--color-primary);">FD Laddering Strategy Guide</a></li>
-            <li style="margin-bottom:10px;"><a href="senior-citizen-fd-rates.html" style="font-weight:600; color:var(--color-primary);">Senior Citizen FD Rates Guide</a></li>
+        <div class="faq-item">
+          <details>
+            <summary><strong>Can I sell my Treasury Bills before maturity?</strong></summary>
+            <div class="faq-answer">
+              <p>Yes. T-Bills held in Demat form can be sold on the secondary debt segment of the National Stock Exchange (NSE) or Bombay Stock Exchange (BSE) through your stockbroker. T-Bills held in your RBI Retail Direct account can be sold on the secondary market via the <strong>NDS-OM (Negotiated Dealing System - Order Matching)</strong> platform. However, retail secondary market liquidity can be thin compared to primary auctions.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>Are Non-Resident Indians (NRIs) eligible to buy T-Bills?</strong></summary>
+            <div class="faq-answer">
+              <p>Yes. Under the Foreign Exchange Management Act (FEMA) guidelines and RBI regulations, Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) are permitted to invest in Government of India Treasury Bills on a non-repatriation or repatriation basis through their NRO/NRE accounts via primary dealer or broker channels.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>Do T-Bills provide section 80C income tax deductions?</strong></summary>
+            <div class="faq-answer">
+              <p>No. Investments in Treasury Bills do not qualify for any tax deductions under Section 80C or any other provision of Chapter VI-A of the Income-tax Act, 1961.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>What happens on the maturity date of a Treasury Bill?</strong></summary>
+            <div class="faq-answer">
+              <p>On the scheduled maturity date, the full face value (&#8377;100 per unit) is automatically redeemed by the RBI. The redemption proceeds are directly credited to your registered bank account via NACH/NEFT without requiring any manual claim submission or redemption request.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Section 11: Official Sources -->
+      <section id="official-sources" class="article-section">
+        <h2>11. Official Sources &amp; References</h2>
+        <div class="sources-box">
+          <p>This guide is compiled using verified regulatory circulars and official central bank publications. Readers can inspect official documentation directly:</p>
+          <ul class="sources-list">
+            <li><strong>Reserve Bank of India (RBI):</strong> Government Securities Market in India — A Primer &amp; FAQs (<a href="https://www.rbi.org.in" target="_blank" rel="noopener nofollow">rbi.org.in</a>)</li>
+            <li><strong>RBI Retail Direct:</strong> Non-Competitive Bidding Guidelines &amp; Auction Notifications (<a href="https://rbiretaildirect.org.in" target="_blank" rel="noopener nofollow">rbiretaildirect.org.in</a>)</li>
+            <li><strong>Clearing Corporation of India Limited (CCIL):</strong> Money Market Benchmark Rates &amp; T-Bill Settlement Mechanics (<a href="https://www.ccilindia.com" target="_blank" rel="noopener nofollow">ccilindia.com</a>)</li>
+            <li><strong>Income Tax Department of India:</strong> Capital Gains Taxation on Zero-Coupon &amp; Discount Securities (<a href="https://incometaxindia.gov.in" target="_blank" rel="noopener nofollow">incometaxindia.gov.in</a>)</li>
           </ul>
         </div>
-        <div class="sidebar-card" style="padding:16px; text-align:center;">
-          <span style="display:block; font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px;">Advertisement</span>
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7598871729388798" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </section>
+
+      <!-- Calculator CTA Box -->
+      <div class="calculator-cta-box">
+        <h3>Calculate Your Fixed Income Yields</h3>
+        <p>Compare risk-free yields on Treasury Bills, fixed deposits, and recurring deposits with our precision calculation tools.</p>
+        <div class="cta-buttons">
+          <a href="fd-calculator.html" class="btn btn-primary">Fixed Deposit Calculator</a>
+          <a href="sip-calculator.html" class="btn btn-secondary">SIP Calculator</a>
         </div>
-        <div class="sidebar-card" style="background:var(--emerald-soft); border-color:var(--emerald-border);">
-          <h3 style="color:var(--emerald-dark); border-color:var(--emerald-border);">Financial Calculators</h3>
-          <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:14px;">Estimate returns and maturity amounts for short and long-term bank deposits.</p>
-          <a href="fd-calculator.html" class="btn btn-primary" style="width:100%; text-align:center; box-sizing:border-box;">Open FD Calculator</a>
+      </div>
+
+      <!-- Author Bio Card -->
+      <div class="author-bio-card">
+        <div class="bio-avatar">T</div>
+        <div class="bio-content">
+          <h3>About the Author</h3>
+          <p><strong>Tejas</strong> is a financial research contributor at Calculatorship specializing in Indian banking regulations, small savings schemes, taxation, and retirement planning. He analyzes regulatory circulars from RBI, SEBI, and CBDT to deliver actionable, transparent financial guidance for Indian retail investors.</p>
         </div>
-      </aside>
-    </div>
+      </div>
+
+      <!-- Article Footer Disclaimer -->
+      <div class="article-footer-disclaimer">
+        <p><strong>Disclaimer:</strong> This article is published solely for educational and informational purposes. Calculatorship is an independent portal not affiliated with the Reserve Bank of India, the Government of India, or SEBI. Treasury Bill cut-off yields fluctuate weekly based on competitive auction bids and prevailing macroeconomic liquidity conditions. Readers must consult a qualified SEBI-registered investment advisor or Chartered Accountant before allocating capital.</p>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <div class="sidebar-widget">
+        <h3 class="widget-title">Related Financial Guides</h3>
+        <ul class="sidebar-links">
+          <li><a href="rbi-floating-rate-savings-bonds-guide.html">RBI Floating Rate Savings Bonds (8.05%)</a></li>
+          <li><a href="what-is-nsc-guide.html">National Savings Certificate (NSC) Complete Guide</a></li>
+          <li><a href="sovereign-gold-bond-guide.html">Sovereign Gold Bonds (SGB) Investment Guide</a></li>
+          <li><a href="atal-pension-yojana-apy-guide.html">Atal Pension Yojana (APY) Eligibility &amp; Chart</a></li>
+          <li><a href="fd-calculator.html">Bank FD Calculator (Cumulative &amp; Payout)</a></li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Ad Slot -->
+<div class="sidebar-widget calculator-promo-widget">
+        <h3 class="widget-title">Fixed Income Tools</h3>
+        <p>Calculate your precise maturity amount, total interest earned, and annual yield with our financial tools.</p>
+        <a href="fd-calculator.html" class="sidebar-cta-btn">Try FD Calculator &rarr;</a>
+      </div>
+    </aside>
   </main>
+
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html"><img src="logo-footer.svg" alt="Calculatorship Logo" width="200" height="36" style="display:block;" loading="lazy"></a>
-          <p class="footer-tagline">Independent financial calculators and educational guides for Indian investors, salaried professionals, and wealth builders.</p>
+          <a href="/" class="brand-logo">
+            <span class="brand-mark">&#8377;</span>
+            <span class="brand-name">Calculatorship</span>
+          </a>
+          <p class="footer-tagline">Accurate, transparent, and user-friendly financial calculators and guides designed for Indian investors, taxpayers, and savers.</p>
         </div>
-        <div class="footer-links">
+        <div class="footer-links-grid">
           <div class="footer-col">
-            <h3>Calculators</h3>
+            <h3>Investment Calculators</h3>
             <ul>
-              <li><a href="index.html">SIP Calculator</a></li>
-              <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
-              <li><a href="step-up.html">Step-Up SIP</a></li>
-              <li><a href="goal.html">Goal Planner</a></li>
+              <li><a href="sip-calculator.html">SIP Calculator</a></li>
+              <li><a href="lumpsum-calculator.html">Lump Sum Calculator</a></li>
+              <li><a href="fd-calculator.html">Fixed Deposit Calculator</a></li>
+              <li><a href="rd-calculator.html">Recurring Deposit Calculator</a></li>
               <li><a href="ppf-calculator.html">PPF Calculator</a></li>
-              <li><a href="swp-calculator.html">SWP Calculator</a></li>
-              <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
-              <li><a href="fd-calculator.html">FD Calculator</a></li>
-              <li><a href="budget-planner.html">Budget Planner</a></li>
-              <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h3>Legal &amp; Policy</h3>
+            <h3>Loans &amp; Tax</h3>
             <ul>
-              <li><a href="disclaimer.html">Disclaimer</a></li>
-              <li><a href="terms.html">Terms of Use</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="cookies.html">Cookie Policy</a></li>
+              <li><a href="home-loan-emi-calculator.html">Home Loan EMI</a></li>
+              <li><a href="car-loan-emi-calculator.html">Car Loan EMI</a></li>
+              <li><a href="personal-loan-emi-calculator.html">Personal Loan EMI</a></li>
+              <li><a href="income-tax-calculator.html">Income Tax Calculator</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -567,4 +693,4 @@
     })();
   </script>
 </body>
-</html>\n
+</html>

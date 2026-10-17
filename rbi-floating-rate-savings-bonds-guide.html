@@ -40,7 +40,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@700;800&amp;display=swap">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@700;800&amp;display=swap"></noscript>
   <link rel="stylesheet" href="style.css?v=2.2">
@@ -64,7 +64,7 @@
         "itemListElement": [
           {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.calculatorship.in/"},
           {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.calculatorship.in/blog.html"},
-          {"@type": "ListItem", "position": 3, "name": "Fixed Income & FDs", "item": "https://www.calculatorship.in/blog.html"},
+          {"@type": "ListItem", "position": 3, "name": "Fixed Income & Bonds", "item": "https://www.calculatorship.in/blog.html#investing"},
           {"@type": "ListItem", "position": 4, "name": "RBI Floating Rate Savings Bonds Guide", "item": "https://www.calculatorship.in/rbi-floating-rate-savings-bonds-guide.html"}
         ]
       },
@@ -125,102 +125,89 @@
   }
   </script>
 </head>
-<body>
-  <div class="reading-progress-bar" id="reading-progress"></div>
-  <a class="skip-link" href="#main-article">Skip to article content</a>
+<body class="article-page-body">
+  <!-- Navigation Header -->
   <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="Calculatorship Homepage">
-        <img src="logo-light.svg" alt="Calculatorship Logo" width="220" height="38" loading="lazy">
+    <div class="header-container">
+      <a href="/" class="brand-logo">
+        <span class="brand-mark">&#8377;</span>
+        <span class="brand-name">Calculatorship</span>
       </a>
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <div class="nav-dropdown">
-          <a href="index.html" class="nav-dropdown-toggle">Calculators</a>
-          <ul class="nav-dropdown-menu" role="menu">
-            <li><a href="index.html">SIP Calculator</a></li>
-            <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
-            <li><a href="step-up.html">Step-Up SIP</a></li>
-            <li><a href="goal.html">Goal Planner</a></li>
-            <li><a href="ppf-calculator.html">PPF Calculator</a></li>
-            <li><a href="swp-calculator.html">SWP Calculator</a></li>
-            <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
-            <li class="nav-dropdown-divider" role="separator"></li>
-            <li><a href="fd-calculator.html">FD Calculator</a></li>
-            <li><a href="budget-planner.html">Budget Planner</a></li>
-            <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
-          </ul>
-        </div>
-        <a href="blog.html" class="active">Blog &amp; Guides</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Calculators</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog &amp; Guides</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
       <div class="header-actions">
-        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
       </div>
     </div>
   </header>
+
+  <!-- Breadcrumb Bar -->
   <div class="breadcrumb-bar">
-    <nav class="breadcrumb" aria-label="Breadcrumbs">
-      <ol>
-        <li><a href="index.html">Home</a></li>
+    <div class="container">
+      <ol class="breadcrumbs">
+        <li><a href="/">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="blog.html">Fixed Income &amp; FDs</a></li>
+        <li><a href="blog.html#investing">Fixed Income &amp; Bonds</a></li>
         <li aria-current="page">RBI Floating Rate Savings Bonds Guide</li>
       </ol>
-    </nav>
-  </div>
-  <main id="main-content">
-    <header class="article-header">
-      <div class="article-meta">
-        <span class="meta-cat">Fixed Income &amp; FDs</span>
-        <span class="article-date-tag">Published: 2 Oct 2026</span>
-        <span>Updated for FY 2026-27</span>
-      </div>
-      <h1>RBI Floating Rate Savings Bonds (FRSB) 2020: Current Rate, Lock-in Rules &amp; Investment Guide</h1>
-      <p style="font-size:1.15rem; color:var(--text-secondary); line-height:1.7; max-width:980px; margin-top:12px;">A definitive breakdown of the Reserve Bank of India&#8217;s Floating Rate Savings Bonds (Taxable). Discover how the 8.05% floating coupon is computed, the exact premature encashment windows for senior citizens, TDS rules under Section 193, and how they stack up against bank fixed deposits.</p>
-      <div class="article-byline">
-        <span class="byline-author">Tejas</span> | Published: 2 Oct 2026 | Educational Resource
-      </div>
-    </header>
-
-    <div class="ad-slot ad-slot-banner" style="max-width:1540px; margin:16px auto 28px; padding:0 36px;">
-      <span class="ad-label" style="display:block; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:4px;">Advertisement</span>
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7598871729388798" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
+  </div>
 
-    <div class="article-page">
-      <article class="article-main" id="main-article">
-        <div class="toc-box">
-          <h2 style="font-size:1.05rem; font-weight:800; margin:0 0 12px; color:var(--text-primary);">Table of Contents</h2>
-          <ol style="margin:0; padding-left:22px; line-height:1.9;">
-            <li><a href="#what-are-frsb">1. What Are RBI Floating Rate Savings Bonds (FRSB)?</a></li>
-            <li><a href="#interest-rate-mechanism">2. The Floating Rate Coupon Mechanism &amp; 8.05% Payout</a></li>
-            <li><a href="#key-features-summary">3. Key Features &amp; Scheme Specifications</a></li>
-            <li><a href="#eligibility-rules">4. Eligibility Criteria: Who Can and Cannot Invest</a></li>
-            <li><a href="#premature-encashment">5. Lock-in Period &amp; Premature Exit Rules for Seniors</a></li>
-            <li><a href="#taxation-tds">6. Income Tax Treatment &amp; Section 193 TDS Rules</a></li>
-            <li><a href="#frsb-vs-bank-fd">7. Head-to-Head: RBI Bonds vs Bank Fixed Deposits</a></li>
-            <li><a href="#how-to-invest">8. How to Purchase FRSB: RBI Retail Direct &amp; Banks</a></li>
-            <li><a href="#faqs">9. Frequently Asked Questions (FAQs)</a></li>
-            <li><a href="#official-sources">10. Official Sources &amp; References</a></li>
-          </ol>
+  <main class="article-container container">
+    <article class="article-main-content">
+      <header class="article-header">
+        <div class="article-meta-tags">
+          <span class="category-tag">Fixed Income &amp; Bonds</span>
+          <span class="read-time">10 min read</span>
+          <span class="update-badge">FY 2026-27 Updated</span>
         </div>
-
-        <div class="disclaimer-box" style="background:#fffbeb; border:2px solid #f59e0b; border-radius:12px; padding:20px 24px; margin:0 0 32px; display:flex; gap:16px; align-items:flex-start;">
-          <span style="font-size:1.5rem; flex-shrink:0;">&#9888;&#65039;</span>
-          <div>
-            <strong style="color:#92400e; font-size:1rem; display:block; margin-bottom:6px;">Sovereign Backing &amp; Liquidity Advisory</strong>
-            <p style="margin:0; font-size:0.93rem; color:#78350f; line-height:1.65;">RBI Floating Rate Savings Bonds carry a 100% sovereign guarantee from the Government of India. However, they are non-transferable, non-tradable, cannot be pledged for loans, and have a strict 7-year lock-in (with graded premature exit only for subscribers aged 60 and above). Invest only long-term surplus capital that will not be needed for emergency requirements.</p>
+        <h1 class="article-title">RBI Floating Rate Savings Bonds (FRSB) 2020: Current Rate, Lock-in Rules &amp; Investment Guide</h1>
+        <p class="article-lead">A definitive breakdown of the Reserve Bank of India&#8217;s Floating Rate Savings Bonds (Taxable). Discover how the 8.05% floating coupon is computed, the exact premature encashment windows for senior citizens, TDS rules, and how they stack up against bank fixed deposits.</p>
+        <div class="article-author-byline">
+          <div class="author-avatar">T</div>
+          <div class="author-info">
+            <span class="author-name">Tejas</span>
+            <span class="author-title">Financial Analyst &amp; Contributor</span>
           </div>
+          <span class="meta-separator">&bull;</span>
+          <time datetime="2026-10-02">2 Oct 2026</time>
         </div>
+      </header>
 
-        <div class="key-takeaways">
+      <!-- Ad Slot: Top Banner -->
+<!-- Table of Contents -->
+      <nav class="toc-box" aria-label="Table of Contents">
+        <h2 class="toc-title">In This Guide</h2>
+        <ul class="toc-list">
+          <li><a href="#what-are-frsb">1. What Are RBI Floating Rate Savings Bonds (FRSB)?</a></li>
+          <li><a href="#interest-rate-mechanism">2. The Floating Rate Coupon Mechanism &amp; 8.05% Payout</a></li>
+          <li><a href="#key-features-summary">3. Key Features &amp; Scheme Specifications</a></li>
+          <li><a href="#eligibility-rules">4. Eligibility Criteria: Who Can and Cannot Invest</a></li>
+          <li><a href="#premature-encashment">5. Lock-in Period &amp; Premature Exit Rules for Seniors</a></li>
+          <li><a href="#taxation-tds">6. Income Tax Treatment &amp; Section 193 TDS Rules</a></li>
+          <li><a href="#frsb-vs-bank-fd">7. Head-to-Head: RBI Bonds vs Bank Fixed Deposits</a></li>
+          <li><a href="#how-to-invest">8. How to Purchase FRSB: RBI Retail Direct &amp; Banks</a></li>
+          <li><a href="#faqs">9. Frequently Asked Questions (FAQs)</a></li>
+          <li><a href="#official-sources">10. Official Sources &amp; References</a></li>
+        </ul>
+      </nav>
+
+      <!-- Key Takeaways Box -->
+      <div class="takeaways-box">
+        <div class="takeaways-icon">&#9889;</div>
+        <div class="takeaways-content">
           <h3>Key Takeaways at a Glance</h3>
           <ul>
-            <li><strong>Current Rate:</strong> 8.05% p.a., resets on 1 January and 1 July, pegged at NSC rate + 0.35%.</li>
+            <li><strong>Current Rate (2026):</strong> 8.05% p.a., resets on 1 January and 1 July, pegged at NSC rate + 0.35%.</li>
             <li><strong>Sovereign Safety:</strong> Backed 100% by the Government of India with zero credit or default risk.</li>
             <li><strong>7-Year Lock-in:</strong> Strict tenure for investors under 60; graded premature exit allowed only for senior citizens (ages 60+).</li>
             <li><strong>Semi-Annual Payouts:</strong> Interest credited every 1st January and 1st July; no compounding option exists.</li>
@@ -228,344 +215,490 @@
             <li><strong>Zero Secondary Trading:</strong> Cannot be transferred, sold on an exchange, or pledged for a bank loan.</li>
           </ul>
         </div>
+      </div>
 
-        <section id="what-are-frsb">
-          <h2>1. What Are RBI Floating Rate Savings Bonds (FRSB)?</h2>
-          <p>The <strong>Reserve Bank of India Floating Rate Savings Bonds (Taxable), 2020</strong>&#8212;commonly abbreviated as <strong>FRSB 2020 (T)</strong>&#8212;are sovereign debt instruments issued by the Reserve Bank of India on behalf of the Government of India. Introduced in July 2020 to replace the earlier 7.75% fixed-rate savings bonds, these bonds were designed to safeguard conservative retail investors from locking into low fixed coupons during periods of volatile interest rate cycles.</p>
-          <p>Unlike regular bank fixed deposits or corporate debentures, RBI Floating Rate Savings Bonds do not carry a fixed interest coupon throughout their 7-year life. Instead, the coupon is dynamic and periodically recalibrated against India&#8217;s small savings benchmark. Because they are sovereign obligations of the Union Government, they offer absolute capital safety, eliminating the credit risk inherent in private financial institutions.</p>
-          <p>The bonds are issued in electronic form through a <strong>Bond Ledger Account (BLA)</strong> maintained with the Reserve Bank of India or through authorized receiving offices (major public sector and private commercial banks), or directly via the <strong>RBI Retail Direct</strong> portal.</p>
-        </section>
+      <!-- Section 1 -->
+      <section id="what-are-frsb" class="article-section">
+        <h2>1. What Are RBI Floating Rate Savings Bonds (FRSB)?</h2>
+        <p>The <strong>Reserve Bank of India Floating Rate Savings Bonds (Taxable), 2020</strong>&#8212;commonly abbreviated as <strong>FRSB 2020 (T)</strong>&#8212;are sovereign debt instruments issued by the Reserve Bank of India on behalf of the Government of India. Introduced in July 2020 to replace the earlier 7.75% fixed-rate savings bonds, these bonds were designed to safeguard conservative retail investors from locking into low fixed coupons during periods of volatile interest rate cycles.</p>
+        <p>Unlike regular bank fixed deposits or corporate debentures, RBI Floating Rate Savings Bonds do not carry a fixed interest coupon throughout their 7-year life. Instead, the coupon is dynamic and periodically recalibrated against India&#8217;s small savings benchmark. Because they are sovereign obligations of the Union Government, they offer absolute capital safety, eliminating the credit risk inherent in private financial institutions.</p>
+        <p>The bonds are issued in electronic form through a <strong>Bond Ledger Account (BLA)</strong> maintained with the Reserve Bank of India or through authorized receiving offices (major public sector and private commercial banks), or directly via the <strong>RBI Retail Direct</strong> portal.</p>
+      </section>
 
-        <section id="interest-rate-mechanism">
-          <h2>2. The Floating Rate Coupon Mechanism &amp; 8.05% Payout</h2>
-          <p>The defining characteristic of FRSB 2020 is its floating interest structure. Understanding how this coupon is derived ensures investors can anticipate changes to their semi-annual cash flows.</p>
-          <p>The bond&#8217;s coupon rate is explicitly linked to the rate of interest on the <strong>National Savings Certificate (NSC)</strong>, plus a fixed positive spread:</p>
-          <div style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-left:4px solid var(--emerald); border-radius:var(--radius-md); padding:18px 24px; margin:20px 0;">
-            <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:6px;">RBI FRSB Coupon Formula:</span>
-            <code style="font-family:var(--font-mono); font-size:1.15rem; font-weight:700; color:var(--emerald-dark);">Bond Coupon Rate = Prevailing NSC Interest Rate + 0.35% (35 basis points)</code>
-          </div>
-          <p>The Ministry of Finance reviews and sets interest rates for small savings schemes on a quarterly basis. However, the coupon on RBI Floating Rate Bonds is reset only <strong>semi-annually</strong> on:</p>
-          <ul>
-            <li><strong>1st January</strong> (reflecting the NSC rate declared for Q4 of the fiscal year)</li>
-            <li><strong>1st July</strong> (reflecting the NSC rate declared for Q2 of the fiscal year)</li>
-          </ul>
-          <p>With the benchmark NSC rate standing steady at <strong>7.70% p.a.</strong>, the addition of the 35 bps markup establishes the current payout rate on RBI Floating Rate Savings Bonds at <strong>8.05% per annum</strong>.</p>
-          <div style="overflow-x:auto; margin:20px 0;">
-            <table class="calc-table" style="width:100%; border-collapse:collapse;">
-              <thead>
-                <tr style="background:var(--bg-subtle);">
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">NSC Benchmark Rate</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Fixed Spread</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Effective FRSB Coupon Rate</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Semi-Annual Payout per &#8377;10 Lakhs</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">7.00%</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">+0.35%</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">7.35% p.a.</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">&#8377;36,750</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">7.50%</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">+0.35%</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">7.85% p.a.</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">&#8377;39,250</td>
-                </tr>
-                <tr style="background:var(--emerald-soft);">
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">7.70% (Current)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">+0.35%</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700; color:var(--emerald-dark);">8.05% p.a.</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700; color:var(--emerald-dark);">&#8377;40,250</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">8.00%</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">+0.35%</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">8.35% p.a.</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">&#8377;41,750</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p style="font-size:0.85rem; color:var(--text-muted);">Note: Interest is paid semi-annually. The coupon payout per half-year equals (Principal &times; Annual Coupon Rate &divide; 2).</p>
-        </section>
+      <!-- Section 2 -->
+      <section id="interest-rate-mechanism" class="article-section">
+        <h2>2. The Floating Rate Coupon Mechanism &amp; Current 8.05% Payout</h2>
+        <p>The defining characteristic of FRSB 2020 is its floating interest structure. Understanding how this coupon is derived ensures investors can anticipate changes to their semi-annual cash flows.</p>
 
-        <section id="key-features-summary">
-          <h2>3. Key Features &amp; Scheme Specifications</h2>
-          <div style="overflow-x:auto; margin:20px 0;">
-            <table class="calc-table" style="width:100%; border-collapse:collapse;">
-              <thead>
-                <tr style="background:var(--bg-subtle);">
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Feature</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Scheme Provision</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Investment Limit</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Minimum &#8377;1,000 (multiples of &#8377;1,000 thereafter). <strong>No maximum cap</strong>.</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Tenure</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Strict 7 years from the date of issue.</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Interest Payouts</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Payable half-yearly on 1st January and 1st July directly into bank account. No cumulative option.</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Transferability</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Non-transferable (except by transmission to nominee/heir). Cannot be traded on exchanges or pledged for loans.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="eligibility-rules">
-          <h2>4. Eligibility Criteria: Who Can and Cannot Invest</h2>
-          <div style="overflow-x:auto; margin:20px 0;">
-            <table class="calc-table" style="width:100%; border-collapse:collapse;">
-              <thead>
-                <tr style="background:var(--bg-subtle);">
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Eligible Investors (Yes)</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Ineligible Entities (No)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Individual resident Indian citizens (sole or joint mode)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); color:#d9534f; font-weight:700;">Non-Resident Indians (NRIs) and PIOs</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Minors (invested through parent or legal guardian)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); color:#d9534f; font-weight:700;">Private / Public Limited Companies</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Hindu Undivided Families (HUFs) through Karta</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); color:#d9534f; font-weight:700;">Charitable Trusts, Mutual Funds &amp; FIIs</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="premature-encashment">
-          <h2>5. Lock-in Period &amp; Premature Exit Rules for Seniors</h2>
-          <p>For investors below 60 years of age, the lock-in period is 7 years with no premature exit allowed. However, recognizing the liquidity needs of senior citizens, the Government permits graded premature encashment:</p>
-          <div style="overflow-x:auto; margin:20px 0;">
-            <table class="calc-table" style="width:100%; border-collapse:collapse;">
-              <thead>
-                <tr style="background:var(--bg-subtle);">
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Age Bracket</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Minimum Holding Period</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Penalty on Exit</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Below 60 years</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Full 7 Years (No early exit)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Not applicable</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">60 to 70 years</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">6 Years</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Deduction of 50% interest due for last 6 months</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">70 to 80 years</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">5 Years</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Deduction of 50% interest due for last 6 months</td>
-                </tr>
-                <tr style="background:var(--emerald-soft);">
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">80 years and above</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">4 Years</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Deduction of 50% interest due for last 6 months</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="taxation-tds">
-          <h2>6. Income Tax Treatment &amp; Section 193 TDS Rules</h2>
-          <p>The semi-annual interest earned is fully taxable under <strong>&#8220;Income from Other Sources&#8221;</strong> at the investor's marginal slab rates under either the Old or New Tax Regime. There is no Section 80C deduction on the principal investment.</p>
-          <p>Under Section 193 of the Income-tax Act, TDS is deducted at <strong>10%</strong> if total interest exceeds <strong>&#8377;10,000</strong> in a financial year. Investors whose total taxable income is below the taxable threshold can avoid TDS by submitting <strong>Form 15G</strong> (below 60 years) or <strong>Form 15H</strong> (senior citizens).</p>
-        </section>
-
-        <section id="frsb-vs-bank-fd">
-          <h2>7. Head-to-Head: RBI Floating Rate Bonds vs Bank Fixed Deposits</h2>
-          <div style="overflow-x:auto; margin:20px 0;">
-            <table class="calc-table" style="width:100%; border-collapse:collapse;">
-              <thead>
-                <tr style="background:var(--bg-subtle);">
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Parameter</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">RBI Floating Rate Bonds (FRSB)</th>
-                  <th style="padding:12px; border:1px solid var(--border-soft); text-align:left;">Bank Fixed Deposits</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Current Interest Rate</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft); color:var(--emerald-dark); font-weight:700;">8.05% p.a. (Floating, NSC + 0.35%)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">6.80% &#8211; 7.40% p.a.</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Credit Safety</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">100% Sovereign Guarantee (Zero credit risk)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">DICGC insurance up to &#8377;5 Lakhs per bank</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Maximum Cap</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Unlimited</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Unlimited, but DICGC cover capped at &#8377;5L</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Lock-in &amp; Premature Exit</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">7 years; exit allowed only for seniors (ages 60+)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Flexible (7 days to 10 yrs); exit anytime with penalty</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px; border:1px solid var(--border-soft); font-weight:700;">Compounding Reinvestment</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">None (Mandatory semi-annual payouts)</td>
-                  <td style="padding:12px; border:1px solid var(--border-soft);">Available (Quarterly compounding)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="how-to-invest">
-          <h2>8. How to Purchase FRSB: RBI Retail Direct &amp; Banks</h2>
-          <p>Investors can subscribe through two official channels:</p>
-          <ol style="margin-left:22px; line-height:1.9;">
-            <li><strong>RBI Retail Direct:</strong> Open a Retail Direct Gilt (RDG) account online at <a href="https://rbiretaildirect.org.in" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary); font-weight:600;">rbiretaildirect.org.in</a> with Aadhaar and PAN via video KYC. Direct commission-free subscription with zero annual maintenance fees.</li>
-            <li><strong>Authorized Commercial Banks:</strong> Visit branches or internet banking portals of SBI, HDFC Bank, ICICI Bank, Bank of Baroda, or PNB to submit Form A. A Certificate of Holding in electronic Bond Ledger Account (BLA) format will be issued.</li>
-          </ol>
-        </section>
-
-        <section id="faqs">
-          <h2>9. Frequently Asked Questions (FAQs)</h2>
-          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">What is the current interest rate on RBI Floating Rate Savings Bonds in 2026?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">The current rate of interest is <strong>8.05% per annum</strong>, derived from the benchmark National Savings Certificate (NSC) rate of 7.70% plus a fixed markup of 0.35% (35 bps). The coupon resets semi-annually on 1 January and 1 July.</p>
-          </details>
-          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Can I compound interest till the 7-year maturity?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">No. FRSB 2020 is exclusively a non-cumulative bond. Interest is disbursed semi-annually on 1st January and 1st July directly into the subscriber&#8217;s registered bank account.</p>
-          </details>
-          <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
-            <summary style="font-weight:700; cursor:pointer; font-size:1.02rem; color:var(--text-primary);">Can an investor take a loan or overdraft against RBI Floating Rate Bonds?</summary>
-            <p style="margin-top:12px; color:var(--text-secondary); line-height:1.65; margin-bottom:0;">No. The Government of India guidelines strictly specify that RBI Floating Rate Savings Bonds cannot be pledged as collateral, margin, or security to obtain loans or overdrafts.</p>
-          </details>
-        </section>
-
-        <section id="official-sources" style="margin-top:36px;">
-          <h2>10. Official Sources &amp; References</h2>
-          <ul style="list-style:none; padding:0; margin:16px 0; line-height:1.8;">
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11928" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">Reserve Bank of India (RBI) &#8212; Government of India Floating Rate Savings Bonds 2020 (Taxable) Scheme Notification</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Official RBI Master Direction and notification specifying legal terms, interest formula, and premature encashment rules</p>
-            </li>
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://rbiretaildirect.org.in" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">RBI Retail Direct Official Portal</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Government platform for retail investors to open Retail Direct Gilt (RDG) accounts and invest in FRSBs online</p>
-            </li>
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://dea.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">Ministry of Finance, Department of Economic Affairs &#8212; Small Savings Rates</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Quarterly small savings scheme interest rate orders determining the benchmark NSC rate</p>
-            </li>
-            <li style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--border-soft);">
-              <strong><a href="https://incometaxindia.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--color-primary);">Income Tax Department &#8212; Section 193 (TDS on Securities)</a></strong>
-              <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted);">Statutory TDS threshold limits and declarations under Form 15G / Form 15H under the Income Tax Act, 1961</p>
-            </li>
-          </ul>
-          <p style="font-size:0.78rem; color:var(--text-muted); margin:12px 0 0;"><em>Last reviewed: October 2026. Data verified against official RBI and Ministry of Finance gazettes.</em></p>
-        </section>
-
-        <div class="cta-box">
-          <h3>Plan Your Fixed Income Returns</h3>
-          <p>Compare yields on RBI Floating Rate Bonds, bank fixed deposits, and small savings schemes with our free tools.</p>
-          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-            <a href="fd-calculator.html" class="btn btn-primary btn-lg">Fixed Deposit Calculator &rarr;</a>
-            <a href="ppf-calculator.html" class="btn btn-ghost btn-lg">PPF Calculator &rarr;</a>
-            <a href="income-tax-calculator.html" class="btn btn-ghost btn-lg">Income Tax Calculator &rarr;</a>
-          </div>
+        <h3>The Benchmark Formula</h3>
+        <p>The bond&#8217;s coupon rate is explicitly linked to the rate of interest on the <strong>National Savings Certificate (NSC)</strong>, plus a fixed positive spread:</p>
+        <div class="formula-callout">
+          <span class="formula-label">RBI FRSB Coupon Formula:</span>
+          <code>Bond Coupon Rate = Prevailing NSC Interest Rate + 0.35% (35 basis points)</code>
         </div>
 
-        <div class="author-bio-card">
-          <div class="author-bio-header">
-            <div class="author-avatar">T</div>
-            <div>
-              <h3 class="author-name">Tejas</h3>
-              <p class="author-title">Founder &amp; Creator, Calculatorship</p>
+        <h3>Reset Dates and Current Standing</h3>
+        <p>The Ministry of Finance reviews and sets interest rates for small savings schemes on a quarterly basis. However, the coupon on RBI Floating Rate Bonds is reset only <strong>semi-annually</strong> on:</p>
+        <ul>
+          <li><strong>1st January</strong> (reflecting the NSC rate declared for Q4 of the fiscal year)</li>
+          <li><strong>1st July</strong> (reflecting the NSC rate declared for Q2 of the fiscal year)</li>
+        </ul>
+        <p>With the benchmark NSC rate standing steady at <strong>7.70% p.a.</strong>, the addition of the 35 bps markup establishes the current payout rate on RBI Floating Rate Savings Bonds at <strong>8.05% per annum</strong>.</p>
+
+        <h3>Illustration of Coupon Reset Scenarios</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>NSC Benchmark Rate</th>
+                <th>Fixed Spread</th>
+                <th>Effective FRSB Coupon Rate</th>
+                <th>Semi-Annual Payout per &#8377;10 Lakhs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7.00%</td>
+                <td>+0.35%</td>
+                <td>7.35% p.a.</td>
+                <td>&#8377;36,750</td>
+              </tr>
+              <tr>
+                <td>7.50%</td>
+                <td>+0.35%</td>
+                <td>7.85% p.a.</td>
+                <td>&#8377;39,250</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>7.70% (Current)</strong></td>
+                <td><strong>+0.35%</strong></td>
+                <td><strong>8.05% p.a.</strong></td>
+                <td><strong>&#8377;40,250</strong></td>
+              </tr>
+              <tr>
+                <td>8.00%</td>
+                <td>+0.35%</td>
+                <td>8.35% p.a.</td>
+                <td>&#8377;41,750</td>
+              </tr>
+              <tr>
+                <td>8.50%</td>
+                <td>+0.35%</td>
+                <td>8.85% p.a.</td>
+                <td>&#8377;44,250</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-caption">Note: Interest is paid semi-annually. The coupon payout per half-year equals (Principal &times; Annual Coupon Rate &divide; 2).</p>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="key-features-summary" class="article-section">
+        <h2>3. Key Features &amp; Scheme Specifications</h2>
+        <p>Before committing capital to FRSB, investors must evaluate its structural parameters:</p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <h4>Investment Limits</h4>
+            <p>Minimum investment is <strong>&#8377;1,000</strong> (and in multiples of &#8377;1,000 thereafter). Crucially, there is <strong>no maximum upper limit</strong>. High-net-worth individuals can deploy crores of rupees with 100% sovereign protection.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Tenure</h4>
+            <p>The standard maturity tenure is <strong>7 years</strong> from the date of issue. Capital is returned in full upon maturity to the investor's designated bank account.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Interest Payment Frequency</h4>
+            <p>Payouts occur strictly twice a year on <strong>1 January and 1 July</strong>. There is no cumulative or reinvestment option; compounding within the bond is not supported.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Transferability &amp; Collateral</h4>
+            <p>The bonds are <strong>non-transferable</strong> (except by succession to a nominee or legal heir). They cannot be traded on stock exchanges or pledged as collateral for bank loans.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mid-Article Ad Slot -->
+<!-- Section 4 -->
+      <section id="eligibility-rules" class="article-section">
+        <h2>4. Eligibility Criteria: Who Can and Cannot Invest</h2>
+        <p>The Government of India has prescribed clear residency boundaries governing who can subscribe to Floating Rate Savings Bonds.</p>
+
+        <div class="eligibility-columns">
+          <div class="eligible-card">
+            <h3>&#9989; Who CAN Invest</h3>
+            <ul>
+              <li><strong>Individual Indian Residents:</strong> In sole capacity or joint holding mode (Either or Survivor, Jointly, Former or Survivor).</li>
+              <li><strong>Minors:</strong> Subscriptions can be made by a natural parent (father or mother) or a court-appointed legal guardian on behalf of an Indian minor child.</li>
+              <li><strong>Hindu Undivided Families (HUFs):</strong> HUFs acting through their Karta are permitted to invest.</li>
+            </ul>
+          </div>
+          <div class="ineligible-card">
+            <h3>&#10060; Who CANNOT Invest</h3>
+            <ul>
+              <li><strong>Non-Resident Indians (NRIs):</strong> NRIs and Persons of Indian Origin (PIOs) are strictly prohibited from subscribing. If an existing investor becomes an NRI after purchasing the bond, they may hold it until maturity on a non-repatriation basis.</li>
+              <li><strong>Companies &amp; Corporates:</strong> Private limited, public limited companies, and partnerships are ineligible.</li>
+              <li><strong>Trusts &amp; Institutions:</strong> Charitable trusts, mutual funds, and foreign institutional investors cannot participate.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="premature-encashment" class="article-section">
+        <h2>5. Lock-in Period &amp; Graded Premature Exit Rules for Seniors</h2>
+        <p>A frequent deterrent for potential subscribers is the rigid 7-year lock-in period. For general investors below the age of 60, there is <strong>zero early exit</strong> permitted under normal circumstances. Capital remains locked for the entire seven years.</p>
+
+        <h3>Special Windows for Senior Citizens</h3>
+        <p>Recognizing the liquidity and healthcare requirements of older citizens, the RBI framework permits graded early encashment exclusively based on the subscriber&#8217;s age as of the date of application for redemption:</p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Age Category</th>
+                <th>Minimum Holding Period Required</th>
+                <th>Earliest Exit Permitted</th>
+                <th>Penalty on Premature Withdrawal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Below 60 years</strong></td>
+                <td>7 Years (Full Lock-in)</td>
+                <td>At maturity only</td>
+                <td>Not applicable (no exit allowed)</td>
+              </tr>
+              <tr>
+                <td><strong>60 to 70 years</strong></td>
+                <td>6 Years</td>
+                <td>After completing 6 years</td>
+                <td>Deduction of 50% of interest due for the last 6 months</td>
+              </tr>
+              <tr>
+                <td><strong>70 to 80 years</strong></td>
+                <td>5 Years</td>
+                <td>After completing 5 years</td>
+                <td>Deduction of 50% of interest due for the last 6 months</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>80 years and above</strong></td>
+                <td>4 Years</td>
+                <td>After completing 4 years</td>
+                <td>Deduction of 50% of interest due for the last 6 months</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-tip">
+          <p><strong>Crucial Joint Account Rule:</strong> In case of joint accounts where one holder is a senior citizen, the early redemption eligibility is determined by the age of the <em>first applicant</em>. If the first holder meets the senior citizen age bracket, the account qualifies for the early exit privilege.</p>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="taxation-tds" class="article-section">
+        <h2>6. Income Tax Treatment &amp; Section 193 TDS Rules</h2>
+        <p>Taxation is a paramount consideration when evaluating RBI Floating Rate Savings Bonds, especially for individuals in the upper income tax brackets.</p>
+
+        <h3>No Section 80C Deduction on Investment</h3>
+        <p>Unlike Public Provident Fund (PPF), National Pension System (NPS), or Equity Linked Savings Schemes (ELSS), the principal amount invested in FRSB does <strong>not</strong> qualify for tax deductions under Section 80C of the Income-tax Act, 1961.</p>
+
+        <h3>Taxation of Interest Income</h3>
+        <p>The semi-annual interest earned is treated as ordinary income and classified under <strong>&#8220;Income from Other Sources&#8221;</strong>. It is added to the subscriber&#8217;s total income and taxed at their marginal income tax slab rate under either the Old Tax Regime or the default New Tax Regime.</p>
+
+        <h3>Tax Deducted at Source (TDS) under Section 193</h3>
+        <ul>
+          <li><strong>Threshold:</strong> Under Section 193 of the Income-tax Act, TDS is mandatory at the rate of <strong>10%</strong> if the aggregate interest credited during a financial year exceeds <strong>&#8377;10,000</strong>.</li>
+          <li><strong>PAN Requirement:</strong> A valid PAN must be linked to the Bond Ledger Account. If a valid PAN is not furnished, TDS is levied at the penal rate of 20% under Section 206AA.</li>
+          <li><strong>Exemption Forms:</strong> Investors whose total estimated income for the fiscal year is below the basic tax exemption limit can avoid TDS by submitting:
+            <ul>
+              <li><strong>Form 15G:</strong> For resident individuals below 60 years and HUFs.</li>
+              <li><strong>Form 15H:</strong> For resident senior citizens (aged 60 and above).</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Net Post-Tax Yield Comparison across Tax Slabs</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Marginal Tax Bracket (Including Cess)</th>
+                <th>Gross Coupon Rate</th>
+                <th>Tax Deduction Amount</th>
+                <th>Effective Net In-Hand Yield</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nil (Income below taxable threshold)</td>
+                <td>8.05%</td>
+                <td>0.00%</td>
+                <td><strong>8.05%</strong></td>
+              </tr>
+              <tr>
+                <td>10.4% Slab (New Regime)</td>
+                <td>8.05%</td>
+                <td>0.84%</td>
+                <td><strong>7.21%</strong></td>
+              </tr>
+              <tr>
+                <td>20.8% Slab</td>
+                <td>8.05%</td>
+                <td>1.67%</td>
+                <td><strong>6.38%</strong></td>
+              </tr>
+              <tr class="highlight-row">
+                <td>31.2% Slab (Highest Standard Slab)</td>
+                <td>8.05%</td>
+                <td>2.51%</td>
+                <td><strong>5.54%</strong></td>
+              </tr>
+              <tr>
+                <td>39.0% Slab (Highest Surcharge Bracket)</td>
+                <td>8.05%</td>
+                <td>3.14%</td>
+                <td><strong>4.91%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-caption">Note: Investors in the highest 30%+ tax brackets should evaluate whether post-tax yields of ~5.54% outpace prevailing inflation or if arbitrage/debt funds or tax-free instruments provide superior tax-adjusted returns.</p>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="frsb-vs-bank-fd" class="article-section">
+        <h2>7. Head-to-Head: RBI Floating Rate Bonds vs Bank Fixed Deposits</h2>
+        <p>Most retail investors compare RBI Floating Rate Bonds directly against scheduled commercial bank fixed deposits. Here is how both products compare across key metrics:</p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>RBI Floating Rate Bonds (FRSB 2020)</th>
+                <th>Bank Fixed Deposits (Leading Banks)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Current Interest Rate</strong></td>
+                <td>8.05% p.a. (Floating, linked to NSC + 0.35%)</td>
+                <td>6.80% &#8211; 7.40% p.a. (Senior citizens: 7.30% &#8211; 7.90%)</td>
+              </tr>
+              <tr>
+                <td><strong>Credit &amp; Default Safety</strong></td>
+                <td>100% Sovereign Guarantee (Zero credit risk)</td>
+                <td>DICGC insurance cover up to &#8377;5 Lakhs per bank</td>
+              </tr>
+              <tr>
+                <td><strong>Maximum Investment Cap</strong></td>
+                <td>Unlimited</td>
+                <td>Unlimited, but DICGC protection capped at &#8377;5L</td>
+              </tr>
+              <tr>
+                <td><strong>Lock-in Tenure</strong></td>
+                <td>Strict 7 years</td>
+                <td>Flexible: 7 days to 10 years</td>
+              </tr>
+              <tr>
+                <td><strong>Premature Withdrawal</strong></td>
+                <td>Only for seniors (aged 60+) after 4&#8211;6 years</td>
+                <td>Allowed anytime subject to 0.5%&#8211;1% penalty</td>
+              </tr>
+              <tr>
+                <td><strong>Compounding Option</strong></td>
+                <td>None (Mandatory semi-annual payouts)</td>
+                <td>Available (Quarterly compounding reinvestment)</td>
+              </tr>
+              <tr>
+                <td><strong>Loan Collateral</strong></td>
+                <td>Cannot be pledged</td>
+                <td>Overdraft/loan up to 90%&#8211;95% available</td>
+              </tr>
+              <tr>
+                <td><strong>Tax Treatment</strong></td>
+                <td>Taxed at slab rates; 10% TDS above &#8377;10k</td>
+                <td>Taxed at slab rates; 10% TDS above &#8377;40k (&#8377;50k for seniors)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="how-to-invest" class="article-section">
+        <h2>8. How to Purchase FRSB: RBI Retail Direct &amp; Bank Branches</h2>
+        <p>Investing in RBI Floating Rate Savings Bonds is completely digitized and accessible through multiple convenient channels:</p>
+
+        <h3>Channel 1: RBI Retail Direct Portal (Recommended)</h3>
+        <ol>
+          <li>Visit the official <strong>RBI Retail Direct portal</strong> (rbiretaildirect.org.in).</li>
+          <li>Open a Retail Direct Gilt (RDG) Account using your PAN, Aadhaar, and bank account details via video KYC.</li>
+          <li>Navigate to the <em>Floating Rate Savings Bonds (FRSB)</em> subscription window.</li>
+          <li>Enter the subscription amount (minimum &#8377;1,000) and complete payment using UPI, Net Banking, or ASBA.</li>
+          <li>Bonds are credited electronically to your Bond Ledger Account, with half-yearly interest deposited directly into your linked bank account.</li>
+        </ol>
+
+        <h3>Channel 2: Authorized Commercial Banks</h3>
+        <p>Investors can subscribe physically or via net banking through authorized receiving banks, including:</p>
+        <ul>
+          <li><strong>Public Sector Banks:</strong> State Bank of India (SBI), Bank of Baroda, Punjab National Bank, Canara Bank, and Union Bank of India.</li>
+          <li><strong>Private Commercial Banks:</strong> HDFC Bank, ICICI Bank, Axis Bank, and IDBI Bank.</li>
+        </ul>
+        <p>Complete Form A (Application for FRSB), attach PAN, proof of address, and a cancelled cheque. A <strong>Certificate of Holding</strong> is generated and provided to the subscriber.</p>
+      </section>
+
+      <!-- Section 9: FAQ -->
+      <section id="faqs" class="article-section">
+        <h2>9. Frequently Asked Questions (FAQs)</h2>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>What is the current interest rate on RBI Floating Rate Savings Bonds in 2026?</strong></summary>
+            <div class="faq-answer">
+              <p>The current rate of interest on RBI Floating Rate Savings Bonds (FRSB) 2020 is <strong>8.05% per annum</strong>. This rate is derived from the benchmark National Savings Certificate (NSC) rate of 7.70% plus a fixed markup of 0.35% (35 bps). The rate is reviewed and reset semi-annually on 1 January and 1 July.</p>
             </div>
-          </div>
-          <p class="author-desc">Tejas is the founder of Calculatorship, focusing on creating accessible calculators and educational content for Indian investors. Content on this platform may be drafted with AI assistance and is developed using publicly available information and sources relevant to each topic.</p>
-          <p class="author-disclaimer" style="font-size:0.82rem; color:var(--text-muted); margin-top:8px; line-height:1.5;"><em>General educational information only. Not a SEBI-registered investment advisor, Chartered Accountant, or financial professional. Information can change when laws, tax codes, or official guidance are updated. Consult a qualified professional before making financial decisions.</em></p>
+          </details>
         </div>
 
-        <div class="article-footer-disclaimer">
-          <strong>Educational Notice:</strong> Calculatorship provides general educational information and financial calculation tools for illustrative purposes only. Content may be drafted with AI assistance and compiled from available public sources. This is not a substitute for professional financial, tax, legal, or investment advice. Information can change when official regulations, tax rules, or interest rates are updated. Readers should verify time-sensitive figures with official authorities and consult a qualified advisor before making financial decisions.
+        <div class="faq-item">
+          <details>
+            <summary><strong>Can I choose a cumulative option to compound my interest until the 7-year maturity?</strong></summary>
+            <div class="faq-answer">
+              <p>No. FRSB 2020 is exclusively a non-cumulative bond. Interest is disbursed semi-annually on 1st January and 1st July directly into the subscriber&#8217;s registered bank account. If you wish to compound your returns, you must manually reinvest the half-yearly interest payouts into recurring deposits, mutual funds, or other instruments.</p>
+            </div>
+          </details>
         </div>
-      </article>
 
-      <aside class="article-sidebar" aria-label="Related Guides">
-        <div class="sidebar-card">
-          <h3>Explore Related Guides</h3>
-          <ul style="list-style:none; padding:0; margin:0; line-height:1.8;">
-            <li style="margin-bottom:10px;"><a href="national-savings-certificate-nsc-guide.html" style="font-weight:600; color:var(--color-primary);">National Savings Certificate (NSC) Guide</a></li>
-            <li style="margin-bottom:10px;"><a href="sovereign-gold-bond-guide-india.html" style="font-weight:600; color:var(--color-primary);">Sovereign Gold Bonds (SGB) Guide</a></li>
-            <li style="margin-bottom:10px;"><a href="section-54ec-capital-gains-bonds-guide.html" style="font-weight:600; color:var(--color-primary);">Section 54EC Capital Gains Bonds</a></li>
-            <li style="margin-bottom:10px;"><a href="senior-citizen-fd-rates.html" style="font-weight:600; color:var(--color-primary);">Senior Citizen FD Rates Guide</a></li>
-            <li style="margin-bottom:10px;"><a href="fd-laddering-strategy.html" style="font-weight:600; color:var(--color-primary);">FD Laddering Strategy Guide</a></li>
+        <div class="faq-item">
+          <details>
+            <summary><strong>What happens if the NSC interest rate declines in the future?</strong></summary>
+            <div class="faq-answer">
+              <p>Because the bond has a floating coupon, any reduction in the government&#8217;s declared NSC interest rate will result in a corresponding reduction in your semi-annual payout at the next reset date (1st January or 1st July). However, your coupon will always remain exactly 0.35% above the prevailing NSC rate.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>Can an investor take a loan or overdraft against RBI Floating Rate Bonds?</strong></summary>
+            <div class="faq-answer">
+              <p>No. The Government of India guidelines strictly specify that RBI Floating Rate Savings Bonds cannot be pledged as collateral, margin, or security to obtain loans or overdrafts from commercial banks, financial institutions, or NBFCs.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>Can I appoint a nominee for my RBI Floating Rate Bonds?</strong></summary>
+            <div class="faq-answer">
+              <p>Yes. A sole holder or joint holders can nominate one or more individuals to receive the bond proceeds in the event of death. Nominations can be registered at the time of subscription or updated later by submitting Form B to the issuing bank or through the RBI Retail Direct portal.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item">
+          <details>
+            <summary><strong>Is the &#8377;5 Lakh DICGC insurance limit applicable to RBI Bonds?</strong></summary>
+            <div class="faq-answer">
+              <p>No. DICGC insurance applies only to bank deposits. RBI Floating Rate Savings Bonds are direct sovereign debt issued by the Central Government. The entire invested capital carries a full sovereign guarantee, making it theoretically risk-free regardless of whether you invest &#8377;10 Lakhs, &#8377;1 Crore, or more.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Section 10: Official Sources -->
+      <section id="official-sources" class="article-section">
+        <h2>10. Official Sources &amp; References</h2>
+        <div class="sources-box">
+          <p>This guide references official government notifications and central bank frameworks. Investors are advised to verify details directly from regulatory portals:</p>
+          <ul class="sources-list">
+            <li><strong>Reserve Bank of India (RBI):</strong> Government of India Floating Rate Savings Bonds, 2020 (Taxable) Scheme Notification &amp; FAQs (<a href="https://www.rbi.org.in" target="_blank" rel="noopener nofollow">rbi.org.in</a>)</li>
+            <li><strong>RBI Retail Direct:</strong> Electronic Gilt and Bond Account Portal (<a href="https://rbiretaildirect.org.in" target="_blank" rel="noopener nofollow">rbiretaildirect.org.in</a>)</li>
+            <li><strong>Ministry of Finance, Department of Economic Affairs:</strong> Quarterly Small Savings Schemes Interest Rate Orders (<a href="https://dea.gov.in" target="_blank" rel="noopener nofollow">dea.gov.in</a>)</li>
+            <li><strong>Income Tax Department of India:</strong> Section 193 (TDS on Interest on Securities) &amp; Section 197A (<a href="https://incometaxindia.gov.in" target="_blank" rel="noopener nofollow">incometaxindia.gov.in</a>)</li>
           </ul>
         </div>
-        <div class="sidebar-card" style="padding:16px; text-align:center;">
-          <span style="display:block; font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px;">Advertisement</span>
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7598871729388798" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </section>
+
+      <!-- Calculator CTA Box -->
+      <div class="calculator-cta-box">
+        <h3>Plan Your Fixed Income Returns</h3>
+        <p>Evaluate your interest cash flows and compare post-tax yields across fixed deposits, recurring deposits, and sovereign bonds with our suite of free calculators.</p>
+        <div class="cta-buttons">
+          <a href="fd-calculator.html" class="btn btn-primary">Fixed Deposit Calculator</a>
+          <a href="rd-calculator.html" class="btn btn-secondary">Recurring Deposit Calculator</a>
         </div>
-        <div class="sidebar-card" style="background:var(--emerald-soft); border-color:var(--emerald-border);">
-          <h3 style="color:var(--emerald-dark); border-color:var(--emerald-border);">Financial Calculators</h3>
-          <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:14px;">Compute your maturity value and interest earnings across fixed deposits.</p>
-          <a href="fd-calculator.html" class="btn btn-primary" style="width:100%; text-align:center; box-sizing:border-box;">Open FD Calculator</a>
+      </div>
+
+      <!-- Author Bio Card -->
+      <div class="author-bio-card">
+        <div class="bio-avatar">T</div>
+        <div class="bio-content">
+          <h3>About the Author</h3>
+          <p><strong>Tejas</strong> is a financial research contributor at Calculatorship specializing in Indian banking regulations, small savings schemes, taxation, and retirement planning. He analyzes regulatory circulars from RBI, SEBI, and CBDT to deliver actionable, transparent financial guidance for Indian retail investors.</p>
         </div>
-      </aside>
-    </div>
+      </div>
+
+      <!-- Article Footer Disclaimer -->
+      <div class="article-footer-disclaimer">
+        <p><strong>Disclaimer:</strong> This article is published solely for educational and informational purposes. Calculatorship is an independent portal not affiliated with the Reserve Bank of India or the Ministry of Finance. Floating interest rates are subject to semi-annual government resets. Tax laws are subject to amendments under annual Finance Acts. Readers must consult a qualified SEBI-registered investment advisor or Chartered Accountant before making investment decisions.</p>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <div class="sidebar-widget">
+        <h3 class="widget-title">Related Financial Guides</h3>
+        <ul class="sidebar-links">
+          <li><a href="what-is-nsc-guide.html">National Savings Certificate (NSC) Complete Guide</a></li>
+          <li><a href="sovereign-gold-bond-guide.html">Sovereign Gold Bonds (SGB) Investment Guide</a></li>
+          <li><a href="atal-pension-yojana-apy-guide.html">Atal Pension Yojana (APY) Eligibility &amp; Chart</a></li>
+          <li><a href="senior-citizen-savings-scheme-scss-guide.html">Senior Citizen Savings Scheme (SCSS) Rules</a></li>
+          <li><a href="fd-calculator.html">Bank FD Calculator (Cumulative &amp; Payout)</a></li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Ad Slot -->
+<div class="sidebar-widget calculator-promo-widget">
+        <h3 class="widget-title">Fixed Income Tools</h3>
+        <p>Calculate your precise maturity amount, total interest earned, and annual yield with our financial tools.</p>
+        <a href="fd-calculator.html" class="sidebar-cta-btn">Try FD Calculator &rarr;</a>
+      </div>
+    </aside>
   </main>
+
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html"><img src="logo-footer.svg" alt="Calculatorship Logo" width="200" height="36" style="display:block;" loading="lazy"></a>
-          <p class="footer-tagline">Independent financial calculators and educational guides for Indian investors, salaried professionals, and wealth builders.</p>
+          <a href="/" class="brand-logo">
+            <span class="brand-mark">&#8377;</span>
+            <span class="brand-name">Calculatorship</span>
+          </a>
+          <p class="footer-tagline">Accurate, transparent, and user-friendly financial calculators and guides designed for Indian investors, taxpayers, and savers.</p>
         </div>
-        <div class="footer-links">
+        <div class="footer-links-grid">
           <div class="footer-col">
-            <h3>Calculators</h3>
+            <h3>Investment Calculators</h3>
             <ul>
-              <li><a href="index.html">SIP Calculator</a></li>
-              <li><a href="lumpsum.html">Lumpsum Calculator</a></li>
-              <li><a href="step-up.html">Step-Up SIP</a></li>
-              <li><a href="goal.html">Goal Planner</a></li>
+              <li><a href="sip-calculator.html">SIP Calculator</a></li>
+              <li><a href="lumpsum-calculator.html">Lump Sum Calculator</a></li>
+              <li><a href="fd-calculator.html">Fixed Deposit Calculator</a></li>
+              <li><a href="rd-calculator.html">Recurring Deposit Calculator</a></li>
               <li><a href="ppf-calculator.html">PPF Calculator</a></li>
-              <li><a href="swp-calculator.html">SWP Calculator</a></li>
-              <li><a href="emi-calculator.html">Loan EMI &amp; Prepay</a></li>
-              <li><a href="fd-calculator.html">FD Calculator</a></li>
-              <li><a href="budget-planner.html">Budget Planner</a></li>
-              <li><a href="income-tax-calculator.html">Tax Calculator</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h3>Legal &amp; Policy</h3>
+            <h3>Loans &amp; Tax</h3>
             <ul>
-              <li><a href="disclaimer.html">Disclaimer</a></li>
-              <li><a href="terms.html">Terms of Use</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="cookies.html">Cookie Policy</a></li>
+              <li><a href="home-loan-emi-calculator.html">Home Loan EMI</a></li>
+              <li><a href="car-loan-emi-calculator.html">Car Loan EMI</a></li>
+              <li><a href="personal-loan-emi-calculator.html">Personal Loan EMI</a></li>
+              <li><a href="income-tax-calculator.html">Income Tax Calculator</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -641,4 +774,4 @@
     })();
   </script>
 </body>
-</html>\n
+</html>
