@@ -28,12 +28,92 @@
   "redirects": [
     {
       "source": "/cibil-credit-score-improvement-guide.html",
-      "destination": "/credit-score-guide-india.html",
+      "destination": "/credit-score-guide-india",
       "permanent": true
     },
     {
       "source": "/cibil-credit-score-improvement-guide",
-      "destination": "/credit-score-guide-india.html",
+      "destination": "/credit-score-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-swp-systematic-withdrawal-plan.html",
+      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-swp-systematic-withdrawal-plan",
+      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/inflation-and-your-savings.html",
+      "destination": "/inflation-impact-on-savings-india",
+      "permanent": true
+    },
+    {
+      "source": "/inflation-and-your-savings",
+      "destination": "/inflation-impact-on-savings-india",
+      "permanent": true
+    },
+    {
+      "source": "/epf-vs-ppf-vs-nps-retirement-account-india.html",
+      "destination": "/ppf-vs-elss-vs-nps-india-2026",
+      "permanent": true
+    },
+    {
+      "source": "/epf-vs-ppf-vs-nps-retirement-account-india",
+      "destination": "/ppf-vs-elss-vs-nps-india-2026",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-use-sip-calculator-guide.html",
+      "destination": "/how-to-use-sip-calculator-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-use-sip-calculator-guide",
+      "destination": "/how-to-use-sip-calculator-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/emergency-fund-guide.html",
+      "destination": "/emergency-fund-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/emergency-fund-guide",
+      "destination": "/emergency-fund-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/fd-vs-debt-mutual-funds-india-2026.html",
+      "destination": "/fd-vs-debt-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/fd-vs-debt-mutual-funds-india-2026",
+      "destination": "/fd-vs-debt-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/sip-goal-planning-guide.html",
+      "destination": "/how-to-start-your-first-sip-step-by-step",
+      "permanent": true
+    },
+    {
+      "source": "/sip-goal-planning-guide",
+      "destination": "/how-to-start-your-first-sip-step-by-step",
+      "permanent": true
+    },
+    {
+      "source": "/home-loan-prepayment-vs-sip.html",
+      "destination": "/home-loan-prepayment-vs-sip-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/home-loan-prepayment-vs-sip",
+      "destination": "/home-loan-prepayment-vs-sip-strategy",
       "permanent": true
     }
   ]

@@ -1,6 +1,66 @@
 (function () {
   "use strict";
 
+  /* ============ Localhost / File:// Protocol Link & Logo Normalizer ============ */
+  // When opened via file:// or a basic localhost static server (like python -m http.server
+  // or VS Code Live Server that does not rewrite /slug to /slug.html),
+  // this ensures clean URLs like /blog, /about, and root assets like /logo-light.svg
+  // resolve directly to their target files without "ERR_FILE_NOT_FOUND" 404s.
+  (function initLocalPathResolver() {
+    const isFile = window.location.protocol === "file:";
+    const isDevLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+
+    if (isFile || isDevLocal) {
+      function fixElements() {
+        // Fix logos or root-relative images
+        document.querySelectorAll("img[src^='/']").forEach((img) => {
+          const src = img.getAttribute("src");
+          if (src && src.startsWith("/") && !src.startsWith("//")) {
+            img.src = src.substring(1);
+          }
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", fixElements);
+      } else {
+        fixElements();
+      }
+
+      // Intercept navigation clicks on local/file environment
+      document.addEventListener("click", function (e) {
+        const a = e.target.closest("a");
+        if (!a || !a.getAttribute("href")) return;
+        const href = a.getAttribute("href").trim();
+
+        if (href.startsWith("http://") || href.startsWith("https://") || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) return;
+
+        // Homepage link
+        if (href === "/" || href === "") {
+          if (isFile || (isDevLocal && window.location.pathname.endsWith(".html"))) {
+            e.preventDefault();
+            window.location.href = "index.html";
+          }
+          return;
+        }
+
+        const cleanPath = href.startsWith("/") ? href.substring(1) : href;
+        const noHash = cleanPath.split("#")[0].split("?")[0];
+        const hashPart = cleanPath.includes("#") ? "#" + cleanPath.split("#")[1] : "";
+        const searchPart = cleanPath.includes("?") ? "?" + cleanPath.split("?")[1].split("#")[0] : "";
+
+        // If it's a clean internal route (e.g. /blog, /about, /income-tax-act-2025...)
+        if (noHash && !noHash.includes(".")) {
+          // In file:// mode or localhost mode where clean URLs aren't natively mapped by server:
+          if (isFile || (isDevLocal && window.location.pathname.endsWith(".html"))) {
+            e.preventDefault();
+            window.location.href = noHash + ".html" + searchPart + hashPart;
+          }
+        }
+      });
+    }
+  })();
+
   /* ============ Helpers ============ */
   const $ = (sel, ctx) => (ctx || document).querySelector(sel);
   const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
