@@ -4,18 +4,26 @@
 <head>
 <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
-<!-- Google Analytics 4 (GA4) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
+<!-- Google AdSense Account Snippet -->
+<meta content="ca-pub-7598871729388798" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798"></script>
+<!-- Conditional GA4 based on consent -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0C93Q0VBQP');
+  if (localStorage.getItem('cookieConsent') === 'granted') {
+    var gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP';
+    document.head.appendChild(gaScript);
+    gtag('js', new Date());
+    gtag('config', 'G-0C93Q0VBQP');
+  }
 </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Income Tax Slabs in India (FY 2026-27):... | Calculatorship</title>
-<meta content="Official Income Tax Slabs in India for FY 2026-27 (AY 2027-28). Analyze New Regime slabs, ₹75,000 Standard Deduction, Section 87A rebate, surcharges, and..." name="description"/>
+<title>Income Tax Slabs in India (FY 2026-27): New vs Old Regime Rates &amp; Rebates | Calculatorship</title>
+<meta content="Official Income Tax Slabs in India for FY 2026-27 (AY 2027-28). Analyze New Regime slabs, ₹75,000 Standard Deduction, Section 87A rebate, surcharges, and marginal relief." name="description"/>
 <link href="https://www.calculatorship.in/income-tax-slabs-india-2026" rel="canonical"/>
 <meta content="Tejas, Calculatorship" name="author"/>
 <meta content="en_IN" property="og:locale"/>
