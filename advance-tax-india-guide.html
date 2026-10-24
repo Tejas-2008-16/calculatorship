@@ -3,14 +3,21 @@
 <html lang="en-IN">
 <head>
 <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification"/>
+<meta content="ca-pub-7598871729388798" name="google-adsense-account"/>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
-<!-- Google Analytics 4 (GA4) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
+<!-- Google Analytics 4 (GA4) - Loaded conditionally on cookie consent -->
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-0C93Q0VBQP');
+    if (localStorage.getItem('cs_cookie_consent') === 'accepted') {
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+      document.head.appendChild(gaScript);
+      gtag('config', 'G-XXXXXXXXXX');
+    }
   </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
