@@ -405,56 +405,47 @@
   /* ============ Cookie Consent Banner & Preferences Modal ============ */
   (function initCookieConsent() {
     function setupCookieConsent() {
-      const consent = localStorage.getItem('cookieConsent');
-      const banner = document.getElementById('cs-cookie-banner');
-      const modal = document.getElementById('cs-cookie-modal-overlay');
-      const btnAccept = document.getElementById('cs-accept-cookies');
-      const btnManage = document.getElementById('cs-manage-cookies');
-      const btnSave = document.getElementById('cs-save-preferences');
-
-      if (banner && !consent) {
-        banner.style.display = 'block';
+      let consent = localStorage.getItem('cookieConsent');
+      
+      // Auto-render banner if not present in static DOM
+      let banner = document.getElementById('cs-cookie-banner');
+      if (!banner && !consent) {
+        banner = document.createElement('div');
+        banner.id = 'cs-cookie-banner';
+        banner.setAttribute('role', 'region');
+        banner.setAttribute('aria-label', 'Cookie Consent');
+        banner.style.cssText = 'position:fixed; bottom:0; left:0; right:0; background:#0f172a; color:#f8fafc; padding:16px 24px; z-index:99999; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; box-shadow:0 -4px 20px rgba(0,0,0,0.15); font-size:0.9rem; font-family:Inter,sans-serif;';
+        banner.innerHTML = `
+          <div style="flex:1; min-width:280px; line-height:1.5;">
+            Calculatorship uses strictly client-side calculators. Optional analytics and ad measurement scripts use cookies only if you consent. Read our <a href="/cookies" style="color:#38bdf8; text-decoration:underline;">Cookie Policy</a> and <a href="/privacy" style="color:#38bdf8; text-decoration:underline;">Privacy Policy</a>.
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <button id="cs-decline-cookies" style="background:transparent; border:1px solid #475569; color:#f8fafc; padding:8px 16px; border-radius:6px; cursor:pointer; font-weight:600; font-size:0.88rem;">Decline</button>
+            <button id="cs-accept-cookies" style="background:#059669; border:none; color:#ffffff; padding:8px 18px; border-radius:6px; cursor:pointer; font-weight:700; font-size:0.88rem;">Accept</button>
+          </div>
+        `;
+        document.body.appendChild(banner);
       }
+
+      const btnAccept = document.getElementById('cs-accept-cookies');
+      const btnDecline = document.getElementById('cs-decline-cookies');
 
       if (btnAccept) {
         btnAccept.onclick = function() {
           localStorage.setItem('cookieConsent', 'accepted');
           localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: true, advertising: true }));
           if (banner) banner.style.display = 'none';
-          if (modal) modal.style.display = 'none';
+          if (typeof window.gtag === 'function') {
+            window.gtag('config', 'G-0C93Q0VBQP');
+          }
         };
       }
 
-      function openModal() {
-        if (modal) modal.style.display = 'flex';
-        else if (banner) banner.style.display = 'block';
-      }
-
-      if (btnManage) btnManage.onclick = openModal;
-
-      document.querySelectorAll('.js-cookie-settings, a[href="#cookie-settings"], a[href="#cookie-preferences"], #cs-open-cookie-modal').forEach((el) => {
-        el.onclick = function(e) {
-          e.preventDefault();
-          openModal();
-        };
-      });
-
-      if (btnSave) {
-        btnSave.onclick = function() {
-          const analyticsInput = document.getElementById('cs-toggle-analytics');
-          const advertisingInput = document.getElementById('cs-toggle-advertising');
-          const analytics = analyticsInput ? analyticsInput.checked : true;
-          const advertising = advertisingInput ? advertisingInput.checked : true;
-          localStorage.setItem('cookieConsent', 'custom');
-          localStorage.setItem('cookiePreferences', JSON.stringify({ analytics, advertising }));
-          if (modal) modal.style.display = 'none';
+      if (btnDecline) {
+        btnDecline.onclick = function() {
+          localStorage.setItem('cookieConsent', 'declined');
+          localStorage.setItem('cookiePreferences', JSON.stringify({ analytics: false, advertising: false }));
           if (banner) banner.style.display = 'none';
-        };
-      }
-
-      if (modal) {
-        modal.onclick = function(e) {
-          if (e.target === modal) modal.style.display = 'none';
         };
       }
     }
@@ -465,20 +456,12 @@
       setupCookieConsent();
     }
 
-    window.openCookiePreferences = function() {
-      const modal = document.getElementById('cs-cookie-modal-overlay');
-      if (modal) modal.style.display = 'flex';
-      else {
-        const banner = document.getElementById('cs-cookie-banner');
-        if (banner) banner.style.display = 'block';
-      }
-    };
-
     window.resetCookieConsent = function() {
       localStorage.removeItem('cookieConsent');
       localStorage.removeItem('cookiePreferences');
       const banner = document.getElementById('cs-cookie-banner');
-      if (banner) banner.style.display = 'block';
+      if (banner) banner.remove();
+      setupCookieConsent();
     };
   })();
 
