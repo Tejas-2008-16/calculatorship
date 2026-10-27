@@ -34,9 +34,16 @@
 <link href="favicon.svg" rel="apple-touch-icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/></noscript>
-<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css?v=2.2" rel="stylesheet"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0C93Q0VBQP');
+</script>
 <!-- Google AdSense -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -111,8 +118,8 @@
   ]
 }</script></head>
 <body>
-<div class="read-progress" id="readProgress"></div>
-<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="reading-progress-bar" id="reading-progress"></div>
+<a class="skip-link" href="#main-article">Skip to article content</a>
 <header class="site-header">
 <div class="header-inner">
 <a aria-label="Calculatorship Homepage" class="brand" href="/">
@@ -120,24 +127,53 @@
 </a>
 <nav aria-label="Primary Navigation" class="main-nav">
 <div class="nav-dropdown">
-<a class="nav-dropdown-toggle" href="/">Calculators</a>
-<ul class="nav-dropdown-menu" role="menu">
+<a class="nav-dropdown-toggle" href="/calculators.html">Calculators</a>
+<div class="nav-dropdown-menu" role="menu">
+<div class="nav-dropdown-grid">
+<div class="nav-dropdown-group">
+<div class="nav-dropdown-group-title">Investing</div>
+<ul class="nav-dropdown-group-list">
 <li><a href="/">SIP Calculator</a></li>
-<li><a href="/lumpsum">Lumpsum Calculator</a></li>
-<li><a href="/step-up">Step-Up SIP</a></li>
-<li><a href="/goal">Goal Planner</a></li>
-<li><a href="/ppf-calculator">PPF Calculator</a></li>
-<li><a href="/swp-calculator">SWP Calculator</a></li>
-<li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-<li class="nav-dropdown-divider" role="separator"></li>
-<li><a href="/fd-calculator">FD Calculator</a></li>
-<li><a href="/budget-planner">Budget Planner</a></li>
-<li><a href="/income-tax-calculator">Tax Calculator</a></li>
+<li><a href="/lumpsum.html">Lumpsum</a></li>
+<li><a href="/step-up.html">Step-Up SIP</a></li>
+<li><a href="/cagr-calculator.html">CAGR Calculator</a></li>
+<li><a href="/compound-interest-calculator.html">Compound Interest</a></li>
+<li><a href="/simple-interest-calculator.html">Simple Interest</a></li>
 </ul>
 </div>
-<a href="/blog">Blog &amp; Guides</a>
-<a href="/about">About</a>
-<a href="/contact">Contact</a>
+<div class="nav-dropdown-group">
+<div class="nav-dropdown-group-title">Retirement &amp; Banking</div>
+<ul class="nav-dropdown-group-list">
+<li><a href="/ppf-calculator.html">PPF Calculator</a></li>
+<li><a href="/epf-calculator.html">EPF Calculator</a></li>
+<li><a href="/nps-calculator.html">NPS Calculator</a></li>
+<li><a href="/swp-calculator.html">SWP Calculator</a></li>
+<li><a href="/fd-calculator.html">FD Calculator</a></li>
+<li><a href="/rd-calculator.html">RD Calculator</a></li>
+</ul>
+</div>
+<div class="nav-dropdown-group">
+<div class="nav-dropdown-group-title">Tax, Salary &amp; Loans</div>
+<ul class="nav-dropdown-group-list">
+<li><a href="/income-tax-calculator.html">Income Tax (FY 26-27)</a></li>
+<li><a href="/in-hand-salary-calculator.html">In-Hand Salary</a></li>
+<li><a href="/hra-calculator.html">HRA Exemption</a></li>
+<li><a href="/gratuity-calculator.html">Gratuity (15/26)</a></li>
+<li><a href="/gst-calculator.html">GST Calculator</a></li>
+<li><a href="/emi-calculator.html">Loan EMI &amp; Prepay</a></li>
+<li><a href="/budget-planner.html">50/30/20 Budget</a></li>
+<li><a href="/inflation-calculator.html">Inflation Planner</a></li>
+</ul>
+</div>
+</div>
+<div class="nav-dropdown-footer">
+<a href="/calculators.html">Browse All 21 Calculators Directory &rarr;</a>
+</div>
+</div>
+</div>
+<a href="/blog.html">Blog &amp; Guides</a>
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
 </nav>
 <div class="header-actions">
 <button aria-expanded="false" aria-label="Toggle menu" class="nav-toggle" id="nav-toggle" type="button">
