@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8">
+  <meta name="google-adsense-account" content="ca-pub-7598871729388798">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0C93Q0VBQP');
+  </script>
+  <title>CAGR Calculator India — Compound Annual Growth Rate & Reverse CAGR</title>
+  <meta name="description" content="Calculate Compound Annual Growth Rate (CAGR) and reverse future value for mutual funds, stocks, and real estate investments in India. Accurate mathematical formulas.">
+  <link rel="canonical" href="https://www.calculatorship.in/cagr-calculator.html">
+  <meta name="author" content="Tejas, Calculatorship">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="CAGR Calculator India — Compound Annual Growth Rate & Reverse CAGR">
+  <meta property="og:description" content="Free CAGR Calculator for Indian investors. Compute annual compounding rate and compare CAGR vs XIRR.">
+  <meta property="og:url" content="https://www.calculatorship.in/cagr-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Calculatorship">
+  <meta property="og:image" content="https://www.calculatorship.in/og-image.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F3F7F5">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css?v=2.2">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "CAGR Calculator India — Calculatorship",
+    "url": "https://www.calculatorship.in/cagr-calculator.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "description": "Calculate Compound Annual Growth Rate (CAGR) and reverse CAGR for lump-sum investments in India.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calculatorship",
+      "url": "https://www.calculatorship.in",
+      "logo": "https://www.calculatorship.in/logo-light.svg"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand" aria-label="Calculatorship Homepage">
+        <img src="/logo-light.svg" alt="Calculatorship — Free Financial Calculators for Indian Investors" width="220" height="38" loading="lazy">
+      </a>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <div class="nav-dropdown">
+          <a href="/calculators.html" class="nav-dropdown-toggle">Calculators</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <div class="nav-dropdown-grid">
+              <div class="nav-dropdown-group">
+                <div class="nav-dropdown-group-title">Investing</div>
+                <ul class="nav-dropdown-group-list">
+                  <li><a href="/">SIP Calculator</a></li>
+                  <li><a href="/lumpsum.html">Lumpsum</a></li>
+                  <li><a href="/step-up.html">Step-Up SIP</a></li>
+                  <li><a href="/cagr-calculator.html">CAGR Calculator</a></li>
+                  <li><a href="/compound-interest-calculator.html">Compound Interest</a></li>
+                  <li><a href="/simple-interest-calculator.html">Simple Interest</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-group">
+                <div class="nav-dropdown-group-title">Retirement &amp; Banking</div>
+                <ul class="nav-dropdown-group-list">
+                  <li><a href="/ppf-calculator.html">PPF Calculator</a></li>
+                  <li><a href="/epf-calculator.html">EPF Calculator</a></li>
+                  <li><a href="/nps-calculator.html">NPS Calculator</a></li>
+                  <li><a href="/swp-calculator.html">SWP Calculator</a></li>
+                  <li><a href="/fd-calculator.html">FD Calculator</a></li>
+                  <li><a href="/rd-calculator.html">RD Calculator</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-group">
+                <div class="nav-dropdown-group-title">Tax, Salary &amp; Loans</div>
+                <ul class="nav-dropdown-group-list">
+                  <li><a href="/income-tax-calculator.html">Income Tax (FY 26-27)</a></li>
+                  <li><a href="/in-hand-salary-calculator.html">In-Hand Salary</a></li>
+                  <li><a href="/hra-calculator.html">HRA Exemption</a></li>
+                  <li><a href="/gratuity-calculator.html">Gratuity (15/26)</a></li>
+                  <li><a href="/gst-calculator.html">GST Calculator</a></li>
+                  <li><a href="/emi-calculator.html">Loan EMI &amp; Prepay</a></li>
+                  <li><a href="/budget-planner.html">50/30/20 Budget</a></li>
+                  <li><a href="/inflation-calculator.html">Inflation Planner</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-dropdown-footer">
+              <a href="/calculators.html">Browse All 21 Calculators Directory &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <a href="/blog.html">Blog &amp; Guides</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="calc-switcher-wrapper" style="margin-bottom: 24px;">
+    <div class="calc-switcher-bar">
+      <a class="calc-tab" href="/">SIP Calculator</a>
+      <a class="calc-tab" href="/lumpsum.html">Lumpsum</a>
+      <a class="calc-tab" href="/step-up.html">Step-Up SIP</a>
+      <a class="calc-tab active" href="/cagr-calculator.html">CAGR</a>
+      <a class="calc-tab" href="/compound-interest-calculator.html">Compound Interest</a>
+      <a class="calc-tab" href="/simple-interest-calculator.html">Simple Interest</a>
+      <a class="calc-tab" href="/ppf-calculator.html">PPF</a>
+      <a class="calc-tab" href="/epf-calculator.html">EPF</a>
+      <a class="calc-tab" href="/nps-calculator.html">NPS</a>
+      <a class="calc-tab" href="/swp-calculator.html">SWP</a>
+      <a class="calc-tab" href="/fd-calculator.html">FD</a>
+      <a class="calc-tab" href="/rd-calculator.html">RD</a>
+      <a class="calc-tab" href="/income-tax-calculator.html">Income Tax</a>
+      <a class="calc-tab" href="/in-hand-salary-calculator.html">In-Hand Salary</a>
+      <a class="calc-tab" href="/hra-calculator.html">HRA Exemption</a>
+      <a class="calc-tab" href="/gratuity-calculator.html">Gratuity</a>
+      <a class="calc-tab" href="/gst-calculator.html">GST</a>
+      <a class="calc-tab" href="/emi-calculator.html">Loan EMI</a>
+      <a class="calc-tab" href="/budget-planner.html">50/30/20 Budget</a>
+      <a class="calc-tab" href="/inflation-calculator.html">Inflation</a>
+    </div>
+  </div>
+
+  <main id="main-content" style="max-width: 1040px; margin: 2rem auto; padding: 0 1.25rem;">
+    <div class="calc-hero" style="margin-bottom: 2rem;">
+      <h1 style="font-size: 2.3rem; color: var(--text-primary); margin-bottom: 0.5rem;">CAGR Calculator India (Compound Annual Growth Rate)</h1>
+      <div style="font-size: 0.9rem; color: var(--text-muted); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;">
+        <span>Written by Tejas</span>
+        <span>•</span>
+        <span>Standard Geometric Mean Formula</span>
+        <span>•</span>
+        <span>Verified for FY 2026-27</span>
+      </div>
+      <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.6;">
+        Calculate the smoothed annualized return of your mutual fund investments, equity portfolios, startup equity, and real estate purchases over any multi-year period.
+      </p>
+    </div>
+
+    <!-- Interactive Calculator Panel matching SIP Design -->
+    <div class="calc-main-container">
+      <div class="calc-grid" id="calculator-card">
+        <!-- Left: Inputs with Synchronized Sliders -->
+        <div class="calc-card">
+          <h2 style="font-size:1.35rem; font-weight:800; margin-bottom:24px; color:var(--text-primary);">Investment Parameters</h2>
+
+          <div class="calc-field-group">
+            <div class="calc-field-header">
+              <label for="cagr-initial-num">Initial Investment / Purchase Value</label>
+              <div class="calc-input-box">
+                <span class="calc-input-prefix">₹</span>
+                <input aria-label="Initial Investment Input" id="cagr-initial-num" max="100000000" min="1000" step="5000" type="number" value="100000"/>
+              </div>
+            </div>
+            <input aria-label="Initial Investment Slider" id="cagr-initial" max="10000000" min="1000" step="5000" type="range" value="100000"/>
+          </div>
+
+          <div class="calc-field-group">
+            <div class="calc-field-header">
+              <label for="cagr-final-num">Final Value / Current Portfolio Value</label>
+              <div class="calc-input-box">
+                <span class="calc-input-prefix">₹</span>
+                <input aria-label="Final Value Input" id="cagr-final-num" max="1000000000" min="1000" step="5000" type="number" value="250000"/>
+              </div>
+            </div>
+            <input aria-label="Final Value Slider" id="cagr-final" max="25000000" min="1000" step="5000" type="range" value="250000"/>
+          </div>
+
+          <div class="calc-field-group">
+            <div class="calc-field-header">
+              <label for="cagr-years-num">Holding Tenure (Years)</label>
+              <div class="calc-input-box">
+                <input aria-label="Holding Tenure Input" id="cagr-years-num" max="30" min="0.5" step="0.5" type="number" value="5"/>
+                <span class="calc-input-suffix">Yrs</span>
+              </div>
+            </div>
+            <input aria-label="Holding Tenure Slider" id="cagr-years" max="30" min="0.5" step="0.5" type="range" value="5"/>
+          </div>
+        </div>
+
+        <!-- Right: Summary Results & Visuals -->
+        <div class="calc-summary-card">
+          <div>
+            <h3 style="font-size:1.2rem; font-weight:800; color:var(--text-primary); margin-bottom:18px;">Return Analysis</h3>
+            <div class="result-row">
+              <span class="result-label">Absolute Wealth Gain</span>
+              <span class="result-val" id="res-cagr-gain" style="color:#059669;">₹1,50,000</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Absolute Total Return</span>
+              <span class="result-val" id="res-cagr-abs">150.00%</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label">Wealth Multiple</span>
+              <span class="result-val" id="res-cagr-multiple">2.50x</span>
+            </div>
+            <div class="result-row" style="padding-top:18px;">
+              <span class="result-label" style="font-weight:800; color:var(--text-primary);">Compound Annual Growth Rate</span>
+              <span class="result-val highlight" id="res-cagr-pct">20.11% p.a.</span>
+            </div>
+
+            <!-- SVG Visual Donut Ratio -->
+            <div style="margin:28px 0 12px; display:flex; align-items:center; justify-content:center; gap:28px;">
+              <svg aria-label="CAGR Capital vs Gain Ratio" class="donut" height="130" viewbox="0 0 42 42" width="130">
+                <circle class="donut-ring" cx="21" cy="21" fill="transparent" r="15.91549430918954" stroke="#E2E8F0" stroke-width="5.5"></circle>
+                <circle cx="21" cy="21" fill="transparent" id="cagr-donut-segment" r="15.91549430918954" stroke="#00D09C" stroke-dasharray="60 40" stroke-dashoffset="25" stroke-width="5.5"></circle>
+              </svg>
+              <div style="font-size:0.90rem; line-height:1.9;">
+                <div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#00D09C;"></span> <span id="cagr-donut-leg-gain">Capital Gains: 60%</span></div>
+                <div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#CBD5E1;"></span> <span id="cagr-donut-leg-inv">Initial Capital: 40%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="calc-result-disclaimer">
+            CAGR assumes constant geometric compounding over the period. Actual market returns fluctuate year to year.
+          </div>
+          <p class="calc-estimate-note" style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-secondary); text-align:center;">For recurring staggered SIP investments, check XIRR rather than CAGR.</p>
+        </div>
+      </div>
+
+      <!-- Year-by-Year Smooth Compounding Trajectory Table -->
+      <div style="margin-top:42px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-sm);">
+        <h3 style="font-size:1.35rem; font-weight:800; color:var(--text-primary); margin-bottom:8px;">Projected Year-by-Year Compounding Curve</h3>
+        <p style="font-size:0.96rem; color:var(--text-secondary); margin-bottom:20px;">The theoretical smoothed annual growth path required to reach the final valuation at this CAGR.</p>
+        <div class="table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Starting Valuation</th>
+                <th>Annual Accrued Growth</th>
+                <th>Cumulative Wealth Gain</th>
+                <th>Closing Portfolio Valuation</th>
+              </tr>
+            </thead>
+            <tbody id="cagr-schedule-tbody">
+              <!-- Dynamically populated via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Comprehensive Editorial Sections matching SIP Layout -->
+      <div class="info-section-card" style="margin-top:42px;">
+        <h2 style="font-size:1.6rem; font-weight:800; color:var(--text-primary); margin-bottom:16px;">What Is CAGR (Compound Annual Growth Rate)? Complete Indian Investor Guide</h2>
+        <p style="font-size:1.05rem; line-height:1.75; color:var(--text-secondary); margin-bottom:16px;">
+          Compound Annual Growth Rate (CAGR) is the single most widely used metric in Indian finance to measure the smoothed annual return of a point-to-point lump-sum investment. Whether analyzing mutual fund factsheets, evaluating Nifty 50 long-term performance, assessing real estate land appreciation in Bangalore, or reviewing unlisted startup shares, CAGR cuts through the noise of annual volatility.
+        </p>
+        <p style="font-size:1.05rem; line-height:1.75; color:var(--text-secondary); margin-bottom:20px;">
+          Unlike basic average annual return—which fails miserably when dealing with compounding or negative market drawdown years—CAGR computes the geometric progression rate at which your initial capital grew into your terminal valuation.
+        </p>
+
+        <h3 style="font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">The Exact Mathematical Formula</h3>
+        <p style="font-size:1rem; line-height:1.7; color:var(--text-secondary);">
+          CAGR is calculated mathematically using the geometric mean formula:
+        </p>
+        <div style="background:var(--bg-elevated); border-left:4px solid var(--emerald); padding:16px 20px; font-family:monospace; font-size:1.15rem; margin:16px 0; border-radius:4px;">
+          CAGR = [ (Final Value / Initial Value) ^ (1 / Number of Years) ] - 1
+        </div>
+        <p style="font-size:0.96rem; color:var(--text-secondary); line-height:1.7;">
+          Where:<br>
+          • <strong>Final Value:</strong> Current portfolio value or sale price realized.<br>
+          • <strong>Initial Value:</strong> Starting investment capital or initial purchase cost.<br>
+          • <strong>Years:</strong> Total duration between investment date and exit date (fractional years supported).
+        </p>
+
+        <h3 style="font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">Step-by-Step Worked Numerical Example in INR</h3>
+        <p style="font-size:1rem; line-height:1.7; color:var(--text-secondary);">
+          Suppose in April 2020, you invested ₹1,00,000 as a lump-sum into an Indian Flexi Cap mutual fund. By April 2025 (exactly 5 years later), your mutual fund folio value grew to ₹2,50,000.
+        </p>
+        <ul style="font-size:0.98rem; line-height:1.8; color:var(--text-secondary); margin-left:20px; margin-bottom:20px;">
+          <li><strong>Step 1:</strong> Compute the growth multiple = ₹2,50,000 / ₹1,00,000 = 2.50x.</li>
+          <li><strong>Step 2:</strong> Determine the power exponent = 1 / 5 = 0.20.</li>
+          <li><strong>Step 3:</strong> Calculate 2.50 ^ 0.20 = 1.20112.</li>
+          <li><strong>Step 4:</strong> Subtract 1 = 0.20112 or <strong>20.11% CAGR</strong> per annum.</li>
+        </ul>
+        <p style="font-size:0.98rem; color:var(--text-secondary); line-height:1.7;">
+          Even if the fund crashed -15% in Year 2 and surged +45% in Year 4, 20.11% CAGR represents the exact uniform rate of annual compound growth that converts ₹1 Lakh into ₹2.5 Lakhs across 5 years.
+        </p>
+
+        <h3 style="font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">CAGR vs XIRR vs Absolute Return Comparison</h3>
+        <div class="table-wrapper" style="margin:20px 0;">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Best Used For</th>
+                <th>Considers Time Duration?</th>
+                <th>Handles Multiple Cash Flows?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="font-weight:700;">CAGR</td>
+                <td>Lump-sum point-to-point investments (Stocks, Gold, FD, Property)</td>
+                <td>Yes (Smoothed Annualized)</td>
+                <td>No (Strictly one entry and one exit)</td>
+              </tr>
+              <tr>
+                <td style="font-weight:700;">XIRR</td>
+                <td>Systematic Investment Plans (SIP), periodic SWP, dividend reinvestments</td>
+                <td>Yes (Cash-flow weighted)</td>
+                <td>Yes (Any arbitrary transaction dates)</td>
+              </tr>
+              <tr>
+                <td style="font-weight:700;">Absolute Return</td>
+                <td>Short durations (< 1 year) or simple total gain percentages</td>
+                <td>No (Misleading over multi-year periods)</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FAQ Section Accordion matching SIP page -->
+      <div class="info-section-card" style="margin-top:42px;">
+        <h2 style="font-size:1.5rem; font-weight:800; color:var(--text-primary); margin-bottom:24px;">Frequently Asked Questions About CAGR</h2>
+        <div class="faq-list">
+          <details class="faq-item" style="border-bottom:1px solid var(--border-soft); padding:16px 0;">
+            <summary style="font-weight:700; font-size:1.05rem; cursor:pointer; color:var(--text-primary);">Why can I not use CAGR for my monthly SIP returns?</summary>
+            <p style="margin-top:10px; font-size:0.98rem; line-height:1.7; color:var(--text-secondary);">
+              In an SIP, you make fresh investments every month. An installment invested in Month 1 compounds for 60 months, while an installment deposited in Month 59 compounds for just 1 month. CAGR assumes the entire capital was invested on Day 1. Using CAGR for SIP results in inaccurate numbers. For SIPs, SEBI mandates and mutual fund houses use <strong>XIRR (Extended Internal Rate of Return)</strong>.
+            </p>
+          </details>
+
+          <details class="faq-item" style="border-bottom:1px solid var(--border-soft); padding:16px 0;">
+            <summary style="font-weight:700; font-size:1.05rem; cursor:pointer; color:var(--text-primary);">Does CAGR reflect the actual year-to-year returns of an asset?</summary>
+            <p style="margin-top:10px; font-size:0.98rem; line-height:1.7; color:var(--text-secondary);">
+              No. CAGR is a geometric average that smoothens out real-world volatility. A fund delivering 15% CAGR over 3 years may have had annual returns of +30%, -10%, and +25%. It only tells you the steady annualized rate needed to reach the final sum from the starting sum.
+            </p>
+          </details>
+
+          <details class="faq-item" style="border-bottom:1px solid var(--border-soft); padding:16px 0;">
+            <summary style="font-weight:700; font-size:1.05rem; cursor:pointer; color:var(--text-primary);">How is capital gains tax applied on CAGR gains in India?</summary>
+            <p style="margin-top:10px; font-size:0.98rem; line-height:1.7; color:var(--text-secondary);">
+              Tax is levied on the absolute net capital gain upon redemption, not on the theoretical annual CAGR. Under Union Budget 2024 (effective FY 2024-25 through FY 2026-27), Long-Term Capital Gains (LTCG) on listed equity and equity mutual funds held over 12 months are taxed at 12.5% on profits exceeding ₹1.25 Lakh per financial year. Short-Term Capital Gains (STCG) are taxed at 20%.
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <!-- Thinking Framework -->
+      <div id="thinking-framework" style="margin-top:42px; background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:32px;">
+        <h3 style="font-size:1.3rem; font-weight:800; color:var(--text-primary); margin-bottom:12px;">How to Evaluate CAGR Like an Institutional Investor</h3>
+        <p style="font-size:1rem; line-height:1.7; color:var(--text-secondary); margin-bottom:16px;">
+          When evaluating a mutual fund scheme or stock portfolio based on CAGR, ask these three critical questions:
+        </p>
+        <ol style="font-size:0.98rem; line-height:1.8; color:var(--text-secondary); margin-left:20px;">
+          <li><strong>Point-to-Point Sensitivity:</strong> Did the chosen start or end date coincide with an artificial market peak or trough? A 5-year CAGR measured from the March 2020 COVID low will look artificially inflated.</li>
+          <li><strong>Benchmark Outperformance:</strong> Did the portfolio generate Alpha over its category benchmark (e.g., Nifty 50 TRI or BSE 500 TRI) over 3, 5, and 10-year rolling windows?</li>
+          <li><strong>Inflation-Adjusted Real CAGR:</strong> If your asset delivered 10% nominal CAGR while consumer CPI inflation averaged 6%, your real purchasing power growth was only ~3.77% per year.</li>
+        </ol>
+      </div>
+
+      <!-- Regulatory & Educational References -->
+      <div style="margin-top:42px; padding:24px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md);">
+        <h4 style="font-size:1.1rem; font-weight:700; color:var(--text-primary); margin-bottom:10px;">Sources, Standards &amp; Regulatory References</h4>
+        <ul style="font-size:0.88rem; color:var(--text-secondary); line-height:1.7; list-style-type:disc; padding-left:20px;">
+          <li>Association of Mutual Funds in India (AMFI) Best Practice Guidelines on Performance Reporting.</li>
+          <li>Securities and Exchange Board of India (SEBI) Mutual Fund Categorization and Disclosure Norms.</li>
+          <li>Income Tax Department, Government of India — Capital Gains Provisions under Section 112A.</li>
+        </ul>
+      </div>
+
+      <!-- Related Tools Grid -->
+      <div style="margin-top:42px;">
+        <h3 style="font-size:1.25rem; font-weight:800; color:var(--text-primary); margin-bottom:18px;">Related Calculators &amp; Investment Guides</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:18px;">
+          <a href="/lumpsum.html" style="display:block; padding:18px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); text-decoration:none; color:inherit; transition:border-color 0.2s;">
+            <div style="font-weight:700; color:var(--emerald-dark); margin-bottom:6px;">Lump-Sum Calculator &rarr;</div>
+            <div style="font-size:0.88rem; color:var(--text-secondary);">Project future value of a one-time investment at expected return rates.</div>
+          </a>
+          <a href="/" style="display:block; padding:18px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); text-decoration:none; color:inherit; transition:border-color 0.2s;">
+            <div style="font-weight:700; color:var(--emerald-dark); margin-bottom:6px;">SIP Calculator &rarr;</div>
+            <div style="font-size:0.88rem; color:var(--text-secondary);">Model monthly rupee cost averaging and power of compounding.</div>
+          </a>
+          <a href="/compound-interest-calculator.html" style="display:block; padding:18px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); text-decoration:none; color:inherit; transition:border-color 0.2s;">
+            <div style="font-weight:700; color:var(--emerald-dark); margin-bottom:6px;">Compound Interest &rarr;</div>
+            <div style="font-size:0.88rem; color:var(--text-secondary);">Simulate quarterly, monthly, and annual compounding frequencies.</div>
+          </a>
+          <a href="/cagr-vs-xirr-vs-absolute-return-guide-india.html" style="display:block; padding:18px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-md); text-decoration:none; color:inherit; transition:border-color 0.2s;">
+            <div style="font-weight:700; color:var(--emerald-dark); margin-bottom:6px;">CAGR vs XIRR Guide &rarr;</div>
+            <div style="font-size:0.88rem; color:var(--text-secondary);">Deep dive into mathematical formulas with Excel models.</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/"><img src="/logo-footer.svg" alt="Calculatorship — Free Financial Calculators for Indian Investors" width="200" height="36" style="display:block;" loading="lazy"></a>
+          <p class="footer-tagline">Independent financial calculators and educational guides explaining how money maths works for Indian salaried professionals and retail investors.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>Calculators</h3>
+            <ul>
+              <li><a href="/">SIP Calculator</a></li>
+              <li><a href="/lumpsum.html">Lumpsum Calculator</a></li>
+              <li><a href="/step-up.html">Step-Up SIP</a></li>
+              <li><a href="/cagr-calculator.html">CAGR Calculator</a></li>
+              <li><a href="/compound-interest-calculator.html">Compound Interest</a></li>
+              <li><a href="/ppf-calculator.html">PPF Calculator</a></li>
+              <li><a href="/epf-calculator.html">EPF Calculator</a></li>
+              <li><a href="/nps-calculator.html">NPS Calculator</a></li>
+              <li><a href="/fd-calculator.html">FD Calculator</a></li>
+              <li><a href="/rd-calculator.html">RD Calculator</a></li>
+              <li><a href="/calculators.html" style="font-weight:700; color:var(--emerald);">Browse All 21 Tools &rarr;</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Legal &amp; Policy</h3>
+            <ul>
+              <li><a href="/editorial-policy.html">Editorial Policy</a></li>
+              <li><a href="/corrections.html">Corrections Log</a></li>
+              <li><a href="/disclaimer.html">Disclaimer</a></li>
+              <li><a href="/terms.html">Terms of Use</a></li>
+              <li><a href="/privacy.html">Privacy Policy</a></li>
+              <li><a href="/cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/blog.html">Blog &amp; Guides</a></li>
+              <li><a href="/sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <strong>Educational Resource Notice:</strong> Calculatorship is an independent educational site run by a student. It is not registered with SEBI, AMFI, or RBI. Content and calculation tools are for educational awareness only and never constitute investment, tax, or legal advice. Mutual fund investments are subject to market risks. Real returns and tax rules vary. Check official notices and consult a qualified adviser before acting.
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 Calculatorship. All rights reserved. | <a href="/disclaimer.html">Disclaimer</a> | <a href="/terms.html">Terms</a> | <a href="/privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" stroke-width="2.5" fill="none" stroke="currentColor"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="theme.js?v=2.2"></script>
+
+  <script>
+    (function() {
+      function syncPair(numId, rangeId, callback) {
+        const num = document.getElementById(numId);
+        const range = document.getElementById(rangeId);
+        if (!num || !range) return;
+
+        num.addEventListener('input', () => {
+          range.value = num.value;
+          callback();
+        });
+        range.addEventListener('input', () => {
+          num.value = range.value;
+          callback();
+        });
+      }
+
+      function calculateCAGR() {
+        const initial = Math.max(1, parseFloat(document.getElementById('cagr-initial').value) || 0);
+        const finalVal = Math.max(0, parseFloat(document.getElementById('cagr-final').value) || 0);
+        const years = Math.max(0.1, parseFloat(document.getElementById('cagr-years').value) || 1);
+
+        const cagr = (Math.pow(finalVal / initial, 1 / years) - 1) * 100;
+        const gain = finalVal - initial;
+        const absReturn = (gain / initial) * 100;
+        const multiple = (finalVal / initial).toFixed(2);
+
+        document.getElementById('res-cagr-pct').textContent = isFinite(cagr) ? cagr.toFixed(2) + '% p.a.' : '0.00% p.a.';
+        document.getElementById('res-cagr-gain').textContent = '₹' + Math.round(gain).toLocaleString('en-IN');
+        document.getElementById('res-cagr-abs').textContent = isFinite(absReturn) ? absReturn.toFixed(2) + '%' : '0.00%';
+        document.getElementById('res-cagr-multiple').textContent = isFinite(multiple) ? multiple + 'x' : '0.00x';
+
+        // Donut Chart
+        const total = Math.max(finalVal, initial);
+        const gainRatio = total > 0 ? Math.max(0, (gain / total) * 100) : 0;
+        const invRatio = total > 0 ? (initial / total) * 100 : 100;
+
+        const donutSegment = document.getElementById('cagr-donut-segment');
+        if (donutSegment) {
+          const dashVal = Math.min(Math.max(gainRatio, 0), 100);
+          donutSegment.setAttribute('stroke-dasharray', `${dashVal.toFixed(1)} ${(100 - dashVal).toFixed(1)}`);
+        }
+
+        const legGain = document.getElementById('cagr-donut-leg-gain');
+        const legInv = document.getElementById('cagr-donut-leg-inv');
+        if (legGain) legGain.textContent = `Capital Gains: ${gainRatio.toFixed(1)}%`;
+        if (legInv) legInv.textContent = `Initial Capital: ${invRatio.toFixed(1)}%`;
+
+        // Dynamic Projected Table
+        const tbody = document.getElementById('cagr-schedule-tbody');
+        if (tbody) {
+          let rowsHtml = '';
+          const intYears = Math.min(Math.ceil(years), 30);
+          const annualRate = isFinite(cagr) ? (cagr / 100) : 0;
+          let currentVal = initial;
+
+          for (let yr = 1; yr <= intYears; yr++) {
+            const nextVal = initial * Math.pow(1 + annualRate, yr);
+            const yrGain = nextVal - currentVal;
+            const cumGain = nextVal - initial;
+
+            rowsHtml += `
+              <tr>
+                <td style="font-weight:700;">Year ${yr}</td>
+                <td>₹${Math.round(currentVal).toLocaleString('en-IN')}</td>
+                <td style="color:#059669; font-weight:600;">+₹${Math.round(yrGain).toLocaleString('en-IN')}</td>
+                <td style="color:#059669; font-weight:700;">₹${Math.round(cumGain).toLocaleString('en-IN')}</td>
+                <td style="font-weight:700;">₹${Math.round(nextVal).toLocaleString('en-IN')}</td>
+              </tr>
+            `;
+            currentVal = nextVal;
+          }
+          tbody.innerHTML = rowsHtml;
+        }
+      }
+
+      syncPair('cagr-initial-num', 'cagr-initial', calculateCAGR);
+      syncPair('cagr-final-num', 'cagr-final', calculateCAGR);
+      syncPair('cagr-years-num', 'cagr-years', calculateCAGR);
+
+      calculateCAGR();
+    })();
+  </script>
+</body>
+</html>

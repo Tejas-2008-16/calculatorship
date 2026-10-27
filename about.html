@@ -52,26 +52,55 @@
       <a href="/" class="brand" aria-label="Calculatorship Homepage">
         <img src="/logo-light.svg" alt="Calculatorship — Free Financial Calculators for Indian Investors" width="220" height="38" loading="lazy">
       </a>
-      <nav class="main-nav" aria-label="Primary Navigation">
+      <nav aria-label="Primary Navigation" class="main-nav">
         <div class="nav-dropdown">
-          <a href="/" class="nav-dropdown-toggle">Calculators</a>
-          <ul class="nav-dropdown-menu" role="menu">
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/lumpsum">Lumpsum Calculator</a></li>
-            <li><a href="/step-up">Step-Up SIP</a></li>
-            <li><a href="/goal">Goal Planner</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/swp-calculator">SWP Calculator</a></li>
-            <li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-            <li class="nav-dropdown-divider" role="separator"></li>
-            <li><a href="/fd-calculator">FD Calculator</a></li>
-            <li><a href="/budget-planner">Budget Planner</a></li>
-            <li><a href="/income-tax-calculator">Tax Calculator</a></li>
-          </ul>
+          <a class="nav-dropdown-toggle" href="/calculators.html">Calculators</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <div class="nav-dropdown-grid">
+              <div class="nav-dropdown-group">
+                <div class="nav-dropdown-group-title">Investing</div>
+                <ul class="nav-dropdown-group-list">
+                  <li><a href="/">SIP Calculator</a></li>
+                  <li><a href="/lumpsum.html">Lumpsum</a></li>
+                  <li><a href="/step-up.html">Step-Up SIP</a></li>
+                  <li><a href="/cagr-calculator.html">CAGR Calculator</a></li>
+                  <li><a href="/compound-interest-calculator.html">Compound Interest</a></li>
+                  <li><a href="/simple-interest-calculator.html">Simple Interest</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-group">
+                <div class="nav-dropdown-group-title">Retirement &amp; Banking</div>
+                <ul class="nav-dropdown-group-list">
+                  <li><a href="/ppf-calculator.html">PPF Calculator</a></li>
+                  <li><a href="/epf-calculator.html">EPF Calculator</a></li>
+                  <li><a href="/nps-calculator.html">NPS Calculator</a></li>
+                  <li><a href="/swp-calculator.html">SWP Calculator</a></li>
+                  <li><a href="/fd-calculator.html">FD Calculator</a></li>
+                  <li><a href="/rd-calculator.html">RD Calculator</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-group">
+                <div class="nav-dropdown-group-title">Tax, Salary &amp; Loans</div>
+                <ul class="nav-dropdown-group-list">
+                  <li><a href="/income-tax-calculator.html">Income Tax (FY 26-27)</a></li>
+                  <li><a href="/in-hand-salary-calculator.html">In-Hand Salary</a></li>
+                  <li><a href="/hra-calculator.html">HRA Exemption</a></li>
+                  <li><a href="/gratuity-calculator.html">Gratuity (15/26)</a></li>
+                  <li><a href="/gst-calculator.html">GST Calculator</a></li>
+                  <li><a href="/emi-calculator.html">Loan EMI &amp; Prepay</a></li>
+                  <li><a href="/budget-planner.html">50/30/20 Budget</a></li>
+                  <li><a href="/inflation-calculator.html">Inflation Planner</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-dropdown-footer">
+              <a href="/calculators.html">Browse All 21 Calculators Directory &rarr;</a>
+            </div>
+          </div>
         </div>
-        <a href="/blog">Blog &amp; Guides</a>
-        <a href="/about" class="active">About</a>
-        <a href="/contact">Contact</a>
+        <a href="/blog.html">Blog &amp; Guides</a>
+        <a href="/about.html" class="active">About</a>
+        <a href="/contact.html">Contact</a>
       </nav>
       <div class="header-actions">
         <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
@@ -101,7 +130,17 @@
 
         <section style="margin-bottom:2rem;">
           <h2 style="font-size:1.35rem; font-weight:700; margin-bottom:0.75rem;">Who I Am</h2>
-          <p>Hi, I am <strong>Tejas</strong>. I am a student living in India who is interested in personal finance, mathematics, and building simple tools on the web. I created Calculatorship as a personal project to practice web programming and share straightforward calculations for common Indian money questions.</p>
+          <div style="display:flex; gap:20px; align-items:flex-start; margin-bottom:1rem; flex-wrap:wrap;">
+            <div style="width:72px; height:72px; border-radius:50%; background:var(--emerald-soft); border:2px solid var(--emerald-border); display:flex; align-items:center; justify-content:center; font-size:1.8rem; font-weight:800; color:var(--emerald-dark); flex-shrink:0;">
+              T
+            </div>
+            <div style="flex:1; min-width:260px;">
+              <p style="margin:0 0 8px;">Hi, I am <strong>Tejas</strong>. I am an engineering student in India researching personal finance, mathematics, and building simple tools on the web. I created Calculatorship as a self-funded project to practice programming and provide transparent calculations for common Indian money questions.</p>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">
+                [OWNER TO FILL: Optional personal photo, university/location note, and verified social profiles: LinkedIn, GitHub, or X].
+              </p>
+            </div>
+          </div>
         </section>
 
         <section style="margin-bottom:2rem;">
@@ -110,8 +149,9 @@
         </section>
 
         <section style="margin-bottom:2rem;">
-          <h2 style="font-size:1.35rem; font-weight:700; margin-bottom:0.75rem;">How Guides Are Made</h2>
-          <p>I draft guides by reading public circulars and official publications from government portals like the Income Tax Department (incometax.gov.in), SEBI (sebi.gov.in), AMFI (amfiindia.com), and the RBI (rbi.org.in). I write out the explanations, use AI tools to assist with drafting and structuring the text, and then check each number, formula, and limit by hand against the official source before publishing. Every guide carries a note stating when its figures were last reviewed.</p>
+          <h2 style="font-size:1.35rem; font-weight:700; margin-bottom:0.75rem;">How Guides & Numbers Are Verified</h2>
+          <p>I draft guides by reading public circulars and official publications from government portals like the Income Tax Department (incometaxindia.gov.in), SEBI (sebi.gov.in), AMFI (amfiindia.com), and the RBI (rbi.org.in). I write out the explanations, use AI tools to assist with drafting and structuring the text, and then check each number, formula, and limit by hand against the official source before publishing. Every guide carries a note stating when its figures were last reviewed.</p>
+          <p>Read our full <a href="/editorial-policy.html" style="color:var(--emerald); text-decoration:underline; font-weight:600;">Editorial & Verification Policy</a> and view our public <a href="/corrections.html" style="color:var(--emerald); text-decoration:underline; font-weight:600;">Corrections Log</a>.</p>
         </section>
 
         <section style="margin-bottom:2rem;">
@@ -122,7 +162,7 @@
 
         <section style="margin-bottom:2rem;">
           <h2 style="font-size:1.35rem; font-weight:700; margin-bottom:0.75rem;">How Errors Are Handled</h2>
-          <p>If you spot an outdated rule, a typo, or a calculation discrepancy, please report it through the <a href="/contact">on-page feedback form on the Contact page</a>. I review feedback and update the code or article directly.</p>
+          <p>If you spot an outdated rule, a typo, or a calculation discrepancy, please report it through the <a href="/contact.html">Contact & Error Reporting page</a> or email [OWNER TO FILL: contact email]. All confirmed rectifications are published to our <a href="/corrections.html">Corrections Log</a>.</p>
         </section>
       </div>
     </div>
