@@ -2,7 +2,6 @@
 # Clean, consolidated crawler directives
 
 User-agent: *
-Content-Signal: search=yes,ai-train=no,use=reference
 Allow: /
 Disallow: /admin/
 Disallow: /admin-cp/
@@ -13,39 +12,49 @@ Disallow: /*.json$
 # Search Engines
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 0
 
-# AI scrapers and training bots
-User-agent: Amazonbot
-Disallow: /
-
-User-agent: Applebot-Extended
-Disallow: /
-
-User-agent: Bytespider
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: CloudflareBrowserRenderingCrawler
-Disallow: /
-
+# AI Search and Answer Engines (Explicitly Allowed for GEO Citation)
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
-User-agent: meta-externalagent
-Disallow: /
+User-agent: OAI-SearchBot
+Allow: /
 
-# Sitemap
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap Index / Sitemap
 Sitemap: https://www.calculatorship.in/sitemap.xml
