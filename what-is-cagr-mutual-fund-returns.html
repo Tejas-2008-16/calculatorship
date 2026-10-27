@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html data-theme="light" lang="en-IN">
 <head>
@@ -131,7 +131,7 @@
           "name": "How do I find the CAGR of a mutual fund?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Every mutual fund's factsheet (available on AMFI's website or the fund's AMC site) shows 1-year, 3-year, and 5-year CAGR figures. You can also find these on platforms like Groww, Zerodha Coin, or MF Central. Always compare the fund's CAGR to its benchmark index CAGR over the same period."
+            "text": "Every mutual fund factsheet published on AMFI India or AMC websites discloses statutory 1-year, 3-year, and 5-year CAGR figures alongside scheme benchmark indices."
           }
         }
       ]
@@ -188,10 +188,11 @@
 </div>
 <header class="article-header">
 <span class="article-cat" style="color: var(--emerald-bright);">Investing Basics</span>
-<h1>What is CAGR? How to Use It to Compare Mutual Fund Returns</h1><div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
+<h1>What is CAGR? Mathematical Mechanics &amp; Application in Mutual Funds</h1>
+<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
+<strong>Hi, I'm Tejas — an engineering student researching personal finance.</strong> This guide explores the mathematical formulation of Compound Annual Growth Rate (CAGR) and how it differs from absolute return and XIRR under SEBI disclosure norms. It is written with AI assistance and checked against regulatory standards. It is purely educational and does not constitute investment advice.
 </div>
-<p class="article-intro">You're comparing two mutual funds. Fund A returned 45% last year. Fund B returned 12% every single year for the past 5 years. Which one actually made you more money? The answer surprises most people — and understanding CAGR is the only way to get it right.</p>
+<p class="article-intro">Evaluating financial performance across multi-year holding periods requires accounting for time. Compound Annual Growth Rate (CAGR) computes the constant geometric progression rate that would transition an investment from starting capital to its terminal value. Here is how CAGR is calculated, where it applies, and when XIRR must be used instead.</p>
 <div class="article-meta">
 <span> July 30, 2026</span>
 <span>By Tejas</span>
@@ -201,8 +202,8 @@
 <article class="article-main" id="article-body">
 <a class="back-to-blog" href="https://www.calculatorship.in/blog.html">← Back to Articles</a>
 <div class="article-body">
-<p>Most investors look at absolute returns — the raw percentage gain over a period — to judge whether a fund performed well. It feels intuitive. 45% is bigger than 12%, so Fund A must be better, right? Not necessarily. Absolute returns strip out the most important variable in investing: <strong>time</strong>. CAGR puts time back into the equation.</p>
-<p>Fund A with 45% in one year is fine. But Fund B with 12% every year for 5 years? That turns ₹1 lakh into ₹1,76,234. Fund A, if it delivered 0% for the other 4 years, only ends at ₹1,45,000. Fund B wins — by a large margin. This is why CAGR is the only honest metric for comparing investments across time.</p>
+<p>When analyzing investment statements, individual investors frequently encounter simple absolute returns — the raw percentage increase between purchase and valuation. However, absolute return ignores the variable of <strong>duration</strong>. A 50% absolute gain achieved over 2 years represents a fundamentally different annualized growth rate than a 50% gain accumulated over 8 years.</p>
+<p>To establish meaningful comparisons across different instruments and varying holding tenures, regulators and financial analysts use annualized compounding metrics. In Indian mutual funds, SEBI mandates specific return disclosure standards based on investment holding periods.</p>
 <h2 id="what-is-cagr">What Does CAGR Stand For?</h2>
 <p>CAGR stands for <strong>Compound Annual Growth Rate</strong>. It is the single, smoothed annual rate of return that would take your investment from its starting value to its ending value, assuming it grew at the same pace every year. Think of it as the "steady speed" equivalent of a drive where you sometimes hit 120 km/h and sometimes crawl at 40 km/h.</p>
 <p>Markets are volatile. A fund might return 35% one year, -18% the next, and 22% the year after. CAGR distills all that chaos into one representative annual figure. It does not tell you how bumpy the ride was — for that, you look at standard deviation or Sharpe ratio — but it tells you exactly where you ended up, on a per-year basis.</p>
@@ -235,38 +236,48 @@
 <strong>XIRR = Extended Internal Rate of Return</strong>
 <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.8;">XIRR accounts for the exact date and amount of every individual cash flow — every SIP installment — and calculates the annualized return that makes the net present value of all those flows equal to zero. It is the only accurate measure for SIP returns.</p>
 </div>
-<p>When you log in to Groww, Zerodha Coin, or CAMS, the return shown for your SIP portfolio is XIRR — not CAGR. If you see "Your SIP has delivered 14.3% XIRR," that is your true annualized return on your SIP investments accounting for every instalment date. Compare it to the fund's benchmark XIRR (or 5Y CAGR as a rough proxy) to see if the fund is actually adding value.</p>
-<h2 id="good-cagr">What's a "Good" CAGR for Indian Mutual Funds?</h2>
-<p>Here are realistic CAGR benchmarks for different fund categories in India, based on long-run AMFI and NSE data:</p>
+<p>On mutual fund statements and transaction portals (such as MF Central, RTA portals CAMS/KFintech, or SEBI-registered brokers), the return displayed for an ongoing SIP portfolio is <strong>XIRR — not CAGR</strong>. When an investor sees "Your SIP portfolio has delivered 14.3% XIRR", that figure indicates the annualized return across all individual cash flow dates. For a single point-to-point lumpsum, CAGR remains the appropriate mathematical metric.</p>
+<h2 id="good-cagr">Long-Term Benchmark Indices &amp; Category Context in India</h2>
+<p>To contextualize mutual fund returns without relying on prescriptive targets, investors analyze long-term historical data from broad market indices:</p>
 <ul>
-<li><strong>Nifty 50 TRI (Index Benchmark):</strong> ~12–13% CAGR over rolling 15–20 year periods</li>
-<li><strong>Large-Cap Active Funds:</strong> 12–14% CAGR (top quartile over 5Y)</li>
-<li><strong>Flexi-Cap / Multi-Cap Funds:</strong> 13–15% CAGR (varies widely by manager)</li>
-<li><strong>Small-Cap Funds:</strong> 15–18% CAGR in bull markets (but far higher volatility and drawdowns)</li>
-<li><strong>Balanced Advantage Funds:</strong> 9–11% CAGR (smoother ride, lower peaks)</li>
-<li><strong>Bank Fixed Deposits:</strong> 6.5–7.5% (Fixed, but inflation-adjusted returns are near zero)</li>
+<li><strong>Nifty 50 Total Returns Index (TRI):</strong> Represents large-cap market performance, incorporating dividend reinvestment.</li>
+<li><strong>Nifty Midcap 150 TRI / Nifty Smallcap 250 TRI:</strong> Higher historical volatility, with extended cyclical drawdowns alongside periods of sharp growth.</li>
+<li><strong>CRISIL Composite Bond Fund Index:</strong> Reflects sovereign and corporate fixed income yields with lower capital volatility.</li>
 </ul>
 <div class="callout key">
-<strong>✓ Pro Tip:</strong> A fund that consistently beats its benchmark (say, the Nifty 50) by 1.5–2% per year over a 10-year period is genuinely exceptional. Most active funds fail this test after accounting for expense ratios. This is why many savvy Indian investors prefer low-cost index funds that simply match the benchmark CAGR.
+<strong>Regulatory Insight:</strong> Under SEBI circulars, all active mutual fund schemes must benchmark their performance against a Total Returns Index (TRI) rather than a Price Return Index (PRI). This ensures that dividend distributions are factored into the benchmark comparison, preventing fund managers from reporting artificial alpha.
           </div>
-<p>Try plugging different CAGR rates into our <a href="https://www.calculatorship.in/">SIP Calculator</a> — enter 10%, 12%, and 14% separately for a ₹10,000/month SIP over 20 years. The difference in final corpus is staggering and will immediately show you why chasing a higher-CAGR fund (responsibly) matters.</p>
-<h2 id="compare-funds">How to Use CAGR to Compare Two Funds</h2>
-<p>Here is a practical, step-by-step method to compare two mutual funds using CAGR:</p>
+<p>To examine how varying growth rates alter final capital over extended periods, simulate multi-rate projections on our <a href="https://www.calculatorship.in/">SIP Calculator</a> or <a href="https://www.calculatorship.in/lumpsum.html">Lumpsum Calculator</a>.</p>
+<h2 id="compare-funds">How to Mathematically Evaluate Mutual Fund Performance</h2>
+<p>When reviewing factsheet data to understand past compounding:</p>
 <ol>
-<li><strong>Pull the fund factsheets:</strong> Go to AMFI's website (amfiindia.com) or the AMC's own website. Download the latest factsheet for both funds you are comparing.</li>
-<li><strong>Find the 5-year CAGR:</strong> Every factsheet shows 1Y, 3Y, and 5Y CAGR returns. Focus on the 5Y CAGR — it represents one full market cycle and filters out lucky one-year spikes.</li>
-<li><strong>Compare both to the Nifty 50 benchmark:</strong> The factsheet also shows the benchmark's return over the same period. If Fund A delivered 13.5% but the Nifty 50 delivered 12.8%, Fund A added 0.7% alpha — which is barely meaningful after accounting for higher expense ratio.</li>
-<li><strong>Check the expense ratio:</strong> A fund with 14% CAGR and a 1.8% expense ratio is delivering 12.2% net returns. An index fund with 12.5% CAGR and a 0.1% expense ratio delivers 12.4% net. The "worse" CAGR fund is actually better.</li>
-<li><strong>Look at rolling returns, not just point-to-point:</strong> A fund that delivered 14% CAGR from January 2019 to January 2024 might show 8% CAGR from July 2019 to July 2024. Rolling 5Y returns (checked across different start dates) give a far more honest picture of consistency.</li>
+<li><strong>Access Statutory Scheme Factsheets:</strong> Download the monthly factsheet from AMFI India or the fund house's official portal.</li>
+<li><strong>Examine Multi-Year Rolling CAGR:</strong> Point-to-point 1-year or 3-year returns can be heavily distorted by starting or ending market spikes. Rolling returns across 5-year and 7-year windows illustrate performance across bull and bear cycles.</li>
+<li><strong>Compare Directly to the Scheme Benchmark:</strong> Review whether the fund's net CAGR exceeds its stated TRI benchmark over identical timeframes.</li>
+<li><strong>Account for Total Expense Ratio (TER):</strong> Factsheet returns are net of TER, but direct plans consistently retain an annualized compounding advantage over regular plans due to the absence of distribution commissions.</li>
 </ol>
-<div class="callout info">
-<strong>💡 Key Insight:</strong> When two funds have similar 5Y CAGRs, pick the one with the lower expense ratio. In long-term compounding, a 0.5% lower expense ratio compounds into lakhs of rupees of additional wealth over 20+ years. Use our <a href="https://www.calculatorship.in/lumpsum.html">Lumpsum Calculator</a> to model the difference between 11.5% and 12% CAGR over 20 years — the gap will surprise you.
-          </div>
+
+<div class="thinking-box" style="background:#f0fdf4; border:1px solid #86efac; padding:1.25rem; margin:1.5rem 0; border-radius:8px;">
+<h3 style="margin-top:0; color:#166534; font-size:1.05rem;">How to Think About This Yourself</h3>
+<ul style="margin-bottom:0; color:#14532d; line-height:1.65;">
+<li><strong>Smoothing vs Reality:</strong> CAGR provides a smoothed mathematical annual average. It does not reflect intermediate drawdowns, volatility, or recovery paths.</li>
+<li><strong>Lumpsum vs Periodic Inflows:</strong> Use CAGR for single cash-in/cash-out horizons. Always use XIRR when analyzing recurring installments or systematic withdrawals.</li>
+<li><strong>Look beyond past numbers:</strong> Past CAGR reflects historical market conditions and asset valuations at specific cutoff dates. It cannot guarantee future trajectory.</li>
+</ul>
+</div>
+
+<div class="help-box" style="background:#eff6ff; border:1px solid #93c5fd; padding:1.25rem; margin:1.5rem 0; border-radius:8px;">
+<h3 style="margin-top:0; color:#1e40af; font-size:1.05rem;">Where to Get Personalised Help</h3>
+<p style="margin-bottom:0; color:#1e3a8a; line-height:1.65;">
+Factsheets and historical NAV data are available publicly on the <a href="https://www.amfiindia.com" target="_blank" rel="noopener">AMFI India portal</a>. If you need personalized evaluation of your portfolio's risk-adjusted returns or asset allocation, consult a fee-only SEBI-Registered Investment Adviser (RIA) via the <a href="https://www.sebi.gov.in" target="_blank" rel="noopener">official SEBI directory</a>.
+</p>
+</div>
+
 <h2 id="faqs">Frequently Asked Questions</h2>
 <section aria-label="Frequently Asked Questions" class="faq-section">
 <div class="faq-item">
 <h3>What is the difference between CAGR and absolute return?</h3>
-<p>Absolute return shows total percentage gain over the full holding period with no reference to time. CAGR annualizes that gain to a per-year equivalent, making comparisons across different holding periods meaningful. A 100% absolute return over 10 years is only 7.2% CAGR — far less impressive than it initially sounds.</p>
+<p>Absolute return shows total percentage gain over the full holding period with no reference to time. CAGR annualizes that gain to a per-year equivalent, making comparisons across different holding periods meaningful. A 100% absolute return over 10 years is only 7.2% CAGR — far less than a 100% return over 3 years.</p>
 </div>
 <div class="faq-item">
 <h3>Why is XIRR used for SIPs instead of CAGR?</h3>
@@ -277,27 +288,21 @@
 <p>Yes. If your investment's end value is lower than its start value, CAGR is negative. If ₹1,00,000 fell to ₹80,000 over 5 years, the CAGR is approximately <strong>-4.4% per year</strong>. Negative CAGR simply means the fund lost value on an annualized basis over that period.</p>
 </div>
 <div class="faq-item">
-<h3>What is a good CAGR for a mutual fund in India?</h3>
-<p>A good equity fund CAGR benchmark is consistent outperformance versus the Nifty 50 TRI (~12–13% long-run CAGR). Large-cap active funds delivering 13–14% CAGR over 5–10 years are considered strong performers. But always compare net-of-expense-ratio returns, not gross CAGR.</p>
+<h3>What is a good benchmark for Indian equity funds?</h3>
+<p>Under SEBI regulations, active equity funds must be benchmarked against relevant Total Returns Indices (such as Nifty 50 TRI or BSE Sensex TRI). Performance is evaluated based on whether net-of-fee returns exceed these broad market indices over rolling multi-year cycles.</p>
 </div>
 <div class="faq-item">
 <h3>How do I find the CAGR of a mutual fund?</h3>
-<p>Every fund's factsheet — available on AMFI's website (amfiindia.com) or the AMC's site — shows 1Y, 3Y, and 5Y CAGR figures. You can also find these on Groww, Zerodha Coin, or MF Central. Always compare the fund's CAGR to its benchmark index CAGR over the same period to assess true alpha.</p>
+<p>Every fund's factsheet — available on AMFI's website (amfiindia.com) or the AMC's site — shows 1Y, 3Y, and 5Y CAGR figures alongside statutory benchmark returns.</p>
 </div>
 </section>
-<div class="callout info" style="margin-top: 2rem;">
-<strong>Want to see how different CAGR rates affect your final corpus?</strong> Open our free <a href="https://www.calculatorship.in/"><strong>SIP Calculator →</strong></a> and test 10%, 12%, and 14% on a ₹10,000/month SIP over 20 years. The difference between 10% and 14% CAGR is not a few lakhs — it is crores.
-          </div>
-<div class="callout warn" style="font-size: 0.88rem; margin-top: 2rem;">
-<strong>Disclaimer:</strong> All figures in this article are for illustrative purposes only and do not constitute investment advice. Returns from mutual funds are subject to market risk. Please read all scheme-related documents carefully and consult a SEBI-registered Investment Advisor before making any financial decisions.
-          </div>
 </div><!-- end article-body -->
 <div class="author-box">
 <div class="author-avatar">T</div>
 <div class="author-info">
 <h4>Tejas <span class="author-verified-badge" title="Verified Author">✓</span></h4>
-<span class="author-role">Finance Enthusiast &amp; Researcher</span>
-<p>Calculatorship builds free SIP, lumpsum, and goal-planning calculators for Indian investors, along with plain-English guides on mutual funds and personal finance. I research finance concepts, SEBI guidelines, and AMC reports, and use modern AI tools to help organize and write easy-to-understand articles. Everything is for educational purposes and not certified financial advice.</p>
+<span class="author-role">Engineering Student &amp; Personal Finance Researcher</span>
+<p>Calculatorship builds free SIP, lumpsum, and financial planning calculators for Indian retail investors, alongside objective guides explaining mutual fund mechanics. I study SEBI regulations, AMFI data, and tax circulars, using modern computational and AI tools to organize educational material. All content is strictly educational and does not constitute financial advice.</p>
 </div>
 </div>
 <nav aria-label="Article Navigation" class="article-nav">
@@ -309,10 +314,7 @@
 <div class="nav-dir">Next Article →</div>
 <div class="nav-title">SWP Explained: Create a Monthly Pension from Mutual Funds</div>
 </a>
-</nav>
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
-</div></article>
+</nav></article>
 <aside class="article-sidebar">
 <div class="toc-card">
 <h4>Table of Contents</h4>
