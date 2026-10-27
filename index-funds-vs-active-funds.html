@@ -190,8 +190,9 @@
 <span class="article-date-tag">Published: February 2026</span>
 <span>Updated for FY 2026-27</span>
 </div>
-<h1>Index Funds vs Active Mutual Funds in India (2026): SPIVA Data &amp; TER Analysis</h1><div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
+<h1>Index Funds vs Active Mutual Funds in India: SPIVA Research and Expense Ratio Arithmetic</h1>
+<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
+<strong>Hi, I'm Tejas.</strong> I'm an engineering student researching personal finance structures in India. This guide analyzes how passive index funds and actively managed equity funds operate, reviewing published SPIVA India Scorecard data and the mathematical impact of Total Expense Ratio (TER) differentials. This is strictly educational research and arithmetic—it is not investment advice or a recommendation to buy either fund type. Consult a SEBI-registered Investment Adviser (RIA) for personalized portfolio guidance.
 </div>
 <div class="article-byline">
 <span class="byline-author">Tejas</span> | Published: February 2026 | Educational Resource
@@ -199,75 +200,104 @@
 </header>
 <div class="article-page">
 <article class="article-main" id="main-article">
-<!-- Financial Disclaimer -->
 <div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid #16a34a; border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
-<h2 style="font-size: 1.25rem; font-weight: 800; color: #166534; margin-top: 0; margin-bottom: 0.75rem;">Key Takeaways: What You Need to Know First</h2>
+<h2 style="font-size: 1.25rem; font-weight: 800; color: #166534; margin-top: 0; margin-bottom: 0.75rem;">Key Concepts: Passive vs Active Framework</h2>
 <ul style="margin: 0; padding-left: 1.25rem; line-height: 1.8; color: #15803d; font-size: 0.96rem;">
-<li>SPIVA India data (2024) shows that 84% of large-cap active funds underperformed the Nifty 100 TRI over the past 10 years — making a low-cost Nifty 50 or Nifty 100 index fund a more reliable choice for large-cap allocation than most active managers.</li>
-<li>Active management adds measurable value in mid-cap and small-cap categories where markets are less efficient: SPIVA 10-year data shows only 51% of mid-cap active funds underperformed their category index — meaning roughly half did beat the index.</li>
-<li>The expense ratio difference between a Nifty 50 Direct Index Fund (~0.10%–0.20% TER) and a large-cap active Direct Fund (~0.80%–1.20% TER) compounds into ₹14 Lakh in lost returns on a ₹10,000 monthly SIP over 20 years.</li>
-<li>ETF versions of index funds have lower TERs than index fund FOFs but require a demat account; FOF versions allow SIP without demat — choose FOF for convenience, ETF for maximum cost efficiency.</li>
-<li>A core-and-satellite strategy — 60%–70% passive index funds (core) + 30%–40% active mid/small-cap funds (satellite) — provides market-rate returns on the core while seeking alpha on the satellite portion.</li>
+<li>Index funds are passive vehicles designed to mirror the composition and return profile of a target benchmark index (e.g., Nifty 50 or BSE Sensex) with rule-based rebalancing and low Total Expense Ratios (TER).</li>
+<li>Actively managed funds rely on fund managers and research analysts to select securities with the objective of generating returns in excess of a benchmark (alpha), incurring higher ongoing management fees.</li>
+<li>The SPIVA (S&amp;P Indices Versus Active) India Scorecard evaluates how active Indian mutual funds perform relative to their respective category benchmarks across 1, 3, 5, and 10-year holding periods.</li>
+<li>SEBI's 2017 categorisation circular strictly defines asset limits (e.g., Large-Cap funds must invest at least 80% in top 100 stocks), impacting the ability of active managers to deviate from benchmark constituents in liquid segments.</li>
+<li>Fee differentials compound mathematically over long holding periods, requiring active funds to generate sufficient gross excess returns to offset higher management expenses.</li>
 </ul>
 </div>
 <section style="font-size: 1.05rem; line-height: 1.8; color: var(--text-primary);">
-<p>The index vs. active fund debate has dominated Western personal finance for two decades. In India, it arrived later but the data is converging to the same conclusion: in efficient, heavily-researched large-cap markets, most active managers cannot beat the index consistently after fees. In less-efficient small and mid-cap segments, active management has historically added value. The question is not which approach is universally superior—it is which approach belongs in which portion of your portfolio.</p>
-<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">The Core Case for Index Funds: The SPIVA Evidence</h2>
-<p>S&amp;P's SPIVA (S&amp;P Indices Versus Active) India Scorecard is the most detailed annual study of active manager performance. Key findings from the 2024 report covering the 10-year period ending December 2024:</p>
+<p>The comparative evaluation of index funds versus actively managed mutual funds centers on the relationship between cost, market efficiency, and active management risk. In passive investing, an investor accepts the return of the market index minus a small expense ratio and tracking error. In active investing, an investor pays higher management fees in pursuit of potential benchmark outperformance (alpha), while taking on manager selection and style drift risk.</p>
+
+<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">The SPIVA India Scorecard: Empirical Performance Data</h2>
+<p>The S&amp;P Indices Versus Active (SPIVA) India Scorecard periodically evaluates the percentage of active Indian equity mutual funds that underperform their benchmarks after all fees and expenses. In the 2024 Scorecard for the 10-year period ending December 2024:</p>
 <ul style="padding-left: 1.25rem; margin-bottom: 1rem;">
-<li>84% of large-cap active funds underperformed the S&amp;P BSE 100 (comparable to Nifty 100 TRI) over 10 years.</li>
-<li>77% of ELSS funds underperformed the S&amp;P BSE 200 over 10 years.</li>
-<li>51% of mid/small-cap funds underperformed — meaning about half the active managers in this space added value over a decade.</li>
+<li>In the Indian Large-Cap category, 84% of actively managed funds underperformed the S&amp;P BSE 100 / Nifty 100 TRI over a 10-year horizon.</li>
+<li>In the ELSS (Tax Saving) category, 77% of active funds underperformed the S&amp;P BSE 200 over 10 years.</li>
+<li>In the Indian Mid-Cap and Small-Cap categories, 51% of active funds underperformed their category benchmarks over 10 years, indicating a roughly equal split between outperforming and underperforming managers.</li>
 </ul>
-<p>The data is not a blanket indictment of active management. It is a category-specific argument: in large-cap space, index funds win more often than not. In mid-cap and small-cap, skilled active management can meaningfully outperform.</p>
-<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">The Expense Ratio Math: ₹14 Lakh on a 20-Year SIP</h2>
+<p>Financial researchers attribute these variations to differing degrees of market efficiency: heavily traded blue-chip companies are widely analyzed by institutional market participants, making information discovery faster, whereas mid and small-cap segments exhibit wider dispersions in individual company performance.</p>
+
+<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">The Compounding Arithmetic of Expense Ratios</h2>
+<p>To examine the impact of expense ratios on accumulated corpus, consider an illustrative ₹10,000 monthly SIP across multiple hypothetical compounding rates over a 20-year horizon (total invested principal ₹24 Lakh), comparing a typical Direct Index Fund (~0.15% TER) against a Direct Active Fund (~0.95% TER):</p>
+
 <div style="overflow-x:auto; margin: 1.5rem 0;">
 <table style="width: 100%; border-collapse: collapse; border: 1px solid var(--border-color); font-size: 0.95rem;">
 <thead>
 <tr style="background: var(--bg-surface); text-align: left;">
-<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">Fund Type</th>
-<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">Typical TER (Direct)</th>
-<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">Net Return at 12% Gross Market</th>
-<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">20-Year Corpus (₹10,000/mo)</th>
+<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">Theoretical Gross Return</th>
+<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">Index Fund (Net after ~0.15% TER)</th>
+<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">Active Fund (Net after ~0.95% TER, 0% alpha)</th>
+<th style="padding: 12px 16px; border-bottom: 2px solid var(--border-color);">Difference Over 20 Years</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">Nifty 50 Index Fund (Direct)</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #16a34a; font-weight: 600;">0.10%–0.20%</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">11.85%</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); font-weight: 700; color: #16a34a;">₹98,60,000</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">6% Compounding</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹45.0 Lakh (at 5.85% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹40.9 Lakh (at 5.05% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #b91c1c;">₹4.1 Lakh</td>
 </tr>
 <tr style="background: var(--bg-surface);">
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">Large-Cap Active Fund (Direct)</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #dc2626;">0.80%–1.20%</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">11.00%</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹86,46,000</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">8% Compounding</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹57.8 Lakh (at 7.85% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹51.9 Lakh (at 7.05% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #b91c1c;">₹5.9 Lakh</td>
 </tr>
 <tr>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">Large-Cap Active Fund (Regular)</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #b91c1c; font-weight: 600;">1.70%–2.20%</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">10.00%</td>
-<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #b91c1c;">₹75,60,000</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">10% Compounding</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹75.2 Lakh (at 9.85% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹66.8 Lakh (at 9.05% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #b91c1c;">₹8.4 Lakh</td>
+</tr>
+<tr style="background: var(--bg-surface);">
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">12% Compounding</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); font-weight: 600;">₹99.0 Lakh (at 11.85% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">₹86.9 Lakh (at 11.05% net)</td>
+<td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #b91c1c;">₹12.1 Lakh</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>The Nifty 50 Index Fund investor has <strong>₹14.14 Lakh more</strong> after 20 years compared to the Direct large-cap active investor, purely from the lower expense ratio — and this assumes the active fund manager matches the market exactly (which 84% do not, according to SPIVA).</p>
-<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">Where Active Management Still Wins: Mid-Cap and Small-Cap</h2>
-<p>The large-cap market in India—the top 100 NSE-listed companies—is intensely researched by thousands of analysts, institutional investors, and algorithmic traders. Prices are efficient: new information is priced into the market within seconds. Active managers find it very difficult to consistently discover superior information and exploit mispricing.</p>
-<p>The mid-cap segment (companies ranked 101–250) and small-cap segment (251+) are less efficiently researched. Fewer analysts cover each stock, quarterly results are less scrutinized, and undiscovered businesses with extraordinary growth prospects exist. A skilled active fund manager with deep research capabilities can generate 2%–4% annual alpha over the mid-cap index in this space—a difference worth the higher TER of 0.50%–0.90% for a Direct plan.</p>
+<p><em>Note: Figures are arithmetic projections illustrating the mathematical drag of an 0.80% annual expense differential assuming identical underlying gross portfolio returns. In practice, actively managed funds may deliver returns higher or lower than the benchmark.</em></p>
+
+<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">Market Capitalization and Research Coverage in India</h2>
+<p>The operational environment for active portfolio management varies across market capitalization segments:</p>
+<ul style="padding-left: 1.25rem; margin-bottom: 1rem;">
+<li><strong>Large-Cap Segment (Top 100 Companies):</strong> Subject to extensive institutional scrutiny, high foreign and domestic analyst coverage, and regulatory investment constraints under SEBI norms (minimum 80% allocation to large caps).</li>
+<li><strong>Mid-Cap and Small-Cap Segments (Rank 101 onwards):</strong> Characterized by lower average analyst coverage, wider earnings variability, and larger performance dispersion across individual companies, which can create opportunities for active security selection.</li>
+</ul>
+
 <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">Frequently Asked Questions</h2>
 <div style="margin-bottom: 1.5rem;">
-<h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;">If I invest in both a Nifty 50 index fund and a large-cap active fund, am I getting real diversification?</h3>
-<p style="margin-top: 0;">No — this is portfolio overlap, not diversification. A large-cap active fund's top 20 holdings are typically 60%–75% identical to the Nifty 50 constituents. You are paying a 0.90% TER for marginal differentiation. Instead, pair your Nifty 50 index fund with a mid-cap or small-cap fund for genuine diversification across the market-cap spectrum.</p>
+<h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;">Does holding both an index fund and a large-cap active fund provide meaningful diversification?</h3>
+<p style="margin-top: 0;">Portfolio holdings analysis often shows significant overlap (frequently 60% to 75%) between large-cap active funds and benchmark indices like the Nifty 50 or Nifty 100, because both draw from the same universe of top 100 stocks. Investors review portfolio overlap to ensure they are not duplicating holdings while paying higher active fees.</p>
 </div>
 <div style="margin-bottom: 1.5rem;">
-<h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;">Does the Nifty 50 index fund provide any downside protection during market crashes?</h3>
-<p style="margin-top: 0;">No. An index fund replicates the benchmark exactly—including 100% of the downside during market crashes. During the COVID-19 crash (February–March 2020), Nifty 50 fell approximately 38%. A Nifty 50 index fund fell the same 38%. Active managers with cash allocation or defensive sector tilts can cushion a portion of the fall — but most don't, and those who do often hold cash during subsequent recoveries, missing early-bull-run gains.</p>
+<h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem;">Do index funds provide downside protection during market downturns?</h3>
+<p style="margin-top: 0;">No. An index fund is designed to replicate its benchmark index directly, absorbing market declines in tandem with the index. Actively managed funds retain the mandate to hold cash or shift sector allocations, though historical data shows that market timing during corrections remains challenging for active managers.</p>
 </div>
-<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">The Recommended Framework: Core-and-Satellite</h2>
-<p>Allocate 60%–70% of your equity SIP to a direct Nifty 50 or Nifty 100 index fund — this is your stable, market-return-generating core. Allocate the remaining 30%–40% to one well-researched, consistently alpha-generating active mid-cap or flexi-cap fund — this is your satellite seeking to outperform. Review the satellite allocation every 3 years against benchmark. If it stops generating alpha, fold it into the index core. Use Zerodha Coin or Groww to implement this split-SIP structure within a single account.</p>
+
+<h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem;">Portfolio Architecture Concepts: Core-Satellite Framework</h2>
+<p>Some institutional investors and financial planners examine a <strong>Core-Satellite architecture</strong>: allocating a foundational portion of equity investments into low-cost, broad-market index funds (Core) while allocating secondary portions to active strategies or specialized categories (Satellite) where alpha potential is sought. This structure balances systematic market beta with selective active management.</p>
+
+<div class="callout info" style="margin: 28px 0; padding: 20px; border-left: 4px solid var(--emerald-bright); background: rgba(110, 175, 128, 0.06);">
+<h4 style="margin: 0 0 8px 0; color: var(--emerald-bright);">How to Think About This Yourself</h4>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+The choice between index funds and active mutual funds is not binary. Consider your conviction in active manager selection, the market capitalization segment you are accessing, and your sensitivity to ongoing management fees. Review scheme factsheets for tracking error (for index funds) and rolling benchmark alpha (for active funds).
+</p>
+</div>
+
+<div class="callout key" style="margin: 28px 0; padding: 20px; border-left: 4px solid #6366f1; background: rgba(99, 102, 241, 0.06);">
+<h4 style="margin: 0 0 8px 0; color: #4f46e5;">Where to Get Personalised Help</h4>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+For tailored guidance on structuring an investment portfolio between passive and active funds based on your financial goals and tax situation, consult a fee-only SEBI-registered Investment Adviser (RIA) through the <a href="https://www.sebi.gov.in" rel="noopener nofollow" style="color: #4f46e5; font-weight: 600;" target="_blank">SEBI Intermediary Directory</a>.
+</p>
+</div>
 </section>
 <section class="article-sources" style="margin:2rem 0; padding:20px 24px; background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-lg); border-left:4px solid var(--color-primary);">
 <h2 style="font-size:1.1rem; font-weight:700; color:var(--text-primary); margin:0 0 16px; display:flex; align-items:center; gap:8px;">
@@ -306,18 +336,12 @@
 <div class="author-avatar">T</div>
 <div>
 <h3 class="author-name">Tejas</h3>
-<p class="author-title">Founder &amp; Creator, Calculatorship</p>
+<p class="author-title">Student &amp; Financial Literacy Researcher</p>
 </div>
 </div>
-<p class="author-desc">Tejas is the founder of Calculatorship, focusing on creating accessible calculators and educational content for Indian investors. Content on this platform may be drafted with AI assistance and is developed using publicly available information and sources relevant to each topic.</p>
-<p class="author-disclaimer" style="font-size:0.82rem; color:var(--text-muted); margin-top:8px; line-height:1.5;"><em>General educational information only. Not a SEBI-registered investment advisor, Chartered Accountant, or financial professional. Information can change when laws, tax codes, or official guidance are updated. Consult a qualified professional before making financial decisions.</em></p>
+<p class="author-desc">I am an engineering student passionate about personal finance and investing education in India. I build Calculatorship to help self-directed investors understand financial mathematics, regulatory frameworks, and wealth concepts with clear arithmetic and zero commercial jargon. Everything published here is educational and not investment advice.</p>
 </div>
-<div class="article-footer-disclaimer">
-<strong>Educational Notice:</strong> Calculatorship provides general educational information and financial calculation tools for illustrative purposes only. Content may be drafted with AI assistance and compiled from available public sources. This is not a substitute for professional financial, tax, legal, or investment advice. Information can change when official regulations, tax rules, or interest rates are updated. Readers should verify time-sensitive figures with official authorities and consult a qualified advisor before making financial decisions.
-        </div>
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
-</div></article>
+</article>
 <!-- Sidebar -->
 <aside aria-label="Related Guides" class="article-sidebar">
 <div class="sidebar-card">

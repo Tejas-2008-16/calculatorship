@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html data-theme="light" lang="en-IN">
 <head>
@@ -43,8 +43,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Index Funds vs Nifty 50 ETFs: What's the Difference and Which Should You Buy?",
-      "description": "Demystifying Index Funds vs Nifty 50 ETFs in India: tracking error, NAV vs market price, expense ratios, DP charges, and platform selection guide.",
+      "headline": "Index Funds vs Nifty 50 ETFs: Mechanics, Tracking Error, and Execution Channels",
+      "description": "Educational comparison of Index Funds vs Nifty 50 ETFs in India: tracking error, NAV vs market price, expense ratios, DP charges, and execution mechanics.",
       "url": "https://www.calculatorship.in/index-funds-vs-nifty50-etf-india.html",
       "datePublished": "2026-08-02",
       "dateModified": "2026-08-19",
@@ -98,15 +98,15 @@
       "name": "What is the difference between a Nifty 50 index fund and a Nifty 50 ETF?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both track the Nifty 50 index. Index funds can be bought or sold at end-of-day NAV through any mutual fund platform without a demat account. ETFs trade like stocks on NSE and BSE in real-time and require a demat account but often have lower expense ratios."
+        "text": "Both track the Nifty 50 index. Index funds can be transacted at end-of-day NAV through mutual fund platforms or AMCs without a demat account. ETFs trade like equity shares on stock exchanges during market hours and require a demat account, but often feature slightly lower headline expense ratios."
       }
     },
     {
       "@type": "Question",
-      "name": "Which is better for SIP: Nifty 50 index fund or ETF?",
+      "name": "How do SIP mechanics differ between Index Funds and ETFs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For SIP investors, Nifty 50 index funds are more convenient as they do not require a demat account, support automated SIP mandates, and offer easy online access. ETFs suit investors who want intraday trading flexibility and already have a demat account."
+        "text": "Index funds support automated recurring bank mandates (NACH / e-Mandate) at exact end-of-day NAV without manual order placement. ETFs require scheduled stock-SIP orders via brokers, which execute as market or limit orders during exchange hours subject to bid-ask spreads."
       }
     }
   ]
@@ -159,12 +159,13 @@
 </div>
 <header class="article-header">
 <span class="article-cat" style="color: var(--emerald-bright);">Investing Basics</span>
-<h1>Index Funds vs Nifty 50 ETFs: What's the Difference and Which Should You Buy?</h1><div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
+<h1>Index Funds vs Nifty 50 ETFs: Mechanics, Tracking Error, and Execution Channels</h1>
+<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
+<strong>Hi, I'm Tejas.</strong> I'm an engineering student exploring financial market plumbing in India. This guide examines how open-ended index mutual funds and exchange-traded funds (ETFs) function, comparing end-of-day NAV settlement versus exchange order-book trading, tracking errors, and friction costs. This is purely educational research and arithmetic—it is not financial advice or a recommendation to buy either instrument. For personalized advice, consult a SEBI-registered Investment Adviser (RIA).
 </div>
-<p class="article-intro">Both Index Funds and Exchange-Traded Funds (ETFs) track the exact same market indices like the Nifty 50 or Sensex at ultra-low costs. Yet, choosing the wrong vehicle for your monthly SIP can cost you thousands in hidden DP fees, bid-ask spreads, and cash drag. Here is an honest, plain-English breakdown of how they work, how much they actually cost, and which one belongs in your account.</p>
+<p class="article-intro">Both Index Funds and Exchange-Traded Funds (ETFs) provide low-cost passive exposure to market indices like the Nifty 50 or Sensex. However, their operational mechanics, holding structures (Demat vs SoA), and execution friction differ significantly.</p>
 <div class="article-meta">
-<span> August 2, 2026</span>
+<span>Published: August 2026</span>
 <span>By Tejas</span>
 </div>
 </header>
@@ -173,142 +174,95 @@
 <a class="back-to-blog" href="/blog.html">← Back to Articles</a>
 <div class="article-body">
 <h2 id="core-mechanics">The Core Mechanics: Index Funds vs ETFs</h2>
-<p>At first glance, an Index Mutual Fund and an ETF sound like twin products. If you buy a Nifty 50 Index Fund or Nifty BEES (an ETF), both hold all 50 constituent stocks of India's benchmark index in exact market-cap proportions. When Reliance or ICICI Bank goes up, both investment tools gain value.</p>
-<p>However, the fundamental difference lies in <strong>how you trade them and how transactions are processed</strong>:</p>
+<p>At an asset level, an Index Mutual Fund and an Exchange-Traded Fund (ETF) track the same index constituents in identical market-capitalization weights. For instance, both a Nifty 50 Index Fund and a Nifty 50 ETF hold the 50 underlying shares of the benchmark in matching proportions.</p>
+<p>The operational distinctions arise in <strong>issuance, order execution, and settlement infrastructure</strong>:</p>
 <ul>
-<li><strong>Index Mutual Funds:</strong> Purchased directly through the Asset Management Company (AMC) or platforms like Groww, PayTM Money, or CAMS. You purchase units at the official end-of-day <a href="/what-is-nav-in-mutual-funds.html">Net Asset Value (NAV)</a> declared at 3:00 PM. No Demat account is required. You can set up an automated bank mandate (NACH) for monthly SIP payments with zero manual intervention.</li>
-<li><strong>Exchange-Traded Funds (ETFs):</strong> Traded like individual company stocks on stock exchanges (NSE and BSE) during live market hours (9:15 AM to 3:30 PM). To buy an ETF, you need an active Demat &amp; Trading account with a stockbroker (like Zerodha, AngelOne, or Upstox). Instead of transacting at the end-of-day NAV, you buy at live market prices determined by buyers and sellers on the order book.</li>
+<li><strong>Index Mutual Funds:</strong> Transacted through Asset Management Companies (AMCs), Registrar &amp; Transfer Agents (RTAs like CAMS and KFintech), or mutual fund platforms. Orders are executed at the end-of-day <a href="/what-is-nav-in-mutual-funds.html">Net Asset Value (NAV)</a> declared after 3:00 PM. No Demat account is required; units are held in Statement of Account (SoA) format, enabling seamless recurring SIP e-mandates.</li>
+<li><strong>Exchange-Traded Funds (ETFs):</strong> Listed and traded on stock exchanges (NSE and BSE) during active trading hours (9:15 AM to 3:30 PM). Transacting requires a Demat and trading account with a SEBI-registered stockbroker. Orders are executed at prevailing bid-ask prices on the exchange order book rather than the official end-of-day NAV.</li>
 </ul>
-<div class="callout info">
-<strong> Did You Know?</strong> The very first ETF launched in India was Nifty BEES (Benchmark Exchange Traded Scheme), introduced in December 2001. Today, passive index assets in India have crossed ₹8 Lakh Crores, driven by retail investors seeking low-cost market growth!
-    </div>
-<h2 id="tracking-error-vs-difference">Tracking Error vs Tracking Difference: The Hidden Cost</h2>
-<p>When you invest in passive funds, your goal is to match the index performance exactly. But in reality, no passive fund matches the Nifty 50 down to the exact decimal point. Two critical concepts explain why: <strong>Tracking Error</strong> and <strong>Tracking Difference</strong>.</p>
-<p><strong>Tracking Difference</strong> is simply the absolute return gap between the fund and the index over a specific period. For example, if the Nifty 50 index returned 14.0% in a year, and your index fund returned 13.8%, the tracking difference is -0.20%. Most of this gap comes from the fund's expense ratio and minor cash holdings kept to handle daily investor redemptions.</p>
-<p><strong>Tracking Error</strong> measures the volatility or consistency of that gap over time. A high tracking error means the fund manager is struggling to rebalance portfolio holdings quickly when stock weights change.</p>
-<div class="stat-row">
-<div class="stat-cell">
-<div class="stat-value">0.06%</div>
-<div class="stat-label">Top Index Fund Expense Ratio</div>
-</div>
-<div class="stat-cell">
-<div class="stat-value">0.04%</div>
-<div class="stat-label">Top Nifty ETF Expense Ratio</div>
-</div>
-<div class="stat-cell">
-<div class="stat-value">0.15%</div>
-<div class="stat-label">Avg ETF Bid-Ask Spread</div>
-</div>
-</div>
-<p>While ETFs often highlight slightly lower advertised expense ratios (e.g. 0.04% vs 0.08% for index funds), ETFs introduce a hidden cost that index funds do not have: the <strong>Bid-Ask Spread</strong>.</p>
-<h2 id="demat-brokerage-liquidity">Demat Requirements, Brokerage &amp; Liquidity Realities</h2>
-<p>Because ETFs trade live on stock exchanges, your execution price depends heavily on market liquidity and market maker quotes:</p>
+
+<h2 id="tracking-error-vs-difference">Tracking Error vs Tracking Difference: The Operational Gaps</h2>
+<p>In passive investing, portfolio returns aim to match index returns closely. In practice, operational frictions create differences between index performance and portfolio performance:</p>
+<p><strong>Tracking Difference</strong> represents the absolute gap between the fund return and benchmark index return over a specified period. This gap primarily reflects the fund's Total Expense Ratio (TER), minor cash reserves maintained for liquidity, and transaction costs.</p>
+<p><strong>Tracking Error</strong> represents the annualized standard deviation of daily return differences between the fund and its benchmark. Lower tracking error signifies higher replication consistency.</p>
+
+<h2 id="demat-brokerage-liquidity">Execution Frictions: Liquidity, iNAV, and Depository Charges</h2>
+<p>Because ETFs trade on secondary market order books, several market variables affect realized execution pricing:</p>
 <ol>
-<li><strong>The Bid-Ask Spread:</strong> The difference between the highest price a buyer is willing to pay and the lowest price a seller is willing to accept. For highly liquid ETFs like Nifty BEES, the spread is tiny (0.02% to 0.05%). But for niche ETFs (like Junior Nifty or IT ETFs), the spread can be 0.30% to 0.80%! That spread is an immediate drag on your purchase price.</li>
-<li><strong>iNAV vs Market Price:</strong> AMCs publish an indicative NAV (iNAV) every few seconds during market hours. During periods of heavy market panic or extreme volatility, the live market price of an ETF on NSE can trade at a premium or discount to its real iNAV. You might end up paying 1% more than the underlying stocks are worth!</li>
-<li><strong>DP (Depository Participant) &amp; Transaction Charges:</strong> Selling ETF units from a Demat account incurs DP charges (around ₹13 to ₹20 per transaction depending on your broker), plus Securities Transaction Tax (STT), Exchange Turnover Charges, and Stamp Duty. Index funds incur zero DP charges!</li>
+<li><strong>Bid-Ask Spread:</strong> The difference between the highest buyer bid and lowest seller ask. While high-volume index ETFs generally maintain tight spreads, less active ETFs can experience wider spreads, introducing execution drag.</li>
+<li><strong>iNAV vs Market Price:</strong> AMCs publish indicative NAV (iNAV) at regular intervals during market hours. During periods of heightened market volatility, market prices on stock exchanges can trade at slight premiums or discounts to underlying iNAV.</li>
+<li><strong>Depository Participant (DP) &amp; Transaction Fees:</strong> Selling ETF units from a Demat account incurs depository participant (DP) charges, statutory taxes (STT, stamp duty), and exchange turnover fees. In contrast, redeeming index mutual fund units directly through an AMC or RTA incurs no DP transaction charges.</li>
 </ol>
-<div class="callout key">
-<strong> Key Insight:</strong> Index funds transact directly with the AMC at official NAV. You never have to worry about order books, market premiums, bid-ask spreads, or market liquidity when buying or selling index mutual funds.
-    </div>
-<h2 id="real-world-cost-comparison">Real-World Cost Breakdown: Rahul vs Priya</h2>
-<p>Let's look at a concrete mathematical comparison between two investors in Mumbai, Rahul and Priya. Both want to invest ₹10,000 per month into Nifty 50 index assets for 10 years.</p>
+
+<h2 id="real-world-cost-comparison">Comparative Cost Illustration: Monthly SIP vs Exchange Orders</h2>
+<p>To evaluate theoretical fee friction, consider an illustrative ₹10,000 monthly commitment over an extended investment horizon:</p>
 <ul>
-<li><strong>Rahul (Monthly Index Fund SIP):</strong> Sets up an automated ₹10,000/month SIP in a Direct Nifty 50 Index Fund with an expense ratio of 0.08%.
-        <ul>
-<li>Annual Expense Ratio Drag: ₹8 per ₹10,000 invested.</li>
-<li>DP Charges &amp; Brokerage: ₹0.</li>
-<li>Bid-Ask Spread / Premium Risk: 0%.</li>
-<li>Total annual transaction friction: <strong>~₹96 per year</strong>.</li>
+<li><strong>Index Fund SIP Route:</strong> Executes automatically via NACH / UPI Autopay at end-of-day closing NAV. Annual friction consists solely of the scheme Total Expense Ratio (e.g., ~0.08% to 0.15%), with no demat maintenance, brokerage, or DP transaction charges.</li>
+<li><strong>Exchange-Traded ETF Route:</strong> Involves scheduled exchange order execution during market hours. While headline TERs may be lower (e.g., ~0.04% to 0.07%), additional frictions include bid-ask slippage, broker statutory transaction fees, and depository participant debit charges upon eventual sale.</li>
 </ul>
-</li>
-<li><strong>Priya (Monthly ETF Orders):</strong> Logs into her stock broker app every month on the 5th and manually buys ₹10,000 worth of Nifty BEES ETF units.
-        <ul>
-<li>Advertised Expense Ratio: 0.04% (~₹48 per year).</li>
-<li>Brokerage: ₹0 (zero brokerage on delivery).</li>
-<li>Bid-Ask Spread (~0.12% avg purchase price slippage): ~₹144 per year.</li>
-<li>DP Charges on Sale (Assuming annual rebalancing or exit): ₹20 + GST per event.</li>
-<li>Stamp Duty &amp; STT: ~₹25 per year.</li>
-<li>Total annual transaction friction: <strong>~₹237 per year</strong> plus monthly manual effort!</li>
-</ul>
-</li>
-</ul>
-<p>Despite the ETF having a lower expense ratio on paper, Priya ended up paying more total friction charges due to trading slippage and manual execution overhead! Furthermore, if Priya forgets to log in during busy workdays, her SIP discipline breaks down.</p>
-<p>You can model how small differences in annual fee friction impact your total returns over 15 to 20 years using our free <a href="/">Calculatorship SIP Calculator</a>.</p>
-<h2 id="platform-selection-guide">Platform Guide: Zerodha, Groww, PayTM Money &amp; AMCs</h2>
-<p>Which platform should you use based on your choice?</p>
+
+<h2 id="platform-selection-guide">Channel Comparison: Holding Formats and Automation</h2>
 <div style="overflow-x:auto; margin: 24px 0;">
 <table style="width:100%; border-collapse: collapse; text-align: left; font-size: 0.92rem;">
 <thead>
 <tr style="border-bottom: 2px solid var(--border-soft); background: var(--surface-hover);">
-<th style="padding: 12px; color: var(--emerald-bright);">Platform</th>
-<th style="padding: 12px;">Best Used For</th>
-<th style="padding: 12px;">Storage Format</th>
-<th style="padding: 12px;">SIP Automation</th>
+<th style="padding: 12px; color: var(--emerald-bright);">Channel / Entity</th>
+<th style="padding: 12px;">Primary Vehicle Handled</th>
+<th style="padding: 12px;">Holding Format</th>
+<th style="padding: 12px;">Order Mechanism</th>
 </tr>
 </thead>
 <tbody>
 <tr style="border-bottom: 1px solid var(--border-soft);">
-<td style="padding: 12px; font-weight: 600;">Groww / PayTM Money</td>
+<td style="padding: 12px; font-weight: 600;">Direct AMC &amp; RTA Portals (MF Central, CAMS, KFintech)</td>
 <td style="padding: 12px;">Index Mutual Funds</td>
 <td style="padding: 12px;">Statement of Account (SoA)</td>
-<td style="padding: 12px;">100% Automated via Bank Mandate</td>
+<td style="padding: 12px;">Automated via Bank e-Mandate (NACH)</td>
 </tr>
 <tr style="border-bottom: 1px solid var(--border-soft);">
-<td style="padding: 12px; font-weight: 600;">Zerodha Coin / Upstox</td>
-<td style="padding: 12px;">ETFs &amp; Stock Investing</td>
-<td style="padding: 12px;">Demat Format</td>
-<td style="padding: 12px;">Manual or Stock-SIP order schedule</td>
+<td style="padding: 12px; font-weight: 600;">SEBI-Registered Stockbrokers &amp; Depositories</td>
+<td style="padding: 12px;">Exchange-Traded Funds (ETFs) &amp; Equities</td>
+<td style="padding: 12px;">Demat Format (NSDL / CDSL)</td>
+<td style="padding: 12px;">Live Exchange Orders (Market / Limit)</td>
 </tr>
 <tr style="border-bottom: 1px solid var(--border-soft);">
-<td style="padding: 12px; font-weight: 600;">Direct AMC Apps (UTI, ICICI, SBI)</td>
-<td style="padding: 12px;">Direct Index Funds</td>
-<td style="padding: 12px;">Statement of Account (SoA)</td>
-<td style="padding: 12px;">Direct Bank NACH Mandate</td>
+<td style="padding: 12px; font-weight: 600;">Intermediary Mutual Fund Platforms</td>
+<td style="padding: 12px;">Index Funds &amp; Active Schemes</td>
+<td style="padding: 12px;">SoA or Demat (Platform Dependent)</td>
+<td style="padding: 12px;">Scheduled Systematic Orders</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Read our full comparison on <a href="/active-vs-passive-mutual-funds.html">Active vs Passive Mutual Funds</a> to explore how index strategy returns compare against traditional actively managed funds.</p>
-<h2 id="decision-framework">Decision Framework: Which One Should You Buy?</h2>
-<p>Here is a clear decision matrix to settle the debate for your personal money:</p>
-<ol>
-<li><strong>Choose Index Mutual Funds if:</strong>
+
+<h2 id="decision-framework">Structural Trade-Offs: How Investors Compare the Two</h2>
+<p>Investors evaluate both structures based on operational requirements:</p>
 <ul>
-<li>You want to invest via automated monthly SIPs without logging into an app every month.</li>
-<li>You do not have or do not want to maintain a Demat account.</li>
-<li>You are investing smaller amounts (e.g. ₹500 to ₹10,000 per month) where transaction costs matter.</li>
-<li>You prefer psychological peace of mind without watching daily stock ticker prices.</li>
+<li><strong>Index Mutual Funds Characteristics:</strong> Automated monthly SIP execution at precise end-of-day NAV, zero requirement for a demat account, no intraday pricing fluctuations or bid-ask slippage, and simplified account consolidation via CAS statements.</li>
+<li><strong>Exchange-Traded Funds (ETFs) Characteristics:</strong> Intraday price execution on live exchange tickers, ability to place limit orders, capability to pledge units as margin collateral, and marginally lower headline annual management fees.</li>
 </ul>
-</li>
-<li><strong>Choose Nifty 50 ETFs if:</strong>
-<ul>
-<li>You are investing a large lumpsum amount (e.g. ₹5 Lakhs+) and want to buy during a specific intraday market dip.</li>
-<li>You already use a Demat trading terminal daily for stock trading.</li>
-<li>You want to pledge ETF holdings as collateral for margin trading or options hedging.</li>
-<li>You stick strictly to top-volume ETFs (like Nifty BEES or SBI Nifty 50 ETF) with near-zero bid-ask spread.</li>
-</ul>
-</li>
-</ol>
-<h2 id="five-golden-rules">Five Golden Rules for Passive Investors</h2>
-<p>Whichever passive route you take, follow these golden principles to maximize your wealth creation:</p>
-<div class="callout warn">
-<strong> Never Place Market Orders on Low-Volume ETFs:</strong> If you are buying an ETF, always place a <strong>Limit Order</strong> matched close to the iNAV price! Placing a market order during volatile hours can cause your order to fill at a bad price.
-    </div>
-<ul>
-<li><strong>Check Total Assets Under Management (AUM):</strong> Choose index funds or ETFs with large AUMs (over ₹1,000 Crores). Larger funds have tighter tracking errors and superior market liquidity.</li>
-<li><strong>Stick to Direct Plans:</strong> If buying index funds, verify the scheme name includes "Direct Plan". Regular plans waste 0.30% to 0.50% in unnecessary distributor commissions every single year. Check our <a href="/understanding-expense-ratio.html">Expense Ratio guide</a> to see the long-term impact.</li>
-<li><strong>Don't Frequent Trade Index ETFs:</strong> Buying and selling ETFs based on market news reduces the fundamental advantage of passive investing. Hold your passive units for at least 5 to 10 years.</li>
-<li><strong>Step Up Your Monthly SIP Annually:</strong> Increasing your monthly index fund SIP by 10% each year accelerates your journey to financial freedom. Calculate your numbers on our <a href="/step-up.html">Step-Up SIP Calculator</a>.</li>
-</ul>
-<p>Want to see how much wealth a disciplined ₹5,000/month Index Fund SIP can generate over the next 20 years? Run your personal numbers now on the free <a href="/">Calculatorship SIP Calculator</a>!</p>
+
+<div class="callout info" style="margin: 28px 0; padding: 20px; border-left: 4px solid var(--emerald-bright); background: rgba(110, 175, 128, 0.06);">
+<h4 style="margin: 0 0 8px 0; color: var(--emerald-bright);">How to Think About This Yourself</h4>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+Both index funds and ETFs provide low-cost exposure to benchmark market indices. When deciding which vehicle fits your financial process, evaluate whether you prefer fully automated monthly debits (SoA index funds) or active exchange trading capability and margin flexibility (demat ETFs).
+</p>
+</div>
+
+<div class="callout key" style="margin: 28px 0; padding: 20px; border-left: 4px solid #6366f1; background: rgba(99, 102, 241, 0.06);">
+<h4 style="margin: 0 0 8px 0; color: #4f46e5;">Where to Get Personalised Help</h4>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+If you are planning significant passive allocations, evaluating tax implications, or setting up family investment structures, consult a fee-only SEBI-registered Investment Adviser (RIA) listed on the <a href="https://www.sebi.gov.in" rel="noopener nofollow" style="color: #4f46e5; font-weight: 600;" target="_blank">SEBI Directory of Intermediaries</a>.
+</p>
+</div>
+
 </div>
 <div class="author-box">
 <div class="author-avatar">T</div>
 <div class="author-info">
 <h4>Tejas <span class="author-verified-badge" title="Verified Author">✓</span></h4>
-<span class="author-role">Finance Enthusiast &amp; Researcher</span>
-<p>Calculatorship builds free SIP, lumpsum, and goal-planning calculators for Indian investors, along with plain-English guides on mutual funds and personal finance. I research finance concepts, SEBI guidelines, and AMC reports, and use modern AI tools to help organize and write easy-to-understand articles. Everything is for educational purposes and not certified financial advice.</p>
+<span class="author-role">Student &amp; Financial Literacy Researcher</span>
+<p>I am an engineering student passionate about personal finance and investing education in India. I build Calculatorship to help self-directed investors understand financial mathematics, regulatory frameworks, and wealth concepts with clear arithmetic and zero commercial jargon. Everything published here is educational and not investment advice.</p>
 </div>
 </div>
 <nav aria-label="Article Navigation" class="article-nav">
@@ -321,9 +275,7 @@
 <div class="nav-title">Budget 2026: New LTCG &amp; STCG Tax Slabs Explained</div>
 </a>
 </nav>
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
-</div></article>
+</article>
 <aside class="article-sidebar">
 <div class="toc-card">
 <h4>Table of Contents</h4>
