@@ -27,163 +27,53 @@
   ],
   "redirects": [
     {
-      "source": "/cibil-credit-score-improvement-guide.html",
-      "destination": "/credit-score-guide-india",
+      "source": "/5-common-sip-mistakes-to-avoid.html",
+      "destination": "/sip-mistakes-to-avoid",
       "permanent": true
     },
     {
-      "source": "/cibil-credit-score-improvement-guide",
-      "destination": "/credit-score-guide-india",
+      "source": "/5-common-sip-mistakes-to-avoid",
+      "destination": "/sip-mistakes-to-avoid",
       "permanent": true
     },
     {
-      "source": "/what-is-swp-systematic-withdrawal-plan.html",
-      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "source": "/active-vs-passive-mutual-funds.html",
+      "destination": "/index-funds-vs-active-funds",
       "permanent": true
     },
     {
-      "source": "/what-is-swp-systematic-withdrawal-plan",
-      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "source": "/active-vs-passive-mutual-funds",
+      "destination": "/index-funds-vs-active-funds",
       "permanent": true
     },
     {
-      "source": "/inflation-and-your-savings.html",
-      "destination": "/inflation-impact-on-savings-india",
-      "permanent": true
-    },
-    {
-      "source": "/inflation-and-your-savings",
-      "destination": "/inflation-impact-on-savings-india",
-      "permanent": true
-    },
-    {
-      "source": "/epf-vs-ppf-vs-nps-retirement-account-india.html",
-      "destination": "/ppf-vs-elss-vs-nps-india-2026",
-      "permanent": true
-    },
-    {
-      "source": "/epf-vs-ppf-vs-nps-retirement-account-india",
-      "destination": "/ppf-vs-elss-vs-nps-india-2026",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-use-sip-calculator-guide.html",
+      "source": "/best-sip-amount-calculator-guide.html",
       "destination": "/how-to-use-sip-calculator-complete-guide",
       "permanent": true
     },
     {
-      "source": "/how-to-use-sip-calculator-guide",
+      "source": "/best-sip-amount-calculator-guide",
       "destination": "/how-to-use-sip-calculator-complete-guide",
       "permanent": true
     },
     {
-      "source": "/emergency-fund-guide.html",
-      "destination": "/emergency-fund-guide-india",
+      "source": "/best-sip-date-mutual-fund-india.html",
+      "destination": "/best-date-for-sip-in-india",
       "permanent": true
     },
     {
-      "source": "/emergency-fund-guide",
-      "destination": "/emergency-fund-guide-india",
+      "source": "/best-sip-date-mutual-fund-india",
+      "destination": "/best-date-for-sip-in-india",
       "permanent": true
     },
     {
-      "source": "/fd-vs-debt-mutual-funds-india-2026.html",
-      "destination": "/fd-vs-debt-mutual-funds",
+      "source": "/budget-2026-ltcg-stcg-tax-sip-impact.html",
+      "destination": "/capital-gains-tax-india",
       "permanent": true
     },
     {
-      "source": "/fd-vs-debt-mutual-funds-india-2026",
-      "destination": "/fd-vs-debt-mutual-funds",
-      "permanent": true
-    },
-    {
-      "source": "/sip-goal-planning-guide.html",
-      "destination": "/how-to-start-your-first-sip-step-by-step",
-      "permanent": true
-    },
-    {
-      "source": "/sip-goal-planning-guide",
-      "destination": "/how-to-start-your-first-sip-step-by-step",
-      "permanent": true
-    },
-    {
-      "source": "/home-loan-prepayment-vs-sip.html",
-      "destination": "/home-loan-prepayment-vs-sip-strategy",
-      "permanent": true
-    },
-    {
-      "source": "/home-loan-prepayment-vs-sip",
-      "destination": "/home-loan-prepayment-vs-sip-strategy",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-read-your-salary-slip-in-india-every-component-explained-2026.html",
-      "destination": "/ctc-vs-in-hand-salary-explained",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-read-your-salary-slip-in-india-every-component-explained-2026",
-      "destination": "/ctc-vs-in-hand-salary-explained",
-      "permanent": true
-    },
-    {
-      "source": "/home-loan-emi-explained-india.html",
-      "destination": "/emi-calculator",
-      "permanent": true
-    },
-    {
-      "source": "/home-loan-emi-explained-india",
-      "destination": "/emi-calculator",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-invest-your-first-1000-in-india-beginners-complete-guide.html",
-      "destination": "/got-first-salary-investing-guide-india",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-invest-your-first-1000-in-india-beginners-complete-guide",
-      "destination": "/got-first-salary-investing-guide-india",
-      "permanent": true
-    },
-    {
-      "source": "/form-26as-vs-ais-vs-tis.html",
-      "destination": "/form-26as-vs-ais-vs-tis-guide",
-      "permanent": true
-    },
-    {
-      "source": "/form-26as-vs-ais-vs-tis",
-      "destination": "/form-26as-vs-ais-vs-tis-guide",
-      "permanent": true
-    },
-    {
-      "source": "/sip-vs-rd-which-is-better-for-salaried-indians-2026-math-tax-comparison.html",
-      "destination": "/recurring-deposit-rd-calculator-guide-india",
-      "permanent": true
-    },
-    {
-      "source": "/sip-vs-rd-which-is-better-for-salaried-indians-2026-math-tax-comparison",
-      "destination": "/recurring-deposit-rd-calculator-guide-india",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-file-itr-1-sahaj-online.html",
-      "destination": "/how-to-file-itr-1-online-salaried-guide",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-file-itr-1-sahaj-online",
-      "destination": "/how-to-file-itr-1-online-salaried-guide",
-      "permanent": true
-    },
-    {
-      "source": "/mutual-fund-taxation-india.html",
-      "destination": "/mutual-fund-taxation-india-complete-guide",
-      "permanent": true
-    },
-    {
-      "source": "/mutual-fund-taxation-india",
-      "destination": "/mutual-fund-taxation-india-complete-guide",
+      "source": "/budget-2026-ltcg-stcg-tax-sip-impact",
+      "destination": "/capital-gains-tax-india",
       "permanent": true
     },
     {
@@ -197,13 +87,33 @@
       "permanent": true
     },
     {
-      "source": "/term-insurance-vs-endowment.html",
-      "destination": "/term-insurance-vs-endowment-plans",
+      "source": "/car-loan-emi-calculator-guide-india.html",
+      "destination": "/emi-calculator",
       "permanent": true
     },
     {
-      "source": "/term-insurance-vs-endowment",
-      "destination": "/term-insurance-vs-endowment-plans",
+      "source": "/car-loan-emi-calculator-guide-india",
+      "destination": "/emi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/cibil-credit-score-improvement-guide.html",
+      "destination": "/credit-score-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/cibil-credit-score-improvement-guide",
+      "destination": "/credit-score-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/elss-funds-tax-saving-guide.html",
+      "destination": "/elss-tax-saving",
+      "permanent": true
+    },
+    {
+      "source": "/elss-funds-tax-saving-guide",
+      "destination": "/elss-tax-saving",
       "permanent": true
     },
     {
@@ -217,23 +127,293 @@
       "permanent": true
     },
     {
-      "source": "/section-80d-health-insurance-deduction-guide.html",
-      "destination": "/health-insurance-80d-tax-deduction-guide",
+      "source": "/emergency-fund-guide.html",
+      "destination": "/emergency-fund-guide-india",
       "permanent": true
     },
     {
-      "source": "/section-80d-health-insurance-deduction-guide",
-      "destination": "/health-insurance-80d-tax-deduction-guide",
+      "source": "/emergency-fund-guide",
+      "destination": "/emergency-fund-guide-india",
       "permanent": true
     },
     {
-      "source": "/term-insurance-india-guide.html",
-      "destination": "/term-insurance-guide-india",
+      "source": "/emi-vs-sip-extra-money-india.html",
+      "destination": "/home-loan-prepayment-vs-sip-strategy",
       "permanent": true
     },
     {
-      "source": "/term-insurance-india-guide",
-      "destination": "/term-insurance-guide-india",
+      "source": "/emi-vs-sip-extra-money-india",
+      "destination": "/home-loan-prepayment-vs-sip-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/epf-vs-ppf-vs-nps-retirement-account-india.html",
+      "destination": "/ppf-vs-elss-vs-nps-india-2026",
+      "permanent": true
+    },
+    {
+      "source": "/epf-vs-ppf-vs-nps-retirement-account-india",
+      "destination": "/ppf-vs-elss-vs-nps-india-2026",
+      "permanent": true
+    },
+    {
+      "source": "/epf-vs-ppf-vs-vpf.html",
+      "destination": "/ppf-rules-benefits-wealth-guide",
+      "permanent": true
+    },
+    {
+      "source": "/epf-vs-ppf-vs-vpf",
+      "destination": "/ppf-rules-benefits-wealth-guide",
+      "permanent": true
+    },
+    {
+      "source": "/fd-vs-debt-mutual-funds-india-2026.html",
+      "destination": "/fd-vs-debt-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/fd-vs-debt-mutual-funds-india-2026",
+      "destination": "/fd-vs-debt-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/fd-vs-mutual-funds-india.html",
+      "destination": "/fd-vs-debt-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/fd-vs-mutual-funds-india",
+      "destination": "/fd-vs-debt-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/fire-retire-at-50-sip-calculation-india.html",
+      "destination": "/fire-movement-india",
+      "permanent": true
+    },
+    {
+      "source": "/fire-retire-at-50-sip-calculation-india",
+      "destination": "/fire-movement-india",
+      "permanent": true
+    },
+    {
+      "source": "/form-26as-vs-ais-vs-tis.html",
+      "destination": "/form-26as-vs-ais-vs-tis-guide",
+      "permanent": true
+    },
+    {
+      "source": "/form-26as-vs-ais-vs-tis",
+      "destination": "/form-26as-vs-ais-vs-tis-guide",
+      "permanent": true
+    },
+    {
+      "source": "/home-loan-emi-explained-india.html",
+      "destination": "/emi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/home-loan-emi-explained-india",
+      "destination": "/emi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/home-loan-prepayment-vs-sip.html",
+      "destination": "/home-loan-prepayment-vs-sip-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/home-loan-prepayment-vs-sip",
+      "destination": "/home-loan-prepayment-vs-sip-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-build-1-crore-corpus-30000-salary-india.html",
+      "destination": "/50000-salary-how-much-save-invest-spend",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-build-1-crore-corpus-30000-salary-india",
+      "destination": "/50000-salary-how-much-save-invest-spend",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-file-itr-1-sahaj-online.html",
+      "destination": "/how-to-file-itr-1-online-salaried-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-file-itr-1-sahaj-online",
+      "destination": "/how-to-file-itr-1-online-salaried-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-invest-your-first-1000-in-india-beginners-complete-guide.html",
+      "destination": "/got-first-salary-investing-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-invest-your-first-1000-in-india-beginners-complete-guide",
+      "destination": "/got-first-salary-investing-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-pick-your-first-mutual-fund-india.html",
+      "destination": "/mutual-fund-categories-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-pick-your-first-mutual-fund-india",
+      "destination": "/mutual-fund-categories-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-read-a-mutual-fund-factsheet.html",
+      "destination": "/how-to-read-mutual-fund-factsheet",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-read-a-mutual-fund-factsheet",
+      "destination": "/how-to-read-mutual-fund-factsheet",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-read-your-salary-slip-in-india-every-component-explained-2026.html",
+      "destination": "/ctc-vs-in-hand-salary-explained",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-read-your-salary-slip-in-india-every-component-explained-2026",
+      "destination": "/ctc-vs-in-hand-salary-explained",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-save-tax-in-india.html",
+      "destination": "/80c-deductions-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-save-tax-in-india",
+      "destination": "/80c-deductions-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-your-first-sip-step-by-step.html",
+      "destination": "/how-to-start-sip",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-your-first-sip-step-by-step",
+      "destination": "/how-to-start-sip",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-use-sip-calculator-guide.html",
+      "destination": "/how-to-use-sip-calculator-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-use-sip-calculator-guide",
+      "destination": "/how-to-use-sip-calculator-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/income-tax-slabs-fy-2026-27.html",
+      "destination": "/income-tax-slabs-india-2026",
+      "permanent": true
+    },
+    {
+      "source": "/income-tax-slabs-fy-2026-27",
+      "destination": "/income-tax-slabs-india-2026",
+      "permanent": true
+    },
+    {
+      "source": "/inflation-and-your-savings.html",
+      "destination": "/inflation-impact-on-savings-india",
+      "permanent": true
+    },
+    {
+      "source": "/inflation-and-your-savings",
+      "destination": "/inflation-impact-on-savings-india",
+      "permanent": true
+    },
+    {
+      "source": "/liquid-funds-vs-savings-account-emergency-fund.html",
+      "destination": "/emergency-fund-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/liquid-funds-vs-savings-account-emergency-fund",
+      "destination": "/emergency-fund-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-exit-strategy-india.html",
+      "destination": "/how-to-redeem-mutual-funds-india",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-exit-strategy-india",
+      "destination": "/how-to-redeem-mutual-funds-india",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-nav-explained-india.html",
+      "destination": "/what-is-nav-in-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-nav-explained-india",
+      "destination": "/what-is-nav-in-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-portfolio-guide.html",
+      "destination": "/mutual-fund-categories-india",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-portfolio-guide",
+      "destination": "/mutual-fund-categories-india",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-taxation-india.html",
+      "destination": "/mutual-fund-taxation-india-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-taxation-india",
+      "destination": "/mutual-fund-taxation-india-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-types-beginner-guide.html",
+      "destination": "/mutual-fund-categories-guide",
+      "permanent": true
+    },
+    {
+      "source": "/mutual-fund-types-beginner-guide",
+      "destination": "/mutual-fund-categories-guide",
+      "permanent": true
+    },
+    {
+      "source": "/nifty-50-index-fund-guide-india.html",
+      "destination": "/index-funds-vs-nifty50-etf-india",
+      "permanent": true
+    },
+    {
+      "source": "/nifty-50-index-fund-guide-india",
+      "destination": "/index-funds-vs-nifty50-etf-india",
+      "permanent": true
+    },
+    {
+      "source": "/nps-guide.html",
+      "destination": "/what-is-nps-national-pension-system-guide",
+      "permanent": true
+    },
+    {
+      "source": "/nps-guide",
+      "destination": "/what-is-nps-national-pension-system-guide",
       "permanent": true
     },
     {
@@ -247,23 +427,73 @@
       "permanent": true
     },
     {
-      "source": "/what-is-nsc-guide.html",
-      "destination": "/national-savings-certificate-nsc-guide",
+      "source": "/presumptive-taxation-44ada-india.html",
+      "destination": "/freelancer-tax-guide-india",
       "permanent": true
     },
     {
-      "source": "/what-is-nsc-guide",
-      "destination": "/national-savings-certificate-nsc-guide",
+      "source": "/presumptive-taxation-44ada-india",
+      "destination": "/freelancer-tax-guide-india",
       "permanent": true
     },
     {
-      "source": "/sovereign-gold-bond-guide.html",
-      "destination": "/sovereign-gold-bond-guide-india",
+      "source": "/rd-calculator.html",
+      "destination": "/recurring-deposit-rd-calculator-guide-india",
       "permanent": true
     },
     {
-      "source": "/sovereign-gold-bond-guide",
-      "destination": "/sovereign-gold-bond-guide-india",
+      "source": "/rd-calculator",
+      "destination": "/recurring-deposit-rd-calculator-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/retirement-planning-guide.html",
+      "destination": "/retirement-planning-india",
+      "permanent": true
+    },
+    {
+      "source": "/retirement-planning-guide",
+      "destination": "/retirement-planning-india",
+      "permanent": true
+    },
+    {
+      "source": "/rupee-cost-averaging-explained.html",
+      "destination": "/rupee-cost-averaging",
+      "permanent": true
+    },
+    {
+      "source": "/rupee-cost-averaging-explained",
+      "destination": "/rupee-cost-averaging",
+      "permanent": true
+    },
+    {
+      "source": "/salary-hike-investment-strategy-india.html",
+      "destination": "/50000-salary-how-much-save-invest-spend",
+      "permanent": true
+    },
+    {
+      "source": "/salary-hike-investment-strategy-india",
+      "destination": "/50000-salary-how-much-save-invest-spend",
+      "permanent": true
+    },
+    {
+      "source": "/section-80d-health-insurance-deduction-guide.html",
+      "destination": "/health-insurance-80d-tax-deduction-guide",
+      "permanent": true
+    },
+    {
+      "source": "/section-80d-health-insurance-deduction-guide",
+      "destination": "/health-insurance-80d-tax-deduction-guide",
+      "permanent": true
+    },
+    {
+      "source": "/senior-citizen-fd-rates.html",
+      "destination": "/scss-vs-fixed-deposit",
+      "permanent": true
+    },
+    {
+      "source": "/senior-citizen-fd-rates",
+      "destination": "/scss-vs-fixed-deposit",
       "permanent": true
     },
     {
@@ -277,13 +507,203 @@
       "permanent": true
     },
     {
-      "source": "/income-tax-slabs-fy-2026-27.html",
-      "destination": "/income-tax-slabs-india-2026",
+      "source": "/sip-during-market-crash.html",
+      "destination": "/rupee-cost-averaging",
       "permanent": true
     },
     {
-      "source": "/income-tax-slabs-fy-2026-27",
-      "destination": "/income-tax-slabs-india-2026",
+      "source": "/sip-during-market-crash",
+      "destination": "/rupee-cost-averaging",
+      "permanent": true
+    },
+    {
+      "source": "/sip-goal-planning-guide.html",
+      "destination": "/how-to-start-sip",
+      "permanent": true
+    },
+    {
+      "source": "/sip-goal-planning-guide",
+      "destination": "/how-to-start-sip",
+      "permanent": true
+    },
+    {
+      "source": "/sip-pause-vs-stop-vs-continue.html",
+      "destination": "/sip-pause-vs-stop-mutual-fund",
+      "permanent": true
+    },
+    {
+      "source": "/sip-pause-vs-stop-vs-continue",
+      "destination": "/sip-pause-vs-stop-mutual-fund",
+      "permanent": true
+    },
+    {
+      "source": "/sip-vs-rd-which-is-better-for-salaried-indians-2026-math-tax-comparison.html",
+      "destination": "/recurring-deposit-rd-calculator-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/sip-vs-rd-which-is-better-for-salaried-indians-2026-math-tax-comparison",
+      "destination": "/recurring-deposit-rd-calculator-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/sovereign-gold-bond-guide.html",
+      "destination": "/sovereign-gold-bond-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/sovereign-gold-bond-guide",
+      "destination": "/sovereign-gold-bond-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/sovereign-gold-bond-sgb-guide-india.html",
+      "destination": "/sovereign-gold-bond-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/sovereign-gold-bond-sgb-guide-india",
+      "destination": "/sovereign-gold-bond-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/swp-for-retirement-income-guide.html",
+      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/swp-for-retirement-income-guide",
+      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/taxation-on-mutual-funds.html",
+      "destination": "/mutual-fund-taxation-india-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/taxation-on-mutual-funds",
+      "destination": "/mutual-fund-taxation-india-complete-guide",
+      "permanent": true
+    },
+    {
+      "source": "/term-insurance-india-guide.html",
+      "destination": "/term-insurance-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/term-insurance-india-guide",
+      "destination": "/term-insurance-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/term-insurance-vs-endowment.html",
+      "destination": "/term-insurance-vs-endowment-plans",
+      "permanent": true
+    },
+    {
+      "source": "/term-insurance-vs-endowment",
+      "destination": "/term-insurance-vs-endowment-plans",
+      "permanent": true
+    },
+    {
+      "source": "/the-power-of-compounding.html",
+      "destination": "/compound-interest-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/the-power-of-compounding",
+      "destination": "/compound-interest-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-expense-ratio.html",
+      "destination": "/direct-vs-regular-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-expense-ratio",
+      "destination": "/direct-vs-regular-mutual-funds",
+      "permanent": true
+    },
+    {
+      "source": "/what-happens-if-you-miss-sip-payment.html",
+      "destination": "/sip-pause-vs-stop-mutual-fund",
+      "permanent": true
+    },
+    {
+      "source": "/what-happens-if-you-miss-sip-payment",
+      "destination": "/sip-pause-vs-stop-mutual-fund",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-step-up-sip.html",
+      "destination": "/step-up-sip-guide",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-step-up-sip",
+      "destination": "/step-up-sip-guide",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-cagr-mutual-fund-returns.html",
+      "destination": "/cagr-vs-xirr-vs-absolute-return-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-cagr-mutual-fund-returns",
+      "destination": "/cagr-vs-xirr-vs-absolute-return-guide-india",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-flexi-cap-fund-india-beginners.html",
+      "destination": "/small-cap-mid-cap-large-cap-funds-india",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-flexi-cap-fund-india-beginners",
+      "destination": "/small-cap-mid-cap-large-cap-funds-india",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-inflation-and-how-it-affects-you.html",
+      "destination": "/inflation-impact-on-savings-india",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-inflation-and-how-it-affects-you",
+      "destination": "/inflation-impact-on-savings-india",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-nsc-guide.html",
+      "destination": "/national-savings-certificate-nsc-guide",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-nsc-guide",
+      "destination": "/national-savings-certificate-nsc-guide",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-swp-systematic-withdrawal-plan.html",
+      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-swp-systematic-withdrawal-plan",
+      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/zero-based-budgeting.html",
+      "destination": "/50-30-20-rule-india",
+      "permanent": true
+    },
+    {
+      "source": "/zero-based-budgeting",
+      "destination": "/50-30-20-rule-india",
       "permanent": true
     }
   ]
