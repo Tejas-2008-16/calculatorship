@@ -8,6 +8,8 @@ Disallow: /admin-cp/
 Disallow: /private/
 Disallow: /cgi-bin/
 Disallow: /*.json$
+Disallow: /*?s=
+Disallow: /*?q=
 
 # Search Engines
 User-agent: Googlebot
