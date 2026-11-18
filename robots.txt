@@ -11,8 +11,14 @@ Disallow: /*.json$
 Disallow: /*?s=
 Disallow: /*?q=
 
-# Search Engines
+# Search Engines & AdSense Content Crawler
 User-agent: Googlebot
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
 Allow: /
 
 User-agent: Bingbot
