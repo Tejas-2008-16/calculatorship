@@ -1,45 +1,49 @@
 # Calculatorship.in
-> Independent, free financial calculators and educational guides for Indian citizens, salaried professionals, and long-term investors.
+> Independent, free Indian personal finance calculators and plain-English educational guides for salaried professionals and retail investors.
 
-Calculatorship is a self-funded financial calculation and research project created by Tejas (an engineering student based in India). The platform provides accurate calculators, step-by-step mathematical proofs, tax comparisons under Indian law (Old vs New Tax Regime, Budget revisions, Income-tax Act transitions), and educational guides cross-referenced with statutory notifications.
+Calculatorship is an independent financial calculation and educational publishing project built by Tejas Waghmare, a student and web developer in India. He is not a SEBI-registered investment adviser, research analyst, or Chartered Accountant. Every tool uses standard Indian financial formulas (reducing-balance EMI, quarterly-compounded bank deposits, statutory EPF/PPF/Gratuity rules, and FY 2026-27 Indian income tax slabs) with worked Rupee (INR) examples cross-checked against official RBI, SEBI, EPFO, and Income Tax Department notifications.
 
-## Core Calculators
+## Core Financial Calculators (Clean Canonical URLs)
 
-- [SIP Calculator](https://www.calculatorship.in/): Systematic Investment Plan compound interest projections with historical CAGR benchmarks and equity taxation.
-- [Lumpsum Calculator](https://www.calculatorship.in/lumpsum.html): One-time mutual fund compounding calculator with year-by-year accumulation tables.
-- [Step-Up SIP Calculator](https://www.calculatorship.in/step-up.html): Top-up SIP calculator modeling annual percentage increments matching salary hikes.
-- [Target Goal Planner](https://www.calculatorship.in/goal.html): Reverse SIP calculation to estimate monthly savings required for future inflation-adjusted goals.
-- [PPF Calculator](https://www.calculatorship.in/ppf-calculator.html): Public Provident Fund sovereign wealth growth at 7.1% per annum with 5th-of-the-month rules and 15-30 year schedules.
-- [SWP Calculator](https://www.calculatorship.in/swp-calculator.html): Systematic Withdrawal Plan simulator with longevity analysis and post-tax cash flows.
-- [Loan EMI Calculator](https://www.calculatorship.in/emi-calculator.html): Reducing-balance loan amortization schedules with prepayment impact analysis.
-- [FD Calculator](https://www.calculatorship.in/fd-calculator.html): Cumulative vs quarterly payout fixed deposit maturity calculator.
-- [50/30/20 Budget Planner](https://www.calculatorship.in/budget-planner.html): Monthly salary allocation into Needs, Wants, and Investments.
-- [Income Tax Calculator](https://www.calculatorship.in/income-tax-calculator.html): Side-by-side comparison of Old vs New Tax Regime for FY 2026-27 with Section 87A rebate and marginal relief.
-- [Gratuity Calculator](https://www.calculatorship.in/gratuity-calculator.html): Payment of Gratuity Act 15/26 formula calculator with ₹20 Lakh tax exemption rules.
-- [GST Calculator](https://www.calculatorship.in/gst-calculator.html): Inclusive and exclusive GST calculator with CGST, SGST, and IGST breakdowns.
-- [Compound Interest Calculator](https://www.calculatorship.in/compound-interest-calculator.html): Universal compound interest calculator with daily, monthly, quarterly, and annual compounding frequencies.
-- [Recurring Deposit (RD) Calculator](https://www.calculatorship.in/rd-calculator.html): Bank RD maturity calculator with quarterly compounding rules as followed by Indian banks.
-- [NPS Calculator](https://www.calculatorship.in/nps-calculator.html): National Pension System retirement corpus projections and lump-sum vs annuity distributions.
-- [EPF Calculator](https://www.calculatorship.in/epf-calculator.html): Employee Provident Fund accumulation at current 8.25% interest with employer/EPS split.
-- [HRA Calculator](https://www.calculatorship.in/hra-calculator.html): House Rent Allowance tax exemption calculator under Section 10(13A) and Rule 2A.
-- [In-Hand Salary Calculator](https://www.calculatorship.in/in-hand-salary-calculator.html): CTC-to-in-hand salary conversion with PF, Gratuity, Professional Tax, and Income Tax deductions.
-- [CAGR Calculator](https://www.calculatorship.in/cagr-calculator.html): Compound Annual Growth Rate and reverse CAGR calculator.
-- [Simple Interest Calculator](https://www.calculatorship.in/simple-interest-calculator.html): Straightforward SI calculator for loans, promissory notes, and fixed yields.
-- [Inflation Calculator](https://www.calculatorship.in/inflation-calculator.html): Future purchasing power and target wealth requirement calculator based on historical Indian CPI inflation.
+- [SIP Calculator](https://www.calculatorship.in/): Systematic Investment Plan compounding calculator with annual growth tables and equity capital gains notes.
+- [Lumpsum Calculator](https://www.calculatorship.in/lumpsum): One-time mutual fund compounding calculator with year-by-year accumulation breakdown.
+- [Step-Up SIP Calculator](https://www.calculatorship.in/step-up): Top-up SIP calculator modeling annual contribution increases alongside salary hikes.
+- [Goal Planner Calculator](https://www.calculatorship.in/goal): Reverse SIP calculator to find the monthly savings needed for an inflation-adjusted target corpus.
+- [Stock Average Calculator](https://www.calculatorship.in/stock-average-calculator-guide-india): Weighted average share buy price, target average share count, and break-even move calculator for Indian equity delivery trades.
+- [PPF Calculator](https://www.calculatorship.in/ppf-calculator): Public Provident Fund calculator at 7.1% p.a. with 5th-of-the-month rules and 15-to-30-year schedules.
+- [EPF Calculator](https://www.calculatorship.in/epf-calculator): Employee Provident Fund calculator at 8.25% p.a. with employee, employer, and EPS splits.
+- [NPS Calculator](https://www.calculatorship.in/nps-calculator): National Pension System retirement corpus estimator with lump-sum vs annuity splits.
+- [SWP Calculator](https://www.calculatorship.in/swp-calculator): Systematic Withdrawal Plan simulator for monthly post-retirement cash flows.
+- [Loan EMI Calculator](https://www.calculatorship.in/emi-calculator): Reducing-balance home, car, and personal loan amortization and prepayment impact calculator.
+- [FD Calculator](https://www.calculatorship.in/fd-calculator): Cumulative and payout Fixed Deposit maturity calculator with Indian quarterly compounding.
+- [RD Calculator](https://www.calculatorship.in/recurring-deposit-rd-calculator-guide-india): Recurring Deposit maturity calculator following Indian bank quarterly compounding formulas.
+- [Income Tax Calculator](https://www.calculatorship.in/income-tax-calculator): Side-by-side Old vs New Tax Regime calculator for FY 2026-27 with Section 87A rebate and marginal relief.
+- [In-Hand Salary Calculator](https://www.calculatorship.in/in-hand-salary-calculator): CTC to monthly in-hand take-home pay breakdown covering PF, gratuity, professional tax, and TDS.
+- [HRA Calculator](https://www.calculatorship.in/hra-calculator): House Rent Allowance exemption calculator under Section 10(13A) and Rule 2A.
+- [Gratuity Calculator](https://www.calculatorship.in/gratuity-calculator): Payment of Gratuity Act (15/26 formula) calculator with statutory tax exemption rules.
+- [GST Calculator](https://www.calculatorship.in/gst-calculator): GST-inclusive and GST-exclusive calculator with CGST, SGST, and IGST splits.
+- [CAGR Calculator](https://www.calculatorship.in/cagr-calculator): Compound Annual Growth Rate and reverse future-value calculator.
+- [Compound Interest Calculator](https://www.calculatorship.in/compound-interest-calculator): Daily, monthly, quarterly, and annual compounding calculator in INR.
+- [Simple Interest Calculator](https://www.calculatorship.in/simple-interest-calculator): Straightforward simple interest calculator for short-term loans and notes.
+- [Inflation Calculator](https://www.calculatorship.in/inflation-calculator): Purchasing power and future cost calculator using Indian CPI inflation rates.
+- [50/30/20 Budget Planner](https://www.calculatorship.in/budget-planner): Monthly take-home pay split across Needs, Wants, and Savings.
+- [8th Pay Commission Salary Calculator](https://www.calculatorship.in/8th-pay-commission-salary-calculator-fitment-factor): Fitment factor pay matrix estimator for central government employees.
 
-## Guide Categories & Knowledge Hubs
+## Knowledge Hubs & Guide Categories
 
-- [All Financial Guides & Articles](https://www.calculatorship.in/blog.html): Complete, searchable directory of 152+ in-depth educational articles.
-- [Calculators Directory](https://www.calculatorship.in/calculators.html): Categorized index of all tools by domain (Investing, Loans, Tax, Retirement, Salary).
-- [Tax & Financial Planning Guides](https://www.calculatorship.in/blog.html#tax): Advance tax, capital gains, Section 80C, 80D, 80CCD, HRA, and tax regime comparisons.
-- [SIP & Mutual Fund Guides](https://www.calculatorship.in/blog.html#sip): Direct vs regular plans, expense ratios, index funds, arbitrage funds, and portfolio rebalancing.
-- [Retirement & Pension](https://www.calculatorship.in/blog.html#retirement): APY, NPS, EPF withdrawal norms, FIRE in India, and senior citizen schemes.
-- [Loans & Real Estate](https://www.calculatorship.in/blog.html#loans): Home loan prepayment vs SIP, CIBIL score blueprints, balance transfers, and car loans.
-- [Fixed Income & Savings Schemes](https://www.calculatorship.in/blog.html#savings): PPF, Sukanya Samriddhi (SSY), NSC, SCSS, POTD, and Sovereign Gold Bonds (SGB).
+- [All Calculators Hub](https://www.calculatorship.in/calculators): Categorized directory of all 23 free financial calculators.
+- [All Financial Guides & Articles](https://www.calculatorship.in/blog): Searchable editorial archive of 110+ Indian personal finance guides covering taxes, mutual funds, retirement, loans, insurance, and post office schemes.
+- [HTML Sitemap](https://www.calculatorship.in/sitemap): Complete human-readable index of every calculator and guide.
+- [XML Sitemap](https://www.calculatorship.in/sitemap.xml): Machine-readable sitemap for search engines and AI crawlers.
 
-## Editorial & Transparency Standards
+## Editorial, Trust & Policy Pages
 
-- [About Calculatorship](https://www.calculatorship.in/about.html): Creator background, motivation, and independence declaration.
-- [Editorial Policy & Verification](https://www.calculatorship.in/editorial-policy.html): How statutory numbers and formulas are checked against Ministry and Regulator circulars.
-- [Corrections Policy & Changelog](https://www.calculatorship.in/corrections.html): Transparent error correction mechanism and public record.
-- [Contact & Error Reporting](https://www.calculatorship.in/contact.html): Direct line for reporting numerical inconsistencies or regulatory updates.
+- [About Calculatorship](https://www.calculatorship.in/about): Project purpose, methodology, and independence statement.
+- [Author Profile: Tejas Waghmare](https://www.calculatorship.in/author): Transparent author bio, non-SEBI disclosure, and contact details.
+- [Editorial Policy](https://www.calculatorship.in/editorial-policy): Verification workflow against official RBI, SEBI, CBDT, and EPFO circulars.
+- [Corrections Policy](https://www.calculatorship.in/corrections): Public correction policy and update standards.
+- [Disclaimer](https://www.calculatorship.in/disclaimer): Educational-only financial disclaimer.
+- [Privacy Policy](https://www.calculatorship.in/privacy): Privacy, analytics, and advertising disclosures.
+- [Cookie Policy](https://www.calculatorship.in/cookies): Cookie usage disclosures.
+- [Terms of Use](https://www.calculatorship.in/terms): Terms governing site and calculator use.
+- [Contact](https://www.calculatorship.in/contact): Direct channel to report formula bugs or outdated tax limits.
