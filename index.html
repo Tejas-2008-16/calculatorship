@@ -6,10 +6,9 @@
 <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798"
-     crossorigin="anonymous"></script>
+<script type="text/plain" data-category="advertising" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 <!-- Google Analytics 4 (GA4) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
+<script type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -34,12 +33,147 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://www.calculatorship.in/og-image.webp" name="twitter:image"/>
 <meta content="#F3F7F5" name="theme-color"/>
+<link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&amp;display=swap" rel="stylesheet"/></noscript>
-<link href="style.css?v=4.3" rel="stylesheet"/>
+<noscript></noscript>
+<style id="critical-css">@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/inter.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  --bg-page: #F6F8F6;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #F8FAF9;
+  --text-primary: #0F172A;
+  --text-secondary: #2B3A4E;
+  --text-muted: #526275;
+  --emerald: #009B72;
+  --emerald-dark: #006B47;
+  --emerald-soft: #ECF6F1;
+  --border-soft: #DFE6E2;
+  --border-medium: #C4D0C9;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+}
+*, *::before, *::after { box-sizing: border-box !important; }
+:root, html { scroll-padding-top: 68px; }
+body {
+  margin: 0; padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.sr-only {
+  position: absolute !important; width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+}
+.site-header {
+  position: sticky; top: 0; z-index: 1000;
+  min-height: 56px; height: clamp(56px, 8vh, 64px);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-soft);
+}
+.header-inner {
+  height: 100%; max-width: 1520px; margin: 0 auto;
+  padding: 0 clamp(16px, 2vw, 28px);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand img { height: 38px; width: auto; max-width: 220px; display: block; }
+.main-nav { display: flex; align-items: center; gap: 24px; }
+.main-nav a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.nav-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  padding: 8px; min-width: 44px; min-height: 44px;
+  flex-direction: column; justify-content: center; gap: 5px;
+}
+.nav-toggle span.hamburger-bar {
+  display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px;
+}
+.breadcrumb-bar { background: #FFFFFF; border-bottom: 1px solid var(--border-soft); }
+.breadcrumb { max-width: 1520px; margin: 0 auto; padding: 10px clamp(16px, 2vw, 28px); font-size: 0.85rem; }
+.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.breadcrumb a { color: var(--emerald-dark); text-decoration: none; }
+.calc-hero { max-width: 1520px; margin: 24px auto 16px; padding: 0 clamp(16px, 2vw, 28px); }
+.calc-hero h1 {
+  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.125rem);
+  line-height: 1.25; margin: 0 0 8px; color: var(--text-primary); font-weight: 800;
+}
+.article-byline {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+  font-size: 0.875rem; color: var(--text-muted); margin: 0.5rem 0 1rem;
+}
+.educational-disclaimer {
+  background: #fffbeb; border-left: 3px solid #b45309;
+  padding: 10px 14px; margin: 1rem 0; border-radius: 0 8px 8px 0;
+  font-size: 0.875rem; line-height: 1.5; color: #78350f;
+}
+.calc-switcher-wrapper { max-width: 1520px; margin: 0 auto 20px; padding: 0 clamp(16px, 2vw, 28px); }
+.calc-switcher-bar {
+  display: flex; align-items: center; gap: 8px; overflow-x: auto;
+  -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
+  padding: 6px 8px; border-radius: 8px; background: var(--bg-card);
+  border: 1px solid var(--border-soft); scrollbar-width: none;
+}
+.calc-switcher-bar::-webkit-scrollbar { display: none; }
+.calc-switcher-bar .calc-tab {
+  flex-shrink: 0; scroll-snap-align: start; white-space: nowrap;
+  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
+  padding: 8px 16px; border-radius: 6px; text-decoration: none;
+  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
+}
+.calc-switcher-bar .calc-tab.active { background: var(--emerald-dark); color: #FFFFFF; }
+.calc-main-container { max-width: 1520px; margin: 0 auto; padding: 0 clamp(16px, 2vw, 28px); }
+.calc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.calc-card, .calc-summary-card {
+  background: var(--bg-card); border: 1px solid var(--border-soft);
+  border-top: 3px solid var(--emerald-dark); border-radius: var(--radius-md);
+  padding: 24px; box-shadow: var(--shadow-sm);
+}
+.calc-field-group { margin-bottom: 20px; }
+.calc-input-box {
+  width: 100%; display: flex; align-items: center; background: #FAFBF9;
+  border: 1.5px solid var(--border-medium); border-radius: 6px; overflow: hidden;
+}
+.calc-inputs input[type="number"], .calc-inputs input[type="text"], .calc-input-box input {
+  width: 100%; font-size: 16px; min-height: 44px; padding: 8px 12px;
+  border: none; outline: none; background: transparent; font-family: var(--font-mono); font-weight: 700;
+}
+input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer; }
+.ad-container, .adsense-slot-wrapper { min-height: 280px; contain: layout; margin: 28px 0; }
+@media (max-width: 900px) {
+  .main-nav { display: none !important; }
+  .nav-toggle { display: flex !important; }
+}
+@media (max-width: 767px) {
+  .calc-grid { display: flex !important; flex-direction: column !important; }
+  .calc-card, .calc-summary-card { width: 100% !important; padding: 20px 16px !important; }
+}
+
+
+
+.footer-col ul li a { display: inline-block; padding: 6px 0; min-height: 36px; }
+.featured-guides-grid div h3 a, .featured-guides-grid a { display: inline-flex; align-items: center; min-height: 44px; padding: 4px 0; }
+.disc-toggle-btn { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; }
+
+
+</style>
+<link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
 <!-- WebSite & Organization Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -161,7 +295,7 @@
 <header class="site-header">
 <div class="header-inner">
 <a aria-label="Calculatorship Homepage" class="brand" href="/">
-<img alt="Calculatorship: Free Financial Calculators for Indian Investors" height="38" loading="lazy" src="/logo-light.svg" width="220"/>
+<img alt="Calculatorship: Free Financial Calculators for Indian Investors" height="38" fetchpriority="high" src="/logo-light.svg" width="220"/>
 </a>
 <nav aria-label="Primary Navigation" class="main-nav">
 <div class="nav-dropdown">
@@ -185,9 +319,7 @@
 <a href="/contact">Contact</a>
 </nav>
 <div class="header-actions">
-<button aria-expanded="false" aria-label="Toggle menu" class="nav-toggle" id="nav-toggle" type="button">
-<span></span><span></span><span></span>
-</button>
+<button aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span></button>
 </div>
 </div>
 </header>
@@ -205,13 +337,15 @@
 <h1>SIP Calculator (Systematic Investment Plan)</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.5rem 0 1rem; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
   <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-  <span>•</span>
+  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
   <span>Last reviewed: October 2026</span>
-  <span>•</span>
+  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
   <span>Reading time: 8 min</span>
 </div>
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
+<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note">
+<p class="disc-preview" style="margin:0 0 6px 0;"><strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything.</p>
+<p class="disc-full-text" style="display:none; margin:0 0 6px 0;">I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.</p>
+<button type="button" class="disc-toggle-btn" aria-expanded="false" style="background:none; border:none; padding:0; color:#b45309; font-weight:700; cursor:pointer; text-decoration:underline;">Read full disclaimer</button>
 </div>
 <p>Calculate projected wealth growth, compounding returns, and capital accumulation from your monthly mutual fund investments in India.</p>
 </div>
@@ -275,7 +409,7 @@
 </div>
 <div class="result-row">
 <span class="result-label">Estimated Growth</span>
-<span class="result-val" id="res-returns" style="color:#059669;">₹11,23,391</span>
+<span class="result-val" id="res-returns" style="color:#006B47;">₹11,23,391</span>
 </div>
 <div class="result-row" style="padding-top:18px;">
 <span class="result-label" style="font-weight:800; color:var(--text-primary);">Total Projected Value</span>
@@ -320,70 +454,70 @@
     <td>Year 1</td>
     <td>₹0</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹8,093</td>
+    <td style="color:#006B47; font-weight:600;">+₹8,093</td>
     <td style="font-weight:700; color:var(--text-primary);">₹128,093</td>
   </tr>
   <tr>
     <td>Year 2</td>
     <td>₹128,093</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹24,339</td>
+    <td style="color:#006B47; font-weight:600;">+₹24,339</td>
     <td style="font-weight:700; color:var(--text-primary);">₹272,432</td>
   </tr>
   <tr>
     <td>Year 3</td>
     <td>₹272,432</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹42,644</td>
+    <td style="color:#006B47; font-weight:600;">+₹42,644</td>
     <td style="font-weight:700; color:var(--text-primary);">₹435,076</td>
   </tr>
   <tr>
     <td>Year 4</td>
     <td>₹435,076</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹63,272</td>
+    <td style="color:#006B47; font-weight:600;">+₹63,272</td>
     <td style="font-weight:700; color:var(--text-primary);">₹618,348</td>
   </tr>
   <tr>
     <td>Year 5</td>
     <td>₹618,348</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹86,515</td>
+    <td style="color:#006B47; font-weight:600;">+₹86,515</td>
     <td style="font-weight:700; color:var(--text-primary);">₹824,864</td>
   </tr>
   <tr>
     <td>Year 6</td>
     <td>₹824,864</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹112,707</td>
+    <td style="color:#006B47; font-weight:600;">+₹112,707</td>
     <td style="font-weight:700; color:var(--text-primary);">₹1,057,570</td>
   </tr>
   <tr>
     <td>Year 7</td>
     <td>₹1,057,570</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹142,220</td>
+    <td style="color:#006B47; font-weight:600;">+₹142,220</td>
     <td style="font-weight:700; color:var(--text-primary);">₹1,319,790</td>
   </tr>
   <tr>
     <td>Year 8</td>
     <td>₹1,319,790</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹175,476</td>
+    <td style="color:#006B47; font-weight:600;">+₹175,476</td>
     <td style="font-weight:700; color:var(--text-primary);">₹1,615,266</td>
   </tr>
   <tr>
     <td>Year 9</td>
     <td>₹1,615,266</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹212,949</td>
+    <td style="color:#006B47; font-weight:600;">+₹212,949</td>
     <td style="font-weight:700; color:var(--text-primary);">₹1,948,215</td>
   </tr>
   <tr>
     <td>Year 10</td>
     <td>₹1,948,215</td>
     <td>₹120,000</td>
-    <td style="color:#059669; font-weight:600;">+₹255,176</td>
+    <td style="color:#006B47; font-weight:600;">+₹255,176</td>
     <td style="font-weight:700; color:var(--text-primary);">₹2,323,391</td>
   </tr>
 </tbody>
@@ -406,7 +540,7 @@
 </div>
 <a class="btn btn-secondary" href="/blog" style="font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Browse All Guides →</a>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.25rem;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));" class="featured-guides-grid gap: 1.25rem;">
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column;">
 <span style="font-size: 0.75rem; font-weight: 800; color:#006B47; text-transform: uppercase; margin-bottom: 0.4rem;">Tax Strategy 2026</span>
 <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem;"><a href="/old-vs-new-tax-regime" style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Old vs New Tax Regime: Breakeven Guide</a></h3>
@@ -414,22 +548,22 @@
 <a href="/old-vs-new-tax-regime" style="margin-top: auto; color:#006B47; font-weight: 700; font-size: 0.88rem;">See Tax Breakeven →</a>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column;">
-<span style="font-size: 0.75rem; font-weight: 800; color: #16a34a; text-transform: uppercase; margin-bottom: 0.4rem;">Life Protection</span>
+<span style="font-size: 0.75rem; font-weight: 800; color: #15803d; text-transform: uppercase; margin-bottom: 0.4rem;">Life Protection</span>
 <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem;"><a href="/term-insurance-guide-india" style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Term Insurance: Human Life Value Guide</a></h3>
 <p style="font-size: 0.88rem; color: #475569; margin: 0 0 1rem; line-height: 1.5;">Size your required life cover, compare ₹1 Cr pure term pricing, and dodge ULIP traps.</p>
-<a href="/term-insurance-guide-india" style="margin-top: auto; color: #16a34a; font-weight: 700; font-size: 0.88rem;">Check Cover Rules →</a>
+<a href="/term-insurance-guide-india" style="margin-top: auto; color: #15803d; font-weight: 700; font-size: 0.88rem;">Check Cover Rules →</a>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column;">
-<span style="font-size: 0.75rem; font-weight: 800; color: #0284c7; text-transform: uppercase; margin-bottom: 0.4rem;">Banking &amp; Loans</span>
+<span style="font-size: 0.75rem; font-weight: 800; color: #0369a1; text-transform: uppercase; margin-bottom: 0.4rem;">Banking &amp; Loans</span>
 <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem;"><a href="/credit-score-guide-india" style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Build &amp; Fix 750+ CIBIL Score</a></h3>
 <p style="font-size: 0.88rem; color: #475569; margin: 0 0 1rem; line-height: 1.5;">Follow a 12-month credit repair roadmap to lower utilisation and save lakhs on home loans.</p>
-<a href="/credit-score-guide-india" style="margin-top: auto; color: #0284c7; font-weight: 700; font-size: 0.88rem;">View CIBIL Plan →</a>
+<a href="/credit-score-guide-india" style="margin-top: auto; color: #0369a1; font-weight: 700; font-size: 0.88rem;">View CIBIL Plan →</a>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column;">
-<span style="font-size: 0.75rem; font-weight: 800; color: #d97706; text-transform: uppercase; margin-bottom: 0.4rem;">Gold &amp; Hedge</span>
+<span style="font-size: 0.75rem; font-weight: 800; color: #b45309; text-transform: uppercase; margin-bottom: 0.4rem;">Gold &amp; Hedge</span>
 <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem;"><a href="/sovereign-gold-bond-guide-india" style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Sovereign Gold Bond (SGB) Guide</a></h3>
 <p style="font-size: 0.88rem; color: #475569; margin: 0 0 1rem; line-height: 1.5;">Tax-exempt RBI redemption rules, 2.5% yearly coupon payouts, and secondary exchange tricks.</p>
-<a href="/sovereign-gold-bond-guide-india" style="margin-top: auto; color: #d97706; font-weight: 700; font-size: 0.88rem;">Open SGB Notes →</a>
+<a href="/sovereign-gold-bond-guide-india" style="margin-top: auto; color: #b45309; font-weight: 700; font-size: 0.88rem;">Open SGB Notes →</a>
 </div>
 </div>
 </div>
@@ -541,10 +675,10 @@
 <h2>Official Statutory Sources</h2>
 <p>Formulas and tax rates above trace straight back to Indian regulator portals:</p>
 <ul style="line-height: 1.8;">
-<li><strong>Association of Mutual Funds in India (AMFI):</strong> <a href="https://www.amfiindia.com/investor-corner/knowledge-center/what-are-mutual-funds.html" rel="noopener noreferrer" target="_blank" style="color:var(--emerald); text-decoration:underline;">AMFI Knowledge Centre: Mutual Fund Basics &amp; SIP Operations</a> covering SIP rules and NAV math.</li>
-<li><strong>Income Tax Department of India:</strong> <a href="https://incometaxindia.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--emerald); text-decoration:underline;">Income Tax Department: Capital Gains Taxation (Section 112A &amp; 111A)</a> confirming 12.5% LTCG above ₹1.25 Lakh and 20% equity STCG rules.</li>
-<li><strong>Securities and Exchange Board of India (SEBI):</strong> <a href="https://www.sebi.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--emerald); text-decoration:underline;">SEBI (Mutual Funds) Regulations</a> on Direct Plan zero-commission separation and expense limits.</li>
-<li><strong>National Stock Exchange of India (NSE):</strong> <a href="https://www.nseindia.com" rel="noopener noreferrer" target="_blank" style="color:var(--emerald); text-decoration:underline;">NSE Indices Historical Data</a> providing long-horizon benchmark context.</li>
+<li><strong>Association of Mutual Funds in India (AMFI):</strong> <a href="https://www.amfiindia.com/investor-corner/knowledge-center/what-are-mutual-funds.html" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">AMFI Knowledge Centre: Mutual Fund Basics &amp; SIP Operations</a> covering SIP rules and NAV math.</li>
+<li><strong>Income Tax Department of India:</strong> <a href="https://incometaxindia.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">Income Tax Department: Capital Gains Taxation (Section 112A &amp; 111A)</a> confirming 12.5% LTCG above ₹1.25 Lakh and 20% equity STCG rules.</li>
+<li><strong>Securities and Exchange Board of India (SEBI):</strong> <a href="https://www.sebi.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">SEBI (Mutual Funds) Regulations</a> on Direct Plan zero-commission separation and expense limits.</li>
+<li><strong>National Stock Exchange of India (NSE):</strong> <a href="https://www.nseindia.com" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">NSE Indices Historical Data</a> providing long-horizon benchmark context.</li>
 </ul>
 <p style="font-size:0.85rem; color:var(--text-muted); margin-top:1rem;"><em>Statutory rates checked October 2026. Check official notices before executing real investments. Verify rules firsthand.</em></p>
 </div>
@@ -553,38 +687,40 @@
 <p>Continue modelling salary appraisals, lump sums, or tax exits across these tools. Open your next step.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/step-up" style="color:#006B47; text-decoration: underline;">Step-Up SIP Calculator</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/step-up" style="color:var(--emerald-dark); text-decoration: underline;">Step-Up SIP Calculator</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">See how raising monthly contributions by 5% to 15% yearly alongside pay appraisals speeds up wealth targets.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/lumpsum" style="color:#006B47; text-decoration: underline;">Lumpsum Calculator</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/lumpsum" style="color:var(--emerald-dark); text-decoration: underline;">Lumpsum Calculator</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Weigh one-time bonus or inheritance deposits against staggered monthly SIP accumulation.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/goal" style="color:#006B47; text-decoration: underline;">Goal Planner Calculator</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/goal" style="color:var(--emerald-dark); text-decoration: underline;">Goal Planner Calculator</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Work backwards from future education or retirement rupee goals after adjusting for inflation.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/how-to-start-sip" style="color:#006B47; text-decoration: underline;">How to Start an SIP in India</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/how-to-start-sip" style="color:var(--emerald-dark); text-decoration: underline;">How to Start an SIP in India</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Walk through e-KYC setup, direct fund filters, and bank e-mandate registration cleanly.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/step-up-sip-guide" style="color:#006B47; text-decoration: underline;">Step-Up SIP Complete Guide</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/step-up-sip-guide" style="color:var(--emerald-dark); text-decoration: underline;">Step-Up SIP Complete Guide</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Compare flat SIP compounding curves against steady 10% annual contribution bumps.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/rupee-cost-averaging" style="color:#006B47; text-decoration: underline;">Rupee Cost Averaging Explained</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/rupee-cost-averaging" style="color:var(--emerald-dark); text-decoration: underline;">Rupee Cost Averaging Explained</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Check worked NAV crash tables proving how sideways volatility lowers average unit cost.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/capital-gains-tax-india" style="color:#006B47; text-decoration: underline;">Capital Gains Tax India Guide</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/capital-gains-tax-india" style="color:var(--emerald-dark); text-decoration: underline;">Capital Gains Tax India Guide</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Inspect Section 112A equity exemptions, STCG slabs, and ITR-2 mutual fund disclosure schedules.</p>
 </div>
 </div>
 </div>
 </div>
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
+<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note">
+<p class="disc-preview" style="margin:0 0 6px 0;"><strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything.</p>
+<p class="disc-full-text" style="display:none; margin:0 0 6px 0;">I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.</p>
+<button type="button" class="disc-toggle-btn" aria-expanded="false" style="background:none; border:none; padding:0; color:#b45309; font-weight:700; cursor:pointer; text-decoration:underline;">Read full disclaimer</button>
 </div></main>
   <footer class="site-footer">
     <div class="footer-inner">
@@ -646,206 +782,125 @@
 <button aria-label="Back to top" class="back-to-top" id="back-to-top">
 <svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </button>
-<script src="theme.js?v=4.2"></script>
+<script defer src="theme.js?v=4.4"></script>
 <!-- Interactive Calculator Engine Script -->
 <script>
-
     (function () {
-
       "use strict";
 
-
-
       const inrFormat = (num) => {
-
         const n = Math.round(num);
-
         return "₹" + n.toLocaleString("en-IN");
-
       };
 
-
-
       const monthlyInput = document.getElementById("monthly-investment-num");
-
       const monthlySlider = document.getElementById("monthly-investment");
-
       const returnInput = document.getElementById("expected-return-num");
-
       const returnSlider = document.getElementById("expected-return");
-
       const periodInput = document.getElementById("time-period-num");
-
       const periodSlider = document.getElementById("time-period");
 
-
-
-      function syncPair(inputEl, sliderEl, callback) {
-
-        if (!inputEl || !sliderEl) return;
-
-        inputEl.addEventListener("input", () => {
-
-          sliderEl.value = inputEl.value;
-
-          callback();
-
-        });
-
-        sliderEl.addEventListener("input", () => {
-
-          inputEl.value = sliderEl.value;
-
-          callback();
-
-        });
-
+      let calcRaf = null;
+      function debouncedCalculate() {
+        if (calcRaf) cancelAnimationFrame(calcRaf);
+        calcRaf = requestAnimationFrame(calculate);
       }
 
-
+      function syncPair(inputEl, sliderEl) {
+        if (!inputEl || !sliderEl) return;
+        inputEl.addEventListener("input", () => {
+          sliderEl.value = inputEl.value;
+          debouncedCalculate();
+        });
+        sliderEl.addEventListener("input", () => {
+          inputEl.value = sliderEl.value;
+          debouncedCalculate();
+        });
+      }
 
       function calculate() {
-
         const monthly = parseFloat(monthlyInput.value) || 0;
-
         const rate = parseFloat(returnInput.value) || 0;
-
         const years = parseFloat(periodInput.value) || 0;
 
-
-
         const i = (rate / 100) / 12;
-
         const n = years * 12;
 
-
-
         let totalInvested = monthly * n;
-
         let totalValue = 0;
-
         let totalGain = 0;
 
-
-
         if (i > 0) {
-
           totalValue = monthly * (((Math.pow(1 + i, n) - 1) / i) * (1 + i));
-
           totalGain = totalValue - totalInvested;
-
         } else {
-
           totalValue = totalInvested;
-
           totalGain = 0;
-
         }
-
-
 
         document.getElementById("res-invested").textContent = inrFormat(totalInvested);
-
         document.getElementById("res-returns").textContent = inrFormat(totalGain);
-
         document.getElementById("res-total").textContent = inrFormat(totalValue);
 
-
-
         // Update Donut
-
         const sum = totalInvested + totalGain;
-
         let gainPct = sum > 0 ? Math.round((totalGain / sum) * 100) : 50;
-
         gainPct = Math.max(0, Math.min(100, gainPct));
-
         const seg = document.getElementById("donut-segment");
-
         if (seg) {
-
           seg.setAttribute("stroke-dasharray", `${gainPct} ${100 - gainPct}`);
-
         }
-
         const legG = document.getElementById("donut-leg-gain");
-
         const legI = document.getElementById("donut-leg-inv");
-
         if (legG) legG.textContent = `Growth: ${gainPct}%`;
-
         if (legI) legI.textContent = `Capital: ${100 - gainPct}%`;
 
-
-
         // Populate Table
-
         const tbody = document.getElementById("schedule-tbody");
-
         if (tbody) {
-
           let rowsHtml = "";
-
           let curBal = 0;
-
           const annualDep = monthly * 12;
 
-
-
           for (let y = 1; y <= years; y++) {
-
             const openBal = curBal;
-
             for (let m = 1; m <= 12; m++) {
-
               curBal = (curBal + monthly) * (1 + i);
-
             }
-
             const yrGain = curBal - openBal - annualDep;
-
             rowsHtml += `
-
               <tr>
-
                 <td>Year ${y}</td>
-
                 <td>${inrFormat(openBal)}</td>
-
                 <td>${inrFormat(annualDep)}</td>
-
-                <td style="color:#059669; font-weight:600;">+${inrFormat(yrGain)}</td>
-
+                <td style="color:#006B47; font-weight:600;">+${inrFormat(yrGain)}</td>
                 <td style="font-weight:700; color:var(--text-primary);">${inrFormat(curBal)}</td>
-
               </tr>
-
             `;
-
           }
-
           tbody.innerHTML = rowsHtml;
-
         }
-
       }
 
+      syncPair(monthlyInput, monthlySlider);
+      syncPair(returnInput, returnSlider);
+      syncPair(periodInput, periodSlider);
 
-
-      syncPair(monthlyInput, monthlySlider, calculate);
-
-      syncPair(returnInput, returnSlider, calculate);
-
-      syncPair(periodInput, periodSlider, calculate);
-
-
-
-      calculate();
-
+      // Table and summary are already server/prerendered in HTML. Calculate runs on user input.
     })();
-
   </script>
 <!-- DPDP & GDPR Compliant Cookie Consent Manager -->
+<div id="cs-cookie-banner" class="cs-cookie-sheet" role="region" aria-label="Cookie Consent">
+  <div class="cs-cookie-inner">
+    <p class="cs-cookie-desc">
+      Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.
+    </p>
+    <div class="cs-cookie-actions">
+      <button type="button" id="cs-decline-cookies" class="cs-cookie-btn cs-cookie-decline">Decline</button>
+      <button type="button" id="cs-accept-cookies" class="cs-cookie-btn cs-cookie-accept">Accept</button>
+    </div>
+  </div>
+</div>
   <!-- Third-party advertising integration: commented out -->
   <!-- <script defer src="advertising/config.js"></script> -->
   <!-- <script defer src="advertising/register.js"></script> -->

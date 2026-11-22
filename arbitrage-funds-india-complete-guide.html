@@ -4,12 +4,11 @@
 <head>
   <!-- [ADMAVEN-DISABLED] <meta name='admaven-placement' content='Bpja9qjn5'> -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798"
-     crossorigin="anonymous"></script>
+  <script type="text/plain" data-category="advertising" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <!-- Google Analytics 4 (GA4) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
+<script type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -38,11 +37,136 @@
 <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&amp;display=swap" rel="stylesheet"/></noscript>
-<link href="style.css?v=4.3" rel="stylesheet"/>
+<noscript></noscript>
+<style id="critical-css">@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/inter.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  --bg-page: #F6F8F6;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #F8FAF9;
+  --text-primary: #0F172A;
+  --text-secondary: #2B3A4E;
+  --text-muted: #526275;
+  --emerald: #009B72;
+  --emerald-dark: #006B47;
+  --emerald-soft: #ECF6F1;
+  --border-soft: #DFE6E2;
+  --border-medium: #C4D0C9;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+}
+*, *::before, *::after { box-sizing: border-box !important; }
+:root, html { scroll-padding-top: 68px; }
+body {
+  margin: 0; padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.sr-only {
+  position: absolute !important; width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+}
+.site-header {
+  position: sticky; top: 0; z-index: 1000;
+  min-height: 56px; height: clamp(56px, 8vh, 64px);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-soft);
+}
+.header-inner {
+  height: 100%; max-width: 1520px; margin: 0 auto;
+  padding: 0 clamp(16px, 2vw, 28px);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand img { height: 38px; width: auto; max-width: 220px; display: block; }
+.main-nav { display: flex; align-items: center; gap: 24px; }
+.main-nav a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.nav-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  padding: 8px; min-width: 44px; min-height: 44px;
+  flex-direction: column; justify-content: center; gap: 5px;
+}
+.nav-toggle span.hamburger-bar {
+  display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px;
+}
+.breadcrumb-bar { background: #FFFFFF; border-bottom: 1px solid var(--border-soft); }
+.breadcrumb { max-width: 1520px; margin: 0 auto; padding: 10px clamp(16px, 2vw, 28px); font-size: 0.85rem; }
+.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.breadcrumb a { color: var(--emerald-dark); text-decoration: none; }
+.calc-hero { max-width: 1520px; margin: 24px auto 16px; padding: 0 clamp(16px, 2vw, 28px); }
+.calc-hero h1 {
+  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.125rem);
+  line-height: 1.25; margin: 0 0 8px; color: var(--text-primary); font-weight: 800;
+}
+.article-byline {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+  font-size: 0.875rem; color: var(--text-muted); margin: 0.5rem 0 1rem;
+}
+.educational-disclaimer {
+  background: #fffbeb; border-left: 3px solid #d97706;
+  padding: 10px 14px; margin: 1rem 0; border-radius: 0 8px 8px 0;
+  font-size: 0.875rem; line-height: 1.5; color: #78350f;
+}
+.calc-switcher-wrapper { max-width: 1520px; margin: 0 auto 20px; padding: 0 clamp(16px, 2vw, 28px); }
+.calc-switcher-bar {
+  display: flex; align-items: center; gap: 8px; overflow-x: auto;
+  -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
+  padding: 6px 8px; border-radius: 8px; background: var(--bg-card);
+  border: 1px solid var(--border-soft); scrollbar-width: none;
+}
+.calc-switcher-bar::-webkit-scrollbar { display: none; }
+.calc-switcher-bar .calc-tab {
+  flex-shrink: 0; scroll-snap-align: start; white-space: nowrap;
+  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
+  padding: 8px 16px; border-radius: 6px; text-decoration: none;
+  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
+}
+.calc-switcher-bar .calc-tab.active { background: var(--emerald-dark); color: #FFFFFF; }
+.calc-main-container { max-width: 1520px; margin: 0 auto; padding: 0 clamp(16px, 2vw, 28px); }
+.calc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.calc-card, .calc-summary-card {
+  background: var(--bg-card); border: 1px solid var(--border-soft);
+  border-top: 3px solid var(--emerald-dark); border-radius: var(--radius-md);
+  padding: 24px; box-shadow: var(--shadow-sm);
+}
+.calc-field-group { margin-bottom: 20px; }
+.calc-input-box {
+  width: 100%; display: flex; align-items: center; background: #FAFBF9;
+  border: 1.5px solid var(--border-medium); border-radius: 6px; overflow: hidden;
+}
+.calc-inputs input[type="number"], .calc-inputs input[type="text"], .calc-input-box input {
+  width: 100%; font-size: 16px; min-height: 44px; padding: 8px 12px;
+  border: none; outline: none; background: transparent; font-family: var(--font-mono); font-weight: 700;
+}
+input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer; }
+.ad-container, .adsense-slot-wrapper { min-height: 280px; contain: layout; margin: 28px 0; }
+@media (max-width: 900px) {
+  .main-nav { display: none !important; }
+  .nav-toggle { display: flex !important; }
+}
+@media (max-width: 767px) {
+  .calc-grid { display: flex !important; flex-direction: column !important; }
+  .calc-card, .calc-summary-card { width: 100% !important; padding: 20px 16px !important; }
+}</style>
+<link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -145,7 +269,8 @@
     }
   ]
 }</script>
-<meta name="twitter:title" content="Arbitrage Funds India: Cash-Futures Math &amp; Equity Tax Rules"><meta name="twitter:description" content="Learn how arbitrage funds work in India for FY 2026-27: cash-futures spread math, 65% equity rule, 20% STCG vs 12.5% LTCG, and arbitrage vs liquid funds."></head>
+<meta name="twitter:title" content="Arbitrage Funds India: Cash-Futures Math &amp; Equity Tax Rules"><meta name="twitter:description" content="Learn how arbitrage funds work in India for FY 2026-27: cash-futures spread math, 65% equity rule, 20% STCG vs 12.5% LTCG, and arbitrage vs liquid funds."><link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+</head>
 <body>
 <div class="reading-progress-bar" id="reading-progress"></div>
 <a class="skip-link" href="#main-article">Skip to article content</a>
@@ -176,9 +301,7 @@
 <a href="/contact">Contact</a>
 </nav>
 <div class="header-actions">
-<button aria-expanded="false" aria-label="Toggle menu" class="nav-toggle" id="nav-toggle" type="button">
-<span></span><span></span><span></span>
-</button>
+<button aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span></button>
 </div>
 </div>
 </header>
@@ -257,6 +380,7 @@
 </ol>
 <p>On the final expiry day of the derivative contract, the spot cash price and the futures contract price <strong>must legally converge to the exact same value</strong>. Consider both extreme outcomes on expiry day:</p>
 <div style="overflow-x:auto; margin:20px 0;">
+<div class="table-wrapper">
 <table style="width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border-soft); font-size:0.95rem;">
 <thead>
 <tr style="background:var(--slate-soft); text-align:left;">
@@ -282,6 +406,7 @@
 </tbody>
 </table>
 </div>
+</div>
 <p>In both scenarios, whether the underlying stock surges 10% or plummets 10%, the net return is <strong>exactly ₹6,000</strong>. The market direction has zero impact on the outcome. The fund manager then rolls over the position into the next month's contract or squares off and identifies new arbitrage spreads.</p>
 </section>
 <section id="sebi-mandate">
@@ -299,6 +424,7 @@
 <p>The landmark change in the Finance Act, 2023 amended the taxation of pure debt mutual funds. Since 1 April 2023, capital gains from mutual funds holding less than 35% equity are taxed as regular income at the investor's applicable slab rate, entirely stripping away indexation benefits.</p>
 <p>Because Arbitrage Funds maintain at least 65% in equity and derivatives, they escaped this tax overhaul completely. Following the updated tax rates enacted under Finance (No. 2) Act, 2024, the tax treatment for Indian resident investors is:</p>
 <div style="overflow-x:auto; margin:20px 0;">
+<div class="table-wrapper">
 <table style="width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border-soft); font-size:0.95rem;">
 <thead>
 <tr style="background:var(--slate-soft); text-align:left;">
@@ -324,12 +450,14 @@
 </tbody>
 </table>
 </div>
+</div>
 <p>For an individual in the 30% or 39% surcharge income brackets, paying 20% on short-term gains (or 12.5% after 1 year with a ₹1.25 Lakh exemption) represents a substantial tax saving compared to paying 30% to 39% on Bank FD interest or Liquid Fund gains.</p>
 </section>
 <section id="comparison-matrix">
 <h2>5. Head-to-Head Comparison: Arbitrage Fund vs Liquid Fund vs Bank FD</h2>
 <p>To choose the right instrument for short-term capital, compare the structural features of Arbitrage Funds, Liquid Mutual Funds, and Bank Fixed Deposits:</p>
 <div style="overflow-x:auto; margin:20px 0;">
+<div class="table-wrapper">
 <table style="width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border-soft); font-size:0.95rem;">
 <thead>
 <tr style="background:var(--slate-soft); text-align:left;">
@@ -385,11 +513,13 @@
 </tbody>
 </table>
 </div>
+</div>
 </section>
 <section id="worked-math-post-tax">
 <h2>6. Worked Math: Post-Tax Returns Across Income Slabs</h2>
 <p>Let us look at a numerical scenario. An investor parks <strong>₹10,00,000</strong> for exactly 12 months. Assume both the Arbitrage Fund and a 1-year Bank Fixed Deposit generate a pre-tax gross return of <strong>7.00% (₹70,000 gain)</strong>:</p>
 <div style="overflow-x:auto; margin:20px 0;">
+<div class="table-wrapper">
 <table style="width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border-soft); font-size:0.95rem;">
 <thead>
 <tr style="background:var(--slate-soft); text-align:left;">
@@ -420,6 +550,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 <p style="font-size:0.88rem; color:var(--text-muted);"><em>*Note: If held for over 12 months, the ₹70,000 gain falls entirely within the annual ₹1,25,000 LTCG tax-free threshold (Section 112A), resulting in ₹0 tax. Even if redeemed within 12 months, the 20% STCG tax rate results in an in-hand return of ₹55,440, still outperforming the 30% slab FD by over ₹7,280.</em></p>
 </section>
@@ -581,10 +712,22 @@
 <button aria-label="Back to top" class="back-to-top" id="back-to-top">
 <svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
 </button>
-<script src="theme.js?v=4.2"></script>
+<script defer src="theme.js?v=4.4"></script>
 <!-- DPDP & GDPR Compliant Cookie Consent Manager -->
   <!-- Third-party advertising integration: commented out -->
   <!-- <script defer src="advertising/config.js"></script> -->
   <!-- <script defer src="advertising/register.js"></script> -->
+<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
+<div id="cs-cookie-banner" class="cs-cookie-sheet" role="region" aria-label="Cookie Consent">
+  <div class="cs-cookie-inner">
+    <p class="cs-cookie-desc">
+      Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.
+    </p>
+    <div class="cs-cookie-actions">
+      <button type="button" id="cs-decline-cookies" class="cs-cookie-btn cs-cookie-decline">Decline</button>
+      <button type="button" id="cs-accept-cookies" class="cs-cookie-btn cs-cookie-accept">Accept</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
