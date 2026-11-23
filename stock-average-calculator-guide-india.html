@@ -3,7 +3,7 @@
 <head>
   <!-- [ADMAVEN-DISABLED] <meta name='admaven-placement' content='Bpja9qjn5'> -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-  <script type="text/plain" data-category="advertising" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <!-- Google Analytics 4 (GA4) -->
@@ -15,7 +15,7 @@
     gtag('config', 'G-0C93Q0VBQP');
   </script>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stock Average Calculator India: Formula &amp; Examples (2026)</title>
 <meta name="description" content="Calculate your stock average buy price with our free stock average calculator India. See weighted average formulas, target average math, and break-even moves.">
 <link href="https://www.calculatorship.in/stock-average-calculator-guide-india" rel="canonical"/>
@@ -177,7 +177,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       "description": "Calculate your stock average buy price with our free stock average calculator India. See weighted average formulas, target average math, and break-even moves.",
       "image": "https://www.calculatorship.in/og-image.webp",
       "datePublished": "2026-11-15T08:00:00+05:30",
-      "dateModified": "2026-11-15T08:00:00+05:30",
+      "dateModified": "2026-11-23T12:00:00+05:30",
       "author": {
         "@type": "Person",
         "name": "Tejas Waghmare",
@@ -340,17 +340,25 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <span>Last reviewed: Nov 2026</span>
 </div>
 <h1>Stock Average Calculator India: How to Calculate Your Average Buy Price</h1>
-<div class="article-byline">
-  By Tejas, Calculatorship | Published: 15 Nov 2026 | Last reviewed: Nov 2026 | 11 min read
-</div>
+  <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
+    <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+    <span>Published: 15 November 2026</span>
+    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+    <span>Last reviewed: 23 November 2026</span>
+    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+    <span>Equity Trading Rules: SEBI Delivery Settlement &amp; CBDT Demat FIFO Tax Mandate</span>
+  </div>
+  <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
+    Educational equity calculation tool only. Not stock recommendation or investment advisory. Stock trading involves market risk of capital loss. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
+  </p>
 </header>
 
 <div class="article-page">
 <article class="article-main" id="main-article">
-
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
-</div>
+  <p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+    The Stock Average Calculator determines your volume-weighted average buy price across multiple share purchases using the formula Total Cost ÷ Total Shares. Buying 100 shares at ₹500 and 150 shares at ₹420 gives an exact weighted average price of ₹452.00 per share across 250 shares, rather than the misleading simple average of ₹460.00. While average buy price tracks portfolio breakeven, CBDT Circular 768 mandates that all capital gains tax filings in India must follow the First-In, First-Out (FIFO) method, not portfolio average price.
+  </p>
 
 <!-- Quick Answer Callout Box -->
 <div class="quick-answer-box" style="background:#f0fdf4; border:2px solid #22c55e; border-radius:12px; padding:20px 24px; margin:0 0 28px;">
@@ -393,7 +401,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
         <label for="input-optional-charges" style="display:block; font-size:0.86rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Total Brokerage &amp; Statutory Charges (₹, Optional)</label>
         <div class="calc-input-box" style="position:relative; display:flex; align-items:center;">
           <span style="position:absolute; left:10px; color:var(--text-muted); font-weight:600;">₹</span>
-          <input id="input-optional-charges" type="number" min="0" step="1" value="0" oninput="calculateWeightedAverage()" style="width:100%; padding:8px 10px 8px 26px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Total Brokerage and Charges in Rupees"/>
+          <input id="input-optional-charges" type="number" min="0" step="1" value="0" oninput="calculateWeightedAverage()" style="width:100%; padding:8px 10px 8px 26px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Total Brokerage and Charges in Rupees"/ inputmode="numeric">
         </div>
         <span style="font-size:0.75rem; color:var(--text-muted);">Includes STT, stamp duty, exchange fees, and GST from contract notes.</span>
       </div>
@@ -431,19 +439,19 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;">
       <div>
         <label for="target-shares-held" style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Current Shares Held (N₀)</label>
-        <input id="target-shares-held" type="number" min="1" step="1" value="100" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Current Shares Held"/>
+        <input id="target-shares-held" type="number" min="1" step="1" value="100" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Current Shares Held"/ inputmode="numeric">
       </div>
       <div>
         <label for="target-current-avg" style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Current Average Price (P₀ in ₹)</label>
-        <input id="target-current-avg" type="number" min="0.01" step="0.05" value="500" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Current Average Price in Rupees"/>
+        <input id="target-current-avg" type="number" min="0.01" step="0.05" value="500" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Current Average Price in Rupees"/ inputmode="numeric">
       </div>
       <div>
         <label for="target-new-price" style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">New Buy Price (Pₙ in ₹)</label>
-        <input id="target-new-price" type="number" min="0.01" step="0.05" value="400" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="New Purchase Price in Rupees"/>
+        <input id="target-new-price" type="number" min="0.01" step="0.05" value="400" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="New Purchase Price in Rupees"/ inputmode="numeric">
       </div>
       <div>
         <label for="target-desired-avg" style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Desired Target Average (Tₐ in ₹)</label>
-        <input id="target-desired-avg" type="number" min="0.01" step="0.05" value="450" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Desired Target Average in Rupees"/>
+        <input id="target-desired-avg" type="number" min="0.01" step="0.05" value="450" oninput="calculateTargetAverage()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Desired Target Average in Rupees"/ inputmode="numeric">
       </div>
     </div>
 
@@ -479,15 +487,15 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;">
       <div>
         <label for="be-current-price" style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Current Market / New Price (₹)</label>
-        <input id="be-current-price" type="number" min="0.01" step="0.05" value="400" oninput="calculateBreakEven()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Current Market Price in Rupees"/>
+        <input id="be-current-price" type="number" min="0.01" step="0.05" value="400" oninput="calculateBreakEven()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Current Market Price in Rupees"/ inputmode="numeric">
       </div>
       <div>
         <label for="be-average-price" style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Averaged Buy Price (₹)</label>
-        <input id="be-average-price" type="number" min="0.01" step="0.05" value="450" oninput="calculateBreakEven()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Averaged Buy Price in Rupees"/>
+        <input id="be-average-price" type="number" min="0.01" step="0.05" value="450" oninput="calculateBreakEven()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Averaged Buy Price in Rupees"/ inputmode="numeric">
       </div>
       <div>
         <label for="be-original-price" style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-secondary); margin-bottom:4px;">Original Buy Price Before Averaging (₹)</label>
-        <input id="be-original-price" type="number" min="0.01" step="0.05" value="500" oninput="calculateBreakEven()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Original Price Before Averaging in Rupees"/>
+        <input id="be-original-price" type="number" min="0.01" step="0.05" value="500" oninput="calculateBreakEven()" style="width:100%; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-elevated); color:var(--text-primary);" aria-label="Original Price Before Averaging in Rupees"/ inputmode="numeric">
       </div>
     </div>
 
@@ -883,13 +891,9 @@ A lower price by itself does not guarantee an eventual recovery. Companies can s
   </p>
 </div>
 
-<div class="article-footer-disclaimer">
-  <strong>Educational Notice:</strong> Calculatorship provides general educational information and financial calculation tools for illustrative purposes only. Articles are written for personal research and educational purposes. This is not a substitute for professional financial, tax, legal, or investment advice. Information can change when official regulations, tax rules, or interest rates are updated. Readers should verify time-sensitive figures with official authorities and consult a qualified advisor before making financial decisions.
-</div>
 
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-<strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
-</div>
+
+
 
 </article>
 
@@ -1070,9 +1074,9 @@ A lower price by itself does not guarantee an eventual recovery. Companies can s
       
       var badge = '<span style="font-size:0.8rem; font-weight:700; color:var(--text-muted); min-width:28px;">#' + (idx + 1) + '</span>';
       
-      var qtyInput = '<div style="display:flex; flex-direction:column;"><label style="font-size:0.75rem; color:var(--text-muted); margin-bottom:2px;" for="row-qty-' + idx + '">Shares</label><input id="row-qty-' + idx + '" type="number" min="1" step="1" value="' + row.qty + '" oninput="updateTrancheQty(' + idx + ', this.value)" style="width:100%; padding:6px 8px; border:1px solid var(--border-color); border-radius:4px; background:var(--bg-card); color:var(--text-primary);" aria-label="Purchase ' + (idx + 1) + ' Share Quantity"/></div>';
+      var qtyInput = '<div style="display:flex; flex-direction:column;"><label style="font-size:0.75rem; color:var(--text-muted); margin-bottom:2px;" for="row-qty-' + idx + '">Shares</label><input id="row-qty-' + idx + '" type="number" min="1" step="1" value="' + row.qty + '" oninput="updateTrancheQty(' + idx + ', this.value)" style="width:100%; padding:6px 8px; border:1px solid var(--border-color); border-radius:4px; background:var(--bg-card); color:var(--text-primary);" aria-label="Purchase ' + (idx + 1) + ' Share Quantity"/ inputmode="numeric"></div>';
       
-      var priceInput = '<div style="display:flex; flex-direction:column;"><label style="font-size:0.75rem; color:var(--text-muted); margin-bottom:2px;" for="row-price-' + idx + '">Price (₹)</label><input id="row-price-' + idx + '" type="number" min="0.01" step="0.05" value="' + row.price + '" oninput="updateTranchePrice(' + idx + ', this.value)" style="width:100%; padding:6px 8px; border:1px solid var(--border-color); border-radius:4px; background:var(--bg-card); color:var(--text-primary);" aria-label="Purchase ' + (idx + 1) + ' Price per Share"/></div>';
+      var priceInput = '<div style="display:flex; flex-direction:column;"><label style="font-size:0.75rem; color:var(--text-muted); margin-bottom:2px;" for="row-price-' + idx + '">Price (₹)</label><input id="row-price-' + idx + '" type="number" min="0.01" step="0.05" value="' + row.price + '" oninput="updateTranchePrice(' + idx + ', this.value)" style="width:100%; padding:6px 8px; border:1px solid var(--border-color); border-radius:4px; background:var(--bg-card); color:var(--text-primary);" aria-label="Purchase ' + (idx + 1) + ' Price per Share"/ inputmode="numeric"></div>';
       
       var removeBtn = '';
       if (purchaseRows.length > 2) {

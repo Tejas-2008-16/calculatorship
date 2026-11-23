@@ -2,7 +2,7 @@
 <html lang="en-IN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Salary Hike Calculator India: New CTC &amp; In-Hand Gain</title>
 <meta name="description" content="Free salary hike calculator for India. Calculate your hike %, new CTC, and estimated monthly in-hand increase after tax and EPF, with real inflation checks.">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -196,7 +196,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </script>
 
 <!-- Google AdSense - Consent Gated -->
-<script type="text/plain" data-category="advertising" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
@@ -225,7 +225,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
         }
       },
       "datePublished": "2026-11-22",
-      "dateModified": "2026-11-22",
+      "dateModified": "2026-11-23T12:00:00+05:30",
       "mainEntityOfPage": "https://www.calculatorship.in/salary-hike-calculator",
       "inLanguage": "en-IN"
     },
@@ -378,19 +378,21 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <main id="main-content">
   <div class="calc-hero">
     <h1>Salary Hike Calculator India: Hike %, New CTC &amp; Real In-Hand Gain</h1>
-    <div class="article-byline">
-      <span>Written by <strong>Tejas Waghmare</strong></span>
-      <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-      <span>Last reviewed: 22 November 2026</span>
-      <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-      <span>Reading time: 10 min</span>
-    </div>
-
-    <div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note">
-      <p class="disc-preview" style="margin:0 0 6px 0;"><strong>Educational content only.</strong> This salary hike calculator explains how increments, statutory deductions, and tax slabs work in India. It is not tax, legal, or financial advice.</p>
-      <p class="disc-full-text" style="display:none; margin:0 0 6px 0;">I am an engineering student sharing financial arithmetic, not a Chartered Accountant or SEBI-registered adviser. Company pay structures, allowances, and local tax schedules vary across employers. Verify your appointment letter and salary annexure with your human resources department.</p>
-      <button type="button" class="disc-toggle-btn" aria-expanded="false" style="background:none; border:none; padding:0; color:#b45309; font-weight:700; cursor:pointer; text-decoration:underline;">Read full disclaimer</button>
-    </div>
+  <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
+    <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+    <span>Published: February 2026</span>
+    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+    <span>Last reviewed: 23 November 2026</span>
+    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+    <span>Compensation Analysis: CTC vs In-Hand Increments &amp; Marginal Tax Drag</span>
+  </div>
+  <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
+    Educational payroll calculation tool only. Not professional tax or legal advice. Final in-hand salary depends on your employer's specific CTC breakup, exemptions, and allowances. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
+  </p>
+  <p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+    The Salary Hike Calculator computes your percentage increment, new Cost-to-Company (CTC), and the actual monthly take-home increase after mandatory employer EPF, gratuity provisions, and personal income tax under the New (Section 115BAC) and Old tax regimes. A 25% appraisal hike on a ₹12 Lakh CTC raises your annual package to ₹15 Lakh, but net monthly in-hand increases from ₹83,567 to ₹1,01,511 (+₹17,944/month or a 21.5% net raise) because incremental earnings face 20% slab tax plus 4% cess.
+  </p>
 
     <!-- Direct Answer Box (45-55 words) -->
     <div class="direct-answer-box" style="background:var(--emerald-soft); border-left:3px solid var(--emerald-dark); border-radius:0 8px 8px 0; padding:16px 20px; margin:1.25rem 0 2rem; font-size:1.02rem; line-height:1.65; color:var(--text-primary);">
@@ -435,7 +437,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           <label for="cur-salary" id="lbl-cur-salary" style="display:block; font-weight:600; font-size:0.9rem; margin-bottom:6px;">Current Annual CTC:</label>
           <div class="calc-input-box">
             <span class="calc-input-prefix">₹</span>
-            <input type="number" id="cur-salary" value="1200000" min="50000" max="20000000" step="10000" aria-label="Current Annual CTC">
+            <input type="number" id="cur-salary" value="1200000" min="50000" max="20000000" step="10000" aria-label="Current Annual CTC" inputmode="numeric">
           </div>
           <input type="range" id="cur-salary-slider" min="100000" max="5000000" step="25000" value="1200000" aria-label="Current Annual CTC Slider">
         </div>
@@ -444,7 +446,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
         <div class="calc-field-group" id="group-hike-pct">
           <label for="hike-pct" style="display:block; font-weight:600; font-size:0.9rem; margin-bottom:6px;">Hike Percentage (%):</label>
           <div class="calc-input-box">
-            <input type="number" id="hike-pct" value="20" min="0" max="200" step="0.5" aria-label="Hike Percentage">
+            <input type="number" id="hike-pct" value="20" min="0" max="200" step="0.5" aria-label="Hike Percentage" inputmode="numeric">
             <span class="calc-input-prefix">%</span>
           </div>
           <input type="range" id="hike-pct-slider" min="0" max="100" step="1" value="20" aria-label="Hike Percentage Slider">
@@ -455,7 +457,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           <label for="new-salary" id="lbl-new-salary" style="display:block; font-weight:600; font-size:0.9rem; margin-bottom:6px;">New Annual CTC:</label>
           <div class="calc-input-box">
             <span class="calc-input-prefix">₹</span>
-            <input type="number" id="new-salary" value="1440000" min="50000" max="25000000" step="10000" aria-label="New Annual CTC">
+            <input type="number" id="new-salary" value="1440000" min="50000" max="25000000" step="10000" aria-label="New Annual CTC" inputmode="numeric">
           </div>
           <input type="range" id="new-salary-slider" min="100000" max="6000000" step="25000" value="1440000" aria-label="New Annual CTC Slider">
         </div>
@@ -483,12 +485,12 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 
             <div class="calc-field-group">
               <label for="pt-monthly" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:4px;">Professional Tax (₹/month):</label>
-              <input type="number" id="pt-monthly" value="200" min="0" max="500" step="50" class="calc-select" style="min-height:38px;" aria-label="Professional Tax Monthly">
+              <input type="number" id="pt-monthly" value="200" min="0" max="500" step="50" class="calc-select" style="min-height:38px;" aria-label="Professional Tax Monthly" inputmode="numeric">
             </div>
 
             <div class="calc-field-group">
               <label for="inflation-rate" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:4px;">Expected Annual Inflation Rate (% CPI):</label>
-              <input type="number" id="inflation-rate" value="6.0" min="2" max="15" step="0.1" class="calc-select" style="min-height:38px;" aria-label="Expected Annual Inflation Rate">
+              <input type="number" id="inflation-rate" value="6.0" min="2" max="15" step="0.1" class="calc-select" style="min-height:38px;" aria-label="Expected Annual Inflation Rate" inputmode="decimal">
             </div>
           </div>
         </details>
@@ -906,6 +908,16 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 
   </article>
 </main>
+
+
+  <section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
+    <h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
+    <ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+      <li><strong>Income Tax Slabs &amp; Standard Deduction (Section 115BAC):</strong> Income Tax Department of India (<a href="https://incometaxindia.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
+      <li><strong>Employees' Provident Fund Contribution Rules (12% Wage Ceiling):</strong> Employees' Provident Fund Organisation (<a href="https://epfindia.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">epfindia.gov.in</a>). Accessed: 23 November 2026.</li>
+      <li><strong>Statutory Gratuity Accrual Formula (15/26 Calculation):</strong> Ministry of Labour &amp; Employment, Government of India (<a href="https://labour.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">labour.gov.in</a>). Accessed: 23 November 2026.</li>
+    </ul>
+  </section>
 
 <footer class="site-footer">
   <div class="footer-inner">
