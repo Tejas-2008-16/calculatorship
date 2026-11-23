@@ -5,7 +5,7 @@
 <head>
   <!-- [ADMAVEN-DISABLED] <meta name='admaven-placement' content='Bpja9qjn5'> -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-  <script type="text/plain" data-category="advertising" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
   <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification" />
   <meta content="index, follow, max-image-preview:large" name="robots" />
   <!-- Google Analytics 4 (GA4) -->
@@ -17,7 +17,7 @@
     gtag('config', 'G-0C93Q0VBQP');
   </script>
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>8th Pay Commission Salary Calculator & Fitment Factor (2026)</title>
   <meta name="description" content="Use our 8th Pay Commission salary calculator to test fitment factor scenarios (1.92 to 2.86), revised basic pay, HRA tiers, DA reset, and pay matrix tables.">
   <link href="https://www.calculatorship.in/8th-pay-commission-salary-calculator-fitment-factor" rel="canonical" />
@@ -178,7 +178,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       "description": "An analytical guide to 8th Central Pay Commission salary revisions, fitment factor scenarios (1.92, 2.28, 2.57, 2.86), Dearness Allowance merger math, and pension impact for central government employees.",
       "image": "https://www.calculatorship.in/og-image.webp",
       "datePublished": "2026-10-17T08:00:00+05:30",
-      "dateModified": "2026-10-17T08:00:00+05:30",
+      "dateModified": "2026-11-23T12:00:00+05:30",
       "author": {
         "@type": "Person",
         "name": "Tejas Waghmare",
@@ -337,15 +337,21 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
         <span>Updated for FY 2026-27</span>
       </div>
       <h1>8th Pay Commission: Salary Hike Estimator &amp; Fitment Factor Scenarios</h1>
-      <div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note"
-        style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-        <strong>Educational content only.</strong> This page explains how a financial concept works. It is not
-        investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a
-        student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change,
-        so check the official source linked below before you act, and speak to a qualified professional about your own
-        situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future
-        returns.
-      </div>
+<div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
+  <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+  <span>Published: 17 October 2026</span>
+  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+  <span>Last reviewed: 23 November 2026</span>
+  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
+  <span>Pay Framework: Central Pay Commission Pay Matrix &amp; Fitment Factor Analysis</span>
+</div>
+<p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
+  Educational salary projection model only. Not an official government gazette or notification. 8th Pay Commission fitment factor scenarios are analytical models based on past CPC precedents and employee representations. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
+</p>
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+  The 8th Pay Commission Salary Hike Estimator models central government pay revisions across fitment factor scenarios ranging from 1.92 to 2.86. For a Level 1 employee currently earning a minimum basic pay of ₹18,000, a fitment factor of 1.92 raises basic pay to ₹34,560, while a 2.57 factor (mirroring the 7th CPC) raises basic pay to ₹46,260 alongside a complete reset of Dearness Allowance (DA) back to 0%.
+</p>
       <p style="font-size:1.15rem; color:var(--text-secondary); line-height:1.7; max-width:980px; margin-top:12px;">
         Wondering how the 8th Central Pay Commission could reshape your basic pay, allowances, and monthly pension? Here
         is the exact fitment factor mathematics, historical precedents from the 6th and 7th CPC, four realistic
@@ -570,7 +576,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
                   7th CPC Basic Pay (₹)</label>
                 <input id="cpc-basic" min="18000" step="500"
                   style="width:100%; padding:10px 14px; border:1px solid var(--border-medium); border-radius:6px; font-size:1rem; font-family:var(--font-sans);"
-                  type="number" value="35400" />
+                  type="number" value="35400" / inputmode="numeric">
               </div>
               <div>
                 <label for="cpc-factor"
@@ -826,23 +832,8 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
               professional. Information can change when laws, tax codes, or official guidance are updated. Consult a
               qualified professional before making financial decisions.</em></p>
         </div>
-        <div class="article-footer-disclaimer">
-          <strong>Educational Notice:</strong> Calculatorship provides general educational information and financial
-          calculation tools for illustrative purposes only. Content may be drafted with AI assistance and compiled from
-          available public sources. This is not a substitute for professional financial, tax, legal, or investment
-          advice. Information can change when official regulations, tax rules, or pay scales are updated. Readers should
-          verify time-sensitive figures with official authorities and consult a qualified advisor before making
-          financial decisions.
-        </div>
-        <div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note"
-          style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
-          <strong>Educational content only.</strong> This page explains how a financial concept works. It is not
-          investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a
-          student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change,
-          so check the official source linked below before you act, and speak to a qualified professional about your own
-          situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future
-          returns.
-        </div>
+        
+        
       </article>
       <!-- Sidebar -->
       <aside aria-label="Related Guides" class="article-sidebar">
@@ -866,7 +857,16 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       </aside>
     </div>
   </main>
-  <footer class="site-footer">
+  
+  <section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
+    <h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
+    <ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+      <li><strong>7th Central Pay Commission Gazette Notifications &amp; Pay Matrix:</strong> Department of Expenditure, Ministry of Finance (<a href="https://doe.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">doe.gov.in</a>). Accessed: 23 November 2026.</li>
+      <li><strong>Staff Side National Council (JCM) Memorandums:</strong> Public representations submitted to Ministry of Finance regarding 8th CPC terms of reference. Accessed: 23 November 2026.</li>
+    </ul>
+  </section>
+
+<footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">

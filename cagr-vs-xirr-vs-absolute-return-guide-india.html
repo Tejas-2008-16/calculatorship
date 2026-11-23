@@ -4,7 +4,7 @@
 <head>
   <!-- [ADMAVEN-DISABLED] <meta name='admaven-placement' content='Bpja9qjn5'> -->
   <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-  <script type="text/plain" data-category="advertising" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <!-- Google Analytics 4 (GA4) -->
@@ -16,9 +16,9 @@
     gtag('config', 'G-0C93Q0VBQP');
   </script>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CAGR vs XIRR vs Absolute Return India: Formulas &amp; Examples</title>
-<meta name="description" content="Compare CAGR vs XIRR vs Absolute Return for Indian stocks and mutual funds. See why CAGR breaks on monthly SIPs, how XIRR works, and Excel formula steps.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAGR vs XIRR vs Absolute Return: Differences, Formulas & SIP Examples | Calculatorship</title>
+<meta name="description" content="Master the differences between Absolute Return, CAGR, and XIRR: mathematical formulas, why CAGR fails for SIPs, and step-by-step Excel and Python examples.">
 <link href="https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india" rel="canonical"/>
 <meta content="Tejas Waghmare, Calculatorship" name="author"/>
 <meta content="en_IN" property="og:locale"/>
@@ -167,34 +167,39 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 }</style>
 <link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
-<script type="application/ld+json">{
+
+<meta name="twitter:title" content="CAGR vs XIRR vs Absolute Return India: Formulas &amp; Examples"><meta name="twitter:description" content="Compare CAGR vs XIRR vs Absolute Return for Indian stocks and mutual funds. See why CAGR breaks on monthly SIPs, how XIRR works, and Excel formula steps."><link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Article",
-      "headline": "CAGR Calculator India: CAGR vs XIRR vs Absolute Return",
-      "description": "detailed guide explaining how to measure real investment returns in India. Features an interactive CAGR and reverse-CAGR calculator, worked examples, why CAGR fails for monthly SIPs, step-by-step Excel/Google Sheets setups for CAGR and XIRR, and common fund comparison traps.",
-      "image": "https://www.calculatorship.in/og-image.webp",
+      "@id": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india#article",
+      "isPartOf": {
+        "@type": "WebPage",
+        "@id": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india"
+      },
+      "headline": "CAGR vs XIRR vs Absolute Return: Differences, Formulas & SIP Examples",
+      "description": "Master the differences between Absolute Return, CAGR, and XIRR: mathematical formulas, why CAGR fails for SIPs, and step-by-step Excel and Python examples.",
+      "url": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india",
       "datePublished": "2026-10-19T08:00:00+05:30",
-      "dateModified": "2026-10-19T08:00:00+05:30",
+      "dateModified": "2026-11-24T12:00:00+05:30",
       "author": {
         "@type": "Person",
         "name": "Tejas Waghmare",
-    "url": "https://www.calculatorship.in/author",
-        "url": "https://www.calculatorship.in/about.html"
+        "url": "https://www.calculatorship.in/about"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Calculatorship",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.calculatorship.in/logo-light.svg"
-        }
-      },
-      "mainEntityOfPage": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india.html"
+        "url": "https://www.calculatorship.in"
+      }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -205,25 +210,20 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Blog",
-          "item": "https://www.calculatorship.in/blog.html"
+          "name": "Blog & Guides",
+          "item": "https://www.calculatorship.in/blog"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "SIP & Mutual Funds",
-          "item": "https://www.calculatorship.in/blog.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "CAGR vs XIRR Guide",
-          "item": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india.html"
+          "name": "CAGR vs XIRR vs Absolute Return",
+          "item": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india"
         }
       ]
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.calculatorship.in/cagr-vs-xirr-vs-absolute-return-guide-india#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -246,7 +246,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           "name": "What is the mathematical formula for CAGR with a worked example?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The formula is CAGR = (Ending Value / Beginning Value)^(1 / n) - 1, where n is the holding period in years. For example, if \u20b91,00,000 grows to \u20b92,50,000 over 8 years, CAGR = (2,50,000 / 1,00,000)^(1/8) - 1 = (2.5)^(0.125) - 1 = 12.14% per annum."
+            "text": "The formula is CAGR = (Ending Value / Beginning Value)^(1 / n) - 1, where n is the holding period in years. As an illustration, if ₹1,00,000 grows to ₹2,50,000 over 8 years, CAGR = (2,50,000 / 1,00,000)^(1/8) - 1 = (2.5)^(0.125) - 1 = 12.14% per annum."
           }
         },
         {
@@ -284,8 +284,8 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       ]
     }
   ]
-}</script>
-<meta name="twitter:title" content="CAGR vs XIRR vs Absolute Return India: Formulas &amp; Examples"><meta name="twitter:description" content="Compare CAGR vs XIRR vs Absolute Return for Indian stocks and mutual funds. See why CAGR breaks on monthly SIPs, how XIRR works, and Excel formula steps."><link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+}
+</script>
 </head>
 <body>
 <div class="reading-progress-bar" id="reading-progress"></div>
@@ -338,13 +338,29 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <span class="article-date-tag">Published: 19 Oct 2026</span>
 <span>Updated for FY 2026-27</span>
 </div>
-<h1>CAGR Calculator India: CAGR vs XIRR vs Absolute Return</h1><div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
+<h1>CAGR Calculator India: CAGR vs XIRR vs Absolute Return</h1>
+<p style="font-size:1.15rem; color:var(--text-secondary); line-height:1.7; max-width:980px; margin-top:12px;">Absolute Return measures total percentage growth without accounting for time. Compounded Annual Growth Rate (CAGR) computes the smoothed annual growth rate between two point-in-time valuations for lumpsum investments held longer than one year. Extended Internal Rate of Return (XIRR) is essential for mutual fund SIPs, STPs, and irregular cash flows because it discounts each individual cash inflow and outflow to its exact transaction date.</p>
+<div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
+<span>Written by <a href="/about" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+<span aria-hidden="true" class="byline-dot">&nbsp;•&nbsp;</span>
+<span>Published: 19 October 2026</span>
+<span aria-hidden="true" class="byline-dot">&nbsp;•&nbsp;</span>
+<span>Last reviewed: 24 November 2026</span>
+<span aria-hidden="true" class="byline-dot">&nbsp;•&nbsp;</span>
+<span>Return Formulas, SIP Cash-Flow Discounting & Excel/Python Math</span>
+</div>
+<p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
+    Educational investment return measurement guide only. Not certified financial advisory. Historical returns do not guarantee future compounding performance. Read our full <a href="/disclaimer" style="text-decoration:underline; color:var(--emerald-dark);">disclaimer</a>.
+</p>
+
+<p style="font-size:1.15rem; color:var(--text-secondary); line-height:1.7; max-width:980px; margin-top:12px;">Absolute Return measures total percentage growth without accounting for time. Compounded Annual Growth Rate (CAGR) computes the smoothed annual growth rate between two point-in-time valuations for lumpsum investments held longer than one year. Extended Internal Rate of Return (XIRR) is essential for mutual fund SIPs, STPs, and irregular cash flows because it discounts each individual cash inflow and outflow to its exact transaction date.</p>
+
+
+<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note" style="background:#fffbeb; border-left:4px solid #f59e0b; padding:1rem 1.25rem; margin:1.5rem 0; border-radius:0 8px 8px 0; font-size:0.9rem; color:#78350f; line-height:1.65;">
 <strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything. I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.
 </div>
 <p style="font-size:1.15rem; color:var(--text-secondary); line-height:1.7; max-width:980px; margin-top:12px;">Because investment returns in Indian capital markets are shaped both by volatile interim market cycles and the precise calendar dates of your cash deposits, choosing between absolute returns, CAGR, and XIRR dictates whether your financial reporting accurately reflects real wealth creation. If you show an Indian mutual fund investor a portfolio that doubled in five years, they will proudly tell you they made a 100% return. While that simple math is technically true, it hides the annual pace of compounding. An accurate CAGR calculator cuts through the noise, showing the true annual rate, reverse targets, and why using CAGR on monthly SIPs is a mathematical blunder.</p>
-<div class="article-byline">
-<span class="byline-author"><a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span> | Published: 19 Oct 2026 | 14 min read
-      </div>
+
 </header>
 
 
@@ -365,13 +381,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <li><a href="#official-sources">10. Regulatory &amp; Research References</a></li>
 </ol>
 </div>
-<div class="disclaimer-box" style="background:#fffbeb; border:2px solid #f59e0b; border-radius:12px; padding:20px 24px; margin:0 0 32px; display:flex; gap:16px; align-items:flex-start;">
-<span style="font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.04em; background:#FEF3C7; color:#92400E; padding:3px 8px; border-radius:4px; flex-shrink:0;">Note</span>
-<div>
-<strong style="color:#92400e; font-size:1rem; display:block; margin-bottom:6px;">Educational Content Only</strong>
-<p style="margin:0; font-size:0.93rem; color:#78350f; line-height:1.65;">I am a personal finance enthusiast and developer, not a SEBI-registered Research Analyst or Investment Advisor. All calculation formulas, Excel tutorials, and mutual fund return comparisons shared here are strictly for educational awareness and portfolio diagnostics. Past returns do not guarantee future compounding performance. Consult a qualified SEBI-registered advisor before executing financial moves.</p>
-</div>
-</div>
+
 <div class="key-takeaways" style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:5px solid #16a34a; border-radius:8px; padding:1.5rem; margin-bottom:2.5rem;">
 <h2 style="font-size:1.25rem; font-weight:800; color:#166534; margin-top:0; margin-bottom:0.75rem;">Key Takeaways: Return Metrics at a Glance</h2>
 <ul style="margin:0; padding-left:1.25rem; line-height:1.8; color:#15803d; font-size:0.96rem;">
@@ -561,7 +571,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <!-- Section 4: CAGR Formula and Worked Example -->
 <section id="cagr-formula-worked-example">
 <h2>4. The CAGR Formula &amp; Step-by-Step Worked Rupee Example</h2>
-<p>The standard mathematical formula to compute CAGR for a lump sum is straightforward. Math stays honest. Growth compounds quietly. Compounding rewards patience:</p>
+<p>The standard mathematical formula to compute CAGR for a lump sum is straightforward. Math stays honest. Growth compounds systematically across multi-year investment horizons:</p>
 <div style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-left:4px solid var(--emerald); padding:16px 20px; border-radius:8px; font-family:var(--font-mono); margin:20px 0; font-size:1.05rem;">
             CAGR = (Ending Value / Beginning Value)<sup>(1 / n)</sup> − 1
           </div>
@@ -740,14 +750,18 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <p style="font-size:0.78rem; color:var(--text-muted); margin:12px 0 0;"><em>Methodologies verified for FY 2026-27 compliance.</em></p>
 </section>
 <!-- Author Bio Card -->
-<div class="author-bio-card">
-<div class="author-bio-header">
-<div class="author-avatar">T</div>
-<div>
-<h3 class="author-name">Tejas</h3>
-<p class="author-title">Founder &amp; Creator, Calculatorship</p>
+
+
+<div class="author-bio-card" style="background:var(--surface); border:1px solid var(--border-light); border-radius:12px; padding:20px; margin:28px 0; display:flex; gap:16px; align-items:flex-start;">
+    <div class="author-avatar" style="width:48px; height:48px; border-radius:50%; background:var(--emerald-dark); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.2rem; flex-shrink:0;">T</div>
+    <div>
+        <h3 class="author-name" style="margin:0 0 4px; font-size:1.05rem;">Tejas Waghmare</h3>
+        <p class="author-title" style="margin:0 0 8px; font-size:0.85rem; color:var(--text-muted);">Founder &amp; Creator, Calculatorship</p>
+        <p class="author-desc" style="margin:0; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">Tejas Waghmare is an independent student and web developer who builds free financial calculators for Indian earners. He writes these guides to explain financial mathematics, statutory tax regulations, and investment strategies with code-verified models.</p>
+    </div>
 </div>
-</div>
+
+
 <p class="author-desc">Tejas is the founder of Calculatorship, focusing on creating accessible calculators and educational content for Indian investors. Content on this platform is crafted using mathematical rigor and verified regulatory frameworks.</p>
 <p class="author-disclaimer" style="font-size:0.82rem; color:var(--text-muted); margin-top:8px; line-height:1.5;"><em>General educational information only. Not a SEBI-registered financial analyst or advisor. Past performance of mutual funds does not guarantee future results. Consult a qualified professional before making investments.</em></p>
 </div>

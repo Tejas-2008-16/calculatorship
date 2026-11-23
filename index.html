@@ -6,7 +6,7 @@
 <meta content="wI-yq01MPBD-S1JZtupXa2CAdSvWceD5Kv0FvPJFDM8" name="google-site-verification"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <meta name="google-adsense-account" content="ca-pub-7598871729388798">
-<script type="text/plain" data-category="advertising" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7598871729388798" crossorigin="anonymous"></script>
 <!-- Google Analytics 4 (GA4) -->
 <script type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
 <script>
@@ -16,7 +16,7 @@
   gtag('config', 'G-0C93Q0VBQP');
 </script>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIP Calculator India: Mutual Fund Returns & Growth Table</title>
 <meta name="description" content="Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, annual tables, and LTCG rules.">
 <link href="https://www.calculatorship.in/" rel="canonical"/>
@@ -338,31 +338,12 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.5rem 0 1rem; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
   <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
   <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-  <span>Last reviewed: October 2026</span>
+  <span>Last reviewed: 23 November 2026</span>
   <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
   <span>Reading time: 8 min</span>
 </div>
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note">
-<p class="disc-preview" style="margin:0 0 6px 0;"><strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything.</p>
-<p class="disc-full-text" style="display:none; margin:0 0 6px 0;">I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.</p>
-<button type="button" class="disc-toggle-btn" aria-expanded="false" style="background:none; border:none; padding:0; color:#b45309; font-weight:700; cursor:pointer; text-decoration:underline;">Read full disclaimer</button>
-</div>
-<p>Calculate projected wealth growth, compounding returns, and capital accumulation from your monthly mutual fund investments in India.</p>
-</div>
-<div class="calc-switcher-wrapper">
-<div class="calc-switcher-bar">
-<a class="calc-tab active" href="/">SIP Calculator</a>
-<a class="calc-tab" href="/lumpsum">Lumpsum</a>
-<a class="calc-tab" href="/step-up">Step-Up SIP</a>
-<a class="calc-tab" href="/goal">Goal Planner</a>
-<a class="calc-tab" href="/ppf-calculator">PPF</a>
-<a class="calc-tab" href="/swp-calculator">SWP</a>
-<a class="calc-tab" href="/emi-calculator">Loan EMI</a>
-<a class="calc-tab" href="/fd-calculator">FD Calculator</a>
-<a class="calc-tab" href="/budget-planner">50-30-20 Budget</a>
-<a class="calc-tab" href="/income-tax-calculator">Tax Calculator</a>
-</div>
-</div>
+<p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">Educational calculation tool only. Not investment, tax, or legal advice. Read our <a href="/disclaimer" style="color:var(--emerald-dark); text-decoration:underline;">full disclaimer</a>.</p>
+
 <div class="calc-main-container">
 <div class="calc-grid" id="calculator-card">
 <!-- Left: Inputs -->
@@ -373,7 +354,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <label for="monthly-investment-num">Monthly SIP Amount</label>
 <div class="calc-input-box">
 <span class="calc-input-prefix">₹</span>
-<input aria-label="Monthly SIP Amount Input" id="monthly-investment-num" max="1000000" min="500" step="500" type="number" value="10000"/>
+<input aria-label="Monthly SIP Amount Input" id="monthly-investment-num" max="1000000" min="500" step="500" type="number" value="10000"/ inputmode="numeric">
 </div>
 </div>
 <input aria-label="Monthly SIP Amount Slider" id="monthly-investment" max="1000000" min="500" step="500" type="range" value="10000"/>
@@ -382,7 +363,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="calc-field-header">
 <label for="expected-return-num">Expected Annual Return (CAGR)</label>
 <div class="calc-input-box">
-<input aria-label="Expected Annual Return (CAGR) Input" id="expected-return-num" max="30" min="1" step="0.5" type="number" value="12"/>
+<input aria-label="Expected Annual Return (CAGR) Input" id="expected-return-num" max="30" min="1" step="0.5" type="number" value="12"/ inputmode="decimal">
 <span class="calc-input-suffix">%</span>
 </div>
 </div>
@@ -392,7 +373,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="calc-field-header">
 <label for="time-period-num">Investment Duration</label>
 <div class="calc-input-box">
-<input aria-label="Investment Duration Input" id="time-period-num" max="40" min="1" step="1" type="number" value="10"/>
+<input aria-label="Investment Duration Input" id="time-period-num" max="40" min="1" step="1" type="number" value="10"/ inputmode="numeric">
 <span class="calc-input-suffix">Yrs</span>
 </div>
 </div>
@@ -610,15 +591,15 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="scenario-grid">
 <div class="scenario-box">
 <h3>Rahul, Age 24 (Bengaluru Software Engineer)</h3>
-<p>Earning ₹45,000 per month fresh out of college, Rahul trims weekend deliveries and directs <strong>₹5,000 monthly</strong> into a plain Nifty 50 Index Fund for 20 years at 12% assumed growth. Total out-of-pocket cash equals just ₹12.00 Lakh, yet final value touches roughly <strong>₹49.96 Lakh</strong> with ₹37.96 Lakh arriving purely from compounding gains. Starting early beats larger cheques.</p>
+<p>Earning ₹45,000 per month fresh out of college, Rahul trims weekend deliveries and directs <strong>₹5,000 monthly</strong> into a plain Nifty 50 Index Fund for 20 years at 12% assumed growth. Total out-of-pocket cash equals just ₹12.00 Lakh, yet final value touches roughly <strong>₹49.96 Lakh</strong> with ₹37.96 Lakh arriving purely from compounding gains. </p>
 </div>
 <div class="scenario-box">
 <h3>Priya, Age 32 (Mumbai Working Mother)</h3>
-<p>Aiming to cover overseas university tuition 15 years out, Priya schedules <strong>₹25,000 monthly</strong> across diversified Flexi-cap and Large-cap equity schemes targeting 13% CAGR right on the fifth of each month before household bills swallow spare cash. She puts in ₹45.00 Lakh total and lands near <strong>₹1.35 Crore</strong> (₹89.97 Lakh pure growth) right when college admissions open. Consistency rewards savers.</p>
+<p>Aiming to cover overseas university tuition 15 years out, Priya schedules <strong>₹25,000 monthly</strong> across diversified Flexi-cap and Large-cap equity schemes targeting 13% CAGR right on the fifth of each month before household bills swallow spare cash. She puts in ₹45.00 Lakh total and reaches approximately <strong>₹1.39 Crore</strong> (₹1,38,92,032, representing ₹93.92 Lakh in wealth gain) when university admissions open.</p>
 </div>
 <div class="scenario-box">
 <h3>Arun, Age 42 (Delhi Business Owner)</h3>
-<p>After pouring every spare rupee into shop inventory during his thirties, Arun plays catch-up with <strong>₹75,000 monthly</strong> at 12% across a tighter 10-year clock. Even depositing ₹90.00 Lakh total gets him only to <strong>₹1.74 Crore</strong> (₹84.25 Lakh profit), proving why shorter runways require massive monthly cheques plus an annual 10% Step-Up SIP to close the gap. Late starts cost dear.</p>
+<p>After pouring every spare rupee into shop inventory during his thirties, Arun plays catch-up with <strong>₹75,000 monthly</strong> at 12% across a tighter 10-year clock. Even depositing ₹90.00 Lakh total gets him only to <strong>₹1.74 Crore</strong> (₹84.25 Lakh profit), proving why shorter runways require massive monthly cheques plus an annual 10% Step-Up SIP to close the gap. </p>
 </div>
 </div>
 </div>
@@ -626,7 +607,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <h2>SEBI Rules, Tax Cliffs &amp; FIFO Accounting</h2>
 <p>Before approving your first NACH e-mandate, check how Indian tax authorities slice mutual fund gains under CBDT and SEBI rules:</p>
 <ul style="line-height: 1.8;">
-<li><strong>First-In, First-Out (FIFO) Clocks:</strong> Every monthly purchase carries its own individual holding birthday. Selling units in February 2026 checks your January 2025 tranche past 12 months cleanly, whereas a June 2025 tranche stays short-term until June 2026 crosses one full year. Dates govern taxes.</li>
+<li><strong>First-In, First-Out (FIFO) Clocks:</strong> Every monthly purchase carries its own individual holding birthday. Selling units in February 2026 checks your January 2025 tranche past 12 months cleanly, whereas a June 2025 tranche stays short-term until June 2026 crosses one full year. </li>
 <li><strong>Equity Fund Taxation (FY 2026-27):</strong> Schemes holding 65% or more domestic equities treat redemptions past 12 months as <strong>Long-Term Capital Gains (LTCG)</strong> with ₹1.25 Lakh annual exemption, taxing gains above that line at a flat <strong>12.5% without indexation</strong>. Units held 12 months or under face a flat <strong>20% STCG tax</strong> plus applicable surcharge and 4% Health &amp; Education Cess.</li>
 <li><strong>Debt Mutual Fund Slabs:</strong> Specified debt funds holding 35% or less equity bought from April 1, 2023 onward lose long-term slab breaks altogether, paying your ordinary marginal income tax bracket no matter how many years pass. Slabs squeeze interest.</li>
 <li><strong>ELSS Section 80C Lock-In:</strong> Tax-saving ELSS schemes still carry the ₹1.50 Lakh Old Regime cap alongside a strict <strong>3-year lock-in per monthly installment</strong>, meaning your 12th SIP waits three years from its own allotment date. Lock-ins track monthly.</li>
@@ -717,57 +698,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </div>
 </div>
 </div>
-<div aria-label="Educational Disclaimer" class="educational-disclaimer" role="note">
-<p class="disc-preview" style="margin:0 0 6px 0;"><strong>Educational content only.</strong> This page explains how a financial concept works. It is not investment, tax, legal or insurance advice, and it is not a recommendation to buy or sell anything.</p>
-<p class="disc-full-text" style="display:none; margin:0 0 6px 0;">I am a student, not a SEBI-registered adviser or a Chartered Accountant. Tax rules, interest rates and limits change, so check the official source linked below before you act, and speak to a qualified professional about your own situation. Mutual fund investments are subject to market risks, and past performance does not guarantee future returns.</p>
-<button type="button" class="disc-toggle-btn" aria-expanded="false" style="background:none; border:none; padding:0; color:#b45309; font-weight:700; cursor:pointer; text-decoration:underline;">Read full disclaimer</button>
-</div></main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="/"><img src="/logo-footer.svg" alt="Calculatorship: Free Financial Calculators for Indian Investors" width="200" height="36" style="display:block;" loading="lazy"></a>
-          <p class="footer-tagline">Independent financial calculators and educational guides explaining how money maths works for Indian salaried professionals and retail investors.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h3>Calculators</h3>
-            <ul>
-              <li><a href="/">SIP Calculator</a></li>
-              <li><a href="/lumpsum">Lumpsum Calculator</a></li>
-              <li><a href="/step-up">Step-Up SIP</a></li>
-              <li><a href="/goal">Goal Planner</a></li>
-              <li><a href="/ppf-calculator">PPF Calculator</a></li>
-              <li><a href="/epf-calculator">EPF Calculator</a></li>
-              <li><a href="/swp-calculator">SWP Calculator</a></li>
-              <li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-              <li><a href="/fd-calculator">FD Calculator</a></li>
-              <li><a href="/income-tax-calculator">Tax Calculator</a></li>
-              <li><a href="/calculators">All Calculators Hub</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Legal &amp; Policy</h3>
-            <ul>
-              <li><a href="/editorial-policy">Editorial Policy</a></li>
-              <li><a href="/corrections">Corrections Log</a></li>
-              <li><a href="/disclaimer">Disclaimer</a></li>
-              <li><a href="/terms">Terms of Use</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
-              <li><a href="/cookies">Cookie Policy</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Platform</h3>
-            <ul>
-              <li><a href="/about">About</a></li>
-              <li><a href="/author">Editorial Author</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/blog">Guides &amp; Articles</a></li>
-              <li><a href="/sitemap">Sitemap</a></li>
-            </ul>
-          </div>
-        </div>
+
       </div>
       <div class="footer-bottom">
         <div class="footer-disclaimer">
