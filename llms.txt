@@ -15,6 +15,8 @@ Calculatorship is an independent financial calculation and educational publishin
 - [NPS Calculator](https://www.calculatorship.in/nps-calculator): National Pension System retirement corpus estimator with lump-sum vs annuity splits.
 - [SWP Calculator](https://www.calculatorship.in/swp-calculator): Systematic Withdrawal Plan simulator for monthly post-retirement cash flows.
 - [Loan EMI Calculator](https://www.calculatorship.in/emi-calculator): Reducing-balance home, car, and personal loan amortization and prepayment impact calculator.
+- [SGB Calculator](https://www.calculatorship.in/sgb-calculator): Sovereign Gold Bond 2.50% coupon, Budget 2026 Section 70 tax rules, and Gold ETF comparison.
+- [Cumulative FD Calculator](https://www.calculatorship.in/cumulative-fd-calculator): Cumulative and payout FD maturity with monthly/quarterly projections and ₹50K–₹1Cr table.
 - [FD Calculator](https://www.calculatorship.in/fd-calculator): Cumulative and payout Fixed Deposit maturity calculator with Indian quarterly compounding.
 - [RD Calculator](https://www.calculatorship.in/recurring-deposit-rd-calculator-guide-india): Recurring Deposit maturity calculator following Indian bank quarterly compounding formulas.
 - [Income Tax Calculator](https://www.calculatorship.in/income-tax-calculator): Side-by-side Old vs New Tax Regime calculator for FY 2026-27 with Section 87A rebate and marginal relief.

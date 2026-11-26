@@ -18,13 +18,13 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIP Calculator India: Mutual Fund Returns & Growth Table</title>
-<meta name="description" content="Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, annual tables, and LTCG rules.">
+<meta name="description" content="Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, schedules, and tax rules.">
 <link href="https://www.calculatorship.in/" rel="canonical"/>
 <meta content="Tejas Waghmare, Calculatorship" name="author"/>
 <meta content="en_IN" property="og:locale"/>
 <meta content="en-IN" name="language"/>
 <meta property="og:title" content="SIP Calculator India: Mutual Fund Returns & Growth Table">
-<meta property="og:description" content="Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, annual tables, and LTCG rules.">
+<meta property="og:description" content="Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, schedules, and tax rules.">
 <meta content="https://www.calculatorship.in/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="Calculatorship" property="og:site_name"/>
@@ -32,148 +32,13 @@
 <meta content="Calculatorship: Free Financial Calculators for Indian Investors" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://www.calculatorship.in/og-image.webp" name="twitter:image"/>
-<meta content="#F3F7F5" name="theme-color"/>
+<meta content="#FAF9F6" name="theme-color"/>
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <noscript></noscript>
-<style id="critical-css">@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url('/fonts/inter.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-:root {
-  --bg-page: #F6F8F6;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #F8FAF9;
-  --text-primary: #0F172A;
-  --text-secondary: #2B3A4E;
-  --text-muted: #526275;
-  --emerald: #009B72;
-  --emerald-dark: #006B47;
-  --emerald-soft: #ECF6F1;
-  --border-soft: #DFE6E2;
-  --border-medium: #C4D0C9;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-}
-*, *::before, *::after { box-sizing: border-box !important; }
-:root, html { scroll-padding-top: 68px; }
-body {
-  margin: 0; padding: 0;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-.sr-only {
-  position: absolute !important; width: 1px !important; height: 1px !important;
-  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
-}
-.site-header {
-  position: sticky; top: 0; z-index: 1000;
-  min-height: 56px; height: clamp(56px, 8vh, 64px);
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
-}
-.header-inner {
-  height: 100%; max-width: 1520px; margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 28px);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.brand img { height: 38px; width: auto; max-width: 220px; display: block; }
-.main-nav { display: flex; align-items: center; gap: 24px; }
-.main-nav a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
-.nav-toggle {
-  display: none; background: none; border: none; cursor: pointer;
-  padding: 8px; min-width: 44px; min-height: 44px;
-  flex-direction: column; justify-content: center; gap: 5px;
-}
-.nav-toggle span.hamburger-bar {
-  display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px;
-}
-.breadcrumb-bar { background: #FFFFFF; border-bottom: 1px solid var(--border-soft); }
-.breadcrumb { max-width: 1520px; margin: 0 auto; padding: 10px clamp(16px, 2vw, 28px); font-size: 0.85rem; }
-.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.breadcrumb a { color: var(--emerald-dark); text-decoration: none; }
-.calc-hero { max-width: 1520px; margin: 24px auto 16px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-hero h1 {
-  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.125rem);
-  line-height: 1.25; margin: 0 0 8px; color: var(--text-primary); font-weight: 800;
-}
-.article-byline {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
-  font-size: 0.875rem; color: var(--text-muted); margin: 0.5rem 0 1rem;
-}
-.educational-disclaimer {
-  background: #fffbeb; border-left: 3px solid #b45309;
-  padding: 10px 14px; margin: 1rem 0; border-radius: 0 8px 8px 0;
-  font-size: 0.875rem; line-height: 1.5; color: #78350f;
-}
-.calc-switcher-wrapper { max-width: 1520px; margin: 0 auto 20px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-switcher-bar {
-  display: flex; align-items: center; gap: 8px; overflow-x: auto;
-  -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
-  padding: 6px 8px; border-radius: 8px; background: var(--bg-card);
-  border: 1px solid var(--border-soft); scrollbar-width: none;
-}
-.calc-switcher-bar::-webkit-scrollbar { display: none; }
-.calc-switcher-bar .calc-tab {
-  flex-shrink: 0; scroll-snap-align: start; white-space: nowrap;
-  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
-  padding: 8px 16px; border-radius: 6px; text-decoration: none;
-  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
-}
-.calc-switcher-bar .calc-tab.active { background: var(--emerald-dark); color: #FFFFFF; }
-.calc-main-container { max-width: 1520px; margin: 0 auto; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-.calc-card, .calc-summary-card {
-  background: var(--bg-card); border: 1px solid var(--border-soft);
-  border-top: 3px solid var(--emerald-dark); border-radius: var(--radius-md);
-  padding: 24px; box-shadow: var(--shadow-sm);
-}
-.calc-field-group { margin-bottom: 20px; }
-.calc-input-box {
-  width: 100%; display: flex; align-items: center; background: #FAFBF9;
-  border: 1.5px solid var(--border-medium); border-radius: 6px; overflow: hidden;
-}
-.calc-inputs input[type="number"], .calc-inputs input[type="text"], .calc-input-box input {
-  width: 100%; font-size: 16px; min-height: 44px; padding: 8px 12px;
-  border: none; outline: none; background: transparent; font-family: var(--font-mono); font-weight: 700;
-}
-input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer; }
-.ad-container, .adsense-slot-wrapper { min-height: 280px; contain: layout; margin: 28px 0; }
-@media (max-width: 900px) {
-  .main-nav { display: none !important; }
-  .nav-toggle { display: flex !important; }
-}
-@media (max-width: 767px) {
-  .calc-grid { display: flex !important; flex-direction: column !important; }
-  .calc-card, .calc-summary-card { width: 100% !important; padding: 20px 16px !important; }
-}
-
-
-
-.footer-col ul li a { display: inline-block; padding: 6px 0; min-height: 36px; }
-.featured-guides-grid div h3 a, .featured-guides-grid a { display: inline-flex; align-items: center; min-height: 44px; padding: 4px 0; }
-.disc-toggle-btn { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; }
-
-
-</style>
-<link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
 <!-- WebSite & Organization Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -192,11 +57,11 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "SIP Calculator (Systematic Investment Plan) \u2014 Calculatorship",
+  "name": "SIP Calculator (Systematic Investment Plan) — Calculatorship",
   "url": "https://www.calculatorship.in/",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Web Browser",
-  "description": "Calculate projected returns from your monthly mutual fund SIP in India with annual compounding tables and charts.",
+  "description": "Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, schedules, and tax rules.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -235,7 +100,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       "name": "How are mutual fund SIP investments taxed in India for FY 2026-27?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Indian tax rules treat every monthly debit as a separate purchase with its own holding clock under First-In First-Out accounting. Equity funds holding at least 65% domestic stocks qualify for Long-Term Capital Gains after 12 months, taxed at 12.5% above the \u20b91.25 Lakh annual exemption, while units sold within 12 months face 20% STCG. Specified debt funds bought from April 1, 2023 onward are taxed at your normal income slab rate. Keep your Consolidated Account Statement (CAS) handy when filing capital gains schedules."
+        "text": "Indian tax rules treat every monthly debit as a separate purchase with its own holding clock under First-In First-Out accounting. Equity funds holding at least 65% domestic stocks qualify for Long-Term Capital Gains after 12 months, taxed at 12.5% above the ₹1.25 Lakh annual exemption, while units sold within 12 months face 20% STCG. Specified debt funds bought from April 1, 2023 onward are taxed at your normal income slab rate. Keep your Consolidated Account Statement (CAS) handy when filing capital gains schedules."
       }
     },
     {
@@ -259,7 +124,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       "name": "Is a Direct Mutual Fund Plan better than a Regular Plan for SIP compounding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Direct Plans buy units straight from the Asset Management Company without distributor trails baked into the Net Asset Value. Shaving 0.5% to 1.5% off annual expense ratios compounds quietly year after year, leaving Direct Plan investors with 15% to 25% more money over 15 to 25-year goals. Even a 1% annual fee gap compounds into a meaningful difference in final corpus over two decades."
+        "text": "Yes, Direct Plans buy units straight from the Asset Management Company without distributor trails baked into the Net Asset Value. Shaving 0.5% to 1.5% off annual expense ratios compounds quietly year after year, reducing the net return earned by Regular investors. Over 20 years on a ₹10,000/month SIP comparing 12.0% Direct vs 11.0% Regular net returns, Direct compounding builds ₹99,91,479 versus ₹87,35,731 (+₹12,55,748, or +14.37% higher ending corpus; +19.30% over 25 years). Even a 1% annual fee gap compounds into a meaningful difference in final corpus over two decades."
       }
     }
   ]
@@ -288,38 +153,83 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
     }
   ]
 }</script>
-<meta name="twitter:title" content="SIP Calculator India: Mutual Fund Returns & Growth Table"><meta name="twitter:description" content="Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, annual tables, and LTCG rules."></head>
+<meta name="twitter:title" content="SIP Calculator India: Mutual Fund Returns & Growth Table"><meta name="twitter:description" content="Free SIP calculator India to estimate monthly mutual fund returns, total investment, and wealth gain with worked rupee formulas, schedules, and tax rules."></head>
 <body>
 <div class="reading-progress-bar" id="reading-progress"></div>
 <a class="skip-link" href="#calculator-card">Skip to calculator</a>
 <header class="site-header">
 <div class="header-inner">
 <a aria-label="Calculatorship Homepage" class="brand" href="/">
-<img alt="Calculatorship: Free Financial Calculators for Indian Investors" height="38" fetchpriority="high" src="/logo-light.svg" width="220"/>
+<img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="eager" src="/logo-light.svg" width="196"/>
 </a>
-<nav aria-label="Primary Navigation" class="main-nav">
+<nav aria-label="Primary Navigation" class="main-nav" id="site-menu">
 <div class="nav-dropdown">
-<a class="nav-dropdown-toggle" href="/">Calculators</a>
-<ul class="nav-dropdown-menu" role="menu">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Calculators</button>
+<div class="nav-dropdown-menu nav-mega">
+<div class="nav-dropdown-grid">
+<div>
+<p class="nav-dropdown-group-title">Investing &amp; Gold</p>
+<ul class="nav-dropdown-group-list">
 <li><a href="/">SIP Calculator</a></li>
-<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/step-up">Step-Up SIP</a></li>
+<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/goal">Goal Planner</a></li>
-<li><a href="/ppf-calculator">PPF Calculator</a></li>
-<li><a href="/swp-calculator">SWP Calculator</a></li>
-<li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-<li class="nav-dropdown-divider" role="separator"></li>
-<li><a href="/fd-calculator">FD Calculator</a></li>
-<li><a href="/budget-planner">Budget Planner</a></li>
-<li><a href="/income-tax-calculator">Tax Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/cagr-calculator">CAGR Calculator</a></li>
+<li><a href="/stock-average-calculator-guide-india">Stock Average</a></li>
 </ul>
 </div>
-<a href="/blog">Blog &amp; Guides</a>
+<div>
+<p class="nav-dropdown-group-title">FD &amp; Small Savings</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Bank FD Calculator</a></li>
+<li><a href="/recurring-deposit-rd-calculator-guide-india">RD Calculator</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/epf-calculator">EPF Calculator</a></li>
+<li><a href="/nps-calculator">NPS Calculator</a></li>
+<li><a href="/swp-calculator">SWP Calculator</a></li>
+<li><a href="/compound-interest-calculator">Compound Interest</a></li>
+</ul>
+</div>
+<div>
+<p class="nav-dropdown-group-title">Tax, Salary &amp; Loans</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/in-hand-salary-calculator">In-Hand Salary</a></li>
+<li><a href="/salary-hike-calculator">Salary Hike</a></li>
+<li><a href="/hra-calculator">HRA Exemption</a></li>
+<li><a href="/gratuity-calculator">Gratuity (15/26)</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/budget-planner">50/30/20 Budget</a></li>
+</ul>
+</div>
+</div>
+<div class="nav-dropdown-footer">
+<span>All calculations run privately in your browser</span>
+<a href="/calculators">Browse All Calculators →</a>
+</div>
+</div>
+</div>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Topic Hubs</button>
+<ul class="nav-dropdown-menu" role="menu">
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds</a></li>
+<li><a href="/guides/tax-planning">Income Tax Planning</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; Sovereign Gold Bonds</a></li>
+<li><a href="/guides/loans-and-emi">Home Loans, EMI &amp; CIBIL</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary, CTC &amp; Budgeting</a></li>
+</ul>
+</div>
+<a href="/blog">Guides</a>
+<a href="/calculators">Calculators Hub</a>
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
 <div class="header-actions">
-<button aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span></button>
+<button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
+<button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
 </div>
 </header>
@@ -336,14 +246,13 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="calc-hero">
 <h1>SIP Calculator (Systematic Investment Plan)</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.5rem 0 1rem; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
-  <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-  <span>Last reviewed: 23 November 2026</span>
-  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-  <span>Reading time: 8 min</span>
+<span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Last reviewed: 23 November 2026</span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Reading time: 8 min</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">Educational calculation tool only. Not investment, tax, or legal advice. Read our <a href="/disclaimer" style="color:var(--emerald-dark); text-decoration:underline;">full disclaimer</a>.</p>
-
 <div class="calc-main-container">
 <div class="calc-grid" id="calculator-card">
 <!-- Left: Inputs -->
@@ -354,7 +263,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <label for="monthly-investment-num">Monthly SIP Amount</label>
 <div class="calc-input-box">
 <span class="calc-input-prefix">₹</span>
-<input aria-label="Monthly SIP Amount Input" id="monthly-investment-num" max="1000000" min="500" step="500" type="number" value="10000"/ inputmode="numeric">
+<input aria-label="Monthly SIP Amount Input" id="monthly-investment-num" inputmode="numeric" max="1000000" min="500" step="500" type="number" value="10000"/>
 </div>
 </div>
 <input aria-label="Monthly SIP Amount Slider" id="monthly-investment" max="1000000" min="500" step="500" type="range" value="10000"/>
@@ -363,7 +272,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="calc-field-header">
 <label for="expected-return-num">Expected Annual Return (CAGR)</label>
 <div class="calc-input-box">
-<input aria-label="Expected Annual Return (CAGR) Input" id="expected-return-num" max="30" min="1" step="0.5" type="number" value="12"/ inputmode="decimal">
+<input aria-label="Expected Annual Return (CAGR) Input" id="expected-return-num" inputmode="decimal" max="30" min="1" step="0.5" type="number" value="12"/>
 <span class="calc-input-suffix">%</span>
 </div>
 </div>
@@ -373,7 +282,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="calc-field-header">
 <label for="time-period-num">Investment Duration</label>
 <div class="calc-input-box">
-<input aria-label="Investment Duration Input" id="time-period-num" max="40" min="1" step="1" type="number" value="10"/ inputmode="numeric">
+<input aria-label="Investment Duration Input" id="time-period-num" inputmode="numeric" max="40" min="1" step="1" type="number" value="10"/>
 <span class="calc-input-suffix">Yrs</span>
 </div>
 </div>
@@ -400,10 +309,10 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div style="margin:28px 0 12px; display:flex; align-items:center; justify-content:center; gap:28px;">
 <svg aria-label="SIP Allocation Ratio" class="donut" height="130" viewbox="0 0 42 42" width="130">
 <circle class="donut-ring" cx="21" cy="21" fill="transparent" r="15.91549430918954" stroke="#E2E8F0" stroke-width="5.5"></circle>
-<circle cx="21" cy="21" fill="transparent" id="donut-segment" r="15.91549430918954" stroke="#00D09C" stroke-dasharray="48 52" stroke-dashoffset="25" stroke-width="5.5"></circle>
+<circle cx="21" cy="21" fill="transparent" id="donut-segment" r="15.91549430918954" stroke="#0B5D3B" stroke-dasharray="48 52" stroke-dashoffset="25" stroke-width="5.5"></circle>
 </svg>
 <div style="font-size:0.90rem; line-height:1.9;">
-<div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#00D09C;"></span> <span id="donut-leg-gain">Growth: 48%</span></div>
+<div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#0B5D3B;"></span> <span id="donut-leg-gain">Growth: 48%</span></div>
 <div style="display:flex; align-items:center; gap:8px;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#CBD5E1;"></span> <span id="donut-leg-inv">Capital: 52%</span></div>
 </div>
 </div>
@@ -413,7 +322,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
             Mathematical simulation for financial planning purposes. Tax rules and interest yields subject to government and market regulatory amendments.
 
           </div>
-<p class="calc-estimate-note" style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-secondary); text-align:center;">Estimates only. Based on the inputs you entered and assumed returns. Real results will differ.</p></div>
+<p class="calc-estimate-note" style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-secondary); text-align:center;">These figures represent illustrative projections. They are calculated directly from your inputs and assumed annual rate. Your actual investment returns, tax liability, and compounding outcomes will vary with market conditions and plan expenses.</p></div>
 </div>
 <!-- Annual Growth Schedule Table -->
 <div style="margin-top:42px; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-sm);">
@@ -431,76 +340,76 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </tr>
 </thead>
 <tbody id="schedule-tbody">
-  <tr>
-    <td>Year 1</td>
-    <td>₹0</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹8,093</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹128,093</td>
-  </tr>
-  <tr>
-    <td>Year 2</td>
-    <td>₹128,093</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹24,339</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹272,432</td>
-  </tr>
-  <tr>
-    <td>Year 3</td>
-    <td>₹272,432</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹42,644</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹435,076</td>
-  </tr>
-  <tr>
-    <td>Year 4</td>
-    <td>₹435,076</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹63,272</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹618,348</td>
-  </tr>
-  <tr>
-    <td>Year 5</td>
-    <td>₹618,348</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹86,515</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹824,864</td>
-  </tr>
-  <tr>
-    <td>Year 6</td>
-    <td>₹824,864</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹112,707</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹1,057,570</td>
-  </tr>
-  <tr>
-    <td>Year 7</td>
-    <td>₹1,057,570</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹142,220</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹1,319,790</td>
-  </tr>
-  <tr>
-    <td>Year 8</td>
-    <td>₹1,319,790</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹175,476</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹1,615,266</td>
-  </tr>
-  <tr>
-    <td>Year 9</td>
-    <td>₹1,615,266</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹212,949</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹1,948,215</td>
-  </tr>
-  <tr>
-    <td>Year 10</td>
-    <td>₹1,948,215</td>
-    <td>₹120,000</td>
-    <td style="color:#006B47; font-weight:600;">+₹255,176</td>
-    <td style="font-weight:700; color:var(--text-primary);">₹2,323,391</td>
-  </tr>
+<tr>
+<td>Year 1</td>
+<td>₹0</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹8,093</td>
+<td style="font-weight:700; color:var(--text-primary);">₹128,093</td>
+</tr>
+<tr>
+<td>Year 2</td>
+<td>₹128,093</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹24,339</td>
+<td style="font-weight:700; color:var(--text-primary);">₹272,432</td>
+</tr>
+<tr>
+<td>Year 3</td>
+<td>₹272,432</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹42,644</td>
+<td style="font-weight:700; color:var(--text-primary);">₹435,076</td>
+</tr>
+<tr>
+<td>Year 4</td>
+<td>₹435,076</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹63,272</td>
+<td style="font-weight:700; color:var(--text-primary);">₹618,348</td>
+</tr>
+<tr>
+<td>Year 5</td>
+<td>₹618,348</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹86,515</td>
+<td style="font-weight:700; color:var(--text-primary);">₹824,864</td>
+</tr>
+<tr>
+<td>Year 6</td>
+<td>₹824,864</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹112,707</td>
+<td style="font-weight:700; color:var(--text-primary);">₹1,057,570</td>
+</tr>
+<tr>
+<td>Year 7</td>
+<td>₹1,057,570</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹142,220</td>
+<td style="font-weight:700; color:var(--text-primary);">₹1,319,790</td>
+</tr>
+<tr>
+<td>Year 8</td>
+<td>₹1,319,790</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹175,476</td>
+<td style="font-weight:700; color:var(--text-primary);">₹1,615,266</td>
+</tr>
+<tr>
+<td>Year 9</td>
+<td>₹1,615,266</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹212,949</td>
+<td style="font-weight:700; color:var(--text-primary);">₹1,948,215</td>
+</tr>
+<tr>
+<td>Year 10</td>
+<td>₹1,948,215</td>
+<td>₹120,000</td>
+<td style="color:#006B47; font-weight:600;">+₹255,176</td>
+<td style="font-weight:700; color:var(--text-primary);">₹2,323,391</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -508,10 +417,10 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <!-- Deep Editorial Content Framework -->
 <div class="info-section-card" style="margin-top: 40px;">
 <h2>How a Systematic Investment Plan (SIP) Works in India</h2>
-<p>A Systematic Investment Plan lets retail earners put a fixed rupee sum into a mutual fund every month or quarter instead of scrambling to arrange lakhs in one shot. Start with ₹500 monthly. Salaried workers, freelancers, and small shop owners can lock in regular savings automatically without timing daily Nifty swings.</p>
-<p>Monthly mutual fund SIP flows reported by AMFI routinely cross ₹20,000 to ₹25,000 Crore across Tier-1 metros and smaller towns alike, turning everyday household savings away from idle property deposits and gold locker holdings toward market-linked equity and hybrid funds. Habit beats luck.</p>
-<p>When I coded the monthly compounding loop for Calculatorship from my room in Pune, checking why ordinary investors miss compounding returns jumped straight off the page. Panicking wrecks returns. Setting up NACH or UPI AutoPay debits forces you to keep buying through dips and rallies alike under <strong>Rupee Cost Averaging</strong>, picking up more units during ugly 15% market sell-offs and fewer units when headlines turn euphoric. Patience handles the rest.</p>
-<p>Retirement targets of ₹1 Crore, overseas tuition bills, home down payments, and early financial independence goals all boil down to boring, repeated monthly deposits left undisturbed long enough for exponential gains to overtake out-of-pocket contributions. Small sums scale up.</p>
+<p>A Systematic Investment Plan lets retail earners put a fixed rupee sum into a mutual fund every month or quarter instead of scrambling to arrange lakhs in one shot. Salaried workers, freelancers, and small shop owners can lock in regular savings automatically without timing daily Nifty swings.</p>
+<p>Monthly mutual fund SIP inflows reported by <a href="https://www.amfiindia.com/research-information/mf-data" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">AMFI</a> reached <strong>₹32,160 crore in October 2026</strong> (following a record <strong>₹32,490 crore in September 2026</strong>), reflecting broad retail adoption of automated equity and hybrid fund investing.</p>
+<p>Modelled across 10 to 30 years of monthly compounding, missing early installments or redeeming during temporary market drawdowns reduces long-term corpus growth far more than small rate differences. Setting up NACH or UPI AutoPay debits forces you to keep buying through dips and rallies alike under <strong>Rupee Cost Averaging</strong>, picking up more units during ugly 15% market sell-offs and fewer units when headlines turn euphoric.</p>
+<p>Retirement targets of ₹1 Crore, overseas tuition bills, home down payments, and early financial independence goals all boil down to boring, repeated monthly deposits left undisturbed long enough for exponential gains to overtake out-of-pocket contributions.</p>
 </div>
 <div class="info-section-card" style="margin-top: 2rem; background: #ffffff; border: 1px solid var(--border-soft); border-radius: var(--radius-lg); padding: 2rem;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
@@ -521,7 +430,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </div>
 <a class="btn btn-secondary" href="/blog" style="font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Browse All Guides →</a>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));" class="featured-guides-grid gap: 1.25rem;">
+<div class="featured-guides-grid gap: 1.25rem;" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column;">
 <span style="font-size: 0.75rem; font-weight: 800; color:#006B47; text-transform: uppercase; margin-bottom: 0.4rem;">Tax Strategy 2026</span>
 <h3 style="font-size: 1.05rem; margin: 0 0 0.5rem;"><a href="/old-vs-new-tax-regime" style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Old vs New Tax Regime: Breakeven Guide</a></h3>
@@ -542,9 +451,9 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column;">
 <span style="font-size: 0.75rem; font-weight: 800; color: #b45309; text-transform: uppercase; margin-bottom: 0.4rem;">Gold &amp; Hedge</span>
-<h3 style="font-size: 1.05rem; margin: 0 0 0.5rem;"><a href="/sovereign-gold-bond-guide-india" style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Sovereign Gold Bond (SGB) Guide</a></h3>
+<h3 style="font-size: 1.05rem; margin: 0 0 0.5rem;"><a href="/sovereign-gold-bond-sgb-guide-india" style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Sovereign Gold Bond (SGB) Guide</a></h3>
 <p style="font-size: 0.88rem; color: #475569; margin: 0 0 1rem; line-height: 1.5;">Tax-exempt RBI redemption rules, 2.5% yearly coupon payouts, and secondary exchange tricks.</p>
-<a href="/sovereign-gold-bond-guide-india" style="margin-top: auto; color: #b45309; font-weight: 700; font-size: 0.88rem;">Open SGB Notes →</a>
+<a href="/sovereign-gold-bond-sgb-guide-india" style="margin-top: auto; color: #b45309; font-weight: 700; font-size: 0.88rem;">Open SGB Notes →</a>
 </div>
 </div>
 </div>
@@ -552,10 +461,10 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <h2>Using This Calculator Without Guessing</h2>
 <p>Three sliders drive every number above using monthly annuity-due math inside your own browser tab. Pick values you can actually sustain after rent and EMIs clear your salary account:</p>
 <ol style="line-height: 1.8; margin-left: 1.25rem;">
-<li><strong>Monthly Contribution (₹):</strong> Slide or type realistic cash flow such as ₹5,000, ₹10,000, or ₹50,000. Skipping dinner once works cleanly; emptying your emergency buffer guarantees you cancel the mandate within a year. Choose sustainable rupees.</li>
-<li><strong>Expected Annual Return (CAGR %):</strong> Equity funds like Nifty 50 Index or Flexi-cap portfolios over ten-plus years generally sit in the 11% to 13% planning zone, whereas conservative hybrid or debt-heavy baskets call for 7% to 9% estimates instead of rosy 18% promises. Expect normal swings.</li>
-<li><strong>Investment Horizon (Years):</strong> Compounding looks painfully slow during years one through five, before snowballing fast past year ten across 15, 20, or 30-year stretches. Time beats timing.</li>
-<li><strong>Read the Ratio &amp; Growth Schedule:</strong> Instant donut splits show out-of-pocket principal beside compounded profits, while the annual ledger below highlights the exact year when market gains start outgrowing fresh annual deposits. Watch year ten.</li>
+<li><strong>Monthly Contribution (₹):</strong> Slide or type realistic cash flow such as ₹5,000, ₹10,000, or ₹50,000. Skipping dinner once works cleanly; emptying your emergency buffer guarantees you cancel the mandate within a year.</li>
+<li><strong>Expected Annual Return (CAGR %):</strong> Equity funds like Nifty 50 Index or Flexi-cap portfolios over ten-plus years generally sit in the 11% to 13% planning zone, whereas conservative hybrid or debt-heavy baskets call for 7% to 9% estimates instead of rosy 18% promises.</li>
+<li><strong>Investment Horizon (Years):</strong> Compounding looks painfully slow during years one through five, before snowballing fast past year ten across 15, 20, or 30-year stretches.</li>
+<li><strong>Read the Ratio &amp; Growth Schedule:</strong> Instant donut splits show out-of-pocket principal beside compounded profits, while the annual ledger below highlights the exact year when market gains start outgrowing fresh annual deposits.</li>
 </ol>
 </div>
 <div class="info-section-card">
@@ -583,14 +492,14 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <li>Ordinary annuity subtotal = <code>₹10,000 × 230.038689 = ₹23,00,387</code>.</li>
 <li>Annuity-due final maturity = <code>₹23,00,387 × 1.01</code> = <strong>₹23,23,391</strong>.</li>
 </ul>
-<p>Out of ₹23,23,391 total value, you paid <strong>₹12,00,000</strong> out of salary while compounding added <strong>₹11,23,391</strong>, roughly 48.3% of the final pot, without lifting a finger after automating bank debits. Numbers grow silently.</p>
+<p>Out of ₹23,23,391 total value, you paid <strong>₹12,00,000</strong> out of salary while compounding added <strong>₹11,23,391</strong>, roughly 48.3% of the final pot, without lifting a finger after automating bank debits.</p>
 </div>
 <div class="info-section-card">
 <h2>Three Realistic Indian Saver Timelines</h2>
 <p>Why do older high-earners struggle to match younger savers investing pocket change? Look at how starting age warps final corpus across Bengaluru, Mumbai, and Delhi households:</p>
 <div class="scenario-grid">
 <div class="scenario-box">
-<h3>Rahul, Age 24 (Bengaluru Software Engineer)</h3>
+<p class="illustrative-note" style="font-size:0.88rem; color:var(--text-muted); background:var(--bg-elevated, #f8fafc); border-left:3px solid var(--emerald-dark, #0B5D3B); padding:8px 12px; margin:0.75rem 0 1.25rem; border-radius:4px;">Illustrative example, not a real person: Names such as Rahul, Priya, Arun, Ananya, Vikram, Neha, Rohan, Suresh, Sneha, or Ramesh below refer to hypothetical calculation scenarios.</p><h3>Rahul, Age 24 (Bengaluru Software Engineer)</h3>
 <p>Earning ₹45,000 per month fresh out of college, Rahul trims weekend deliveries and directs <strong>₹5,000 monthly</strong> into a plain Nifty 50 Index Fund for 20 years at 12% assumed growth. Total out-of-pocket cash equals just ₹12.00 Lakh, yet final value touches roughly <strong>₹49.96 Lakh</strong> with ₹37.96 Lakh arriving purely from compounding gains. </p>
 </div>
 <div class="scenario-box">
@@ -609,20 +518,20 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <ul style="line-height: 1.8;">
 <li><strong>First-In, First-Out (FIFO) Clocks:</strong> Every monthly purchase carries its own individual holding birthday. Selling units in February 2026 checks your January 2025 tranche past 12 months cleanly, whereas a June 2025 tranche stays short-term until June 2026 crosses one full year. </li>
 <li><strong>Equity Fund Taxation (FY 2026-27):</strong> Schemes holding 65% or more domestic equities treat redemptions past 12 months as <strong>Long-Term Capital Gains (LTCG)</strong> with ₹1.25 Lakh annual exemption, taxing gains above that line at a flat <strong>12.5% without indexation</strong>. Units held 12 months or under face a flat <strong>20% STCG tax</strong> plus applicable surcharge and 4% Health &amp; Education Cess.</li>
-<li><strong>Debt Mutual Fund Slabs:</strong> Specified debt funds holding 35% or less equity bought from April 1, 2023 onward lose long-term slab breaks altogether, paying your ordinary marginal income tax bracket no matter how many years pass. Slabs squeeze interest.</li>
-<li><strong>ELSS Section 80C Lock-In:</strong> Tax-saving ELSS schemes still carry the ₹1.50 Lakh Old Regime cap alongside a strict <strong>3-year lock-in per monthly installment</strong>, meaning your 12th SIP waits three years from its own allotment date. Lock-ins track monthly.</li>
-<li><strong>Direct vs Regular Plans:</strong> Under SEBI mandates, AMCs offer commission-free Direct Plans alongside broker-paid Regular Plans charging 0.5% to 1.5% more per annum. Over 20 years, dodging distributor trail fees adds 15% to 25% extra corpus straight into your bank account. Direct beats regular.</li>
+<li><strong>Debt Mutual Fund Slabs:</strong> Specified debt funds holding 35% or less equity bought from April 1, 2023 onward lose long-term slab breaks altogether, paying your ordinary marginal income tax bracket no matter how many years pass.</li>
+<li><strong>ELSS Section 80C Lock-In:</strong> Tax-saving ELSS schemes still carry the ₹1.50 Lakh Old Regime cap alongside a strict <strong>3-year lock-in per monthly installment</strong>, meaning your 12th SIP waits three years from its own allotment date.</li>
+<li><strong>Direct vs Regular Plans:</strong> Under SEBI mandates, AMCs offer commission-free Direct Plans alongside broker-paid Regular Plans charging 0.5% to 1.5% more per annum. On an illustrative ₹10,000/month SIP over 20 years (12.0% Direct vs 11.0% Regular after a 1.0% expense drag), Direct builds ₹99.91 Lakh versus ₹87.36 Lakh (+14.38%, or ₹12.56 Lakh more).</li>
 </ul>
 </div>
 <div class="info-section-card">
 <h2>Five Traps That Break Long-Term Compounding</h2>
 <p>Automation solves half the battle. Human nerves still wreck promising portfolios across five familiar traps:</p>
 <ol style="line-height: 1.8; margin-left: 1.25rem;">
-<li><strong>Freezing Mandates During 15% Market Falls:</strong> Stopping monthly debits when headlines turn red forfeits the exact bargain NAV units that power recovery rallies two years later. Stay invested through crashes.</li>
-<li><strong>Hoarding Fifteen Overlapping Funds:</strong> Owning sixteen equity schemes buys the exact same top-fifty bluechips four times while piling up tracking noise. Three to five clean categories, covering an index core, a Flexi-cap workhorse, optional mid-cap exposure, and short-term debt stability, handle nearly every household. Overlap wastes clarity.</li>
-<li><strong>Picking IDCW Over Growth:</strong> Opting for Income Distribution cum Capital Withdrawal leaks compound money out as taxable payouts hit at peak income tax slabs, so select the Growth option every time. Reinvest all gains.</li>
-<li><strong>Keeping Fixed Numbers Through Promotions:</strong> Running the same flat ₹10,000 mandate across fifteen salary hikes lets lifestyle inflation eat your raise, whereas nudging investments up 10% annually via a Step-Up SIP doubles late-stage wealth effortlessly. Raise mandates yearly.</li>
-<li><strong>Gambling Six-Month Cash Inside Equities:</strong> Parking urgent house-repair or layoff reserves inside volatile Nifty funds forces ugly redemptions at market bottoms. Build six months of liquid emergency buffer first. Protect urgent cash.</li>
+<li><strong>Freezing Mandates During 15% Market Falls:</strong> Stopping monthly debits when headlines turn red forfeits the exact bargain NAV units that power recovery rallies two years later.</li>
+<li><strong>Hoarding Fifteen Overlapping Funds:</strong> Owning sixteen equity schemes buys the exact same top-fifty bluechips four times while piling up tracking noise. Three to five clean categories, covering an index core, a Flexi-cap workhorse, optional mid-cap exposure, and short-term debt stability, handle nearly every household.</li>
+<li><strong>Picking IDCW Over Growth:</strong> Opting for Income Distribution cum Capital Withdrawal leaks compound money out as taxable payouts hit at peak income tax slabs, so select the Growth option every time.</li>
+<li><strong>Keeping Fixed Numbers Through Promotions:</strong> Running the same flat ₹10,000 mandate across fifteen salary hikes lets lifestyle inflation eat your raise, whereas nudging investments up 10% annually via a Step-Up SIP doubles late-stage wealth effortlessly.</li>
+<li><strong>Gambling Six-Month Cash Inside Equities:</strong> Parking urgent house-repair or layoff reserves inside volatile Nifty funds forces ugly redemptions at market bottoms. Build six months of liquid emergency buffer first.</li>
 </ol>
 </div>
 <div class="info-section-card">
@@ -649,23 +558,23 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </details>
 <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
 <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Is a Direct Mutual Fund Plan better than a Regular Plan for SIP compounding?</summary>
-<p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Yes, Direct Plans buy units straight from the Asset Management Company without distributor trails baked into the Net Asset Value. Shaving 0.5% to 1.5% off annual expense ratios compounds quietly year after year, leaving Direct Plan investors with 15% to 25% more money over 15 to 25-year goals. Even a 1% annual fee gap compounds into a meaningful difference in final corpus over two decades.</p>
+<p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Yes, Direct Plans buy units straight from the Asset Management Company without distributor trails baked into the Net Asset Value. Shaving 0.5% to 1.5% off annual expense ratios compounds quietly year after year, reducing the net return earned by Regular investors. Over 20 years on a ₹10,000/month SIP comparing 12.0% Direct vs 11.0% Regular net returns, Direct compounding builds ₹99,91,479 versus ₹87,35,731 (+₹12,55,748, or +14.37% higher ending corpus; +19.30% over 25 years). Even a 1% annual fee gap compounds into a meaningful difference in final corpus over two decades.</p>
 </details>
 </div>
 <div class="info-section-card">
 <h2>Official Statutory Sources</h2>
 <p>Formulas and tax rates above trace straight back to Indian regulator portals:</p>
 <ul style="line-height: 1.8;">
-<li><strong>Association of Mutual Funds in India (AMFI):</strong> <a href="https://www.amfiindia.com/investor-corner/knowledge-center/what-are-mutual-funds.html" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">AMFI Knowledge Centre: Mutual Fund Basics &amp; SIP Operations</a> covering SIP rules and NAV math.</li>
-<li><strong>Income Tax Department of India:</strong> <a href="https://incometaxindia.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">Income Tax Department: Capital Gains Taxation (Section 112A &amp; 111A)</a> confirming 12.5% LTCG above ₹1.25 Lakh and 20% equity STCG rules.</li>
-<li><strong>Securities and Exchange Board of India (SEBI):</strong> <a href="https://www.sebi.gov.in" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">SEBI (Mutual Funds) Regulations</a> on Direct Plan zero-commission separation and expense limits.</li>
-<li><strong>National Stock Exchange of India (NSE):</strong> <a href="https://www.nseindia.com" rel="noopener noreferrer" target="_blank" style="color:var(--emerald-dark); text-decoration:underline;">NSE Indices Historical Data</a> providing long-horizon benchmark context.</li>
+<li><strong>Association of Mutual Funds in India (AMFI):</strong> <a href="https://www.amfiindia.com/investor-corner/knowledge-center/what-are-mutual-funds.html" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">AMFI Knowledge Centre: Mutual Fund Basics &amp; SIP Operations</a> covering SIP rules and NAV math.</li>
+<li><strong>Income Tax Department of India:</strong> <a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">Income Tax Department: Capital Gains Taxation (Section 112A &amp; 111A)</a> confirming 12.5% LTCG above ₹1.25 Lakh and 20% equity STCG rules.</li>
+<li><strong>Securities and Exchange Board of India (SEBI):</strong> <a href="https://www.sebi.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">SEBI (Mutual Funds) Regulations</a> on Direct Plan zero-commission separation and expense limits.</li>
+<li><strong>National Stock Exchange of India (NSE):</strong> <a href="https://www.nseindia.com" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">NSE Indices Historical Data</a> providing long-horizon benchmark context.</li>
 </ul>
-<p style="font-size:0.85rem; color:var(--text-muted); margin-top:1rem;"><em>Statutory rates checked October 2026. Check official notices before executing real investments. Verify rules firsthand.</em></p>
+<p style="font-size:0.85rem; color:var(--text-muted); margin-top:1rem;"><em>Statutory rates checked October 2026. Check official notices before executing real investments.</em></p>
 </div>
 <div class="info-section-card">
 <h2>Companion Calculators &amp; Deeper Guides</h2>
-<p>Continue modelling salary appraisals, lump sums, or tax exits across these tools. Open your next step.</p>
+<p>Continue modelling salary appraisals, lump sums, or tax exits across these tools.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1rem;">
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
 <h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/step-up" style="color:var(--emerald-dark); text-decoration: underline;">Step-Up SIP Calculator</a></h3>
@@ -680,7 +589,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Work backwards from future education or retirement rupee goals after adjusting for inflation.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
-<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/how-to-start-sip" style="color:var(--emerald-dark); text-decoration: underline;">How to Start an SIP in India</a></h3>
+<h3 style="font-size: 1.1rem; margin-top: 0;"><a href="/how-to-start-your-first-sip-step-by-step" style="color:var(--emerald-dark); text-decoration: underline;">How to Start an SIP in India</a></h3>
 <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">Walk through e-KYC setup, direct fund filters, and bank e-mandate registration cleanly.</p>
 </div>
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem;">
@@ -698,23 +607,89 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </div>
 </div>
 </div>
+</div>
 
+
+
+<!-- Interactive Calculator Engine Script -->
+
+<!-- -->
+
+<!-- -->
+<!-- -->
+<!-- -->
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
+        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-disclaimer">
-          <strong>Educational Resource Notice:</strong> Calculatorship is an independent educational site run by a student. It is not registered with SEBI, AMFI, or RBI. Content and calculation tools are for educational awareness only and never constitute investment, tax, or legal advice. Mutual fund investments are subject to market risks. Real returns and tax rules vary. Check official notices and consult a qualified adviser before acting.
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3>Calculators &amp; Hubs</h3>
+          <ul>
+            <li><a href="/">SIP Calculator</a></li>
+            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+            <li><a href="/sgb-calculator">SGB Calculator</a></li>
+            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+            <li><a href="/emi-calculator">Home Loan EMI</a></li>
+            <li><a href="/ppf-calculator">PPF Calculator</a></li>
+            <li><a href="/calculators">All Calculators Hub</a></li>
+          </ul>
         </div>
-        <div class="footer-copy">
-          &copy; 2026 Calculatorship. All rights reserved. | <a href="/about">About</a> | <a href="/author">Author</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/sitemap">Sitemap</a>
+        <div class="footer-col">
+          <h3>Topic Hubs</h3>
+          <ul>
+            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+            <li><a href="/blog">Guides Archive</a></li>
+            <li><a href="/sitemap">HTML Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Policies &amp; Transparency</h3>
+          <ul>
+            <li><a href="/about">About Calculatorship</a></li>
+            <li><a href="/author">Author (Tejas Waghmare)</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/editorial-policy">Editorial Policy</a></li>
+            <li><a href="/corrections">Corrections Policy</a></li>
+            <li><a href="/disclaimer">Disclaimer</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/cookies">Cookie Policy</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </footer>
-<button aria-label="Back to top" class="back-to-top" id="back-to-top">
-<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
-</button>
-<script defer src="theme.js?v=4.4"></script>
-<!-- Interactive Calculator Engine Script -->
+    <div class="footer-bottom">
+      <div class="footer-disclaimer">
+        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+<script defer src="/theme.js?v=5.0"></script>
+<div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
+  <div class="cs-cookie-inner">
+    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+    <div class="cs-cookie-actions">
+      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+    </div>
+  </div>
+</div>
 <script>
     (function () {
       "use strict";
@@ -820,20 +795,5 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       // Table and summary are already server/prerendered in HTML. Calculate runs on user input.
     })();
   </script>
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-<div id="cs-cookie-banner" class="cs-cookie-sheet" role="region" aria-label="Cookie Consent">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">
-      Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.
-    </p>
-    <div class="cs-cookie-actions">
-      <button type="button" id="cs-decline-cookies" class="cs-cookie-btn cs-cookie-decline">Decline</button>
-      <button type="button" id="cs-accept-cookies" class="cs-cookie-btn cs-cookie-accept">Accept</button>
-    </div>
-  </div>
-</div>
-  <!-- Third-party advertising integration: commented out -->
-  <!-- <script defer src="advertising/config.js"></script> -->
-  <!-- <script defer src="advertising/register.js"></script> -->
 </body>
 </html>

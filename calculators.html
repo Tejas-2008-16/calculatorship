@@ -23,140 +23,14 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta name="twitter:title" content="Financial Calculators India: 22 Free Online Money Tools">
 <meta name="twitter:description" content="Browse all 22 free financial calculators India for investors, taxpayers, and salaried earners: SIP, PPF, EPF, NPS, Loan EMI, Gratuity, GST, and Income Tax.">
-<meta content="#F3F7F5" name="theme-color"/>
+<meta content="#FAF9F6" name="theme-color"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <noscript></noscript>
-<style id="critical-css">@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url('/fonts/inter.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-:root {
-  --bg-page: #F6F8F6;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #F8FAF9;
-  --text-primary: #0F172A;
-  --text-secondary: #2B3A4E;
-  --text-muted: #526275;
-  --emerald: #009B72;
-  --emerald-dark: #006B47;
-  --emerald-soft: #ECF6F1;
-  --border-soft: #DFE6E2;
-  --border-medium: #C4D0C9;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-}
-*, *::before, *::after { box-sizing: border-box !important; }
-:root, html { scroll-padding-top: 68px; }
-body {
-  margin: 0; padding: 0;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-.sr-only {
-  position: absolute !important; width: 1px !important; height: 1px !important;
-  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
-}
-.site-header {
-  position: sticky; top: 0; z-index: 1000;
-  min-height: 56px; height: clamp(56px, 8vh, 64px);
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
-}
-.header-inner {
-  height: 100%; max-width: 1520px; margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 28px);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.brand img { height: 38px; width: auto; max-width: 220px; display: block; }
-.main-nav { display: flex; align-items: center; gap: 24px; }
-.main-nav a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
-.nav-toggle {
-  display: none; background: none; border: none; cursor: pointer;
-  padding: 8px; min-width: 44px; min-height: 44px;
-  flex-direction: column; justify-content: center; gap: 5px;
-}
-.nav-toggle span.hamburger-bar {
-  display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px;
-}
-.breadcrumb-bar { background: #FFFFFF; border-bottom: 1px solid var(--border-soft); }
-.breadcrumb { max-width: 1520px; margin: 0 auto; padding: 10px clamp(16px, 2vw, 28px); font-size: 0.85rem; }
-.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.breadcrumb a { color: var(--emerald-dark); text-decoration: none; }
-.calc-hero { max-width: 1520px; margin: 24px auto 16px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-hero h1 {
-  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.125rem);
-  line-height: 1.25; margin: 0 0 8px; color: var(--text-primary); font-weight: 800;
-}
-.article-byline {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
-  font-size: 0.875rem; color: var(--text-muted); margin: 0.5rem 0 1rem;
-}
-.educational-disclaimer {
-  background: #fffbeb; border-left: 3px solid #d97706;
-  padding: 10px 14px; margin: 1rem 0; border-radius: 0 8px 8px 0;
-  font-size: 0.875rem; line-height: 1.5; color: #78350f;
-}
-.calc-switcher-wrapper { max-width: 1520px; margin: 0 auto 20px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-switcher-bar {
-  display: flex; align-items: center; gap: 8px; overflow-x: auto;
-  -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
-  padding: 6px 8px; border-radius: 8px; background: var(--bg-card);
-  border: 1px solid var(--border-soft); scrollbar-width: none;
-}
-.calc-switcher-bar::-webkit-scrollbar { display: none; }
-.calc-switcher-bar .calc-tab {
-  flex-shrink: 0; scroll-snap-align: start; white-space: nowrap;
-  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
-  padding: 8px 16px; border-radius: 6px; text-decoration: none;
-  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
-}
-.calc-switcher-bar .calc-tab.active { background: var(--emerald-dark); color: #FFFFFF; }
-.calc-main-container { max-width: 1520px; margin: 0 auto; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-.calc-card, .calc-summary-card {
-  background: var(--bg-card); border: 1px solid var(--border-soft);
-  border-top: 3px solid var(--emerald-dark); border-radius: var(--radius-md);
-  padding: 24px; box-shadow: var(--shadow-sm);
-}
-.calc-field-group { margin-bottom: 20px; }
-.calc-input-box {
-  width: 100%; display: flex; align-items: center; background: #FAFBF9;
-  border: 1.5px solid var(--border-medium); border-radius: 6px; overflow: hidden;
-}
-.calc-inputs input[type="number"], .calc-inputs input[type="text"], .calc-input-box input {
-  width: 100%; font-size: 16px; min-height: 44px; padding: 8px 12px;
-  border: none; outline: none; background: transparent; font-family: var(--font-mono); font-weight: 700;
-}
-input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer; }
-.ad-container, .adsense-slot-wrapper { min-height: 280px; contain: layout; margin: 28px 0; }
-@media (max-width: 900px) {
-  .main-nav { display: none !important; }
-  .nav-toggle { display: flex !important; }
-}
-@media (max-width: 767px) {
-  .calc-grid { display: flex !important; flex-direction: column !important; }
-  .calc-card, .calc-summary-card { width: 100% !important; padding: 20px 16px !important; }
-}</style>
-<link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
 <!-- Google Analytics 4 (GA4) -->
 <script type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
 <script>
@@ -166,8 +40,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
     gtag('config', 'G-0C93Q0VBQP');
   </script>
 
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -199,39 +72,85 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       ]
     }
   ]
-}
-</script>
+}</script>
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
+<div class="reading-progress-bar" id="reading-progress"></div>
+<a class="skip-link" href="#main-content">Skip to financial calculators</a>
 <header class="site-header">
 <div class="header-inner">
 <a aria-label="Calculatorship Homepage" class="brand" href="/">
-<img alt="Calculatorship - Free Financial Calculators for Indian Investors" height="38" loading="lazy" src="/logo-light.svg" width="220"/>
+<img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="eager" src="/logo-light.svg" width="196"/>
 </a>
-<nav aria-label="Primary Navigation" class="main-nav">
+<nav aria-label="Primary Navigation" class="main-nav" id="site-menu">
 <div class="nav-dropdown">
-<a class="nav-dropdown-toggle" href="/">Calculators</a>
-<ul class="nav-dropdown-menu" role="menu">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Calculators</button>
+<div class="nav-dropdown-menu nav-mega">
+<div class="nav-dropdown-grid">
+<div>
+<p class="nav-dropdown-group-title">Investing &amp; Gold</p>
+<ul class="nav-dropdown-group-list">
 <li><a href="/">SIP Calculator</a></li>
-<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/step-up">Step-Up SIP</a></li>
+<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/goal">Goal Planner</a></li>
-<li><a href="/ppf-calculator">PPF Calculator</a></li>
-<li><a href="/swp-calculator">SWP Calculator</a></li>
-<li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-<li class="nav-dropdown-divider" role="separator"></li>
-<li><a href="/fd-calculator">FD Calculator</a></li>
-<li><a href="/budget-planner">Budget Planner</a></li>
-<li><a href="/income-tax-calculator">Tax Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/cagr-calculator">CAGR Calculator</a></li>
+<li><a href="/stock-average-calculator-guide-india">Stock Average</a></li>
 </ul>
 </div>
-<a href="/blog">Blog &amp; Guides</a>
+<div>
+<p class="nav-dropdown-group-title">FD &amp; Small Savings</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Bank FD Calculator</a></li>
+<li><a href="/recurring-deposit-rd-calculator-guide-india">RD Calculator</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/epf-calculator">EPF Calculator</a></li>
+<li><a href="/nps-calculator">NPS Calculator</a></li>
+<li><a href="/swp-calculator">SWP Calculator</a></li>
+<li><a href="/compound-interest-calculator">Compound Interest</a></li>
+</ul>
+</div>
+<div>
+<p class="nav-dropdown-group-title">Tax, Salary &amp; Loans</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/in-hand-salary-calculator">In-Hand Salary</a></li>
+<li><a href="/salary-hike-calculator">Salary Hike</a></li>
+<li><a href="/hra-calculator">HRA Exemption</a></li>
+<li><a href="/gratuity-calculator">Gratuity (15/26)</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/budget-planner">50/30/20 Budget</a></li>
+</ul>
+</div>
+</div>
+<div class="nav-dropdown-footer">
+<span>All calculations run privately in your browser</span>
+<a href="/calculators">Browse All Calculators →</a>
+</div>
+</div>
+</div>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Topic Hubs</button>
+<ul class="nav-dropdown-menu" role="menu">
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds</a></li>
+<li><a href="/guides/tax-planning">Income Tax Planning</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; Sovereign Gold Bonds</a></li>
+<li><a href="/guides/loans-and-emi">Home Loans, EMI &amp; CIBIL</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary, CTC &amp; Budgeting</a></li>
+</ul>
+</div>
+<a href="/blog">Guides</a>
+<a class="active" href="/calculators">Calculators Hub</a>
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
 <div class="header-actions">
-<button aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span></button>
+<button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
+<button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
 </div>
 </header>
@@ -243,276 +162,155 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </ol>
 </nav>
 </div>
-<main id="main-content" style="max-width:1100px; margin:0 auto; padding:32px 24px 60px;">
-<div class="calc-hero" style="margin-bottom:3rem; text-align:center;">
-<h1 style="font-size:2.5rem; font-weight:800; color:#0f172a; margin-bottom:0.75rem;">Free Financial Calculators for Indian Users</h1>
-<p style="font-size:1.15rem; color:#475569; max-width:780px; margin:0 auto 1.5rem; line-height:1.6;">
-    Skip signup popups completely. Logins stay banned here. Below sit all 22 browser-side financial calculators coded in vanilla JavaScript for Indian salaried workers, savers, and taxpayers, aligning strictly with current Income Tax Act slabs, EPFO circulars, small-savings schedules, and RBI loan guidelines without ever pushing entered salary or corpus figures onto remote database servers. Numbers stay yours.
-  </p>
-<div style="font-size:0.9rem; color:#64748b;">
-    Maintained by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a> • Last verified: November 2026
-  </div>
+<main id="main-content">
+<div class="calc-hero" style="margin-bottom:2rem;">
+<div class="article-meta">
+<span class="meta-cat">Calculators Directory</span>
+<span>24 Browser-Side Tools • FY 2026-27 Verified</span>
 </div>
-<!-- 1. Investing & Wealth Compounding -->
-<section style="margin-bottom:3.5rem;">
-<div style="border-bottom:2px solid #e2e8f0; padding-bottom:0.75rem; margin-bottom:1.5rem; display:flex; align-items:baseline; justify-content:space-between;">
-<h2 style="font-size:1.6rem; font-weight:800; color:#0f172a; margin:0;">1. Investing &amp; Wealth Compounding</h2>
-<span style="font-size:0.9rem; color:#64748b; font-weight:600;">7 Calculators</span>
+<h1>Free Financial Calculators for Indian Users</h1>
+<p class="lead">Every calculator below runs privately in vanilla JavaScript inside your browser—aligned with FY 2026-27 Income Tax Act slabs, EPFO circulars, small-savings schedules, and RBI quarterly compounding rules without collecting personal inputs.</p>
+<div class="article-byline">
+<span>Maintained by <a href="/author">Tejas Waghmare</a></span>
+<span class="byline-dot">•</span>
+<span>Last reviewed: 26 November 2026</span>
+<span class="byline-dot">•</span>
+<span><a href="/editorial-policy">Methodology &amp; Editorial Policy</a></span>
 </div>
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/" style="color:#0f172a; text-decoration:none;">SIP Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Model how steady monthly mutual fund deposits compound across 5 to 30 years with yearly payout tables. Skip spreadsheet formula errors.</p>
 </div>
-<a href="/" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Open SIP Tool →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/step-up" style="color:#0f172a; text-decoration:none;">Step-Up SIP Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Got an appraisal hike? Increasing monthly contributions by 5% or 10% annually shrinks decades off long-term corpus goals.</p>
-</div>
-<a href="/step-up" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Try Step-Up SIP →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/lumpsum" style="color:#0f172a; text-decoration:none;">Lumpsum Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Deploying an annual bonus, property gain, or retirement lump sum? Compare compound growth across multi-year horizons.</p>
-</div>
-<a href="/lumpsum" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Run Lumpsum Math →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/cagr-calculator" style="color:#0f172a; text-decoration:none;">CAGR Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Measuring direct stocks or property value? Strip out headline marketing noise to isolate real annualised return.</p>
-</div>
-<a href="/cagr-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Work Out CAGR →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/compound-interest-calculator" style="color:#0f172a; text-decoration:none;">Compound Interest Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Compare daily, monthly, quarterly, and annual interest compounding frequencies side by side on fixed capital. Compounding pace matters.</p>
-</div>
-<a href="/compound-interest-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Test Compounding →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/simple-interest-calculator" style="color:#0f172a; text-decoration:none;">Simple Interest Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Straight PNR divided by 100 math built for short-term hand loans, bills, and flat-rate notes.</p>
-</div>
-<a href="/simple-interest-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Run Simple Interest →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/stock-average-calculator-guide-india" style="color:#0f172a; text-decoration:none;">Stock Average Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Calculate weighted average buy price across multiple tranches, find shares needed for a target average, and evaluate break-even recovery moves.</p>
-</div>
-<a href="/stock-average-calculator-guide-india" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Calculate Stock Average →</a>
-</div>
+<section style="margin:20px 0 36px;">
+<h2 style="margin-top:0;">Explore Guides by Topic Hub</h2>
+<div class="hub-grid">
+<div class="hub-card"><div><h3><a href="/guides/sip-and-mutual-funds" style="color:var(--text-primary); text-decoration:none;">SIP &amp; Mutual Funds</a></h3><p>Direct vs Regular plans, SEBI categories, Nifty 50 Index funds, and tax rules.</p></div><a class="card-action" href="/guides/sip-and-mutual-funds">Open Hub →</a></div>
+<div class="hub-card"><div><h3><a href="/guides/tax-planning" style="color:var(--text-primary); text-decoration:none;">Income Tax Planning</a></h3><p>FY 2026-27 tax slabs, Old vs New Regime math, Section 80C, HRA, and ITR filing.</p></div><a class="card-action" href="/guides/tax-planning">Open Hub →</a></div>
+<div class="hub-card"><div><h3><a href="/guides/fd-and-fixed-income" style="color:var(--text-primary); text-decoration:none;">FD &amp; Fixed Income</a></h3><p>Bank FDs, Sec 194A TDS limits, PPF, EPF, SCSS, NSC, RBI Bonds, and T-Bills.</p></div><a class="card-action" href="/guides/fd-and-fixed-income">Open Hub →</a></div>
+<div class="hub-card"><div><h3><a href="/guides/gold-and-sgb" style="color:var(--text-primary); text-decoration:none;">Gold &amp; Sovereign Gold Bonds</a></h3><p>Budget 2026 SGB tax rules, Gold vs Silver ETFs, and IBJA bullion pricing.</p></div><a class="card-action" href="/guides/gold-and-sgb">Open Hub →</a></div>
+<div class="hub-card"><div><h3><a href="/guides/loans-and-emi" style="color:var(--text-primary); text-decoration:none;">Loans &amp; EMI Strategy</a></h3><p>Home loan prepayment vs SIP math, RBI repo rate resets, balance transfers, and CIBIL.</p></div><a class="card-action" href="/guides/loans-and-emi">Open Hub →</a></div>
+<div class="hub-card"><div><h3><a href="/guides/budgeting-and-salary" style="color:var(--text-primary); text-decoration:none;">Salary &amp; Budgeting</a></h3><p>CTC to in-hand payslips, 50/30/20 budgets, emergency funds, and term life insurance.</p></div><a class="card-action" href="/guides/budgeting-and-salary">Open Hub →</a></div>
 </div>
 </section>
-<!-- 2. Retirement & Small Savings -->
-<section style="margin-bottom:3.5rem;">
-<div style="border-bottom:2px solid #e2e8f0; padding-bottom:0.75rem; margin-bottom:1.5rem; display:flex; align-items:baseline; justify-content:space-between;">
-<h2 style="font-size:1.6rem; font-weight:800; color:#0f172a; margin:0;">2. Retirement, Banking &amp; Small Savings</h2>
-<span style="font-size:0.9rem; color:#64748b; font-weight:600;">7 Calculators</span>
+<section style="margin-bottom:2.75rem;">
+<div style="border-bottom:2px solid var(--border-soft); padding-bottom:0.65rem; margin-bottom:1.25rem; display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+<h2 style="margin:0;">1. Investing, Gold &amp; Wealth Compounding</h2>
+<span style="font-size:0.9rem; color:var(--text-muted); font-weight:600;">9 Calculators</span>
 </div>
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/ppf-calculator" style="color:#0f172a; text-decoration:none;">PPF Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Sovereign tax-free growth over 15 years modeled around the current 7.1% Public Provident Fund rate. Sovereign backing endures.</p>
-</div>
-<a href="/ppf-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Project PPF Maturity →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/epf-calculator" style="color:#0f172a; text-decoration:none;">EPF Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Simulate EPF accumulation at 8.25% while separating employee 12% deposits from employer EPS pension caps.</p>
-</div>
-<a href="/epf-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Estimate EPF Corpus →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/nps-calculator" style="color:#0f172a; text-decoration:none;">NPS Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Planning Tier I retirement exits? Separate your 60% lump sum from mandatory 40% annuity pension income.</p>
-</div>
-<a href="/nps-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Model NPS Pension →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/swp-calculator" style="color:#0f172a; text-decoration:none;">SWP Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Draw monthly cash flow from an existing mutual fund corpus and spot when drawdown rates break sustainability.</p>
-</div>
-<a href="/swp-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Plan Monthly SWP →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/fd-calculator" style="color:#0f172a; text-decoration:none;">Fixed Deposit (FD) Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Find bank FD maturity proceeds across quarterly cumulative payouts and monthly or quarterly interest options. Verify bank yields.</p>
-</div>
-<a href="/fd-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Compute FD Payout →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/recurring-deposit-rd-calculator-guide-india" style="color:#0f172a; text-decoration:none;">RD Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Deposit a fixed rupee figure monthly into bank or Post Office RDs under exact quarterly compounding rules. Discipline pays cleanly.</p>
-</div>
-<a href="/recurring-deposit-rd-calculator-guide-india" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Simulate RD Returns →</a>
-</div>
+<div class="hub-grid">
+<div class="hub-card"><div><h3><a href="/" style="color:var(--text-primary); text-decoration:none;">SIP Calculator</a></h3><p>Model how steady monthly mutual fund deposits compound across 5 to 30 years with yearly schedules.</p></div><a class="card-action" href="/">Open SIP Tool →</a></div>
+<div class="hub-card"><div><h3><a href="/step-up" style="color:var(--text-primary); text-decoration:none;">Step-Up SIP Calculator</a></h3><p>Test how increasing monthly SIP contributions by 5% or 10% annually accelerates long-term corpus goals.</p></div><a class="card-action" href="/step-up">Try Step-Up SIP →</a></div>
+<div class="hub-card"><div><h3><a href="/lumpsum" style="color:var(--text-primary); text-decoration:none;">Lumpsum Calculator</a></h3><p>Project one-time bonus or capital compounding returns with year-by-year growth tables and LTCG context.</p></div><a class="card-action" href="/lumpsum">Run Lumpsum Math →</a></div>
+<div class="hub-card"><div><h3><a href="/goal" style="color:var(--text-primary); text-decoration:none;">Financial Goal Planner</a></h3><p>Work backward from any inflation-adjusted future rupee milestone to compute exact required monthly SIPs.</p></div><a class="card-action" href="/goal">Plan Target Corpus →</a></div>
+<div class="hub-card"><div><h3><a href="/sgb-calculator" style="color:var(--text-primary); text-decoration:none;">SGB Calculator India</a></h3><p>Project Sovereign Gold Bond 2.50% coupon cash flows, Budget 2026 Section 70 tax rules, and Gold ETF comparison.</p></div><a class="card-action" href="/sgb-calculator">Calculate SGB Returns →</a></div>
+<div class="hub-card"><div><h3><a href="/cagr-calculator" style="color:var(--text-primary); text-decoration:none;">CAGR Calculator</a></h3><p>Strip out absolute growth noise to isolate true Compound Annual Growth Rate across custom holding horizons.</p></div><a class="card-action" href="/cagr-calculator">Work Out CAGR →</a></div>
+<div class="hub-card"><div><h3><a href="/compound-interest-calculator" style="color:var(--text-primary); text-decoration:none;">Compound Interest Calculator</a></h3><p>Compare daily, monthly, quarterly, half-yearly, and annual interest compounding side by side on fixed capital.</p></div><a class="card-action" href="/compound-interest-calculator">Test Compounding →</a></div>
+<div class="hub-card"><div><h3><a href="/simple-interest-calculator" style="color:var(--text-primary); text-decoration:none;">Simple Interest Calculator</a></h3><p>Standard P x R x T / 100 formula calculator built for short-term hand loans, notes, and flat-rate bills.</p></div><a class="card-action" href="/simple-interest-calculator">Run Simple Interest →</a></div>
+<div class="hub-card"><div><h3><a href="/stock-average-calculator-guide-india" style="color:var(--text-primary); text-decoration:none;">Stock Average Calculator</a></h3><p>Compute weighted average buy price across tranches, target average shares needed, and break-even moves.</p></div><a class="card-action" href="/stock-average-calculator-guide-india">Calculate Stock Average →</a></div>
 </div>
 </section>
-<!-- 3. Tax, Salary, Budget & Loans -->
-<section style="margin-bottom:3.5rem;">
-<div style="border-bottom:2px solid #e2e8f0; padding-bottom:0.75rem; margin-bottom:1.5rem; display:flex; align-items:baseline; justify-content:space-between;">
-<h2 style="font-size:1.6rem; font-weight:800; color:#0f172a; margin:0;">3. Tax, Salary, Budget &amp; Loans</h2>
-<span style="font-size:0.9rem; color:#64748b; font-weight:600;">9 Calculators</span>
+<section style="margin-bottom:2.75rem;">
+<div style="border-bottom:2px solid var(--border-soft); padding-bottom:0.65rem; margin-bottom:1.25rem; display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+<h2 style="margin:0;">2. Retirement, Banking &amp; Small Savings</h2>
+<span style="font-size:0.9rem; color:var(--text-muted); font-weight:600;">7 Calculators</span>
 </div>
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/income-tax-calculator" style="color:#0f172a; text-decoration:none;">Income Tax Calculator (FY 26-27)</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Match Old vs New Tax Regime payable tax directly for FY 2026-27 once standard deduction and rebate cliffs apply. Regimes diverge quickly.</p>
-</div>
-<a href="/income-tax-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Compare Tax Regimes →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/in-hand-salary-calculator" style="color:#0f172a; text-decoration:none;">In-Hand Salary Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Curious why a ₹12 LPA CTC yields far under ₹1 lakh monthly? Strip out EPF, gratuity, and TDS deductions fast.</p>
-</div>
-<a href="/in-hand-salary-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Break Down CTC →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/hra-calculator" style="color:#0f172a; text-decoration:none;">HRA Exemption Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Paying monthly house rent under the Old Regime? Compute taxable vs exempt HRA via Rule 2A three-way minimum logic.</p>
-</div>
-<a href="/hra-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Work Out Exempt HRA →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/gratuity-calculator" style="color:#0f172a; text-decoration:none;">Gratuity Calculator (15/26)</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Crossing five years with one employer? Estimate statutory exit gratuity using last drawn Basic plus DA and the 15/26 divisor.</p>
-</div>
-<a href="/gratuity-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Compute Exit Gratuity →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/gst-calculator" style="color:#0f172a; text-decoration:none;">GST Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Add tax onto base invoice pricing or extract tax out of MRP across 5%, 12%, 18%, and 28% GST slabs instantly.</p>
-</div>
-<a href="/gst-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Split GST Invoice →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/emi-calculator" style="color:#0f172a; text-decoration:none;">Loan EMI &amp; Prepayment Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Running a 20-year housing loan? Measure monthly EMIs and see how extra annual principal prepayments slice years off bank interest.</p>
-</div>
-<a href="/emi-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Schedule Home EMI →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/budget-planner" style="color:#0f172a; text-decoration:none;">50/30/20 Budget Planner</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Test the 50/30/20 allocation benchmark against take-home monthly pay to balance essentials, lifestyle wants, and SIP savings. Spot leaks early.</p>
-</div>
-<a href="/budget-planner" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Divide Take-Home Pay →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/inflation-calculator" style="color:#0f172a; text-decoration:none;">Inflation Planner</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">What will ₹50,000 cover fifteen years out? Gauge how 6% to 8% annual inflation quietly shrinks cash purchasing power.</p>
-</div>
-<a href="/inflation-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Track Purchasing Power →</a>
-</div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between;">
-<div>
-<h3 style="font-size:1.2rem; font-weight:700; margin-top:0; margin-bottom:0.5rem;"><a href="/emi-calculator" style="color:#0f172a; text-decoration:none;">Car Loan EMI Calculator</a></h3>
-<p style="font-size:0.92rem; color:#475569; line-height:1.6; margin-bottom:1rem;">Financing an auto purchase over 3 to 7 years? Contrast reducing-balance monthly instalments before visiting dealer desks.</p>
-</div>
-<a href="/emi-calculator" style="color:#006B47; font-weight:600; text-decoration:none; font-size:0.95rem;">Estimate Auto EMI →</a>
-</div>
+<div class="hub-grid">
+<div class="hub-card"><div><h3><a href="/cumulative-fd-calculator" style="color:var(--text-primary); text-decoration:none;">Cumulative FD Calculator</a></h3><p>Exact years/months/days FD maturity, discounted monthly vs quarterly payouts, senior rate check, and ₹50K–₹1Cr table.</p></div><a class="card-action" href="/cumulative-fd-calculator">Calculate Cumulative FD →</a></div>
+<div class="hub-card"><div><h3><a href="/fd-calculator" style="color:var(--text-primary); text-decoration:none;">Bank FD Calculator</a></h3><p>Calculate standard Fixed Deposit maturity and Sec 194A TDS thresholds across quarterly compounding schedules.</p></div><a class="card-action" href="/fd-calculator">Compute FD Payout →</a></div>
+<div class="hub-card"><div><h3><a href="/recurring-deposit-rd-calculator-guide-india" style="color:var(--text-primary); text-decoration:none;">RD Calculator</a></h3><p>Model monthly bank or Post Office Recurring Deposits under exact quarterly compounding conventions.</p></div><a class="card-action" href="/recurring-deposit-rd-calculator-guide-india">Simulate RD Returns →</a></div>
+<div class="hub-card"><div><h3><a href="/ppf-calculator" style="color:var(--text-primary); text-decoration:none;">PPF Calculator</a></h3><p>15-year sovereign EEE wealth projection modeled around the 7.1% Public Provident Fund annual interest rate.</p></div><a class="card-action" href="/ppf-calculator">Project PPF Maturity →</a></div>
+<div class="hub-card"><div><h3><a href="/epf-calculator" style="color:var(--text-primary); text-decoration:none;">EPF Calculator</a></h3><p>Project Employees Provident Fund corpus at 8.25% while separating employee 12% and EPS pension diversions.</p></div><a class="card-action" href="/epf-calculator">Estimate EPF Corpus →</a></div>
+<div class="hub-card"><div><h3><a href="/nps-calculator" style="color:var(--text-primary); text-decoration:none;">NPS Calculator</a></h3><p>Separate 60% tax-free Tier-I lump sum withdrawals from mandatory 40% annuity pension projections at age 60.</p></div><a class="card-action" href="/nps-calculator">Model NPS Pension →</a></div>
+<div class="hub-card"><div><h3><a href="/swp-calculator" style="color:var(--text-primary); text-decoration:none;">SWP Calculator</a></h3><p>Simulate monthly Systematic Withdrawal Plan drawdowns and test portfolio longevity against inflation.</p></div><a class="card-action" href="/swp-calculator">Plan Monthly SWP →</a></div>
 </div>
 </section>
-<section class="info-section-card" style="margin-top:2rem;">
-<h2 style="font-size:1.45rem; font-weight:800; color:#0f172a; margin-top:0; margin-bottom:0.75rem;">How These 22 Tools Fit Together</h2>
-<p>Most Indian earners open calculators in the wrong sequence. Start with your actual bank credit inside the In-Hand Salary Calculator, compare Old vs New Regime tax liabilities, cap monthly needs with the 50/30/20 Budget Planner, and only then route genuine surplus into SIPs, Step-Up SIPs, PPF, or aggressive home loan prepayments so cash flows match real take-home pay instead of imaginary gross CTC numbers. Budgets govern investments. Math comes first.</p>
-<p>Pure JavaScript powers every tab locally. Zero spreadsheets go online. Every compounding loop, tax slab bracket, and quarterly deposit schedule runs directly in browser RAM while remaining educational, independent, and free of lead-capture callbacks so learners can test wild scenarios peacefully before touching live bank portals. Offline execution stays fast. Practice scenarios freely.</p>
+<section style="margin-bottom:2.75rem;">
+<div style="border-bottom:2px solid var(--border-soft); padding-bottom:0.65rem; margin-bottom:1.25rem; display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+<h2 style="margin:0;">3. Tax, Salary, Budgeting &amp; Loans</h2>
+<span style="font-size:0.9rem; color:var(--text-muted); font-weight:600;">8 Calculators</span>
+</div>
+<div class="hub-grid">
+<div class="hub-card"><div><h3><a href="/income-tax-calculator" style="color:var(--text-primary); text-decoration:none;">Income Tax Calculator (FY 26-27)</a></h3><p>Compare Old vs New Tax Regime payable tax with ₹75,000 standard deduction, ₹12.75L Sec 87A rebate, and marginal relief.</p></div><a class="card-action" href="/income-tax-calculator">Compare Tax Regimes →</a></div>
+<div class="hub-card"><div><h3><a href="/in-hand-salary-calculator" style="color:var(--text-primary); text-decoration:none;">In-Hand Salary Calculator</a></h3><p>Break down CTC into monthly take-home pay after EPF, Professional Tax, Gratuity, and FY 2026-27 New Regime TDS.</p></div><a class="card-action" href="/in-hand-salary-calculator">Break Down CTC →</a></div>
+<div class="hub-card"><div><h3><a href="/salary-hike-calculator" style="color:var(--text-primary); text-decoration:none;">Salary Hike Calculator</a></h3><p>Calculate increment percentage, revised CTC, real post-tax raise, and inflation-adjusted purchasing power gain.</p></div><a class="card-action" href="/salary-hike-calculator">Compute Real Hike →</a></div>
+<div class="hub-card"><div><h3><a href="/hra-calculator" style="color:var(--text-primary); text-decoration:none;">HRA Exemption Calculator</a></h3><p>Compute tax-exempt House Rent Allowance under Section 10(13A) &amp; Rule 2A across metro and non-metro cities.</p></div><a class="card-action" href="/hra-calculator">Work Out Exempt HRA →</a></div>
+<div class="hub-card"><div><h3><a href="/gratuity-calculator" style="color:var(--text-primary); text-decoration:none;">Gratuity Calculator (15/26)</a></h3><p>Estimate statutory exit gratuity using last drawn Basic plus DA and the Payment of Gratuity Act 15/26 divisor.</p></div><a class="card-action" href="/gratuity-calculator">Compute Exit Gratuity →</a></div>
+<div class="hub-card"><div><h3><a href="/gst-calculator" style="color:var(--text-primary); text-decoration:none;">GST Calculator</a></h3><p>Add GST onto base invoice values or extract inclusive GST out of MRP across standard Indian GST slabs.</p></div><a class="card-action" href="/gst-calculator">Split GST Invoice →</a></div>
+<div class="hub-card"><div><h3><a href="/emi-calculator" style="color:var(--text-primary); text-decoration:none;">Loan EMI &amp; Prepayment Calculator</a></h3><p>Schedule home, auto, or personal loan EMIs and model how annual prepayments shorten remaining tenure.</p></div><a class="card-action" href="/emi-calculator">Schedule Loan EMI →</a></div>
+<div class="hub-card"><div><h3><a href="/budget-planner" style="color:var(--text-primary); text-decoration:none;">50/30/20 Budget Planner</a></h3><p>Split monthly take-home pay across Needs, Wants, and Savings, plus test our <a href="/inflation-calculator">Inflation Planner</a>.</p></div><a class="card-action" href="/budget-planner">Divide Take-Home Pay →</a></div>
+</div>
+</section>
+<section class="info-section-card">
+<h2 style="margin-top:0;">How These Financial Tools Fit Together</h2>
+<p>Start with real bank credit inside the In-Hand Salary Calculator, compare Old vs New Regime liabilities, cap monthly outgoings with the 50/30/20 Budget Planner, and route verified monthly surplus into SIPs, Step-Up SIPs, Cumulative FDs, PPF, or loan prepayments so projections match net take-home cash flow rather than gross CTC numbers.</p>
+<p>Every compounding schedule, tax bracket, and amortization loop runs strictly inside your browser with zero server storage or product sales follow-ups. Check <a href="/inflation-calculator">Inflation Calculator</a> and <a href="/8th-pay-commission-salary-calculator-fitment-factor">8th Pay Commission Estimator</a> as specialized companions.</p>
 </section>
 </main>
 <footer class="site-footer">
-<div class="footer-inner">
-<div class="footer-top">
-<div class="footer-brand">
-<a href="/"><img alt="Calculatorship - Free Financial Calculators for Indian Investors" height="36" loading="lazy" src="/logo-footer.svg" style="display:block;" width="200"/></a>
-<p class="footer-tagline">Independent financial calculators and educational guides explaining how money maths works for Indian salaried professionals and retail investors.</p>
-</div>
-<div class="footer-links">
-<div class="footer-col">
-<h3>Calculators</h3>
-<ul>
-<li><a href="/">SIP Calculator</a></li>
-<li><a href="/lumpsum">Lumpsum Calculator</a></li>
-<li><a href="/step-up">Step-Up SIP</a></li>
-<li><a href="/goal">Goal Planner</a></li>
-<li><a href="/ppf-calculator">PPF Calculator</a></li>
-<li><a href="/epf-calculator">EPF Calculator</a></li>
-<li><a href="/swp-calculator">SWP Calculator</a></li>
-<li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-<li><a href="/fd-calculator">FD Calculator</a></li>
-<li><a href="/income-tax-calculator">Tax Calculator</a></li>
-<li><a href="/calculators">All Calculators Hub</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h3>Legal &amp; Policy</h3>
-<ul>
-<li><a href="/editorial-policy">Editorial Policy</a></li>
-<li><a href="/corrections">Corrections Log</a></li>
-<li><a href="/disclaimer">Disclaimer</a></li>
-<li><a href="/terms">Terms of Use</a></li>
-<li><a href="/privacy">Privacy Policy</a></li>
-<li><a href="/cookies">Cookie Policy</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h3>Platform</h3>
-<ul>
-<li><a href="/about">About</a></li>
-<li><a href="/author">Editorial Author</a></li>
-<li><a href="/contact">Contact</a></li>
-<li><a href="/blog">Guides &amp; Articles</a></li>
-<li><a href="/sitemap">Sitemap</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="footer-disclaimer">
-<strong>Educational Resource Notice:</strong> Calculatorship is an independent educational site run by a student. It is not registered with SEBI, AMFI, or RBI. Content and calculation tools are for educational awareness only and never constitute investment, tax, or legal advice. Mutual fund investments are subject to market risks. Real returns and tax rules vary. Check official notices and consult a qualified adviser before acting.
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
+        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3>Calculators &amp; Hubs</h3>
+          <ul>
+            <li><a href="/">SIP Calculator</a></li>
+            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+            <li><a href="/sgb-calculator">SGB Calculator</a></li>
+            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+            <li><a href="/emi-calculator">Home Loan EMI</a></li>
+            <li><a href="/ppf-calculator">PPF Calculator</a></li>
+            <li><a href="/calculators">All Calculators Hub</a></li>
+          </ul>
         </div>
-<div class="footer-copy">
-          © 2026 Calculatorship. All rights reserved. | <a href="/about">About</a> | <a href="/author">Author</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/sitemap">Sitemap</a>
-</div>
-</div>
-</div>
+        <div class="footer-col">
+          <h3>Topic Hubs</h3>
+          <ul>
+            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+            <li><a href="/blog">Guides Archive</a></li>
+            <li><a href="/sitemap">HTML Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Policies &amp; Transparency</h3>
+          <ul>
+            <li><a href="/about">About Calculatorship</a></li>
+            <li><a href="/author">Author (Tejas Waghmare)</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/editorial-policy">Editorial Policy</a></li>
+            <li><a href="/corrections">Corrections Policy</a></li>
+            <li><a href="/disclaimer">Disclaimer</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-disclaimer">
+        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+      </div>
+    </div>
+  </div>
 </footer>
-<button aria-label="Back to top" class="back-to-top" id="back-to-top">
-<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
-</button>
-<script defer src="theme.js?v=4.4"></script>
-  <!-- Third-party advertising integration: commented out -->
-  <!-- <script defer src="advertising/config.js"></script> -->
-  <!-- <script defer src="advertising/register.js"></script> -->
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-<div id="cs-cookie-banner" class="cs-cookie-sheet" role="region" aria-label="Cookie Consent">
+<button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+<script defer src="/theme.js?v=5.0"></script>
+<div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
   <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">
-      Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.
-    </p>
+    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
     <div class="cs-cookie-actions">
-      <button type="button" id="cs-decline-cookies" class="cs-cookie-btn cs-cookie-decline">Decline</button>
-      <button type="button" id="cs-accept-cookies" class="cs-cookie-btn cs-cookie-accept">Accept</button>
+      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
     </div>
   </div>
 </div>

@@ -27,140 +27,14 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://www.calculatorship.in/og-image.webp" name="twitter:image"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
-<meta content="#F3F7F5" name="theme-color"/>
+<meta content="#FAF9F6" name="theme-color"/>
 
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <noscript></noscript>
-<style id="critical-css">@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url('/fonts/inter.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-:root {
-  --bg-page: #F6F8F6;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #F8FAF9;
-  --text-primary: #0F172A;
-  --text-secondary: #2B3A4E;
-  --text-muted: #526275;
-  --emerald: #009B72;
-  --emerald-dark: #006B47;
-  --emerald-soft: #ECF6F1;
-  --border-soft: #DFE6E2;
-  --border-medium: #C4D0C9;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-}
-*, *::before, *::after { box-sizing: border-box !important; }
-:root, html { scroll-padding-top: 68px; }
-body {
-  margin: 0; padding: 0;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-.sr-only {
-  position: absolute !important; width: 1px !important; height: 1px !important;
-  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
-}
-.site-header {
-  position: sticky; top: 0; z-index: 1000;
-  min-height: 56px; height: clamp(56px, 8vh, 64px);
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
-}
-.header-inner {
-  height: 100%; max-width: 1520px; margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 28px);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.brand img { height: 38px; width: auto; max-width: 220px; display: block; }
-.main-nav { display: flex; align-items: center; gap: 24px; }
-.main-nav a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
-.nav-toggle {
-  display: none; background: none; border: none; cursor: pointer;
-  padding: 8px; min-width: 44px; min-height: 44px;
-  flex-direction: column; justify-content: center; gap: 5px;
-}
-.nav-toggle span.hamburger-bar {
-  display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px;
-}
-.breadcrumb-bar { background: #FFFFFF; border-bottom: 1px solid var(--border-soft); }
-.breadcrumb { max-width: 1520px; margin: 0 auto; padding: 10px clamp(16px, 2vw, 28px); font-size: 0.85rem; }
-.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.breadcrumb a { color: var(--emerald-dark); text-decoration: none; }
-.calc-hero { max-width: 1520px; margin: 24px auto 16px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-hero h1 {
-  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.125rem);
-  line-height: 1.25; margin: 0 0 8px; color: var(--text-primary); font-weight: 800;
-}
-.article-byline {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
-  font-size: 0.875rem; color: var(--text-muted); margin: 0.5rem 0 1rem;
-}
-.educational-disclaimer {
-  background: #fffbeb; border-left: 3px solid #d97706;
-  padding: 10px 14px; margin: 1rem 0; border-radius: 0 8px 8px 0;
-  font-size: 0.875rem; line-height: 1.5; color: #78350f;
-}
-.calc-switcher-wrapper { max-width: 1520px; margin: 0 auto 20px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-switcher-bar {
-  display: flex; align-items: center; gap: 8px; overflow-x: auto;
-  -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
-  padding: 6px 8px; border-radius: 8px; background: var(--bg-card);
-  border: 1px solid var(--border-soft); scrollbar-width: none;
-}
-.calc-switcher-bar::-webkit-scrollbar { display: none; }
-.calc-switcher-bar .calc-tab {
-  flex-shrink: 0; scroll-snap-align: start; white-space: nowrap;
-  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
-  padding: 8px 16px; border-radius: 6px; text-decoration: none;
-  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
-}
-.calc-switcher-bar .calc-tab.active { background: var(--emerald-dark); color: #FFFFFF; }
-.calc-main-container { max-width: 1520px; margin: 0 auto; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-.calc-card, .calc-summary-card {
-  background: var(--bg-card); border: 1px solid var(--border-soft);
-  border-top: 3px solid var(--emerald-dark); border-radius: var(--radius-md);
-  padding: 24px; box-shadow: var(--shadow-sm);
-}
-.calc-field-group { margin-bottom: 20px; }
-.calc-input-box {
-  width: 100%; display: flex; align-items: center; background: #FAFBF9;
-  border: 1.5px solid var(--border-medium); border-radius: 6px; overflow: hidden;
-}
-.calc-inputs input[type="number"], .calc-inputs input[type="text"], .calc-input-box input {
-  width: 100%; font-size: 16px; min-height: 44px; padding: 8px 12px;
-  border: none; outline: none; background: transparent; font-family: var(--font-mono); font-weight: 700;
-}
-input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer; }
-.ad-container, .adsense-slot-wrapper { min-height: 280px; contain: layout; margin: 28px 0; }
-@media (max-width: 900px) {
-  .main-nav { display: none !important; }
-  .nav-toggle { display: flex !important; }
-}
-@media (max-width: 767px) {
-  .calc-grid { display: flex !important; flex-direction: column !important; }
-  .calc-card, .calc-summary-card { width: 100% !important; padding: 20px 16px !important; }
-}</style>
-<link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
 <!-- Google Analytics 4 (GA4) -->
 <script type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
 <script>
@@ -183,7 +57,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       "author": {
         "@type": "Person",
         "name": "Tejas Waghmare",
-        "url": "https://www.calculatorship.in/about.html"
+        "url": "https://www.calculatorship.in/author"
       },
       "publisher": {
         "@type": "Organization",
@@ -193,7 +67,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           "url": "https://www.calculatorship.in/logo-light.svg"
         }
       },
-      "mainEntityOfPage": "https://www.calculatorship.in/50000-salary-how-much-save-invest-spend.html"
+      "mainEntityOfPage": "https://www.calculatorship.in/50000-salary-how-much-save-invest-spend"
     },
     {
       "@type": "BreadcrumbList",
@@ -208,58 +82,13 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           "@type": "ListItem",
           "position": 2,
           "name": "Blog",
-          "item": "https://www.calculatorship.in/blog.html"
+          "item": "https://www.calculatorship.in/blog"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "₹50,000 Salary: How Much Should You Save, Invest & Spend?",
-          "item": "https://www.calculatorship.in/50000-salary-how-much-save-invest-spend.html"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is ₹50,000 a good salary in India?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The purchasing power of ₹50,000 depends heavily on your location and obligations. In Tier-2 cities, ₹50,000 offers substantial headroom for 30%+ savings. In Tier-1 metros, high rental costs require adjusting to a 60-20-20 budget to preserve savings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much should I save from a ₹50,000 salary?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A standard baseline is 20% (₹10,000 per month). Once your 3-to-6 month emergency reserve is secured, route this into automated equity index funds and PPF/NPS."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I invest ₹10,000 per month on a ₹50,000 salary?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. By capping essential needs at ₹25,000–₹30,000 and discretionary lifestyle spending at ₹10,000–₹15,000, investing ₹10,000 monthly is fully achievable and builds a substantial corpus over 10 to 15 years."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much emergency fund should I have on a ₹50,000 salary?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Aim for 3 to 6 months of mandatory living expenses. If your monthly basic needs total ₹25,000, your target emergency reserve is ₹75,000 to ₹1,50,000 parked across high-yield savings and liquid mutual funds."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens if I increase my SIP every year?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Applying a 10% annual Step-Up SIP significantly boosts your final corpus compared to a flat SIP. For instance, stepping up a ₹7,000 monthly SIP by 10% annually over 15 years nearly doubles your accumulated wealth."
-          }
+          "item": "https://www.calculatorship.in/50000-salary-how-much-save-invest-spend"
         }
       ]
     }
@@ -272,31 +101,76 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <header class="site-header">
 <div class="header-inner">
 <a aria-label="Calculatorship Homepage" class="brand" href="/">
-<img alt="Calculatorship: Free Financial Calculators for Indian Investors" height="38" loading="lazy" src="/logo-light.svg" width="220"/>
+<img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="eager" src="/logo-light.svg" width="196"/>
 </a>
-<nav aria-label="Primary Navigation" class="main-nav">
+<nav aria-label="Primary Navigation" class="main-nav" id="site-menu">
 <div class="nav-dropdown">
-<a class="nav-dropdown-toggle" href="/">Calculators</a>
-<ul class="nav-dropdown-menu" role="menu">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Calculators</button>
+<div class="nav-dropdown-menu nav-mega">
+<div class="nav-dropdown-grid">
+<div>
+<p class="nav-dropdown-group-title">Investing &amp; Gold</p>
+<ul class="nav-dropdown-group-list">
 <li><a href="/">SIP Calculator</a></li>
-<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/step-up">Step-Up SIP</a></li>
+<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/goal">Goal Planner</a></li>
-<li><a href="/ppf-calculator">PPF Calculator</a></li>
-<li><a href="/swp-calculator">SWP Calculator</a></li>
-<li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-<li class="nav-dropdown-divider" role="separator"></li>
-<li><a href="/fd-calculator">FD Calculator</a></li>
-<li><a href="/budget-planner">Budget Planner</a></li>
-<li><a href="/income-tax-calculator">Tax Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/cagr-calculator">CAGR Calculator</a></li>
+<li><a href="/stock-average-calculator-guide-india">Stock Average</a></li>
 </ul>
 </div>
-<a href="/blog">Blog &amp; Guides</a>
+<div>
+<p class="nav-dropdown-group-title">FD &amp; Small Savings</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Bank FD Calculator</a></li>
+<li><a href="/recurring-deposit-rd-calculator-guide-india">RD Calculator</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/epf-calculator">EPF Calculator</a></li>
+<li><a href="/nps-calculator">NPS Calculator</a></li>
+<li><a href="/swp-calculator">SWP Calculator</a></li>
+<li><a href="/compound-interest-calculator">Compound Interest</a></li>
+</ul>
+</div>
+<div>
+<p class="nav-dropdown-group-title">Tax, Salary &amp; Loans</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/in-hand-salary-calculator">In-Hand Salary</a></li>
+<li><a href="/salary-hike-calculator">Salary Hike</a></li>
+<li><a href="/hra-calculator">HRA Exemption</a></li>
+<li><a href="/gratuity-calculator">Gratuity (15/26)</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/budget-planner">50/30/20 Budget</a></li>
+</ul>
+</div>
+</div>
+<div class="nav-dropdown-footer">
+<span>All calculations run privately in your browser</span>
+<a href="/calculators">Browse All Calculators →</a>
+</div>
+</div>
+</div>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Topic Hubs</button>
+<ul class="nav-dropdown-menu" role="menu">
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds</a></li>
+<li><a href="/guides/tax-planning">Income Tax Planning</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; Sovereign Gold Bonds</a></li>
+<li><a href="/guides/loans-and-emi">Home Loans, EMI &amp; CIBIL</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary, CTC &amp; Budgeting</a></li>
+</ul>
+</div>
+<a href="/blog">Guides</a>
+<a href="/calculators">Calculators Hub</a>
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
 <div class="header-actions">
-<button aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span></button>
+<button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
+<button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
 </div>
 </header>
@@ -318,28 +192,60 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <span>Updated for FY 2026-27</span>
 </div>
 <h1>₹50,000 Salary: How Much Should You Save, Invest &amp; Spend?</h1>
-  <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
-    <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-    <span>Published: 15 September 2026</span>
-    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-    <span>Last reviewed: 23 November 2026</span>
-    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-    <span>Salaried Budgeting: 50-30-20 Rule &amp; Metro Living Cost Realignment</span>
-  </div>
-  <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
+<div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
+<span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Published: 15 September 2026</span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Last reviewed: 23 November 2026</span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Salaried Budgeting: 50-30-20 Rule &amp; Metro Living Cost Realignment</span>
+</div>
+<p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational personal budgeting roadmap only. Not certified financial planning or investment advice. Allocation percentages should be adjusted for city rents and individual liabilities. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-  <p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
     A net in-hand monthly salary of ₹50,000 in India is optimally allocated using the 50-30-20 principle: ₹25,000 (50%) for non-negotiable needs (rent, groceries, utilities, and transport), ₹15,000 (30%) for discretionary wants (dining out, entertainment, and shopping), and ₹10,000 (20%) for savings and debt repayment. In high-rent tier-1 metros (Mumbai, Bengaluru, Delhi NCR), adjust to a 60-20-20 model: ₹30,000 for living needs, ₹10,000 for wants, and maintain ₹10,000 in savings (split between an emergency fund and an automated equity SIP). Under the New Tax Regime (Section 115BAC), a ₹50,000 in-hand salary incurs zero personal income tax due to the ₹75,000 standard deduction and Section 87A rebate.
   </p>
 </header>
-
-
 <div class="article-page">
 <article class="article-main" id="main-article">
-
+<div class="cta-box">
+<h3>Simulate Your Exact Financial Numbers</h3>
+<p>Use our free, fast, and independent calculators to model your wealth growth, tax liabilities, or retirement corpus.</p>
+<div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+<a class="btn btn-primary btn-lg" href="/">SIP Calculator →</a>
+<a class="btn btn-ghost btn-lg" href="/ppf-calculator">PPF Calculator →</a>
+<a class="btn btn-ghost btn-lg" href="/goal">Goal Planner →</a>
 </div>
+</div><div class="author-bio-card">
+<div class="author-bio-header">
+<div class="author-avatar">T</div>
+<div>
+<h3 class="author-name">Tejas Waghmare</h3>
+<p class="author-title">Founder &amp; Financial Researcher, Calculatorship</p>
+</div>
+</div>
+<p class="author-desc">Tejas has been tracking Indian personal finance regulations, SEBI circulars, and AMFI data since 2020. All articles on Calculatorship are independently researched using primary regulatory sources: SEBI.gov.in, RBI.org.in, AMFIIndia.com, and CBDT notifications. Each article cites its primary sources and is reviewed when tax codes or guidelines change.</p>
+<p class="author-disclaimer" style="font-size:0.82rem; color:var(--text-muted); margin-top:8px; line-height:1.5;"><em>Educational disclaimer: Not a SEBI-registered investment advisor or Chartered Accountant. All content is for educational awareness only. Consult a qualified financial advisor before executing investment or tax decisions.</em></p>
+</div></article><aside aria-label="Related Guides" class="article-sidebar">
+<div class="sidebar-card">
+<h3>Explore Related Guides</h3>
+<ul class="sidebar-links">
+<li><a href="/salary-hike-calculator">Salary Hike Calculator: Plan Your Next Increment</a></li>
+<li><a href="/sovereign-gold-bond-sgb-guide-india">Sovereign Gold Bond (SGB) Guide</a></li>
+<li><a href="/old-vs-new-tax-regime">Old vs New Tax Regime Guide</a></li>
+<li><a href="/credit-score-guide-india">CIBIL Score Improvement guide</a></li>
+<li><a href="/income-tax-slabs-india-2026">Income Tax Slabs FY 2026-27</a></li>
+<li><a href="/compound-interest-calculator">The Power of Compounding</a></li>
+</ul>
+</div>
+<div class="sidebar-card" style="background:var(--emerald-soft); border-color:var(--emerald-border);">
+<h3 style="color:var(--emerald-dark); border-color:var(--emerald-border);">Financial Calculators</h3>
+<p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:14px;">Instant math for smart wealth decisions in India.</p>
+<a class="btn btn-primary" href="/" style="width:100%; text-align:center; box-sizing:border-box;">Open All Calculators</a>
+</div>
+</aside></div>
 <div class="key-takeaways" style="background: var(--bg-elevated); border: 1px solid var(--border-soft); border-left: 4px solid var(--emerald-dark); border-radius: 8px; padding: 20px 24px; margin: 0 0 32px;">
 <h2 style="font-size: 1.15rem; font-weight: 800; color: var(--emerald-dark); margin-top: 0; margin-bottom: 12px;">Key Takeaways</h2>
 <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: var(--text-secondary); font-size: 0.95rem;">
@@ -350,7 +256,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </ul>
 </div>
 <h2>₹50,000 Salary: How Much to Save, Invest &amp; Spend in India?</h2>
-<p><h3 class="PDq2pG_selectionAnchorContainer" data-end="1334" data-section-id="1ufeboq" data-start="1273" dir="auto">₹50,000 Salary: How Much Should You Save, Invest &amp; Spend?<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></h3><p data-end="1516" data-start="1336" dir="auto">Earning ₹50,000 per month is an important financial milestone. But the amount you actually build as wealth depends less on your salary alone and more on how you manage your income.</p><p data-end="1579" data-start="1518" dir="auto">Salaried professionals earning ₹50,000 per month face critical decisions:</p><ul data-end="1872" data-start="1581">
+<p></p><h3 class="PDq2pG_selectionAnchorContainer" data-end="1334" data-section-id="1ufeboq" data-start="1273" dir="auto">₹50,000 Salary: How Much Should You Save, Invest &amp; Spend?<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></h3><p data-end="1516" data-start="1336" dir="auto">Earning ₹50,000 per month is an important financial milestone. But the amount you actually build as wealth depends less on your salary alone and more on how you manage your income.</p><p data-end="1579" data-start="1518" dir="auto">Salaried professionals earning ₹50,000 per month face critical decisions:</p><ul data-end="1872" data-start="1581">
 <li data-end="1626" data-section-id="d9dyso" data-start="1581">
 How much should go toward monthly expenses?
 </li>
@@ -442,137 +348,88 @@ Temporary income disruption
 </blockquote><p data-end="7992" data-start="7971" dir="auto">Then immediately add:</p><blockquote data-end="8123" data-start="7994">
 <p data-end="8123" data-start="7996" dir="auto">This is an example framework, not a universal rule. Adjust each category according to your actual expenses and financial goals.</p>
 </blockquote><hr data-end="8128" data-start="8125"/><h2 data-end="8147" data-section-id="lsvth" data-start="8130" dir="auto">13. FAQ Section</h2><h3 data-end="8187" data-section-id="1j1a0pl" data-start="8149" dir="auto">Is ₹50,000 a good salary in India?</h3><p data-end="8371" data-start="8189" dir="auto">The answer depends on your city, housing costs, family responsibilities, debt and lifestyle. The same salary can provide very different financial outcomes in different circumstances.</p><h3 data-end="8422" data-section-id="1cm8l3s" data-start="8373" dir="auto">How much should I save from a ₹50,000 salary?</h3><p data-end="8632" data-start="8424" dir="auto">There is no universally appropriate amount. A practical starting point is to first understand essential expenses and build an emergency reserve, then allocate a sustainable amount toward your financial goals.</p><h3 data-end="8689" data-section-id="9s0c20" data-start="8634" dir="auto">Can I invest ₹10,000 per month on a ₹50,000 salary?</h3><p data-end="8841" data-start="8691" dir="auto">It may be possible if your essential expenses and debt obligations allow it. Create a budget first rather than assuming a fixed investment percentage.</p><h3 data-end="8885" data-section-id="g35zhs" data-start="8843" dir="auto">How much emergency fund should I have?</h3><p data-end="9033" data-start="8887" dir="auto">Your target should depend on your essential monthly expenses and income stability. A multi-month reserve is commonly used as a planning framework.</p><h3 data-end="9084" data-section-id="25l2mk" data-start="9035" dir="auto">What happens if I increase my SIP every year?</h3><p data-end="9255" data-start="9086" dir="auto">Increasing contributions can substantially increase the amount you contribute over the long term. Use a Step-Up SIP Calculator to model different contribution increases.</p>
-<p data-end="631" data-start="563" dir="auto"></p></p>
+<p data-end="631" data-start="563" dir="auto"></p>
 <div class="source-citation" style="font-size:0.85rem; color:var(--text-muted); margin:32px 0 24px; padding:14px 18px; background:var(--bg-elevated); border-left:3px solid var(--emerald-dark); border-radius:4px; line-height:1.6;">
 <strong>Primary Sources &amp; Verification:</strong> Official Regulatory Gazettes, RBI Directions, SEBI Circulars, and CBDT Statutory Notifications.
         </div>
-<div class="cta-box">
-<h3>Simulate Your Exact Financial Numbers</h3>
-<p>Use our free, fast, and independent calculators to model your wealth growth, tax liabilities, or retirement corpus.</p>
-<div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-<a class="btn btn-primary btn-lg" href="/">SIP Calculator →</a>
-<a class="btn btn-ghost btn-lg" href="/ppf-calculator">PPF Calculator →</a>
-<a class="btn btn-ghost btn-lg" href="/goal">Goal Planner →</a>
-</div>
-</div>
-<div class="author-bio-card">
-<div class="author-bio-header">
-<div class="author-avatar">T</div>
-<div>
-<h3 class="author-name">Tejas</h3>
-<p class="author-title">Founder &amp; Financial Researcher, Calculatorship</p>
-</div>
-</div>
-<p class="author-desc">Tejas has been tracking Indian personal finance regulations, SEBI circulars, and AMFI data since 2020. All articles on Calculatorship are independently researched using primary regulatory sources: SEBI.gov.in, RBI.org.in, AMFIIndia.com, and CBDT notifications. Each article cites its primary sources and is reviewed when tax codes or guidelines change.</p>
-<p class="author-disclaimer" style="font-size:0.82rem; color:var(--text-muted); margin-top:8px; line-height:1.5;"><em>Educational disclaimer: Not a SEBI-registered investment advisor or Chartered Accountant. All content is for educational awareness only. Consult a qualified financial advisor before executing investment or tax decisions.</em></p>
-</div>
-
-</article>
 <!-- Sidebar -->
-<aside aria-label="Related Guides" class="article-sidebar">
-<div class="sidebar-card">
-<h3>Explore Related Guides</h3>
-<ul class="sidebar-links">
-<li><a href="/salary-hike-calculator">Salary Hike Calculator: Plan Your Next Increment</a></li>
-<li><a href="/sovereign-gold-bond-guide-india">Sovereign Gold Bond (SGB) Guide</a></li>
-<li><a href="/old-vs-new-tax-regime">Old vs New Tax Regime Guide</a></li>
-<li><a href="/credit-score-guide-india">CIBIL Score Improvement guide</a></li>
-<li><a href="/income-tax-slabs-india-2026">Income Tax Slabs FY 2026-27</a></li>
-<li><a href="/compound-interest-calculator">The Power of Compounding</a></li>
-</ul>
-</div>
-<div class="sidebar-card" style="background:var(--emerald-soft); border-color:var(--emerald-border);">
-<h3 style="color:var(--emerald-dark); border-color:var(--emerald-border);">Financial Calculators</h3>
-<p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:14px;">Instant math for smart wealth decisions in India.</p>
-<a class="btn btn-primary" href="/" style="width:100%; text-align:center; box-sizing:border-box;">Open All Calculators</a>
-</div>
-</aside>
-</div>
 </main>
-  
-  <section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
-    <h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
-    <ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
-      <li><strong>Basic Financial Planning &amp; Household Budgeting Guidelines:</strong> Reserve Bank of India (<a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">rbi.org.in</a>). Accessed: 23 November 2026.</li>
-      <li><strong>Section 115BAC Slabs, Standard Deduction &amp; Section 87A Rebate:</strong> Income Tax Department of India (<a href="https://incometaxindia.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
-      <li><strong>EPF Statutory Deductions (12% Wage Ceiling Rules):</strong> Employees' Provident Fund Organisation (<a href="https://epfindia.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">epfindia.gov.in</a>). Accessed: 23 November 2026.</li>
-    </ul>
-  </section>
-
+<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
+<h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
+<ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+<li><strong>Basic Financial Planning &amp; Household Budgeting Guidelines:</strong> Reserve Bank of India (<a href="https://www.rbi.org.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">rbi.org.in</a>). Accessed: 23 November 2026.</li>
+<li><strong>Section 115BAC Slabs, Standard Deduction &amp; Section 87A Rebate:</strong> Income Tax Department of India (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
+<li><strong>EPF Statutory Deductions (12% Wage Ceiling Rules):</strong> Employees' Provident Fund Organisation (<a href="https://epfindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">epfindia.gov.in</a>). Accessed: 23 November 2026.</li>
+</ul>
+</section>
 <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="/"><img src="/logo-footer.svg" alt="Calculatorship: Free Financial Calculators for Indian Investors" width="200" height="36" style="display:block;" loading="lazy"></a>
-          <p class="footer-tagline">Independent financial calculators and educational guides explaining how money maths works for Indian salaried professionals and retail investors.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h3>Calculators</h3>
-            <ul>
-              <li><a href="/">SIP Calculator</a></li>
-              <li><a href="/lumpsum">Lumpsum Calculator</a></li>
-              <li><a href="/step-up">Step-Up SIP</a></li>
-              <li><a href="/goal">Goal Planner</a></li>
-              <li><a href="/ppf-calculator">PPF Calculator</a></li>
-              <li><a href="/epf-calculator">EPF Calculator</a></li>
-              <li><a href="/swp-calculator">SWP Calculator</a></li>
-              <li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-              <li><a href="/fd-calculator">FD Calculator</a></li>
-              <li><a href="/income-tax-calculator">Tax Calculator</a></li>
-              <li><a href="/calculators">All Calculators Hub</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Legal &amp; Policy</h3>
-            <ul>
-              <li><a href="/editorial-policy">Editorial Policy</a></li>
-              <li><a href="/corrections">Corrections Log</a></li>
-              <li><a href="/disclaimer">Disclaimer</a></li>
-              <li><a href="/terms">Terms of Use</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
-              <li><a href="/cookies">Cookie Policy</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Platform</h3>
-            <ul>
-              <li><a href="/about">About</a></li>
-              <li><a href="/author">Editorial Author</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/blog">Guides &amp; Articles</a></li>
-              <li><a href="/sitemap">Sitemap</a></li>
-            </ul>
-          </div>
-        </div>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
+        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-disclaimer">
-          <strong>Educational Resource Notice:</strong> Calculatorship is an independent educational site run by a student. It is not registered with SEBI, AMFI, or RBI. Content and calculation tools are for educational awareness only and never constitute investment, tax, or legal advice. Mutual fund investments are subject to market risks. Real returns and tax rules vary. Check official notices and consult a qualified adviser before acting.
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3>Calculators &amp; Hubs</h3>
+          <ul>
+            <li><a href="/">SIP Calculator</a></li>
+            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+            <li><a href="/sgb-calculator">SGB Calculator</a></li>
+            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+            <li><a href="/emi-calculator">Home Loan EMI</a></li>
+            <li><a href="/ppf-calculator">PPF Calculator</a></li>
+            <li><a href="/calculators">All Calculators Hub</a></li>
+          </ul>
         </div>
-        <div class="footer-copy">
-          &copy; 2026 Calculatorship. All rights reserved. | <a href="/about">About</a> | <a href="/author">Author</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/sitemap">Sitemap</a>
+        <div class="footer-col">
+          <h3>Topic Hubs</h3>
+          <ul>
+            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+            <li><a href="/blog">Guides Archive</a></li>
+            <li><a href="/sitemap">HTML Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Policies &amp; Transparency</h3>
+          <ul>
+            <li><a href="/about">About Calculatorship</a></li>
+            <li><a href="/author">Author (Tejas Waghmare)</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/editorial-policy">Editorial Policy</a></li>
+            <li><a href="/corrections">Corrections Policy</a></li>
+            <li><a href="/disclaimer">Disclaimer</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/cookies">Cookie Policy</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </footer>
-<button aria-label="Back to top" class="back-to-top" id="back-to-top">
-<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
-</button>
-<script defer src="theme.js?v=4.4"></script>
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-  <!-- Third-party advertising integration: commented out -->
-  <!-- <script defer src="advertising/config.js"></script> -->
-  <!-- <script defer src="advertising/register.js"></script> -->
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-<div id="cs-cookie-banner" class="cs-cookie-sheet" role="region" aria-label="Cookie Consent">
+    <div class="footer-bottom">
+      <div class="footer-disclaimer">
+        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+<script defer src="/theme.js?v=5.0"></script>
+<div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
   <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">
-      Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.
-    </p>
+    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
     <div class="cs-cookie-actions">
-      <button type="button" id="cs-decline-cookies" class="cs-cookie-btn cs-cookie-decline">Decline</button>
-      <button type="button" id="cs-accept-cookies" class="cs-cookie-btn cs-cookie-accept">Accept</button>
+      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
     </div>
   </div>
 </div>
