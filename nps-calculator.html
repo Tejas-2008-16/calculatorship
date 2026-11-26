@@ -28,9 +28,9 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg"/>
   <noscript></noscript>
-  <style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+  <style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
   <!-- Google Analytics 4 (GA4) -->
   <script type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
   <script>
@@ -193,7 +193,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -210,81 +210,81 @@
 </div>
 <main id="main-content" style="max-width:1100px; margin:0 auto; padding:32px 24px 60px;">
 <div class="calc-hero" style="margin-bottom:2rem;">
-<h1 style="font-size:2.2rem; font-weight:800; color:#0f172a; margin-bottom:0.5rem;">NPS Calculator (National Pension System)</h1>
+<h1 style="font-size:2.2rem; font-weight:800; color:var(--text-primary); margin-bottom:0.5rem;">NPS Calculator (National Pension System)</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: February 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Retirement Math: PFRDA Exit Regulations &amp; Section 10(12A)</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational retirement calculation tool only. Not personal investment or pension advice. National Pension System returns are market-linked and governed by PFRDA guidelines. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:var(--text-primary); margin-bottom:1.5rem; font-weight:500;">
     The National Pension System (NPS) Calculator projects your retirement corpus and estimated monthly pension based on monthly contributions and asset allocation across equity and debt. At age 60, PFRDA regulations allow up to 60% of the accumulated corpus to be withdrawn 100% tax-free under Section 10(12A), while the remaining 40% is mandatory to purchase a lifelong annuity.
   </p>
 </div>
 <!-- Interactive Calculator Widget -->
-<div class="calc-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; background:#ffffff; border:1px solid #e2e8f0; border-radius:12px; padding:2rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom:3rem;">
+<div class="calc-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:12px; padding:2rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom:3rem;">
 <div class="calc-inputs">
-<h2 style="font-size:1.3rem; font-weight:700; color:#0f172a; margin-bottom:1.5rem;">NPS Contribution Parameters</h2>
+<h2 style="font-size:1.3rem; font-weight:700; color:var(--text-primary); margin-bottom:1.5rem;">NPS Contribution Parameters</h2>
 <div style="margin-bottom:1.5rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="nps-monthly" style="font-weight:600; font-size:0.95rem;">Monthly Contribution (₹)</label>
-<input id="nps-monthly" inputmode="numeric" max="200000" min="500" step="500" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="5000"/>
+<input id="nps-monthly" inputmode="numeric" max="200000" min="500" step="500" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="5000"/>
 </div>
-<input id="nps-monthly-slider" max="200000" min="500" step="500" style="width:100%; accent-color:#006B47;" type="range" value="5000"/>
+<input id="nps-monthly-slider" max="200000" min="500" step="500" style="width:100%; accent-color:var(--accent);" type="range" value="5000"/>
 </div>
 <div style="margin-bottom:1.5rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="nps-age" style="font-weight:600; font-size:0.95rem;">Current Age (Years)</label>
-<input id="nps-age" inputmode="numeric" max="59" min="18" step="1" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="30"/>
+<input id="nps-age" inputmode="numeric" max="59" min="18" step="1" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="30"/>
 </div>
-<input id="nps-age-slider" max="59" min="18" step="1" style="width:100%; accent-color:#006B47;" type="range" value="30"/>
+<input id="nps-age-slider" max="59" min="18" step="1" style="width:100%; accent-color:var(--accent);" type="range" value="30"/>
 </div>
 <div style="margin-bottom:1.5rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="nps-return" style="font-weight:600; font-size:0.95rem;">Expected Annual Return (% p.a.)</label>
-<input id="nps-return" inputmode="decimal" max="16" min="6" step="0.25" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="10.0"/>
+<input id="nps-return" inputmode="decimal" max="16" min="6" step="0.25" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="10.0"/>
 </div>
-<input id="nps-return-slider" max="16" min="6" step="0.25" style="width:100%; accent-color:#006B47;" type="range" value="10.0"/>
+<input id="nps-return-slider" max="16" min="6" step="0.25" style="width:100%; accent-color:var(--accent);" type="range" value="10.0"/>
 </div>
 <div style="margin-bottom:1.5rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="nps-annuity-share" style="font-weight:600; font-size:0.95rem;">Annuity Allocation (%)</label>
-<input id="nps-annuity-share" inputmode="numeric" max="100" min="40" step="5" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="40"/>
+<input id="nps-annuity-share" inputmode="numeric" max="100" min="40" step="5" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="40"/>
 </div>
-<input id="nps-annuity-share-slider" max="100" min="40" step="5" style="width:100%; accent-color:#006B47;" type="range" value="40"/>
+<input id="nps-annuity-share-slider" max="100" min="40" step="5" style="width:100%; accent-color:var(--accent);" type="range" value="40"/>
 </div>
 <div style="margin-bottom:1rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="nps-annuity-rate" style="font-weight:600; font-size:0.95rem;">Expected Annuity Rate (% p.a.)</label>
-<input id="nps-annuity-rate" inputmode="decimal" max="9" min="4" step="0.25" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="6.0"/>
+<input id="nps-annuity-rate" inputmode="decimal" max="9" min="4" step="0.25" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="6.0"/>
 </div>
-<input id="nps-annuity-rate-slider" max="9" min="4" step="0.25" style="width:100%; accent-color:#006B47;" type="range" value="6.0"/>
+<input id="nps-annuity-rate-slider" max="9" min="4" step="0.25" style="width:100%; accent-color:var(--accent);" type="range" value="6.0"/>
 </div>
 </div>
-<div class="calc-results" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+<div class="calc-results" style="background:var(--bg-subtle); border:1px solid var(--border-soft); border-radius:10px; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
 <div>
-<h3 style="font-size:1.15rem; font-weight:700; color:#0f172a; margin-bottom:1.25rem;">Retirement Corpus at Age 60</h3>
-<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between;">
-<span style="color:#64748b;">Total Amount Invested</span>
-<span id="res-nps-invested" style="font-weight:700; color:#0f172a;">₹18,00,000</span>
+<h3 style="font-size:1.15rem; font-weight:700; color:var(--text-primary); margin-bottom:1.25rem;">Retirement Corpus at Age 60</h3>
+<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border-soft); display:flex; justify-content:space-between;">
+<span style="color:var(--text-muted);">Total Amount Invested</span>
+<span id="res-nps-invested" style="font-weight:700; color:var(--text-primary);">₹18,00,000</span>
 </div>
-<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between;">
-<span style="color:#64748b;">Projected Total Corpus</span>
-<span id="res-nps-corpus" style="font-weight:700; color:#0f172a;">₹1,13,96,000</span>
+<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border-soft); display:flex; justify-content:space-between;">
+<span style="color:var(--text-muted);">Projected Total Corpus</span>
+<span id="res-nps-corpus" style="font-weight:700; color:var(--text-primary);">₹1,13,96,000</span>
 </div>
-<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between;">
-<span style="color:#64748b;">Tax-Free Lump Sum (60%)</span>
-<span id="res-nps-lumpsum" style="font-weight:700; color:#059669;">₹68,38,000</span>
+<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border-soft); display:flex; justify-content:space-between;">
+<span style="color:var(--text-muted);">Tax-Free Lump Sum (60%)</span>
+<span id="res-nps-lumpsum" style="font-weight:700; color:var(--accent);">₹68,38,000</span>
 </div>
 <div style="margin-bottom:1.25rem; display:flex; justify-content:space-between; align-items:baseline;">
-<span style="color:#0f172a; font-weight:700; font-size:1.1rem;">Monthly Pension (Annuity)</span>
-<span id="res-nps-pension" style="font-size:1.8rem; font-weight:800; color:#006B47;">₹22,793</span>
+<span style="color:var(--text-primary); font-weight:700; font-size:1.1rem;">Monthly Pension (Annuity)</span>
+<span id="res-nps-pension" style="font-size:1.8rem; font-weight:800; color:var(--accent);">₹22,793</span>
 </div>
 </div>
 <div style="background:#ECF7F2; border-radius:6px; padding:0.75rem; font-size:0.85rem; color:#005236; text-align:center;">
@@ -293,17 +293,17 @@
 </div>
 </div>
 <!-- Deep Dive Guide -->
-<article class="calc-guide-content" style="line-height:1.75; font-size:1.02rem; color:#334155;">
-<h2 style="font-size:1.5rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">How the NPS Corpus &amp; Annuity Formula Works</h2>
+<article class="calc-guide-content" style="line-height:1.75; font-size:1.02rem; color:var(--text-secondary);">
+<h2 style="font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">How the NPS Corpus &amp; Annuity Formula Works</h2>
 <p>When structuring your long-term retirement planning through the National Pension System, beginning regular monthly contributions in your twenties rather than your late thirties creates an enormous compounding advantage due to decades of uninterrupted market returns. The National Pension System (NPS) Tier 1 is an investment vehicle regulated by PFRDA. The maturity corpus calculation follows compound monthly accumulation:</p>
 <ul>
 <li><strong>Monthly Accumulation:</strong> Monthly contributions compound at your asset allocation weighted return across Equity (E), Corporate Debt (C), and Government Bonds (G).</li>
 <li><strong>Mandatory 40% Annuity at Age 60:</strong> Under PFRDA exit regulations, at least 40% of the accumulated corpus must be utilized to purchase an immediate annuity from an IRDAI-registered life insurance company.</li>
 <li><strong>60% Lump Sum Withdrawal:</strong> Up to 60% of the accumulated corpus can be withdrawn as a tax-free lump sum under Section 10(12A).</li>
 </ul>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">2 Worked Mathematical Examples in Rupees</h2>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
-<h3 style="font-size:1.15rem; font-weight:700; color:#0f172a; margin-top:0;">Example 1: Starting at Age 30 (₹5,000/Month)</h3>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">2 Worked Mathematical Examples in Rupees</h2>
+<div style="background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
+<h3 style="font-size:1.15rem; font-weight:700; color:var(--text-primary); margin-top:0;">Example 1: Starting at Age 30 (₹5,000/Month)</h3>
 <ul>
 <li><strong>Total Invested (30 Years):</strong> ₹5,000 * 360 months = ₹18,00,000.</li>
 <li><strong>Assumed Return:</strong> 10.0% p.a. (moderate equity &amp; debt mix).</li>
@@ -312,8 +312,8 @@
 <li><strong>Annuity (40% at 6% yield):</strong> ~₹45.6 Lakh corpus yielding ~₹22,800 monthly pension.</li>
 </ul>
 </div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
-<h3 style="font-size:1.15rem; font-weight:700; color:#0f172a; margin-top:0;">Example 2: Starting at Age 40 (₹15,000/Month)</h3>
+<div style="background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
+<h3 style="font-size:1.15rem; font-weight:700; color:var(--text-primary); margin-top:0;">Example 2: Starting at Age 40 (₹15,000/Month)</h3>
 <ul>
 <li><strong>Total Invested (20 Years):</strong> ₹15,000 * 240 months = ₹36,00,000.</li>
 <li><strong>Assumed Return:</strong> 9.5% p.a.</li>
@@ -322,7 +322,7 @@
 <li><strong>Annuity (40% at 6% yield):</strong> ~₹43.2 Lakh corpus yielding ~₹21,600 monthly pension.</li>
 </ul>
 </div>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">NPS Tax Deduction Rules: Old Regime vs. New Regime</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">NPS Tax Deduction Rules: Old Regime vs. New Regime</h2>
 <p>Understanding which <strong>NPS tax deductions</strong> survive under the New Tax Regime helps salaried investors avoid claiming an ineligible rebate when filing ITR:</p>
 <div style="overflow-x:auto; margin:1.25rem 0 2rem;">
 <div class="table-wrapper">
@@ -359,52 +359,52 @@
 </div>
 </div>
 <p>At maturity (age 60), <strong>60% of the Tier-1 corpus is completely tax-free</strong> under Section 10(12A). The remaining 40% buys a life annuity whose monthly pension payouts are taxed at your slab rate in retirement.</p>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">3 Common Mistakes When Planning NPS Returns</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">3 Common Mistakes When Planning NPS Returns</h2>
 <p style="margin-bottom:1rem; line-height:1.7; color:var(--text-secondary);">Because annuity income received from life insurance service providers after retirement age sixty remains fully taxable under your applicable income tax slab rates, calculating your net post-tax monthly pension helps you build adequate supplementary retirement savings.</p>
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; margin-bottom:2rem;">
-<div style="border:1px solid #e2e8f0; border-radius:8px; padding:1.25rem; background:#ffffff;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-top:0;">1. Monthly Annuity Is Fully Taxable</h3>
-<p style="font-size:0.92rem; color:#475569; margin:0;">While the 60% lump sum exit is 100% tax-free under Section 10(12A), monthly annuity pension payments are added to your taxable income in retirement and taxed at your applicable slab rates.</p>
+<div style="border:1px solid var(--border-soft); border-radius:8px; padding:1.25rem; background:var(--bg-surface);">
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-top:0;">1. Monthly Annuity Is Fully Taxable</h3>
+<p style="font-size:0.92rem; color:var(--text-secondary); margin:0;">While the 60% lump sum exit is 100% tax-free under Section 10(12A), monthly annuity pension payments are added to your taxable income in retirement and taxed at your applicable slab rates.</p>
 </div>
-<div style="border:1px solid #e2e8f0; border-radius:8px; padding:1.25rem; background:#ffffff;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-top:0;">2. Over-Allocating to Government Bonds in Your 20s</h3>
-<p style="font-size:0.92rem; color:#475569; margin:0;">NPS allows up to 75% equity exposure (Scheme E) under Active Choice up to age 50. Sticking to an ultra-conservative 100% debt portfolio early in your career limits long-term compounding against inflation.</p>
+<div style="border:1px solid var(--border-soft); border-radius:8px; padding:1.25rem; background:var(--bg-surface);">
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-top:0;">2. Over-Allocating to Government Bonds in Your 20s</h3>
+<p style="font-size:0.92rem; color:var(--text-secondary); margin:0;">NPS allows up to 75% equity exposure (Scheme E) under Active Choice up to age 50. Sticking to an ultra-conservative 100% debt portfolio early in your career limits long-term compounding against inflation.</p>
 </div>
-<div style="border:1px solid #e2e8f0; border-radius:8px; padding:1.25rem; background:#ffffff;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-top:0;">3. Ignoring Corporate NPS under Section 80CCD(2)</h3>
-<p style="font-size:0.92rem; color:#475569; margin:0;">Employer contributions up to 14% of (Basic + DA) for government and 10% for private sector employees are tax-deductible under both the Old and New Tax Regimes, above and beyond standard limits.</p>
+<div style="border:1px solid var(--border-soft); border-radius:8px; padding:1.25rem; background:var(--bg-surface);">
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-top:0;">3. Ignoring Corporate NPS under Section 80CCD(2)</h3>
+<p style="font-size:0.92rem; color:var(--text-secondary); margin:0;">Employer contributions up to 14% of (Basic + DA) for government and 10% for private sector employees are tax-deductible under both the Old and New Tax Regimes, above and beyond standard limits.</p>
 </div>
 </div>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">Frequently Asked Questions (FAQs)</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">Frequently Asked Questions (FAQs)</h2>
 <div style="margin-bottom:2rem;">
 <div style="margin-bottom:1.25rem;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-bottom:0.25rem;">Can I withdraw 100% of my NPS corpus without annuity?</h3>
-<p style="font-size:0.95rem; color:#475569; margin:0;">Under PFRDA exit regulations, if your total accumulated corpus at retirement age 60 is ₹5 Lakh or less, you can withdraw the entire 100% as a lump sum without purchasing an annuity.</p>
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">Can I withdraw 100% of my NPS corpus without annuity?</h3>
+<p style="font-size:0.95rem; color:var(--text-secondary); margin:0;">Under PFRDA exit regulations, if your total accumulated corpus at retirement age 60 is ₹5 Lakh or less, you can withdraw the entire 100% as a lump sum without purchasing an annuity.</p>
 </div>
 <div style="margin-bottom:1.25rem;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-bottom:0.25rem;">What happens if I exit NPS before age 60?</h3>
-<p style="font-size:0.95rem; color:#475569; margin:0;">If you exit NPS prematurely before age 60, at least 80% of your accumulated corpus must be deployed into an annuity, leaving only 20% available as a lump sum.</p>
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">What happens if I exit NPS before age 60?</h3>
+<p style="font-size:0.95rem; color:var(--text-secondary); margin:0;">If you exit NPS prematurely before age 60, at least 80% of your accumulated corpus must be deployed into an annuity, leaving only 20% available as a lump sum.</p>
 </div>
 <div style="margin-bottom:1.25rem;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-bottom:0.25rem;">Is NPS Tier 2 also eligible for tax deduction?</h3>
-<p style="font-size:0.95rem; color:#475569; margin:0;">No. NPS Tier 2 is an open-ended voluntary investment account with zero withdrawal restrictions, but contributions do not qualify for tax deductions (except for central government employees under specific 3-year lock-in rules).</p>
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">Is NPS Tier 2 also eligible for tax deduction?</h3>
+<p style="font-size:0.95rem; color:var(--text-secondary); margin:0;">No. NPS Tier 2 is an open-ended voluntary investment account with zero withdrawal restrictions, but contributions do not qualify for tax deductions (except for central government employees under specific 3-year lock-in rules).</p>
 </div>
 </div>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">Authoritative Sources &amp; References</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">Authoritative Sources &amp; References</h2>
 <ul style="font-size:0.95rem; line-height:1.7;">
-<li>Pension Fund Regulatory and Development Authority (PFRDA): <a href="https://www.pfrda.org.in" rel="noopener noreferrer" style="color:#006B47; text-decoration:underline;" target="_blank">NPS Master Circulars &amp; Exit Regulations</a></li>
-<li>National Pension System Trust (NPS Trust): <a href="https://www.npstrust.org.in" rel="noopener noreferrer" style="color:#006B47; text-decoration:underline;" target="_blank">Historical Scheme Performance Returns</a></li>
+<li>Pension Fund Regulatory and Development Authority (PFRDA): <a href="https://www.pfrda.org.in" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline;" target="_blank">NPS Master Circulars &amp; Exit Regulations</a></li>
+<li>National Pension System Trust (NPS Trust): <a href="https://www.npstrust.org.in" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline;" target="_blank">Historical Scheme Performance Returns</a></li>
 </ul>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">Related Financial Calculators &amp; Guides</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">Related Financial Calculators &amp; Guides</h2>
 <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:1rem;">
-<a href="/what-is-nps-national-pension-system-guide" style="background:#f1f5f9; padding:0.5rem 1rem; border-radius:6px; color:#0f172a; text-decoration:none; font-weight:600; font-size:0.9rem;">Complete NPS Guide →</a>
-<a href="/nps-vs-mutual-funds" style="background:#f1f5f9; padding:0.5rem 1rem; border-radius:6px; color:#0f172a; text-decoration:none; font-weight:600; font-size:0.9rem;">NPS vs Mutual Funds →</a>
-<a href="/epf-calculator" style="background:#f1f5f9; padding:0.5rem 1rem; border-radius:6px; color:#0f172a; text-decoration:none; font-weight:600; font-size:0.9rem;">EPF Calculator →</a>
-<a href="/retirement-planning-india" style="background:#f1f5f9; padding:0.5rem 1rem; border-radius:6px; color:#0f172a; text-decoration:none; font-weight:600; font-size:0.9rem;">Retirement Planning Guide →</a>
+<a href="/what-is-nps-national-pension-system-guide" style="background:var(--bg-subtle); padding:0.5rem 1rem; border-radius:6px; color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">Complete NPS Guide →</a>
+<a href="/nps-vs-mutual-funds" style="background:var(--bg-subtle); padding:0.5rem 1rem; border-radius:6px; color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">NPS vs Mutual Funds →</a>
+<a href="/epf-calculator" style="background:var(--bg-subtle); padding:0.5rem 1rem; border-radius:6px; color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">EPF Calculator →</a>
+<a href="/retirement-planning-india" style="background:var(--bg-subtle); padding:0.5rem 1rem; border-radius:6px; color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">Retirement Planning Guide →</a>
 </div>
 <div class="author-bio-card">
 <div class="author-bio-header">
-<div class="author-avatar" style="width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg, #006B47, #009B72); color:#ffffff; font-size:1.35rem; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">T</div>
+<div class="author-avatar" style="width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg, var(--accent), #009B72); color:var(--bg-surface); font-size:1.35rem; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">T</div>
 <div>
 <h3 class="author-name">Tejas Waghmare</h3>
 <p class="author-title">Founder &amp; Creator, Calculatorship</p>
@@ -414,86 +414,85 @@
 <p class="author-disclaimer"><em>General educational information only. Verify current limits with official portals and consult a qualified professional before acting.</em></p>
 </div>
 </article>
-
 </main>
-<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
-<h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
-<ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:var(--bg-subtle); border:1px solid var(--border-soft); border-radius:8px;">
+<h2 style="font-size:1.25rem; font-weight:700; color:var(--text-primary); margin-top:0;">Official Sources &amp; Regulatory References</h2>
+<ul style="margin:0; padding-left:1.25rem; color:var(--text-secondary); line-height:1.8;">
 <li><strong>PFRDA (Exit and Withdrawals under NPS) Regulations:</strong> Pension Fund Regulatory and Development Authority (<a href="https://www.pfrda.org.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">pfrda.org.in</a>). Accessed: 23 November 2026.</li>
 <li><strong>NPS Trust Fund Performance &amp; Returns:</strong> National Pension System Trust (<a href="https://www.npstrust.org.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">npstrust.org.in</a>). Accessed: 23 November 2026.</li>
 <li><strong>Tax Provisions on Lumpsum &amp; Annuity (Section 10(12A)):</strong> Income Tax Department of India (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
 </ul>
 </section>
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
-        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h3>Calculators &amp; Hubs</h3>
-          <ul>
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
-            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
-            <li><a href="/sgb-calculator">SGB Calculator</a></li>
-            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
-            <li><a href="/emi-calculator">Home Loan EMI</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/calculators">All Calculators Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Topic Hubs</h3>
-          <ul>
-            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
-            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
-            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
-            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
-            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
-            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
-            <li><a href="/blog">Guides Archive</a></li>
-            <li><a href="/sitemap">HTML Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Policies &amp; Transparency</h3>
-          <ul>
-            <li><a href="/about">About Calculatorship</a></li>
-            <li><a href="/author">Author (Tejas Waghmare)</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/editorial-policy">Editorial Policy</a></li>
-            <li><a href="/corrections">Corrections Policy</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-disclaimer">
-        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
-      </div>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer src="/theme.js?v=5.0"></script>
+<script defer src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
-    <div class="cs-cookie-actions">
-      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
-      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
-    </div>
-  </div>
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 <script>
   (function() {

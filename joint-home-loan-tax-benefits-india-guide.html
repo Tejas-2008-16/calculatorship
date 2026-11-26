@@ -38,9 +38,9 @@
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <noscript></noscript>
-<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -179,7 +179,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -199,23 +199,23 @@
 <header class="article-header">
 <div class="article-meta">
 <span class="meta-cat">Loans &amp; Real Estate</span>
-<span class="article-date-tag">Published: 29 Sep 2026</span>
+
 <span>Updated for FY 2026-27</span>
 </div>
 <h1>Joint Home Loan Tax Benefits India: Dual 80C &amp; Section 24(b) Guide</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: 29 September 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Real Estate Taxation: Dual Section 24(b) &amp; Section 80C Co-Ownership Rules</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational real estate taxation guide only. Not legal or chartered accountancy advice. Co-ownership on property deed is mandatory to claim deductions. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:var(--text-primary); margin-bottom:1.5rem; font-weight:500;">
     Taking a joint home loan allows co-owners to double their statutory tax deductions up to ₹7,00,000 annually under the Old Tax Regime. Each co-borrower who is also a co-owner on the property deed can claim up to ₹2,00,000 under Section 24(b) for interest repayment (total ₹4,00,000) and up to ₹1,50,000 under Section 80C for principal repayment (total ₹3,00,000), proportionate to their ownership share and EMI contributions. On a ₹60 Lakh loan at 8.5%, this saves an eligible couple over ₹1,62,490 in annual income taxes at the 30% slab. In the New Tax Regime (Section 115BAC), Section 80C is disallowed and self-occupied housing interest cannot be set off.
   </p>
 <div class="article-byline">
@@ -227,17 +227,17 @@
 <div class="toc-box">
 <h2 style="font-size:1.05rem; font-weight:800; margin:0 0 12px; color:var(--text-primary);">Table of Contents</h2>
 <ol style="margin:0; padding-left:22px; line-height:1.9;">
-<li><a href="#dual-tax-advantage">1. The Power of Dual Tax Benefits: Core Mathematical Advantage</a></li>
-<li><a href="#eligibility-rules">2. Mandatory Eligibility Rules: Co-Owner vs Co-Borrower Trap</a></li>
-<li><a href="#section-24b-interest">3. Section 24(b) Interest Deduction Rules for Co-Borrowers</a></li>
-<li><a href="#section-80c-principal">4. Section 80C Principal Repayment &amp; Stamp Duty Sharing</a></li>
-<li><a href="#ownership-ratio-math">5. Ownership Ratio Mathematics: How to Apportion Deductions</a></li>
-<li><a href="#let-out-vs-self-occupied">6. Self-Occupied vs Let-Out Property for Joint Borrowers</a></li>
-<li><a href="#pre-construction-interest">7. Pre-Construction Interest: 5 Equal Installments Rule</a></li>
-<li><a href="#old-vs-new-regime-home-loan">8. Joint Home Loans under Old vs New Tax Regime</a></li>
-<li><a href="#common-pitfalls">9. Common Mistakes That Lead to CPC Disallowance</a></li>
-<li><a href="#faq-section">10. Frequently Asked Questions (FAQs)</a></li>
-<li><a href="#official-references">11. Statutory References &amp; Official Legal Framework</a></li>
+<li><a href="#dual-tax-advantage">The Power of Dual Tax Benefits: Core Mathematical Advantage</a></li>
+<li><a href="#eligibility-rules">Mandatory Eligibility Rules: Co-Owner vs Co-Borrower Trap</a></li>
+<li><a href="#section-24b-interest">Section 24(b) Interest Deduction Rules for Co-Borrowers</a></li>
+<li><a href="#section-80c-principal">Section 80C Principal Repayment &amp; Stamp Duty Sharing</a></li>
+<li><a href="#ownership-ratio-math">Ownership Ratio Mathematics: How to Apportion Deductions</a></li>
+<li><a href="#let-out-vs-self-occupied">Self-Occupied vs Let-Out Property for Joint Borrowers</a></li>
+<li><a href="#pre-construction-interest">Pre-Construction Interest: 5 Equal Installments Rule</a></li>
+<li><a href="#old-vs-new-regime-home-loan">Joint Home Loans under Old vs New Tax Regime</a></li>
+<li><a href="#common-pitfalls">Common Mistakes That Lead to CPC Disallowance</a></li>
+<li><a href="#faq-section">Frequently Asked Questions (FAQs)</a></li>
+<li><a href="#official-references">Statutory References &amp; Official Legal Framework</a></li>
 </ol>
 </div>
 <div class="key-takeaways">
@@ -324,7 +324,7 @@
 <section id="ownership-ratio-math">
 <h2>5. Ownership Ratio Mathematics: How to Apportion Deductions</h2>
 <p>Tax deductions cannot be arbitrarily allocated to whoever has higher taxable income. They must be determined according to the co-ownership percentage registered in the deed and the actual funding of EMIs.</p>
-<p class="illustrative-note" style="font-size:0.88rem; color:var(--text-muted); background:var(--bg-elevated, #f8fafc); border-left:3px solid var(--emerald-dark, #0B5D3B); padding:8px 12px; margin:0.75rem 0 1.25rem; border-radius:4px;">Illustrative example, not a real person: Names such as Rahul, Priya, Arun, Ananya, Vikram, Neha, Rohan, Suresh, Sneha, or Ramesh below refer to hypothetical calculation scenarios.</p><h3 style="font-size:1.15rem; font-weight:700; margin-top:20px;">Practical Example: Sameer and Ananya</h3>
+<p class="illustrative-note" style="font-size:0.88rem; color:var(--text-muted); background:var(--bg-elevated, var(--bg-subtle)); border-left:3px solid var(--emerald-dark, #0B5D3B); padding:8px 12px; margin:0.75rem 0 1.25rem; border-radius:4px;">Illustrative example, not a real person: Names such as Rahul, Priya, Arun, Ananya, Vikram, Neha, Rohan, Suresh, Sneha, or Ramesh below refer to hypothetical calculation scenarios.</p><h3 style="font-size:1.15rem; font-weight:700; margin-top:20px;">Practical Example: Sameer and Ananya</h3>
 <ul>
 <li>Property Cost: ₹80,00,000 (Co-ownership: 50% Sameer, 50% Ananya)</li>
 <li>Joint Home Loan: ₹60,00,000 at 8.5% interest</li>
@@ -492,83 +492,83 @@
 </aside>
 </div>
 </main>
-<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
-<h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
-<ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:var(--bg-subtle); border:1px solid var(--border-soft); border-radius:8px;">
+<h2 style="font-size:1.25rem; font-weight:700; color:var(--text-primary); margin-top:0;">Official Sources &amp; Regulatory References</h2>
+<ul style="margin:0; padding-left:1.25rem; color:var(--text-secondary); line-height:1.8;">
 <li><strong>Income Tax Act Provisions (Section 24(b), Section 80C &amp; Section 115BAC):</strong> Income Tax Department of India (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
 <li><strong>CBDT Guidelines on Property Co-Ownership &amp; Housing Loan Deductions:</strong> Central Board of Direct Taxes (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
 </ul>
 </section>
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
-        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h3>Calculators &amp; Hubs</h3>
-          <ul>
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
-            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
-            <li><a href="/sgb-calculator">SGB Calculator</a></li>
-            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
-            <li><a href="/emi-calculator">Home Loan EMI</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/calculators">All Calculators Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Topic Hubs</h3>
-          <ul>
-            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
-            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
-            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
-            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
-            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
-            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
-            <li><a href="/blog">Guides Archive</a></li>
-            <li><a href="/sitemap">HTML Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Policies &amp; Transparency</h3>
-          <ul>
-            <li><a href="/about">About Calculatorship</a></li>
-            <li><a href="/author">Author (Tejas Waghmare)</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/editorial-policy">Editorial Policy</a></li>
-            <li><a href="/corrections">Corrections Policy</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-disclaimer">
-        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
-      </div>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer src="/theme.js?v=5.0"></script>
+<script defer src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
-    <div class="cs-cookie-actions">
-      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
-      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
-    </div>
-  </div>
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 </body>
 </html>

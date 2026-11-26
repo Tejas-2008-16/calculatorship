@@ -38,9 +38,9 @@
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <noscript></noscript>
-<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -180,7 +180,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -200,23 +200,23 @@
 <header class="article-header">
 <div class="article-meta">
 <span class="meta-cat">Goal Planning &amp; Wealth</span>
-<span class="article-date-tag">Published: 14 Aug 2026</span>
+
 <span>Updated for FY 2026-27</span>
 </div>
 <h1>How Inflation reduces Your Savings in India (And How to Beat It)</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: 14 August 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Macroeconomic Wealth Preservation: Real vs Nominal Returns &amp; CPI Erosion Math</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational macroeconomic and savings preservation guide only. Not personal investment advice. Returns from fixed deposits and debt assets depend on applicable tax slabs. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:var(--text-primary); margin-bottom:1.5rem; font-weight:500;">
     Inflation silently destroys savings by diminishing the purchasing power of idle money over time. In India, where headline Consumer Price Inflation (CPI) averages 5.5% to 6.5%, idle cash loses approximately 25.3% of its real purchasing power in 5 years, 44.2% in 10 years, and 68.8% in 20 years. Traditional Bank Fixed Deposits paying 7.25% yield negative net real returns (-0.95% per year) after paying 31.2% tax in the 30% slab. Preserving and compounding long-term wealth requires allocating savings to productive assets that outpace CPI inflation, such as equity index mutual funds and sovereign gold bonds.
   </p>
 <div class="article-byline">
@@ -229,11 +229,11 @@
 <article class="article-main" id="main-article">
 <div class="toc-box">
 <h2 style="font-size:1.05rem; font-weight:800; margin:0 0 12px; color:var(--text-primary);">Table of Contents</h2>
-<ol style="margin:0; padding-left:22px; line-height:1.9;"><li><a href="#purchasing-power-decay">1. The Mechanics of Purchasing Power Decay</a></li><li><a href="#erosion-matrix-table">2. ₹1 Crore Purchasing Power Erosion Table (30 Years)</a></li><li><a href="#rule-of-70">3. The Rule of 70: How Fast Will Your Money Halve?</a></li><li><a href="#beating-inflation">4. How to Construct an Inflation-Beating Portfolio</a></li><li><a href="#faq">Frequently Asked Questions</a></li></ol>
+<ol style="margin:0; padding-left:22px; line-height:1.9;"><li><a href="#purchasing-power-decay">The Mechanics of Purchasing Power Decay</a></li><li><a href="#erosion-matrix-table">₹1 Crore Purchasing Power Erosion Table (30 Years)</a></li><li><a href="#rule-of-70">The Rule of 70: How Fast Will Your Money Halve?</a></li><li><a href="#beating-inflation">How to Construct an Inflation-Beating Portfolio</a></li><li><a href="#faq">Frequently Asked Questions</a></li></ol>
 </div>
-<div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid #16a34a; border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
+<div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid var(--accent); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
 <h2 style="font-size: 1.25rem; font-weight: 800; color: #166534; margin-top: 0; margin-bottom: 0.75rem;">Key Takeaways: What You Need to Know First</h2>
-<ul style="margin: 0; padding-left: 1.25rem; line-height: 1.8; color: #15803d; font-size: 0.96rem;">
+<ul style="margin: 0; padding-left: 1.25rem; line-height: 1.8; color: var(--accent); font-size: 0.96rem;">
 <li>At India's average 6% annual inflation, ₹1 Lakh of today's purchasing power shrinks to ₹55,839 in 10 years and ₹31,180 in 20 years: your savings account's 3.5% interest rate makes you poorer in real terms every year.</li>
 <li>The inflation-adjusted (real) return formula is: Real Return = [(1 + Nominal Return) / (1 + Inflation Rate)] - 1. A 7% FD at 6% inflation delivers only 0.94% real return: barely above zero before tax.</li>
 <li>Education inflation in India runs 10% to 12% annually: significantly higher than general CPI. A course costing ₹10 Lakh today will cost approximately ₹25 to ₹32 Lakh in 10 years.</li>
@@ -281,7 +281,7 @@
 <tr><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">Savings Account</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">3.5%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">2.45%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #b91c1c; font-weight: 600;">-3.34% (negative)</td></tr>
 <tr style="background: var(--bg-surface);"><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">Bank FD (1-year)</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">7.0%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">4.9%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #dc2626;">-1.04% (negative)</td></tr>
 <tr><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">PPF (tax-free)</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">7.1%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">7.1%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">+1.04%</td></tr>
-<tr style="background: var(--bg-surface);"><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">Nifty 50 Index Fund (equity)</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">12.0%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">~11.15% (LTCG after ₹1.25L)</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: #16a34a; font-weight: 700;">+4.86% (strongly positive)</td></tr>
+<tr style="background: var(--bg-surface);"><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">Nifty 50 Index Fund (equity)</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">12.0%</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color);">~11.15% (LTCG after ₹1.25L)</td><td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color); color: var(--accent); font-weight: 700;">+4.86% (strongly positive)</td></tr>
 </tbody>
 </table>
 </div>
@@ -307,17 +307,17 @@
 <ul style="list-style:none; margin:0; padding:0;">
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.rbi.org.in/scripts/FS_Overview.aspx?fn=2752" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">RBI Monetary Policy - CPI Inflation Target</a>
-<span style="background:#4a148c; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">RBI flexible inflation targeting framework with 4% CPI target (±2% band)</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.rbi.org.in/scripts/Statistics.aspx" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">RBI - Consumer Price Index Data</a>
-<span style="background:#4a148c; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">RBI statistics portal for CPI inflation data series</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://mospi.gov.in/" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">MOSPI - Consumer Price Index Releases</a>
-<span style="background:#0d47a1; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">Ministry of Statistics and Programme Implementation - official CPI data releases</p>
 </li>
 </ul>
@@ -364,12 +364,11 @@
 <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:6px;">How do I adjust my future financial goals for inflation?</h3>
 <p>Use the compound growth formula: Future Value = Present Cost * (1 + r)^n, where r is the expected annual inflation rate and n is the number of years. For example, a higher education goal costing ₹20 Lakh today will require ₹51.27 Lakh in 15 years at a 6.5% inflation rate.</p>
 </div>
-
 <footer class="site-footer">
 <div class="footer-inner">
 <div class="footer-top">
 <div class="footer-brand">
-<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
 <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
 </div>
 <div class="footer-links">
@@ -426,7 +425,7 @@
 </div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer="" src="/theme.js?v=5.0"></script>
+<script defer="" src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
 <div class="cs-cookie-inner">
 <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>

@@ -39,9 +39,9 @@
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <noscript></noscript>
-<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -180,7 +180,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -200,23 +200,23 @@
 <header class="article-header">
 <div class="article-meta">
 <span class="meta-cat">Tax &amp; Financial Planning</span>
-<span class="article-date-tag">Published: 24 Sep 2026</span>
+
 <span>Updated for FY 2026-27</span>
 </div>
 <h1>Form 16 Explained: How to Read Your TDS Certificate &amp; File an Accurate ITR</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: 24 September 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Payroll Compliance: Section 192 TDS, TRACES Part A &amp; Form 12B Dual Job Trap</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational tax documentation guide only. Not personal tax consultancy or chartered accountancy advice. Always cross-verify Form 16 against Form 26AS/AIS before filing ITR. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:var(--text-primary); margin-bottom:1.5rem; font-weight:500;">
     Form 16 is your employer's statutory certificate of tax deducted at source (TDS) under Section 192, comprising Part A (generated from the government TRACES portal with quarterly deposited taxes and Challan Identification Numbers) and Part B (an annexure detailing gross salary, HRA/LTA exemptions, standard deduction of ₹75,000 in the New Regime, and taxable income). Before filing your ITR, cross-verify TDS numbers against your Annual Information Statement (AIS) and Form 26AS. If you switched employers mid-year, submit Form 12B to your new employer to avoid unexpected tax shortfalls and interest penalties under Section 234B/234C.
   </p>
 <div class="article-byline">
@@ -228,18 +228,18 @@
 <div class="toc-box">
 <h2 style="font-size:1.05rem; font-weight:800; margin:0 0 12px; color:var(--text-primary);">Table of Contents</h2>
 <ol style="margin:0; padding-left:22px; line-height:1.9;">
-<li><a href="#what-is-form16">1. What is Form 16 and Section 192 TDS?</a></li>
-<li><a href="#part-a-vs-part-b">2. Deconstructing Part A vs Part B</a></li>
-<li><a href="#how-employer-calculates-tds">3. How Your Employer Calculates Monthly TDS (The Math)</a></li>
-<li><a href="#switching-jobs-form12b">4. Switching Jobs Mid-Year: Two Form 16s &amp; The Form 12B Trap</a></li>
-<li><a href="#reconciliation-checklist">5. Three-Way Reconciliation: Form 16 vs 26AS vs AIS</a></li>
-<li><a href="#step-by-step-itr1">6. Step-by-Step: Porting Form 16 Figures to ITR-1</a></li>
-<li><a href="#faq">7. Frequently Asked Questions</a></li>
+<li><a href="#what-is-form16">What is Form 16 and Section 192 TDS?</a></li>
+<li><a href="#part-a-vs-part-b">Deconstructing Part A vs Part B</a></li>
+<li><a href="#how-employer-calculates-tds">How Your Employer Calculates Monthly TDS (The Math)</a></li>
+<li><a href="#switching-jobs-form12b">Switching Jobs Mid-Year: Two Form 16s &amp; The Form 12B Trap</a></li>
+<li><a href="#reconciliation-checklist">Three-Way Reconciliation: Form 16 vs 26AS vs AIS</a></li>
+<li><a href="#step-by-step-itr1">Step-by-Step: Porting Form 16 Figures to ITR-1</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
 </ol>
 </div>
-<div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid #16a34a; border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
+<div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid var(--accent); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
 <h3 style="color: #166534; font-size: 1.15rem; margin-top: 0; margin-bottom: 0.75rem;">Key Takeaways at a Glance</h3>
-<ul style="color: #15803d; line-height: 1.7; margin: 0; padding-left: 1.25rem;">
+<ul style="color: var(--accent); line-height: 1.7; margin: 0; padding-left: 1.25rem;">
 <li><strong>TRACES Verification:</strong> Part A must carry a unique 8-character TRACES validation code and watermark to be legally valid — so verify the exact TDS section code printed in Part A before filing.</li>
 <li><strong>Form 16 is NOT an ITR:</strong> Receiving Form 16 with zero additional tax due does not exempt you from mandatory ITR filing if total gross income exceeds basic exemption limits — so filing an annual ITR return remains mandatory wherever total income crosses basic exemption limits.</li>
 <li><strong>Job Switch Vulnerability:</strong> If you switch employers mid-year and fail to submit Form 12B to your new employer, both will deduct basic exemptions and standard deductions, creating large unexpected self-assessment tax liabilities plus interest.</li>
@@ -284,7 +284,7 @@
 <section id="how-employer-calculates-tds">
 <h2>3. How Your Employer Calculates Monthly TDS (The Math)</h2>
 <p>Under Section 192(1), the monthly deduction is derived using the <em>average rate method</em>:</p>
-<div style="background:#f8fafc; border:1px solid var(--border-soft); border-radius:10px; padding:20px; margin:20px 0; font-family:var(--font-mono, monospace);">
+<div style="background:var(--bg-subtle); border:1px solid var(--border-soft); border-radius:10px; padding:20px; margin:20px 0; font-family:var(--font-mono, monospace);">
             Monthly TDS = (Estimated Annual Tax Liability − Taxes Already Deducted) ÷ Remaining Months in FY
           </div>
 <p>This dynamic formula explains why your take-home pay fluctuates:</p>
@@ -343,12 +343,12 @@
 <ul style="list-style:none; margin:0; padding:0;">
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.incometax.gov.in/iec/foportal/" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">Income Tax Department  -  Section 192 &amp; Section 203</a>
-<span style="background:#0d47a1; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">Official statutory provisions for TDS on salary and issuance of TDS certificates</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://contents.tdscpc.gov.in/" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">TRACES (TDS Reconciliation Analysis and Correction Enabling System)</a>
-<span style="background:#0d47a1; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">Central government portal for generating and validating Form 16 Part A</p>
 </li>
 </ul>
@@ -384,12 +384,11 @@
 </aside>
 </div>
 </main>
-
 <footer class="site-footer">
 <div class="footer-inner">
 <div class="footer-top">
 <div class="footer-brand">
-<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
 <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
 </div>
 <div class="footer-links">
@@ -446,7 +445,7 @@
 </div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer="" src="/theme.js?v=5.0"></script>
+<script defer="" src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
 <div class="cs-cookie-inner">
 <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>

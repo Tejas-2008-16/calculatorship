@@ -28,9 +28,9 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg"/>
   <noscript></noscript>
-  <style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+  <style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
   <!-- Google Analytics 4 (GA4) -->
   <script type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-0C93Q0VBQP"></script>
   <script>
@@ -193,7 +193,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -210,47 +210,47 @@
 </div>
 <main id="main-content" style="max-width:1100px; margin:0 auto; padding:32px 24px 60px;">
 <div class="calc-hero" style="margin-bottom:2rem;">
-<h1 style="font-size:2.2rem; font-weight:800; color:#0f172a; margin-bottom:0.5rem;">HRA Exemption Calculator (Section 10(13A))</h1>
+<h1 style="font-size:2.2rem; font-weight:800; color:var(--text-primary); margin-bottom:0.5rem;">HRA Exemption Calculator (Section 10(13A))</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: February 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Tax Law: Section 10(13A), Rule 2A (Old Tax Regime)</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational tax calculation tool only. Not personal chartered accountancy or tax advice. HRA exemption is available exclusively under the Old Tax Regime and is not deductible under the default New Tax Regime (Section 115BAC). Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:var(--text-primary); margin-bottom:1.5rem; font-weight:500;">
     Under Section 10(13A) and Rule 2A of the Income-tax Act, House Rent Allowance (HRA) exemption equals the least of three statutory limits: (1) Actual HRA received, (2) Rent paid minus 10% of Basic Salary + DA, or (3) 50% of Basic Salary for metro cities (Delhi, Mumbai, Kolkata, Chennai) or 40% for non-metros. Note that HRA exemption is permissible only under the Old Tax Regime; it is strictly disallowed under Section 115BAC.
   </p>
 </div>
 <!-- Interactive Calculator Widget -->
-<div class="calc-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; background:#ffffff; border:1px solid #e2e8f0; border-radius:12px; padding:2rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom:3rem;">
+<div class="calc-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:12px; padding:2rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom:3rem;">
 <div class="calc-inputs">
-<h2 style="font-size:1.3rem; font-weight:700; color:#0f172a; margin-bottom:1.5rem;">Salary &amp; Rent Inputs (Annual)</h2>
+<h2 style="font-size:1.3rem; font-weight:700; color:var(--text-primary); margin-bottom:1.5rem;">Salary &amp; Rent Inputs (Annual)</h2>
 <div style="margin-bottom:1.5rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="hra-basic" style="font-weight:600; font-size:0.95rem;">Annual Basic Salary + DA (₹)</label>
-<input id="hra-basic" inputmode="numeric" max="10000000" min="100000" step="10000" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="600000"/>
+<input id="hra-basic" inputmode="numeric" max="10000000" min="100000" step="10000" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="600000"/>
 </div>
-<input id="hra-basic-slider" max="10000000" min="100000" step="10000" style="width:100%; accent-color:#006B47;" type="range" value="600000"/>
+<input id="hra-basic-slider" max="10000000" min="100000" step="10000" style="width:100%; accent-color:var(--accent);" type="range" value="600000"/>
 </div>
 <div style="margin-bottom:1.5rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="hra-received" style="font-weight:600; font-size:0.95rem;">Annual HRA Received (₹)</label>
-<input id="hra-received" inputmode="numeric" max="5000000" min="20000" step="10000" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="240000"/>
+<input id="hra-received" inputmode="numeric" max="5000000" min="20000" step="10000" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="240000"/>
 </div>
-<input id="hra-received-slider" max="5000000" min="20000" step="10000" style="width:100%; accent-color:#006B47;" type="range" value="240000"/>
+<input id="hra-received-slider" max="5000000" min="20000" step="10000" style="width:100%; accent-color:var(--accent);" type="range" value="240000"/>
 </div>
 <div style="margin-bottom:1.5rem;">
 <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
 <label for="hra-rent" style="font-weight:600; font-size:0.95rem;">Total Annual Rent Paid (₹)</label>
-<input id="hra-rent" inputmode="numeric" max="5000000" min="0" step="10000" style="width:130px; padding:0.4rem; border:1px solid #cbd5e1; border-radius:6px; font-weight:600; text-align:right;" type="number" value="216000"/>
+<input id="hra-rent" inputmode="numeric" max="5000000" min="0" step="10000" style="width:130px; padding:0.4rem; border:1px solid var(--border-medium); border-radius:6px; font-weight:600; text-align:right;" type="number" value="216000"/>
 </div>
-<input id="hra-rent-slider" max="5000000" min="0" step="10000" style="width:100%; accent-color:#006B47;" type="range" value="216000"/>
+<input id="hra-rent-slider" max="5000000" min="0" step="10000" style="width:100%; accent-color:var(--accent);" type="range" value="216000"/>
 </div>
 <div style="margin-bottom:1rem;">
 <label style="font-weight:600; font-size:0.95rem; display:block; margin-bottom:0.5rem;">City Category</label>
@@ -264,24 +264,24 @@
 </div>
 </div>
 </div>
-<div class="calc-results" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
+<div class="calc-results" style="background:var(--bg-subtle); border:1px solid var(--border-soft); border-radius:10px; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
 <div>
-<h3 style="font-size:1.15rem; font-weight:700; color:#0f172a; margin-bottom:1.25rem;">HRA Exemption Summary</h3>
-<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between;">
-<span style="color:#64748b;">Annual HRA Received</span>
-<span id="res-hra-rec" style="font-weight:700; color:#0f172a;">₹2,40,000</span>
+<h3 style="font-size:1.15rem; font-weight:700; color:var(--text-primary); margin-bottom:1.25rem;">HRA Exemption Summary</h3>
+<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border-soft); display:flex; justify-content:space-between;">
+<span style="color:var(--text-muted);">Annual HRA Received</span>
+<span id="res-hra-rec" style="font-weight:700; color:var(--text-primary);">₹2,40,000</span>
 </div>
-<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between;">
-<span style="color:#64748b;">Tax-Exempt HRA (Rule 2A)</span>
-<span id="res-hra-exempt" style="font-size:1.5rem; font-weight:800; color:#059669;">₹1,56,000</span>
+<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border-soft); display:flex; justify-content:space-between;">
+<span style="color:var(--text-muted);">Tax-Exempt HRA (Rule 2A)</span>
+<span id="res-hra-exempt" style="font-size:1.5rem; font-weight:800; color:var(--accent);">₹1,56,000</span>
 </div>
-<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between;">
-<span style="color:#64748b;">Taxable HRA (Added to Salary)</span>
+<div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border-soft); display:flex; justify-content:space-between;">
+<span style="color:var(--text-muted);">Taxable HRA (Added to Salary)</span>
 <span id="res-hra-taxable" style="font-weight:700; color:#dc2626;">₹84,000</span>
 </div>
 <div style="margin-bottom:1.25rem; display:flex; justify-content:space-between; align-items:baseline;">
-<span style="color:#0f172a; font-weight:700; font-size:1.05rem;">Estimated Tax Savings (at 30%)</span>
-<span id="res-hra-savings" style="font-size:1.4rem; font-weight:800; color:#006B47;">₹46,800</span>
+<span style="color:var(--text-primary); font-weight:700; font-size:1.05rem;">Estimated Tax Savings (at 30%)</span>
+<span id="res-hra-savings" style="font-size:1.4rem; font-weight:800; color:var(--accent);">₹46,800</span>
 </div>
 </div>
 <div style="background:#ECF7F2; border-radius:6px; padding:0.75rem; font-size:0.85rem; color:#005236; text-align:center;">
@@ -290,17 +290,17 @@
 </div>
 </div>
 <!-- Deep Dive Guide -->
-<article class="calc-guide-content" style="line-height:1.75; font-size:1.02rem; color:#334155;">
-<h2 style="font-size:1.5rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">How HRA Exemption Works Under Section 10(13A)</h2>
+<article class="calc-guide-content" style="line-height:1.75; font-size:1.02rem; color:var(--text-secondary);">
+<h2 style="font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">How HRA Exemption Works Under Section 10(13A)</h2>
 <p>The Income Tax Department evaluates your tax-exempt House Rent Allowance based on Rule 2A of the Income Tax Rules. The exempt amount is strictly the <strong>lowest</strong> of the following three conditions:</p>
 <ul>
 <li><strong>Condition 1:</strong> Total actual HRA received from your employer during the financial year.</li>
 <li><strong>Condition 2:</strong> Actual rent paid minus 10% of your annual Basic Salary (including Dearness Allowance).</li>
 <li><strong>Condition 3:</strong> 50% of your Basic Salary + DA if you reside in a metro city (Delhi, Mumbai, Kolkata, Chennai), or 40% of Basic Salary + DA for all other Indian cities.</li>
 </ul>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">2 Worked Mathematical Examples in Rupees</h2>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
-<h3 style="font-size:1.15rem; font-weight:700; color:#0f172a; margin-top:0;">Example 1: Salaried Professional in Bengaluru (Non-Metro)</h3>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">2 Worked Mathematical Examples in Rupees</h2>
+<div style="background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
+<h3 style="font-size:1.15rem; font-weight:700; color:var(--text-primary); margin-top:0;">Example 1: Salaried Professional in Bengaluru (Non-Metro)</h3>
 <p>A software engineer in Bengaluru earns a Basic salary of <strong>₹50,000/month</strong> (₹6,00,000/year), receives <strong>₹20,000/month HRA</strong> (₹2,40,000/year), and pays <strong>₹18,000/month rent</strong> (₹2,16,000/year).</p>
 <ul>
 <li>Calculation 1: Actual HRA received = ₹2,40,000</li>
@@ -310,8 +310,8 @@
 <li>Taxable HRA = ₹2,40,000 - ₹1,56,000 = <strong>₹84,000</strong></li>
 </ul>
 </div>
-<div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
-<h3 style="font-size:1.15rem; font-weight:700; color:#0f172a; margin-top:0;">Example 2: Salaried Professional in Mumbai (Metro)</h3>
+<div style="background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:8px; padding:1.5rem; margin-bottom:1.5rem;">
+<h3 style="font-size:1.15rem; font-weight:700; color:var(--text-primary); margin-top:0;">Example 2: Salaried Professional in Mumbai (Metro)</h3>
 <p>A marketing manager in Mumbai earns Basic <strong>₹80,000/month</strong> (₹9,60,000/year), receives <strong>₹35,000/month HRA</strong> (₹4,20,000/year), and pays <strong>₹32,000/month rent</strong> (₹3,84,000/year).</p>
 <ul>
 <li>Calculation 2: Actual HRA received = ₹4,20,000</li>
@@ -321,7 +321,7 @@
 <li>Taxable HRA = ₹4,20,000 - ₹2,88,000 = <strong>₹1,32,000</strong></li>
 </ul>
 </div>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">Metro vs. Non-Metro Classification &amp; Rent Proof Rules</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">Metro vs. Non-Metro Classification &amp; Rent Proof Rules</h2>
 <p>One of the most frequent payroll surprises in India is city classification under <strong>Rule 2A of the Income Tax Rules</strong>. Even though tech hubs like Bengaluru, Hyderabad, Pune, and Gurugram have metro-level rents, the statutory tax rule still caps them at <strong>40% of Basic + DA</strong>.</p>
 <div style="overflow-x:auto; margin:1.25rem 0 2rem;">
 <div class="table-wrapper">
@@ -359,50 +359,50 @@
 </div>
 </div>
 <p>Remember that <strong>HRA tax exemption</strong> applies strictly under the <strong>Old Tax Regime</strong>. Always compare your net tax under Old vs. New Regime before locking in rent proofs.</p>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">3 Common Mistakes When Claiming HRA Exemption</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">3 Common Mistakes When Claiming HRA Exemption</h2>
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; margin-bottom:2rem;">
-<div style="border:1px solid #e2e8f0; border-radius:8px; padding:1.25rem; background:#ffffff;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-top:0;">1. Claiming Under the New Tax Regime</h3>
-<p style="font-size:0.92rem; color:#475569; margin:0;">HRA exemption works only under the Old Tax Regime. In the New Regime, it disappears completely. Your employer's entire HRA payout becomes taxable as regular salary.</p>
+<div style="border:1px solid var(--border-soft); border-radius:8px; padding:1.25rem; background:var(--bg-surface);">
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-top:0;">1. Claiming Under the New Tax Regime</h3>
+<p style="font-size:0.92rem; color:var(--text-secondary); margin:0;">HRA exemption works only under the Old Tax Regime. In the New Regime, it disappears completely. Your employer's entire HRA payout becomes taxable as regular salary.</p>
 </div>
-<div style="border:1px solid #e2e8f0; border-radius:8px; padding:1.25rem; background:#ffffff;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-top:0;">2. Missing Landlord PAN for Rent &gt; ₹1 Lakh</h3>
-<p style="font-size:0.92rem; color:#475569; margin:0;">Paying over ₹1 Lakh annual rent? You must submit your landlord's PAN. It is mandatory on Form 12BB. If you skip it, payroll will deduct full TDS.</p>
+<div style="border:1px solid var(--border-soft); border-radius:8px; padding:1.25rem; background:var(--bg-surface);">
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-top:0;">2. Missing Landlord PAN for Rent &gt; ₹1 Lakh</h3>
+<p style="font-size:0.92rem; color:var(--text-secondary); margin:0;">Paying over ₹1 Lakh annual rent? You must submit your landlord's PAN. It is mandatory on Form 12BB. If you skip it, payroll will deduct full TDS.</p>
 </div>
-<div style="border:1px solid #e2e8f0; border-radius:8px; padding:1.25rem; background:#ffffff;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-top:0;">3. Cash Rent to Parents Without Bank Trail</h3>
-<p style="font-size:0.92rem; color:#475569; margin:0;">Paying rent to your parents? Use bank transfers like NEFT or UPI. Your parents must also report the rental income on their ITR. The tax department cross-checks AIS data.</p>
+<div style="border:1px solid var(--border-soft); border-radius:8px; padding:1.25rem; background:var(--bg-surface);">
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-top:0;">3. Cash Rent to Parents Without Bank Trail</h3>
+<p style="font-size:0.92rem; color:var(--text-secondary); margin:0;">Paying rent to your parents? Use bank transfers like NEFT or UPI. Your parents must also report the rental income on their ITR. The tax department cross-checks AIS data.</p>
 </div>
 </div>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">Frequently Asked Questions (FAQs)</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">Frequently Asked Questions (FAQs)</h2>
 <div style="margin-bottom:2rem;">
 <div style="margin-bottom:1.25rem;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-bottom:0.25rem;">Can I claim both HRA and home loan deductions?</h3>
-<p style="font-size:0.95rem; color:#475569; margin:0;">Yes. If your own house is in a different city due to your employment, or is under construction, you can simultaneously claim HRA exemption under Section 10(13A) and home loan interest deduction under Section 24(b) in the Old Tax Regime.</p>
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">Can I claim both HRA and home loan deductions?</h3>
+<p style="font-size:0.95rem; color:var(--text-secondary); margin:0;">Yes. If your own house is in a different city due to your employment, or is under construction, you can simultaneously claim HRA exemption under Section 10(13A) and home loan interest deduction under Section 24(b) in the Old Tax Regime.</p>
 </div>
 <div style="margin-bottom:1.25rem;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-bottom:0.25rem;">Can I pay rent to my spouse and claim HRA?</h3>
-<p style="font-size:0.95rem; color:#475569; margin:0;">No. The Income Tax Appellate Tribunal (ITAT) has repeatedly disallowed HRA claims for rent paid to spouses because husband and wife live together in a matrimonial home, negating a genuine landlord-tenant commercial relationship.</p>
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">Can I pay rent to my spouse and claim HRA?</h3>
+<p style="font-size:0.95rem; color:var(--text-secondary); margin:0;">No. The Income Tax Appellate Tribunal (ITAT) has repeatedly disallowed HRA claims for rent paid to spouses because husband and wife live together in a matrimonial home, negating a genuine landlord-tenant commercial relationship.</p>
 </div>
 <div style="margin-bottom:1.25rem;">
-<h3 style="font-size:1.05rem; font-weight:700; color:#0f172a; margin-bottom:0.25rem;">What if my employer does not provide HRA in my CTC?</h3>
-<p style="font-size:0.95rem; color:#475569; margin:0;">If you pay rent but do not receive any HRA allowance from your employer, you can claim a deduction under Section 80GG, subject to a statutory cap of ₹5,000 per month (₹60,000 per year) under the Old Tax Regime.</p>
+<h3 style="font-size:1.05rem; font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">What if my employer does not provide HRA in my CTC?</h3>
+<p style="font-size:0.95rem; color:var(--text-secondary); margin:0;">If you pay rent but do not receive any HRA allowance from your employer, you can claim a deduction under Section 80GG, subject to a statutory cap of ₹5,000 per month (₹60,000 per year) under the Old Tax Regime.</p>
 </div>
 </div>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">Authoritative Sources &amp; References</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">Authoritative Sources &amp; References</h2>
 <ul style="font-size:0.95rem; line-height:1.7;">
-<li>Income Tax Department of India: <a href="https://www.incometax.gov.in" rel="noopener noreferrer" style="color:#006B47; text-decoration:underline;" target="_blank">Section 10(13A) and Rule 2A Statutory Provisions</a></li>
-<li>Income Tax Rules, 1962: <a href="https://www.incometax.gov.in" rel="noopener noreferrer" style="color:#006B47; text-decoration:underline;" target="_blank">Form 12BB Investment Declaration Rules</a></li>
+<li>Income Tax Department of India: <a href="https://www.incometax.gov.in" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline;" target="_blank">Section 10(13A) and Rule 2A Statutory Provisions</a></li>
+<li>Income Tax Rules, 1962: <a href="https://www.incometax.gov.in" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline;" target="_blank">Form 12BB Investment Declaration Rules</a></li>
 </ul>
-<h2 style="font-size:1.4rem; font-weight:700; color:#0f172a; margin-top:2rem; margin-bottom:1rem;">Related Financial Calculators &amp; Guides</h2>
+<h2 style="font-size:1.4rem; font-weight:700; color:var(--text-primary); margin-top:2rem; margin-bottom:1rem;">Related Financial Calculators &amp; Guides</h2>
 <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:1rem;">
-<a href="/hra-exemption-calculation-india" style="background:#f1f5f9; padding:0.5rem 1rem; border-radius:6px; color:#0f172a; text-decoration:none; font-weight:600; font-size:0.9rem;">HRA Calculation Guide →</a>
-<a href="/hra-exemption-rent-paid-to-parents-india" style="background:#f1f5f9; padding:0.5rem 1rem; border-radius:6px; color:#0f172a; text-decoration:none; font-weight:600; font-size:0.9rem;">Rent Paid to Parents Guide →</a>
-<a href="/old-vs-new-tax-regime" style="background:#f1f5f9; padding:0.5rem 1rem; border-radius:6px; color:#0f172a; text-decoration:none; font-weight:600; font-size:0.9rem;">Old vs New Tax Regime →</a>
+<a href="/hra-exemption-calculation-india" style="background:var(--bg-subtle); padding:0.5rem 1rem; border-radius:6px; color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">HRA Calculation Guide →</a>
+<a href="/hra-exemption-rent-paid-to-parents-india" style="background:var(--bg-subtle); padding:0.5rem 1rem; border-radius:6px; color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">Rent Paid to Parents Guide →</a>
+<a href="/old-vs-new-tax-regime" style="background:var(--bg-subtle); padding:0.5rem 1rem; border-radius:6px; color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">Old vs New Tax Regime →</a>
 </div>
 <div class="author-bio-card">
 <div class="author-bio-header">
-<div class="author-avatar" style="width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg, #006B47, #009B72); color:#ffffff; font-size:1.35rem; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">T</div>
+<div class="author-avatar" style="width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg, var(--accent), #009B72); color:var(--bg-surface); font-size:1.35rem; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">T</div>
 <div>
 <h3 class="author-name">Tejas Waghmare</h3>
 <p class="author-title">Founder &amp; Creator, Calculatorship</p>
@@ -412,86 +412,85 @@
 <p class="author-disclaimer"><em>General educational information only. Verify current limits with official portals and consult a qualified professional before acting.</em></p>
 </div>
 </article>
-
 </main>
-<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
-<h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
-<ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:var(--bg-subtle); border:1px solid var(--border-soft); border-radius:8px;">
+<h2 style="font-size:1.25rem; font-weight:700; color:var(--text-primary); margin-top:0;">Official Sources &amp; Regulatory References</h2>
+<ul style="margin:0; padding-left:1.25rem; color:var(--text-secondary); line-height:1.8;">
 <li><strong>Section 10(13A) &amp; Rule 2A (HRA Exemption Formula):</strong> Income Tax Department of India (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
 <li><strong>Section 115BAC New Tax Regime Disallowance of HRA:</strong> Central Board of Direct Taxes (CBDT), Ministry of Finance (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
 <li><strong>Mandatory Landlord PAN Threshold Guidelines:</strong> Income Tax Department Circulars (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
 </ul>
 </section>
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
-        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h3>Calculators &amp; Hubs</h3>
-          <ul>
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
-            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
-            <li><a href="/sgb-calculator">SGB Calculator</a></li>
-            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
-            <li><a href="/emi-calculator">Home Loan EMI</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/calculators">All Calculators Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Topic Hubs</h3>
-          <ul>
-            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
-            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
-            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
-            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
-            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
-            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
-            <li><a href="/blog">Guides Archive</a></li>
-            <li><a href="/sitemap">HTML Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Policies &amp; Transparency</h3>
-          <ul>
-            <li><a href="/about">About Calculatorship</a></li>
-            <li><a href="/author">Author (Tejas Waghmare)</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/editorial-policy">Editorial Policy</a></li>
-            <li><a href="/corrections">Corrections Policy</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-disclaimer">
-        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
-      </div>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer src="/theme.js?v=5.0"></script>
+<script defer src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
-    <div class="cs-cookie-actions">
-      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
-      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
-    </div>
-  </div>
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 <script>
   (function() {

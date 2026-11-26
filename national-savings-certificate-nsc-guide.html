@@ -38,9 +38,9 @@
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <noscript></noscript>
-<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
 <meta content="National Savings Certificate (NSC): 7.7% Rate & Tax" name="twitter:title"/><meta content="National Savings Certificate (NSC VIII Issue): 7.70% annual compounding interest, 5-year lock-in, Section 80C deemed reinvestment, and maturity math." name="twitter:description"/><link as="font" crossorigin="" href="/fonts/inter.woff2" rel="preload" type="font/woff2"/>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -253,7 +253,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -273,18 +273,18 @@
 <header class="article-header">
 <div class="article-meta">
 <span class="meta-cat">Fixed Income &amp; FDs</span>
-<span class="article-date-tag">Published: 27 Sep 2026</span>
+
 <span>Updated for FY 2026-27</span>
 </div>
 <h1>National Savings Certificate (NSC): Interest Rates, Tax Rules &amp; Compounding</h1>
 <p style="font-size:1.15rem; color:var(--text-secondary); line-height:1.7; max-width:980px; margin-top:12px;">The National Savings Certificate (NSC VIII Issue) is a 5-year sovereign-backed small savings instrument offering a guaranteed 7.70% annual interest rate compounded annually and paid at maturity. A deposit of ₹1,00,000 matures to ₹1,44,903.38 over 5 years. Uniquely, interest accrued in the first 4 years is treated as deemed reinvestment, qualifying for fresh Section 80C tax deductions under the Old Tax Regime.</p>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: 27 September 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 24 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>7.70% Annual Compounding Math, 5-Year Lock-In &amp; Section 80C Reinvestment</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
@@ -297,22 +297,22 @@
 <div class="toc-box">
 <h2 style="font-size:1.05rem; font-weight:800; margin:0 0 12px; color:var(--text-primary);">Table of Contents</h2>
 <ol style="margin:0; padding-left:22px; line-height:1.9;">
-<li><a href="#what-is-nsc">1. What is the National Savings Certificate (NSC VIII Issue)?</a></li>
-<li><a href="#interest-and-math">2. Current Interest Rate &amp; Compounding Math (₹1,000 Maturity Table)</a></li>
-<li><a href="#eligibility-limits">3. Eligibility Criteria, Deposit Limits &amp; Holding Modes</a></li>
-<li><a href="#80c-reinvestment">4. The Unique Section 80C "Deemed Reinvestment" Tax Loop</a></li>
-<li><a href="#tds-and-taxation">5. TDS Rules &amp; Taxation at Maturity</a></li>
-<li><a href="#premature-closure">6. Premature Closure Rules &amp; Penalties</a></li>
-<li><a href="#bank-loan-pledging">7. Pledging NSC as Bank Collateral: Step-by-Step Procedure</a></li>
-<li><a href="#nsc-vs-ppf-fd-kvp">8. Comparative Analysis: NSC vs PPF vs 5-Year Tax-Saver FD vs KVP</a></li>
-<li><a href="#common-pitfalls">9. Common Mistakes Indian Investors Make with NSC</a></li>
-<li><a href="#faq">10. Frequently Asked Questions</a></li>
-<li><a href="#sources">11. Sources &amp; References</a></li>
+<li><a href="#what-is-nsc">What is the National Savings Certificate (NSC VIII Issue)?</a></li>
+<li><a href="#interest-and-math">Current Interest Rate &amp; Compounding Math (₹1,000 Maturity Table)</a></li>
+<li><a href="#eligibility-limits">Eligibility Criteria, Deposit Limits &amp; Holding Modes</a></li>
+<li><a href="#80c-reinvestment">The Unique Section 80C "Deemed Reinvestment" Tax Loop</a></li>
+<li><a href="#tds-and-taxation">TDS Rules &amp; Taxation at Maturity</a></li>
+<li><a href="#premature-closure">Premature Closure Rules &amp; Penalties</a></li>
+<li><a href="#bank-loan-pledging">Pledging NSC as Bank Collateral: Step-by-Step Procedure</a></li>
+<li><a href="#nsc-vs-ppf-fd-kvp">Comparative Analysis: NSC vs PPF vs 5-Year Tax-Saver FD vs KVP</a></li>
+<li><a href="#common-pitfalls">Common Mistakes Indian Investors Make with NSC</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
+<li><a href="#sources">Sources &amp; References</a></li>
 </ol>
 </div>
-<div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid #16a34a; border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
+<div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid var(--accent); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
 <h3 style="color: #166534; font-size: 1.15rem; margin-top: 0; margin-bottom: 0.75rem;">Key Takeaways at a Glance</h3>
-<ul style="color: #15803d; line-height: 1.7; margin: 0; padding-left: 1.25rem;">
+<ul style="color: var(--accent); line-height: 1.7; margin: 0; padding-left: 1.25rem;">
 <li><strong>7.7% Sovereign Return:</strong> Offers a Fixed 7.7% per annum interest rate, compounded annually and payable upon maturity at the end of 5 years.</li>
 <li><strong>Double Tax Advantage:</strong> Both the principal investment AND the interest accrued during the first 4 years qualify for Section 80C deduction under the Old Tax Regime as "deemed reinvestment".</li>
 <li><strong>Zero TDS:</strong> No Tax Deducted at Source on maturity payouts, though interest income must be declared in your ITR under Income from Other Sources.</li>
@@ -348,28 +348,28 @@
 <td style="padding:12px 16px;">₹1,000.00</td>
 <td style="padding:12px 16px;">₹77.00</td>
 <td style="padding:12px 16px;">₹1,077.00</td>
-<td style="padding:12px 16px; color:#16a34a; font-weight:600;">Eligible (Reinvested)</td>
+<td style="padding:12px 16px; color:var(--accent); font-weight:600;">Eligible (Reinvested)</td>
 </tr>
 <tr style="border-bottom:1px solid var(--border-soft);">
 <td style="padding:12px 16px; font-weight:600;">Year 2</td>
 <td style="padding:12px 16px;">₹1,077.00</td>
 <td style="padding:12px 16px;">₹82.93</td>
 <td style="padding:12px 16px;">₹1,159.93</td>
-<td style="padding:12px 16px; color:#16a34a; font-weight:600;">Eligible (Reinvested)</td>
+<td style="padding:12px 16px; color:var(--accent); font-weight:600;">Eligible (Reinvested)</td>
 </tr>
 <tr style="border-bottom:1px solid var(--border-soft);">
 <td style="padding:12px 16px; font-weight:600;">Year 3</td>
 <td style="padding:12px 16px;">₹1,159.93</td>
 <td style="padding:12px 16px;">₹89.31</td>
 <td style="padding:12px 16px;">₹1,249.24</td>
-<td style="padding:12px 16px; color:#16a34a; font-weight:600;">Eligible (Reinvested)</td>
+<td style="padding:12px 16px; color:var(--accent); font-weight:600;">Eligible (Reinvested)</td>
 </tr>
 <tr style="border-bottom:1px solid var(--border-soft);">
 <td style="padding:12px 16px; font-weight:600;">Year 4</td>
 <td style="padding:12px 16px;">₹1,249.24</td>
 <td style="padding:12px 16px;">₹96.19</td>
 <td style="padding:12px 16px;">₹1,345.43</td>
-<td style="padding:12px 16px; color:#16a34a; font-weight:600;">Eligible (Reinvested)</td>
+<td style="padding:12px 16px; color:var(--accent); font-weight:600;">Eligible (Reinvested)</td>
 </tr>
 <tr>
 <td style="padding:12px 16px; font-weight:600;">Year 5 (Maturity)</td>
@@ -455,7 +455,7 @@
 <tbody>
 <tr style="border-bottom:1px solid var(--border-soft);">
 <td style="padding:12px 16px; font-weight:600;">Current Interest Rate</td>
-<td style="padding:12px 16px; font-weight:700; color:#16a34a;">7.7% p.a.</td>
+<td style="padding:12px 16px; font-weight:700; color:var(--accent);">7.7% p.a.</td>
 <td style="padding:12px 16px;">7.1% p.a.</td>
 <td style="padding:12px 16px;">6.5% - 7.25% p.a.</td>
 <td style="padding:12px 16px;">7.5% p.a.</td>
@@ -477,7 +477,7 @@
 <tr style="border-bottom:1px solid var(--border-soft);">
 <td style="padding:12px 16px; font-weight:600;">Taxation on Interest</td>
 <td style="padding:12px 16px;">Taxable at slab rate</td>
-<td style="padding:12px 16px; font-weight:700; color:#16a34a;">100% Tax-Free (EEE)</td>
+<td style="padding:12px 16px; font-weight:700; color:var(--accent);">100% Tax-Free (EEE)</td>
 <td style="padding:12px 16px;">Taxable at slab rate</td>
 <td style="padding:12px 16px;">Taxable at slab rate</td>
 </tr>
@@ -543,7 +543,7 @@
 <p style="font-size:0.78rem; color:var(--text-muted); margin:12px 0 0;"><em>Last reviewed: September 2026. Content is updated as Ministry of Finance quarterly circulars are published.</em></p>
 </section>
 <div class="author-bio-card" style="background:var(--surface); border:1px solid var(--border-light); border-radius:12px; padding:20px; margin:28px 0; display:flex; gap:16px; align-items:flex-start;">
-<div class="author-avatar" style="width:48px; height:48px; border-radius:50%; background:var(--emerald-dark); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.2rem; flex-shrink:0;">T</div>
+<div class="author-avatar" style="width:48px; height:48px; border-radius:50%; background:var(--emerald-dark); color:var(--bg-surface); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.2rem; flex-shrink:0;">T</div>
 <div>
 <h3 class="author-name" style="margin:0 0 4px; font-size:1.05rem;">Tejas Waghmare</h3>
 <p class="author-title" style="margin:0 0 8px; font-size:0.85rem; color:var(--text-muted);">Founder &amp; Creator, Calculatorship</p>
@@ -593,79 +593,77 @@
 <a class="btn btn-primary" href="/fd-calculator" style="width:100%; text-align:center; box-sizing:border-box;">Open FD Calculator</a>
 </div>
 </aside></div>
-
-
 </main>
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
-        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h3>Calculators &amp; Hubs</h3>
-          <ul>
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
-            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
-            <li><a href="/sgb-calculator">SGB Calculator</a></li>
-            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
-            <li><a href="/emi-calculator">Home Loan EMI</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/calculators">All Calculators Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Topic Hubs</h3>
-          <ul>
-            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
-            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
-            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
-            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
-            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
-            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
-            <li><a href="/blog">Guides Archive</a></li>
-            <li><a href="/sitemap">HTML Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Policies &amp; Transparency</h3>
-          <ul>
-            <li><a href="/about">About Calculatorship</a></li>
-            <li><a href="/author">Author (Tejas Waghmare)</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/editorial-policy">Editorial Policy</a></li>
-            <li><a href="/corrections">Corrections Policy</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-disclaimer">
-        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
-      </div>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer src="/theme.js?v=5.0"></script>
+<script defer src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
-    <div class="cs-cookie-actions">
-      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
-      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
-    </div>
-  </div>
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 </body>
 </html>

@@ -39,9 +39,9 @@
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <noscript></noscript>
-<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
 <!-- Article, FAQ & Breadcrumb Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -222,7 +222,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -242,17 +242,17 @@
 <header class="article-header">
 <div class="article-meta">
 <span class="meta-cat">Loans &amp; Real Estate</span>
-<span class="article-date-tag">Published: 06 Sep 2026</span>
+
 <span>Updated for FY 2026-27</span>
 </div>
 <h1>Credit Score in India (2026): How to Build, Fix &amp; Maintain a 750+ CIBIL Score</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: 06 Sep 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Framework: RBI CICRA 2005 &amp; TransUnion CIBIL Scoring</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
@@ -288,45 +288,45 @@
 <p>Credit scoring algorithms are proprietary, but the Reserve Bank of India guidelines and bureau disclosures confirm the exact weighting factors that dictate your 3-digit score:</p>
 <div style="overflow-x: auto; margin: 1.2rem 0;">
 <div class="table-wrapper">
-<table style="width: 100%; border-collapse: collapse; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.95rem;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-surface); border: 1px solid var(--border-medium); font-size: 0.95rem;">
 <thead>
-<tr style="background: #e2e8f0; color: #1e293b; text-align: left;">
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Credit Score Factor</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Weightage</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">What It Evaluates</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Best Practice to Maximize Score</th>
+<tr style="background: var(--border-soft); color: var(--text-primary); text-align: left;">
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Credit Score Factor</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Weightage</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">What It Evaluates</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Best Practice to Maximize Score</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Payment History</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>35%</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Timeliness of past EMI and credit card bill payments over 36 months</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Enable automated auto-debit for 100% total amount due; never miss a due date.</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Payment History</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>35%</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Timeliness of past EMI and credit card bill payments over 36 months</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Enable automated auto-debit for 100% total amount due; never miss a due date.</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Utilization Ratio</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>30%</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Percentage of total revolving credit card limits actively utilized</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Keep monthly usage strictly under 20% to 30% of your total credit limit.</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Utilization Ratio</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>30%</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Percentage of total revolving credit card limits actively utilized</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Keep monthly usage strictly under 20% to 30% of your total credit limit.</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>History Age</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>15%</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Average age of all open credit lines and age of oldest active credit card</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Never close your oldest lifetime-free credit card, even if you rarely use it.</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>History Age</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>15%</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Average age of all open credit lines and age of oldest active credit card</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Never close your oldest lifetime-free credit card, even if you rarely use it.</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Portfolio Mix</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>10%</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Healthy balance between Secured (Home/Auto) &amp; Unsecured (Cards/Personal) loans</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Avoid stacking multiple high-interest unsecured personal loans.</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Portfolio Mix</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>10%</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Healthy balance between Secured (Home/Auto) &amp; Unsecured (Cards/Personal) loans</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Avoid stacking multiple high-interest unsecured personal loans.</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Recent Hard Inquiries</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>10%</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Number of loan or credit card applications initiated within the last 6 months</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Space out credit applications by at least 3 to 6 months; avoid spamming forms.</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Recent Hard Inquiries</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>10%</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Number of loan or credit card applications initiated within the last 6 months</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Space out credit applications by at least 3 to 6 months; avoid spamming forms.</td>
 </tr>
 </tbody>
 </table>
@@ -338,45 +338,45 @@
 <p>Lending institutions categorize applicants into distinct risk tiers based on their CIBIL score:</p>
 <div style="overflow-x: auto; margin: 1.2rem 0;">
 <div class="table-wrapper">
-<table style="width: 100%; border-collapse: collapse; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.95rem; text-align: left;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-surface); border: 1px solid var(--border-medium); font-size: 0.95rem; text-align: left;">
 <thead>
-<tr style="background: #e2e8f0; color: #1e293b;">
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Score Range</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Rating</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Loan Approval Probability</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Interest Rate Impact</th>
+<tr style="background: var(--border-soft); color: var(--text-primary);">
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Score Range</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Rating</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Loan Approval Probability</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Interest Rate Impact</th>
 </tr>
 </thead>
 <tbody>
 <tr style="background: #f0fdf4;">
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>780 to 900</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Excellent</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Instant pre-approved loans; top tier approvals</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Lowest benchmark interest rate (for example, 8.35% to 8.50%)</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>780 to 900</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Excellent</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Instant pre-approved loans; top tier approvals</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Lowest benchmark interest rate (for example, 8.35% to 8.50%)</td>
 </tr>
-<tr style="background: #f8fafc;">
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>750 to 779</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Good</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">High approval chance with standard verification</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Standard competitive bank rates (for example, 8.55% to 8.75%)</td>
+<tr style="background: var(--bg-subtle);">
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>750 to 779</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Good</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">High approval chance with standard verification</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Standard competitive bank rates (for example, 8.55% to 8.75%)</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>700 to 749</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Fair / Average</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Scrutiny on salary slips; approvals possible with co-applicant</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">0.30% to 0.60% premium added to base rate</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>700 to 749</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Fair / Average</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Scrutiny on salary slips; approvals possible with co-applicant</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">0.30% to 0.60% premium added to base rate</td>
 </tr>
-<tr style="background: #fffbeb;">
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>600 to 699</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Poor</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">High rejection rate at Tier-1 banks; NBFCs only</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">High risk premium (10.0% to 14.0% interest)</td>
+<tr style="background: var(--bg-subtle);">
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>600 to 699</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Poor</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">High rejection rate at Tier-1 banks; NBFCs only</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">High risk premium (10.0% to 14.0% interest)</td>
 </tr>
 <tr style="background: #fef2f2;">
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>300 to 599</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>Very Poor / Default</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">Direct rejection; severe historical defaults</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">No unsecured loans; secured credit cards only</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>300 to 599</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>Very Poor / Default</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">Direct rejection; severe historical defaults</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">No unsecured loans; secured credit cards only</td>
 </tr>
 </tbody>
 </table>
@@ -386,7 +386,7 @@
 <section id="how-credit-utilization-ratio-cur-directly-affects-your-score-worked-examples">
 <h2>4. How Utilization Ratio (CUR) Directly Affects Your Score (Worked Examples)</h2>
 <p>Your Utilization Ratio is the percentage of your approved credit card limit spent during a billing cycle:</p>
-<div style="background: #ffffff; padding: 1.2rem; border: 1px solid #cbd5e1; border-radius: 6px; margin: 1rem 0; font-family: monospace;">
+<div style="background: var(--bg-surface); padding: 1.2rem; border: 1px solid var(--border-medium); border-radius: 6px; margin: 1rem 0; font-family: monospace;">
 <strong>CUR = (Total Monthly Statement Balance / Total Credit Limit) × 100</strong>
 </div>
 <h3>Scenario A: The High-Utilization Trap</h3>
@@ -458,44 +458,44 @@
 <p>Under the RBI's External Benchmark Lending Rate (EBLR) framework, banks must link their home loan interest spreads to the borrower's risk profile. Our comparative table demonstrates the monetary impact of credit score on a <strong>₹50 Lakh Home Loan with a 20-Year Tenure</strong>:</p>
 <div style="overflow-x: auto; margin: 1.5rem 0;">
 <div class="table-wrapper">
-<table style="width: 100%; border-collapse: collapse; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.95rem; text-align: left;">
+<table style="width: 100%; border-collapse: collapse; background: var(--bg-surface); border: 1px solid var(--border-medium); font-size: 0.95rem; text-align: left;">
 <thead>
-<tr style="background: #e2e8f0; color: #1e293b;">
-<th style="padding: 10px; border: 1px solid #cbd5e1;">CIBIL Score Band</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Indicative Home Loan Rate</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Monthly EMI (₹50L / 20 Yrs)</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Total Interest Paid (20 Yrs)</th>
-<th style="padding: 10px; border: 1px solid #cbd5e1;">Extra Cost vs Tier 1</th>
+<tr style="background: var(--border-soft); color: var(--text-primary);">
+<th style="padding: 10px; border: 1px solid var(--border-medium);">CIBIL Score Band</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Indicative Home Loan Rate</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Monthly EMI (₹50L / 20 Yrs)</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Total Interest Paid (20 Yrs)</th>
+<th style="padding: 10px; border: 1px solid var(--border-medium);">Extra Cost vs Tier 1</th>
 </tr>
 </thead>
 <tbody>
 <tr style="background: #f0fdf4;">
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>800+ (Tier 1)</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>8.40% per annum</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹43,075</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹53,38,000</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>₹0 (Baseline)</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>800+ (Tier 1)</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>8.40% per annum</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹43,075</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹53,38,000</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>₹0 (Baseline)</strong></td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>750 to 799 (Tier 2)</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>8.65% per annum</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹43,871</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹55,29,000</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">+ ₹1,91,000</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>750 to 799 (Tier 2)</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>8.65% per annum</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹43,871</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹55,29,000</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">+ ₹1,91,000</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>700 to 749 (Tier 3)</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>9.00% per annum</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹44,986</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹57,96,000</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">+ ₹4,58,000</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>700 to 749 (Tier 3)</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>9.00% per annum</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹44,986</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹57,96,000</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">+ ₹4,58,000</td>
 </tr>
 <tr style="background: #fef2f2;">
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>650 to 699 (Tier 4)</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>9.65% per annum</strong></td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹47,103</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;">₹63,04,000</td>
-<td style="padding: 10px; border: 1px solid #cbd5e1;"><strong>+ ₹9,66,000 (Huge Loss!)</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>650 to 699 (Tier 4)</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>9.65% per annum</strong></td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹47,103</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);">₹63,04,000</td>
+<td style="padding: 10px; border: 1px solid var(--border-medium);"><strong>+ ₹9,66,000 (Huge Loss!)</strong></td>
 </tr>
 </tbody>
 </table>
@@ -585,22 +585,22 @@
 <ul style="list-style:none; margin:0; padding:0;">
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11566" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">RBI - Master Direction on Credit Information Companies (2024)</a>
-<span style="background:#4a148c; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">RBI master direction regulating CIBIL, Experian, Equifax in India</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.cibil.com/personal-credit-score" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">TransUnion CIBIL - Credit Score Range</a>
-<span style="background:#37474f; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">REG</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">REG</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">Official CIBIL credit score model and range explanation (300-900)</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52171" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">RBI Free Credit Report Circular</a>
-<span style="background:#4a148c; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">RBI circular mandating one free credit report per year from all CICs</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.rbi.org.in/scripts/FS_Overview.aspx?fn=2752" rel="noopener noreferrer" style="font-weight:600; color:var(--color-primary); text-decoration:none; font-size:0.93rem;" target="_blank">SEBI - RBI Monetary Policy Impact on Credit</a>
-<span style="background:#4a148c; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">RBI</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">RBI monetary policy committee statements on lending rate impacts</p>
 </li>
 </ul>
@@ -624,75 +624,75 @@
 <!-- -->
 </main>
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
-        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h3>Calculators &amp; Hubs</h3>
-          <ul>
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
-            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
-            <li><a href="/sgb-calculator">SGB Calculator</a></li>
-            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
-            <li><a href="/emi-calculator">Home Loan EMI</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/calculators">All Calculators Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Topic Hubs</h3>
-          <ul>
-            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
-            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
-            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
-            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
-            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
-            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
-            <li><a href="/blog">Guides Archive</a></li>
-            <li><a href="/sitemap">HTML Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Policies &amp; Transparency</h3>
-          <ul>
-            <li><a href="/about">About Calculatorship</a></li>
-            <li><a href="/author">Author (Tejas Waghmare)</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/editorial-policy">Editorial Policy</a></li>
-            <li><a href="/corrections">Corrections Policy</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-disclaimer">
-        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
-      </div>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer src="/theme.js?v=5.0"></script>
+<script defer src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
-    <div class="cs-cookie-actions">
-      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
-      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
-    </div>
-  </div>
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 </body>
 </html>

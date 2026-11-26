@@ -38,9 +38,9 @@
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <noscript></noscript>
-<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -235,7 +235,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -254,23 +254,23 @@
 <header class="article-header">
 <div class="article-meta">
 <span class="meta-cat">Goal Planning &amp; Wealth</span>
-<span class="article-date-tag">Published: 22 Oct 2026</span>
+
 <span>Last updated: 22 Oct 2026</span>
 </div>
 <h1>How Gold Price Is Decided in India: 22K vs 24K, GST, Making Charges &amp; Hallmark</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: 22 October 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Bullion Economics: LBMA Import Landed Cost, 22K vs 24K Math &amp; Mandatory BIS HUID</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational commodity and jewellery pricing guide only. Not commodity trading or bullion investment advice. Retail jewel rates vary by city association and making charges. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:var(--text-primary); margin-bottom:1.5rem; font-weight:500;">
     Domestic gold prices in India are derived from the international London Bullion Market Association (LBMA) spot price per ounce, converted using the prevailing USD/INR exchange rate and marked up by Basic Customs Duty, Agriculture Infrastructure Cess, and local handling. Retail jewellery prices reflect purity conversion (22K gold is 91.67% pure, priced at 22/24 of 24K bullion), plus jeweller making charges (typically 8% to 15%) and a mandatory 3% Goods and Services Tax (GST) on the gross total. All genuine gold jewellery in India must carry a 6-digit alphanumeric BIS Hallmark Unique Identification (HUID) code.
   </p>
 <div class="article-byline">
@@ -281,25 +281,25 @@
 <article class="article-main" id="main-article">
 <!-- Quick Answer Callout Box -->
 <div class="quick-answer-box" style="background:#f0fdf4; border:2px solid #22c55e; border-radius:12px; padding:20px 24px; margin:0 0 28px;">
-<h2 style="font-size:1.1rem; color:#15803d; margin:0 0 8px; font-weight:800;">Quick Answer: How Gold Pricing Works</h2>
+<h2 style="font-size:1.1rem; color:var(--accent); margin:0 0 8px; font-weight:800;">Quick Answer: How Gold Pricing Works</h2>
 <p style="margin:0; font-size:0.96rem; color:#166534; line-height:1.65;">Gold pricing in India starts with the international price (USD per troy ounce), converted to INR, loaded with customs duty and local bullion premiums. Retail 22K gold costs roughly 22/24 (91.6%) of 24K bullion. Your final jewellery bill adds making charges (8% to 25% or flat per-gram), 3% GST on metal, 5% GST on making charges, and mandatory 6-digit BIS HUID verification.</p>
 </div>
 <div class="toc-box">
 <h2 style="font-size:1.05rem; font-weight:800; margin:0 0 12px; color:var(--text-primary);">Table of Contents</h2>
 <ol style="margin:0; padding-left:22px; line-height:1.9;">
-<li><a href="#international-to-rupee">1. The Chain: From London Spot Price to Indian Rupee Rate</a></li>
-<li><a href="#who-sets-daily-rates">2. Who Publishes the "Gold Rate Today" in India?</a></li>
-<li><a href="#why-rates-differ-cities">3. Why Gold Rates Differ Slightly Between Cities</a></li>
-<li><a href="#purity-carat-table">4. Purity Demystified: 24K, 22K, 18K and the 22/24 Math</a></li>
-<li><a href="#making-charges-explained">5. Making Charges: Percentage vs Per-Gram Mechanics</a></li>
-<li><a href="#gst-on-gold">6. GST on Gold vs Making Charges: The CBIC Tax Rules</a></li>
-<li><a href="#hallmark-huid-app">7. BIS Hallmarking and 6-Digit HUID: How to Verify on BIS Care</a></li>
-<li><a href="#worked-jewellery-bill">8. Worked Invoice Example: Calculating a 10 g 22K Ornament</a></li>
-<li><a href="#dhanteras-2026-context">9. Festive Context: Dhanteras 2026 Buying Dynamics</a></li>
-<li><a href="#common-myths">10. Common Myths and Expensive Buying Mistakes</a></li>
-<li><a href="#key-takeaways">11. Key Takeaways for Gold Buyers</a></li>
-<li><a href="#faq">12. Frequently Asked Questions</a></li>
-<li><a href="#official-sources">13. Sources &amp; Official References</a></li>
+<li><a href="#international-to-rupee">The Chain: From London Spot Price to Indian Rupee Rate</a></li>
+<li><a href="#who-sets-daily-rates">Who Publishes the "Gold Rate Today" in India?</a></li>
+<li><a href="#why-rates-differ-cities">Why Gold Rates Differ Slightly Between Cities</a></li>
+<li><a href="#purity-carat-table">Purity Demystified: 24K, 22K, 18K and the 22/24 Math</a></li>
+<li><a href="#making-charges-explained">Making Charges: Percentage vs Per-Gram Mechanics</a></li>
+<li><a href="#gst-on-gold">GST on Gold vs Making Charges: The CBIC Tax Rules</a></li>
+<li><a href="#hallmark-huid-app">BIS Hallmarking and 6-Digit HUID: How to Verify on BIS Care</a></li>
+<li><a href="#worked-jewellery-bill">Worked Invoice Example: Calculating a 10 g 22K Ornament</a></li>
+<li><a href="#dhanteras-2026-context">Festive Context: Dhanteras 2026 Buying Dynamics</a></li>
+<li><a href="#common-myths">Common Myths and Expensive Buying Mistakes</a></li>
+<li><a href="#key-takeaways">Key Takeaways for Gold Buyers</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
+<li><a href="#official-sources">Sources &amp; Official References</a></li>
 </ol>
 </div>
 <!-- Educational Disclaimer -->
@@ -312,22 +312,22 @@
 <ul style="list-style:none; margin:0; padding:0;">
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.bis.gov.in" rel="noopener noreferrer" style="font-weight:600; color:var(--emerald-dark); text-decoration:none; font-size:0.93rem;" target="_blank">Bureau of Indian Standards (BIS) - Gold Hallmarking Portal</a>
-<span style="background:#0d47a1; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">Official guidelines on 6-digit Hallmark Unique Identification (HUID) and BIS Care app verification.</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.cbic.gov.in" rel="noopener noreferrer" style="font-weight:600; color:var(--emerald-dark); text-decoration:none; font-size:0.93rem;" target="_blank">Central Board of Indirect Taxes and Customs (CBIC)</a>
-<span style="background:#0d47a1; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">GOV</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">GST notifications on precious metals (3% on bullion and jewellery) and making charges / job work (5%).</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.ibja.co" rel="noopener noreferrer" style="font-weight:600; color:var(--emerald-dark); text-decoration:none; font-size:0.93rem;" target="_blank">India Bullion and Jewellers Association (IBJA)</a>
-<span style="background:#37474f; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">REG</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">REG</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">Daily benchmark gold rates for 24K (999) and 22K (916) fineness across morning and closing sessions.</p>
 </li>
 <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid var(--border-soft);">
 <a href="https://www.drikpanchang.com" rel="noopener noreferrer" style="font-weight:600; color:var(--emerald-dark); text-decoration:none; font-size:0.93rem;" target="_blank">Drik Panchang - Hindu Calendar &amp; Muhurat Details</a>
-<span style="background:#e65100; color:#fff; font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">CULTURE</span>
+<span style="background:var(--accent); color:var(--bg-surface); font-size:0.7rem; padding:2px 7px; border-radius:10px; margin-left:8px; font-weight:600; letter-spacing:0.5px; vertical-align:middle;">CULTURE</span>
 <p style="margin:4px 0 0; font-size:0.86rem; color:var(--text-muted); line-height:1.55;">Official astronomical panchang confirming Dhanteras 2026 date (Friday, 6 November 2026).</p>
 </li>
 </ul>
@@ -398,44 +398,44 @@
 <p>To craft durable necklaces, bangles, and rings, artisans alloy pure gold with metals such as copper, silver, zinc, or palladium. Gold proportions define purity grades.</p>
 <div style="overflow-x:auto; margin:20px 0 28px;">
 <div class="table-wrapper">
-<table style="width:100%; border-collapse:collapse; font-size:0.95rem; border:1px solid #cbd5e1;">
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem; border:1px solid var(--border-medium);">
 <thead>
-<tr style="background:#f1f5f9; text-align:left;">
-<th style="padding:12px; border:1px solid #cbd5e1;">Carat Rating</th>
-<th style="padding:12px; border:1px solid #cbd5e1;">Purity %</th>
-<th style="padding:12px; border:1px solid #cbd5e1;">BIS Fineness Mark</th>
-<th style="padding:12px; border:1px solid #cbd5e1;">Common Use Cases</th>
-<th style="padding:12px; border:1px solid #cbd5e1;">Price Calculation Ratio</th>
+<tr style="background:var(--bg-subtle); text-align:left;">
+<th style="padding:12px; border:1px solid var(--border-medium);">Carat Rating</th>
+<th style="padding:12px; border:1px solid var(--border-medium);">Purity %</th>
+<th style="padding:12px; border:1px solid var(--border-medium);">BIS Fineness Mark</th>
+<th style="padding:12px; border:1px solid var(--border-medium);">Common Use Cases</th>
+<th style="padding:12px; border:1px solid var(--border-medium);">Price Calculation Ratio</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:700;">24K</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">99.9%</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">999</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">Investment bars, minted coins, SGB redemption benchmark</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">100% of Base Rate (1.000)</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:700;">24K</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">99.9%</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">999</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">Investment bars, minted coins, SGB redemption benchmark</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">100% of Base Rate (1.000)</td>
 </tr>
 <tr style="background:#fdfdf0;">
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:700; color:#b45309;">22K</td>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:600;">91.6%</td>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:600;">916</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">Traditional Indian wedding jewellery, chains, solid bangles</td>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:700;">22/24 ≈ 91.67% of 24K Rate</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:700; color:var(--accent);">22K</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:600;">91.6%</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:600;">916</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">Traditional Indian wedding jewellery, chains, solid bangles</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:700;">22/24 ≈ 91.67% of 24K Rate</td>
 </tr>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:700;">18K</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">75.0%</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">750</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">Diamond-studded jewellery, engagement rings, modern watches</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">18/24 = 75.00% of 24K Rate</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:700;">18K</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">75.0%</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">750</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">Diamond-studded jewellery, engagement rings, modern watches</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">18/24 = 75.00% of 24K Rate</td>
 </tr>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:700;">14K</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">58.5%</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">585</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">Daily-wear fashion accessories, lightweight budget studs</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">14/24 ≈ 58.33% of 24K Rate</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:700;">14K</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">58.5%</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">585</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">Daily-wear fashion accessories, lightweight budget studs</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">14/24 ≈ 58.33% of 24K Rate</td>
 </tr>
 </tbody>
 </table>
@@ -513,44 +513,44 @@
 </ul>
 <div style="overflow-x:auto; margin:20px 0 28px;">
 <div class="table-wrapper">
-<table style="width:100%; border-collapse:collapse; font-size:0.95rem; border:1px solid #cbd5e1;">
+<table style="width:100%; border-collapse:collapse; font-size:0.95rem; border:1px solid var(--border-medium);">
 <thead>
-<tr style="background:#f1f5f9; text-align:left;">
-<th style="padding:12px; border:1px solid #cbd5e1;">Invoice Line Item</th>
-<th style="padding:12px; border:1px solid #cbd5e1;">Formula / Rate Applied</th>
-<th style="padding:12px; border:1px solid #cbd5e1;">Amount (₹)</th>
+<tr style="background:var(--bg-subtle); text-align:left;">
+<th style="padding:12px; border:1px solid var(--border-medium);">Invoice Line Item</th>
+<th style="padding:12px; border:1px solid var(--border-medium);">Formula / Rate Applied</th>
+<th style="padding:12px; border:1px solid var(--border-medium);">Amount (₹)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:600;">1. Pure Gold Metal Value</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">10.000 g × ₹7,150 per gram</td>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:600;">₹71,500.00</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:600;">1. Pure Gold Metal Value</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">10.000 g × ₹7,150 per gram</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:600;">₹71,500.00</td>
 </tr>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:600;">2. Making Charges (12%)</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">12% × ₹71,500</td>
-<td style="padding:10px; border:1px solid #cbd5e1; font-weight:600;">₹8,580.00</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:600;">2. Making Charges (12%)</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">12% × ₹71,500</td>
+<td style="padding:10px; border:1px solid var(--border-medium); font-weight:600;">₹8,580.00</td>
 </tr>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1;">3. GST on Gold (3%)</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">3% of ₹71,500 (1.5% CGST + 1.5% SGST)</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">₹2,145.00</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">3. GST on Gold (3%)</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">3% of ₹71,500 (1.5% CGST + 1.5% SGST)</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">₹2,145.00</td>
 </tr>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1;">4. GST on Making Charges (5%)</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">5% of ₹8,580 (2.5% CGST + 2.5% SGST)</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">₹429.00</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">4. GST on Making Charges (5%)</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">5% of ₹8,580 (2.5% CGST + 2.5% SGST)</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">₹429.00</td>
 </tr>
 <tr>
-<td style="padding:10px; border:1px solid #cbd5e1;">5. BIS Hallmarking Charge + GST</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">₹45.00 + 18% GST (₹8.10)</td>
-<td style="padding:10px; border:1px solid #cbd5e1;">₹53.10</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">5. BIS Hallmarking Charge + GST</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">₹45.00 + 18% GST (₹8.10)</td>
+<td style="padding:10px; border:1px solid var(--border-medium);">₹53.10</td>
 </tr>
 <tr style="background:#f0fdf4;">
-<td style="padding:12px; border:1px solid #cbd5e1; font-weight:800; font-size:1.02rem; color:#15803d;">Total Final Invoice Amount</td>
-<td style="padding:12px; border:1px solid #cbd5e1; font-weight:700; color:#15803d;">Sum of Lines 1 through 5</td>
-<td style="padding:12px; border:1px solid #cbd5e1; font-weight:800; font-size:1.05rem; color:#15803d;">₹82,707.10</td>
+<td style="padding:12px; border:1px solid var(--border-medium); font-weight:800; font-size:1.02rem; color:var(--accent);">Total Final Invoice Amount</td>
+<td style="padding:12px; border:1px solid var(--border-medium); font-weight:700; color:var(--accent);">Sum of Lines 1 through 5</td>
+<td style="padding:12px; border:1px solid var(--border-medium); font-weight:800; font-size:1.05rem; color:var(--accent);">₹82,707.10</td>
 </tr>
 </tbody>
 </table>
@@ -587,8 +587,8 @@
 </section>
 <section id="key-takeaways">
 <h2>11. Key Takeaways for Gold Buyers</h2>
-<div style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:5px solid #16a34a; border-radius:8px; padding:1.5rem; margin-bottom:2rem;">
-<ul style="margin:0; padding-left:1.25rem; line-height:1.85; color:#15803d; font-size:0.96rem;">
+<div style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:5px solid var(--accent); border-radius:8px; padding:1.5rem; margin-bottom:2rem;">
+<ul style="margin:0; padding-left:1.25rem; line-height:1.85; color:var(--accent); font-size:0.96rem;">
 <li><strong>Check the 22/24 Formula:</strong> Ensure the 22K rate is calculated as roughly 91.67% of the prevailing 24K benchmark rate. Do the math yourself. Don't take their word for it.</li>
 <li><strong>Insist on 6-Digit HUID:</strong> Every gold ornament must carry the triangular BIS mark, purity grade (for example, 22K916), and a distinct 6-digit HUID code verified on the BIS Care app. Hallmarking is statutory — without applying making charges separately on bullion versus studded ornaments.</li>
 <li><strong>Verify Net Weight:</strong> Ensure the weight of stones, enamel, and lac is deducted from the gross weight so you only pay the gold rate for actual gold. Never pay gold price for stones.</li>
@@ -633,81 +633,78 @@
 <p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">No. During resale or melting of old ornaments, jewellers only compensate you for the net weight of pure gold melted down at current melting rate. Making charges and GST paid at the time of purchase are sunk costs and are not recovered during resale.</p>
 </details>
 </section>
-
-
 <!-- Sidebar -->
-
 </main>
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
-        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h3>Calculators &amp; Hubs</h3>
-          <ul>
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
-            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
-            <li><a href="/sgb-calculator">SGB Calculator</a></li>
-            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
-            <li><a href="/emi-calculator">Home Loan EMI</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/calculators">All Calculators Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Topic Hubs</h3>
-          <ul>
-            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
-            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
-            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
-            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
-            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
-            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
-            <li><a href="/blog">Guides Archive</a></li>
-            <li><a href="/sitemap">HTML Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Policies &amp; Transparency</h3>
-          <ul>
-            <li><a href="/about">About Calculatorship</a></li>
-            <li><a href="/author">Author (Tejas Waghmare)</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/editorial-policy">Editorial Policy</a></li>
-            <li><a href="/corrections">Corrections Policy</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-disclaimer">
-        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
-      </div>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer src="/theme.js?v=5.0"></script>
+<script defer src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
-    <div class="cs-cookie-actions">
-      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
-      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
-    </div>
-  </div>
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 </body>
 </html>

@@ -33,8 +33,8 @@ Calculatorship is an independent financial calculation and educational publishin
 
 ## Knowledge Hubs & Guide Categories
 
-- [All Calculators Hub](https://www.calculatorship.in/calculators): Categorized directory of all 23 free financial calculators.
-- [All Financial Guides & Articles](https://www.calculatorship.in/blog): Searchable editorial archive of 110+ Indian personal finance guides covering taxes, mutual funds, retirement, loans, insurance, and post office schemes.
+- [All Calculators Hub](https://www.calculatorship.in/calculators): Categorized directory of all 24+ free financial calculators.
+- [All Financial Guides & Articles](https://www.calculatorship.in/blog): Searchable editorial archive of 105+ dedicated Indian personal finance guides and 28 calculator tools covering taxes, mutual funds, retirement, loans, insurance, and post office schemes.
 - [HTML Sitemap](https://www.calculatorship.in/sitemap): Complete human-readable index of every calculator and guide.
 - [XML Sitemap](https://www.calculatorship.in/sitemap.xml): Machine-readable sitemap for search engines and AI crawlers.
 
