@@ -3,6 +3,8 @@
 
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
+Allow: /sitemap
 Disallow: /admin/
 Disallow: /admin-cp/
 Disallow: /private/
