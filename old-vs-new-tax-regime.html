@@ -32,139 +32,13 @@
 <meta content="Old vs New Tax Regime Guide ,  Free Tax Analysis on Calculatorship" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://www.calculatorship.in/og-image.webp" name="twitter:image"/>
-<meta content="#F3F7F5" name="theme-color"/>
+<meta content="#FAF9F6" name="theme-color"/>
 <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <noscript></noscript>
-<style id="critical-css">@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url('/fonts/inter.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-:root {
-  --bg-page: #F6F8F6;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #F8FAF9;
-  --text-primary: #0F172A;
-  --text-secondary: #2B3A4E;
-  --text-muted: #526275;
-  --emerald: #009B72;
-  --emerald-dark: #006B47;
-  --emerald-soft: #ECF6F1;
-  --border-soft: #DFE6E2;
-  --border-medium: #C4D0C9;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-}
-*, *::before, *::after { box-sizing: border-box !important; }
-:root, html { scroll-padding-top: 68px; }
-body {
-  margin: 0; padding: 0;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-.sr-only {
-  position: absolute !important; width: 1px !important; height: 1px !important;
-  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
-}
-.site-header {
-  position: sticky; top: 0; z-index: 1000;
-  min-height: 56px; height: clamp(56px, 8vh, 64px);
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
-}
-.header-inner {
-  height: 100%; max-width: 1520px; margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 28px);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.brand img { height: 38px; width: auto; max-width: 220px; display: block; }
-.main-nav { display: flex; align-items: center; gap: 24px; }
-.main-nav a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
-.nav-toggle {
-  display: none; background: none; border: none; cursor: pointer;
-  padding: 8px; min-width: 44px; min-height: 44px;
-  flex-direction: column; justify-content: center; gap: 5px;
-}
-.nav-toggle span.hamburger-bar {
-  display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px;
-}
-.breadcrumb-bar { background: #FFFFFF; border-bottom: 1px solid var(--border-soft); }
-.breadcrumb { max-width: 1520px; margin: 0 auto; padding: 10px clamp(16px, 2vw, 28px); font-size: 0.85rem; }
-.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.breadcrumb a { color: var(--emerald-dark); text-decoration: none; }
-.calc-hero { max-width: 1520px; margin: 24px auto 16px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-hero h1 {
-  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.125rem);
-  line-height: 1.25; margin: 0 0 8px; color: var(--text-primary); font-weight: 800;
-}
-.article-byline {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
-  font-size: 0.875rem; color: var(--text-muted); margin: 0.5rem 0 1rem;
-}
-.educational-disclaimer {
-  background: #fffbeb; border-left: 3px solid #d97706;
-  padding: 10px 14px; margin: 1rem 0; border-radius: 0 8px 8px 0;
-  font-size: 0.875rem; line-height: 1.5; color: #78350f;
-}
-.calc-switcher-wrapper { max-width: 1520px; margin: 0 auto 20px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-switcher-bar {
-  display: flex; align-items: center; gap: 8px; overflow-x: auto;
-  -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
-  padding: 6px 8px; border-radius: 8px; background: var(--bg-card);
-  border: 1px solid var(--border-soft); scrollbar-width: none;
-}
-.calc-switcher-bar::-webkit-scrollbar { display: none; }
-.calc-switcher-bar .calc-tab {
-  flex-shrink: 0; scroll-snap-align: start; white-space: nowrap;
-  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
-  padding: 8px 16px; border-radius: 6px; text-decoration: none;
-  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
-}
-.calc-switcher-bar .calc-tab.active { background: var(--emerald-dark); color: #FFFFFF; }
-.calc-main-container { max-width: 1520px; margin: 0 auto; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-.calc-card, .calc-summary-card {
-  background: var(--bg-card); border: 1px solid var(--border-soft);
-  border-top: 3px solid var(--emerald-dark); border-radius: var(--radius-md);
-  padding: 24px; box-shadow: var(--shadow-sm);
-}
-.calc-field-group { margin-bottom: 20px; }
-.calc-input-box {
-  width: 100%; display: flex; align-items: center; background: #FAFBF9;
-  border: 1.5px solid var(--border-medium); border-radius: 6px; overflow: hidden;
-}
-.calc-inputs input[type="number"], .calc-inputs input[type="text"], .calc-input-box input {
-  width: 100%; font-size: 16px; min-height: 44px; padding: 8px 12px;
-  border: none; outline: none; background: transparent; font-family: var(--font-mono); font-weight: 700;
-}
-input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer; }
-.ad-container, .adsense-slot-wrapper { min-height: 280px; contain: layout; margin: 28px 0; }
-@media (max-width: 900px) {
-  .main-nav { display: none !important; }
-  .nav-toggle { display: flex !important; }
-}
-@media (max-width: 767px) {
-  .calc-grid { display: flex !important; flex-direction: column !important; }
-  .calc-card, .calc-summary-card { width: 100% !important; padding: 20px 16px !important; }
-}</style>
-<link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
 <!-- Article & FAQ Schema -->
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -172,15 +46,14 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
     {
       "@type": "Article",
       "headline": "Old vs New Tax Regime in India (FY 2026-27): Complete Comparison Guide",
-      "description": "Compare Old vs New Tax Regime in India for FY 2026-27 (AY 2027-28). Slab rates, \u20b975,000 standard deduction, Section 87A rebate, deduction breakeven thresholds, and tax savings.",
+      "description": "Compare Old vs New Tax Regime in India for FY 2026-27 (AY 2027-28). Slab rates, ₹75,000 standard deduction, Section 87A rebate, deduction breakeven thresholds, and tax savings.",
       "image": "https://www.calculatorship.in/og-image.webp",
       "datePublished": "2026-02-01T08:00:00+05:30",
       "dateModified": "2026-11-23",
       "author": {
         "@type": "Person",
         "name": "Tejas Waghmare",
-    "url": "https://www.calculatorship.in/author",
-        "url": "https://www.calculatorship.in/about.html"
+        "url": "https://www.calculatorship.in/author"
       },
       "publisher": {
         "@type": "Organization",
@@ -188,57 +61,57 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
         "url": "https://www.calculatorship.in",
         "logo": "https://www.calculatorship.in/logo-light.svg"
       },
-      "mainEntityOfPage": "https://www.calculatorship.in/old-vs-new-tax-regime.html"
+      "mainEntityOfPage": "https://www.calculatorship.in/old-vs-new-tax-regime"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can salaried employees switch between Old and New Tax Regimes every year?",
+          "name": "My HR deducted tax under the New Regime all year. Can I file my July ITR under the Old Regime and get a refund?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Salaried employees and pensioners with no business or professional income have the legal freedom to choose between the Old and New Tax Regimes each financial year directly when filing their Income Tax Return (ITR) under Section 139(1)."
+            "text": "Yes. The regime chosen on your company payroll portal is solely an interim estimate for monthly TDS under Section 192. When filing your ITR-1 or ITR-2 before July 31 on the income tax portal, you can select the Old Regime, enter your 80C, 80D, and HRA proofs, and the Income Tax Department will refund the excess TDS directly to your verified bank account."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the enhanced Standard Deduction in the New Tax Regime for FY 2026-27?",
+          "name": "Suppose someone earns ₹7.6 Lakh annual salary. Will I pay zero tax under the New Regime?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For salaried individuals and pensioners, the Standard Deduction under the New Tax Regime (Section 115BAC) is \u20b975,000. Under the Old Tax Regime, the Standard Deduction remains \u20b950,000."
+            "text": "Salaried employees receive a flat ₹75,000 Standard Deduction, reducing your taxable income from ₹7,60,000 down to ₹6,85,000. Because your net taxable income (under FY 2026-27 rules) is below ₹12,00,000 in the New Regime—or below ₹5,00,000 in the Old Regime—Section 87A provides a full rebate reducing tax liability to zero."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the zero-tax income threshold under the New Tax Regime?",
+          "name": "Can I claim my home loan interest under the New Tax Regime?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For salaried individuals, a gross annual income up to \u20b97,75,000 results in zero income tax due to the \u20b975,000 Standard Deduction combined with the full Section 87A rebate for taxable income up to \u20b97,00,000."
+            "text": "No. For a self-occupied property, home loan interest under Section 24(b) (up to ₹2,00,000) is strictly disallowed under the New Regime. When your home is rented out to a tenant, interest can still be set off against actual rental income, but losses from house property cannot be set off against your salary income."
           }
         },
         {
           "@type": "Question",
-          "name": "Can home loan interest and principal be claimed under the New Tax Regime?",
+          "name": "What happens to my employer NPS contribution if I switch to the New Tax Regime?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Neither home loan interest under Section 24(b) (up to \u20b92,00,000 for self-occupied properties) nor principal repayments under Section 80C can be claimed under the New Tax Regime. They are only deductible under the Old Tax Regime."
+            "text": "Your employer contribution to NPS under Section 80CCD(2) remains fully tax-deductible up to 14% of your Basic + Dearness Allowance (DA) under both Old and New Tax Regimes. Corporate NPS remains one of the very few corporate tax benefits preserved in the New Regime."
           }
         },
         {
           "@type": "Question",
-          "name": "Which deductions are still allowed under the New Tax Regime?",
+          "name": "Assuming they have no home loan and pay ₹15,000 monthly rent. Is Old Regime worth it at ₹12 Lakh salary?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The New Tax Regime permits the \u20b975,000 Standard Deduction for salaried employees, transport allowance for specially-abled individuals, conveyance allowance for official duties, and employer contributions to the National Pension System (NPS) under Section 80CCD(2) up to 14% of Basic + DA."
+            "text": "No. At ₹12 Lakh salary, your breakeven deduction is ₹3,62,500. With ₹1.5 Lakh under 80C, ₹50,000 standard deduction, and roughly ₹1,10,000 eligible HRA, your total deductions reach ₹3,10,000. Choosing the New Regime will save you approximately ₹10,920 in annual tax while freeing you from submitting rent receipts."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the breakeven deduction threshold between Old and New Regimes for \u20b915 Lakh salary?",
+          "name": "If I stop investing in ELSS funds because I moved to the New Regime, where should that money go?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For a gross annual salary of \u20b915,00,000, an employee needs total itemized deductions exceeding approximately \u20b94,25,000 to \u20b94,50,000 (such as 80C + 80D + HRA/Home Loan Interest + Standard Deduction) for the Old Tax Regime to yield lower tax than the New Regime."
+            "text": "Redirect that capital into a direct, low-cost broad-market index fund (such as UTI Nifty 50 Direct Plan) or an active flexi-cap fund (like Parag Parikh Flexi Cap Direct Plan). You eliminate the mandatory 3-year lock-in of ELSS while enjoying full liquidity and an identical long-term equity growth trajectory."
           }
         }
       ]
@@ -256,50 +129,94 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           "@type": "ListItem",
           "position": 2,
           "name": "Blog",
-          "item": "https://www.calculatorship.in/blog.html"
+          "item": "https://www.calculatorship.in/blog"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Old vs New Tax Regime Guide",
-          "item": "https://www.calculatorship.in/old-vs-new-tax-regime.html"
+          "item": "https://www.calculatorship.in/old-vs-new-tax-regime"
         }
       ]
     }
   ]
 }</script>
-<meta name="twitter:title" content="Old vs New Tax Regime India FY 2026-27: Break-Even Tables"><meta name="twitter:description" content="Compare Old vs New Tax Regime in India for FY 2026-27 (AY 2027-28): slab rates, ₹75,000 Standard Deduction, Section 87A rebate, and exact break-even math."></head>
-<body>
+<meta name="twitter:title" content="Old vs New Tax Regime India FY 2026-27: Break-Even Tables"><meta name="twitter:description" content="Compare Old vs New Tax Regime in India for FY 2026-27 (AY 2027-28): slab rates, ₹75,000 Standard Deduction, Section 87A rebate, and exact break-even math."></head><body>
 <div class="reading-progress-bar" id="reading-progress"></div>
 <a class="skip-link" href="#main-content">Skip to article content</a>
 <header class="site-header">
 <div class="header-inner">
 <a aria-label="Calculatorship Homepage" class="brand" href="/">
-<img alt="Calculatorship ,  Free Financial Calculators for Indian Investors" height="38" loading="lazy" src="/logo-light.svg" width="220"/>
+<img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="eager" src="/logo-light.svg" width="196"/>
 </a>
-<nav aria-label="Primary Navigation" class="main-nav">
+<nav aria-label="Primary Navigation" class="main-nav" id="site-menu">
 <div class="nav-dropdown">
-<a class="nav-dropdown-toggle" href="/">Calculators</a>
-<ul class="nav-dropdown-menu" role="menu">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Calculators</button>
+<div class="nav-dropdown-menu nav-mega">
+<div class="nav-dropdown-grid">
+<div>
+<p class="nav-dropdown-group-title">Investing &amp; Gold</p>
+<ul class="nav-dropdown-group-list">
 <li><a href="/">SIP Calculator</a></li>
-<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/step-up">Step-Up SIP</a></li>
+<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/goal">Goal Planner</a></li>
-<li><a href="/ppf-calculator">PPF Calculator</a></li>
-<li><a href="/swp-calculator">SWP Calculator</a></li>
-<li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-<li class="nav-dropdown-divider" role="separator"></li>
-<li><a href="/fd-calculator">FD Calculator</a></li>
-<li><a href="/budget-planner">Budget Planner</a></li>
-<li><a href="/income-tax-calculator">Tax Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/cagr-calculator">CAGR Calculator</a></li>
+<li><a href="/stock-average-calculator-guide-india">Stock Average</a></li>
 </ul>
 </div>
-<a href="/blog">Blog &amp; Guides</a>
+<div>
+<p class="nav-dropdown-group-title">FD &amp; Small Savings</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Bank FD Calculator</a></li>
+<li><a href="/recurring-deposit-rd-calculator-guide-india">RD Calculator</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/epf-calculator">EPF Calculator</a></li>
+<li><a href="/nps-calculator">NPS Calculator</a></li>
+<li><a href="/swp-calculator">SWP Calculator</a></li>
+<li><a href="/compound-interest-calculator">Compound Interest</a></li>
+</ul>
+</div>
+<div>
+<p class="nav-dropdown-group-title">Tax, Salary &amp; Loans</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/in-hand-salary-calculator">In-Hand Salary</a></li>
+<li><a href="/salary-hike-calculator">Salary Hike</a></li>
+<li><a href="/hra-calculator">HRA Exemption</a></li>
+<li><a href="/gratuity-calculator">Gratuity (15/26)</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/budget-planner">50/30/20 Budget</a></li>
+</ul>
+</div>
+</div>
+<div class="nav-dropdown-footer">
+<span>All calculations run privately in your browser</span>
+<a href="/calculators">Browse All Calculators →</a>
+</div>
+</div>
+</div>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Topic Hubs</button>
+<ul class="nav-dropdown-menu" role="menu">
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds</a></li>
+<li><a href="/guides/tax-planning">Income Tax Planning</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; Sovereign Gold Bonds</a></li>
+<li><a href="/guides/loans-and-emi">Home Loans, EMI &amp; CIBIL</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary, CTC &amp; Budgeting</a></li>
+</ul>
+</div>
+<a href="/blog">Guides</a>
+<a href="/calculators">Calculators Hub</a>
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
 <div class="header-actions">
-<button aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span></button>
+<button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
+<button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
 </div>
 </header>
@@ -312,6 +229,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </ol>
 </nav>
 </div>
+<main id="main-content">
 <header class="article-header">
 <div class="article-meta">
 <span class="meta-cat">Tax &amp; Financial Planning</span>
@@ -320,148 +238,44 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </div>
 <h1>Old vs New Tax Regime in India (FY 2026-27): Complete Comparison Guide</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
-  <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-  <span>Published: February 2026</span>
-  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-  <span>Last reviewed: 23 November 2026</span>
-  <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-  <span>Tax Year: FY 2024-25 &amp; FY 2025-26 (Transitioning to Income-tax Act, 2025 in FY 2026-27)</span>
+<span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Published: February 2026</span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Last reviewed: 23 November 2026</span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Tax Year: FY 2024-25 &amp; FY 2025-26 (Transitioning to Income-tax Act, 2025 in FY 2026-27)</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
   Educational tax comparison guide only. For individual tax filing decisions, consult a qualified Chartered Accountant. Read our <a href="/disclaimer" style="color:var(--emerald-dark); text-decoration:underline;">full disclaimer</a>.
 </p>
 <p class="lead" style="font-size:1.15rem; font-weight:500; line-height:1.75; color:var(--text-primary); margin-bottom:1.25rem;">
-  <strong>Direct Answer:</strong> Under the default New Tax Regime (Section 115BAC), individuals earning up to ₹7.75 Lakh (including the ₹75,000 standard deduction) pay zero income tax due to the Section 87A rebate. The Old Tax Regime saves more tax only if your total itemized deductions—combining Section 80C, 80D, HRA exemption, and Section 24(b) home loan interest—exceed the statutory break-even threshold of ₹3.75 Lakh to ₹4.25 Lakh. For gross salaries below ₹15 Lakh with moderate deductions, the New Regime consistently yields higher take-home pay.
+<strong>Direct Answer:</strong> Under the default New Tax Regime (Section 115BAC), resident salaried individuals earning up to ₹12.75 Lakh gross income (after the ₹75,000 standard deduction) pay zero income tax due to the enhanced ₹60,000 Section 87A rebate. For higher salaries, the Old Tax Regime beats the New Regime only if total itemized deductions—combining standard deduction, Section 80C, 80D, HRA, and Section 24(b) home loan interest—exceed roughly ₹5.94 Lakh at ₹15 Lakh salary or ₹8.50 Lakh at ₹25 Lakh+ salary.
 </p>
-<p>A mandatory 4% Health and Education Cess applies to the computed tax under both regimes. Note the critical difference: in the Old Regime, the punishing 30% tax bracket triggers at just ₹10,00,001. Under the New Regime, you remain in the 15% and 20% brackets until your taxable income crosses ₹15,00,000.</p>
-<h2>The Breakeven Deduction Table Across Real Salary Tiers</h2>
-<p>To evaluate whether the Old Regime makes sense, you must calculate your exact "breakeven deduction." This is the total value of itemized deductions, including standard deduction, 80C, 80D, HRA, and Section 24(b) home loan interest, required under the Old Regime just to equal the tax liability of the New Regime. (Note: With the new statutory framework taking effect from 1 April 2026, see our guide on the <a href="/income-tax-act-2025-old-vs-new-section-mapping-guide">Income-tax Act 2025 section mapping and new section numbers</a> for how familiar sections like 80C, 87A, and 115BAC translate):</p>
-<div class="table-wrapper" style="margin: 1.5rem 0;">
-<div class="table-wrapper">
-<table class="comparison-table" style="width: 100%; border-collapse: collapse; text-align: left;">
-<thead>
-<tr style="background: #f1f5f9;">
-<th style="padding: 12px; border: 1px solid #cbd5e1;">Gross Annual Salary (₹)</th>
-<th style="padding: 12px; border: 1px solid #cbd5e1;">New Regime Net Tax (₹)</th>
-<th style="padding: 12px; border: 1px solid #cbd5e1;">Breakeven Deductions Needed (₹)</th>
-<th style="padding: 12px; border: 1px solid #cbd5e1;">Mathematical Outcome</th>
-</tr>
-</thead>
+</header>
+<article class="article-main" id="main-article" style="max-width:960px;">
+<p>A mandatory 4% Health and Education Cess applies to the computed tax under both regimes. Note the critical difference: in the Old Regime, the punishing 30% tax bracket triggers at just ₹10,00,001. Under the New Regime, the 30% bracket starts only above ₹24,00,000 taxable income (with 5%, 10%, 15%, 20%, and 25% intermediate steps).</p>
+<h2>The FY 2026-27 Breakeven Deduction Table Across Salary Tiers</h2>
+<p>Your "breakeven deduction" is the total Old Regime deductions (including ₹50,000 standard deduction, Section 80C, 80D, HRA, and home loan interest) required to equal the tax owed under the New Regime. See also our <a href="/income-tax-act-2025-old-vs-new-section-mapping-guide">Income-tax Act 2025 section mapping guide</a>:</p>
+<div class="table-wrapper" style="margin:1.5rem 0;">
+<table class="comparison-table" style="width:100%; border-collapse:collapse; text-align:left;">
+<thead><tr style="background:#f1f5f9;"><th style="padding:12px; border:1px solid #cbd5e1;">Gross Annual Salary (₹)</th><th style="padding:12px; border:1px solid #cbd5e1;">New Regime Net Tax (FY 2026-27)</th><th style="padding:12px; border:1px solid #cbd5e1;">Old Regime Breakeven Deductions (Incl. ₹50k Std)</th><th style="padding:12px; border:1px solid #cbd5e1;">Mathematical Outcome</th></tr></thead>
 <tbody>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹7,75,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;"><strong style="color: #059669;">₹0</strong></td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹2,25,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;"><strong style="color: #059669;">New Regime wins automatically</strong></td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹10,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹54,600</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹3,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">New Regime wins for 90% of earners</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹12,50,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹91,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹3,75,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">New Regime wins unless heavy HRA + 80C</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹15,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹1,32,600</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹4,25,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Requires Home Loan + 80C to justify Old</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹20,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹2,88,600</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹4,75,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Old Regime viable only with high rent &amp; loan</td>
-</tr>
-<tr style="background: #f8fafc;">
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹25,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹4,08,200</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹5,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">New Regime saves ₹36,400 even vs ₹4.5L claims</td>
-</tr>
+<tr><td style="padding:12px; border:1px solid #cbd5e1;">₹10,00,000</td><td style="padding:12px; border:1px solid #cbd5e1;"><strong>₹0</strong></td><td style="padding:12px; border:1px solid #cbd5e1;">₹5,00,000</td><td style="padding:12px; border:1px solid #cbd5e1;">New Regime saves ₹1,06,600 if only basic std ded</td></tr>
+<tr><td style="padding:12px; border:1px solid #cbd5e1;">₹12,75,000</td><td style="padding:12px; border:1px solid #cbd5e1;"><strong>₹0</strong></td><td style="padding:12px; border:1px solid #cbd5e1;">₹7,75,000</td><td style="padding:12px; border:1px solid #cbd5e1;">New Regime zero tax via Section 87A rebate</td></tr>
+<tr><td style="padding:12px; border:1px solid #cbd5e1;">₹15,00,000</td><td style="padding:12px; border:1px solid #cbd5e1;">₹97,500</td><td style="padding:12px; border:1px solid #cbd5e1;">₹5,93,750</td><td style="padding:12px; border:1px solid #cbd5e1;">Requires ~₹5.94L total deductions to beat New</td></tr>
+<tr><td style="padding:12px; border:1px solid #cbd5e1;">₹20,00,000</td><td style="padding:12px; border:1px solid #cbd5e1;">₹1,92,400</td><td style="padding:12px; border:1px solid #cbd5e1;">₹7,58,333</td><td style="padding:12px; border:1px solid #cbd5e1;">Old Regime viable only with steep HRA + Sec 24(b) loan</td></tr>
+<tr style="background:#f8fafc;"><td style="padding:12px; border:1px solid #cbd5e1;">₹25,00,000+</td><td style="padding:12px; border:1px solid #cbd5e1;">₹3,19,800 (at ₹25L)</td><td style="padding:12px; border:1px solid #cbd5e1;"><strong>₹8,50,000 ceiling</strong></td><td style="padding:12px; border:1px solid #cbd5e1;">Fixed ₹8.50L breakeven above ₹25L salary</td></tr>
 </tbody>
 </table>
-</div>
 </div>
 <h2>Worked Numerical Example: ₹15 Lakh CTC Under Both Regimes</h2>
-<p>Consider a software engineer in Pune earning ₹15,00,000 gross salary. She pays ₹25,000 monthly rent (claiming ₹1,80,000 HRA exemption), exhausts her ₹1,50,000 Section 80C via EPF and PPF, and pays ₹25,000 for family health insurance under Section 80D. Total deductions under Old Regime: ₹4,05,000 (including ₹50,000 standard deduction).</p>
-<div class="table-wrapper" style="margin: 1.5rem 0;">
-<div class="table-wrapper">
-<table class="comparison-table" style="width: 100%; border-collapse: collapse; text-align: left;">
-<thead>
-<tr style="background: #f1f5f9;">
-<th style="padding: 12px; border: 1px solid #cbd5e1;">Tax Component</th>
-<th style="padding: 12px; border: 1px solid #cbd5e1;">Old Tax Regime</th>
-<th style="padding: 12px; border: 1px solid #cbd5e1;">New Tax Regime</th>
-<th style="padding: 12px; border: 1px solid #cbd5e1;">Difference / Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Gross Annual Salary</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹15,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹15,00,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Identical earnings</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Standard Deduction</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">- ₹50,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">- ₹75,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">New Regime gives ₹25,000 extra deduction</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Section 80C Deductions</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">- ₹1,50,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹0</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Forfeited in New Regime</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Section 80D Health Insurance</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">- ₹25,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹0</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Forfeited in New Regime</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">HRA Exemption (Section 10(13A))</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">- ₹1,80,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹0</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Forfeited in New Regime</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Net Taxable Income</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹10,95,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹14,25,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Taxable base is ₹3.3L lower in Old</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Base Income Tax</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹1,41,000</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">₹1,27,500</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">New Regime slabs charge lower total rates</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">Health &amp; Education Cess (4%)</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">+ ₹5,640</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">+ ₹5,100</td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;">4% cess on tax</td>
-</tr>
-<tr class="highlight-row" style="background: #f0fdf4;">
-<td style="padding: 12px; border: 1px solid #cbd5e1;"><strong>Total Tax Payable</strong></td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;"><strong>₹1,46,640</strong></td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;"><strong style="color: #059669;">₹1,32,600</strong></td>
-<td style="padding: 12px; border: 1px solid #cbd5e1;"><strong style="color: #059669;">New Regime saves ₹14,040 in cash</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>Even after collecting rent receipts, landlord declarations, and investing ₹1.5 Lakh into 80C instruments, she still pays ₹14,040 more in the Old Regime. Why? Because her deductions totaled ₹4,05,000, falling short of the required ₹4,25,000 breakeven line.</p>
+<p><em>Illustrative example, not a real person:</em> Suppose an engineer earns ₹15,00,000 gross salary and under the Old Regime claims ₹50,000 standard deduction + ₹1,80,000 HRA exemption + ₹1,50,000 Section 80C + ₹25,000 Section 80D = <strong>₹4,05,000 total deductions</strong> (leaving ₹10,95,000 taxable):</p>
+<ul>
+<li><strong>Old Tax Regime Total Payable:</strong> ₹1,41,000 base + ₹5,640 cess = <strong>₹1,46,640</strong></li>
+<li><strong>New Tax Regime Total Payable (₹14,25,000 taxable):</strong> ₹20,000 (4–8L @ 5%) + ₹40,000 (8–12L @ 10%) + ₹33,750 (12–14.25L @ 15%) = ₹93,750 base + ₹3,750 cess = <strong>₹97,500</strong></li>
+<li><strong>Result:</strong> The New Tax Regime saves <strong>₹49,140 in cash tax</strong> because total deductions (₹4,05,000) fell below the ₹5,93,750 breakeven mark.</li>
+</ul>
 <h2>Three Specific Situations Where the Old Regime Still Wins</h2>
 <p>The Old Regime is not obsolete for everyone. Old Regime remains a specialized tool that wins in three specific household structures:</p>
 <ol style="line-height: 1.8;">
@@ -476,8 +290,8 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <p>A widespread misconception is that selecting a regime on your employer's HR payroll portal in April binds you for the year. Such an assumption is legally incorrect under Central Board of Direct Taxes (CBDT) circulars:</p>
 <p><strong>For Salaried Employees (ITR-1 and ITR-2):</strong> You can select the New Regime with your employer for monthly TDS deductions, and then freely switch to the Old Regime when filing your return under Section 139(1) in July if your actual deductions turn out higher. You can switch back and forth every financial year without penalty.</p>
 <p><strong>For Freelancers and Business Owners (ITR-3 and ITR-4):</strong> The rule is drastically stricter under Section 115BAC(6). Non-salaried professionals with business or professional income who opt out of the New Regime to the Old Regime are granted only one lifetime opportunity to switch back to the New Regime. Once they re-enter the New Regime, they can never return to the Old Regime again unless their business income ceases permanently.</p>
-<!-- Interactive Calculator CTA Card -->
-<div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #bfdbfe; border-radius: 12px; padding: 2rem; margin: 3rem 0; text-align: center;">
+ Interactive Calculator CTA Card 
+<div style="background:var(--bg-subtle); border:1px solid var(--border-soft); border-left:4px solid var(--accent); border: 1px solid #bfdbfe; border-radius: 12px; padding: 2rem; margin: 3rem 0; text-align: center;">
 <h3 style="font-size: 1.35rem; font-weight: 800; color: #1e3a8a; margin-top: 0; margin-bottom: 0.5rem;">Calculate Your Exact Tax Under Both Regimes</h3>
 <p style="font-size: 0.98rem; color: #1e40af; max-width: 600px; margin: 0 auto 1.5rem;">Plug your actual salary, rent, and investments into our free calculator to see your exact rupee breakeven for FY 2026-27.</p>
 <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
@@ -492,7 +306,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </details>
 <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
 <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Suppose someone earns ₹7.6 Lakh annual salary. Will I pay zero tax under the New Regime?</summary>
-<p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Yes, exactly ₹0. Salaried employees receive a flat ₹75,000 Standard Deduction, reducing your taxable income from ₹7,60,000 down to ₹6,85,000. Because your net taxable income is below ₹7,00,000, Section 87A provides a full rebate that reduces your computed tax liability to zero.</p>
+<p style="margin-top:10px; font-size:0.95rem; line-height:1.7; color:var(--text-secondary);">Salaried employees receive a flat ₹75,000 Standard Deduction, reducing your taxable income from ₹7,60,000 down to ₹6,85,000. Because your net taxable income (under FY 2026-27 rules) is below ₹12,00,000 in the New Regime—or below ₹5,00,000 in the Old Regime—Section 87A provides a full rebate reducing tax liability to zero.</p>
 </details>
 <details class="faq-item" style="background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:12px;">
 <summary style="font-weight:700; cursor:pointer; color:var(--text-primary); font-size:1.02rem;">Can I claim my home loan interest under the New Tax Regime?</summary>
@@ -513,7 +327,6 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <h2>Actionable Next Step: How to Check Your Number Today</h2>
 <p>Pull out your Form 16 or December payslip today. Sum up your actual non-negotiable deductions: EPF contribution, eligible rent paid minus 10% of basic, and home loan interest certificate from your bank. If the total is less than ₹3,75,000 (for salaries up to ₹12L) or less than ₹4,25,000 (for salaries around ₹15L), log in to your employer payroll portal and switch your declaration to the New Tax Regime. Take the monthly cash savings and start a disciplined SIP in an equity index fund instead of buying insurance policies you do not need.</p>
 <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1.5rem;">These figures and thresholds reflect statutory tax provisions under the Income Tax Act for FY 2026-27 (AY 2027-28); your specific tax liability depends on your exact salary structure and exemptions, which a qualified Chartered Accountant can evaluate for your scenario.</p>
-</section>
 <section class="article-sources" style="margin:2rem 0; padding:20px 24px; background:var(--bg-elevated); border:1px solid var(--border-soft); border-radius:var(--radius-lg); border-left:4px solid var(--color-primary);">
 <h2 style="font-size:1.1rem; font-weight:700; color:var(--text-primary); margin:0 0 16px; display:flex; align-items:center; gap:8px;">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" style="flex-shrink:0; color:var(--color-primary);" viewbox="0 0 24 24" width="18"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
@@ -550,45 +363,85 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <div class="author-bio-header">
 <div class="author-avatar">T</div>
 <div>
-<h3 class="author-name">Tejas</h3>
+<h3 class="author-name">Tejas Waghmare</h3>
 <p class="author-title">Founder &amp; Creator, Calculatorship</p>
 </div>
 </div>
-<p class="author-desc">Tejas is the founder of Calculatorship, focusing on creating accessible calculators and educational content for Indian investors. Content on this platform may be drafted with AI assistance and is developed using publicly available information and sources relevant to each topic.</p>
+<p class="author-desc">Tejas is the founder of Calculatorship, focusing on creating accessible calculators and educational content for Indian investors.</p>
 <p class="author-disclaimer" style="font-size:0.82rem; color:var(--text-muted); margin-top:8px; line-height:1.5;"><em>General educational information only. Not a SEBI-registered investment advisor, Chartered Accountant, or financial professional. Information can change when laws, tax codes, or official guidance are updated. Consult a qualified professional before making financial decisions.</em></p>
 </div>
-
-
+</article>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-bottom">
-        <div class="footer-disclaimer">
-          <strong>Educational Resource Notice:</strong> Calculatorship is an independent educational site run by a student. It is not registered with SEBI, AMFI, or RBI. Content and calculation tools are for educational awareness only and never constitute investment, tax, or legal advice. Mutual fund investments are subject to market risks. Real returns and tax rules vary. Check official notices and consult a qualified adviser before acting.
-        </div>
-        <div class="footer-copy">
-          &copy; 2026 Calculatorship. All rights reserved. | <a href="/about">About</a> | <a href="/author">Author</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/sitemap">Sitemap</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-<button aria-label="Back to top" class="back-to-top" id="back-to-top">
-<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
-</button>
-<script defer src="theme.js?v=4.4"></script>
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-  <!-- Third-party advertising integration: commented out -->
-  <!-- <script defer src="advertising/config.js"></script> -->
-  <!-- <script defer src="advertising/register.js"></script> -->
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-<div id="cs-cookie-banner" class="cs-cookie-sheet" role="region" aria-label="Cookie Consent">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">
-      Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.
-    </p>
-    <div class="cs-cookie-actions">
-      <button type="button" id="cs-decline-cookies" class="cs-cookie-btn cs-cookie-decline">Decline</button>
-      <button type="button" id="cs-accept-cookies" class="cs-cookie-btn cs-cookie-accept">Accept</button>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+<script defer="" src="/theme.js?v=5.0"></script>
+<div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 </body>
 </html>

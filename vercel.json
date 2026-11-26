@@ -83,684 +83,1474 @@
   ],
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
       "source": "/5-common-sip-mistakes-to-avoid.html",
       "destination": "/sip-mistakes-to-avoid",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/5-common-sip-mistakes-to-avoid",
       "destination": "/sip-mistakes-to-avoid",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/Ctc-vs-in-hand-salary-explained.html",
+      "destination": "/ctc-vs-in-hand-salary-explained",
+      "statusCode": 301
+    },
+    {
+      "source": "/Ctc-vs-in-hand-salary-explained",
+      "destination": "/ctc-vs-in-hand-salary-explained",
+      "statusCode": 301
     },
     {
       "source": "/active-vs-passive-mutual-funds.html",
       "destination": "/index-funds-vs-active-funds",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/active-vs-passive-mutual-funds",
       "destination": "/index-funds-vs-active-funds",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/best-sip-amount-calculator-guide.html",
       "destination": "/how-to-use-sip-calculator-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/best-sip-amount-calculator-guide",
       "destination": "/how-to-use-sip-calculator-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/best-sip-date-mutual-fund-india.html",
       "destination": "/best-date-for-sip-in-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/best-sip-date-mutual-fund-india",
       "destination": "/best-date-for-sip-in-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/budget-2026-ltcg-stcg-tax-sip-impact.html",
       "destination": "/capital-gains-tax-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/budget-2026-ltcg-stcg-tax-sip-impact",
       "destination": "/capital-gains-tax-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/capital-gains-tax-india-guide.html",
       "destination": "/capital-gains-tax-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/capital-gains-tax-india-guide",
       "destination": "/capital-gains-tax-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/car-loan-emi-calculator-guide-india.html",
       "destination": "/emi-calculator",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/car-loan-emi-calculator-guide-india",
       "destination": "/emi-calculator",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/cibil-credit-score-improvement-guide.html",
       "destination": "/credit-score-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/cibil-credit-score-improvement-guide",
       "destination": "/credit-score-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/elss-funds-tax-saving-guide.html",
       "destination": "/elss-tax-saving",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/elss-funds-tax-saving-guide",
       "destination": "/elss-tax-saving",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/elss-tax-saving-mutual-funds.html",
       "destination": "/elss-tax-saving",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/elss-tax-saving-mutual-funds",
       "destination": "/elss-tax-saving",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/emergency-fund-guide.html",
       "destination": "/emergency-fund-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/emergency-fund-guide",
       "destination": "/emergency-fund-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/emi-vs-sip-extra-money-india.html",
       "destination": "/home-loan-prepayment-vs-sip-strategy",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/emi-vs-sip-extra-money-india",
       "destination": "/home-loan-prepayment-vs-sip-strategy",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/epf-vs-ppf-vs-nps-retirement-account-india.html",
       "destination": "/ppf-vs-elss-vs-nps-india-2026",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/epf-vs-ppf-vs-nps-retirement-account-india",
       "destination": "/ppf-vs-elss-vs-nps-india-2026",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/epf-vs-ppf-vs-vpf.html",
       "destination": "/ppf-rules-benefits-wealth-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/epf-vs-ppf-vs-vpf",
       "destination": "/ppf-rules-benefits-wealth-guide",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/fd-vs-debt-mutual-funds.html",
+      "destination": "/fd-vs-mutual-funds-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/fd-vs-debt-mutual-funds",
+      "destination": "/fd-vs-mutual-funds-india",
+      "statusCode": 301
     },
     {
       "source": "/fd-vs-debt-mutual-funds-india-2026.html",
-      "destination": "/fd-vs-debt-mutual-funds",
-      "permanent": true
+      "destination": "/fd-vs-mutual-funds-india",
+      "statusCode": 301
     },
     {
       "source": "/fd-vs-debt-mutual-funds-india-2026",
-      "destination": "/fd-vs-debt-mutual-funds",
-      "permanent": true
-    },
-    {
-      "source": "/fd-vs-mutual-funds-india.html",
-      "destination": "/fd-vs-debt-mutual-funds",
-      "permanent": true
-    },
-    {
-      "source": "/fd-vs-mutual-funds-india",
-      "destination": "/fd-vs-debt-mutual-funds",
-      "permanent": true
+      "destination": "/fd-vs-mutual-funds-india",
+      "statusCode": 301
     },
     {
       "source": "/fire-retire-at-50-sip-calculation-india.html",
       "destination": "/fire-movement-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/fire-retire-at-50-sip-calculation-india",
       "destination": "/fire-movement-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/form-26as-vs-ais-vs-tis.html",
       "destination": "/form-26as-vs-ais-vs-tis-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/form-26as-vs-ais-vs-tis",
       "destination": "/form-26as-vs-ais-vs-tis-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/home-loan-emi-explained-india.html",
       "destination": "/emi-calculator",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/home-loan-emi-explained-india",
       "destination": "/emi-calculator",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/home-loan-prepayment-vs-sip.html",
       "destination": "/home-loan-prepayment-vs-sip-strategy",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/home-loan-prepayment-vs-sip",
       "destination": "/home-loan-prepayment-vs-sip-strategy",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-build-1-crore-corpus-30000-salary-india.html",
       "destination": "/50000-salary-how-much-save-invest-spend",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-build-1-crore-corpus-30000-salary-india",
       "destination": "/50000-salary-how-much-save-invest-spend",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-file-itr-1-sahaj-online.html",
       "destination": "/how-to-file-itr-1-online-salaried-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-file-itr-1-sahaj-online",
       "destination": "/how-to-file-itr-1-online-salaried-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-invest-your-first-1000-in-india-beginners-complete-guide.html",
       "destination": "/got-first-salary-investing-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-invest-your-first-1000-in-india-beginners-complete-guide",
       "destination": "/got-first-salary-investing-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-pick-your-first-mutual-fund-india.html",
       "destination": "/mutual-fund-categories-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-pick-your-first-mutual-fund-india",
       "destination": "/mutual-fund-categories-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-read-a-mutual-fund-factsheet.html",
       "destination": "/how-to-read-mutual-fund-factsheet",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-read-a-mutual-fund-factsheet",
       "destination": "/how-to-read-mutual-fund-factsheet",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-read-your-salary-slip-in-india-every-component-explained-2026.html",
       "destination": "/ctc-vs-in-hand-salary-explained",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-read-your-salary-slip-in-india-every-component-explained-2026",
       "destination": "/ctc-vs-in-hand-salary-explained",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-save-tax-in-india.html",
       "destination": "/80c-deductions-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-save-tax-in-india",
       "destination": "/80c-deductions-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
-      "source": "/how-to-start-your-first-sip-step-by-step.html",
-      "destination": "/how-to-start-sip",
-      "permanent": true
+      "source": "/how-to-start-sip.html",
+      "destination": "/how-to-start-your-first-sip-step-by-step",
+      "statusCode": 301
     },
     {
-      "source": "/how-to-start-your-first-sip-step-by-step",
-      "destination": "/how-to-start-sip",
-      "permanent": true
+      "source": "/how-to-start-sip",
+      "destination": "/how-to-start-your-first-sip-step-by-step",
+      "statusCode": 301
     },
     {
       "source": "/how-to-use-sip-calculator-guide.html",
       "destination": "/how-to-use-sip-calculator-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/how-to-use-sip-calculator-guide",
       "destination": "/how-to-use-sip-calculator-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/income-tax-slabs-fy-2026-27.html",
       "destination": "/income-tax-slabs-india-2026",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/income-tax-slabs-fy-2026-27",
       "destination": "/income-tax-slabs-india-2026",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/inflation-and-your-savings.html",
       "destination": "/inflation-impact-on-savings-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/inflation-and-your-savings",
       "destination": "/inflation-impact-on-savings-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/liquid-funds-vs-savings-account-emergency-fund.html",
       "destination": "/emergency-fund-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/liquid-funds-vs-savings-account-emergency-fund",
       "destination": "/emergency-fund-guide-india",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/mutual-fund-categories-india.html",
+      "destination": "/mutual-fund-categories-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/mutual-fund-categories-india",
+      "destination": "/mutual-fund-categories-guide",
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-exit-strategy-india.html",
       "destination": "/how-to-redeem-mutual-funds-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-exit-strategy-india",
       "destination": "/how-to-redeem-mutual-funds-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-nav-explained-india.html",
       "destination": "/what-is-nav-in-mutual-funds",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-nav-explained-india",
       "destination": "/what-is-nav-in-mutual-funds",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-portfolio-guide.html",
-      "destination": "/mutual-fund-categories-india",
-      "permanent": true
+      "destination": "/mutual-fund-categories-guide",
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-portfolio-guide",
-      "destination": "/mutual-fund-categories-india",
-      "permanent": true
+      "destination": "/mutual-fund-categories-guide",
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-taxation-india.html",
       "destination": "/mutual-fund-taxation-india-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-taxation-india",
       "destination": "/mutual-fund-taxation-india-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-types-beginner-guide.html",
       "destination": "/mutual-fund-categories-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/mutual-fund-types-beginner-guide",
       "destination": "/mutual-fund-categories-guide",
-      "permanent": true
-    },
-    {
-      "source": "/nifty-50-index-fund-guide-india.html",
-      "destination": "/index-funds-vs-nifty50-etf-india",
-      "permanent": true
-    },
-    {
-      "source": "/nifty-50-index-fund-guide-india",
-      "destination": "/index-funds-vs-nifty50-etf-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/nps-guide.html",
       "destination": "/what-is-nps-national-pension-system-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/nps-guide",
       "destination": "/what-is-nps-national-pension-system-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/old-vs-new-tax-regime-comparison.html",
       "destination": "/old-vs-new-tax-regime",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/old-vs-new-tax-regime-comparison",
       "destination": "/old-vs-new-tax-regime",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/presumptive-taxation-44ada-india.html",
       "destination": "/freelancer-tax-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/presumptive-taxation-44ada-india",
       "destination": "/freelancer-tax-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/rd-calculator.html",
       "destination": "/recurring-deposit-rd-calculator-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/rd-calculator",
       "destination": "/recurring-deposit-rd-calculator-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/retirement-planning-guide.html",
       "destination": "/retirement-planning-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/retirement-planning-guide",
       "destination": "/retirement-planning-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/rupee-cost-averaging-explained.html",
       "destination": "/rupee-cost-averaging",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/rupee-cost-averaging-explained",
       "destination": "/rupee-cost-averaging",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/salary-hike-investment-strategy-india.html",
       "destination": "/50000-salary-how-much-save-invest-spend",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/salary-hike-investment-strategy-india",
       "destination": "/50000-salary-how-much-save-invest-spend",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/scss-vs-fd.html",
+      "destination": "/scss-vs-fixed-deposit",
+      "statusCode": 301
+    },
+    {
+      "source": "/scss-vs-fd",
+      "destination": "/scss-vs-fixed-deposit",
+      "statusCode": 301
     },
     {
       "source": "/section-80d-health-insurance-deduction-guide.html",
       "destination": "/health-insurance-80d-tax-deduction-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/section-80d-health-insurance-deduction-guide",
       "destination": "/health-insurance-80d-tax-deduction-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/senior-citizen-fd-rates.html",
       "destination": "/scss-vs-fixed-deposit",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/senior-citizen-fd-rates",
       "destination": "/scss-vs-fixed-deposit",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/senior-citizen-savings-scheme-scss-guide.html",
       "destination": "/scss-vs-fixed-deposit",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/senior-citizen-savings-scheme-scss-guide",
       "destination": "/scss-vs-fixed-deposit",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sip-during-market-crash.html",
       "destination": "/rupee-cost-averaging",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sip-during-market-crash",
       "destination": "/rupee-cost-averaging",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sip-goal-planning-guide.html",
-      "destination": "/how-to-start-sip",
-      "permanent": true
+      "destination": "/how-to-start-your-first-sip-step-by-step",
+      "statusCode": 301
     },
     {
       "source": "/sip-goal-planning-guide",
-      "destination": "/how-to-start-sip",
-      "permanent": true
+      "destination": "/how-to-start-your-first-sip-step-by-step",
+      "statusCode": 301
     },
     {
       "source": "/sip-pause-vs-stop-vs-continue.html",
       "destination": "/sip-pause-vs-stop-mutual-fund",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sip-pause-vs-stop-vs-continue",
       "destination": "/sip-pause-vs-stop-mutual-fund",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sip-vs-rd-which-is-better-for-salaried-indians-2026-math-tax-comparison.html",
       "destination": "/recurring-deposit-rd-calculator-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sip-vs-rd-which-is-better-for-salaried-indians-2026-math-tax-comparison",
       "destination": "/recurring-deposit-rd-calculator-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/sovereign-gold-bond-guide.html",
-      "destination": "/sovereign-gold-bond-guide-india",
-      "permanent": true
+      "destination": "/sovereign-gold-bond-sgb-guide-india",
+      "statusCode": 301
     },
     {
       "source": "/sovereign-gold-bond-guide",
-      "destination": "/sovereign-gold-bond-guide-india",
-      "permanent": true
+      "destination": "/sovereign-gold-bond-sgb-guide-india",
+      "statusCode": 301
     },
     {
-      "source": "/sovereign-gold-bond-sgb-guide-india.html",
-      "destination": "/sovereign-gold-bond-guide-india",
-      "permanent": true
+      "source": "/sovereign-gold-bond-guide-india.html",
+      "destination": "/sovereign-gold-bond-sgb-guide-india",
+      "statusCode": 301
     },
     {
-      "source": "/sovereign-gold-bond-sgb-guide-india",
-      "destination": "/sovereign-gold-bond-guide-india",
-      "permanent": true
+      "source": "/sovereign-gold-bond-guide-india",
+      "destination": "/sovereign-gold-bond-sgb-guide-india",
+      "statusCode": 301
     },
     {
       "source": "/swp-for-retirement-income-guide.html",
       "destination": "/swp-systematic-withdrawal-plan-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/swp-for-retirement-income-guide",
       "destination": "/swp-systematic-withdrawal-plan-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/taxation-on-mutual-funds.html",
       "destination": "/mutual-fund-taxation-india-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/taxation-on-mutual-funds",
       "destination": "/mutual-fund-taxation-india-complete-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/term-insurance-india-guide.html",
       "destination": "/term-insurance-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/term-insurance-india-guide",
       "destination": "/term-insurance-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/term-insurance-vs-endowment.html",
       "destination": "/term-insurance-vs-endowment-plans",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/term-insurance-vs-endowment",
       "destination": "/term-insurance-vs-endowment-plans",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/the-power-of-compounding.html",
       "destination": "/compound-interest-calculator",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/the-power-of-compounding",
       "destination": "/compound-interest-calculator",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/understanding-expense-ratio.html",
       "destination": "/direct-vs-regular-mutual-funds",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/understanding-expense-ratio",
       "destination": "/direct-vs-regular-mutual-funds",
-      "permanent": true
-    },
-    {
-      "source": "/what-happens-if-you-miss-sip-payment.html",
-      "destination": "/sip-pause-vs-stop-mutual-fund",
-      "permanent": true
-    },
-    {
-      "source": "/what-happens-if-you-miss-sip-payment",
-      "destination": "/sip-pause-vs-stop-mutual-fund",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-a-step-up-sip.html",
       "destination": "/step-up-sip-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-a-step-up-sip",
       "destination": "/step-up-sip-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-cagr-mutual-fund-returns.html",
       "destination": "/cagr-vs-xirr-vs-absolute-return-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-cagr-mutual-fund-returns",
       "destination": "/cagr-vs-xirr-vs-absolute-return-guide-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-flexi-cap-fund-india-beginners.html",
       "destination": "/small-cap-mid-cap-large-cap-funds-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-flexi-cap-fund-india-beginners",
       "destination": "/small-cap-mid-cap-large-cap-funds-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-inflation-and-how-it-affects-you.html",
       "destination": "/inflation-impact-on-savings-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-inflation-and-how-it-affects-you",
       "destination": "/inflation-impact-on-savings-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-nsc-guide.html",
       "destination": "/national-savings-certificate-nsc-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-nsc-guide",
       "destination": "/national-savings-certificate-nsc-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-swp-systematic-withdrawal-plan.html",
       "destination": "/swp-systematic-withdrawal-plan-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/what-is-swp-systematic-withdrawal-plan",
       "destination": "/swp-systematic-withdrawal-plan-guide",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/zero-based-budgeting.html",
       "destination": "/50-30-20-rule-india",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/zero-based-budgeting",
       "destination": "/50-30-20-rule-india",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/50-30-20-rule-india.html",
+      "destination": "/50-30-20-rule-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/50000-salary-how-much-save-invest-spend.html",
+      "destination": "/50000-salary-how-much-save-invest-spend",
+      "statusCode": 301
+    },
+    {
+      "source": "/80c-deductions-guide.html",
+      "destination": "/80c-deductions-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/80tta-vs-80ttb-interest-exemption-guide.html",
+      "destination": "/80tta-vs-80ttb-interest-exemption-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/8th-pay-commission-salary-calculator-fitment-factor.html",
+      "destination": "/8th-pay-commission-salary-calculator-fitment-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/advance-tax-india-guide.html",
+      "destination": "/advance-tax-india-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/arbitrage-funds-india-complete-guide.html",
+      "destination": "/arbitrage-funds-india-complete-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/atal-pension-yojana-apy-guide.html",
+      "destination": "/atal-pension-yojana-apy-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/author.html",
+      "destination": "/author",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-date-for-sip-in-india.html",
+      "destination": "/best-date-for-sip-in-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/budget-planner.html",
+      "destination": "/budget-planner",
+      "statusCode": 301
+    },
+    {
+      "source": "/cagr-calculator.html",
+      "destination": "/cagr-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/cagr-vs-xirr-vs-absolute-return-guide-india.html",
+      "destination": "/cagr-vs-xirr-vs-absolute-return-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/calculators.html",
+      "destination": "/calculators",
+      "statusCode": 301
+    },
+    {
+      "source": "/capital-gains-tax-india.html",
+      "destination": "/capital-gains-tax-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/child-education-planning.html",
+      "destination": "/child-education-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/compound-interest-calculator.html",
+      "destination": "/compound-interest-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/cookies.html",
+      "destination": "/cookies",
+      "statusCode": 301
+    },
+    {
+      "source": "/corrections.html",
+      "destination": "/corrections",
+      "statusCode": 301
+    },
+    {
+      "source": "/credit-score-guide-india.html",
+      "destination": "/credit-score-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/crypto-vda-tax-india.html",
+      "destination": "/crypto-vda-tax-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/ctc-vs-in-hand-salary-explained.html",
+      "destination": "/ctc-vs-in-hand-salary-explained",
+      "statusCode": 301
+    },
+    {
+      "source": "/debt-free-strategy-india.html",
+      "destination": "/debt-free-strategy-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/direct-vs-regular-mutual-funds.html",
+      "destination": "/direct-vs-regular-mutual-funds",
+      "statusCode": 301
+    },
+    {
+      "source": "/disclaimer.html",
+      "destination": "/disclaimer",
+      "statusCode": 301
+    },
+    {
+      "source": "/dividend-income-tax-india-guide.html",
+      "destination": "/dividend-income-tax-india-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/editorial-policy.html",
+      "destination": "/editorial-policy",
+      "statusCode": 301
+    },
+    {
+      "source": "/elss-tax-saving.html",
+      "destination": "/elss-tax-saving",
+      "statusCode": 301
+    },
+    {
+      "source": "/emergency-fund-guide-india.html",
+      "destination": "/emergency-fund-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/emi-calculator.html",
+      "destination": "/emi-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/epf-calculator.html",
+      "destination": "/epf-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/epf-withdrawal-rules-25-percent-minimum-balance.html",
+      "destination": "/epf-withdrawal-rules-25-percent-minimum-balance",
+      "statusCode": 301
+    },
+    {
+      "source": "/fd-calculator.html",
+      "destination": "/fd-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/fd-laddering-strategy.html",
+      "destination": "/fd-laddering-strategy",
+      "statusCode": 301
+    },
+    {
+      "source": "/fd-vs-mutual-funds-india.html",
+      "destination": "/fd-vs-mutual-funds-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/fire-movement-india.html",
+      "destination": "/fire-movement-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/form-16-tds-on-salary-guide-india.html",
+      "destination": "/form-16-tds-on-salary-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/form-26as-vs-ais-vs-tis-guide.html",
+      "destination": "/form-26as-vs-ais-vs-tis-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/freelancer-tax-guide-india.html",
+      "destination": "/freelancer-tax-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/gift-tax-rules-india-section-56-guide.html",
+      "destination": "/gift-tax-rules-india-section-56-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/goal.html",
+      "destination": "/goal",
+      "statusCode": 301
+    },
+    {
+      "source": "/gold-vs-mutual-funds.html",
+      "destination": "/gold-vs-mutual-funds",
+      "statusCode": 301
+    },
+    {
+      "source": "/got-first-salary-investing-guide-india.html",
+      "destination": "/got-first-salary-investing-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/gratuity-calculation-tax-exemption-india.html",
+      "destination": "/gratuity-calculation-tax-exemption-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/gratuity-calculator.html",
+      "destination": "/gratuity-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/gst-calculator.html",
+      "destination": "/gst-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/health-insurance-80d-tax-deduction-guide.html",
+      "destination": "/health-insurance-80d-tax-deduction-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/home-loan-balance-transfer-guide-india.html",
+      "destination": "/home-loan-balance-transfer-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/home-loan-prepayment-vs-sip-strategy.html",
+      "destination": "/home-loan-prepayment-vs-sip-strategy",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-gold-price-is-decided-in-india-guide.html",
+      "destination": "/how-gold-price-is-decided-in-india-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-apply-ipo-india-upi-asba-guide.html",
+      "destination": "/how-to-apply-ipo-india-upi-asba-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-file-itr-1-online-salaried-guide.html",
+      "destination": "/how-to-file-itr-1-online-salaried-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-read-mutual-fund-factsheet.html",
+      "destination": "/how-to-read-mutual-fund-factsheet",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-read-mutual-fund-statement-india.html",
+      "destination": "/how-to-read-mutual-fund-statement-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-redeem-mutual-funds-india.html",
+      "destination": "/how-to-redeem-mutual-funds-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-start-your-first-sip-step-by-step.html",
+      "destination": "/how-to-start-your-first-sip-step-by-step",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-use-sip-calculator-complete-guide.html",
+      "destination": "/how-to-use-sip-calculator-complete-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/hra-calculator.html",
+      "destination": "/hra-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hra-exemption-calculation-india.html",
+      "destination": "/hra-exemption-calculation-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/hra-exemption-rent-paid-to-parents-india.html",
+      "destination": "/hra-exemption-rent-paid-to-parents-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/in-hand-salary-calculator.html",
+      "destination": "/in-hand-salary-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/income-tax-act-2025-old-vs-new-section-mapping-guide.html",
+      "destination": "/income-tax-act-2025-old-vs-new-section-mapping-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/income-tax-calculator.html",
+      "destination": "/income-tax-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/income-tax-slabs-india-2026.html",
+      "destination": "/income-tax-slabs-india-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/index-funds-vs-active-funds.html",
+      "destination": "/index-funds-vs-active-funds",
+      "statusCode": 301
+    },
+    {
+      "source": "/index-funds-vs-nifty50-etf-india.html",
+      "destination": "/index-funds-vs-nifty50-etf-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/inflation-calculator.html",
+      "destination": "/inflation-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/inflation-impact-on-savings-india.html",
+      "destination": "/inflation-impact-on-savings-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/itr-u-updated-return-section-139-8a-guide.html",
+      "destination": "/itr-u-updated-return-section-139-8a-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/joint-home-loan-tax-benefits-india-guide.html",
+      "destination": "/joint-home-loan-tax-benefits-india-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/kisan-vikas-patra-kvp-guide.html",
+      "destination": "/kisan-vikas-patra-kvp-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/leave-encashment-tax-exemption-guide.html",
+      "destination": "/leave-encashment-tax-exemption-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/life-insurance-tax-deduction-india-guide.html",
+      "destination": "/life-insurance-tax-deduction-india-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/lumpsum.html",
+      "destination": "/lumpsum",
+      "statusCode": 301
+    },
+    {
+      "source": "/mahila-samman-savings-certificate-mssc-guide.html",
+      "destination": "/mahila-samman-savings-certificate-mssc-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/muhurat-trading-2026-diwali-guide-india.html",
+      "destination": "/muhurat-trading-2026-diwali-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/mutual-fund-categories-guide.html",
+      "destination": "/mutual-fund-categories-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/mutual-fund-nomination-guide-india.html",
+      "destination": "/mutual-fund-nomination-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/mutual-fund-taxation-india-complete-guide.html",
+      "destination": "/mutual-fund-taxation-india-complete-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/national-savings-certificate-nsc-guide.html",
+      "destination": "/national-savings-certificate-nsc-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/nifty-50-index-fund-guide-india.html",
+      "destination": "/nifty-50-index-fund-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/nps-calculator.html",
+      "destination": "/nps-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/nps-vatsalya-scheme-complete-guide.html",
+      "destination": "/nps-vatsalya-scheme-complete-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/nps-vs-mutual-funds.html",
+      "destination": "/nps-vs-mutual-funds",
+      "statusCode": 301
+    },
+    {
+      "source": "/nri-investment-rules-india.html",
+      "destination": "/nri-investment-rules-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/old-vs-new-tax-regime.html",
+      "destination": "/old-vs-new-tax-regime",
+      "statusCode": 301
+    },
+    {
+      "source": "/pmjjby-pmsby-jan-suraksha-scheme-guide.html",
+      "destination": "/pmjjby-pmsby-jan-suraksha-scheme-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio-rebalancing-guide-india.html",
+      "destination": "/portfolio-rebalancing-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/post-office-monthly-income-scheme-pomis-guide.html",
+      "destination": "/post-office-monthly-income-scheme-pomis-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/post-office-time-deposit-potd-guide.html",
+      "destination": "/post-office-time-deposit-potd-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/ppf-calculator.html",
+      "destination": "/ppf-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/ppf-rules-benefits-wealth-guide.html",
+      "destination": "/ppf-rules-benefits-wealth-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/ppf-vs-elss-vs-nps-india-2026.html",
+      "destination": "/ppf-vs-elss-vs-nps-india-2026",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/rbi-floating-rate-savings-bonds-guide.html",
+      "destination": "/rbi-floating-rate-savings-bonds-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/rbi-retail-direct-scheme-guide.html",
+      "destination": "/rbi-retail-direct-scheme-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/recurring-deposit-rd-calculator-guide-india.html",
+      "destination": "/recurring-deposit-rd-calculator-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/reits-and-invits-in-india-guide.html",
+      "destination": "/reits-and-invits-in-india-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/repo-rate-hike-home-loan-emi-impact-india.html",
+      "destination": "/repo-rate-hike-home-loan-emi-impact-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/retirement-planning-india.html",
+      "destination": "/retirement-planning-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/rule-of-72-114-144.html",
+      "destination": "/rule-of-72-114-144",
+      "statusCode": 301
+    },
+    {
+      "source": "/rupee-cost-averaging.html",
+      "destination": "/rupee-cost-averaging",
+      "statusCode": 301
+    },
+    {
+      "source": "/salary-hike-calculator.html",
+      "destination": "/salary-hike-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/scss-vs-fixed-deposit.html",
+      "destination": "/scss-vs-fixed-deposit",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-54ec-capital-gains-bonds-guide.html",
+      "destination": "/section-54ec-capital-gains-bonds-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-54f-capital-gains-tax-exemption-guide.html",
+      "destination": "/section-54f-capital-gains-tax-exemption-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-80ccd2-corporate-nps-guide.html",
+      "destination": "/section-80ccd2-corporate-nps-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-80dd-disability-dependent-tax-deduction-guide.html",
+      "destination": "/section-80dd-disability-dependent-tax-deduction-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-80ddb-medical-treatment-tax-deduction-guide.html",
+      "destination": "/section-80ddb-medical-treatment-tax-deduction-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-80e-education-loan-tax-deduction-guide.html",
+      "destination": "/section-80e-education-loan-tax-deduction-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-80g-donations-tax-deduction-guide.html",
+      "destination": "/section-80g-donations-tax-deduction-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-80gg-rent-deduction-without-hra-guide.html",
+      "destination": "/section-80gg-rent-deduction-without-hra-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/section-89-relief-form-10e-arrears-tax-guide.html",
+      "destination": "/section-89-relief-form-10e-arrears-tax-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/silver-etf-vs-gold-etf-india-tax-guide.html",
+      "destination": "/silver-etf-vs-gold-etf-india-tax-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/simple-interest-calculator.html",
+      "destination": "/simple-interest-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/sip-mistakes-to-avoid.html",
+      "destination": "/sip-mistakes-to-avoid",
+      "statusCode": 301
+    },
+    {
+      "source": "/sip-pause-vs-stop-mutual-fund.html",
+      "destination": "/sip-pause-vs-stop-mutual-fund",
+      "statusCode": 301
+    },
+    {
+      "source": "/sip-vs-lumpsum.html",
+      "destination": "/sip-vs-lumpsum",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap.html",
+      "destination": "/sitemap",
+      "statusCode": 301
+    },
+    {
+      "source": "/small-cap-mid-cap-large-cap-funds-india.html",
+      "destination": "/small-cap-mid-cap-large-cap-funds-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/sovereign-gold-bond-sgb-guide-india.html",
+      "destination": "/sovereign-gold-bond-sgb-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/step-up-sip-guide.html",
+      "destination": "/step-up-sip-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/step-up.html",
+      "destination": "/step-up",
+      "statusCode": 301
+    },
+    {
+      "source": "/stock-average-calculator-guide-india.html",
+      "destination": "/stock-average-calculator-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/sukanya-samriddhi-yojana-ssy-guide.html",
+      "destination": "/sukanya-samriddhi-yojana-ssy-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/swp-calculator.html",
+      "destination": "/swp-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/swp-systematic-withdrawal-plan-guide.html",
+      "destination": "/swp-systematic-withdrawal-plan-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/systematic-transfer-plan-stp-guide.html",
+      "destination": "/systematic-transfer-plan-stp-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/tax-loss-harvesting-india.html",
+      "destination": "/tax-loss-harvesting-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/tcs-on-lrs-overseas-remittance-guide.html",
+      "destination": "/tcs-on-lrs-overseas-remittance-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/term-insurance-guide-india.html",
+      "destination": "/term-insurance-guide-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/term-insurance-vs-endowment-plans.html",
+      "destination": "/term-insurance-vs-endowment-plans",
+      "statusCode": 301
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/terms",
+      "statusCode": 301
+    },
+    {
+      "source": "/treasury-bills-india-guide.html",
+      "destination": "/treasury-bills-india-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/ulips-vs-mutual-funds-india.html",
+      "destination": "/ulips-vs-mutual-funds-india",
+      "statusCode": 301
+    },
+    {
+      "source": "/unified-pension-scheme-ups-guide.html",
+      "destination": "/unified-pension-scheme-ups-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/us-stocks-india-tax-schedule-fa-guide.html",
+      "destination": "/us-stocks-india-tax-schedule-fa-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/wedding-budget-planning.html",
+      "destination": "/wedding-budget-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/what-happens-if-you-miss-sip-payment.html",
+      "destination": "/what-happens-if-you-miss-sip-payment",
+      "statusCode": 301
+    },
+    {
+      "source": "/what-is-nav-in-mutual-funds.html",
+      "destination": "/what-is-nav-in-mutual-funds",
+      "statusCode": 301
+    },
+    {
+      "source": "/what-is-nps-national-pension-system-guide.html",
+      "destination": "/what-is-nps-national-pension-system-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-your-brain-is-your-biggest-investment-enemy.html",
+      "destination": "/why-your-brain-is-your-biggest-investment-enemy",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides/budgeting-and-salary.html",
+      "destination": "/guides/budgeting-and-salary",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides/fd-and-fixed-income.html",
+      "destination": "/guides/fd-and-fixed-income",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides/gold-and-sgb.html",
+      "destination": "/guides/gold-and-sgb",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides/loans-and-emi.html",
+      "destination": "/guides/loans-and-emi",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides/sip-and-mutual-funds.html",
+      "destination": "/guides/sip-and-mutual-funds",
+      "statusCode": 301
+    },
+    {
+      "source": "/guides/tax-planning.html",
+      "destination": "/guides/tax-planning",
+      "statusCode": 301
+    },
+    {
+      "source": "/sgb-calculator.html",
+      "destination": "/sgb-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/cumulative-fd-calculator.html",
+      "destination": "/cumulative-fd-calculator",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*.html",
+      "destination": "/:path*",
+      "statusCode": 301
     }
   ]
 }

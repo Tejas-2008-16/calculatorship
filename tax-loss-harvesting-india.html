@@ -32,141 +32,15 @@
 <meta content="Tax Loss Harvesting India Guide: Read Now on Calculatorship" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://www.calculatorship.in/og-image.webp" name="twitter:image"/>
-<meta content="#F3F7F5" name="theme-color"/>
+<meta content="#FAF9F6" name="theme-color"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
 <link href="/favicon.svg" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <noscript></noscript>
-<style id="critical-css">@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url('/fonts/inter.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-:root {
-  --bg-page: #F6F8F6;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #F8FAF9;
-  --text-primary: #0F172A;
-  --text-secondary: #2B3A4E;
-  --text-muted: #526275;
-  --emerald: #009B72;
-  --emerald-dark: #006B47;
-  --emerald-soft: #ECF6F1;
-  --border-soft: #DFE6E2;
-  --border-medium: #C4D0C9;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-}
-*, *::before, *::after { box-sizing: border-box !important; }
-:root, html { scroll-padding-top: 68px; }
-body {
-  margin: 0; padding: 0;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-.sr-only {
-  position: absolute !important; width: 1px !important; height: 1px !important;
-  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
-}
-.site-header {
-  position: sticky; top: 0; z-index: 1000;
-  min-height: 56px; height: clamp(56px, 8vh, 64px);
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
-}
-.header-inner {
-  height: 100%; max-width: 1520px; margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 28px);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.brand img { height: 38px; width: auto; max-width: 220px; display: block; }
-.main-nav { display: flex; align-items: center; gap: 24px; }
-.main-nav a { color: var(--text-primary); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
-.nav-toggle {
-  display: none; background: none; border: none; cursor: pointer;
-  padding: 8px; min-width: 44px; min-height: 44px;
-  flex-direction: column; justify-content: center; gap: 5px;
-}
-.nav-toggle span.hamburger-bar {
-  display: block; width: 22px; height: 2px; background: var(--text-primary); border-radius: 2px;
-}
-.breadcrumb-bar { background: #FFFFFF; border-bottom: 1px solid var(--border-soft); }
-.breadcrumb { max-width: 1520px; margin: 0 auto; padding: 10px clamp(16px, 2vw, 28px); font-size: 0.85rem; }
-.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.breadcrumb a { color: var(--emerald-dark); text-decoration: none; }
-.calc-hero { max-width: 1520px; margin: 24px auto 16px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-hero h1 {
-  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.125rem);
-  line-height: 1.25; margin: 0 0 8px; color: var(--text-primary); font-weight: 800;
-}
-.article-byline {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
-  font-size: 0.875rem; color: var(--text-muted); margin: 0.5rem 0 1rem;
-}
-.educational-disclaimer {
-  background: #fffbeb; border-left: 3px solid #d97706;
-  padding: 10px 14px; margin: 1rem 0; border-radius: 0 8px 8px 0;
-  font-size: 0.875rem; line-height: 1.5; color: #78350f;
-}
-.calc-switcher-wrapper { max-width: 1520px; margin: 0 auto 20px; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-switcher-bar {
-  display: flex; align-items: center; gap: 8px; overflow-x: auto;
-  -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
-  padding: 6px 8px; border-radius: 8px; background: var(--bg-card);
-  border: 1px solid var(--border-soft); scrollbar-width: none;
-}
-.calc-switcher-bar::-webkit-scrollbar { display: none; }
-.calc-switcher-bar .calc-tab {
-  flex-shrink: 0; scroll-snap-align: start; white-space: nowrap;
-  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
-  padding: 8px 16px; border-radius: 6px; text-decoration: none;
-  color: var(--text-primary); font-size: 0.9rem; font-weight: 600;
-}
-.calc-switcher-bar .calc-tab.active { background: var(--emerald-dark); color: #FFFFFF; }
-.calc-main-container { max-width: 1520px; margin: 0 auto; padding: 0 clamp(16px, 2vw, 28px); }
-.calc-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-.calc-card, .calc-summary-card {
-  background: var(--bg-card); border: 1px solid var(--border-soft);
-  border-top: 3px solid var(--emerald-dark); border-radius: var(--radius-md);
-  padding: 24px; box-shadow: var(--shadow-sm);
-}
-.calc-field-group { margin-bottom: 20px; }
-.calc-input-box {
-  width: 100%; display: flex; align-items: center; background: #FAFBF9;
-  border: 1.5px solid var(--border-medium); border-radius: 6px; overflow: hidden;
-}
-.calc-inputs input[type="number"], .calc-inputs input[type="text"], .calc-input-box input {
-  width: 100%; font-size: 16px; min-height: 44px; padding: 8px 12px;
-  border: none; outline: none; background: transparent; font-family: var(--font-mono); font-weight: 700;
-}
-input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer; }
-.ad-container, .adsense-slot-wrapper { min-height: 280px; contain: layout; margin: 28px 0; }
-@media (max-width: 900px) {
-  .main-nav { display: none !important; }
-  .nav-toggle { display: flex !important; }
-}
-@media (max-width: 767px) {
-  .calc-grid { display: flex !important; flex-direction: column !important; }
-  .calc-card, .calc-summary-card { width: 100% !important; padding: 20px 16px !important; }
-}</style>
-<link rel="stylesheet" href="style.css?v=4.4" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="style.css?v=4.4"></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -180,7 +54,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
       "author": {
         "@type": "Person",
         "name": "Tejas Waghmare",
-        "url": "https://www.calculatorship.in/about.html"
+        "url": "https://www.calculatorship.in/author"
       },
       "publisher": {
         "@type": "Organization",
@@ -190,49 +64,17 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           "url": "https://www.calculatorship.in/logo-light.svg"
         }
       },
-      "mainEntityOfPage": "https://www.calculatorship.in/tax-loss-harvesting-india.html"
+      "mainEntityOfPage": "https://www.calculatorship.in/tax-loss-harvesting-india"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Can Long-Term Capital Loss (LTCL) be set off against Short-Term Capital Gains (STCG)?",
+          "name": "Can I set off mutual fund losses against salary income?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Under Section 70(3) of the Income Tax Act, LTCL can only be set off against other Long-Term Capital Gains. It cannot offset Short-Term Capital Gains or any other head of income."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can Short-Term Capital Loss (STCL) offset Long-Term Capital Gains (LTCG)?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Under Section 70(2), Short-Term Capital Loss can be set off against both Short-Term Capital Gains and Long-Term Capital Gains in the same financial year."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does India have a Wash-Sale rule like the United States?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Indian income tax law does not currently possess a formal 30-day wash-sale rule identical to the US IRS code. However, Section 94 contains anti-avoidance dividend stripping and bonus stripping rules, and circular trades executed purely for artificial loss creation can be questioned under GAAR."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many years can unabsorbed capital losses be carried forward in India?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Under Section 74, both STCL and LTCL can be carried forward for up to 8 assessment years immediately succeeding the assessment year in which the loss was first computed, provided the ITR is filed on or before the due date under Section 139(1)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens if I file my ITR after the Section 139(1) deadline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Under Section 80 of the Income Tax Act, capital losses cannot be carried forward to subsequent years if the return of income is filed after the due date specified under Section 139(1)."
+            "text": "No. Under Section 71(3), capital losses can only be set off against capital gains under the same head. They cannot be adjusted against salary, business profits, rental income, or interest earnings. Under the Finance Act amendments to Section 50AA, capital gains from specified debt mutual funds acquired on or after April 1, 2023 are deemed short-term capital gains and taxed at slab rates. Realized losses on debt funds can be offset against other capital gains according to capital loss rules. You need your Capital Gains Statement from your broker or CAMS/KFintech, your Annual Information Statement (AIS), and Form 26AS. You must report these transactions in ITR-2 or ITR-3 under Schedule CG."
           }
         }
       ]
@@ -250,13 +92,13 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
           "@type": "ListItem",
           "position": 2,
           "name": "Blog",
-          "item": "https://www.calculatorship.in/blog.html"
+          "item": "https://www.calculatorship.in/blog"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Tax Loss Harvesting India",
-          "item": "https://www.calculatorship.in/tax-loss-harvesting-india.html"
+          "item": "https://www.calculatorship.in/tax-loss-harvesting-india"
         }
       ]
     }
@@ -270,31 +112,76 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <header class="site-header">
 <div class="header-inner">
 <a aria-label="Calculatorship Homepage" class="brand" href="/">
-<img alt="Calculatorship: Free Financial Calculators for Indian Investors" height="38" loading="lazy" src="/logo-light.svg" width="220"/>
+<img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="eager" src="/logo-light.svg" width="196"/>
 </a>
-<nav aria-label="Primary Navigation" class="main-nav">
+<nav aria-label="Primary Navigation" class="main-nav" id="site-menu">
 <div class="nav-dropdown">
-<a class="nav-dropdown-toggle" href="/">Calculators</a>
-<ul class="nav-dropdown-menu" role="menu">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Calculators</button>
+<div class="nav-dropdown-menu nav-mega">
+<div class="nav-dropdown-grid">
+<div>
+<p class="nav-dropdown-group-title">Investing &amp; Gold</p>
+<ul class="nav-dropdown-group-list">
 <li><a href="/">SIP Calculator</a></li>
-<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/step-up">Step-Up SIP</a></li>
+<li><a href="/lumpsum">Lumpsum Calculator</a></li>
 <li><a href="/goal">Goal Planner</a></li>
-<li><a href="/ppf-calculator">PPF Calculator</a></li>
-<li><a href="/swp-calculator">SWP Calculator</a></li>
-<li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-<li class="nav-dropdown-divider" role="separator"></li>
-<li><a href="/fd-calculator">FD Calculator</a></li>
-<li><a href="/budget-planner">Budget Planner</a></li>
-<li><a href="/income-tax-calculator">Tax Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/cagr-calculator">CAGR Calculator</a></li>
+<li><a href="/stock-average-calculator-guide-india">Stock Average</a></li>
 </ul>
 </div>
-<a href="/blog">Blog &amp; Guides</a>
+<div>
+<p class="nav-dropdown-group-title">FD &amp; Small Savings</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Bank FD Calculator</a></li>
+<li><a href="/recurring-deposit-rd-calculator-guide-india">RD Calculator</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/epf-calculator">EPF Calculator</a></li>
+<li><a href="/nps-calculator">NPS Calculator</a></li>
+<li><a href="/swp-calculator">SWP Calculator</a></li>
+<li><a href="/compound-interest-calculator">Compound Interest</a></li>
+</ul>
+</div>
+<div>
+<p class="nav-dropdown-group-title">Tax, Salary &amp; Loans</p>
+<ul class="nav-dropdown-group-list">
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/in-hand-salary-calculator">In-Hand Salary</a></li>
+<li><a href="/salary-hike-calculator">Salary Hike</a></li>
+<li><a href="/hra-calculator">HRA Exemption</a></li>
+<li><a href="/gratuity-calculator">Gratuity (15/26)</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/budget-planner">50/30/20 Budget</a></li>
+</ul>
+</div>
+</div>
+<div class="nav-dropdown-footer">
+<span>All calculations run privately in your browser</span>
+<a href="/calculators">Browse All Calculators →</a>
+</div>
+</div>
+</div>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="nav-dropdown-toggle" type="button">Topic Hubs</button>
+<ul class="nav-dropdown-menu" role="menu">
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds</a></li>
+<li><a href="/guides/tax-planning">Income Tax Planning</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; Sovereign Gold Bonds</a></li>
+<li><a href="/guides/loans-and-emi">Home Loans, EMI &amp; CIBIL</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary, CTC &amp; Budgeting</a></li>
+</ul>
+</div>
+<a href="/blog">Guides</a>
+<a href="/calculators">Calculators Hub</a>
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
 <div class="header-actions">
-<button aria-expanded="false" aria-controls="site-menu" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span><span class="hamburger-bar" aria-hidden="true"></span></button>
+<button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
+<button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
 </div>
 </header>
@@ -310,23 +197,23 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </div>
 <main id="main-content">
 <header class="article-header">
-  <div class="article-meta">
-    <span class="meta-cat">Direct Taxation &amp; Capital Gains</span>
-  </div>
-  <h1>Tax Loss Harvesting in India: How to Legally Offset Capital Gains &amp; Cut Your Tax Bill</h1>
-  <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
-    <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-    <span>Published: 24 September 2026</span>
-    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-    <span>Last reviewed: 23 November 2026</span>
-    <span class="byline-dot" aria-hidden="true">&nbsp;•&nbsp;</span>
-    <span>Direct Taxation: Sections 70, 71 &amp; 74 Set-Off &amp; FY 2024-25 Equity Rates</span>
-  </div>
-  <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
+<div class="article-meta">
+<span class="meta-cat">Direct Taxation &amp; Capital Gains</span>
+</div>
+<h1>Tax Loss Harvesting in India: How to Legally Offset Capital Gains &amp; Cut Your Tax Bill</h1>
+<div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
+<span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Published: 24 September 2026</span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Last reviewed: 23 November 2026</span>
+<span aria-hidden="true" class="byline-dot"> • </span>
+<span>Direct Taxation: Sections 70, 71 &amp; 74 Set-Off &amp; FY 2024-25 Equity Rates</span>
+</div>
+<p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational tax roadmap only. Not certified tax advice or chartered accountancy counsel. Tax rules and schedules vary by assessment year. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-  <p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
     Tax loss harvesting in India is the legal practice of selling loss-making stocks or equity mutual fund units before March 31 to realize capital losses and offset them against taxable capital gains under Section 70 of the Income Tax Act. Under amended Finance Act 2024 rules (effective July 23, 2024), Short-Term Capital Losses (STCL) can offset both 20% STCG and 12.5% LTCG, whereas Long-Term Capital Losses (LTCL) can only offset 12.5% LTCG (above the ₹1.25 Lakh annual exemption). Unabsorbed losses can be carried forward for up to 8 assessment years under Section 74, provided your ITR-2 or ITR-3 is filed on or before the July 31 due date.
   </p>
 </header>
@@ -338,13 +225,11 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <li><a href="#what-is-tlh">1. What is Tax Loss Harvesting in India?</a></li>
 <li><a href="#set-off-rules">2. The Capital Loss Set-Off Matrix (Sections 70 &amp; 71)</a></li>
 <li><a href="#ltcg-exemption-strategy">3. Harvesting Gains vs Losses: The ₹1.25 Lakh Exemption Play</a></li>
-<li><a href="#worked-example">4. detailed Worked Portfolio Simulation</a></li>
+<li><a href="#worked-example">4. Detailed Worked Portfolio Simulation</a></li>
 <li><a href="#carry-forward-rules">5. Carry-Forward Rules &amp; Filing Deadlines (Section 74)</a></li>
 <li><a href="#wash-sale-and-risks">6. Wash Sales, Re-entry Strategies &amp; GAAR Traps</a></li>
 <li><a href="#faq">7. Frequently Asked Questions</a></li>
 </ol>
-</div>
-
 </div>
 <div class="key-takeaways" style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 5px solid #16a34a; border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
 <h3 style="color: #166534; font-size: 1.15rem; margin-top: 0; margin-bottom: 0.75rem;">Key Takeaways at a Glance</h3>
@@ -414,7 +299,7 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </ul>
 </section>
 <section id="worked-example">
-<h2>4. detailed Worked Portfolio Simulation</h2>
+<h2>4. Detailed Worked Portfolio Simulation</h2>
 <p>Consider an investor, Rohit, who conducted a detailed portfolio review on 15 March 2027. During FY 2026-27, he had already realized ₹2,50,000 of Long-Term Capital Gains and ₹60,000 of Short-Term Capital Gains.</p>
 <div style="background:#f8fafc; border:1px solid var(--border-soft); border-radius:10px; padding:20px; margin:20px 0;">
 <h4 style="margin-top:0; color:var(--text-primary);">Scenario A: Doing Nothing (No Loss Harvesting)</h4>
@@ -474,12 +359,12 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 </div>
 </section>
 <section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
-  <h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Regulatory Sources &amp; References</h2>
-  <ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
-    <li><strong>Income Tax Department e-Filing Portal:</strong> Capital Gains &amp; Set-off Provisions (<a href="https://www.incometax.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">incometax.gov.in</a>). Accessed: 23 November 2026.</li>
-    <li><strong>Central Board of Direct Taxes (CBDT):</strong> Income Tax Act 1961 Sections 70, 71, 74, 111A, 112A (<a href="https://www.incometaxindia.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
-    <li><strong>Finance (No. 2) Act, 2024 Gazette Notification:</strong> Capital Gains Rate Restructuring (<a href="https://www.indiabudget.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;">indiabudget.gov.in</a>). Accessed: 23 November 2026.</li>
-  </ul>
+<h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Regulatory Sources &amp; References</h2>
+<ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+<li><strong>Income Tax Department e-Filing Portal:</strong> Capital Gains &amp; Set-off Provisions (<a href="https://www.incometax.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometax.gov.in</a>). Accessed: 23 November 2026.</li>
+<li><strong>Central Board of Direct Taxes (CBDT):</strong> Income Tax Act 1961 Sections 70, 71, 74, 111A, 112A (<a href="https://www.incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
+<li><strong>Finance (No. 2) Act, 2024 Gazette Notification:</strong> Capital Gains Rate Restructuring (<a href="https://www.indiabudget.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">indiabudget.gov.in</a>). Accessed: 23 November 2026.</li>
+</ul>
 </section>
 <div class="author-bio-header" style="display:flex; align-items:center; gap:16px; margin:2rem 0 1rem; padding:1.25rem; background:var(--surface, #f8fafc); border-radius:12px; border:1px solid var(--border, #e2e8f0);">
 <div class="author-avatar" style="width:48px; height:48px; border-radius:50%; background:linear-gradient(135deg, #006B47, #009B72); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.25rem;">T</div>
@@ -488,9 +373,6 @@ input[type="range"] { width: 100%; min-height: 44px; margin: 0; cursor: pointer;
 <p style="margin:2px 0 0; font-size:0.85rem; color:var(--text-muted, #64748b);">Student Developer &amp; Creator of Calculatorship</p>
 </div>
 </div>
-<p style="font-size:0.92rem; line-height:1.65; color:var(--text, #334155); margin-bottom:1.5rem;">
-Hey, I'm Tejas, a college dropout teaching myself full-stack web development from my room in Pune. Calculatorship started because I wanted fast, transparent financial tools that run client-side locally inside your browser with clear methodology. Guides on this site exist to explain capital loss set-off rules, carry-forward mechanics under Section 74, and tax loss harvesting math with transparent code. I am not a SEBI-registered advisor. <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Read my full story &rarr;</a>
-</p>
 </article>
 <aside aria-label="Related Guides" class="article-sidebar">
 <div class="sidebar-card">
@@ -510,80 +392,74 @@ Hey, I'm Tejas, a college dropout teaching myself full-stack web development fro
 </aside>
 </div>
 </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="/"><img src="/logo-footer.svg" alt="Calculatorship: Free Financial Calculators for Indian Investors" width="200" height="36" style="display:block;" loading="lazy"></a>
-          <p class="footer-tagline">Independent financial calculators and educational guides explaining how money maths works for Indian salaried professionals and retail investors.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h3>Calculators</h3>
-            <ul>
-              <li><a href="/">SIP Calculator</a></li>
-              <li><a href="/lumpsum">Lumpsum Calculator</a></li>
-              <li><a href="/step-up">Step-Up SIP</a></li>
-              <li><a href="/goal">Goal Planner</a></li>
-              <li><a href="/ppf-calculator">PPF Calculator</a></li>
-              <li><a href="/epf-calculator">EPF Calculator</a></li>
-              <li><a href="/swp-calculator">SWP Calculator</a></li>
-              <li><a href="/emi-calculator">Loan EMI &amp; Prepay</a></li>
-              <li><a href="/fd-calculator">FD Calculator</a></li>
-              <li><a href="/income-tax-calculator">Tax Calculator</a></li>
-              <li><a href="/calculators">All Calculators Hub</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Legal &amp; Policy</h3>
-            <ul>
-              <li><a href="/editorial-policy">Editorial Policy</a></li>
-              <li><a href="/corrections">Corrections Log</a></li>
-              <li><a href="/disclaimer">Disclaimer</a></li>
-              <li><a href="/terms">Terms of Use</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
-              <li><a href="/cookies">Cookie Policy</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Platform</h3>
-            <ul>
-              <li><a href="/about">About</a></li>
-              <li><a href="/author">Editorial Author</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/blog">Guides &amp; Articles</a></li>
-              <li><a href="/sitemap">Sitemap</a></li>
-            </ul>
-          </div>
-        </div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
+        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-disclaimer">
-          <strong>Educational Resource Notice:</strong> Calculatorship is an independent educational site run by a student. It is not registered with SEBI, AMFI, or RBI. Content and calculation tools are for educational awareness only and never constitute investment, tax, or legal advice. Mutual fund investments are subject to market risks. Real returns and tax rules vary. Check official notices and consult a qualified adviser before acting.
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3>Calculators &amp; Hubs</h3>
+          <ul>
+            <li><a href="/">SIP Calculator</a></li>
+            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+            <li><a href="/sgb-calculator">SGB Calculator</a></li>
+            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+            <li><a href="/emi-calculator">Home Loan EMI</a></li>
+            <li><a href="/ppf-calculator">PPF Calculator</a></li>
+            <li><a href="/calculators">All Calculators Hub</a></li>
+          </ul>
         </div>
-        <div class="footer-copy">
-          &copy; 2026 Calculatorship. All rights reserved. | <a href="/about">About</a> | <a href="/author">Author</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/sitemap">Sitemap</a>
+        <div class="footer-col">
+          <h3>Topic Hubs</h3>
+          <ul>
+            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+            <li><a href="/blog">Guides Archive</a></li>
+            <li><a href="/sitemap">HTML Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Policies &amp; Transparency</h3>
+          <ul>
+            <li><a href="/about">About Calculatorship</a></li>
+            <li><a href="/author">Author (Tejas Waghmare)</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/editorial-policy">Editorial Policy</a></li>
+            <li><a href="/corrections">Corrections Policy</a></li>
+            <li><a href="/disclaimer">Disclaimer</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Use</a></li>
+            <li><a href="/cookies">Cookie Policy</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </footer>
-<button aria-label="Back to top" class="back-to-top" id="back-to-top">
-<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
-</button>
-<script defer src="theme.js?v=4.4"></script>
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-  <!-- Third-party advertising integration: commented out -->
-  <!-- <script defer src="advertising/config.js"></script> -->
-  <!-- <script defer src="advertising/register.js"></script> -->
-<!-- DPDP & GDPR Compliant Cookie Consent Manager -->
-<div id="cs-cookie-banner" class="cs-cookie-sheet" role="region" aria-label="Cookie Consent">
+    <div class="footer-bottom">
+      <div class="footer-disclaimer">
+        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+<script defer src="/theme.js?v=5.0"></script>
+<div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
   <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">
-      Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.
-    </p>
+    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
     <div class="cs-cookie-actions">
-      <button type="button" id="cs-decline-cookies" class="cs-cookie-btn cs-cookie-decline">Decline</button>
-      <button type="button" id="cs-accept-cookies" class="cs-cookie-btn cs-cookie-accept">Accept</button>
+      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
     </div>
   </div>
 </div>
