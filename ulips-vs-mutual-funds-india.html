@@ -41,9 +41,9 @@
 <link href="favicon.svg" rel="apple-touch-icon"/>
 <!-- Fonts & Style -->
 <noscript></noscript>
-<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 800;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#FAF9F6;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F2F4F0;--text-primary:#111827;--text-secondary:#374151;--text-muted:#525E6C;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#ECF5F0;--emerald-dark:#08472D;--emerald-soft:#ECF5F0;--border-soft:#E2E5E0;--border-medium:#C6CCC3;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1.0625rem,1rem + .15vw,1.125rem);line-height:1.7;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:62px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(16px,2.5vw,28px);min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{height:34px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:22px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
-<link href="/style.css?v=5.0" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/style.css?v=5.0" rel="stylesheet"/></noscript>
+<style id="critical-css">@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/inter-regular.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600 700;font-display:swap;src:url('/fonts/inter-semibold.woff2') format('woff2'),url('/fonts/inter.woff2') format('woff2')}:root{--bg-page:#F7F6F2;--bg-surface:#FFFFFF;--bg-card:#FFFFFF;--bg-subtle:#F1F3EF;--text-primary:#141B18;--text-secondary:#3F4A45;--text-muted:#5C6862;--accent:#0B5D3B;--accent-hover:#08472D;--accent-soft:#EBF4EF;--border-soft:#E4E6E1;--border-medium:#C8CEC6;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}[data-theme="dark"]{--bg-page:#0C110F;--bg-surface:#151C19;--bg-card:#151C19;--bg-subtle:#1B2420;--text-primary:#F1F5F3;--text-secondary:#C7D1CC;--text-muted:#93A19A;--accent:#34D399;--accent-hover:#10B981;--accent-soft:rgba(52,211,153,0.12);--border-soft:#26312C;--border-medium:#36453E}*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:0;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);font-size:clamp(1rem,.96rem + .18vw,1.075rem);line-height:1.68;overflow-x:hidden}.site-header{position:sticky;top:0;z-index:1000;min-height:64px;background:var(--bg-surface);border-bottom:1px solid var(--border-soft)}.header-inner{max-width:1240px;margin:0 auto;padding:0 clamp(14px,2.5vw,28px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand img{height:32px;width:auto;display:block}.main-nav{display:flex;align-items:center;gap:20px}.nav-dropdown-menu{display:none}.nav-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:960px){.main-nav{display:none}.nav-toggle{display:inline-flex}}</style>
+<link href="/style.css?v=6.0" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/style.css?v=6.0" rel="stylesheet"/></noscript>
 <!-- Google AdSense Verification -->
 <!-- SCHEMA MARKUP -->
 <script type="application/ld+json">{
@@ -180,7 +180,7 @@
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </nav>
-<div class="header-actions">
+<div class="header-actions"><button aria-label="Search calculators and guides" class="header-search-btn" id="cs-open-search" title="Search tools and guides (/)" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><span class="header-search-label">Search</span><kbd class="header-search-kbd">/</kbd></button>
 <button aria-pressed="false" class="theme-toggle-btn" id="cs-theme-toggle" title="Toggle reading theme" type="button">Dark</button>
 <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="nav-toggle" type="button"><span class="sr-only">Menu</span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span><span aria-hidden="true" class="hamburger-bar"></span></button>
 </div>
@@ -202,17 +202,17 @@
 <h1>ULIPs vs Mutual Funds: The Real Cost of Mixing Insurance with Investment</h1>
 <div class="article-byline" style="font-size:0.88rem; color:var(--text-muted); margin:0.4rem 0 0.8rem;">
 <span>Written by <a href="/author" style="color:var(--emerald-dark); font-weight:600; text-decoration:underline;">Tejas Waghmare</a></span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Published: August 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Last reviewed: 23 November 2026</span>
-<span aria-hidden="true" class="byline-dot"> • </span>
+
 <span>Insurance vs Investment: IRDAI ULIP Caps &amp; Section 10(10D) Tax Rules</span>
 </div>
 <p class="article-disclaimer-note" style="font-size:0.86rem; color:var(--text-muted); margin:0.4rem 0 1rem;">
     Educational insurance and mutual fund comparison only. Not personal financial or insurance advisory. Tax implications vary under Section 10(10D) premium thresholds. Read our full <a href="/disclaimer" style="color:inherit; text-decoration:underline;">disclaimer</a>.
   </p>
-<p class="lead" style="font-size:1.1rem; line-height:1.75; color:#1e293b; margin-bottom:1.5rem; font-weight:500;">
+<p class="lead" style="font-size:1.1rem; line-height:1.75; color:var(--text-primary); margin-bottom:1.5rem; font-weight:500;">
     Unit Linked Insurance Plans (ULIPs) bundle life insurance and equity investments into a single product, but impose heavy initial charges (premium allocation, mortality, and administration fees) and enforce a rigid 5-year lock-in. Under the Finance Act 2021 amendment to Section 10(10D), ULIP policies with annual premiums exceeding ₹2.5 Lakh lose their tax-free maturity status and are taxed under Section 112A at 12.5% LTCG. For most Indian families, separating insurance and investment by purchasing pure Term Insurance and investing the remainder in Direct Mutual Funds provides 10 times higher life cover and significantly superior long-term wealth compounding.
   </p>
 </header>
@@ -235,7 +235,7 @@
 <div class="stat-label">Stacked hidden fees deducted from your gross ULIP premium</div>
 </div>
 </div>
-<p class="illustrative-note" style="font-size:0.88rem; color:var(--text-muted); background:var(--bg-elevated, #f8fafc); border-left:3px solid var(--emerald-dark, #0B5D3B); padding:8px 12px; margin:0.75rem 0 1.25rem; border-radius:4px;">Illustrative example, not a real person: Names such as Rahul, Priya, Arun, Ananya, Vikram, Neha, Rohan, Suresh, Sneha, or Ramesh below refer to hypothetical calculation scenarios.</p><p>Picture this scenario: Rahul, a 30-year-old software team lead in Bengaluru, visits his bank branch to update his home loan paperwork. During the meeting, his relationship manager leans in with a warm smile and presents a "flagship wealth product." The pitch sounds irresistible: <em>"Rahul sir, put ₹10,000 every month into this policy. Pitch books promise ₹15 lakh life insurance cover completely free, tax savings under Section 80C, equity market returns, and tax-free maturity payouts! Why buy separate insurance and mutual funds when you can get both in one single plan?"</em></p>
+<p class="illustrative-note" style="font-size:0.88rem; color:var(--text-muted); background:var(--bg-elevated, var(--bg-subtle)); border-left:3px solid var(--emerald-dark, #0B5D3B); padding:8px 12px; margin:0.75rem 0 1.25rem; border-radius:4px;">Illustrative example, not a real person: Names such as Rahul, Priya, Arun, Ananya, Vikram, Neha, Rohan, Suresh, Sneha, or Ramesh below refer to hypothetical calculation scenarios.</p><p>Picture this scenario: Rahul, a 30-year-old software team lead in Bengaluru, visits his bank branch to update his home loan paperwork. During the meeting, his relationship manager leans in with a warm smile and presents a "flagship wealth product." The pitch sounds irresistible: <em>"Rahul sir, put ₹10,000 every month into this policy. Pitch books promise ₹15 lakh life insurance cover completely free, tax savings under Section 80C, equity market returns, and tax-free maturity payouts! Why buy separate insurance and mutual funds when you can get both in one single plan?"</em></p>
 <p>Hooked by the promise of convenience and double benefits, Rahul signs the policy documents on the spot. What his friendly relationship manager conveniently omitted, however, was that this Unit Linked Insurance Plan (ULIP) was designed to systematically strip away nearly 20% of his invested capital in the early years through a complex web of layered charges. Five years later, when Rahul checks his policy statement expecting market-linked growth, he is horrified to discover that his investment is barely breaking even.</p>
 <p>Investors pitched a ULIP, or currently holding one, are not alone. Millions of Indian retail investors fall into the trap of mixing life insurance with wealth generation. Our objective guide strips away the marketing gloss, lay out the exact mathematical breakdown of ULIP fees, compare a ₹10,000/month ULIP against a Term Insurance + Mutual Fund SIP combination over 20 years, evaluate the latest 2026 LTCG tax parity rules, and deliver a definitive verdict for your wealth investing horizon.</p>
 <h2 id="anatomy-of-ulip">1. The Anatomy of a ULIP: How Layered Charges Eat Your Wealth</h2>
@@ -268,7 +268,7 @@
 </ul>
 <h3>The 20-Year Wealth Accumulation Formula</h3>
 <p>The Future Value (\(FV\)) of a monthly Systematic Investment Plan is calculated using the standard annuity formula:</p>
-<div class="math-formula" style="padding:12px 16px; background:#f8fafc; border-left:4px solid var(--emerald-dark); font-family:var(--font-mono); margin:1rem 0;">FV = P × [((1 + r)<sup>n</sup> − 1) / r] × (1 + r)</div>
+<div class="math-formula" style="padding:12px 16px; background:var(--bg-subtle); border-left:4px solid var(--emerald-dark); font-family:var(--font-mono); margin:1rem 0;">FV = P × [((1 + r)<sup>n</sup> − 1) / r] × (1 + r)</div>
 <p>Where:</p>
 <ul>
 <li><code>P</code> = Monthly investment amount (₹10,000 for ULIP; ₹9,000 for Mutual Fund SIP)</li>
@@ -379,7 +379,7 @@
 </div>
 <div class="author-bio-card">
 <div class="author-bio-header">
-<div class="author-avatar" style="width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg, #006B47, #009B72); color:#ffffff; font-size:1.35rem; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">T</div>
+<div class="author-avatar" style="width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg, var(--accent), #009B72); color:var(--bg-surface); font-size:1.35rem; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">T</div>
 <div>
 <h3 class="author-name">Tejas Waghmare</h3>
 <p class="author-title">Founder &amp; Creator, Calculatorship</p>
@@ -404,11 +404,11 @@
 <div class="toc-card">
 <h4>Table of Contents</h4>
 <ol>
-<li><a href="#anatomy-of-ulip">1. Anatomy of a ULIP</a></li>
-<li><a href="#lockin-surrender">2. Lock-In &amp; Surrender Trap</a></li>
-<li><a href="#mathematical-showdown">3. ULIP vs Term + SIP Math</a></li>
-<li><a href="#tax-rules-2026">4. 2026 Tax Rules</a></li>
-<li><a href="#actionable-rules">5. 5 Immutable Rules</a></li>
+<li><a href="#anatomy-of-ulip">Anatomy of a ULIP</a></li>
+<li><a href="#lockin-surrender">Lock-In &amp; Surrender Trap</a></li>
+<li><a href="#mathematical-showdown">ULIP vs Term + SIP Math</a></li>
+<li><a href="#tax-rules-2026">2026 Tax Rules</a></li>
+<li><a href="#actionable-rules">5 Immutable Rules</a></li>
 <li><a href="#faq">Frequently Asked Questions</a></li>
 </ol>
 </div>
@@ -424,9 +424,9 @@
 </div>
 </main>
  ================= FOOTER ================= 
-<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
-<h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; margin-top:0;">Official Sources &amp; Regulatory References</h2>
-<ul style="margin:0; padding-left:1.25rem; color:#475569; line-height:1.8;">
+<section class="official-sources" style="margin:2.5rem 0; padding:1.5rem; background:var(--bg-subtle); border:1px solid var(--border-soft); border-radius:8px;">
+<h2 style="font-size:1.25rem; font-weight:700; color:var(--text-primary); margin-top:0;">Official Sources &amp; Regulatory References</h2>
+<ul style="margin:0; padding-left:1.25rem; color:var(--text-secondary); line-height:1.8;">
 <li><strong>IRDAI (Unit Linked Insurance Products) Regulations &amp; Charge Caps:</strong> Insurance Regulatory and Development Authority of India (<a href="https://www.irdai.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">irdai.gov.in</a>). Accessed: 23 November 2026.</li>
 <li><strong>Section 10(10D) ₹2.5 Lakh Annual Premium Tax Provisions:</strong> Income Tax Department of India (<a href="https://incometaxindia.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">incometaxindia.gov.in</a>). Accessed: 23 November 2026.</li>
 <li><strong>Mutual Fund Expense Ratio Transparency Guidelines:</strong> Securities and Exchange Board of India (<a href="https://www.sebi.gov.in" rel="noopener noreferrer" style="color:var(--emerald-dark); text-decoration:underline;" target="_blank">sebi.gov.in</a>). Accessed: 23 November 2026.</li>
@@ -443,75 +443,75 @@
 
  COOKIE PREFERENCES PANEL
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-footer.svg" width="196"/></a>
-        <p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a href="/"><img alt="Calculatorship: Free Indian Financial Calculators" height="34" loading="lazy" src="/logo-light.svg" width="196"/></a>
+<p class="footer-tagline">Independent financial calculators and plain-English reference guides explaining compounding, taxes, and household money maths in India.</p>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<h3>Calculators &amp; Hubs</h3>
+<ul>
+<li><a href="/">SIP Calculator</a></li>
+<li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
+<li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
+<li><a href="/sgb-calculator">SGB Calculator</a></li>
+<li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
+<li><a href="/emi-calculator">Home Loan EMI</a></li>
+<li><a href="/ppf-calculator">PPF Calculator</a></li>
+<li><a href="/calculators">All Calculators Hub</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Topic Hubs</h3>
+<ul>
+<li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
+<li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
+<li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
+<li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
+<li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
+<li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
+<li><a href="/blog">Guides Archive</a></li>
+<li><a href="/sitemap">HTML Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies &amp; Transparency</h3>
+<ul>
+<li><a href="/about">About Calculatorship</a></li>
+<li><a href="/author">Author (Tejas Waghmare)</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/editorial-policy">Editorial Policy</a></li>
+<li><a href="/corrections">Corrections Policy</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/cookies">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-disclaimer">
+<strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h3>Calculators &amp; Hubs</h3>
-          <ul>
-            <li><a href="/">SIP Calculator</a></li>
-            <li><a href="/cumulative-fd-calculator">Cumulative FD Calculator</a></li>
-            <li><a href="/fd-calculator">Fixed Deposit Calculator</a></li>
-            <li><a href="/sgb-calculator">SGB Calculator</a></li>
-            <li><a href="/income-tax-calculator">Income Tax FY 26-27</a></li>
-            <li><a href="/emi-calculator">Home Loan EMI</a></li>
-            <li><a href="/ppf-calculator">PPF Calculator</a></li>
-            <li><a href="/calculators">All Calculators Hub</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Topic Hubs</h3>
-          <ul>
-            <li><a href="/guides/sip-and-mutual-funds">SIP &amp; Mutual Funds Hub</a></li>
-            <li><a href="/guides/tax-planning">Tax Planning Hub</a></li>
-            <li><a href="/guides/fd-and-fixed-income">FD &amp; Fixed Income Hub</a></li>
-            <li><a href="/guides/gold-and-sgb">Gold &amp; SGB Hub</a></li>
-            <li><a href="/guides/loans-and-emi">Loans &amp; EMI Hub</a></li>
-            <li><a href="/guides/budgeting-and-salary">Salary &amp; Budgeting Hub</a></li>
-            <li><a href="/blog">Guides Archive</a></li>
-            <li><a href="/sitemap">HTML Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Policies &amp; Transparency</h3>
-          <ul>
-            <li><a href="/about">About Calculatorship</a></li>
-            <li><a href="/author">Author (Tejas Waghmare)</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/editorial-policy">Editorial Policy</a></li>
-            <li><a href="/corrections">Corrections Policy</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-disclaimer">
-        <strong>Educational Resource Notice:</strong> Calculatorship is published independently by Tejas Waghmare, a student, and is not registered with SEBI, AMFI, or RBI. Content and client-side tools are for educational illustration only and not personalized investment, tax, or legal advice. Always verify rates from primary official notices and consult a qualified professional before deciding.
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
-      </div>
-    </div>
-  </div>
+<div class="footer-copy">
+        © 2026 Calculatorship. All rights reserved. | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a> | <a href="/disclaimer">Disclaimer</a> | <a href="/editorial-policy">Editorial Policy</a> | <a href="/corrections">Corrections</a> | <a href="/cookies">Cookies</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/sitemap">Sitemap</a>
+</div>
+</div>
+</div>
 </footer>
 <button aria-label="Back to top" class="back-to-top" id="back-to-top"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
-<script defer src="/theme.js?v=5.0"></script>
+<script defer src="/theme.js?v=6.0"></script>
 <div aria-label="Cookie Consent" class="cs-cookie-sheet" id="cs-cookie-banner" role="region">
-  <div class="cs-cookie-inner">
-    <p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
-    <div class="cs-cookie-actions">
-      <button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
-      <button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
-    </div>
-  </div>
+<div class="cs-cookie-inner">
+<p class="cs-cookie-desc">Calculatorship runs client-side calculations. Analytics and ad measurement run only with your consent. Read our <a href="/cookies">Cookie Policy</a> and <a href="/privacy">Privacy Policy</a>.</p>
+<div class="cs-cookie-actions">
+<button class="cs-cookie-btn cs-cookie-decline" id="cs-decline-cookies" type="button">Decline</button>
+<button class="cs-cookie-btn cs-cookie-accept" id="cs-accept-cookies" type="button">Accept</button>
+</div>
+</div>
 </div>
 <script>
     window.addEventListener('scroll', () => {
